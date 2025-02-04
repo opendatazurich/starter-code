@@ -1,0 +1,105 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: AHB-Hochbauprojekte in Ausfuehrung OGD
+
+Städtische Hochbauprojekte, die vom Amt für Hochbauten in der Ausführungsphase (nach Abschluss der Planung und Bewilligung des Kredits) durchgeführt werden.  
+
+**Zweck**: Dokumentation städtischer Hochbauprojekte, die vom Amt für Hochbauten in der Ausführungsphase durchgeführt werden mit Geolokalisierungsinformationen.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**AHB-Hochbauprojekte in Ausfuehrung OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/cc6b96f5-4bf0-4c95-928a-92a06fb1e920).				
+			   
+
+**Informationen zum Datensatz:**
+
+Aus den Krediten (beschlossene Werte zB. einer Volksabstimmung) kann nicht auf die tatsächlichen Baukosten geschlossen werden. 
+
+**Datenerfassung:**
+
+Die Daten stammen direkt aus der Kernapplikation des Amtes für Hochbauten der Stadt Zürich und werden laufend aktualisiert. Alle Angaben ohne Gewähr.
+
+**Datengrundlage:**
+
+Die Daten basieren auf den Weisungen und Beschlüsse zu den jeweiligen Bauvorhaben. Alle Angaben ohne Gewähr.
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/cc6b96f5-4bf0-4c95-928a-92a06fb1e920.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_ahb_hochbauprojekte_in_ausfuehrung_ogd)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set geo_ahb_hochbauprojekte_in_ausfuehrung_ogd.
+
+## Metadata
+
+- **Publisher** `Datenmanagement und Informatik, Amt für Hochbauten, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['ahb', 'ausfuhrungsphase', 'bauprojekte', 'bauvorhaben', 'geodaten', 'geoportal', 'hbd', 'hochbauten', 'hochbauvorhaben', 'polygondaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2023-11-15T03:14:50.621765`
+- **Metadata_modified** `2025-02-04T04:39:43.429565`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		AHB_Hochbauprojekte_in_Ausfuehrung_OGD.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD?format=geojson_link
+# id: 		7516fcbc-bb8b-4226-9631-836e7b80b3da
+# resource_type: 		api
+# package_id: 		8b65f00a-4964-49d2-ad6e-92df45b6e93f
+
+df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD?format=geojson_link')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

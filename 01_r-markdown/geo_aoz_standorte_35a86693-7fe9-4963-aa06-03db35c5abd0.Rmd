@@ -1,0 +1,93 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: AOZ Standorte
+
+AOZ (Asyl Organisation Zürich) - Standorte  
+
+**Zweck**: Visualisierung der Standorte in einer interaktiven Karte im Internet.  
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**AOZ Standorte»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/884729c8-8872-473e-8816-dba4b1bf454d).				
+			   
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/884729c8-8872-473e-8816-dba4b1bf454d.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_aoz_standorte)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set geo_aoz_standorte.
+
+## Metadata
+
+- **Publisher** `AOZ / DIR / KOM, Asyl Organisation Zürich, Asyl Organisation Zürich`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['asyl', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2023-11-06T03:16:30.024447`
+- **Metadata_modified** `2025-02-04T04:36:04.997492`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		AOZ_Standorte.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/AOZ_Standorte?format=geojson_link
+# id: 		35a86693-7fe9-4963-aa06-03db35c5abd0
+# resource_type: 		api
+# package_id: 		d3fa118e-b12c-44bf-9337-ee4e767420d4
+
+df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/AOZ_Standorte?format=geojson_link')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

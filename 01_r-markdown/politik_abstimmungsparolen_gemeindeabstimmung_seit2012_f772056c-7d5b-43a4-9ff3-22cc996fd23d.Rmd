@@ -1,0 +1,92 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: Abstimmungsparolen der Parteien im Gemeinderat für Gemeindeabstimmungen, seit 2012
+
+Alle Abstimmungsparolen für die Gemeindeabstimmungen in der Stadt Zürich. Es werden die Parolen der zum entsprechenden Zeitpunkt im Gemeinderat vertretenen Parteien erhoben. Die Angaben erfolgen ohne Gewähr.
+
+
+**Weiterführende Links:**
+
+[Weitere Informationen zu den Abstimmungen auf der Webseite der Stadtkanzlei](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/politik-und-recht/abstimmen-waehlen.html)
+
+**Aktualisierung**
+
+Die Parolen der Parteien werden jeweils ca. 4 Wochen vor dem Abstimmungstermin erfasst. Die tatsächlichen Abstimmungsergebnisse werden nach dem Abstimmungstermin im Datensatz ['Abstimmungsresultate seit 1933'](/dataset/politik_abstimmungen_seit1933) zur Verfügung gestellt.
+
+**Wichtig:** Es werden nur Parolen der im [Gemeinderat](https://www.gemeinderat-zuerich.ch/) vertretenen Parteien (zum Zeitpunkt der Gemeindeabstimmung) erhoben.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set politik_abstimmungsparolen_gemeindeabstimmung_seit2012.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** ``
+- **Tags** `['abstimmung', 'gemeinderat', 'parolen', 'partei', 'politik', 'sachdaten', 'tabelle']`
+- **Metadata_created** `2021-03-16T12:33:54.277511`
+- **Metadata_modified** `2025-02-03T14:23:31.697566`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		abstimmungsparolen.csv
+# filename: 		abstimmungsparolen.csv
+# format: 		CSV
+# url: 		https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv
+# id: 		f772056c-7d5b-43a4-9ff3-22cc996fd23d
+# resource_type: 		None
+# package_id: 		67996c3a-7edc-4833-a8ec-ce8a6958ca6c
+
+df <- read_delim('https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

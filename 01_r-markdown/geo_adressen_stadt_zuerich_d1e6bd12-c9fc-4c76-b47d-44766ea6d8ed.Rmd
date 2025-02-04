@@ -1,0 +1,127 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: Adressen Stadt Zürich
+
+Die Gebäudeadressen der Stadt Zürich werden aus den amtlichen Vermessungsdaten erstellt und mit einem Hausnummernsortierschlüssel und mit Informationen (PLZ, Liegenschaften, etc.) ergänzt.
+
+**Zweck**: Diese Daten werden von städtischen Dienstabteilungen in Applikationen mit Adresssuche und Info-Abfragen genutzt.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Adressen Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/69b679bb-f6e1-9267-354e-05196b272755).
+			   
+
+**Informationen zum Datensatz:**
+
+Datenelemente werden nur im Datenformat ESRI SDE GDB beschrieben. 
+Zusätzliches Datenformat mit identischem Inhalt: Oracle SDO im Schema GEOZ_SDO. 
+Das Attribut OBJECTID ist nur im Datenformat ESRI SDE GDB vorhanden. Tabellen, die nur im Datenformat Oracle SDO vorkommen werden auch beschrieben.
+
+**Datenerfassung:**
+
+Die Daten werden durch GeoZ im System für die amtliche Vermessung nachgeführt. Die Koordinaten der Gebäudeadressen entsprechen nicht der tatsächlichen Lage des Gebäudeeingangs, sondern sind für die Beschriftung auf dem Plan optimierte Koordinaten. Die Koordinaten der Strassennamen entsprechen einem (ausgewählten) Beschriftungspunkt. Neue Gebäudeadressen können entweder durch Neu-, Um- und Anbauten oder auf Verlangen des Eigentümers entstehen. Die Vergabe der Hausnummer ist in der Verordnung über die Gebäudeadressierung und das Anbringen von Strassenschildern (StRB Nr. 73 vom 25. Januar 2006) geregelt.
+
+**Datengrundlage:**
+
+Amtliche Vermessungsdaten der Stadt Zürich sowie mehrere Datenbestände der Stadt Zürich, welche mit den Adressen verschnitten werden. Dazu gehören: BZO, Stadtkreise und weitere.
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Adressen Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/69b679bb-f6e1-9267-354e-05196b272755).
+
+***ADRSTZH_ADRESSEN_STZH_P***: 
+
+Alle Gebäudeadressen aus der Stadt Zürich inkl. Verschnitt-Infos für Adresssuche und Info-Abfrage in Applikationen.
+
+
+***ADRSTZH_STRASSENNAMEN_STZH_P***: 
+
+Alle Strassenamen der Stadt Zürich. Jeder Strassennamen ist einmal inkl. einer Punktkoordinate vorhanden.
+
+
+***EGID_BB_EO_ADR_TBL***: 
+
+Zusatzinformationen für EGID aus Bodenbedeckung (BB), Einzelobjekten (EO) und Adressen (ADR)
+
+
+
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/69b679bb-f6e1-9267-354e-05196b272755.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_adressen_stadt_zuerich)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set geo_adressen_stadt_zuerich.
+
+## Metadata
+
+- **Publisher** `GIS-Zentrum, Geomatik + Vermessung, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Basis­karten`
+- **Tags** `['adressen', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2023-11-06T03:11:24.984365`
+- **Metadata_modified** `2025-02-04T04:33:34.664539`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		Adressen_Stadt_Zuerich.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link
+# id: 		d1e6bd12-c9fc-4c76-b47d-44766ea6d8ed
+# resource_type: 		api
+# package_id: 		e15219bc-eb02-42a1-98f0-56a977b7507f
+
+df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

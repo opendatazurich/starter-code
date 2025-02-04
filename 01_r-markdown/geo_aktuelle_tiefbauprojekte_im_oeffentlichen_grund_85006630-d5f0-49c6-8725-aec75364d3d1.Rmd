@@ -1,0 +1,93 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: Aktuelle Tiefbauprojekte im öffentlichen Grund
+
+Die Daten beinhalten alle koordinierten und aktuell im bau befindlichen Bauvorhaben im öffentlichen Grund, soweit diese dem Tiefbauamt bekannt sind und ein Koordinationsbedarf bestehen könnte. Nur Vorhaben mit Perimeter ab zirka 100 Meter und geschätzte Bauzeit mindestens 30 Tage.
+
+**Zweck**: Information für Öffentlichkeit.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Aktuelle Tiefbauprojekte im öffentlichen Grund»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/ccb13fb0-9932-4cd4-a9fb-f55fa756a153).				
+			   
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/ccb13fb0-9932-4cd4-a9fb-f55fa756a153.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_aktuelle_tiefbauprojekte_im_oeffentlichen_grund)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set geo_aktuelle_tiefbauprojekte_im_oeffentlichen_grund.
+
+## Metadata
+
+- **Publisher** `Baukoordination, Tiefbauamt, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen,Mobilität,Ver­walt­ung`
+- **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'tiefbauprojekte-baukoordination-baustellen-strassenprojekt-tiefbau-bauprojekt-baustelle', 'vektordaten']`
+- **Metadata_created** `2023-11-06T03:05:57.627766`
+- **Metadata_modified** `2025-02-04T04:31:30.373583`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link
+# id: 		85006630-d5f0-49c6-8725-aec75364d3d1
+# resource_type: 		api
+# package_id: 		5cac275e-8488-472b-b12c-492e620fb469
+
+df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

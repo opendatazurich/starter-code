@@ -1,0 +1,102 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: Abfallgefässe
+
+Standorte der Abfallgefässe des öffentlichen Raums mit Unterscheidung nach Gefässtyp
+
+**Zweck**: Übersicht über die bestehende Abfallgefässinfrastruktur für Planungszwecke. ERZ intern werden die Daten zusätzlich zur Planung der Leerungen verwendet. 
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Abfallgefässe»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/c899f44f-7c8b-89b5-3c27-617cc9fdfa56).				
+			   
+
+**Datenerfassung:**
+
+Die Standorte werden manuell anhand von Feldskizzen im GIS erfasst. 
+
+**Datengrundlage:**
+
+AV-Daten: Strassenstücke
+AV-Daten: Bodenbedeckung und Einzelobjekte
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/c899f44f-7c8b-89b5-3c27-617cc9fdfa56.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_abfallgefaesse)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set geo_abfallgefaesse.
+
+## Metadata
+
+- **Publisher** `Stadtreinigung, Entsorgung + Recycling Zürich, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ver­walt­ung`
+- **Tags** `['abfallbehalter', 'abfallgefasse', 'geodaten', 'geoportal', 'papierkorb', 'punktdaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2023-11-06T03:14:11.272539`
+- **Metadata_modified** `2024-01-29T04:04:21.000663`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		Abfallgefaesse.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/Abfallgefaesse?format=geojson_link
+# id: 		6f14ae76-a83d-4bc5-a190-96447309c2d3
+# resource_type: 		api
+# package_id: 		8e1d8f5c-cdf4-47be-9de8-f94ee78bca6f
+
+df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Abfallgefaesse?format=geojson_link')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

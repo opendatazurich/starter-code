@@ -1,0 +1,93 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: Alterswohnung
+
+Alterswohnungsstandorte in der Stadt Zürich
+
+**Zweck**: Lokalisierung der Alterswohnungen
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Alterswohnung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/d15fdbc5-6be3-4cda-a95e-6ee7412c3382).				
+			   
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/d15fdbc5-6be3-4cda-a95e-6ee7412c3382.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_alterswohnung)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set geo_alterswohnung.
+
+## Metadata
+
+- **Publisher** `Bau & Entwicklung, Stiftung Alterswohnungen, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten', 'wohnung']`
+- **Metadata_created** `2023-11-06T03:20:21.651732`
+- **Metadata_modified** `2025-02-04T04:37:35.443938`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		Alterswohnung.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/Alterswohnung?format=geojson_link
+# id: 		a95b064d-ca7e-4e6e-9523-e253ca12b863
+# resource_type: 		api
+# package_id: 		c45190dd-a590-4356-968b-27674fba8273
+
+df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Alterswohnung?format=geojson_link')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,118 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-02-04"
+output: html_document
+---
+
+## Dataset: Alleenkonzept
+
+Das Alleenkonzept beinhaltet bestehende und geplante Baumreihen innerhalb der Stadt Zürich, zum Teil aber auch solche in planerisch wichtigen Gebieten und einige ausserhalb der Stadtgrenze. 
+
+**Zweck**: Am 16.10.1991 erliess der Stadtrat (&quot;zustimmend zur Kenntnis genommen&quot;) das Alleenkonzept mit der Absicht der &quot;Mehrung des Baumbestandes in der Stadt&quot;. Das Allenkonzept soll dieses Ziel erreichen, indem es Planenden, Projektierenden und Bauenden aufzeigt, wo bestehende Baumreihen ergänzt und wo neue Baumreihen erstellt werden sollen. Indem im Alleenkonzept auch die bestehenden Baumreihen nachgeführt werden, dient es gleichzeitig als Instrumtent zur Kontrolle der Umsetzung.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Alleenkonzept»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/e3023894-1322-8c4a-bf81-3825f28da788).				
+			   
+
+**Informationen zum Datensatz:**
+
+Zusammenfassung:
+Das Alleenkonzept wurde 1990 vom Stadtrat als langfristige Planungsgrundlage in Kraft gesetzt. Es beinhaltet primär Baumreihen im öffentlichen Raum, zum Teil aber auch solche in planerisch wichtigen Gebieten und einige ausserhalb der Stadtgrenze. Es werden die geplanten als auch die bereits bestehenden Baumreihen erfasst. Die Nachführung erfolgt mindestens einmals jährlich aufgrund des Baumkatasters und aufgrund neuer rechtskräftiger Planungsentscheide.
+
+Bemerkung zur Nachführung:
+Die Nachführung erfolgt mindestens einmal jährlich, in der Regel im Herbst.
+
+**Datenerfassung:**
+
+Das Alleenkonzept wurde ursprünglich von Hand auf analogen Plänen eingezeichnet (1988, 1990 und 1996). Diese Pläne wurden 2000 mithilfe von Orthofotos und zusätzlichen Begehungen digitalisiert und aktualisiert. Seit 2002 wird das Alleenkonzept jährlich nachgeführt, basierend auf den Veränderungen im Baumkataster sowie aufgrund planerischer Beschlüsse des Stadtrates, des Gemeinderates und des Stab öffentlicher Raum. 
+Seit 2005 wird jede Mutation mit Datum und Grund festgehalten. Der alte Zustand wird dabei nicht gelöscht, sondern auf ungültig gesetzt. Damit ist es möglich, jeden beliebigen Zustand des Alleenkonzepts innert kürzester Zeit darzustellen/abzufragen.
+Die Standortgenauigkeit der (bestehenden) Baumreihen liegt im Bereich von +/- 5 Metern.
+
+**Datengrundlage:**
+
+Baumkataster: (Digitalisier-Grundlage) Wird benötigt, um die bestehenden Baumreihen aktuell zu halten.
+Übersichtsplan der Stadt Zürich : (Digitalisier-Grundlage) 
+Orthophotos der Stadt Zürich: (Digitalisier-Grundlage)
+
+
+**Weitere Informationen zu diesem Thema:**
+
+Finden Sie unter diesem [**Link**](http://www.stadt-zuerich.ch/ted/de/index/gsz/planung_u_bau/konzepte_und_leitbilder/alleenkonzept.html)
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/e3023894-1322-8c4a-bf81-3825f28da788.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_alleenkonzept)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
+
+Auto generated R starter code for data set geo_alleenkonzept.
+
+## Metadata
+
+- **Publisher** `Freiraumplanung 2, Grün Stadt Zürich, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Umwelt,Ver­walt­ung`
+- **Tags** `['allee', 'baum', 'geodaten', 'geoportal', 'liniendaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2023-11-06T03:18:08.420912`
+- **Metadata_modified** `2025-02-04T04:36:45.756239`
+
+
+# Load packages
+
+```{r}
+
+library(tidyverse)
+library(skimr)
+
+```
+
+# Load data
+
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
+```{r}
+
+# name: 		Alleenkonzept.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link
+# id: 		7c2411cf-85a4-4d62-b60e-b26c01c6108c
+# resource_type: 		api
+# package_id: 		24b18019-cf74-444c-bdb9-1efc6c9c8548
+
+df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link')
+
+
+```
+
+# Analyze data
+
+```{r}
+
+glimpse(df)
+str(df)
+skim(df)
+
+head(df)
+tail(df)
+
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch
