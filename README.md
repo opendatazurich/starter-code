@@ -19,7 +19,7 @@ Feedback is always very welcome – simply open an issue or contact us at [opend
 
 🌻 Our thanks for the [template](https://github.com/rnckp/starter-code-opendataswiss-gh) and help goes to [Patrick Arnecke](https://github.com/rnckp) from the Statistical Office of the Canton of Zurich!
 
-<sub>Latest update: **2025-02-10 13:21:38**</sub><br>
+<sub>Latest update: **2025-02-11 09:48:34**</sub><br>
 <sub>For all data licenses please refer to each data set's link (provided in list as well as in the notebooks).</sub>
 
 
