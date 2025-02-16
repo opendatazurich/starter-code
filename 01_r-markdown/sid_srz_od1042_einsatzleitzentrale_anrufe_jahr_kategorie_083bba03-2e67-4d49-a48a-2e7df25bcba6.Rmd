@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-11"
+date: "2025-02-16"
 output: html_document
 ---
 
@@ -78,7 +78,7 @@ Auto generated R starter code for data set sid_srz_od1042_einsatzleitzentrale_an
 - **Keywords** `Ge­sund­heit,Ver­walt­ung`
 - **Tags** `['dispositionen', 'feuerwehr', 'gesundheit', 'rettungsdienste', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-12-01T11:17:18.245344`
-- **Metadata_modified** `2025-02-11T02:30:21.603768`
+- **Metadata_modified** `2025-02-16T02:30:20.966787`
 
 
 # Load packages
