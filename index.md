@@ -14,7 +14,7 @@ Feedback is always very welcome – simply open an issue or contact us at [opend
 
 👉 Here is the link to the [repository](https://www.github.com/opendatazurich/starter-code) that contains currently 2 x 20 code files (1 x R, 1 x Python) for all data sets (*«resources»*) that are available on [OpenDataZurich](https://data.stadt-zuerich.ch/) and that contain  CSV, parquet or geojson files. This website is build from this repo.
 
-<sub>Latest update: **2025-02-16 03:40:54**</sub><br>
+<sub>Latest update: **2025-02-17 13:31:45**</sub><br>
 <sub>For all data licenses please refer to each data set's link (provided in list as well as in the notebooks).</sub>
 
 ### Renku (Jupyter Lab / RStudio): [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/v2/projects/opendatazurich/starter-code)
