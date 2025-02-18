@@ -61,10 +61,9 @@ library(skimr)
 # resource_type: 		None
 # package_id: 		67996c3a-7edc-4833-a8ec-ce8a6958ca6c
 
-
 library(readr)
 df <- read_csv("https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv")
-            
+
 
 ```
 

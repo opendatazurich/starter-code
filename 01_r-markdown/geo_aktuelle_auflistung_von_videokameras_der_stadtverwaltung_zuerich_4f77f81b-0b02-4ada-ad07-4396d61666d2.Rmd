@@ -62,10 +62,9 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		f0e16074-3722-48b2-ba3d-ba77a737118e
 
-
 library(readr)
 df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Auflistung_von_Videokameras_der_Stadtverwaltung_Zuerich?format=geojson_link")
-            
+
 
 ```
 

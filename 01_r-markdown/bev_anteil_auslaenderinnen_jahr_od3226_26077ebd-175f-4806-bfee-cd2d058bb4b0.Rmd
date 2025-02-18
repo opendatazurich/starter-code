@@ -52,10 +52,9 @@ library(skimr)
 # resource_type: 		file
 # package_id: 		55ecf51e-a474-4ce0-8d5f-30e7a01040d9
 
-
 library(readr)
 df <- read_csv("https://data.stadt-zuerich.ch/dataset/bev_anteil_auslaenderinnen_jahr_od3226/download/BEV322OD3226.csv")
-            
+
 
 ```
 

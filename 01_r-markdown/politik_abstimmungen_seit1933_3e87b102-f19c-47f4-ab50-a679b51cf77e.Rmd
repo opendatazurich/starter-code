@@ -62,10 +62,9 @@ library(skimr)
 # resource_type: 		None
 # package_id: 		b4a9dd6d-6739-4bec-bc8e-5f0b4b65994e
 
-
 library(arrow)
 df <- read_parquet("https://data.stadt-zuerich.ch/dataset/politik_abstimmungen_seit1933/download/abstimmungen_seit1933.parquet")
-            
+
 
 ```
 

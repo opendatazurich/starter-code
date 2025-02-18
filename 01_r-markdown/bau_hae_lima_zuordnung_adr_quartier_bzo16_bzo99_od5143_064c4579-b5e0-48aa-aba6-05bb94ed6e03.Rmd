@@ -69,10 +69,9 @@ library(skimr)
 # resource_type: 		file
 # package_id: 		1b874e7a-23c4-4237-81f6-6698e4effc76
 
-
 library(readr)
 df <- read_csv("https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143/download/BAU514OD5143.csv")
-            
+
 
 ```
 
