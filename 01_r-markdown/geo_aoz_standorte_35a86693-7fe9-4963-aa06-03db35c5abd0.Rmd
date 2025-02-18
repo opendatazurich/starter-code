@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-17"
+date: "2025-02-18"
 output: html_document
 ---
 
@@ -35,7 +35,7 @@ Auto generated R starter code for data set geo_aoz_standorte.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['asyl', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:16:30.024447`
-- **Metadata_modified** `2025-02-17T04:36:26.519829`
+- **Metadata_modified** `2025-02-18T09:24:44.439767`
 
 
 # Load packages
@@ -62,8 +62,10 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		d3fa118e-b12c-44bf-9337-ee4e767420d4
 
-df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/AOZ_Standorte?format=geojson_link')
 
+            library(readr)
+            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/AOZ_Standorte?format=geojson_link")
+            
 
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-17"
+date: "2025-02-18"
 output: html_document
 ---
 
@@ -35,7 +35,7 @@ Auto generated R starter code for data set geo_alterswohnung.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten', 'wohnung']`
 - **Metadata_created** `2023-11-06T03:20:21.651732`
-- **Metadata_modified** `2025-02-17T04:38:08.391019`
+- **Metadata_modified** `2025-02-18T09:26:17.150525`
 
 
 # Load packages
@@ -62,8 +62,10 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		c45190dd-a590-4356-968b-27674fba8273
 
-df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Alterswohnung?format=geojson_link')
 
+            library(readr)
+            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Alterswohnung?format=geojson_link")
+            
 
 ```
 

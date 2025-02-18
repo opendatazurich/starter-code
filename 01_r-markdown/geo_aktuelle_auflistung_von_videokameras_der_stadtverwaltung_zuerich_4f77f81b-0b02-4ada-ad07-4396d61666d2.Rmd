@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-17"
+date: "2025-02-18"
 output: html_document
 ---
 
@@ -35,7 +35,7 @@ Auto generated R starter code for data set geo_aktuelle_auflistung_von_videokame
 - **Keywords** ``
 - **Tags** `['auflistung-von-videokameras', 'einzeldaten', 'geodaten', 'geoportal', 'kamerastandorte', 'punktdaten', 'sachdaten', 'stzh', 'tabelle', 'videouberwachung']`
 - **Metadata_created** `2024-09-06T04:30:42.047869`
-- **Metadata_modified** `2025-02-17T04:39:30.808304`
+- **Metadata_modified** `2025-02-18T09:27:45.454610`
 
 
 # Load packages
@@ -62,8 +62,10 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		f0e16074-3722-48b2-ba3d-ba77a737118e
 
-df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Auflistung_von_Videokameras_der_Stadtverwaltung_Zuerich?format=geojson_link')
 
+            library(readr)
+            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Auflistung_von_Videokameras_der_Stadtverwaltung_Zuerich?format=geojson_link")
+            
 
 ```
 

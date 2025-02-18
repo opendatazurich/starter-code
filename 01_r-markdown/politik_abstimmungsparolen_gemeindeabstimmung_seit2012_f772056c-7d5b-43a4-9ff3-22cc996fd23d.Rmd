@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-17"
+date: "2025-02-18"
 output: html_document
 ---
 
@@ -61,8 +61,10 @@ library(skimr)
 # resource_type: 		None
 # package_id: 		67996c3a-7edc-4833-a8ec-ce8a6958ca6c
 
-df <- read_delim('https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv')
 
+            library(readr)
+            df <- read_csv("https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv")
+            
 
 ```
 

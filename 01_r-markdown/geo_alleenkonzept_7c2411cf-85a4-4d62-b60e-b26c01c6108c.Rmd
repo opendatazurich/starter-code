@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-17"
+date: "2025-02-18"
 output: html_document
 ---
 
@@ -60,7 +60,7 @@ Auto generated R starter code for data set geo_alleenkonzept.
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['allee', 'baum', 'geodaten', 'geoportal', 'liniendaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:18:08.420912`
-- **Metadata_modified** `2025-02-17T04:37:15.146916`
+- **Metadata_modified** `2025-02-18T09:25:24.566581`
 
 
 # Load packages
@@ -87,8 +87,10 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		24b18019-cf74-444c-bdb9-1efc6c9c8548
 
-df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link')
 
+            library(readr)
+            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link")
+            
 
 ```
 

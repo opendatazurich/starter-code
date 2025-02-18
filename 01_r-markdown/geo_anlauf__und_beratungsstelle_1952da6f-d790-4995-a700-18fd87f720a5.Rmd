@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-17"
+date: "2025-02-18"
 output: html_document
 ---
 
@@ -39,7 +39,7 @@ Auto generated R starter code for data set geo_anlauf__und_beratungsstelle.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['anlaufstellen', 'beratunsstellen', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:08:29.185140`
-- **Metadata_modified** `2025-02-17T04:32:30.017303`
+- **Metadata_modified** `2025-02-18T09:20:35.355718`
 
 
 # Load packages
@@ -66,8 +66,10 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		137fcf8b-32f8-4163-90d2-0d0abbf3c1e1
 
-df <- read_delim('https://www.stadt-zuerich.ch/geodaten/download/Anlauf__und_Beratungsstelle?format=geojson_link')
 
+            library(readr)
+            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Anlauf__und_Beratungsstelle?format=geojson_link")
+            
 
 ```
 
