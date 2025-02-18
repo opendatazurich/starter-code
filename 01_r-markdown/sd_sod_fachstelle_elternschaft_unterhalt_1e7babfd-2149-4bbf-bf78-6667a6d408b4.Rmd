@@ -76,9 +76,8 @@ library(skimr)
 # resource_type: 		file
 # package_id: 		f62e165f-49ab-46ff-996c-0dfa97521cdd
 
-library(readr)
+library(readr) 
 df <- read_csv("https://data.stadt-zuerich.ch/dataset/sd_sod_fachstelle_elternschaft_unterhalt/download/sd_sod_fachstelle_elternschaft_unterhalt.csv")
-
 
 ```
 
