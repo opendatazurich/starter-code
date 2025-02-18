@@ -85,8 +85,20 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		336506c8-4f50-4d0a-b5e4-ea3f6aa3251c
 
-library(sf) 
-gdf <- st_read("https://www.stadt-zuerich.ch/geodaten/download/_GDP__Inventar_der_schuetzenswerten_Gaerten_und_Anlagen_von_kommunaler_Bedeutung_der_Stadt_Zuerich?format=geojson_link")
+
+library(sf)
+
+# Define temporary file path
+temp_file <- tempfile(fileext = ".geojson")
+
+# Download the GeoJSON file
+download.file("https://www.stadt-zuerich.ch/geodaten/download/_GDP__Inventar_der_schuetzenswerten_Gaerten_und_Anlagen_von_kommunaler_Bedeutung_der_Stadt_Zuerich?format=geojson_link", temp_file, mode = "wb")
+
+# Read the file with sf::st_read()
+gdf <- st_read(temp_file)
+
+# Remove temporary file after loading
+unlink(temp_file)
 
 
 ```

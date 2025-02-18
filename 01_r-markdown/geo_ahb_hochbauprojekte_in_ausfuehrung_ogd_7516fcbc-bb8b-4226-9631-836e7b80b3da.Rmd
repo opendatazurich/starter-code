@@ -74,8 +74,20 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		8b65f00a-4964-49d2-ad6e-92df45b6e93f
 
-library(sf) 
-gdf <- st_read("https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD?format=geojson_link")
+
+library(sf)
+
+# Define temporary file path
+temp_file <- tempfile(fileext = ".geojson")
+
+# Download the GeoJSON file
+download.file("https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD?format=geojson_link", temp_file, mode = "wb")
+
+# Read the file with sf::st_read()
+gdf <- st_read(temp_file)
+
+# Remove temporary file after loading
+unlink(temp_file)
 
 
 ```
