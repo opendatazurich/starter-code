@@ -62,8 +62,9 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		d3fa118e-b12c-44bf-9337-ee4e767420d4
 
-library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/AOZ_Standorte?format=geojson_link")
+library(sf) 
+gdf <- st_read("https://www.stadt-zuerich.ch/geodaten/download/AOZ_Standorte?format=geojson_link")
+
 
 ```
 

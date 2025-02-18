@@ -87,8 +87,9 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		24b18019-cf74-444c-bdb9-1efc6c9c8548
 
-library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link")
+library(sf) 
+gdf <- st_read("https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link")
+
 
 ```
 

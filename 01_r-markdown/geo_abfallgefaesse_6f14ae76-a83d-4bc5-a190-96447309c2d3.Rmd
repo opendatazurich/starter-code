@@ -71,8 +71,9 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		8e1d8f5c-cdf4-47be-9de8-f94ee78bca6f
 
-library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Abfallgefaesse?format=geojson_link")
+library(sf) 
+gdf <- st_read("https://www.stadt-zuerich.ch/geodaten/download/Abfallgefaesse?format=geojson_link")
+
 
 ```
 
