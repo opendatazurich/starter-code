@@ -106,8 +106,8 @@ library(skimr)
 # package_id: 		480946d9-556d-434e-93c3-e4f1a44af711
 
 
-            library(readr)
-            df <- read_csv("https://data.stadt-zuerich.ch/dataset/sid_srz_od1042_einsatzleitzentrale_anrufe_jahr_kategorie/download/GES104OD1042.csv")
+library(readr)
+df <- read_csv("https://data.stadt-zuerich.ch/dataset/sid_srz_od1042_einsatzleitzentrale_anrufe_jahr_kategorie/download/GES104OD1042.csv")
             
 
 ```

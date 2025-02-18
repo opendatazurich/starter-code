@@ -63,8 +63,8 @@ library(skimr)
 # package_id: 		5cac275e-8488-472b-b12c-492e620fb469
 
 
-            library(readr)
-            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link")
+library(readr)
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link")
             
 
 ```

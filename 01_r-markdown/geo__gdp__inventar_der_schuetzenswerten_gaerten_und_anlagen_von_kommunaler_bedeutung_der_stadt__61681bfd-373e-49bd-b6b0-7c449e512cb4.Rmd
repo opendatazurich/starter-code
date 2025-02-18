@@ -86,8 +86,8 @@ library(skimr)
 # package_id: 		336506c8-4f50-4d0a-b5e4-ea3f6aa3251c
 
 
-            library(readr)
-            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/_GDP__Inventar_der_schuetzenswerten_Gaerten_und_Anlagen_von_kommunaler_Bedeutung_der_Stadt_Zuerich?format=geojson_link")
+library(readr)
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/_GDP__Inventar_der_schuetzenswerten_Gaerten_und_Anlagen_von_kommunaler_Bedeutung_der_Stadt_Zuerich?format=geojson_link")
             
 
 ```

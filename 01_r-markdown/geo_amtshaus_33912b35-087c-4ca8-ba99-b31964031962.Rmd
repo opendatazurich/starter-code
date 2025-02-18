@@ -67,8 +67,8 @@ library(skimr)
 # package_id: 		147a5c53-7b81-4d1a-8b90-39f6fc12b71a
 
 
-            library(readr)
-            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Amtshaus?format=geojson_link")
+library(readr)
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Amtshaus?format=geojson_link")
             
 
 ```

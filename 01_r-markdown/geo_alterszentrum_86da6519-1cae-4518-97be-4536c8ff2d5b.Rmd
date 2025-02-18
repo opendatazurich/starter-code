@@ -63,8 +63,8 @@ library(skimr)
 # package_id: 		5b3cf685-97da-4eb8-9aea-92d3ef20e3b9
 
 
-            library(readr)
-            df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Alterszentrum?format=geojson_link")
+library(readr)
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Alterszentrum?format=geojson_link")
             
 
 ```
