@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-18"
+date: "2025-02-19"
 output: html_document
 ---
 
@@ -60,7 +60,7 @@ Auto generated R starter code for data set geo_alleenkonzept.
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['allee', 'baum', 'geodaten', 'geoportal', 'liniendaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:18:08.420912`
-- **Metadata_modified** `2025-02-18T09:25:24.566581`
+- **Metadata_modified** `2025-02-19T04:36:55.657689`
 
 
 # Load packages
@@ -69,6 +69,7 @@ Auto generated R starter code for data set geo_alleenkonzept.
 
 library(tidyverse)
 library(skimr)
+library(sf)
 
 ```
 
@@ -79,7 +80,29 @@ library(skimr)
 
 ```{r}
 
-# name: 		Alleenkonzept.json (GeoJSON-Services)
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  url_geoportal <- paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  params <- list(service = "WFS", version = "1.1.0", request = "GetCapabilities")
+  
+  response <- httr::GET(url_geoportal, query = params)
+  content <- httr::content(response, as = "text", encoding = "UTF-8")
+  
+  layers <- xml2::read_xml(content) %>%
+    xml2::xml_find_all(".//wfs:FeatureType/wfs:Name", xml2::xml_ns(content)) %>%
+    xml2::xml_text()
+  
+  cat("Available layers:", paste(layers, collapse = ", "), "\n")
+  
+  return(layers)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers("# name: 		Alleenkonzept.json (GeoJSON-Services)
 # filename: 		nan
 # format: 		JSON
 # url: 		https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link
@@ -87,21 +110,27 @@ library(skimr)
 # resource_type: 		api
 # package_id: 		24b18019-cf74-444c-bdb9-1efc6c9c8548
 
+library(readr) 
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link")")
 
-library(sf)
+# Set first layer as default
+typename <- layers[1]
+cat("Chosen typename:", typename, "\n")
 
-# Define temporary file path
-temp_file <- tempfile(fileext = ".geojson")
+# Construct WFS request URL
+wfs_url <- paste0("# name: 		Alleenkonzept.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link
+# id: 		7c2411cf-85a4-4d62-b60e-b26c01c6108c
+# resource_type: 		api
+# package_id: 		24b18019-cf74-444c-bdb9-1efc6c9c8548
 
-# Download the GeoJSON file
-download.file("https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link", temp_file, mode = "wb")
+library(readr) 
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link")&service=WFS&version=1.1.0&request=GetFeature&typename=", typename, "&outputFormat=application/json")
 
-# Read the file with sf::st_read()
-gdf <- st_read(temp_file)
-
-# Remove temporary file after loading
-unlink(temp_file)
-
+# Load GeoJSON data
+df <- st_read(wfs_url)
 
 ```
 
@@ -116,8 +145,22 @@ skim(df)
 head(df)
 tail(df)
 
+# Drop empty columns
+df <- df %>% select(where(~!all(is.na(.))))
+
+# Print dataset info
+cat(sprintf("The dataset has %d rows (observations) and %d columns (variables).\n", nrow(df), ncol(df)))
+cat(sprintf("There seem to be %d exact duplicates in the data.\n", sum(duplicated(df))))
+
+# Memory usage
+tibble::glimpse(df)
 ```
 
+# Plot data
+
+```{r}
+plot(df$geometry)
+```
 # Continue your code here...
 
 ```{r}
