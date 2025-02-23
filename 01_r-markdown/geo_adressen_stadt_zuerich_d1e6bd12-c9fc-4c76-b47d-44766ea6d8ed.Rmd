@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-19"
+date: "2025-02-23"
 output: html_document
 ---
 
@@ -69,7 +69,7 @@ Auto generated R starter code for data set geo_adressen_stadt_zuerich.
 - **Keywords** `Basis­karten`
 - **Tags** `['adressen', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:11:24.984365`
-- **Metadata_modified** `2025-02-19T04:33:39.762308`
+- **Metadata_modified** `2025-02-22T04:33:57.650460`
 
 
 # Load packages
@@ -78,7 +78,6 @@ Auto generated R starter code for data set geo_adressen_stadt_zuerich.
 
 library(tidyverse)
 library(skimr)
-library(sf)
 
 ```
 
@@ -89,29 +88,7 @@ library(sf)
 
 ```{r}
 
-# Helper function to get available layers from WFS
-get_wfs_layers <- function(url) {
-  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
-  url_geoportal <- paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
-  
-  cat("Getting available layers from:", url_geoportal, "\n")
-  
-  params <- list(service = "WFS", version = "1.1.0", request = "GetCapabilities")
-  
-  response <- httr::GET(url_geoportal, query = params)
-  content <- httr::content(response, as = "text", encoding = "UTF-8")
-  
-  layers <- xml2::read_xml(content) %>%
-    xml2::xml_find_all(".//wfs:FeatureType/wfs:Name", xml2::xml_ns(content)) %>%
-    xml2::xml_text()
-  
-  cat("Available layers:", paste(layers, collapse = ", "), "\n")
-  
-  return(layers)
-}
-
-# Fetch available layers
-layers <- get_wfs_layers("# name: 		Adressen_Stadt_Zuerich.json (GeoJSON-Services)
+# name: 		Adressen_Stadt_Zuerich.json (GeoJSON-Services)
 # filename: 		nan
 # format: 		JSON
 # url: 		https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link
@@ -120,26 +97,7 @@ layers <- get_wfs_layers("# name: 		Adressen_Stadt_Zuerich.json (GeoJSON-Service
 # package_id: 		e15219bc-eb02-42a1-98f0-56a977b7507f
 
 library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link")")
-
-# Set first layer as default
-typename <- layers[1]
-cat("Chosen typename:", typename, "\n")
-
-# Construct WFS request URL
-wfs_url <- paste0("# name: 		Adressen_Stadt_Zuerich.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link
-# id: 		d1e6bd12-c9fc-4c76-b47d-44766ea6d8ed
-# resource_type: 		api
-# package_id: 		e15219bc-eb02-42a1-98f0-56a977b7507f
-
-library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link")&service=WFS&version=1.1.0&request=GetFeature&typename=", typename, "&outputFormat=application/json")
-
-# Load GeoJSON data
-df <- st_read(wfs_url)
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link")
 
 ```
 
@@ -154,22 +112,8 @@ skim(df)
 head(df)
 tail(df)
 
-# Drop empty columns
-df <- df %>% select(where(~!all(is.na(.))))
-
-# Print dataset info
-cat(sprintf("The dataset has %d rows (observations) and %d columns (variables).\n", nrow(df), ncol(df)))
-cat(sprintf("There seem to be %d exact duplicates in the data.\n", sum(duplicated(df))))
-
-# Memory usage
-tibble::glimpse(df)
 ```
 
-# Plot data
-
-```{r}
-plot(df$geometry)
-```
 # Continue your code here...
 
 ```{r}
