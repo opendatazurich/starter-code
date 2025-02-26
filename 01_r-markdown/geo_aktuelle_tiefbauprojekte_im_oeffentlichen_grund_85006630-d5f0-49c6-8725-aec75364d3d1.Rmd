@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-23"
+date: "2025-02-26"
 output: html_document
 ---
 
@@ -35,16 +35,17 @@ Auto generated R starter code for data set geo_aktuelle_tiefbauprojekte_im_oeffe
 - **Keywords** `Bauen und Wohnen,Mobilität,Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'tiefbauprojekte-baukoordination-baustellen-strassenprojekt-tiefbau-bauprojekt-baustelle', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:05:57.627766`
-- **Metadata_modified** `2025-02-22T04:31:31.974100`
+- **Metadata_modified** `2025-02-26T04:31:29.037807`
 
 
 # Load packages
 
 ```{r}
-
-library(tidyverse)
+library(httr2)
+library(sf)
 library(skimr)
-
+library(tidyverse)
+library(xml2)
 ```
 
 # Load data
@@ -52,9 +53,44 @@ library(skimr)
 -   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
 -   All available CSV distributions are listed below and can be read into a tibble.
 
+helper function to create the url based on the geoportal
 ```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
 
-# name: 		Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund.json (GeoJSON-Services)
+
+der folgende Chunk funktioniert nicht
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers("# name: 		Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund.json (GeoJSON-Services)
 # filename: 		nan
 # format: 		JSON
 # url: 		https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link
@@ -63,8 +99,55 @@ library(skimr)
 # package_id: 		5cac275e-8488-472b-b12c-492e620fb469
 
 library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link")
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link")")
 
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+```
+
+then actually read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata("# name: 		Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund.json (GeoJSON-Services)
+# filename: 		nan
+# format: 		JSON
+# url: 		https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link
+# id: 		85006630-d5f0-49c6-8725-aec75364d3d1
+# resource_type: 		api
+# package_id: 		5cac275e-8488-472b-b12c-492e620fb469
+
+library(readr) 
+df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link")", typename)
 ```
 
 # Analyze data
@@ -78,8 +161,22 @@ skim(df)
 head(df)
 tail(df)
 
+# Drop empty columns
+df <- df %>% select(where(~!all(is.na(.))))
+
+# Print dataset info
+cat(sprintf("The dataset has %d rows (observations) and %d columns (variables).\n", nrow(df), ncol(df)))
+cat(sprintf("There seem to be %d exact duplicates in the data.\n", sum(duplicated(df))))
+
+# Memory usage
+tibble::glimpse(df)
 ```
 
+# Plot data
+
+```{r}
+plot(df$geometry)
+```
 # Continue your code here...
 
 ```{r}
