@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-02-26"
+date: "2025-03-02"
 output: html_document
 ---
 
