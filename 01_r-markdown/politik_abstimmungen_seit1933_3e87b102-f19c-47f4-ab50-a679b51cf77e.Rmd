@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-03-02"
+date: "2025-03-03"
 output: html_document
 ---
 
@@ -35,7 +35,7 @@ Auto generated R starter code for data set politik_abstimmungen_seit1933.
 - **Keywords** `Politik`
 - **Tags** `['abstimmung', 'abstimmungsresultate', 'politik', 'sachdaten', 'tabellen', 'zeitreihe']`
 - **Metadata_created** `2024-08-19T13:32:25.024351`
-- **Metadata_modified** `2025-02-24T06:11:44.936202`
+- **Metadata_modified** `2025-03-03T06:10:29.502857`
 
 
 # Load packages
