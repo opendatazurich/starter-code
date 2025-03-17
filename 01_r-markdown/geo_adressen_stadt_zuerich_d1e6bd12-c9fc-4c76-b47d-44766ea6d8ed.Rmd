@@ -56,7 +56,7 @@ Zusatzinformationen für EGID aus Bodenbedeckung (BB), Einzelobjekten (EO) und A
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_adressen_stadt_zuerich)
 
 Auto generated R starter code for data set geo_adressen_stadt_zuerich.
 

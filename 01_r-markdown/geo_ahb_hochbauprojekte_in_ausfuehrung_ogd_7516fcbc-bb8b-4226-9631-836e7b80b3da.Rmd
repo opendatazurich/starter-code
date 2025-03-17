@@ -34,7 +34,7 @@ Die Daten basieren auf den Weisungen und Beschlüsse zu den jeweiligen Bauvorhab
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_ahb_hochbauprojekte_in_ausfuehrung_ogd)
 
 Auto generated R starter code for data set geo_ahb_hochbauprojekte_in_ausfuehrung_ogd.
 

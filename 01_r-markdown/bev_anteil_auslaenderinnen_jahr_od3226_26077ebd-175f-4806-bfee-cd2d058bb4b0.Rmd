@@ -12,7 +12,7 @@ Anteil Ausländer*innen der Stadt Zürich nach Jahr.
 
 nan
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_anteil_auslaenderinnen_jahr_od3226)
 
 Auto generated R starter code for data set bev_anteil_auslaenderinnen_jahr_od3226.
 

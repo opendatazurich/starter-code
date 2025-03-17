@@ -29,7 +29,7 @@ Die Adressliste umfasst aktuellste Adressen auch von Gebäuden, die erst baubewi
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143)
 
 Auto generated R starter code for data set bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143.
 

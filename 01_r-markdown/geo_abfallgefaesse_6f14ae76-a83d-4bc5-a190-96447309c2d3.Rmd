@@ -31,7 +31,7 @@ AV-Daten: Bodenbedeckung und Einzelobjekte
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_abfallgefaesse)
 
 Auto generated R starter code for data set geo_abfallgefaesse.
 

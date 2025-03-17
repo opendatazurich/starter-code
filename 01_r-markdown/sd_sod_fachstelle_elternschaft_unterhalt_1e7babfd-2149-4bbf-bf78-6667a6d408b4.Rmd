@@ -36,7 +36,7 @@ Im [**Geschäftsbericht**](https://www.stadt-zuerich.ch/geschaeftsbericht) werde
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_sod_fachstelle_elternschaft_unterhalt)
 
 Auto generated R starter code for data set sd_sod_fachstelle_elternschaft_unterhalt.
 

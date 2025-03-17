@@ -22,7 +22,7 @@ Weitere Informationen zu diesem Datensatz finden sie unter [«**AOZ Standorte»*
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_aoz_standorte)
 
 Auto generated R starter code for data set geo_aoz_standorte.
 

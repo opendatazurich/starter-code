@@ -30,7 +30,7 @@ Anzahl der Tastendruck-Vorgänge pro 10-Minuten-Intervall
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_abstimmungsgeraete_taz)
 
 Auto generated R starter code for data set geo_abstimmungsgeraete_taz.
 

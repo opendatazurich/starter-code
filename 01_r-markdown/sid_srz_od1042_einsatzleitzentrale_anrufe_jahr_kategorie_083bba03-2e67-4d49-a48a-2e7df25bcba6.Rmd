@@ -65,7 +65,7 @@ Das Zuständigkeitsgebiet der Einsatzleitzentrale von Schutz & Rettung Zürich f
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_srz_od1042_einsatzleitzentrale_anrufe_jahr_kategorie)
 
 Auto generated R starter code for data set sid_srz_od1042_einsatzleitzentrale_anrufe_jahr_kategorie.
 

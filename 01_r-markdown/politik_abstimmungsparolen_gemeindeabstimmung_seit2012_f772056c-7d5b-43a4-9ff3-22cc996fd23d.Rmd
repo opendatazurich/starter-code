@@ -21,7 +21,7 @@ Die Parolen der Parteien werden jeweils ca. 4 Wochen vor dem Abstimmungstermin e
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012)
 
 Auto generated R starter code for data set politik_abstimmungsparolen_gemeindeabstimmung_seit2012.
 

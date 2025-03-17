@@ -22,7 +22,7 @@ Ein Strich (–) an Stelle einer Zahl bedeutet, dass keine Werte vorhanden sind.
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_abstimmungen_seit1933)
 
 Auto generated R starter code for data set politik_abstimmungen_seit1933.
 

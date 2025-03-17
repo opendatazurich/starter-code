@@ -47,7 +47,7 @@ Finden Sie unter diesem [**Link**](http://www.stadt-zuerich.ch/ted/de/index/gsz/
 
 
 
-{{ DATASHOP_LINK_PROVIDER }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_alleenkonzept)
 
 Auto generated R starter code for data set geo_alleenkonzept.
 
