@@ -82,16 +82,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		Adressen_Stadt_Zuerich.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich?format=geojson_link
-# id: 		d1e6bd12-c9fc-4c76-b47d-44766ea6d8ed
-# resource_type: 		api
-# package_id: 		e15219bc-eb02-42a1-98f0-56a977b7507f
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}

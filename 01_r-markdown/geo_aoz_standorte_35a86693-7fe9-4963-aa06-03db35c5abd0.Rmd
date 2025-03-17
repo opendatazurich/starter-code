@@ -48,16 +48,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		AOZ_Standorte.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/AOZ_Standorte?format=geojson_link
-# id: 		35a86693-7fe9-4963-aa06-03db35c5abd0
-# resource_type: 		api
-# package_id: 		d3fa118e-b12c-44bf-9337-ee4e767420d4
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}

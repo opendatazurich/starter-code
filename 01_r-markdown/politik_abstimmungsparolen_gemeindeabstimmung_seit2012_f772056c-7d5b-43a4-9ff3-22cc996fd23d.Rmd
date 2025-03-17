@@ -48,20 +48,7 @@ library(skimr)
 # Load data
 
 ```{r}
-
-# name: 		abstimmungsparolen.csv
-# filename: 		abstimmungsparolen.csv
-# format: 		CSV
-# url: 		https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv
-# id: 		f772056c-7d5b-43a4-9ff3-22cc996fd23d
-# resource_type: 		None
-# package_id: 		67996c3a-7edc-4833-a8ec-ce8a6958ca6c
-
-
-```
-
-```{r}
-url <- https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv
+url <- "https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv"
 if str_detect(url, ".csv") {
     df <- readr::read_csv(url)
 } else if str_detect(url, ".parquet") {

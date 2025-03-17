@@ -56,16 +56,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		Abstimmungsgeraete_TAZ.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Abstimmungsgeraete_TAZ?format=geojson_link
-# id: 		cb7a0bf5-60d6-4581-96bd-1a95666b652a
-# resource_type: 		api
-# package_id: 		6488c7de-2baa-4780-80fd-54fba56cf2fc
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}

@@ -48,16 +48,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		Alterswohnung.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Alterswohnung?format=geojson_link
-# id: 		a95b064d-ca7e-4e6e-9523-e253ca12b863
-# resource_type: 		api
-# package_id: 		c45190dd-a590-4356-968b-27674fba8273
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}

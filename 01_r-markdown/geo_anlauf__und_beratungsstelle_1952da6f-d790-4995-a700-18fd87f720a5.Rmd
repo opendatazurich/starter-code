@@ -52,16 +52,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		Anlauf__und_Beratungsstelle.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Anlauf__und_Beratungsstelle?format=geojson_link
-# id: 		1952da6f-d790-4995-a700-18fd87f720a5
-# resource_type: 		api
-# package_id: 		137fcf8b-32f8-4163-90d2-0d0abbf3c1e1
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}

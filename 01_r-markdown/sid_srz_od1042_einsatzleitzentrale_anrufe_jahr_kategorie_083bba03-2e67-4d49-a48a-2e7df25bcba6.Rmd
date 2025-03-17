@@ -92,20 +92,7 @@ library(skimr)
 # Load data
 
 ```{r}
-
-# name: 		GES104OD1042.csv
-# filename: 		GES104OD1042.csv
-# format: 		CSV
-# url: 		https://data.stadt-zuerich.ch/dataset/sid_srz_od1042_einsatzleitzentrale_anrufe_jahr_kategorie/download/GES104OD1042.csv
-# id: 		083bba03-2e67-4d49-a48a-2e7df25bcba6
-# resource_type: 		file
-# package_id: 		480946d9-556d-434e-93c3-e4f1a44af711
-
-
-```
-
-```{r}
-url <- https://data.stadt-zuerich.ch/dataset/sid_srz_od1042_einsatzleitzentrale_anrufe_jahr_kategorie/download/GES104OD1042.csv
+url <- "https://data.stadt-zuerich.ch/dataset/sid_srz_od1042_einsatzleitzentrale_anrufe_jahr_kategorie/download/GES104OD1042.csv"
 if str_detect(url, ".csv") {
     df <- readr::read_csv(url)
 } else if str_detect(url, ".parquet") {

@@ -56,20 +56,7 @@ library(skimr)
 # Load data
 
 ```{r}
-
-# name: 		BAU514OD5143.csv
-# filename: 		BAU514OD5143.csv
-# format: 		CSV
-# url: 		https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143/download/BAU514OD5143.csv
-# id: 		064c4579-b5e0-48aa-aba6-05bb94ed6e03
-# resource_type: 		file
-# package_id: 		1b874e7a-23c4-4237-81f6-6698e4effc76
-
-
-```
-
-```{r}
-url <- https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143/download/BAU514OD5143.csv
+url <- "https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143/download/BAU514OD5143.csv"
 if str_detect(url, ".csv") {
     df <- readr::read_csv(url)
 } else if str_detect(url, ".parquet") {

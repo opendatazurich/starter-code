@@ -57,16 +57,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		Abfallgefaesse.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Abfallgefaesse?format=geojson_link
-# id: 		6f14ae76-a83d-4bc5-a190-96447309c2d3
-# resource_type: 		api
-# package_id: 		8e1d8f5c-cdf4-47be-9de8-f94ee78bca6f
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}

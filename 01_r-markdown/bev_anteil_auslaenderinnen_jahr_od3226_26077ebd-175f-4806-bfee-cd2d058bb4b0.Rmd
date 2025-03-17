@@ -39,20 +39,7 @@ library(skimr)
 # Load data
 
 ```{r}
-
-# name: 		BEV322OD3226.csv
-# filename: 		BEV322OD3226.csv
-# format: 		CSV
-# url: 		https://data.stadt-zuerich.ch/dataset/bev_anteil_auslaenderinnen_jahr_od3226/download/BEV322OD3226.csv
-# id: 		26077ebd-175f-4806-bfee-cd2d058bb4b0
-# resource_type: 		file
-# package_id: 		55ecf51e-a474-4ce0-8d5f-30e7a01040d9
-
-
-```
-
-```{r}
-url <- https://data.stadt-zuerich.ch/dataset/bev_anteil_auslaenderinnen_jahr_od3226/download/BEV322OD3226.csv
+url <- "https://data.stadt-zuerich.ch/dataset/bev_anteil_auslaenderinnen_jahr_od3226/download/BEV322OD3226.csv"
 if str_detect(url, ".csv") {
     df <- readr::read_csv(url)
 } else if str_detect(url, ".parquet") {

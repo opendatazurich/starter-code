@@ -73,16 +73,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		Alleenkonzept.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept?format=geojson_link
-# id: 		7c2411cf-85a4-4d62-b60e-b26c01c6108c
-# resource_type: 		api
-# package_id: 		24b18019-cf74-444c-bdb9-1efc6c9c8548
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}

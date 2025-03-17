@@ -63,20 +63,7 @@ library(skimr)
 # Load data
 
 ```{r}
-
-# name: 		sd_sod_fachstelle_elternschaft_unterhalt.csv
-# filename: 		sd_sod_fachstelle_elternschaft_unterhalt.csv
-# format: 		CSV
-# url: 		https://data.stadt-zuerich.ch/dataset/sd_sod_fachstelle_elternschaft_unterhalt/download/sd_sod_fachstelle_elternschaft_unterhalt.csv
-# id: 		1e7babfd-2149-4bbf-bf78-6667a6d408b4
-# resource_type: 		file
-# package_id: 		f62e165f-49ab-46ff-996c-0dfa97521cdd
-
-
-```
-
-```{r}
-url <- https://data.stadt-zuerich.ch/dataset/sd_sod_fachstelle_elternschaft_unterhalt/download/sd_sod_fachstelle_elternschaft_unterhalt.csv
+url <- "https://data.stadt-zuerich.ch/dataset/sd_sod_fachstelle_elternschaft_unterhalt/download/sd_sod_fachstelle_elternschaft_unterhalt.csv"
 if str_detect(url, ".csv") {
     df <- readr::read_csv(url)
 } else if str_detect(url, ".parquet") {

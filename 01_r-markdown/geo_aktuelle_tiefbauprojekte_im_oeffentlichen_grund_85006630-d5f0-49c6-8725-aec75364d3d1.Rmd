@@ -48,16 +48,6 @@ library(xml2)
 ```
 
 # Load data
-```{r}
-# name: 		Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Aktuelle_Tiefbauprojekte_im_oeffentlichen_Grund?format=geojson_link
-# id: 		85006630-d5f0-49c6-8725-aec75364d3d1
-# resource_type: 		api
-# package_id: 		5cac275e-8488-472b-b12c-492e620fb469
-
-```
 
 helper function to create the url based on the geoportal
 ```{r}
