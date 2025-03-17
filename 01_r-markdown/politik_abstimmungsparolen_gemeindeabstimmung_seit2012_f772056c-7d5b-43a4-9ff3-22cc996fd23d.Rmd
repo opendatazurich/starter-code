@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-03-16"
+date: "2025-03-17"
 output: html_document
 ---
 
@@ -21,7 +21,7 @@ Die Parolen der Parteien werden jeweils ca. 4 Wochen vor dem Abstimmungstermin e
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012)<br>
+{{ DATASHOP_LINK_PROVIDER }}<br>
 {{ DATASHOP_LINK_ORGANIZATION }}
 
 Auto generated R starter code for data set politik_abstimmungsparolen_gemeindeabstimmung_seit2012.
@@ -34,7 +34,7 @@ Auto generated R starter code for data set politik_abstimmungsparolen_gemeindeab
 - **Keywords** ``
 - **Tags** `['abstimmung', 'gemeinderat', 'parolen', 'partei', 'politik', 'sachdaten', 'tabelle']`
 - **Metadata_created** `2021-03-16T12:33:54.277511`
-- **Metadata_modified** `2025-03-15T14:23:35.178711`
+- **Metadata_modified** `2025-03-16T14:22:29.901997`
 
 
 # Load packages
