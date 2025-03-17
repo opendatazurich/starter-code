@@ -40,19 +40,17 @@ Auto generated R starter code for data set politik_abstimmungen_seit1933.
 # Load packages
 
 ```{r}
-
-library(tidyverse)
 library(skimr)
-
+library(tidyverse)
 ```
 
 # Load data
 
 ```{r}
 url <- "https://data.stadt-zuerich.ch/dataset/politik_abstimmungen_seit1933/download/abstimmungen_seit1933.csv"
-if str_detect(url, ".csv") {
+if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
-} else if str_detect(url, ".parquet") {
+} else if (str_detect(url, ".parquet")) {
     df <- arrow::read_parquet(url)
 } else {
     print("File format not recognised!")
@@ -60,15 +58,17 @@ if str_detect(url, ".csv") {
 ```
 # Analyze data
 
+look at the data
 ```{r}
-
-glimpse(df)
-str(df)
-skim(df)
-
 head(df)
-tail(df)
+```
 
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
 ```
 
 # Continue your code here...
