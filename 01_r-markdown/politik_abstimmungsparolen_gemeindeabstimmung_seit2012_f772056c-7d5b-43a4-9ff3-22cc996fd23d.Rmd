@@ -57,11 +57,19 @@ library(skimr)
 # resource_type: 		None
 # package_id: 		67996c3a-7edc-4833-a8ec-ce8a6958ca6c
 
-library(readr) 
-df <- read_csv("https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv")
 
 ```
 
+```{r}
+url <- https://data.stadt-zuerich.ch/dataset/politik_abstimmungsparolen_gemeindeabstimmung_seit2012/download/abstimmungsparolen.csv
+if str_detect(url, ".csv") {
+    df <- readr::read_csv(url)
+} else if str_detect(url, ".parquet") {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
 # Analyze data
 
 ```{r}

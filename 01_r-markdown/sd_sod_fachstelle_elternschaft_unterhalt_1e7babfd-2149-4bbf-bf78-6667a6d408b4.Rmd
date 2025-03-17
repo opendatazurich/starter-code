@@ -72,11 +72,19 @@ library(skimr)
 # resource_type: 		file
 # package_id: 		f62e165f-49ab-46ff-996c-0dfa97521cdd
 
-library(readr) 
-df <- read_csv("https://data.stadt-zuerich.ch/dataset/sd_sod_fachstelle_elternschaft_unterhalt/download/sd_sod_fachstelle_elternschaft_unterhalt.csv")
 
 ```
 
+```{r}
+url <- https://data.stadt-zuerich.ch/dataset/sd_sod_fachstelle_elternschaft_unterhalt/download/sd_sod_fachstelle_elternschaft_unterhalt.csv
+if str_detect(url, ".csv") {
+    df <- readr::read_csv(url)
+} else if str_detect(url, ".parquet") {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
 # Analyze data
 
 ```{r}

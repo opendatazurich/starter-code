@@ -65,8 +65,6 @@ library(xml2)
 # resource_type: 		api
 # package_id: 		6488c7de-2baa-4780-80fd-54fba56cf2fc
 
-library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Abstimmungsgeraete_TAZ?format=geojson_link")
 ```
 
 helper function to create the url based on the geoportal
