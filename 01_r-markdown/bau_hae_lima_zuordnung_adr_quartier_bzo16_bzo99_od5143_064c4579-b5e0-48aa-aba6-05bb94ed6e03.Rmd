@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-03-17"
+date: "2025-03-23"
 output: html_document
 ---
 
@@ -29,7 +29,8 @@ Die Adressliste umfasst aktuellste Adressen auch von Gebäuden, die erst baubewi
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143)<br>
+{{ DATASHOP_LINK_ORGANIZATION }}
 
 Auto generated R starter code for data set bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143.
 
@@ -41,41 +42,49 @@ Auto generated R starter code for data set bau_hae_lima_zuordnung_adr_quartier_b
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['adresse', 'bauzonen', 'bzo', 'lima', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-09-07T14:26:11.508259`
-- **Metadata_modified** `2025-03-17T06:58:51.873910`
+- **Metadata_modified** `2025-03-22T20:49:47.641924`
 
 
 # Load packages
 
 ```{r}
-library(skimr)
+
 library(tidyverse)
+library(skimr)
+
 ```
 
 # Load data
 
+-   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
+-   All available CSV distributions are listed below and can be read into a tibble.
+
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143/download/BAU514OD5143.csv"
-if (str_detect(url, ".csv")) {
-    df <- readr::read_csv(url)
-} else if (str_detect(url, ".parquet")) {
-    df <- arrow::read_parquet(url)
-} else {
-    print("File format not recognised!")
-}
+
+# name: 		BAU514OD5143.csv
+# filename: 		BAU514OD5143.csv
+# format: 		CSV
+# url: 		https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143/download/BAU514OD5143.csv
+# id: 		064c4579-b5e0-48aa-aba6-05bb94ed6e03
+# resource_type: 		file
+# package_id: 		1b874e7a-23c4-4237-81f6-6698e4effc76
+
+library(readr) 
+df <- read_csv("https://data.stadt-zuerich.ch/dataset/bau_hae_lima_zuordnung_adr_quartier_bzo16_bzo99_od5143/download/BAU514OD5143.csv")
+
 ```
+
 # Analyze data
 
-look at the data
 ```{r}
-head(df)
-```
 
-```{r}
 glimpse(df)
-```
-
-```{r}
+str(df)
 skim(df)
+
+head(df)
+tail(df)
+
 ```
 
 # Continue your code here...
