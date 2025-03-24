@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-03-23"
+date: "2025-03-24"
 output: html_document
 ---
 
@@ -26,8 +26,7 @@ Weitere Informationen zu diesem Datensatz finden sie unter [«**Amtshaus»** auf
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_amtshaus)<br>
-{{ DATASHOP_LINK_ORGANIZATION }}
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_amtshaus)
 
 Auto generated R starter code for data set geo_amtshaus.
 
@@ -39,49 +38,126 @@ Auto generated R starter code for data set geo_amtshaus.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['amtshaus', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten', 'verwaltung']`
 - **Metadata_created** `2023-11-06T03:19:55.504256`
-- **Metadata_modified** `2025-03-22T04:37:23.127758`
+- **Metadata_modified** `2025-03-24T04:37:17.674961`
 
 
 # Load packages
 
 ```{r}
-
-library(tidyverse)
+library(httr2)
+library(sf)
 library(skimr)
-
+library(tidyverse)
+library(xml2)
 ```
 
 # Load data
 
--   The dataset has {{ DISTRIBUTION_COUNT }} distribution(s) in CSV format.
--   All available CSV distributions are listed below and can be read into a tibble.
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
 
 ```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
 
-# name: 		Amtshaus.json (GeoJSON-Services)
-# filename: 		nan
-# format: 		JSON
-# url: 		https://www.stadt-zuerich.ch/geodaten/download/Amtshaus?format=geojson_link
-# id: 		33912b35-087c-4ca8-ba99-b31964031962
-# resource_type: 		api
-# package_id: 		147a5c53-7b81-4d1a-8b90-39f6fc12b71a
+# Fetch available layers
+layers <- get_wfs_layers("https://www.stadt-zuerich.ch/geodaten/download/Amtshaus?format=geojson_link")
 
-library(readr) 
-df <- read_csv("https://www.stadt-zuerich.ch/geodaten/download/Amtshaus?format=geojson_link")
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
 
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata("https://www.stadt-zuerich.ch/geodaten/download/Amtshaus?format=geojson_link", typename)
 ```
 
 # Analyze data
 
+look at the data
 ```{r}
-
-glimpse(df)
-str(df)
-skim(df)
-
 head(df)
-tail(df)
+```
 
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
 ```
 
 # Continue your code here...
