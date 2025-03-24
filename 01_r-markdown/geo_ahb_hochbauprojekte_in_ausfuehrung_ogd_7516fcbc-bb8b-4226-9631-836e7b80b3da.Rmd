@@ -59,7 +59,13 @@ library(tidyverse)
 library(xml2)
 ```
 
-# Load data
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD?format=geojson_link"
+```
+
 
 Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
 ```{r}
@@ -96,26 +102,11 @@ get_wfs_layers <- function(url) {
 }
 
 # Fetch available layers
-layers <- get_wfs_layers("https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD?format=geojson_link")
+layers <- get_wfs_layers(url)
 
 # Set first layer as default
 typename <- xml_text(layers[[1]])
 cat("Chosen typename:", typename, "\n")
-```
-
-if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
-```{r eval=FALSE}
-# install.packages("ows4R")
-library(ows4R)
-
-# WFS-Client erstellen
-wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
-
-# Verfügbare Feature-Typen anzeigen
-wfs_client$getFeatureTypes(pretty = TRUE)
-
-typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
-  dplyr::pull(name)
 ```
 
 read the data
@@ -135,10 +126,28 @@ read_geodata <- function(url, typename) {
   st_read(request$url)
 }
 
-df <- read_geodata("https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD?format=geojson_link", typename)
+df <- read_geodata(url, typename)
 ```
 
-# Analyze data
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
 
 look at the data
 ```{r}

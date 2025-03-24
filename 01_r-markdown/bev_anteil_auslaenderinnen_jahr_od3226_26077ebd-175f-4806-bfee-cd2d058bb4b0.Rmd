@@ -34,7 +34,7 @@ library(skimr)
 library(tidyverse)
 ```
 
-# Load data
+# Load the data
 
 ```{r}
 url <- "https://data.stadt-zuerich.ch/dataset/bev_anteil_auslaenderinnen_jahr_od3226/download/BEV322OD3226.csv"
@@ -46,7 +46,8 @@ if (str_detect(url, ".csv")) {
     print("File format not recognised!")
 }
 ```
-# Analyze data
+
+# Analyze the data
 
 look at the data
 ```{r}

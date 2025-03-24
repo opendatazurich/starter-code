@@ -44,7 +44,7 @@ library(skimr)
 library(tidyverse)
 ```
 
-# Load data
+# Load the data
 
 ```{r}
 url <- "https://data.stadt-zuerich.ch/dataset/politik_abstimmungen_seit1933/download/abstimmungen_seit1933.csv"
@@ -56,7 +56,8 @@ if (str_detect(url, ".csv")) {
     print("File format not recognised!")
 }
 ```
-# Analyze data
+
+# Analyze the data
 
 look at the data
 ```{r}
