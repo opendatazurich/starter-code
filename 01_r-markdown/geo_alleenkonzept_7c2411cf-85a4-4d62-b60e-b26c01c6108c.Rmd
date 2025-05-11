@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-04"
+date: "2025-05-11"
 output: html_document
 ---
 
@@ -53,13 +53,13 @@ Auto generated R starter code for data set geo_alleenkonzept.
 
 ## Metadata
 
-- **Publisher** `Freiraumplanung 2, Grün Stadt Zürich, Tiefbau- und Entsorgungsdepartement`
+- **Publisher** `Freiraumplanung 3, Grün Stadt Zürich, Tiefbau- und Entsorgungsdepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['allee', 'baum', 'geodaten', 'geoportal', 'liniendaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:18:08.420912`
-- **Metadata_modified** `2025-05-03T06:36:39.605317`
+- **Metadata_modified** `2025-05-10T06:36:27.077329`
 
 
 # Load packages
