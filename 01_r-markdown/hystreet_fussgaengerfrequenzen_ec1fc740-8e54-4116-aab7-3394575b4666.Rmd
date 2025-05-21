@@ -77,7 +77,7 @@ Auto generated R starter code for data set hystreet_fussgaengerfrequenzen.
 - **Keywords** `Freizeit,Mobilität,Umwelt`
 - **Tags** `['bahnhofstrasse', 'fussgaengerzaehlung', 'fussverkehr', 'langsamverkehr', 'messwerte', 'passanten', 'planung', 'punktdaten', 'sachdaten', 'standort', 'zaehlung']`
 - **Metadata_created** `2022-07-13T11:47:16.659635`
-- **Metadata_modified** `2025-05-21T10:36:44.333668`
+- **Metadata_modified** `2025-05-21T11:34:37.496439`
 
 
 # Load packages
