@@ -1,0 +1,79 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Aufenthaltsart der ausländischen Bevölkerung nach Nationalität und Geschlecht
+
+Diese Daten beschreiben die Aufenthaltsart der ausländischen wirtschaftlichen Wohnbevölkerung nach Nationalität, Region, Kontinent und Geschlecht.
+
+**Beschreibung «Aufenthaltsart»:**
+
+Die Aufenthaltsart wird vom Personemeldeamt abhängig von der Heimatzugehörigkeit zugeteilt. Sie ist ein notwendiges Kriterium bei der Wohnsitzbestimmung. Ausländische Staatsangehörige, die während ihres Aufenthaltes in der Schweiz arbeiten oder sich länger als drei Monate in der Schweiz aufhalten, benötigen eine Bewilligung. Diese wird von den kantonalen Migrationsämtern erteilt. Es wird hauptsächlich unterschieden zwischen Kurzaufenthalts- (bis 1,5 Jahre), Aufenthalts- (befristet) und Niederlassungsbewilligung (unbefristet) sowie Flüchtlingen und Asylsuchenden. Bei Schweizer Staatsangehörigen wird unterschieden nach Stadtbürgerinnen und Stadtbürgern sowie Niedergelassenen. Weiter gibt es den Wochenaufenthalt für schweizerische und ausländische Staatsangehörige.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_nationalitaet_aufenthaltsart_geschl_od3371)
+
+Auto generated R starter code for data set bev_bestand_jahr_nationalitaet_aufenthaltsart_geschl_od3371.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['aufenthaltsart', 'bevoelkerungsbestand', 'geschlecht', 'nationalitaet', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2019-09-16T11:56:24.856576`
+- **Metadata_modified** `2025-05-21T06:58:30.870408`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_nationalitaet_aufenthaltsart_geschl_od3371/download/BEV337OD3371.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,130 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Einsatzstatistik von Schutz und Rettung Zürich
+
+Jahresstatistiken von Schutz und Rettung Zürich bezüglich Anzahl Einsätzen vom Rettungsdienst, der Berufs- und Milizfeuerwehr und der Anzahl eingegangener Anrufe an eine Notrufnummer.
+
+**Sanitätseinsätze SRZ**
+
+- **Sanitätseinsätze SRZ**: 
+Einsätze von Rettungs- und Verlegungsdienst. Das Total der Sanitätseinsätze entspricht der Summe der Einsätze von Rettungs- und Verlegungsdienst.
+ 
+
+[]()
+
+**Verlegungsdienst**
+
+- **Verlegungstransporte**: 
+Seit dem 01.01.2017 gilt im Kanton Zürich die neue Verordnung über das Rettungswesen mit neuen Einsatzkategorien. Insbesondere gelten für Verlegungstransporte eigene Bestimmungen. Verlegungstransporte werden deshalb neu ab 2019 separat ausgewiesen. Eine nachträgliche Aufschlüsselung der Zahlen der Vorjahre nach diesem Raster ist nicht möglich. Die Gesamteinsatzzahlen der Sanität bleiben vergleichbar.
+ 
+
+[]()
+
+**Einsätze der Notärzt|*innen**
+
+- **Einsätze der Notärzt|*innen**:
+Ab 2019 werden die Einsätze der Notärzt|*innen nur als Teilmenge des Gesamttotals der Sanitätseinsätze ausgewiesen. Es ist möglich, dass Notärtz|*innen beim Rettungs- oder beim Verlegungsdienst im Einsatz waren.
+ 
+
+[]()
+
+**Vergleichbarkeit Sanitätseinsätze**
+
+- **Vergleichbarkeit Sanitätseinsätze**: 
+Bis und mit 2013: In dieser Zeit wurde die Anzahl der sogenannten K1-Einsätze (höchste medizinische Dringlichkeitsstufe) als Einsatz mit Notarzt ausgewiesen. 
+
+- 2014 bis 2018: Die effektive Anzahl Notarzteinsätze, unabhängig von der Einsatzkategorie, wird ausgewiesen. Die Zahlen ab 2014 bis 2018 sind deshalb nicht mit den Vorjahren vergleichbar. 
+
+- Seit 2019: Ab dann werden die Einsätze der Notärzt|*innen nur noch als Teilmenge am Gesamttotal der Sanitätseinsätze (Summe von Rettungsdienst und Verlegungsdienst) ausgewiesen. Die Zahlen ab 2019 sind deshalb nicht mit den Vorjahren vergleichbar.
+
+[]()
+
+**Vergleichbarkeit der Anzahl Anrufe an Notrufnummern ab 2016**
+
+- **Einsätze Rettungsdienst**: 
+Die **Anzahl der Anrufe an Notrufnummern** ab 2016 ist mit den Vorjahren nicht vergleichbar, da aufgrund neuer technischer Möglichkeiten eine optimierte Abfrage der Anrufstatistik durchgeführt wurde.
+
+- Weitere Informationen zu Einsatzstatistiken vergangener Jahre von «Schutz und Rettung Zürich» finden Sie im Medienmitteilungsarchiv.
+
+[]()
+
+**Einsatzkategorien:**
+
+
+Die Einsätze werden in folgende Kategorien unterteilt: 
+
+- **Kategorie A** = Vitale Gefährdung, 
+- **Kategorie B**= Vitale Gefährdung oder mögliche vitale Gefährdung, 
+- **Kategorie C**= Unklare Situation aufgrund eines akuten Ereignisses, 
+- **Kategorie D** = Verlegung von komplexen Patient|*innen (ärztlich definiert) ab stationärer Einrichtung (Spital, Geburtshaus) oder ambulantem OP-Zentrum; Fürsorgerische Unterbringung.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_srz_od1080_srz_einsatzstatistik_od1080)
+
+Auto generated R starter code for data set sid_srz_od1080_srz_einsatzstatistik_od1080.
+
+## Metadata
+
+- **Publisher** `Schutz und Rettung, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Ver­walt­ung`
+- **Tags** `['feuerwehr', 'gesundheit', 'rettungsdienste', 'sachdaten', 'sanitaet', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-12-01T11:17:28.676834`
+- **Metadata_modified** `2025-05-21T02:51:29.345521`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_srz_od1080_srz_einsatzstatistik_od1080/download/GES108OD1080.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

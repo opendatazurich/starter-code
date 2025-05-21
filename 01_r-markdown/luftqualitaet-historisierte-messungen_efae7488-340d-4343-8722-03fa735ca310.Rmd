@@ -1,0 +1,111 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Monatlich aktualisierte Luftqualitätsmessungen (Nachführung eingestellt)
+
+Diese Daten werden hier nicht mehr nachgeführt, da sie nun **neu strukturiert und täglich akualisiert** vorliegen unter:
+
+- [Täglich aktualisierte Luftqualitätsmessungen, seit 1983](https://data.stadt-zuerich.ch/dataset/ugz_luftschadstoffmessung_tageswerte)
+- [Täglich aktualisierte Meteodaten, seit 1992](https://data.stadt-zuerich.ch/dataset/ugz_meteodaten_tagesmittelwerte)
+
+Die hier vorliegenden Datasets umfassen berechnete Tageswerte der **Luftqualitätsmessungen von 1983 - 30.10.2020** an den Stationen: 
+
+- Zch_Stampfenbachstrasse, 
+- Zch_Schimmelstrasse, 
+- Zch_Heubeeribüel und 
+- Zch_Rosengartenstrasse.
+
+**Aktuellere Daten:**
+
+Die hier vorliegenden Datensätze werden nicht mehr nachgeführt. Die aktuelleren und neu strukturierten Daten zu Luftqualität und Meteorologie finden sie unter:
+
+- [Täglich aktualisierte Luftqualitätsmessungen, seit 1983](https://data.stadt-zuerich.ch/dataset/ugz_luftschadstoffmessung_tageswerte)
+- [Stündlich aktualisierte Luftqualitätsmessungen, seit 1983](https://data.stadt-zuerich.ch/dataset/ugz_luftschadstoffmessung_stundenwerte)
+
+-  [Täglich aktualisierte Meteodaten, seit 1992](https://data.stadt-zuerich.ch/dataset/ugz_meteodaten_tagesmittelwerte)
+- [Stündlich aktualisierte Meteodaten, seit 1992](https://data.stadt-zuerich.ch/dataset/ugz_meteodaten_stundenmittelwerte)
+
+**Info**
+
+* **Die Messwerte der Station Zch_Rosengartenstrasse** sind seit dem **1.1.2014** vorhanden.
+
+**Weitere Daten**
+
+* Die Daten stammen vom **Umwelt- und Gesundheitsschutz der Stadt Zürich** (UGZ) und werden in der Datenbank «**OSTLUFT**» gespeichert. Daraus können Sie auch selber Daten unter diesem [**Link**](https://www.ostluft.ch/index.php?id=datenabfragen) abfragen und exportieren.
+  * Aktuelle Luftqualitätsdaten für Zürich können sie [**hier**](https://www.stadt-zuerich.ch/de/gesundheit/gesundheitsschutz/luftqualitaet.html) einsehen.
+
+**App**
+
+**airCHeck: **Gratis verfügbar für iOS und Android:
+
+  * [Apple Store](https://itunes.apple.com/ch/app/aircheck/id577766644)
+  * [Google Play Store](https://play.google.com/store/apps/details?id=ch.ti.oasi.android.airquality)
+
+Mit airCHeck können Sie in der ganzen Schweiz und in Liechtenstein jederzeit die aktuelle Luftqualität abfragen. Karten und Messstationen geben darüber Aufschluss. Zusätzlich informiert Sie airCHeck über die gesundheitlichen Auswirkungen und macht Sie darauf aufmerksam, was Sie bei erhöhter Luftbelastung beachten sollten.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/luftqualitaet-historisierte-messungen)
+
+Auto generated R starter code for data set luftqualitaet-historisierte-messungen.
+
+## Metadata
+
+- **Publisher** `Fachbereich Labor, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Umwelt`
+- **Tags** `['co2', 'feinstaub', 'globalstrahlung', 'klima', 'kohlenmonoxid', 'luft', 'luftdruck', 'luftfeuchte', 'lufttemperatur', 'messwerte', 'niederschlag', 'ozon', 'regen', 'regendauer', 'sachdaten', 'schadstoffe', 'schwefeldioxid', 'stickstoffdioxid', 'tabellen', 'temperatur', 'twist2018', 'wetter', 'wind', 'windgeschwindigkeit', 'zeitreihe']`
+- **Metadata_created** `2019-07-30T14:50:05.348251`
+- **Metadata_modified** `2025-05-21T06:58:56.769022`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/luftqualitaet-historisierte-messungen/download/ugz_luftqualitaetsmessungen_1983-2011.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,113 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Fahrgastfrequenzen an der VBZ-Haltestelle Hardbrücke
+
+Diese Daten beinhalten die Personenfrequenzen verschiedener Zähllinien an der VBZ-Haltestelle Hardbrücke, an der die Linie 33, 72, 83 und die Linie 8 verkehren.
+Mit diesem Test-System lassen sich Veränderungen an diesem speziellen Ort erkennen, welche aber nicht mit dem übrigen Netz oder dem Vorjahr verglichen werden können, um allfällige Effekte zu identifizieren.
+
+**Wichtiger Hinweis**: 
+
+Bitte beachten Sie die Hinweise unter **«Bekannte Sensorausfälle»** ob bei einer Datenanalyse im Untersuchungszeitraum ein Sensorausfall stattgefunden hat.
+
+**Information zum Datensatz**
+
+Die Daten werden richtungsgetrennt ausgewiesen. 
+
+- 'Ost' bezeichnet die Haltestelle Hardbrücke mit Fahrtrichtung Schiffbau.
+- 'West' bezeichnet die Haltestelle Hardbrücke mit Fahrtrichtung Hardplatz. 
+
+Zudem werden die Frequenzen an vier verschiedenen Zähllinien erfasst. 
+
+- 'Süd' bezeichnet die Zähllinie im Süden der Haltestelle. Es werden alle Personen erfasst, die vom Hardplatz kommend die VBZ-Haltestelle betreten bzw. die Haltestelle in diese Richtung verlassen.
+- 'Nord' bezeichnet die Zähllinie im Norden der Haltestelle. Es werden alle Persoenen erfasst, die via Fussgängerrampe im Norden die VBZ-Haltestelle betreten/verlassen.
+- 'SBB', bezeichnet die Zähllinie mit Zugang zur S-Bahnstation Hardbrücke. Es werden alle Personen erfasst, die von der SBB kommend die VBZ-Haltestelle betreten bzw. die Haltestelle in diese Richtung verlassen.
+- 'VBZ', bezeichnet die Zähllinie mit den VBZ-Frequenzen. Es werden alle Persoenen erfasst, die von einem VBZ-Fahrzeug die VBZ-Haltestelle betreten bzw. die Haltestelle durch Einstieg in ein VBZ-Fahrzeug verlassen.
+
+**Störungen:**
+
+- Die absoluten Zählwerte auf dem Perron **Ost** sind von Januar 2023 bis und mit Juli 2023 fehlerbehaftet
+- Die absoluten Zählwerte auf dem Perron **West** sind von Dezember 2019 bis und mit Dezember 2023 fehlerbehaftet
+
+**Bekannte Sensorausfälle:**
+
+- **20.12.2023 - ca. 15.01.2024**: Wegen Unterhaltsarbeiten lieferte die Schnittstelle keine Zähldaten.
+
+- **01.08. - 13.08.2020**: Sensorausfall an der Hardbrücke (Ost-Seite) ausgefallen. Dies hat zur Folge, dass die Daten für die SBB-Zähllinie Ost (Attribut `Ost-SBB total`) in diesem Zeitraum fehlen.
+
+**Genereller Hinweis:** Das Zählsystem an der Hardbrücke ist erst seit Q4 2019 im Betrieb. Es kann generell zu einzelnen Datenlücken kommen. Die VBZ arbeitet laufend daran, bekannte Datenlücken wenn möglich zu minimieren. Die Daten können somit stets überschrieben werden.
+
+**Situation:**
+
+Westkante:
+![Situationsplan Westkante](https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/statistik-und-daten/open-government-data/bilder_nwa/datenkatalog/vbz/vbz_Situation_Westkante.PNG)
+
+Ostkante:
+![Situationsplan/Ostkante](https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/statistik-und-daten/open-government-data/bilder_nwa/datenkatalog/vbz/vbz_Situation_Ostkante.PNG)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/vbz_frequenzen_hardbruecke)
+
+Auto generated R starter code for data set vbz_frequenzen_hardbruecke.
+
+## Metadata
+
+- **Publisher** `Verkehrsbetriebe Zürich, Departement der Industriellen Betriebe`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Mobilität`
+- **Tags** `['bus', 'fahrgastzahlen', 'frequenzen', 'hardbücke', 'passagiere', 'pendler', 'sachdaten', 'tabelle', 'tram', 'vbz', 'öffentlicher verkehr', 'öv']`
+- **Metadata_created** `2020-03-27T14:23:46.471679`
+- **Metadata_modified** `2025-05-21T11:04:33.481212`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/vbz_frequenzen_hardbruecke/download/frequenzen_hardbruecke_2025.parquet"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,87 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Mittlere Wohnbevölkerung
+
+
+Mittlere Wohnbevölkerung pro Jahr.
+
+
+**Berechnung, Definition**
+
+ -Die mittlere Wohnbevölkerung eines Jahres wird folgendermassen berechnet: Das Mittel aus Anfangs- und Endbestand eines Monats ergibt die mittlere Wohnbevölkerung dieses Monats. Der Durchschnitt der zwölf Monatsmittel ergibt die mittlere Wohnbevölkerung pro Jahr.
+
+[]()
+
+**Zeitlicher und inhalticher Bezug**
+
+ - Bei der mittleren Wohnbevölkerung ist bloss der zeitliche Bezug anders als sonst bei Statistik Stadt Zürich: es geht nicht um die Bevölkerung am Jahresende, sondern um die im Mittel vorhandene Anzahl Personen über das gesamte Jahr betrachtet. Der inhaltliche Bezug ist unverändert: Statistik Stadt Zürich weist grundsätzlich die wirtschaftliche Wohnbevölkerung aus.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_mittlerewbev_od3224)
+
+Auto generated R starter code for data set bev_bestand_jahr_mittlerewbev_od3224.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['bevoelkerungsbestand', 'jahresmittel', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2021-03-17T18:09:40.013234`
+- **Metadata_modified** `2025-05-21T07:04:32.170346`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_mittlerewbev_od3224/download/BEV322OD3224.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,109 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Anzahl Wohnungen durch Neubau und Abbruch nach Zimmerzahl
+
+Der Datensatz enthält die Anzahl Wohnungen durch Neubau und Abbruch nach Zimmerzahl.
+
+**Hinweis**
+
+
+Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+
+[]()
+
+**StichtagDatJahr**
+
+
+Jahr entspricht der ganzen Jahresperiode.
+
+
+[]()
+
+**1-Zimmer-Wohnungen:**
+
+Bis 1992 wurden Apartments als Einzelzimmer (separate Wohnräume) gezählt. Ab 1993 gelten sie als 1-Zimmer-Wohnungen, wenn sie eine Küche oder Kochnische enthalten (Wohnungsdefinition gemäss Bundesamt für Statistik).
+
+[]()
+
+**Zeitreihe:**
+
+Die Anzahl Gebäude durch Abbruch sind erst ab 1931 verfügbar.
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_whg_zizahl_jahr_od5065)
+
+Auto generated R starter code for data set bau_neubau_abbruch_whg_zizahl_jahr_od5065.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['abbruch', 'bautaetigkeit', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'wohnung', 'zeitreihe', 'zimmerzahl']`
+- **Metadata_created** `2023-02-15T06:28:39.393925`
+- **Metadata_modified** `2025-05-21T06:58:46.645446`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_whg_zizahl_jahr_od5065/download/BAU506OD5065.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

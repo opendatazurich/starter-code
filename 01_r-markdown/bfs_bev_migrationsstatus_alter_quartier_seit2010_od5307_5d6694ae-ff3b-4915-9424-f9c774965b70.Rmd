@@ -1,0 +1,148 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Migrationsstatus der Wohnbevölkerung
+
+Diese Daten beschreiben den Migrationsstatus der Wohnbevölkerung der Stadt Zürich nach Alter und Stadtquartier. Sie basieren nicht auf dem Bevölkerungsregister der Stadt Zürich, sondern aus den Zielpersonendaten der Strukturerhebung des Bundesamtes für Statistik.
+
+In der Rubrik Bemerkungen finden Sie weitere Angaben, die bei der Datenauswertung beachtet werden müssen, weil es sich um Stichprobedaten handelt.
+
+
+**Datenquelle:**
+
+Die Auswertung basiert auf den Zielpersonendaten der Strukturerhebung des Bundesamtes für Statistik. Dort sind nur Daten zu den 15-Jährigen und Älteren vorhanden
+
+[]()
+
+**Stichprobe:**
+
+Weil die Auswertungen auf Stichprobendaten beruhen, werden die Ergebnisse gerundet und Konfidenzintervalle angegeben..
+
+[]()
+
+**95 % Konfidenzintervalle:**
+
+Die Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. Das 95 % Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.
+
+[]()
+
+**Pooling:**
+
+Stichprobendaten einzelner Jahre werden zu einem Datensatz vereinigt (englisch: pooled). Dadurch erhöht sich die Stichprobengrösse; als Bezugsperiode gilt jedoch nicht mehr das einzelne Jahr, sondern der gesamte Zeitraum der zusammengefassten Daten. Hier wurden bei der Auswertung nach Quartier Pooling-Daten verwendet (Pooling über fünf Jahre). Die Pooling-Zeitperiode wird mit einem Vorwärts-Schrägstrich gekennzeichnet.
+
+[]()
+
+**Migrationshintergrund:**
+
+Definition des Bundesamtes für Statistik: Zur «Bevölkerung mit Migrationshintergrund» gehören Personen ausländischer Staatsangehörigkeit und eingebürgerte Schweizer*innen – mit Ausnahme der in der Schweiz Geborenen mit Eltern, die beide in der Schweiz geboren wurden – sowie die gebürtigen Schweizerinnen und Schweizer mit Eltern, die beide im Ausland geboren wurden.
+
+[]()
+
+**Erste und zweite Generation:**
+
+Das Bundesamt für Statistik (BFS) unterscheidet bei Personen mit Migrationshintergrund nach erster und zweiter Generation. Gemäss BFS-Definition wurden diejenigen der ersten Generation im Ausland, die der zweiten Generation in der Schweiz geboren.
+
+[]()
+
+**Filtervariablen:**
+
+Als Filtervariablen werden Thema (oder ThemaNr) sowie Auswertung (oder AuswertungNr) verwendet.
+
+[]()
+
+**Auswertungsbeispiel 1: Migrationshintergrund**
+
+Fragestellung: Wieviele Personen in der Stadt Zürich haben Migrationshintergrund? Filter: ThemaNr=1 und AuswertungNr=1 und HerkunftNr=0.
+
+[]()
+
+**Auswertungsbeispiel 2: Im Ausland geboren**
+
+Fragestellung: Wieviele Prozent wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=1 und HerkunftNr=0.
+
+[]()
+
+**Auswertungsbeispiel 3: Im Ausland geboren, nach Alter**
+
+Fragestellung: Wieviel Prozent der 0- bis 19-Jährigen wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=2 und HerkunftNr=0 und AlterNr=1.
+
+[]()
+
+**Auswertungsbeispiel 4: Im Ausland geboren, nach Quartier (Pooling über die letzten 5 Jahre)**
+
+Fragestellung: Wieviel Prozent der Wohnbevölkerung von Oerlikon wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=3 und HerkunftNr=0 und QuartierNr=115.
+
+[]()
+
+**Auswertungsbeispiel 5: Im Ausland geborene Schweizer*innen, nach Quartier (Pooling über die letzten 5 Jahre)**
+
+Fragestellung: Wieviel Prozent der Schweizer*innen in Oerlikon wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=3 und HerkunftNr=1 und QuartierNr=115.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bfs_bev_migrationsstatus_alter_quartier_seit2010_od5307)
+
+Auto generated R starter code for data set bfs_bev_migrationsstatus_alter_quartier_seit2010_od5307.
+
+## Metadata
+
+- **Publisher** `Bundesamt für Statistik (BFS)`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['bevoelkerungsbestand', 'migrationsstatus', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2020-03-17T20:55:23.962948`
+- **Metadata_modified** `2025-05-21T07:04:34.370301`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bfs_bev_migrationsstatus_alter_quartier_seit2010_od5307/download/BEV530OD5307.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

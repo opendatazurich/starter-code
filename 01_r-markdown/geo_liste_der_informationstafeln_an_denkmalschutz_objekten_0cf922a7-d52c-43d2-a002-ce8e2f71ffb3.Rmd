@@ -1,0 +1,197 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Liste der Informationstafeln an Denkmalschutz-Objekten
+
+Der Datensatz enthält die Adressen, textlichen Beschreibungen und die Standorte der blauen Informationstafeln an kunst- und kulturhistorischen Schutzobjekten in der Stadt Zürich.
+Die Tafeln können an Gebäuden, Gebäudeteilen, Brunnen, Brücken usw. angebracht sein. Voraussetzung für das Anbringen einer blauen Tafel ist in der Regel die formelle Unterschutzstellung des Objekts.
+
+Die Denkmalschutz-Tafeln beziehen sich auf ein oder mehrere kunst- und kulturhistorischen Schutzobjekte und sind teilweise auch an Nicht-Inventar-Objekten angebracht. Manchmal sind auch mehrere Tafeln an einem Objekt montiert. Es besteht daher keine 1:1 Beziehung zum Datensatz des Denkmalinventars. Auch die Georeferenzierung erfolgte unabhängig und nach unterschiedlichen Gesichtspunkten. Der Standort der Tafeln wurde nur in einzelnen Fällen präzise erfasst, oft wurde eine von mehreren Adressen des beschriebenen Objekts verwendet.
+Eine spätere logische Zusammenführung mit dem Denkmalinventar ist denkbar.  
+
+**Zweck**: Veröffentlichung einer Gesamtübersicht zu den bestehenden Denkmalschutztafeln in der Stadt Zürich.
+Arbeitsinstrument im Bereich Archäologie &amp; Denkmalpflege des Amts für Städtebau (AfS).
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Liste der Informationstafeln an Denkmalschutz-Objekten»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/79c64441-32d5-432f-b284-a66f4cea972a).				
+			   
+
+**Informationen zum Datensatz:**
+
+Die dunkelblau emaillierten quadratischen Tafeln wurden zur Auszeichnung von denkmalgeschützten Bauten 1975 anlässlich des Europäischen Jahrs für Denkmalpflege und Heimatschutz vom damaligen 'Büro für Denkmalpflege' der Stadt Zürich eingeführt. Zur Zeit der Erstveröffentlichung im März 2021 sind 655 Tafeln vorhanden, wobei nicht ganz alle zu diesem Zeitpunkt auch montiert sind.
+Obschon die Liste regelmässig nachgeführt wird, kann nicht ausgeschlossen werden, dass in Einzelfällen Abweichungen bezüglich Inhalt und Umfang von den tatsächlich montierten Tafeln bestehen.
+Hinweis: Die Online-Veröffentlichung der Liste der mit blauen Tafeln versehenen kunst- und kulturhistorischen Schutzobjekte der Stadt Zürich hat nicht die rechtlichen Folgen wie eine Inventareröffnung nach § 209 PBG. Insbesondere werden keinerlei Fristen und keine entsprechenden Rechtsfolgen oder irgendwelche Handlungspflichten der Gemeinde ausgelöst. Die Liste hat rein informativen Charakter im Sinne einer Öffentlichkeitsarbeit. 
+
+**Datenerfassung:**
+
+Die Liste der blauen Tafeln wird im Amt für Städtebau (AfS) vom Fachbereich Inventarisation Denkmalpflege geführt. Änderungen ergeben sich, wenn zusätzliche Tafeln erstellt und am Objekt montiert werden.
+
+**Datengrundlage:**
+
+Grundlage sind die beschreibenden Informationstexte mit Adresse und Georeferenzierung, die für eine Auswahl von kunst- und kulturhistorischen Schutzobjekten in der Stadt Zürich erstellt und in Form von blauen Tafeln durch die Stadt Zürich an den Objekten angebracht wurden. 
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/79c64441-32d5-432f-b284-a66f4cea972a.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_liste_der_informationstafeln_an_denkmalschutz_objekten)
+
+Auto generated R starter code for data set geo_liste_der_informationstafeln_an_denkmalschutz_objekten.
+
+## Metadata
+
+- **Publisher** `Archäologie & Denkmalpflege, Amt für Städtebau, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen,Bevölk­erung`
+- **Tags** `['denkmalpflege', 'denkmalschutz', 'geodaten', 'geoportal', 'geschutzte-bauten', 'heimatschutz', 'inventar', 'punktdaten', 'schutzobjekte', 'stzh']`
+- **Metadata_created** `2023-11-06T03:08:42.471363`
+- **Metadata_modified** `2025-02-05T04:32:24.000497`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Liste_der_Informationstafeln_an_Denkmalschutz_Objekten?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

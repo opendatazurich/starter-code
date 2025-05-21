@@ -1,0 +1,162 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Haushalte in Neubauwohnungen nach Bauperiode, Zimmerzahl, Eigentumsart, Haushalttyp und Quartier
+
+
+Der Datensatz zeigt auf, wie dicht die Neubauwohnungen der letzten 15 Jahre bewohnt werden. Er unterscheidet dabei nach Art der Haushalte sowie nach Eigentumsart der Gebäude, nach Wohnungsgrösse und nach Stadtquartier.
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Allgemein:**
+
+Vorliegender Datensatz dient der Untersuchung der Zusammensetzung der Wohnungsgrössen und der Haushaltszusammensetzung im Neubaubereich. Er wurde erstmals im Zusammenhang mit dem Webartikel «[Kleinere Wohnungen für grössere Haushalte](https://www.stadt-zuerich.ch/artikel/de/statistik-und-daten/2021-04-15_kleinere-wohnungen-fuer-groessere-haushalte.html)» vom 15.04.2021 publiziert. Der Datensatz enthält die Werte für die letzten drei Fünfjahresperioden der Wohnbautätigkeit in der Stadt Zürich. Er wird jährlich aktualisiert.
+ 
+
+[]()
+
+**Haushalt**
+
+Zu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung leben. Dazu wird für Personen der wirtschaftliche Wohnsitzbegriff verwendet. Kollektivhaushalte (Heime, Spitäler, Institutionen des Strafvollzugs, Gemeinschaftsunterkünfte für Asylsuchende u.ä.) werden berücksichtigt.
+
+
+
+[]()
+
+**Haushalttypen**
+
+Zu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung leben. Dabei wird für Personen der wirtschaftliche Wohnsitzbegriff verwendet. Im Datensatz werden die Haushalte aufgrund der Personenzahl und des Alters klassiert. Haushalte im Rentenalter umfassen mindestens eine Person von 65 und mehr Jahren. Haushalte mit Kindern umfassen mindestens eine Person unter 18 Jahren.
+Folgende Haushaltstypen werden unterschieden: 1=Eine Person im Erwerbsalter, 2=Zwei Personen im Erwerbsalter, 3=Eine Person im Rentenalter, 4=Zwei Personen, davon mindestens eine im Rentenalter, 5=Zwei Erwachsene mit einem Kind, 6=Zwei Erwachsene mit zwei Kindern, 7=Zwei Erwachsene mit mehr als drei Kindern, 8=Ein Erwachsener mit Kind, 9=Andere Haushalte (ab drei Erwachsenen) 
+
+
+
+[]()
+
+**Zahl der Haushalte und 
+Zahl der Wohnungen**
+
+Die Gesamtzahl der ausgewiesenen Haushalte ist ungefähr 10 Prozent kleiner als die Gesamtzahl aller Neubauwohnungen. Bei einigen Wohnungen ist die Haushaltszusammensetzung nicht bekannt, entweder weil die Wohnung nicht ständig bewohnt ist (Zweitwohnungen und Apartments) oder aber weil die Einzugsmeldung verspätet oder die Wohnungszuordnung der Bewohnerschaft im Wohnungsregister verzögert erfolgt. 
+
+
+
+[]()
+
+**Bauperiode**
+
+Der Datensatz zeigt die drei letzten Fünfjahres-Bauperioden. Die Haushaltszusammensetzung ist für jede Bauperiode eine Momentaufnahme am Ende der Bauperiode. Beispielsweise bezieht sich die Bewohnerzusammensetzung für die Bauperiode 2019 – 2023 auf das Jahresende 2023. Auch für Wohnungen aus dem Jahre 2019 bis 2022 ist die Bewohnerschaft Ende 2023 massgebend. Für die Bauperiode 2014 – 2018 ist entsprechend die Bewohnerzusammensetzung Ende 2018 massgebend. Auf diese Art sind die drei verschiedenen Bauperioden inhaltlich vergleichbar.
+
+
+
+[]()
+
+**Erste Bauperiode abgeleitet aus Daten 2014**
+
+Die Bewohnerschaft in Gebäuden der ersten Bauperiode (=die dritte resp. älteste Fünfjahresperiode der Neubautätigkeit, d.h. 11-15-jährige Gebäude) wird bis und mit dem Auswertungsjahr 2023 aus den Daten von Ende 2014 abgeleitet, weil die ersten verwendbaren Registerdaten aus dem Jahr 2014 stammen. Die 11-15-jährigen Gebäude werden zunächst aufgrund des Baujahrs ermittelt (z.B. für Auswertung per Ende 2022: Baujahre 2008-2012). Die Angaben zur Bewohnerschaft stammen aber erst vom Ende des Jahres 2014 in diesen Bauten. Das heisst, es wird angenommen, dass Ende 2014 noch die gleichen Haushalte in den Gebäuden wohnten wie im letzten Jahr der entsprechenden Fünfjahresperiode (hier: Ende 2012). Ab 2024 wird die dritte Bauperiode nicht mehr aus späteren Daten abgeleitet, sondern analog wie die beiden jüngeren Bauperioden (Bewohnerschaft am Ende des letzten Jahres der Bauperiode).
+
+
+
+[]()
+
+**Eigentumsart**
+
+
+- Öffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum
+- Wohnbaugenossenschaften: Nur Wohnbaugenossenschaften
+- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
+- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
+- Im Stochwerkeigentum: Stockwerkeigentumsgesellschaften
+
+
+[]()
+
+**Wohnungsfläche**
+
+ Als Wohnungsfläche (früher und im Zusammenhang mit dem Flächenkonsum pro Person auch als «Wohnfläche» bezeichnet) gilt die Fläche sämtlicher Räume einer Wohnung hinter der Wohnungstüre, abzüglich Wandquerschnitten. Dazu gehören Wohn- und Schlafzimmer, Küche, Kochnische, Badezimmer, Toiletten, Abstellräume und Gänge. Ausser Betracht fallen bei der Berechnung zusätzliche Wohnräume ausserhalb der Wohnung (z.B. der Wohnung zugeordnete Einzelzimmer), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume. Wo keine genauen Flächen ermittelt werden können, sind Schätzwerte (Länge × Breite) erfasst.
+
+
+
+[]()
+
+**Hinweis**
+
+Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_whg_hh_whnfl_bp_zizahl_eart_hhtyp_quart_od6991)
+
+Auto generated R starter code for data set bau_neubau_whg_hh_whnfl_bp_zizahl_eart_hhtyp_quart_od6991.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['eigentum', 'familien', 'haushalte', 'haushaltgroesse', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'wohnflaechenkonsum', 'wohnungsflaeche', 'wohnverhaeltnisse', 'zeitreihe', 'zimmerzahl']`
+- **Metadata_created** `2021-04-12T18:46:34.294363`
+- **Metadata_modified** `2025-05-21T06:59:12.945769`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_whg_hh_whnfl_bp_zizahl_eart_hhtyp_quart_od6991/download/BAU699OD6991.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

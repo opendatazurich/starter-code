@@ -1,0 +1,118 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Täglich aktualisierte Luftqualitätsmessungen, seit 1983
+
+
+Dieses Dataset umfasst **Tageswerte** **seit 1983 bis zum aktuellen Vortag**, aufgeteilt in Jahresdateien. Darin enthalten sind das maximale Stundenmittel und die Anzahl Überschreitungen des Stundenmittelgrenzwertes für Ozon und die Tagesmittel für Schwefeldioxid (SO2), Kohlenmonoxid (CO), Stickoxid (NOx), Stickstoffmonoxid (NO), Stickstoffdioxid (NO2), Feinstaub (PM10 und PM2.5) und Partikelanzahl (PN), sofern jeweils in genügender Qualität vorhanden.
+
+Die Werte des vollendeten Tages für das laufende Jahr werden jeweils 30 Minuten nach Mitternacht (UTC+1) aktualisiert.
+
+
+**Metadaten**
+
+
+In den **Metadaten** (Datei: uzg_ogd_metadaten.json) finden sich alle wichtigen Informationen zu:
+
+- den Messstationen (Koordinaten, ID, Namen, Adresse, etc.)
+- den Messparametern (was wird gemessen, Erläuterungen zu den Schadstoffen, etc.)
+- die in der [Luftreinhalte-Verordnung](https://www.admin.ch/opc/de/classified-compilation/19850321/index.html) (LRV) definierten [Immissionsgrenzwerte](https://www.admin.ch/opc/de/classified-compilation/19850321/index.html#app7ahref0).
+
+
+[]()
+
+**Zeitangaben:**
+
+
+Alle Daten werden in **Winterzeit (UTC+1)** angegeben. Die Zeitangabe der Mittelungsperiode entspricht der Startzeit.
+
+
+
+[]()
+
+**Weitere Daten**
+
+* Die Daten stammen vom **Umwelt- und Gesundheitsschutz der Stadt Zürich** (UGZ) und werden in der Datenbank «**OSTLUFT**» gespeichert. Daraus können auch  Daten unter folgendem [**Link**](https://www.ostluft.ch/index.php?id=datenabfragen) abgefragt und exportiert werden.
+  * Luftqualitätsdaten für Zürich finden Sie auch [**hier**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/umwelt-und-energie/klima.html).
+
+
+[]()
+
+**App**
+
+**airCHeck: **Gratis verfügbar für iOS und Android:
+
+  * [Apple Store](https://itunes.apple.com/ch/app/aircheck/id577766644)
+  * [Google Play Store](https://play.google.com/store/apps/details?id=ch.ti.oasi.android.airquality)
+
+Mit airCHeck kann in der ganzen Schweiz und in Liechtenstein jederzeit die aktuelle Luftqualität abgefragt werden. Karten und Messstationen geben darüber Aufschluss. Zusätzlich informiert airCHeck über die gesundheitlichen Auswirkungen und macht darauf aufmerksam, was bei erhöhter Luftbelastung beachtet werden sollte.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ugz_luftschadstoffmessung_tageswerte)
+
+Auto generated R starter code for data set ugz_luftschadstoffmessung_tageswerte.
+
+## Metadata
+
+- **Publisher** `Messung Luftqualität, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Umwelt`
+- **Tags** `['co', 'echtzeit', 'feinstaub', 'kohlenmonoxid', 'luft', 'luftqualitat', 'luftschadstoffe', 'messwerte', 'no', 'no2', 'nox', 'o3', 'ozon', 'partikelanzahl', 'pm10', 'pm25', 'pn', 'sachdaten', 'schadstoffe', 'schwefeldioxid', 'so2', 'stickoxide', 'stickstoffdioxid', 'stickstoffmonoxid', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-11-27T11:07:55.128453`
+- **Metadata_modified** `2025-05-21T10:37:03.136183`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/ugz_luftschadstoffmessung_tageswerte/download/ugz_ogd_air_d1_1986.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

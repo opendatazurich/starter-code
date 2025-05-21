@@ -1,0 +1,116 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Wohnungsbestand nach Art des Energieträgers, Bauperiode und Statistischer Zone
+
+
+Diese Daten umfassen den Wohnungsbestand der Stadt Zürich nach Art des Energieträgers. 
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+
+**Stand und Nachführung:**
+
+ Die primären Energieträger der Wohnungen wurden letztmals in der Volkszählung 2000 vollständig erhoben. Im Zeitraum 2000-2017 wurden die Energieträger unvollständig aktualisiert. Im Jahr 2017 erfolgte durch Statistik Stadt Zürich eine umfassende Aktualisierung durch Abgleich mit Drittquellen (Feuerungskontrolle, Fernwärmeanschlüsse, Erdsondenbohrungen). Die Daten werden jährlich aktualsiert durch Baugesuchsangaben zu Neu- und Umbauten sowie durch Aktualisierungsmeldungen der Feuerungskontrolle. Aus diesen Gründen werden die Daten erst ab 2017 veröffentlicht.
+ 
+
+[]()
+
+**Weitere Informationen:**
+
+ Siehe den Webartikel von Statistik Stadt Zürich aus dem Jahr 2017: [Erneuerbare Energien auf dem Vormarsch](https://www.stadt-zuerich.ch/artikel/de/statistik-und-daten/2017-08-21_erneuerbare-energien-auf-dem-vormarsch.html).
+ 
+
+[]()
+
+**Wichtiger Hinweis:**
+
+ Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+ 
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_best_whg_energietraegerart_statzone_seit2017_od5331)
+
+Auto generated R starter code for data set bau_best_whg_energietraegerart_statzone_seit2017_od5331.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauperiode', 'energietraeger', 'sachdaten', 'sasa', 'tabelle', 'wohnung', 'zeitreihe']`
+- **Metadata_created** `2021-02-05T19:47:27.451375`
+- **Metadata_modified** `2025-05-21T07:05:15.803721`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_best_whg_energietraegerart_statzone_seit2017_od5331/download/BAU533OD5331.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,119 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Anzahl Wohnungen nach Zimmerzahl in Bestand
+
+Der Datensatz enthält die Anzahl Wohnungen in Bestand nach Zimmerzahl.
+
+**Hinweis:**
+
+
+Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+
+[]()
+
+**Jahr:**
+
+
+Jahr entspricht dem Stichtag am Jahresende.
+
+
+[]()
+
+**1-Zimmer-Wohnungen:**
+
+
+Bis 1992 wurden Apartments als Einzelzimmer (separate Wohnräume) gezählt. Ab 1993 gelten sie als 1-Zimmer-Wohnungen, wenn sie eine Küche oder Kochnische enthalten (Wohnungsdefinition gemäss Bundesamt für Statistik).
+
+
+[]()
+
+**Zeitreihe:**
+
+Die Anzahl Gebäude für den Bestand und die Abbrüche sind erst ab 1934 verfügbar.
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_best_whg_zizahl_jahr_od5062)
+
+Auto generated R starter code for data set bau_best_whg_zizahl_jahr_od5062.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['sachdaten', 'sasa', 'tabelle', 'wohnen', 'wohnung', 'zeitreihe', 'zimmerzahl']`
+- **Metadata_created** `2022-10-28T18:53:38.889125`
+- **Metadata_modified** `2025-05-21T07:05:43.643522`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_best_whg_zizahl_jahr_od5062/download/BAU506OD5062.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

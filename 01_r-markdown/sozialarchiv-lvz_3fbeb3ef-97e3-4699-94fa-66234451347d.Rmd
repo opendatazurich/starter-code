@@ -1,0 +1,101 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Bildarchiv des Lebensmittelverein Zürich (LVZ)
+
+Das Bildarchiv der LVZ ist einer der reichhaltigsten Bildbestände des Sozialarchivs. Es umfasst über 1'600 Fotos, Negative, Dias, Glasdias und Objekte zur Geschichte des Lebensmittelverbands Zürich. Es deckt den Zeitraum von den 1870er bis 1990er Jahre ab. 
+
+Der LVZ (**ab 1970: Coop**) hat die Welt des Konsums entscheidend mitgeprägt und sorgte nach dem Zweiten Weltkrieg mit einem weitverzweigten Filialnetz für ein permanentes Warenangebot. 
+
+Das Bildarchiv des LVZ geht erfreulicherweise weit über die naheliegende und zu erwartende Präsentation von Waren zu reinen Werbezwecken hinaus. 
+Schon in den 1910er Jahren setzte der LVZ auf Eigenproduktionen und belieferte seine Kundschaft mit Brot, Fleisch und Kaffee aus eigenen Betrieben. Die genossenschaftlich organisierte Grossproduktion sorgte für attraktive Preise. 
+
+In den grossen Lagerhäusern an der Turbinenstrasse wurde Brennholz, Öl und Kohle umgeschlagen. Dank direktem Gleisanschluss konnte der LVZ auch grosse Mengen kostengünstig verschieben. 1914 eröffnete der LVZ mit dem St. Annahof ein riesiges Kaufhaus an bester Lage an der Zürcher Bahnhofstrasse. Die dort gepflegte traditionelle Art des Präsentierens und Verkaufens erlebte nach dem Zweiten Weltkrieg eine radikale Veränderung. Die Selbstbedienung setzte sich durch.
+
+**Weitere Links**
+
+- Webseite des [**Schweizerischen Sozialarchivs**](https://www.sozialarchiv.ch/)
+- Link zur [**Datenbank Bild und Ton**](http://www.bild-video-ton.ch/bestand/signatur/F_5033), mit  Metadaten zu den hier verfügbaren Fotos.
+
+**Beispielfotos**
+
+ 
+![LVZ-Bus](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/lvz/lvz_bus_70ies.jpg)
+
+![Kohle Werbung](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/lvz/KohleWerbung.jpg)
+
+![Äpfel auf dem Weg zur LVZ](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/lvz/Apfel.jpg)
+
+![Karte Verkaufsstandorte](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/lvz/map_lvz.jpg)
+
+![Läbes Plakat](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/lvz/laebes_plakat.jpg)
+
+![Preisliste](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/lvz/preisliste_1901.jpg)
+
+![Küche](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/lvz/Kueche_StAnnahof.jpg)
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sozialarchiv-lvz)
+
+Auto generated R starter code for data set sozialarchiv-lvz.
+
+## Metadata
+
+- **Publisher** `Schweizerisches Sozialarchiv`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie,Kultur,Soziales`
+- **Tags** `['ZACK', 'archivdaten', 'coop', 'fotos', 'glam', 'historische fotos', 'lebensmittel', 'openglam', 'warenhaus']`
+- **Metadata_created** `2017-05-19T14:31:54.690001`
+- **Metadata_modified** `2024-06-05T11:30:45.948084`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sozialarchiv-lvz/download/Metadaten_Bildarchiv_des_Lebensmittelverein_Zuerich_LVZ.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

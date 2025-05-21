@@ -1,0 +1,92 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Bevölkerung nach Monat, Stadtquartier, Geschlecht, Altersgruppe und Herkunft
+
+
+Anzahl wirtschaftliche Bevölkerung nach Monat, Altersgruppe, Geschlecht, Herkunft, Stadtkreis und Stadtquartier.
+
+Bei den Daten des aktuellsten Jahres handelt es sich um **provisorische** Daten. Diese können laufend korrigiert werden. Erst mit dem Jahresabschluss werden die Daten definitiv.
+ 
+
+
+**Datenstand**
+
+- **Aktuellster Monat**: Der aktuellste Monat in den Daten entspricht dem aktuellen Monat - 2 Monate.
+
+- **Datenqualität**: Die Daten des aktuellsten Jahres sind jeweils provisorisch und werden laufend korrigiert.
+
+- **Variable Datenstand**: Die Variablen DatenstandCd und DatenstandLang beschreiben den Datenstand. Provisorische Daten werden laufend korrigiert.
+
+- **Hintergrund-Information**: Die Daten der letzten zwei Kalenderjahre (Januar bis Dezember) basieren auf den gespeicherten Datenbeständen des Bevölkerungsregisters. Die vorangehenden Monatsdaten wurden aufgrund der Bewegungen (Geburten, Todesfälle, Zuzüge von auswärts, Wegzüge nach auswärts, Umzüge innerhalb der Stadt, Einbürgerungen) berechnet.
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_monat_bestand_quartier_geschl_ag_herkunft_od3250)
+
+Auto generated R starter code for data set bev_monat_bestand_quartier_geschl_ag_herkunft_od3250.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'bevoelkerungsbestand', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2020-05-11T18:46:46.410748`
+- **Metadata_modified** `2025-05-21T07:12:36.269348`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_monat_bestand_quartier_geschl_ag_herkunft_od3250/download/BEV325OD3250.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

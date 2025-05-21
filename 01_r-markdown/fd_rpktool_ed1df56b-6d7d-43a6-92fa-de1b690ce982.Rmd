@@ -1,0 +1,143 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Finanzdaten der Stadt Zürich
+
+Die Stadt Zürich mit allen Departementen und Institutionen publiziert für die Geschäfte Budget, Nachtragskredite (I und II), sowie die [Rechnung sämtlicher Konten auf Konzernstufe](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/finanzen/rechnung.html). Diese Daten sind über ein API ab dem Zeitpunkt der Publikation der Zahlen online verfügbar. Dafür benötigen Sie einen **API-Key**, welcher unter «Bemerkungen» aufgeführt ist.
+
+Es sind Daten ab 2012 über das API verfügbar: In den Jahren 2012 – 2018 wurde die Rechnungslegung gemäss HRM1 geführt. Ab dem Jahr 2019 gilt der HRM2-Kontenrahmen. Dadurch ist eine Vergleichbarkeit der Konten zwischen 2018 und 2019 nicht mehr gegeben. Mehr Informationen zu den Anpassungen finden Sie in der Ressource 'Änderungen neue Rechnungslegung.pdf'.
+
+
+**Weiterführende Informationen**
+
+Weitere Angaben zu den rechtlichen Grundlagen finden Sie auf der [**Website des kantonalen Gemeindeamts**](https://gaz.zh.ch/internet/justiz_inneres/gaz/de/gemeindefinanzen.html) . Das neue Gemeindegesetz und die neue Gemeindeverordnung sind [**in der kantonalen Loseblattsammlung**](https://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/loseblatt-_und_offiziellesammlung.html?view=list&URL=http://www2.zhlex.zh.ch/appl/zhlex_r.nsf/V?Open%26vn%3dxmlsammlungnachordnungsnr%26l%3d3%26key%3d131.1gemeindegesetz%28gg%29) verfügbar.
+
+
+[]()
+
+**Anmerkungen**
+
+In den Jahren 2012 – 2018 wurden Institutionen mit Globalbudget nicht über die API veröffentlicht. Jedoch wurden die Beträge in diesen Jahren bis auf die 4-stellige Kontonummer ausgewiesen (siehe Abfrage betragsreihe).
+Ab 2019 werden auch Institutionen mit Globalbudget im API angeboten.
+Um eine Vergleichbarkeit aller städtischen Institutionen zu ermöglichen werden die Kontonummern nur noch 1- und 2-stellig angeboten (siehe Abfrage  sachkonto1stellig bzw. sachkonto2stellig).
+Eine Beschreibung der 1- und 2stelligen Sachkonten befindet sich in der Ressource 'sachkonto_codes.csv'.
+Vergleiche über Zeit und Institutionen sind somit erst ab den Daten von 2019 möglich.
+Mehr Informationen zur Rechnungslegung sowie die Liste mit den Organisationseinheiten mit Produktegruppen-Globalbudgets finden Sie in der Ressource 'Rechnungslegung und Berichterstattung.pdf'.
+
+Der städtische Budget- und Rechnungsprozess durchläuft eine Reihe von Phasen: Vom Antrag an den Stadtrat, über Nachträge im sogenannten Novemberbrief über das vom Gemeinderat beschlossene Budget sowie zwei Serien mit Nachtragskrediten. Diese Phasen sind im API als Betragstypen abgebildet.
+
+![Budgetprozess](<https://opendatazurich.github.io/rpk-api/budgetprozess.png>)
+
+Beispielabfragen können Sie der Ressource 'finanzdaten_api_swagger.yaml' entnehmen (_Swagger-File_).
+
+Die Daten dieser Schnittstelle sind als Live-Daten zu verstehen. Es gilt nur der jeweils aktuell abgebildete Stand. Eine Argumentation mit zu einem früheren Zeitpunkt gespeicherten Daten ist nicht zulässig.
+
+
+[]()
+
+**API-Key**
+
+
+`vopVcmhIMkeUCf8gQjk1GgU2wK+fKihAdlCl0WKJ`
+
+
+[]()
+
+**Dokumentation der RPK-API auf GitHub:**
+
+
+Sie finden eine [**ausführliche Dokumentation**](https://opendatazurich.github.io/rpk-api/) zur RPK-API auf Github.
+![RPK-API Dokumentation](<https://opendatazurich.github.io/rpk-api/rpk_api_readme.png>)
+<br>
+
+
+[]()
+
+**Beschreibung der API Endpunkte und Parameter:**
+
+
+Wichtiger Bestandteil der RPK-API-Dokumention ist eine **Swagger-UI-Webseite**, welche ein einfaches [**interaktives Erforschen der verfügbaren Endpunkte und Parameter**](https://opendatazurich.github.io/rpk-api/docs/#/) der RPK-API erlaubt.
+![RPK-API Dokumentation](<https://opendatazurich.github.io/rpk-api/rpk_api_swagger-ui.png>)
+<br>
+
+
+[]()
+
+**Programmierbeispiele mit Python:**
+
+
+Um den Einstieg der API-Abfragen mit einer Programmiersprache zu erleichtern, haben wir nebst typischen Beispiels-Abfragen in der Dokumentation auch noch ein paar Programmierbeispiele mit Python als [**Jupyter-Notebook**](https://github.com/opendatazurich/opendatazurich.github.io/blob/master/rpk-api/RPK-API-Beispiele.ipynb) zur Verfügung gestellt. 
+
+Wir haben dieses Notebook auch auf Binder verfügbar gemacht, damit Sie es auch einfach in ihrem Browser interaktiv laufen lassen können: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/opendatazurich/opendatazurich.github.io/master?filepath=rpk-api/RPK-API-Beispiele.ipynb)
+
+![RPK-API Dokumentation](<https://opendatazurich.github.io/rpk-api/rpk_api_binder.png>)
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/fd_rpktool)
+
+Auto generated R starter code for data set fd_rpktool.
+
+## Metadata
+
+- **Publisher** `Finanzverwaltung, Finanzdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Finanzen,Politik`
+- **Tags** `['budget', 'finanzen', 'rechnung', 'rpk', 'sachdaten', 'tabelle']`
+- **Metadata_created** `2019-07-29T13:36:31.293179`
+- **Metadata_modified** `2025-05-21T07:12:27.909122`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/fd_rpktool/download/sachkonto_codes.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,169 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Zweitwohnungen und Apartments nach Bauperiode, Zimmerzahl und Stadtquartier
+
+Der Datensatz enthält den Wohnungsbestand nach Art der Nutzung, insbesondere nach Erstwohnungen, den Erstwohnungen gleichgestellte Wohnungen, Zweitwohnungen und Apartments für das aktuellste Jahr. Früher ausgewiesene Zahlen sind nicht mit den aktuellen vergleichbar; eine Zeitreihe ist deshalb nicht enthalten.
+
+**Hinweis**
+
+
+ Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+
+[]()
+
+**Methodik:**
+
+
+ Vertiefte Informationen über die Erhebung, die Kategorien sowie Interpretationshinweise unter https://www.stadt-zuerich.ch/prd/de/index/statistik/themen/bauen-wohnen/wohnverhaeltnisse/methode-der-zweitwohnungserhebung.html
+
+
+[]()
+
+**Genauigkeit:**
+
+
+Die Nutzungsart von Wohnungen ist nicht meldepflichtig. Die vorliegenden Resultate basieren teilweise auf Algorithmen und pauschalen Zuweisungen (vgl. Bemerkung zu den Zweitwohnungen). Die ausgewiesenen Werte sind daher als Schätzwerte zu betrachten und werden bei Publikationen sinnvollverweise auf 10 Wohnungen gerundet.
+
+
+[]()
+
+**Weitere Informationen:**
+
+
+Grafiken und Publikationen zum Thema unter https://www.stadt-zuerich.ch/prd/de/index/statistik/themen/bauen-wohnen/wohnverhaeltnisse/zweitwohnungen-apartments.html
+
+
+[]()
+
+**Erstwohnungen**
+
+
+Als Erstwohnungen gelten gemäss Zweitwohnungsgesetz Wohnungen, die von mindestens einer in der Stadt Zürich niedergelassenen Person bewohnt werden.
+
+
+[]()
+
+**Den Erstwohnungen gleichgestellte Wohnungen**
+
+
+Den Erstwohnungen gleichgestellt sind gemäss Zweitwohnungsgesetz zum einen spezielle Wohneinheiten, z. B. für Studierende, Firmenpersonal und sonstige Erwerbstätige. Zum anderen zählen auch Wohnungen dazu, die von Wochenaufenthalterinnen und Wochenaufenthaltern, nicht meldepflichtigen Personen oder von Haushalten bewohnt sind, die auch eine andere Wohnung im gleichen Gebäude bewohnen. Ebenso werden auch Wohnungen, die weniger als zwei Jahre leer stehen, den Erstwohnungen gleichgestellt.
+
+
+[]()
+
+**Zweitwohnungen**
+
+
+Da keine Meldepflicht für Wohnnutzungen besteht, kann die Zweitwohnungszahl nicht eindeutig festgelegt werden, sondern basiert auf einer Zweitwohnungsvermutung. Als Zweitwohnungen gelten einerseits Wohnungen, die beim Personenmeldeamt oder in der Erhebung als Zweitwohnungen angegeben wurden, oder aber Wohnungen, zu denen im Bevölkerungsregister seit mindestens zwei Jahren keine Person registriert ist, soweit sie nicht den Erstwohnungen gleichgestellt sind. - Alle unbelegten Wohnungen mit Zweitwohnungsangabe oder Zweitwohnungsvermutung gelten als private Zweitwohnungen, soweit es sich nicht um Apartments handelt.
+
+
+[]()
+
+**Privat genutzte Zweitwohnungen**
+
+
+Zweitwohnungen, die nicht als Apartments bewirtschaftet sind, stehen den Nutzniessenden zur ständigen privaten Nutzung zur Verfügung. Privat bezieht sich in diesem Zusammenhang nicht auf den Besitz, sondern auf die Nutzung einer Wohnung. Zweitwohnungen umfassen nicht nur Wohneigentum, sondern auch Mietwohnungen.
+
+
+[]()
+
+**Unbewohnbare Wohnungen**
+
+
+Wohnungen, die aus baulichen Gründen unbewohnbar sind (temporär im Umbau oder steht vor Abbruch)
+
+
+[]()
+
+**Apartments**
+
+
+Als Apartment gelten vorliegend möblierte Wohnungen, die professionell bewirtschaftet sind, meist auch für eine kürzere Zeit vermietet werden und durch die Zweitwohnungserhebung erfasst werden. Bei vielen Apartmentwohnungen werden zusätzliche Dienstleistungen wie Reinigungs-, Wäsche- oder Concierge-Service angeboten. Es ist unerheblich, ob die Apartments geschäftlich oder für Urlaub benutzt werden. - Apartments mit angemeldeten Bewohner*innen gelten als den Erstwohnungen gleichgestellte Wohnungen (ab vier Monaten Aufenthalt müssen sich Personen anmelden). Apartments ohne angemeldete Bewohner*in gelten als Zweitwohnungen.
+
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_zweitwhg_apartment_quartier_bauperiode_zizahl_od5414)
+
+Auto generated R starter code for data set bau_zweitwhg_apartment_quartier_bauperiode_zizahl_od5414.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['apartment', 'bauperiode', 'erstwohnung', 'nutzung', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'wohnung', 'wohnungsbestand', 'zimmerzahl', 'zweitwohnungen']`
+- **Metadata_created** `2020-11-17T09:41:01.684723`
+- **Metadata_modified** `2025-05-21T07:15:04.802580`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_zweitwhg_apartment_quartier_bauperiode_zizahl_od5414/download/BAU541OD5414.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

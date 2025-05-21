@@ -1,0 +1,105 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Mietpreise in der Stadt Zürich (MPE Abfragetool)
+
+Der Datensatz enthält die Resultate der Mietpreiserhebungen 2022 und 2024. Enthalten sind die geschätzten Mietpreisbandbreiten für vier Raumstufen (Ganze Stadt, Stadtkreise, Stadtquartiere und statistische Quartiere). Siehe dazu unten unter «Bemerkungen» die weiteren Erläuterungen. 
+
+Erleben Sie die Daten auch auf dem interaktiven «[Abfragetool Mietpreiserhebung](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/bauen-und-wohnen/miete-und-eigentum/mietpreiserhebung.html#abfragetool_mietpreiserhebung)» von Statistik Stadt Zürich.
+
+**Erhebung**
+
+Die Mietpreiserhebung (MPE) gibt die geschätzten Mietpreise in der Stadt Zürich per Stichmonat April 2022 resp. 2024 wieder. Die Erhebung ist als Zweischichtenmodell konzipiert und basiert auf automatisierten Datenlieferungen von Verwaltungen (Schicht 1) und einer ergänzenden Zufallsstichprobe (Schicht 2). Die Resultate beziehen sich ausschliesslich auf die Grössenklassen der 2-, 3- und 4-Zimmer-Wohnungen, die über 80 Prozent des Mietwohnungsbestandes abdecken. Vgl. auch den publizierten Methodikbericht.
+
+[]()
+
+**Konfidenzintervalle**
+
+Die geschätzten Preise sind mit 95-%-Konfidenzintervallen unterlegt. Diese bezeichnen den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. In der MPE liegen die 95-%-Konfidenzintervalle gesamtstädtisch ungefähr bei +/-1 Prozent der ausgewiesenen Medianpreise und Mittelwerte. Bei kleineren Raumeinheiten (z.B. kleinere Stadtquartiere) sind die Unsicherheiten höher; die Konfidenzintervalle der ausgewiesenen Werte liegen im Bereich von 4 bis 8 Prozent und können unter Umständen bis gegen 20 Prozent steigen.
+
+[]()
+
+**Gemeinnützigkeit**
+
+Zu den gemeinnützigen gehören zunächst alle Wohnungen, die im Besitz der Stadt oder von Genossenschaften, Vereinen oder Stiftungen sind und nach dem Grundsatz der Kostenmiete bewirtschaftet werden. Ferner gehören auch Wohnungen dazu, deren Eigentümerschaft als gemeinnützig im weiteren Sinne gilt und ihre Mietobjekte nicht ausschliesslich nach dem Prinzip der Kostenmiete vermietet (bestimmte Stiftungen, Vereine und Aktiengesellschaften). Mit der Kostenmiete werden die Schuldzinsen und die Verwaltungskosten beglichen, der Unterhalt und Werterhalt der Liegenschaften sowie die Rückstellungen zur Erneuerung sichergestellt. Mittel- bis langfristig bewirkt die Kostenmiete deutlich günstigere Mieten als bei vergleichbaren Objekten auf dem Wohnungsmarkt.
+
+[]()
+
+**Raumeinheit statistische Quartiere**
+
+Für eine Stichprobenerhebung wie die MPE sind die statistischen Quartiere zum Teil zu klein. Auf Stufe statistische Stadtquartier ist deshalb keine Differenzierung der Mietpreise nach Zimmerzahl möglich. Die Mietpreise können nur als zusammengefasste Quadratmeterpreise aller 2- bis 4-Zimmerwohnungen ausgewiesen werden.
+
+[]()
+
+**Raumeinheit Stadtquartiere**
+
+Die tiefste räumliche Ebene, auf der detaillierte Preise für 2-, 3- und 4-Zimmer-Wohnungen ausgewiesen werden können, sind die 22 Stadtquartiere. Sie entsprechen in der Regel den früher selbständigen, eingemeindeten Gemeinden und setzen sich aus kleineren Stadtkreisen und grösseren statistischen Quartieren zusammen. Die Stadtkreise 1, 3, 4, 5, 8 und 12 bilden jeweils ein Stadtquartier – sie entsprechen den früheren Gemeinden Zürich (Stadtquartier Altstadt), Wiedikon, Aussersihl, Riesbach und Schwamendingen, deren Namen sie tragen. In den übrigen Stadtkreisen 2, 6, 7, 9, 10 und 11 gelten die enthaltenen statistischen Quartiere einzeln als Stadtquartier – sie entsprechen den früheren Gemeinden Enge und Wollishofen (Kreis 2), Unter- und Oberstrass (Kreis 6), Fluntern, Hottingen, Hirslanden und Witikon (Kreis 7), Altstetten und Albisrieden (Kreis 9), Höngg und Wipkingen (Kreis 10) sowie Affoltern, Oerlikon und Seebach (Kreis 11). Die Stadtquartiere Leimbach (Kreis 2) und Industrie (Kreis 5) sind Spezialfälle, sie entsprechen räumlich abgetrennten Teilen der früheren Gemeinden Enge und Aussersihl. Für die MPE 2024 wurden die Vergleichspreise von 2022 für die Stadtquartiere neu berechnet.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_whg_mpe_mietpreis_raum_zizahl_gn_jahr_od5161)
+
+Auto generated R starter code for data set bau_whg_mpe_mietpreis_raum_zizahl_gn_jahr_od5161.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['gemeinnuetzig', 'median', 'mietpreise', 'mittelwert', 'privat', 'quadratmeterpreis', 'quartil', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'wohnen', 'zimmerzahl']`
+- **Metadata_created** `2022-11-02T10:08:27.339389`
+- **Metadata_modified** `2025-05-21T07:00:54.451730`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_whg_mpe_mietpreis_raum_zizahl_gn_jahr_od5161/download/BAU516OD5161.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

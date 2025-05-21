@@ -1,0 +1,99 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Gebäudebestand nach Gebäudeart, Bauperiode und Stadtquartier
+
+
+Diese Daten umfassen den Gebäudebestand (Anzahl Gebäude, Rauminhalt und Gebäudegrundfläche) der Stadt Zürich nach Gebäudeart, Bauperiode und Stadtquartier.
+
+
+
+**Stand und Nachführung:**
+
+Das Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+ 
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+**Gebäude**
+
+
+Gebäude sind auf Dauer angelegte, mit dem Boden fest verbundene Bauten. Ein Gebäude gilt als selbständig, wenn es einen eigenen Zugang von aussen hat und wenn zwischen den Gebäuden eine senkrechte vom Erdgeschoss bis zum Dach reichende tragende Trennmauer besteht. Zusammengebaute Gebäude werden nach dem so genannten Trennmauerkriterium unterteilt. Das Trennmauerkriterium gewährleistet eine einheitliche Differenzierung der Gebäude nach ausschliesslich baulichen Kriterien.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_best_geb_jahr_gebart_bauperiode_quartier_od5813)
+
+Auto generated R starter code for data set bau_best_geb_jahr_gebart_bauperiode_quartier_od5813.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauperiode', 'gebaeudealter', 'gebaeudeart', 'gebaeudeflaeche', 'rauminhalt', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2023-05-12T07:20:24.134204`
+- **Metadata_modified** `2025-05-21T07:09:20.067174`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_best_geb_jahr_gebart_bauperiode_quartier_od5813/download/BAU581OD5813.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

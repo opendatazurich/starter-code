@@ -1,0 +1,133 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Grundstückspreise (Median) der im Freihandkauf umgesetzten Grundstücke nach Bebauungsart (Bauzone)
+
+
+Diese Daten beinhalten die Medianpreise pro Quadratmeter Bauland von gehandelten Grundstücken in der Stadt Zürich nach Handänderungsjahr und Bebauungstyp, ergänzt mit der Anzahl Handänderungen, gehandelter Fläche und Umsatzwert, der für die Zahlen berücksichtigt wurde.
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Allgemein:**
+
+ Die dargestellten Werte beziehen sich auf alle Handänderungen von Grundstücken in Bauzonen der Stadt Zürich. Es werden sowohl Werte von Freihandkäufen mit anteilsmässiger Berücksichtigung von Stockwerkeigentumsanteilen als auch Werte ohne Berücksichtigung von Stockwerkeigentumsanteilen ausgewiesen.
+ 
+
+[]()
+
+**Definition: Zonentyp der Handänderung**
+
+ Jeder Handänderung ist gemäss Hauptnutzung der gehandelten Grundstücke eine Hauptbebauungsart zugeordnet. Steht auf einer Parzelle beispielsweise ein Mehrfamilienhaus und eine Garage, so fällt die ganze Parzelle in die Kategorie 'Mehrfamilienhäuser'.
+
+
+
+[]()
+
+**Definition: Grundstücktyp der Handänderung**
+
+ Jeder Handänderung ist gemäss Hauptnutzung der gehandelten Grundstücke eine Hauptbebauungsart zugeordnet. Steht auf einer Parzelle beispielsweise ein Mehrfamilienhaus und eine Garage, so fällt die ganze Parzelle in die Kategorie 'Mehrfamilienhäuser'.
+
+
+
+[]()
+
+**Definition: AnzHA**
+
+ Gibt an, wie viele Handänderungen für die Preiswerte berücksichtigt wurden. Handänderungen, die herausgefiltert worden sind (siehe dazu 'Allgemein'), werden nicht mitgezählt. In Fällen wo es weniger als **vier** Handänderungen gibt, oder Rückschlüsse darauf möglich sind, wird die Anzahl der Handänderungen anonymisiert.
+
+
+
+[]()
+
+**Definition: HASumPreis**
+
+ Gibt den Gesamtumsatz der gehandelten Fläche an, die  für die Preiswerte berücksichtigt wurden. Handänderungen, die herausgefiltert worden sind (siehe dazu 'Allgemein'), werden nicht mitgezählt. Falls weniger als drei Grundstücke gehandelt wurden, wird aus Datenschutzgründen kein Gesamtumsatz ausgegeben.
+
+
+
+[]()
+
+**Definition: HAGstFlaeche**
+
+ Gibt an, wie viele Quadratmeter gehandelte Fläche für die Preiswerte berücksichtigt wurden. Handänderungen, die herausgefiltert worden sind (siehe dazu 'Allgemein'), werden nicht mitgezählt. 
+
+
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_hae_preis_anz_fl_bebart_uw_seit2009_od5146)
+
+Auto generated R starter code for data set bau_hae_preis_anz_fl_bebart_uw_seit2009_od5146.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bebauungsart', 'handaenderungen', 'liegenschaftenhandel', 'median', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2023-11-21T09:32:06.721264`
+- **Metadata_modified** `2025-05-21T07:05:10.828840`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_hae_preis_anz_fl_bebart_uw_seit2009_od5146/download/BAU514OD5146.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

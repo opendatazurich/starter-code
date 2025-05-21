@@ -1,0 +1,233 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Fachplanung Stadtnatur OGD
+
+Die Fachplanung Stadtnatur (FPSN) ist ein Planungsinstrument, mit dem ökologisch wertvolle Lebensräume und damit auch die städtische Biodiversität langfristig erhalten und gefördert werden, deren Auftrag sich aus dem regionalen und dem kommunalen Richtplan ableitet.
+
+Sie richtet sich einerseits an die Departemente und Dienstabteilungen der Stadt Zürich, die eine Eigentümervertretung wahrnehmen bzw. raumwirksam tätig sind. Andererseits versteht sie sich als Fachgrundlage zuhanden städtischer Baurechtnehmenden sowie privater Grundeigentümer- und Bauherrschaften bzw. ihrer Planenden und Projektierenden.
+
+Die Fachplanung konkretisiert bis 2040 die Zielsetzung des kommunalen Richtplanes, über ein Netzwerk von mindestens 15 Prozent ökologisch wertvollen Lebensräumen (öwL) über das gesamte Siedlungsgebiet zu verfügen. Sie zeigt auf, wo und wie zusätzliche ökologisch wertvolle Lebensräume geschaffen werden können.
+
+Zur Umsetzung dieser Zielvorstellungen wurden 8 Leitlinien formuliert und daraus konkrete Massnahmen abgeleitet, die sich in 7 Handlungsfelder gliedern:
+
+A Plangrundlagen
+B Bauvorhaben auf stadteigenem Grund
+C Unterhalt stadteigener Freiräume
+D Verankerung in Regelwerken
+E Anreizsysteme (Förderprogramme)
+F Information / Kommunikation
+G Qualitätssicherung
+
+Die folgende Geodaten bilden als Planungsgrundlage das Handlungsfeld A.
+
+**Zweck**: Die Geodaten &quot;Fachplanung Stadtnatur&quot; ermöglichen einen einfachen Zugang zu den Informationen der Fachplanung und dienen als Basis für umsetzungsorientierte Massnahmen der Handlungsfelder B und C. In entsprechendem Layerpaket sind 5 Layer enthalten (siehe Geodatenprodukt), wobei diejenigen mit der Bezeichnung «*» unterschiedliche Darstellungsweisen der gleichen Geometrien (Featureclass).
+
+Fachplanun Stadtnatur
+1. FPSN - Ökologische Vernetzungskorridore
+
+2. *FPSN - Freiraumkategorien und Stadtstrukturen
+Die Stadtstrukturen und Freiraumkategorien wurden aus der Fachplanung Hitzeminderung als räumlicher Bezugsrahmen übernommen und bilden das gesamte Zürcher Stadtgebiet flächendeckend ab. Dabei beschreiben Stadtstrukturen die Bebauungsstruktur. Sie lehnen sich an die Siedlungsstrukturen des Kommunalen Richtplans an. Den Stadtstrukturen liegen Parameter wie Bebauungsstruktur, Gebäudetypologie, Personendichte (Einwohner und Arbeitsplätze), Nutzungsschwerpunkte, Entstehungszeit der Gebäude, private und öffentliche Aussenräume sowie Eigentumsverhältnisse zu Grunde. Stadtstrukturen und Freiraumkategorien dienen als Grundlage für gesamtstädtische Analysen und Konzeptansätze, als Modellierungsgebiete für Wirkungsanalysen zu verschiedenen Handlungsansätzen sowie als Ausgangspunkt für die Definition der Richtwerte.
+
+3. *FPSN - IST Anteil öwL
+Basierend auf den Freiraumkategorien und Stadtstrukturen und der Biotoptypenkartierung lässt sich den prozentualen Anteil an ökologisch wertvollen Lebensräumen (öwL) pro Perimeter berechnen. Dieser Wert gibt einen Anhaltspunkt über den Ist-Zustand der öwL. Der IST Anteil wird in 9 verschiedenen Klassen dargestellt.
+
+4. *FPSN - Richtwerte öwL
+Die Fachplanung definiert Richtwerte für ökologisch wertvolle Lebensräume (öwL) in verschiedenen Stadtstrukturen und Freiraumkategorien. Die Richtwerte geben für jede Stadtstruktur und jede Freiraumkategorie vor, welcher Anteil an ökologisch wertvollen Lebensräumen (öwL), bezogen auf die Gesamtfläche, mindestens angestrebt werden soll. Der Richtwert für eine Parzelle entspricht jenem der Stadtstruktur oder der Freiraumkategorie, in der die Parzelle liegt und bezieht sich auf die Fläche des Grundstücks. Die Richtwerte verstehen sich als Minimalvorgabe bei der Aufgabenerfüllung. Die Richtwerte zeigen somit auf, in welche Richtung sich Grundstücke innerhalb der verschiedenen Strukturen entwickeln sollen.
+
+5. *FPSN Handlungsbedarf - Saldo
+Der Handlungsbedarf ergibt sich aus der Differenz zwischen dem Ist-Zustand und den definierten Richtwerten in jeder räumlichen Einheit der Stadtstrukturen und Freiraumkategorien. Die Karte zeigt den Handlungsbedarf, um das Netzwerk für die Stadtnatur auf der Basis der Richtwerte zu realisieren. Ausgehend vom Ist-Zustand der ökologisch wertvollen Lebensräume (öwL) wird dargestellt, wo allfällige Defizite (in rot) oder Überschüsse (in blau) kompensiert, aufgewertet bzw. erhalten werden sollen.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Fachplanung Stadtnatur OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/4f0604e5-cd97-4e4c-b8de-eafbc89610e2).
+			   
+
+**Datenerfassung:**
+
+Die Erstellung der Geodaten erfolgte durch Grün Stadt Zürich - Fachbereich Naturschutz und Stadtökologie.
+Anhand der jährlichen BTK Nachkartierung können die Karten nachgeführt werden.
+
+**Datengrundlage:**
+
+Biotoptypenkartierung; Richtwerte für ökologisch wertvolle Lebensräume (öwL); Inventar der Natur- und Landschaftsschutzobjekte von kommunaler Bedeutung; Fachplanung Hitzeminderung (Freiraumkategorien und Stadtstrukturtypen)
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Fachplanung Stadtnatur OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/4f0604e5-cd97-4e4c-b8de-eafbc89610e2).
+
+***fpsn_vernetzung_ogd***: 
+
+
+
+
+***stadtnatur_ogd***: 
+
+
+
+
+
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/4f0604e5-cd97-4e4c-b8de-eafbc89610e2.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_fachplanung_stadtnatur_ogd)
+
+Auto generated R starter code for data set geo_fachplanung_stadtnatur_ogd.
+
+## Metadata
+
+- **Publisher** `Naturschutz und Stadtökologie, Grün Stadt Zürich, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Umwelt`
+- **Tags** `['biodiversitat', 'fachplanung', 'geodaten', 'geoportal', 'natur', 'okologisch-wertvolle-lebensraumen', 'polygondaten', 'stadtnatur', 'stzh', 'vektordaten']`
+- **Metadata_created** `2024-12-05T04:30:49.491282`
+- **Metadata_modified** `2025-05-21T06:37:03.156506`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Fachplanung_Stadtnatur_OGD?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

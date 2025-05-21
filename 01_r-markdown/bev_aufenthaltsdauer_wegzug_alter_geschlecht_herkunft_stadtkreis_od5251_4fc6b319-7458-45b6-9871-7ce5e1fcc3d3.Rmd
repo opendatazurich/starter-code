@@ -1,0 +1,87 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Aufenthaltsdauer beim Wegzug nach auswärts nach Alter, Geschlecht, Herkunft und Stadtkreis
+
+Aufenthaltsdauer beim Wegzug nach auswärts des Bevölkerungsbestandes nach Alter, Geschlecht, Herkunft und Stadtkreis
+
+**Zu beachten:**
+
+ - Es werden nur Personen mit einer Aufenthaltsdauer von mehr als 0 Jahren beim Wegzug berücksichtigt. Personen mit einer unbekannten Aufenthaltsdauer beim Wegzug werden ebenfalls nicht berücksichtigt. 
+ 
+
+[]()
+
+**Wegzüge nach auswärts**
+
+ - Personen, die aus der Stadt Zürich wegziehen.
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_aufenthaltsdauer_wegzug_alter_geschlecht_herkunft_stadtkreis_od5251)
+
+Auto generated R starter code for data set bev_aufenthaltsdauer_wegzug_alter_geschlecht_herkunft_stadtkreis_od5251.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'aufenthaltsdauer', 'durchschnitt', 'geschlecht', 'herkunft', 'median', 'mittelwert', 'quartil', 'sachdaten', 'sasa', 'tabelle', 'wegzug', 'zeitreihe']`
+- **Metadata_created** `2020-01-09T13:56:10.332110`
+- **Metadata_modified** `2025-05-21T07:13:25.298230`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_aufenthaltsdauer_wegzug_alter_geschlecht_herkunft_stadtkreis_od5251/download/BEV525OD5251.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

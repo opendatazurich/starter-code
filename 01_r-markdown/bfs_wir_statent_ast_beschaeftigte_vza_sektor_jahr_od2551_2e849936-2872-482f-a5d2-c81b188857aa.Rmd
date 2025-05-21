@@ -1,0 +1,176 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Arbeitsstätten, Beschäftigte und Vollzeitäquivalente nach Sektor und Wirtschaftszweig
+
+
+Diese Daten beinhalten aggreggierte Zahlen der Statistik der Unternehmensstruktur in der Stadt Zürich. Die Daten für die Stadt Zürich sind für den Zeitraum seit 2011 verfügbar.
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Statistik der Unternehmensstruktur (STATENT):**
+
+ Die Statistik der Unternehmensstruktur (STATENT) des Bundesamtes für Statistik (BFS) liefert zentrale Informationen zur Struktur der Schweizer Wirtschaft. Die STATENT ersetzt die Betriebszählung (BZ), die
+2008 zum letzten Mal durchgeführt wurde. Die STATENT erfasst alle Unternehmen, die
+verpflichtet sind, für ihre Angestellten sowie für sich selber (Selbstständigerwerbende) bei
+einem Mindesteinkommen von jährlich Fr. 2300.- AHV-Beiträge zu bezahlen. Die
+Auswertungseinheiten sind die Arbeitsstätte und das Unternehmen (institutionelle
+Einheit).
+Die STATENT basiert im Wesentlichen auf Daten des Registers der Alters- und Hinterlassenenversicherung AHV sowie auf Informationen aus dem Unternehmens- und Betriebsregister des BFS. Die Zahlen werden mit Daten aus laufenden Erhebungen bei Unternehmen ergänzt.
+Die Daten erscheinen einmal jährlich, jeweils knapp zwei Jahre nach dem Stichtag per Jahresende.
+
+ 
+
+[]()
+
+**Vollzeitäquivalente:**
+
+ 
+Angaben zu den Vollzeitäquivalenten dürfen erst ab einem Schwellenwert von mindestens vier Arbeitsstätten veröffentlicht werden. Anonymisierte Vollzeitäquivalente sind mit 'K' gekennzeichnet.
+ 
+
+[]()
+
+**Raum:**
+
+ 
+<![CDATA[ 
+Diese Daten werden für die Webapplikation STATENT-Tool verwendet. Daher sind die Quartiere und Kreise im Long-Format. Mit folgendem Code können die Quartiere oder Kreise in einer neu berechneten Spalte identifiziert werden:
+
+- Beispiel in R:
+```sh
+    mutate(Raum = case_when(
+        RaumSort == '1' ~ 'Ganze Stadt',
+        as.numeric(RaumSort) %% 10 == 0 ~ 'Kreise',
+        TRUE ~ 'Quartiere',
+    ))
+```
+
+- Beispiel in Python mit Pandas:
+```sh
+    def classify_raumsort(value):
+    if value == 1:
+        return 'Ganze Stadt'
+    elif int(value) % 10 == 0:
+        return 'Kreise'
+    else:
+        return 'Quartiere'
+        
+    data2betested['Raum'] = data2betested['RaumSort'].apply(classify_raumsort)
+``` 
+
+
+[]()
+
+**Branche:**
+
+ 
+Diese Daten werden für die Webapplikation STATENT-Tool verwendet. Daher sind die Branchen im Long-Format. Mit folgendem Code können die einzelnen NOGA-Hierarchien in einer neu berechneten Spalte identifiziert werden:
+
+- Beispiel in R:
+```sh
+    mutate(Hierarchie = case_when(
+        BrancheCd == '0' ~ 'Ganze Stadt',
+        grepl('^[0-9]{1}$', BrancheCd) ~ '1.-3. Sektor',
+        grepl('^[A-Z]$', BrancheCd) ~ 'NOGA1',
+        grepl('^[0-9]{2}$', BrancheCd) ~ 'NOGA2',
+        grepl('^[0-9]{3}$', BrancheCd) ~ 'NOGA3'
+    ))
+``` 
+- Besipiel in Python:
+```sh
+import re
+
+df['BrancheCd'] = df['BrancheCd'].astype(str)
+
+# Benutzerdefinierte Funktion zur Klassifizierung
+def classify_hierarchie(branche_cd):
+    if branche_cd == '0':
+        return 'Alle Sektoren'
+    elif re.match(r'^[0-9]{1}$', branche_cd):
+        return '1.-3. Sektor'
+    elif re.match(r'^[A-Z]$', branche_cd):
+        return 'NOGA1'
+    elif re.match(r'^[0-9]{2}$', branche_cd):
+        return 'NOGA2'
+    elif re.match(r'^[0-9]{3}$', branche_cd):
+        return 'NOGA3'
+    else:
+        return 'Unbekannt'
+
+# Anwenden der Funktion auf die Spalte 'BrancheCd'
+df['BranchenHierarchie'] = df['BrancheCd'].apply(classify_hierarchie)
+
+```
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bfs_wir_statent_ast_beschaeftigte_vza_sektor_jahr_od2551)
+
+Auto generated R starter code for data set bfs_wir_statent_ast_beschaeftigte_vza_sektor_jahr_od2551.
+
+## Metadata
+
+- **Publisher** `Abteilung Wirtschaft, Bundesamt für Statistik`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Arbeit und Erwerb`
+- **Tags** `['arbeitsstaetten', 'beschaeftigte', 'sachdaten', 'sasa', 'statent', 'tabelle', 'vollzeitaequivalente', 'zeitreihe']`
+- **Metadata_created** `2024-08-29T05:21:33.294491`
+- **Metadata_modified** `2025-05-21T07:15:11.683449`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bfs_wir_statent_ast_beschaeftigte_vza_sektor_jahr_od2551/download/WIR255OD2551.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

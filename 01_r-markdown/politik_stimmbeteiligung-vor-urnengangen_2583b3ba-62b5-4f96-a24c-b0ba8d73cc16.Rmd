@@ -1,0 +1,86 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Stimmbeteiligung in Prozent vor Urnengängen
+
+Vor Urnengängen informiert die Stadtkanzlei regelmässig über den Stand der Stimmbeteiligung per brieflicher Abgabe.
+
+
+**Weiterführende Links:**
+
+[Weitere Informationen zu den Abstimmungen auf der Webseite der Stadtkanzlei](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/politik-und-recht/abstimmen-waehlen.html)
+
+**Genauigkeit der Werte**
+
+Dieser Wert beruht auf der aktuellen Zahl der durch die Post verarbeiteten und der in den Briefkasten des Stadthauses eingelegten Antwortkuverts. Die effektive Stimm-/Wahlbeteiligung inkl. persönlicher Stimmabgabe an der Urne steht erst nach der Auszählung am Abstimmungssonntag fest.
+
+**Aktualisierung**
+
+Die Stimmbeteiligung wird vor einem Urnengang regelmässig aktualisiert. Die tatsächlichen Abstimmungsergebnisse und die Stimmbeteiligung werden nach dem Abstimmungstermin im Datensatz ['Abstimmungsresultate seit 1933'](/dataset/politik_abstimmungen_seit1933) zur Verfügung gestellt.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_stimmbeteiligung-vor-urnengangen)
+
+Auto generated R starter code for data set politik_stimmbeteiligung-vor-urnengangen.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik`
+- **Tags** `['abstimmung', 'gemeinderat', 'partei', 'politik', 'sachdaten', 'stimmbeteiligung', 'tabelle', 'urnengang']`
+- **Metadata_created** `2021-09-21T11:51:40.371218`
+- **Metadata_modified** `2025-05-17T14:35:28.157755`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/politik_stimmbeteiligung-vor-urnengangen/download/stimmbeteiligung.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

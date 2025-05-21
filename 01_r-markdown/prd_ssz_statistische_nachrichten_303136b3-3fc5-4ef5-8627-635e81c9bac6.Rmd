@@ -1,0 +1,90 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Statistische Nachrichten, 1924-2001
+
+
+Die Statistische Nachrichten ist eine von 1924 bis 2001 jährlich erschienene Sammlung von einzelnen Aufsätzen zu verschiedensten Themen von Statistik Stadt Zürich. Der Datensatz enthält alle Statistische Nachrichten aufgeteilt in die einzelnen Aufsätze als PDF.
+
+
+**Hinweis:**
+
+
+Der Datensatz enthält alle einzelnen Aufsätze mitsamt Titel, Jahrgang und  Direktlink zur PDF-Datei. 
+
+
+[]()
+
+**Direktzugriff:**
+
+Das Verzeichnis mit allen nach Jahr gegliederten Aufsätzen kann auch direkt auf dem Server unter [http://statistik.stadt-zuerich.ch/modules/StatNat/](http://statistik.stadt-zuerich.ch/modules/StatNat/) aufgerufen werden. 
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/prd_ssz_statistische_nachrichten)
+
+Auto generated R starter code for data set prd_ssz_statistische_nachrichten.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Arbeit und Erwerb,Bauen und Wohnen,Bevölk­erung,Bildung,Energie,Finanzen,Freizeit,Ge­sund­heit,Kri­mi­na­li­tät,Kultur,Mobilität,Politik,Preise,Soziales,Tour­is­mus,Umwelt,Ver­walt­ung,​​Volks​­wirt​­schaft`
+- **Tags** `['historisch', 'kreise', 'pdf', 'publikation', 'quartiere', 'sachdaten']`
+- **Metadata_created** `2020-01-22T11:04:41.672942`
+- **Metadata_modified** `2025-05-21T07:02:21.599924`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/prd_ssz_statistische_nachrichten/download/prd_ssz_statistische_nachrichten.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

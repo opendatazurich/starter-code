@@ -1,0 +1,97 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Todesfälle nach Tag, Stadtquartier, Geschlecht, Altersgruppe und Herkunft
+
+
+Anzahl Todesfälle nach Tag, Altersgruppe, Geschlecht, Herkunft, Stadtkreis und Stadtquartier.
+
+Bei den Daten des aktuellsten Jahres handelt es sich um **provisorische** Daten. Diese können laufend korrigiert werden. Erst mit dem Jahresabschluss werden die Daten definitiv.
+ 
+
+
+**Datenstand**
+
+- **Aktuellster Monat**: Der aktuellste Monat in den Daten entspricht dem aktuellen Monat - 2 Monate.
+
+- **Variable Datenstand**: Die Variablen DatenstandCd und DatenstandLang beschreiben den Datenstand. Provisorische Daten werden laufend korrigiert.
+
+ 
+
+[]()
+
+**Datenqualität**
+
+- **Datenqualität**: Die Daten des aktuellsten Jahres sind jeweils provisorisch und werden laufend korrigiert.
+
+- **Jahressummen**: In diesem Datensatz werden die transitorischen Bewegungen (z.B. wenn jemand nach zwei Jahren einen Wegzug nachmeldet) korrekt erfasst. Das hat den Vorteil, dass die Ereignistage die Realität abbilden. Die Jahressummen der Bewegungen entsprechen hingegen nicht denjenigen von Statistik Stadt Zürich per Jahresende ausgewiesenen Zahlen. Beispiel: zu dem Zeitpunkt als Statistik Stadt Zürich die Anzahl Bewegungen für das Vorjahr publiziert hat, konnte nicht erahnt werden, dass zwei Jahre später für das entsprechende Jahr noch eine Nachmeldung kommen wird. 
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_tag_todesfaelle_quartier_geschl_ag_herkunft_od4211)
+
+Auto generated R starter code for data set bev_tag_todesfaelle_quartier_geschl_ag_herkunft_od4211.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'todesfaelle', 'zeitreihe']`
+- **Metadata_created** `2020-05-14T06:51:18.971825`
+- **Metadata_modified** `2025-05-21T07:11:56.288148`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_tag_todesfaelle_quartier_geschl_ag_herkunft_od4211/download/BEV421OD4211.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

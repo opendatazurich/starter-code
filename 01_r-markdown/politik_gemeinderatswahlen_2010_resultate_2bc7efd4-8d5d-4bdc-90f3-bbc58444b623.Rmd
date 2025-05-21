@@ -1,0 +1,96 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Gemeinderatswahlen 2010: Resultate aller Kandidierenden und Herkunft der Stimmen
+
+Detaillierte Resultate der erhaltenen Stimmen aller 1160 Kandidierenden für die Gemeinderatswahlen 2010 nach Vor- und Nachname, Wahlkreis, Liste, Total Stimmen, parteieigener Stimmen, parteieigenen Stimmen aus unveränderten Wahllisten, parteifremden Stimmen, Stimmen aus veränderten Wahllisten, etc.
+
+**Ergänzende Informationen zum Wahlergebnis:**
+
+* 1 Claudia Nielsen wurde in den Stadtrat gewaehlt. Salvatore Di Concilio rückt nach.
+
+* 2 André Odermatt wurde in den Stadtrat gewaehlt. Helen Glaser rückt nach.
+
+* 3 Daniel Leupi wurde in den Stadtrat gewaehlt. Jürg Ammann rückt nach.
+
+* 4 Matthias Kestenholz ist im Kantonsrat und hat darum auf den Sitz im Gemeinderat verzichtet. Fabienne Vocat rückt nach.
+
+* 5 Kathrin Jenzer verzichtet auf den Sitz im Gemeinderat. Sacha Walker rückt nach.
+
+
+
+[]()
+
+**Resultate anderer Gemeinderatswahlen:**
+
+Die Resultate anderer Gemeinderatswahlen seit 2010 finden Sie [**unter folgendem Link ** ](https://data.stadt-zuerich.ch/dataset?q=resultate+gemeinderatswahlen).
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_gemeinderatswahlen_2010_resultate)
+
+Auto generated R starter code for data set politik_gemeinderatswahlen_2010_resultate.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik`
+- **Tags** `['einzeldaten', 'gemeinderat', 'sachdaten', 'tabellen', 'wahlen']`
+- **Metadata_created** `2022-12-12T16:00:25.487690`
+- **Metadata_modified** `2025-05-21T07:12:05.854844`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/politik_gemeinderatswahlen_2010_resultate/download/GRW_2010_resultate_kandidierende_und_herkunft_der_stimmen.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

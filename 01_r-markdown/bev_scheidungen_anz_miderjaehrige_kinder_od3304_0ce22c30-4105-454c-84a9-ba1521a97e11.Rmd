@@ -1,0 +1,83 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Ehescheidungen nach Zahl minderjähriger Kinder
+
+Diese Daten beschreiben die Ehescheidungen nach Zahl minderjähriger Kinder.
+
+**Bemerkungen**
+
+- **Bemerkungen**: Bei der Ermittlung der Minderjährigkeit in dieser Tabelle erfolgt die Altersberechnung nur nach Jahrgang (also Alter des Kindes in Jahren, errechnet aus der Differenz von Geburtsjahr des Kindes und Scheidungsjahr). Es handelt sich demnach um das annähernde Alter.
+Bis und mit Statistikjahr 1995 werden Kinder im annähernden Alter von 0 – 20 Jahren als minderjährig gezählt.
+Ab Statistikjahr 1996 werden Kinder im annähernden Alter von 0 – 18 Jahren als minderjährig gezählt.
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_scheidungen_anz_miderjaehrige_kinder_od3304)
+
+Auto generated R starter code for data set bev_scheidungen_anz_miderjaehrige_kinder_od3304.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['eheschliessung', 'heirat', 'hochzeit', 'kinder', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2019-11-04T17:22:29.499572`
+- **Metadata_modified** `2025-05-21T07:15:01.949677`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_scheidungen_anz_miderjaehrige_kinder_od3304/download/BEV330OD3304.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

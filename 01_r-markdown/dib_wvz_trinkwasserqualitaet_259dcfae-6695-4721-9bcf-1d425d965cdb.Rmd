@@ -1,0 +1,89 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Trinkwasserqualität
+
+Dieser Datensatz umfasst Messdaten zur Trinkwasserqulität der Wasserversorgung Zürich, aufgeteilt in Jahresdateien. Das Trinkwasser wird auf mehr als 300 mikrobiologische, limnologische sowie chemische Parameter untersucht. Die Messdaten stehen für jedes der drei Wasserwerke (Grundwasserwerk Hardhof, Seewasserwerk Lengg, Seewasserwerk Moos) zur Verfügung. Das Wasser der drei Trinkwasserwerke kann sich im Leitungsnetz vermischen. Je nach Quartier und Tageszeit kann daher die Zusammensetzung des Trinkwassers variieren.
+
+
+**Hinweis:**
+
+Der Datensatz umfasst mehr als 300 Messparameter. Ein Teil dieser Messparameter ist auch in der Lebensmittelgesetzgebung reguliert: Verordnung des EDI über Trinkwasser sowie Wasser in öffentlich zugänglichen Bädern und Duschanlagen, TBDV, SR 817.022.11
+
+
+**Aggregierte Daten:**
+
+Die Daten stehen in aggregierter Form auf der [Website](https://www.stadt-zuerich.ch/dib/de/index/wasserversorgung/Qualitaetsueberwachung/qualitaetswerte.html) der **Wasserversorgung Zürich** (WVZ) zur Verfügung (PDF-Datei mit tabellarischer Zusammenfassung).
+
+
+**Zusätzliche Informationen:**
+
+Zusätzliche Informationen sind bei der Wasserversorgung Zürich, Hauptabteilung Qualitätsüberwachung erhältlich: labwvz@zuerich.ch
+
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/dib_wvz_trinkwasserqualitaet)
+
+Auto generated R starter code for data set dib_wvz_trinkwasserqualitaet.
+
+## Metadata
+
+- **Publisher** `Wasserversorgung, Departement der Industriellen Betriebe`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Umwelt`
+- **Tags** `['chemie', 'mikrobiologie', 'mikroverunreinigungen', 'sachdaten', 'spurenstoffe', 'tabelle', 'trinkwasser', 'trinkwasserqualitaet', 'zeitreihe']`
+- **Metadata_created** `2025-01-29T12:23:17.536931`
+- **Metadata_modified** `2025-05-20T23:30:14.686843`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/dib_wvz_trinkwasserqualitaet/download/2024_Trinkwasserqualitaet.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

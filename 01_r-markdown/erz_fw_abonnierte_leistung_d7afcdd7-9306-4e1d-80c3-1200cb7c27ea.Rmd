@@ -1,0 +1,79 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Fernwärme, jährlich abonnierte Leistung
+
+<![CDATA[
+Summe der gemäss den Wärmelieferungsverträgen abonnierten Leistung in MW pro Jahr im Wärmeverbund KVA und Holz.
+]]>
+
+**Abonnierte Leistung in MW**
+
+Summe der gemäss den Wärmelieferungsverträgen abonnierten Leistung in MW pro Jahr
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_fw_abonnierte_leistung)
+
+Auto generated R starter code for data set erz_fw_abonnierte_leistung.
+
+## Metadata
+
+- **Publisher** `Energielösungen Q, Elektrizitätswerk der Stadt Zürich, Departement der Industriellen Betriebe`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie`
+- **Tags** `['energie', 'fernwaerme', 'fernwarme-leistung']`
+- **Metadata_created** `2022-05-11T14:10:14.989655`
+- **Metadata_modified** `2025-05-20T16:10:41.690532`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/erz_fw_abonnierte_leistung/download/fw_abonnierte_leistung.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

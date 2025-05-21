@@ -1,0 +1,83 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Wochenaufenthalter*innen
+
+
+Wochenaufenthalter*innen in der Stadt Zürich, nach Altersklasse, Herkunft, Stadtquartier, Stadtkreis, Zuzugskanton und Zuzugsbezirk.
+
+
+**Hinweis:**
+
+
+ Die Geodaten zu den Statistischen Stadtquartieren finden Sie [unter diesem Link](https://data.stadt-zuerich.ch/dataset/geo_statistische_quartiere) auf dem Open-Data-Katalog.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_bestand_woauha_jahr_quartier_herk_ag_zzgsgebiet_od3582)
+
+Auto generated R starter code for data set bev_bestand_woauha_jahr_quartier_herk_ag_zzgsgebiet_od3582.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['bevoelkerungsbestand', 'sachdaten', 'sasa', 'tabelle', 'wochanaufenthalterinnen', 'zeitreihe']`
+- **Metadata_created** `2022-01-12T19:46:40.391729`
+- **Metadata_modified** `2025-05-21T07:12:43.934182`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_bestand_woauha_jahr_quartier_herk_ag_zzgsgebiet_od3582/download/BEV358OD3582.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

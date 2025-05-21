@@ -1,0 +1,93 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Stadtklima Zürich - Standorte Messstationen Messnetz meteoblue
+
+
+Dieses Dataset umfasst die geografischen Informationen zu den **Messorten des Messnetzes meteoblue**.
+
+
+**Messwerte**
+
+
+Die vom Messnetz meteoblue erhobenen Messwerte sind im Datensatz [Stadtklima Zürich - Temperaturmessungen Messnetz meteoblue](https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_temperaturmessungen_messnetz_meteoblue) zu finden.
+
+
+[]()
+
+**Weitere Daten**
+
+**Stadtklimamessungen meteoblue**
+[meteoblue Stadtklima](https://www.meteoblue.com/de/products/cityclimate/zurich)
+
+Bei den aktuell zur Verfügung gestellten Messwerten handelt es sich um Rohdaten. Temperatur- und Niederschlagsdaten können durch Gebäude und andere Infrastruktur beeinflusst sein..
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_messorte_messnetz_meteoblue)
+
+Auto generated R starter code for data set ugz_stadtklima_zuerich_messorte_messnetz_meteoblue.
+
+## Metadata
+
+- **Publisher** `Messung Luftqualität, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Umwelt`
+- **Tags** `['hitze', 'kaelte', 'messorte', 'meteo', 'meteoblue', 'sachdaten', 'stadtklima', 'tabelle', 'temperatur', 'wetter', 'zeitreihe']`
+- **Metadata_created** `2024-11-27T11:18:07.539143`
+- **Metadata_modified** `2025-05-21T10:49:09.845255`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_messorte_messnetz_meteoblue/download/ugz_stadtklima_zuerich_messorte_messnetz_meteoblue.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

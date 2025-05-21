@@ -1,0 +1,137 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Bauliche Erneuerung nach Art der Erneuerung, Eigentumsart und Stadtquartier
+
+Der Datensatz enthält die umgebauten und abgebrochenen Wohnungen nach Eigentumsart und Stadtquartier. Die Summe von Umbau und Abbruch wird als bauliche Erneuerung verstanden.
+
+**Definition**
+
+
+Als bauliche Erneuerung wird vorliegend die Summe aller umgebauten und abgebrochenen Wohnungen definiert. Umbauten an Gebäuden, die weniger als 15 Jahre alt sind, werden nicht berücksichtigt. Die Erneuerungsquote ergibt sich als Summe der umgebauten und abgebrochenen Wohnungen, bezogen auf den relevanten, d.h. mindestens 15-jährigen Wohnungsbestand
+
+
+[]()
+
+**Weitere Informationen**
+
+
+Siehe die Analyse von Statistik Stadt Zürich aus dem Jahr 2016: [Bauliche Erneuerung in Zahlen](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/publikationen-und-dienstleistungen/publikationen/analysen/A_001_2016.html).
+
+
+[]()
+
+**AnzWhgStatGbdmind15Jaehrig**
+
+
+Wohnungsbestand in mindestens 15-jährigen Gebäuden. Hinweis: Mit diesem Wert kann die Erneuerungsquote berechnet werden. Die von SSZ ausgewiesene Quote bezieht sich nur Wohnungen in Gebäuden, die mindestens 15-jährig sind. Achtung: Der Wert enthält nur diejenigen Quartiere, in denen im betreffenden Jahr mindestens eine Erneuerung (Umbau oder Abbruch/Ersatzbau) stattgefunden hat.
+
+
+[]()
+
+**Zeitraum 1993-2000:**
+
+Keine Angaben über die Eigentumsgruppe
+
+[]()
+
+**Hinweis**
+
+Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+[]()
+
+**Eigentumsart**
+
+
+- Öffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum
+- Wohnbaugenossenschaften: Nur Wohnbaugenossenschaften
+- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
+- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
+- Im Stochwerkeigentum: Stockwerkeigentumsgesellschaften
+
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_whg_erneuerung_art_quartier_eigentumsart_seit1993_od5311)
+
+Auto generated R starter code for data set bau_whg_erneuerung_art_quartier_eigentumsart_seit1993_od5311.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['abbruch', 'bautaetigkeit', 'eigentum', 'erneuerung', 'gebaeudealter', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'wohnen', 'wohnung', 'zeitreihe']`
+- **Metadata_created** `2021-02-05T19:47:29.781838`
+- **Metadata_modified** `2025-05-21T07:12:46.032165`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_whg_erneuerung_art_quartier_eigentumsart_seit1993_od5311/download/BAU531OD5311.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

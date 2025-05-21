@@ -1,0 +1,186 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Gebiete mit Gartenstadtcharakter parzellenscharf
+
+Dieser Datensatz steht im Zusammenhang mit dem Datensatz &quot;Gebiete mit Gartenstadtcharakter&quot; (https://geodaten.stzh.ch/geodatensatz/show.html?nbid=15229). 
+Die Daten stammen aus dem Leitfaden Zukunft Gartenstadt Zürich und zeigen Gebiete und Siedlungen mit Gartenstadtcharakter klassiert nach Epochen, Leitideen und Einflüssen. 
+Im Gegensatz zum oben erwähnten Datensatz sind diese Daten parzellenscharf und reine Strassenparzellen wurden ausgeschnitten. Das erlaubt die Nutzung für räumliche Analysen.
+WICHTIG: Der Datensatz ist zum Stand der letzten Datenlieferung parzellenscharf. Wenn betroffenen Parzellen sich ändern, kann es sein, dass es noch nicht im Datensatz ersichtlich ist.
+
+**Zweck**: Der Datensatz kann für die Übersicht über die Gebiete mit Gartenstadtcharakter verwendet werden. Der Datensatz ist parzellenscharf und eignet sich gut für räumliche Analysen.
+
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Gebiete mit Gartenstadtcharakter parzellenscharf»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/5e8a2804-41a0-4eb2-b7c7-aa5b44943ee4).				
+			   
+
+**Datengrundlage:**
+
+Die Daten stammen aus dem Leitfaden Zukunft Gartenstadt Zürich und zeigen Gebiete und Siedlungen mit Gartenstadtcharakter klassiert nach Epochen, Leitideen und Einflüssen. 
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/5e8a2804-41a0-4eb2-b7c7-aa5b44943ee4.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_gebiete_mit_gartenstadtcharakter_parzellenscharf)
+
+Auto generated R starter code for data set geo_gebiete_mit_gartenstadtcharakter_parzellenscharf.
+
+## Metadata
+
+- **Publisher** `Raumentwicklung & Architektur, Amt für Städtebau, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen,Umwelt,Ver­walt­ung`
+- **Tags** `['gartenstadt', 'gartenstadtcharakter', 'gartenstadtperimeter', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2025-01-11T04:31:00.943548`
+- **Metadata_modified** `2025-05-21T06:37:14.995924`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Gebiete_mit_Gartenstadtcharakter_parzellenscharf?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

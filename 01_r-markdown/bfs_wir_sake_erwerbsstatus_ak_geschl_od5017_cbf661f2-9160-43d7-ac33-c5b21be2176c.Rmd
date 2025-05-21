@@ -1,0 +1,118 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Erwerbsstatus nach Altersklasse und Geschlecht
+
+Dieser Datensatz enthält den Anteil und die Anzahl von Personen an der ständigen Bevölkerung im Alter von 15 Jahren und mehr, nach Erwerbsstatus, Altersklasse und Geschlecht.
+
+
+**Datenquelle**
+
+Die Auswertung beruht auf der Schweizerischen Arbeitskräfteerhebung (SAKE). Diese jährlich vom Bundesamt für Statistik (BFS) durchgeführte telefonische Personenbefragung liefert repräsentative Daten über die Erwerbsstruktur und das Erwerbsverhalten der ständigen Wohnbevölkerung der Schweiz. Die SAKE basiert auf einer repräsentativen Stichprobe mit jährlich rund 120 000 Interviews, davon rund 2000 Interviews mit Personen, die in der Stadt Zürich wohnen. Um die mit der Auswertung von Stichprobendaten einhergehende Unsicherheit zu verkleinern, werden jeweils 2 Jahre gemeinsam ausgewertet.
+
+[]()
+
+**95 % Konfidenzintervalle**
+
+Die Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. 
+Das 95 % Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der
+Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.
+
+[]()
+
+**Erwerbstätige**
+
+Als Erwerbstätige gelten Personen im Alter von mindestens 15 Jahren, die einer bezahlten Arbeit nachgehen.
+
+[]()
+
+**Erwerbslose**
+
+Als Erwerbslose gelten die Personen im Alter von 15–74 Jahren, die keinen Job haben, aber einen Job suchen und bereit wären, damit zu starten.
+
+[]()
+
+**Nichterwerbsperson**
+
+Als Nichterwerbspersonen gelten die Personen, die keiner bezahlten Arbeit nachgehen und auch keinen Job suchen.
+
+[]()
+
+**Teilzeiterwerbstätige**
+
+Als Teilzeiterwerbstätige gelten die Personen, die weniger als 90 % arbeiten.
+
+[]()
+
+**Erwerbstatus Kategorien**
+
+Vollzeiterwerbstätige, Teilzeiterwerbstätige, Selbstständige und Lehrlinge gehören zu den Erwerbstätigen. Zusammen mit den Erwerbslosen bilden diese die Erwerbspersonen.  Personen in Ausbildung, haushaltsführende Personen, Rentner*innen und andere Nichterwerbspersonen gehören zu den Nichterwerbspersonen.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bfs_wir_sake_erwerbsstatus_ak_geschl_od5017)
+
+Auto generated R starter code for data set bfs_wir_sake_erwerbsstatus_ak_geschl_od5017.
+
+## Metadata
+
+- **Publisher** `Sektion Arbeit und Erwerbsleben, Bundesamt für Statistik`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Arbeit und Erwerb`
+- **Tags** `['alter-geschlecht', 'anteil', 'arbeit-erwerb', 'erwerbstaetigkeit', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-08-12T15:08:30.638763`
+- **Metadata_modified** `2025-05-21T07:05:38.809726`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bfs_wir_sake_erwerbsstatus_ak_geschl_od5017/download/WIR501OD5017.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

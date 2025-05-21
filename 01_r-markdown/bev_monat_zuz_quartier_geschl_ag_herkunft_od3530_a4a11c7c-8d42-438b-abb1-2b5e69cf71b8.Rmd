@@ -1,0 +1,107 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Zuzüge von auswärts nach Monat, Stadtquartier, Geschlecht, Altersgruppe und Herkunft
+
+
+Anzahl Zuzüge von auswärts nach Monat, Altersgruppe, Geschlecht, Herkunft, Stadtkreis und Stadtquartier.
+
+Bei den Daten des aktuellsten Jahres handelt es sich um **provisorische** Daten. Diese können laufend korrigiert werden. Erst mit dem Jahresabschluss werden die Daten definitiv.
+ 
+
+
+**Datenstand**
+
+- **Aktuellster Monat**: Der aktuellste Monat in den Daten entspricht dem aktuellen Monat - 2 Monate.
+
+- **Variable Datenstand**: Die Variablen DatenstandCd und DatenstandLang beschreiben den Datenstand. Provisorische Daten werden laufend korrigiert.
+
+ 
+
+[]()
+
+**Datenqualität**
+
+- **Datenqualität**: Die Daten des aktuellsten Jahres sind jeweils provisorisch und werden laufend korrigiert.
+
+- **Transitorische Bewegungen im Januar**: Im Januar jedes Jahres hat es wegen den Nachmeldungen (transitorische Buchungen) mehr Bewegungen als in den anderen Monaten. Dabei handelt sich um Ereignisse, die in anderen bereits abgeschlossenen Jahren geschehen sind, aber erst im laufenden Jahr gemeldet werden. 
+Diese Nachmeldungen nach statistischem Jahresabschluss werden dem Januar des Folgejahres zugeordnet. 
+Die restlichen, abgeschlossenen (Datenstand gleich 'veröffentlicht') Monatswerte entsprechen der Realität und können problemlos verwendet werden.
+
+ 
+
+[]()
+
+**Zuzüge von auswärts**
+
+- Personen, die von ausserhalb in die Stadt Zürich ziehen.
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_monat_zuz_quartier_geschl_ag_herkunft_od3530)
+
+Auto generated R starter code for data set bev_monat_zuz_quartier_geschl_ag_herkunft_od3530.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'geschlecht', 'herkunft', 'migration', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe', 'zuzug']`
+- **Metadata_created** `2020-05-11T18:46:29.179112`
+- **Metadata_modified** `2025-05-21T06:58:37.398593`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_monat_zuz_quartier_geschl_ag_herkunft_od3530/download/BEV353OD3530.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

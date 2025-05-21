@@ -1,0 +1,226 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: ERZ-Logistik: Betriebsdaten seit Januar 2023
+
+In der Regel monatlich aktualisierte Mengen von Kehricht, Recyclingstoffen, Sonderabfall sowie die Anzahl Unterfluranlagen und Kehricht-Sammelfahrzeugen in der Stadt Zürich. Die Angaben zur Menge der gesammelten Texitilien werden quartalsweise angegeben.
+
+
+**Logistik: Betriebsdaten**
+
+Laufend aktualisierte Mengen von Kehricht, Recyclingstoffen, Sonderabfall und Anzahl Unterfluranlagen, Sammelstellen und Kehrichtfahrzeuge in der Stadt Zürich.
+
+**Hauskehricht (t)**
+
+Thermisch verwertbarer Abfall aus Haushalten (Abfuhren Züri-Sack). Sammelmenge in Tonnen.
+
+**Hauskehricht Züri-Sack Leerungen Container (Stk)**
+
+Anzahl Leerungen von Züri-Sack Rollcontainer 140/240/770 l, Menge in Stück pro Monat.
+
+**Hauskehricht Züri-Sack Leerungen Unterflurcontainer (Stk)**
+
+Anzahl Leerungen von Unterflurcontainer für Züri-Sack, Menge in Stück pro Monat.
+
+**Sperrgut (t)**
+
+Sperrgut aus Haushalten sowie von Recyclinghöfen und Cargo-Tram. Sammelmenge in Tonnen.
+
+**Sperrgut Abholungen (Stk)**
+
+Anzahl der Abholungen von Sperrgut mit 15 Minuten Pauschale, Menge in Stück pro Monat.
+
+**Betriebskehricht (t)**
+
+Leerungen von Container 140/240/770 l und Unterflurcontainer. Sammelmenge in Tonnen.
+
+**Betriebskehricht Rollcontainer Leerungen (Stk)**
+
+Anzahl Leerungen von Rollcontainer 240/770 l, Menge in Stück pro Monat.
+
+**Betriebskehricht Unterflurcontainer Leerungen (Stk)**
+
+Anzahl Leerungen von Unterflurcontainer, Menge in Stück pro Monat.
+
+**Papier (t)**
+
+Sammlung alle zwei Wochen nach Postleitzahlengebiet (gebündelt, geschnürt an den Strassenrand oder in den Papiercontainer von ERZ) sowie Papier aus den Recyclinghöfen und von konzessionierten Sammeldienstleistern, Sammelmenge in Tonnen.
+
+**Karton (t)**
+
+Sammlung alle zwei Wochen nach Postleitzahlengebiet (gefaltet, gebündelt, geschnürt an den Strassenrand oder in den Kartoncontainer von ERZ) sowie Karton aus den Recyclinghöfen und von konzessionierten Sammeldienstleistern, Sammelmenge in Tonnen.
+
+**Glas (t)**
+
+Farbgetrennt gesammeltes Hohlglas (Flaschen und Lebensmittelverpackung aus Glas sowie Glasflasche aus dem Kosmetikbereich) von den dezentralen Wertstoff-Sammelstellen, und Glas von konzessionierten Sammeldienstleistern, Sammelmenge in Tonnen für alle Farben.
+
+**Kleinmetall (t)**
+
+An den dezentralen Wertstoff-Sammelstellen eingeworfene Metallteile, die in die Containeröffnung von 40 mal 18 Zentimeter passen (Alufolie, Draht, Getränkedose, kleine Pfanne, Konservendose, Kuchenblech, Nagel, Schraube, Tube aus Aluminium etc.), sowie Kleinmetall von konzessionierten Sammeldienstleistern, Sammelmenge in Tonnen.
+
+**Bioabfall  (t)**
+
+Abfuhr Bioabfall in Rollcontainern, Abfuhr loser, pflanzlicher Gartenabfall in Mulden sowie Abholung von losem, pflanzlichen Gartenabfall mit Kranfahrzeug, Sammelmenge in Tonnen.
+
+**Bioabfall Rollcontainer Leerungen (Stk)**
+
+Anzahl Leerungen von Bio Rollcontainer 140/240/770 l, Menge in Stück pro Monat.
+
+**Bioabfall Abholungen (Stk)**
+
+Anzahl der Abholungen von Bioabfall mit 5 Minuten Pauschale, Menge in Stück pro Monat.
+
+**Textilien (t)**
+
+Textilcontainer an den Wertstoff-Sammelstellen sowie auf Privatgrund sowie Textilien von konzessionierten Sammeldienstleistern, Sammelmenge in Tonnen pro Quartal.
+
+**Sperrgut Recyclinghof Hagenholz / Looächer (t)**
+
+In den Recyclinghof Hagenholz (bis Juli 2024) / Looächer (ab August 2024) eingeliefertes Material (Sperrgut der zu gross und zu schwer ist für den Züri-Sack), Sammelmenge in Tonnen pro Monat.
+
+**Fahrzeuge Recyclinghof Hagenholz / Looächer (Stk)**
+
+Anzahl der Fahrzeuge zum Ablad im Recyclinghof Hagenholz (bis Juli 2024) / Looächer (ab August 2024), Zahl pro Monat.
+
+**Sperrgut Recyclinghof Werdhölzli (t)**
+
+In den Recyclinghof Werdhölzli eingeliefertes Material (Sperrgut der zu gross und zu schwer ist für den Züri-Sack), Sammelmenge in Tonnen pro Monat.
+
+**Cargo-Tram Sperrgut (t)**
+
+Im Cargo Tram gesammeltes Sperrgut, Menge in Tonnen pro Monat.
+
+**Cargo-Tram Metall (t)**
+
+Im Cargo Tram gesammeltes Alteisen/Metal, Menge in Tonnen pro Monat.
+
+**Cargo-Tram Grubengut (t)**
+
+Im Cargo Tram gesammeltes Grubengut, Menge in Tonnen pro Monat.
+
+**Cargo-Tram Styropor (kg)**
+
+Im Cargo Tram gesammeltes Styropor, Menge in Kilogramm pro Monat.
+
+**Elektro-Tram (kg)**
+
+Mit dem Elektro-Tram gesammelte elektrische und elektronische Geräte, Menge in Kilogramm pro Monat.
+
+**Cargo-, Elektro-Tram Besucher (Stk)**
+
+Einlieferer zu Fuss und per Velo beim Cargo- und E-Tram, Anzahl pro Monat.
+
+**Unterfluranlagen für Züri-Sack öffentlicher Grund (Stk)**
+
+Container mit Sammelbehälter unter dem Boden mit Einwurfschacht aus Chromstahl für Hauskehricht, Anzahl Standorte auf öffentlichem Grund.
+
+**Unterfluranlagen für Züri-Sack privater Grund (Stk)**
+
+Container mit Sammelbehälter unter dem Boden mit Einwurfschacht aus Chromstahl für Hauskehricht, Anzahl Standorte auf privatem Grund.
+
+**Wertstoff-Sammelstellen Überflur (Stk)**
+
+Dezentrale Sammelstellen über dem Boden mit Einwurfsöffnungen für Glas, Kleinmetalle sowie teilweise Öl und Textilen, Anzahl Standorte pro Monat.
+
+**Wertstoff-Sammelstellen Unterflur (Stk)**
+
+Dezentrale Sammelstellen unter dem Boden mit Einwurfsöffnungen für Glas, Kleinmetalle sowie teilweise Öl und Textilen, Anzahl Standorte pro Monat.
+
+**Abfallsammelfahrzeuge (Stk)**
+
+Total der Sammel- und Transportfahrzeuge für die Abfallentsorgung (Fahrzeuge mit Schüttung für Rollcontainer und integrierter Abfallpresse, Transportfahrzeuge für Abrollmulden, Absetzmulden und Pressen sowie Kranfahrzeuge).
+
+**Züri-Säcke (Stkl)**
+
+Total verkaufte 10L-, 17L-, 35L-, 60L- und 110L-Züri-Säcke (inkl. Vertragsgemeinde Schwerzenbach), die Zahlen betreffen die Lieferung der Produzenten an die Retailer, Verkaufsmenge in Stück.
+
+**Einlieferungen Sonderabfall mit Gebühr (t)**
+
+Einlieferungen Sonderabfall mit Gebühr.
+
+**Einlieferungen Sonderabfall ohne Gebühr (t)**
+
+Einlieferungen Sonderabfall ohne Gebühr.
+
+**Direkteinlieferungen Sonderabfall-Sammelstelle Hagenholz (t)**
+
+Direkteinlieferungen Sonderabfall-Sammelstelle Hagenholz.
+
+**Mobile Sammlung Sonderabfall in der Stadt Zürich (t)**
+
+Mobile Sammlung Sonderabfall in der Stadt Zürich.
+
+**Mobile Sammlung Sonderabfall im Kanton Zürich (t)**
+
+Mobile Sammlung Sonderabfall im Kanton Zürich.
+
+**Recyclingquote Stadt Zürich (%)**
+
+Anteil separat gesammelter, stofflich verwertbarer Abfall (Recyclingstoffe (Papier, Karton, Glas, Kleinmetall)) im Verhältnis zum gesamten Abfall aus Haushalten (Hauskehricht und Sperrgut).
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_elog_kennzahlen)
+
+Auto generated R starter code for data set erz_elog_kennzahlen.
+
+## Metadata
+
+- **Publisher** `Logistik, Entsorgung + Recycling Zürich, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Umwelt,Ver­walt­ung`
+- **Tags** `['abfall', 'abfallsack', 'bioabfall', 'cargo-tram', 'e-tram', 'eisen', 'glas', 'hauskehricht', 'karton', 'kehricht', 'metall', 'papier', 'plastik', 'recycling', 'sammelmengen', 'sammelstellen', 'siedlungsabfall', 'sonderabfall', 'textilien', 'wertstoffe', 'zuri-sack']`
+- **Metadata_created** `2023-09-28T13:51:35.458988`
+- **Metadata_modified** `2025-05-20T16:11:18.685007`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/erz_elog_kennzahlen/download/elog_kennzahlen.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

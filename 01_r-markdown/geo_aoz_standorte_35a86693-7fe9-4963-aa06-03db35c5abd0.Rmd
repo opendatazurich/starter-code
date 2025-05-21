@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-18"
+date: "2025-05-21"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_aoz_standorte.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['asyl', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:16:30.024447`
-- **Metadata_modified** `2025-05-17T06:35:45.857538`
+- **Metadata_modified** `2025-05-21T06:36:26.411255`
 
 
 # Load packages

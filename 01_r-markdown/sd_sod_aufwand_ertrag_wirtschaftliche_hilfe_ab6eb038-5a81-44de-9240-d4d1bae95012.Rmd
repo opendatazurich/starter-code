@@ -1,0 +1,116 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Aufwand und Ertrag in der wirtschaftlichen Hilfe gemäss Sozialhilfe-Gesetz seit 2014
+
+Zur wirtschaftlichen Hilfe gemäss Sozialhilfe-Gesetz zählen sowohl die Kosten für die Sozialhilfe gemäss SKOS-Richtlinien (Richtlinien der Schweizerischen Konferenz für Sozialhilfe) und der Beschlüsse der Sozialbehörde der Stadt Zürich als auch die Kosten für die erzieherischen finanziellen Hilfen (ambulante oder stationäre Betreuung und Erziehung von Kindern und Jugendlichen).
+
+
+**Erläuterung**
+
+
+- Die Beiträge an die Krankenkassenprämien werden durch den Kanton zurückerstattet.
+- Rückläufiger Betrag bzw. kein Ertrag auf dem Posten 'Kostenersatz Kanton und Gemeinden': Aufhebung der Rückerstattung auf der Grundlage des Zuständigkeitsgesetzes (ZUG) per Ende März 2017
+- Bis 2017 wurden nicht Aufwand und Ertrag dargestellt, sondern Zahlungen und Rückerstattungen (Geldfluss). Die hier dargestellten Ertrags-Zahlen für die Jahre 2014–2017 weichen deshalb leicht ab von den in den Vorjahren dargestellten Rückerstattungs-Zahlen.
+
+
+[]()
+
+**Definitionen**
+
+
+**Kostenersatz Kanton und Gemeinden**
+Erhält ein Hilfebedürftiger ausserhalb seiner Wohngemeinde wirtschaftliche Hilfe, ist die Wohngemeinde für die Kosten ersatzpflichtig.
+
+**Rückerstattung von Heimatbehörden**
+Aufgehoben seit 8. April 2017
+
+**Selbstzahler**
+Rückerstattungen von Sozialhilfebeziehenden
+
+**Verwandte**
+Rückerstattungen von Verwandten von Sozialhilfebeziehenden
+
+**Sozialinstitutionen**
+Rückerstattungen von Sozialinstitutionen wie IV, AHV, ALV etc.
+
+**Staatsbeitrag Wirtschaftliche Hilfe**
+Der Kanton leistet den Gemeinden nach ihrer finanziellen Leistungsfähigkeit an die Kosten der wirtschaftlichen Hilfe Kostenanteile bis zur Hälfte der beitragsberechtigten Ausgaben.
+
+
+[]()
+
+**Geschäftsbericht**
+
+
+Im [**Geschäftsbericht**](https://www.stadt-zuerich.ch/geschaeftsbericht) werden jährlich alle Zahlen zum Thema Sozialhilfe veröffentlicht.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_sod_aufwand_ertrag_wirtschaftliche_hilfe)
+
+Auto generated R starter code for data set sd_sod_aufwand_ertrag_wirtschaftliche_hilfe.
+
+## Metadata
+
+- **Publisher** `Sozialstatistik / Evaluation, Soziale Dienste, Sozialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
+- **Tags** `['aufwand', 'ertrag', 'kosten', 'krankenkasse', 'ruckerstattung', 'sachdaten', 'sozialhilfe', 'tabelle', 'wirtschaftliche-hilfe', 'zeitreihe']`
+- **Metadata_created** `2019-12-13T10:33:38.347693`
+- **Metadata_modified** `2025-05-21T07:12:21.205686`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sd_sod_aufwand_ertrag_wirtschaftliche_hilfe/download/sd_sod_aufwand_ertrag_wirtschaftliche_hilfe.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

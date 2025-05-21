@@ -1,0 +1,86 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Durchschnittlicher Zusatzleistungsanspruch von ZL-Beziehenden in der Stadt Zürich
+
+Durchschnittlicher Zusatzleistungsanspruch seit Dezember 2017. 
+
+
+**Hinweis:**
+
+Der durchschnittliche ZL-Betrag ergibt sich aus der Summe der Zusatzleistungen pro Rentenart (AHV, IV, HV) und Wohnsituation (Wohnung, Heim) geteilt durch die Anzahl laufende Fälle der jeweiligen Renten- und Wohnart.
+
+[]()
+
+**Dateninterpretation:**
+
+Die Finanzierung der Kosten für Kinder-, Jugend- und Schulheime sowie Familienpflege wurde ab 01.01.2022 gesetzlich neu geregelt. Ab 2022 ist das Amt für Jugend- und Berufsberatung des Kantons Zürich (AJB) zuständig für die Bewilligung, Prüfung (Kostenübernahmegarantie [KÜG]), Aufsicht und die Finanzierung der Heim- und Familienpflege. Dadurch reduziert sich der Kostenbeitrag des AZL gem. § 47 KJV auf den sog. Verpflegungsbeitrag von CHF 25 pro Tag, was den masiven Einbruch des Durchschnittswerts bei 'HVinHeim' ab 2022 erklärt.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_azl_zlbeziehende_durchschnitt_zlanspruch)
+
+Auto generated R starter code for data set sd_azl_zlbeziehende_durchschnitt_zlanspruch.
+
+## Metadata
+
+- **Publisher** `Amt für Zusatzleistungen, Sozialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
+- **Tags** `['anspruch', 'durchschnitt', 'sachdaten', 'tabelle', 'zeitreihe', 'zusatzleistungen']`
+- **Metadata_created** `2023-04-04T18:54:36.276799`
+- **Metadata_modified** `2025-05-21T07:09:01.194144`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sd_azl_zlbeziehende_durchschnitt_zlanspruch/download/sd_alz_zl_durchschnitt.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

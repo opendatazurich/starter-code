@@ -1,0 +1,75 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Todesfälle nach Bestattungsart, Geschlecht, 10-Jahres-Altersklasse und Herkunft
+
+
+Anzahl Todesfälle von Personen der wirtschaftlichen Wohnbevölkerung der Stadt Zürich nach Bestattungsart, Geschlecht, 10-Jahres-Altersklasse, Herkunft und Jahr.
+
+
+nan
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_todesfaelle_jahr_bestattungsart_herkunft_geschlecht_ag_od4204)
+
+Auto generated R starter code for data set bev_todesfaelle_jahr_bestattungsart_herkunft_geschlecht_ag_od4204.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'todesfaelle', 'zeitreihe']`
+- **Metadata_created** `2024-08-27T09:49:31.350874`
+- **Metadata_modified** `2025-05-21T07:15:14.180933`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_todesfaelle_jahr_bestattungsart_herkunft_geschlecht_ag_od4204/download/BEV420OD4204.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

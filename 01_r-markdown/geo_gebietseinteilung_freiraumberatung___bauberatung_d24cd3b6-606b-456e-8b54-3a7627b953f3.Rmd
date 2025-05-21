@@ -1,0 +1,201 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Gebietseinteilung Freiraumberatung - Bauberatung
+
+Die Aufteilung der Stadt Zürich in Zuständigkeitsgebiete der Freiraumberatung von Grün Stadt Zürich regelt die Zuständigkeit von Freiraumberater/-innen bei Grün Stadt Zürich (GSZ). Die Freiraumberatung-Bauberatung Grün- und Freiräume ist eine Vernehmlassungsstelle im Baubewilligungsverfahren. Wir unterstützen Bauwillige beim Erarbeiten des Baugesuchs und beurteilen die Baueingaben hinsichtlich der Umgebungsgestaltung mit Spiel-, Grün- und Ruheflächen, Vorgartengebiet, Parkplatzgestaltung, der Terrainmodellierung, Dach- und Fassadenbegrünungen sowie dem Baumerhalt mit Baumschutzmassnahmen.
+
+**Zweck**: Räumliche Übersicht der personellen Zuständigkeit der Freiraumberatung von Grün Stadt Zürich
+
+**Genereller Hinweis zum Geodatensatz:**
+
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Gebietseinteilung Freiraumberatung - Bauberatung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/d630af15-3810-499f-a5c4-132172e6c9e9).
+			   
+
+**Datenerfassung:**
+
+Die Einteilung basiert vorwiegend auf den Flächen der Stadtkreise. Weitere zusätzliche Flächenunterteilungen sind entlang der statistischen Quartiere definiert.
+
+**Datengrundlage:**
+
+Geometrien: Statistische Quartiere und Stadtkreise der Amtlichen Vermessung (GeoZ)
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Gebietseinteilung Freiraumberatung - Bauberatung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/d630af15-3810-499f-a5c4-132172e6c9e9).
+
+***gebietseinteilung_fbe_bauberatung***: 
+
+Die Aufteilung der Stadt Zürich in Zuständigkeitsgebiete der Bauberatung Grün- und Freiräume (Team Bauberatung BBV+ und Gebietszuständigkeit) von Grün Stadt Zürich regelt die Zuständigkeit von Freiraumberater/-innen bei Grün Stadt Zürich (GSZ).
+
+
+***gebietseinteilung_fbe_baumerhalt***: 
+
+Die Aufteilung der Stadt Zürich in Zuständigkeitsgebiete der Bauberatung Grün- und Freiräume (Team Baumerhalt und Stadtgrün) von Grün Stadt Zürich regelt die Zuständigkeit von Freiraumberater/-innen bei Grün Stadt Zürich (GSZ).
+
+
+
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/d630af15-3810-499f-a5c4-132172e6c9e9.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_gebietseinteilung_freiraumberatung___bauberatung)
+
+Auto generated R starter code for data set geo_gebietseinteilung_freiraumberatung___bauberatung.
+
+## Metadata
+
+- **Publisher** `Bauberatung Grün- und Freiräume, Grün Stadt Zürich, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Basis­karten`
+- **Tags** `['__', 'baugesuche', 'freiraumberatung', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2025-04-05T04:30:46.973503`
+- **Metadata_modified** `2025-05-21T06:33:43.810095`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Gebietseinteilung_Freiraumberatung___Bauberatung?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

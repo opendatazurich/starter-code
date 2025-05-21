@@ -1,0 +1,146 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Bevölkerung nach Bildungsstand, Jahr, Alter und Geschlecht
+
+Diese Daten beschreiben die ständige Wohnbevölkerung der Stadt Zürich und basieren auf der Volkszählung und der Strukturerhebung des Bundesamts für Statistik.
+
+Es sind bloss 15-jährige und ältere Personen enthalten. Weitere Informationen finden Sie unter **Bemerkung**.
+
+**Strukturerhebung**
+
+- **Allgemeine Information**: Die  [Strukturerhebung](https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/erhebungen/se.html) ist ein Element der neuen Volkszählung. Sie ergänzt die Registerdaten und wird seit 2010 jährlich vom BFS als Stichprobenerhebung in der gesamten Schweiz durchgeführt. 
+
+- **Datenerhebung**: Die Strukturerhebungsdaten werden mittels schriftlicher Befragung erhoben. Die ausgewählten Zielpersonen sind mindestens 15 Jahre alt und machen Angaben zur eigenen Person (Zielpersonendatensatz) sowie zu den weiteren Personen im Haushalt (Haushaltsdatensatz). Im Haushaltsdatensatz werden somit auch Daten zu Personen ausgewiesen, die jünger als 15 Jahre alt sind. Die Fragebögen gibt es in den  Landessprachen (Deutsch, Französisch, Italienisch und Rätoromanisch) mit Übersetzungshilfen in Englisch, Spanisch, Portugiesisch, Türkisch, Albanisch, Serbisch/Kroatisch/Bosnisch/Montenegrinisch. 
+
+- **Stichprobe**: Weil die Auswertungen ab 2010 auf Stichprobendaten beruhen, werden erstens die Zahlen gerundet, zudem werden Konfidenzintervalle angegeben.
+
+ 
+
+[]()
+
+**Volkszählung**
+
+- **Allgemeine Information**: Die   [Volkszählung](https://www.bfs.admin.ch/bfs/de/home/statistiken/bevoelkerung/erhebungen/volkszaehlung.html) wurde von 1850 bis 2000 alle 10 Jahre als Vollerhebung durchgeführt und liefert wichtige Informationen zur Struktur der Bevölkerung in der Schweiz. Aufgrund der zweiten Mobilmachung der Armee im Mai 1940 wurde die Volkszählung um ein Jahr verschoben.
+
+- **Datenerhebung**: Die Volkszählungsdaten wurden mittels Fragebogen erhoben. Ab 2000 bestand die Möglichkeit, die Fragebogen via Internet auszufüllen.
+ 
+
+[]()
+
+**Bildungsstand**
+
+- Der **Bildungsstand** beschreibt die höchste abgeschlossene Ausbildung der Wohnbevölkerkung. Bis im Jahr 2016 verwendete das Bundesamt für Statistik die Bezeichnungen Sekundarstufe 1, Sekundarstufe 2 und Tertiärstufe. Ab dem Jahr 2017 heissen die Kategorien Obligatorische Schule, Sekundarstufe II und Tertiärstufe.
+
+ 
+
+[]()
+
+**Ohne nachobligatorische Ausbildung**
+
+- Zur Kategorie 'ohne nachobligatorische Ausbildung' gehören Real-, Sekundar-, Bezirks- und Oberstufenschule. In der Strukturerhebung des Bundesamtes für Statistik werden die Menschen ohne Schulbildung sowie mit höchstens sieben Jahren obligatorischer Schule ebenfalls zu dieser Kategorie dazugezählt.
+
+ 
+
+[]()
+
+**Sekundarstufe II**
+
+- Zur **Sekundarstufe II** gehören Schulen der weiterführenden Bildung. Diese Stufe umfasst die Berufslehre, Berufsmittel-, Fachmittel- und Kantonsschule sowie Gymnasium.
+
+ 
+
+[]()
+
+**Tertiärstufe**
+
+- Die **Tertiärstufe** umfasst Ausbildungen im Bereich der höheren Berufsbildung, Fachhochschulen sowie Hochschulen.
+
+ 
+
+[]()
+
+**Konfidenzintervalle**
+
+- **Information**: Die Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. Das 95% Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.
+
+
+ 
+
+[]()
+
+**Definition**
+
+- **Ständige Wohnbevölkerung**: 
+Für die Bevölkerungszahlen bestehen verschiedene Definitionen, welche [auf der Webseite von Statistik Stadt Zürich](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/bevoelkerung/bestand-und-entwicklung/bevoelkerungsdefinition.html) ersichtlich sind.
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bfs_bev_bildungsstand_alter_geschl_seit1970_od1005)
+
+Auto generated R starter code for data set bfs_bev_bildungsstand_alter_geschl_seit1970_od1005.
+
+## Metadata
+
+- **Publisher** `Bundesamt für Statistik (BFS)`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'bevoelkerungsbestand', 'bildung', 'bildungsstand', 'geschlecht', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2019-07-29T13:23:14.288061`
+- **Metadata_modified** `2025-05-21T06:59:56.295893`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bfs_bev_bildungsstand_alter_geschl_seit1970_od1005/download/BIL100OD1005.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

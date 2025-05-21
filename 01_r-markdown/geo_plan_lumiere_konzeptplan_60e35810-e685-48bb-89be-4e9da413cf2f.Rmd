@@ -1,0 +1,210 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Plan Lumiere Konzeptplan
+
+Das Beleuchtungskonzept Plan Lumière orientiert sich an den vielfältigen topografischen und landschaftlichen Qualitäten der Stadt Zürich und nimmt Rücksicht auf bestehende städtebauliche und stadträumliche Strukturen. Der Konzeptplan ist ein wichtiges Arbeitsinstrument: Er zeigt Eingriffsgebiete, für die unterschiedliche Beleuchtungsszenarien gelten. Beleuchtungen in den Eingriffsgebieten sollen die Eigenheiten und Qualitäten dieser Gebiete stärken und dazu beitragen, dass sie ein gebietsspezifisches nächtliches Gesicht erhalten.
+
+**Zweck**: Planungsgrundlage
+
+**Genereller Hinweis zum Geodatensatz:**
+
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Plan Lumiere Konzeptplan»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/bb8cd816-7831-4e36-a9b7-fd9d1d8cf709).
+			   
+
+**Datenerfassung:**
+
+Digitalisierung von Übersichtsplan
+
+**Datengrundlage:**
+
+Innerhalb Erarbeitung des Konzepts aus 2004
+
+**Weitere Informationen zu diesem Thema:**
+
+Finden Sie unter diesem [**Link**](https://www.stadt-zuerich.ch/de/planen-und-bauen/stadtplanung/strategien-und-konzepte/plan-lumiere.html)
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Plan Lumiere Konzeptplan»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/bb8cd816-7831-4e36-a9b7-fd9d1d8cf709).
+
+***VIEW_LUMIERE_KONZEPT_A***: 
+
+Tabelle für sämtliche Flächenelemente 
+
+
+***VIEW_LUMIERE_KONZEPT_L***: 
+
+Tabelle für sämtliche Linienelemente 
+
+
+***VIEW_LUMIERE_KONZEPT_P***: 
+
+Tabelle für sämtliche Punktelemente 
+
+
+
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/bb8cd816-7831-4e36-a9b7-fd9d1d8cf709.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_plan_lumiere_konzeptplan)
+
+Auto generated R starter code for data set geo_plan_lumiere_konzeptplan.
+
+## Metadata
+
+- **Publisher** `Grundlagen + Strategien, Tiefbauamt, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Umwelt,Ver­walt­ung`
+- **Tags** `['beleuchtung', 'beleuchtungskonzept', 'geodaten', 'geoportal', 'gesamtkonzept', 'licht', 'liniendaten', 'lumiere', 'nacht', 'plan', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten']`
+- **Metadata_created** `2023-11-06T03:12:31.719941`
+- **Metadata_modified** `2025-05-21T06:34:18.455978`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Plan_Lumiere_Konzeptplan?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,106 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Daten der automatischen Fussgänger- und Velozählung - Viertelstundenwerte
+
+
+Die täglich aktualisierten **Zähldaten** werden vom Tiefbauamt der Stadt Zürich in eigener Regie erhoben. Die Zählstellen sind über das Stadtgebiet verteilt. Die Standorte sind auch über das [Geodatenportal](https://www.stadt-zuerich.ch/geodaten/download/Standorte_der_automatischen_Fuss__und_Velozaehlungen) erhältlich und können über das Attribut FK_ZAEHLER in Beziehung gesetzt werden. Die Erfassung des **Veloverkehrs** erfolgt mittels im Strassenbelag eingelassenen **Induktionsschlaufen**. Der **Fussverkehr** wird durch **passive Infrarotstrahlung** gezählt. 
+		
+
+
+**Ausfälle der Zählgeräte:** 
+
+Wenn einzelne **Zeitintervalle** für Zählstellen **fehlen**, so ist dies auf **Ausfälle des Zählgeräts** zurückzuführen.
+
+**Dateninterpretation:**
+
+Generell sind bei Interpretationen der Zähldaten, wie z.B. der Entwicklung der Frequenzen, Randbedingungen zu berücksichtigen. Wie beispielsweise die Witterung, die Bevölkerungs- und Arbeitsplatzentwicklung oder lokale Verkehrsverlagerungen infolge Baustellen oder Umleitungen.
+
+Die angezeigten **Velofrequenzen** stellen von den Geräten detektierten Velofahrten über die im Boden installierten Zählschlaufen dar. Die effektiven Velofrequenzen am Querschnitt können sich von den angegebenen Zählwerten unterscheiden, wenn Fahrten über mehrere Schlaufen führen (und daher mehrfach gezählt werden), bei Fahrten abseits der Schlaufen (und daher gar nicht erfasst werden) oder bei Velos mit Karbonfelgen (nicht detektiert). Zur besseren Dateninterpretation sind daher zusätzlich die [**Ergebnisse der regelmässigen manuellen Kontrollzählungen**](https://data.stadt-zuerich.ch/dataset/83ca481f-275c-417b-9598-3902c481e400/resource/f5d31b06-98df-44da-90cb-daf570ba84b1/download/2018_02_19_korrekturfaktoren_vzs_ogd_veloverkehr.pdf) zu berücksichtigen. Die Prozentangaben geben die mittlere Korrektur wieder, um von den angegebenen Gerätewerten auf die effektiven Velofrequenzen am gesamten Querschnitt zu schliessen. Da die Kontrollzählungen zeigten, dass sie sich kaum verändern, gelten die Korrekturfaktoren seit deren Installation. Sie unterscheiden zudem keine Fahrtrichtungen und gelten für beide Richtungen gleichermassen. Die Zählstellen «Langstrasse» und «Hofwiesenstrasse» decken jeweils nur einen 'halben Querschnitt' ab. Um die Frequenzen am Gesamtquerschnitt zu bestimmen, könnten für Näherung die berechneten Kennwerte an diesen beiden Querschnitten verdoppelt werden.
+
+Die angezeigten **Fussfrequenzen** basieren auf den von den Geräten detektierten Bewegungen im vom Gerät abgedeckten Querschnitt. Grundsätzlich werden alle Bewegungen gezählt, sodass diese Geräte auch Velofahrten im Erfassungsbereich erfassen. Andererseits wird bei der Installation der Zählgeräte darauf geachtet, dass bei hohen Veloanteilen zusätzlich eine Velozählstelle installiert wird, sodass dann die Differenzen die effektiven Fussverkehrsfrequenzen am Querschnitt wiedergeben (wie z.B.  bei «Langstrasse» oder «Militärbrücke»). Die [**angehängte Datei**](https://data.stadt-zuerich.ch/dataset/83ca481f-275c-417b-9598-3902c481e400/resource/de6c2881-f53d-42bb-8171-60c6b57cde86/download/2017_11_29_korrekturfaktoren_fzs_ogd_fussverkehr.pdf) zeigt für alle Zählstellen des Fussverkehrs die in zahlreichen manuellen Kontrollzählungen ermittelten **Korrekturfaktoren**. Die Korrekturfaktoren sind hilfreich, wenn Querschnitte resp. berechnete Kennwerte (wie mittlere Tagesaufkommen in einem Zeitraum) miteinander verglichen werden sollen. Die Faktoren berücksichtigen Fehlzählungen durch allfällige Velofahrten im Querschnitt sowie Überdeckungen bei parallelem Laufen von Fussgängerinnen und Fussgängern. Die Korrekturfaktoren gelten generell auf berechnete Kennwerte, wie mittlere Tagesaufkommen in einem Zeitraum, also für alle Jahre (Kontrollzählungen zeigten, dass sie sich kaum verändern). Sie unterscheiden zudem keine Fahrtrichtungen und gelten für beide Richtungen gleichermassen.
+
+**Empfehlung:**
+
+Die Daten zeigen die gezählten Frequenzen je Viertelstunde und Richtung. Bei allen Analysen empfiehlt sich, die Daten auf Stundenwerte zu aggregieren.
+
+
+
+**Zeitangaben**
+
+Alle **Zeitangaben** sind **lokale Zeiten** ([CET - Central European Time](http://www.timeanddate.com/time/zones/cet)). Das Datumsformat entspricht dem [ISO 8601 Standard](http://www.w3.org/TR/NOTE-datetime).
+
+Bei der Zeitumstellung passiert folgendes: 
+
+* Vorstellen von 2 auf 3 Uhr: Es fehlt einfach eine Stunde. An diesem Tag werden nur für 23 Stunden Werte geliefert. 
+* Rückstellen von 3 auf 2 Uhr: Der Wert zwischen 2 und 3 Uhr gibt die Frequenzen zweier Stunden an.
+
+
+				
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ted_taz_verkehrszaehlungen_werte_fussgaenger_velo)
+
+Auto generated R starter code for data set ted_taz_verkehrszaehlungen_werte_fussgaenger_velo.
+
+## Metadata
+
+- **Publisher** `Tiefbauamt, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Freizeit,Mobilität,Umwelt`
+- **Tags** `['digitale-transparenz-im-oeffentlichen-raum', 'dtoer', 'fussgaengerzaehlung', 'fussverkehr', 'langsamverkehr', 'messwerte', 'planung', 'punktdaten', 'sachdaten', 'standort', 'veloverkehr', 'velozaehlung', 'zaehlung']`
+- **Metadata_created** `2020-03-16T12:37:39.927543`
+- **Metadata_modified** `2025-05-21T10:10:27.062138`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/ted_taz_verkehrszaehlungen_werte_fussgaenger_velo/download/2013_verkehrszaehlungen_werte_fussgaenger_velo.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

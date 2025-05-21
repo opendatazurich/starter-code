@@ -1,0 +1,103 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-21"
+output: html_document
+---
+
+## Dataset: Dispositionen
+
+Dispositionen von Schutz und Rettung nach Gebiet und Jahr
+
+**Gebiete**
+
+- **Gebiete**: 
+Bei diesen Daten werden zwei Gebiete unterschieden: Stadt Zürich/Flughafen sowie die übrigen Gebiete.
+
+Das Dispositionsgebiet der Einsatzleitzentrale von Schutz & Rettung Zürich für den Feuerwehr-Notruf 118 umfasst den ganzen Kanton Zürich.
+Das Dispositionsgebiet der Einsatzleitzentrale von Schutz & Rettung Zürich für den Sanitätsnotruf 144 umfasst(e) 
+- ab 2008 den Grossteil des Kantons Zürich ohne Winterthur und Umgebung, den Kanton Schaffhausen und wesentliche Teile des Kantons Schwyz
+- ab dem 1.2.2010 den ganzen Kanton Zürich, den Kanton Schaffhausen sowie den Grossteil des Kantons Schwyz
+- ab 2012 die Kantone Zürich, Schaffhausen sowie Schwyz
+- ab dem 2.12.2014 die Kantone Zürich, Schaffhausen, Schwyz und Zug.
+ 
+
+[]()
+
+**Dispositionen**
+
+- **Dispositionen**: 
+Die notwendigen Einsatzmittel werden dem Einsatz zugeordnet (disponiert). Ein Einsatz kann mehrere Dispositionen umfassen. Eine Disposition kann ein oder mehrere Mittel umfassen. 
+
+[]()
+
+**Vergleichbarkeit**
+
+- **Vergleichbarkeit**: 
+Bis 2009 wurden bei der Feuerwehr die Einsatzzahlen aufgeführt. Ab 2010 sind es die Dispositionen.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_srz_od1052_dispositionen_jahr_gebiet)
+
+Auto generated R starter code for data set sid_srz_od1052_dispositionen_jahr_gebiet.
+
+## Metadata
+
+- **Publisher** `Schutz und Rettung, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Ver­walt­ung`
+- **Tags** `['dispositionen', 'feuerwehr', 'gesundheit', 'rettungsdienste', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-12-01T11:17:20.608657`
+- **Metadata_modified** `2025-05-21T02:50:32.608315`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_srz_od1052_dispositionen_jahr_gebiet/download/GES105OD1052.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch
