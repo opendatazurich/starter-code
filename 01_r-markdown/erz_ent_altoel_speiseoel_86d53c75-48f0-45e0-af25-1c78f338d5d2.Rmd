@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-21"
+date: "2025-05-22"
 output: html_document
 ---
 
@@ -26,7 +26,7 @@ Auto generated R starter code for data set erz_ent_altoel_speiseoel.
 - **Keywords** `Umwelt`
 - **Tags** `['altol', 'entsorgung', 'entwasserung', 'kreislaufwirtschaft', 'ol', 'speiseol']`
 - **Metadata_created** `2022-05-11T14:10:34.881152`
-- **Metadata_modified** `2025-05-20T16:11:16.273716`
+- **Metadata_modified** `2025-05-21T16:11:05.646227`
 
 
 # Load packages

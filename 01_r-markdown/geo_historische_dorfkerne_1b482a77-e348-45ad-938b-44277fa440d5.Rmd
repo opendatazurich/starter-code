@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-21"
+date: "2025-05-22"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_historische_dorfkerne.
 - **Keywords** `Bauen und Wohnen,Bevölk­erung`
 - **Tags** `['archaologie', 'geodaten', 'geoportal', 'geschichte', 'polygondaten', 'siedlungen', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:15:35.750236`
-- **Metadata_modified** `2025-05-21T06:36:03.355711`
+- **Metadata_modified** `2025-05-22T06:36:13.435375`
 
 
 # Load packages
