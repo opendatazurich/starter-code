@@ -1,0 +1,96 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Fotosammlung: Wandervogel - Schweizerischer Bund für alkoholfreie Jugendwanderungen
+
+Diese frühe Jugendbewegung suchte und fand ihre Freiräume in der Natur: beim Spielen im Wald, beim Tanzen auf der Wiese und beim Wandern in den Bergen. Ganz wichtig dabei war die Gemeinschaft, das gemeinsame Verbringen der spärlichen Freizeit. Es dominieren denn auch Ringtänze, gemeinsames Musizieren, grosse Theateraufführungen auf Freilichtbühnen. Höhepunkte im Wandervogelleben waren die grossen Fahrten und die «Landsgemeinden». 
+
+Die getroffene Auswahl der **Fotos** (der gesamte Bestand ist viel umfangreicher) berücksichtigt das ganze Spektrum dieser Aktivitäten. Es wurden möglichst alle vorkommenden Ortsgruppen und besuchten geografischen Räume miteinbezogen.
+
+**Metadaten**
+
+Zu diesen hochaufgelösten Scans (TIF) gibt es keine weiteren Metadaten.
+
+**Weitere Links**
+
+- Webseite des [Schweizerischen Sozialarchivs](https://www.sozialarchiv.ch/)
+- Link zum [Archivfindmittel «Wandervogel»](http://www.findmittel.ch/archive/archNeu/Ar19.html)
+
+**Beispielfotos**
+
+ 
+![En route](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/wandervoegel/enroute_wandervoegel.jpg)
+
+![Ringtanz](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/wandervoegel/dancing_wandervoegel.jpg)
+
+![Bergsteigen](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/wandervoegel/mountains_wandervoegel.jpg)
+
+![Musizieren](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/wandervoegel/jamming_wandervoegel.jpg)
+
+![Musizieren2](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/wandervoegel/flowerqueens_wandervoegel.jpg)
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sozialarchiv-wandervogel)
+
+Auto generated R starter code for data set sozialarchiv-wandervogel.
+
+## Metadata
+
+- **Publisher** `Schweizerisches Sozialarchiv`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Freizeit,Kultur`
+- **Tags** `['ZACK', 'archivdaten', 'fotos', 'glam', 'historische fotos', 'jugendbewegung', 'natur', 'openglam', 'praevention']`
+- **Metadata_created** `2017-05-18T08:47:11.646606`
+- **Metadata_modified** `2024-06-05T11:32:56.892384`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sozialarchiv-wandervogel/download/Metadaten_Wandervogel_F5000.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

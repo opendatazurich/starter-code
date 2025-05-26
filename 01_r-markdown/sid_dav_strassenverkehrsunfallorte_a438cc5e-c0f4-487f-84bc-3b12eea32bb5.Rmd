@@ -1,0 +1,155 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Polizeilich registrierte Verkehrsunfälle auf dem Stadtgebiet Zürich seit 2011
+
+
+Dieser Datensatz liefert die polizeilich registrierten Strassenverkehrsunfälle mit Personen- und Sachschäden auf dem Stadtgebiet Zürich seit 2011 . 
+
+Zu jedem Strassenverkehrsunfall sind der Unfallort, das Jahr, der Monat, der Wochentag, die Unfallstunde, die Strassenart, der Unfalltyp, die Unfallbeteiligung und die Unfallschwerekategorie verfügbar.
+
+Die Strassenverkehrsunfallorte von Unfällen mit Personenschäden sind auch für die ganze Schweiz als Open Data erhältlich unter diesem [Link](
+https://data.geo.admin.ch/ch.astra.unfaelle-personenschaeden_alle).
+ 
+
+**Quellenangabe:**
+
+
+«Bundesamt für Strassen ASTRA»
+ 
+
+[]()
+
+**Definition Strassenverkehrsunfall:**
+
+
+Ein Strassenverkehrsunfall im Sinne der **Strassenverkehrsunfall-Statistik** ist:
+
+- ein unvorhergesehenes Ereignis auf einer öffentlichen Verkehrsfläche,
+- das in ursächlichem Zusammenhang mit dem Strassenverkehr und seinen Gefahren steht,
+- das einen Sachschaden und/oder Personenschaden zur Folge hat und
+- an dem mindestens ein Fahrzeug oder ein fahrzeugähnliches Gerät beteiligt ist.
+
+Planmässiges Handeln (z.B. Suizid- oder Tötungsabsicht) aller Beteilig-ten ist dabei ausgeschlossen.
+ 
+
+[]()
+
+**Datenhaltung und Nachführung:**
+
+
+Das Bundesamt für Strassen (ASTRA) führt zusammen mit den Kantonen das Informationssystem Strassenverkehrsunfälle, bestehend aus einem Erfassungs- und einem Auswertungsteil.
+
+Das ASTRA legt fest, mit welchen Variablen und Ausprägungen die Unfalldaten zu erfassen bzw. zu melden sind.
+
+Die kantonal zuständigen Polizeiorgane erfassen die Daten von allen polizeilich registrierten Unfällen direkt im Erfassungsregister oder melden sie über ein Transferverzeichnis ins Register. Das Schadenzentrum VBS erfasst die entsprechenden Daten von allen militärpolizeilich registrierten Unfällen im Register.
+
+Die Daten zu Strassenverkehrsunfällen sind ab dem Statistikjahr 2011 schweizweit verfügbar. Die Daten eines Kalenderjahres sind jeweils im Frühjahr des darauffolgenden Jahres verfügbar. Digitale Einzeldaten in unterschiedlicher qualitativer Ausprägung liegen seit 1992 vor.
+ 
+
+[]()
+
+**Weiterführende Dokumente:**
+
+
+Zum Thema **Unfalldaten der Schweiz** finden Sie unter: [www.unfalldaten.ch](http://www.unfalldaten.ch/)
+ 
+
+[]()
+
+**Onlinekarten für die gesamte Schweiz:**
+
+
+Finden Sie unter: [http://map.unfalldaten.ch](https://map.geo.admin.ch/?topic=vu&lang=de&bgLayer=ch.swisstopo.pixelkarte-grau&layers=ch.astra.unfaelle-personenschaeden_alle&layers_timestamp=99990101&catalogNodes=1318)
+ 
+
+[]()
+
+**Open Data für die gesamte Schweiz:**
+
+Die Strassenverkehrsunfallorte von Unfällen mit Personenschäden sind auch für die ganze Schweiz als Open Data erhältlich unter diesem [Link](https://data.geo.admin.ch/ch.astra.unfaelle-personenschaeden_alle).
+ 
+
+[]()
+
+**Umfangreichere Metadaten:**
+
+ 
+Finden Sie im PDF «Minimales Geodatenmodell Strassenverkehrsunfallorte» (**095_MGDM_Strassenverkehrsunfallort_Modellbeschreibung_V2**), welches hier unter den Ressourcen zum Download bereit steht.
+ 
+
+[]()
+
+**Hinweis zu Sachschäden:**
+
+ Seit dem 1.7.2015 gilt eine andere Definition was als Sachschaden ans ASTRA gemeldet wird. Ab diesem Zeitpunkt wurden auch polizeilich registrierte «Bagatellunfälle» als Sachschaden gezählt. Dies erklärt den starken Zuwachs der Anzahl Unfälle in dieser Kategorie ab diesem Zeitpunkt. 
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte)
+
+Auto generated R starter code for data set sid_dav_strassenverkehrsunfallorte.
+
+## Metadata
+
+- **Publisher** `Dienstabteilung Verkehr, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Mobilität,Umwelt`
+- **Tags** `['auto', 'fussgaenger', 'gefaehrdung', 'messwert', 'motorrad', 'sachdaten', 'standorte', 'tabelle', 'unfaelle', 'velo', 'velofahrer', 'verkehr', 'zeitreihe']`
+- **Metadata_created** `2020-10-19T13:59:05.434932`
+- **Metadata_modified** `2025-05-26T02:50:38.695623`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_dav_strassenverkehrsunfallorte/download/RoadTrafficAccidentLocations.parquet"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

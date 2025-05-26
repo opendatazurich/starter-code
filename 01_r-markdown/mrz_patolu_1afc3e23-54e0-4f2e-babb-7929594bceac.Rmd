@@ -1,0 +1,100 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Patolu – Indische Textilien aus der Sammlung des Museums Rietberg
+
+Das Museum Rietberg ist das einzige Museum für aussereuropäische Kunst in der Schweiz. Die international renommierte Sammlung beherbergt bedeutende Werke aus Asien, Afrika, Amerika und Ozeanien.
+
+Einen wesentlichen Bereich der Südasien-Sammlungen bildet die umfassende Textilsammlung (über 2000 Objekte) des ehemaligen Direktors und Indien-Kurators Eberhard Fischer. Er hatte diese während seiner mehrjährigen Aufenthalte in Gujarat, Indien, in den Jahren 1965/66 und 1968–1971 zusammengetragen. 
+
+Zur Sammlung indischer Textilien zählen auch die hier vorgestellten, besonders wertvollen Patolu, die mehrheitlich Anfang des 20. Jahrhunderts in Gujarat angefertigt wurden. Diese indischen Seidensaris wurden in der sogenannten Doppel-Ikat-Technik gewebt und zeigen typische Motive und Formen wie beispielsweise Blüten und Blätter, geometrische Formen, Tiere und Menschen.
+
+Bei Doppel-Ikat-Geweben entstehen die Motive und Dekore durch die aufeinander abgestimmte Einfärbung sowohl der Kett- als auch der Schussfäden. Die Fäden werden bereits vor der weiteren Verarbeitung im Webstuhl eingefärbt, wobei die Teile des Fadens, die nicht eingefärbt werden sollen, reserviert, also abgebunden werden.
+
+**Weiterführende Informationen**
+
+**Publikation zu Patolu aus Indien**
+Bühler, Alfred und Eberhard Fischer. The Patola of Gujarat: Double Ikat in India. 1979. Basel: Krebs.
+
+**Die Textilien-Sammlung Eberhard Fischer**
+Museum Rietberg Zürich (Hrsg.). [Jahresbericht](https://rietberg.ch/files/Downloads/Jahresbericht/JB09_MRZ.pdf). 2009.  Zürich: Museum Rietberg. S. 48–66.
+Museum Rietberg Zürich (Hrsg.). [Jahresbericht](https://rietberg.ch/files/Downloads/Jahresbericht/JB12_MRZ.pdf). 2012.  Zürich: Museum Rietberg. S. 44–51.
+
+**Museum Rietberg**
+
+Informationen zum Museum Rietberg finden Sie auf der [Webseite](https://rietberg.ch/) des Museums.
+
+**Sammlung Online**
+
+Entdecken Sie weitere Kunstwerke des Museums Rietberg in der [Sammlung Online](https://rietberg.ch/sammlung/sammlung-online).
+
+**Bildmaterial**
+
+Sie möchten eines der Bilder in einer besseren Auflösung nutzen? Dann wenden Sie sich per [E-Mail](mailto:medien.rietberg@zuerich.ch) direkt an das Museum Rietberg.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/mrz_patolu)
+
+Auto generated R starter code for data set mrz_patolu.
+
+## Metadata
+
+- **Publisher** `Museum Rietberg, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** ``
+- **Tags** `['Design', 'Doppel-Ikat', 'Gujarat', 'Indien', 'Muster', 'Sari', 'Seide', 'Textilien']`
+- **Metadata_created** `2021-11-23T10:53:04.383586`
+- **Metadata_modified** `2025-05-25T16:23:39.096221`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/mrz_patolu/download/mrz_patolu.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

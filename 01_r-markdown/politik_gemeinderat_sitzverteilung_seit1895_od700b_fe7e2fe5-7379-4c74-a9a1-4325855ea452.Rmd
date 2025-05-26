@@ -1,0 +1,105 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Gemeinderat Sitzverteilung nach Partei
+
+Der Datensatz entählt Angaben zur Sitzverteilung im Gemeinderat nach Partei, Jahr, Total der Sitze im Gemeinderat und Anzahl Sitze nach Partei
+
+**Hinweis betreffend der Kategorie «Übrige»:**
+
+Die Kategorie Übrige bezeichnet :
+
+- 1895 bis 1910 Konservative, 
+- 1913 und 1916 Bürgerverband, 
+- 1919 bis 1925 Grütlianer, 
+- 1933 Nationale Front, 
+- 1942 Liberalsozialisten,
+- 1974 Nationale Aktion (9 Sitze) und Progressive Organisation Zürich (1 Sitz), 
+- 1978 Progressive Organisation Zürich, 
+- 1982 und 1986 Nationale Aktion (2, bzw. 11 Sitze) und POCH Zürich (4, bzw. 3 Sitze),
+- 1990 Nationale Aktion (5 Sitze) und Frauen macht Politik (3 Sitze), 
+- 1994 und 1998 Frauen macht Politik, 
+- 2002 Für aktive Senioren.
+
+[]()
+
+**EVP**
+
+Im Jahr 2018 hat die EVP zusammen mit der BDP (Bürgerlich-demokratischen Partei) gemeinsame Listen
+eingereicht.
+
+
+[]()
+
+**Die Mitte**
+
+Im Jahr 2021 fusionierten die CVP und die BDP in der Stadt Zürich zur «Die Mitte».
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_gemeinderat_sitzverteilung_seit1895_od700b)
+
+Auto generated R starter code for data set politik_gemeinderat_sitzverteilung_seit1895_od700b.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik`
+- **Tags** `['gemeinderat', 'partei', 'politik', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2022-02-10T12:23:02.036371`
+- **Metadata_modified** `2025-05-25T21:00:22.250691`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/politik_gemeinderat_sitzverteilung_seit1895_od700b/download/POL700OD700B.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

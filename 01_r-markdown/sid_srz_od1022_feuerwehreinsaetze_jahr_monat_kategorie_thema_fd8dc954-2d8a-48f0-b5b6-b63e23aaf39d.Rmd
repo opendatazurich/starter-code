@@ -1,0 +1,113 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Feuerwehreinsätze
+
+Feuerwehreinsätze von Schutz und Rettung nach Kategorie (z.B. Brand, Unfall), Thema (höherer Detaillierungsgrad passend zur Kategorie), Jahr und Monat.
+
+**Standorte**
+
+- **Standorte**: 
+Von 2003 bis 2007 nur Wache Süd. Seit 2008 die Wachen Süd und Flughafen.
+ 
+
+[]()
+
+**Zeitreihe zu Kategorien und Themen**
+
+- **Zeitreihe zu Kategorien und Themen**: 
+Je nach Jahr wurden von Schutz und Rettung andere Kategorien und Themen veröffentlicht.
+ 
+
+[]()
+
+**Elementarereignisse**
+
+- **Elementarereignisse**: 
+Ereignisse im Zusammenhang mit Unwetter oder Wasser
+ 
+
+[]()
+
+**Umweltgefährdung**
+
+- **Umweltgefährdung**: 
+Einsätze von Oel-, Chemie- oder Strahlenwehr 
+
+
+[]()
+
+**BMA**
+
+- **BMA**: 
+Brandmeldeanlagen
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_srz_od1022_feuerwehreinsaetze_jahr_monat_kategorie_thema)
+
+Auto generated R starter code for data set sid_srz_od1022_feuerwehreinsaetze_jahr_monat_kategorie_thema.
+
+## Metadata
+
+- **Publisher** `Schutz und Rettung, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Ver­walt­ung`
+- **Tags** `['feuerwehr', 'gesundheit', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-12-01T11:17:25.977514`
+- **Metadata_modified** `2025-05-26T02:50:40.714223`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_srz_od1022_feuerwehreinsaetze_jahr_monat_kategorie_thema/download/GES102OD1022.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

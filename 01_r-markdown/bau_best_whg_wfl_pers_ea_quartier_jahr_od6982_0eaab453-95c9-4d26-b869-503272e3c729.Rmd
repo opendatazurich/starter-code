@@ -1,0 +1,108 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Wohnflächenverbrauch und Wohndichte nach Stadtquartier
+
+
+Diese Daten umfassen die bewohnten Wohnungen, sowie die zugehörige Wohnungsfläche und Personenzahl nach Stadtquartier in der Stadt Zürich. Mit den Daten können Kennwerte zur Wohndichte berechnet werden (Personen pro Wohnung, Wohnungsfläche pro Person). 
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Stand und Nachführung:**
+
+Das Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+ 
+
+[]()
+
+**Bewohnte Wohnungen, bewohnte Wohnungsfläche, Personen in Wohnungen**
+
+ Im vorliegenden Datensatz sind nur Wohnungen mit registrierten Personen berücksichtigt sowie die zugehörigen Wohnungsflächen und Personenzahl. Diese Werte erlauben die Berechnung von Kennwerten zur Wohndichte (Personen pro Wohnung, Wohnungsfläche pro Person).
+
+
+
+[]()
+
+**Wohnungsfläche**
+
+ Als Wohnungsfläche (früher und im Zusammenhang mit dem Flächenkonsum pro Person auch als «Wohnfläche» bezeichnet) gilt die Fläche sämtlicher Räume einer Wohnung hinter der Wohnungstüre, abzüglich Wandquerschnitten. Dazu gehören Wohn- und Schlafzimmer, Küche, Kochnische, Badezimmer, Toiletten, Abstellräume und Gänge. Ausser Betracht fallen bei der Berechnung zusätzliche Wohnräume ausserhalb der Wohnung (z.B. der Wohnung zugeordnete Einzelzimmer), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume. Wo keine genauen Flächen ermittelt werden können, sind Schätzwerte (Länge × Breite) erfasst. 
+
+
+
+[]()
+
+**Personen pro Wohnung und Wohnfäche pro Person nicht aggregieren**
+
+ Achtung: Durchschnittswerte, können nicht aggregiert werden. Neuberechnung auf jeder Aggregationsstufe erforderlich.
+
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_best_whg_wfl_pers_ea_quartier_jahr_od6982)
+
+Auto generated R starter code for data set bau_best_whg_wfl_pers_ea_quartier_jahr_od6982.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['eigentum', 'sachdaten', 'sasa', 'tabelle', 'wohndichte', 'wohnflaechenkonsum', 'wohnungsflaeche', 'wohnverhaeltnisse', 'zeitreihe']`
+- **Metadata_created** `2021-06-28T18:46:55.408702`
+- **Metadata_modified** `2025-05-25T21:11:17.392439`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_best_whg_wfl_pers_ea_quartier_jahr_od6982/download/BAU698OD6982.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

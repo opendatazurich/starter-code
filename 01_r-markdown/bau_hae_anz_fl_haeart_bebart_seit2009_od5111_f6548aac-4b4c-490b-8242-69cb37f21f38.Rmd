@@ -1,0 +1,102 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Umgesetzte Grundstücke und Fläche nach Handänderungstyp und Bebauungsart
+
+
+Diese Daten beinhalten die **Anzahl Grundstücke**, die in irgendeiner Weise die Hand gewechselt haben. Dazu gehören auch Grundstücke, bei denen nur ein Stockwerkeigentumsanteil die Hand gewechselt hat (separat ausgewiesen).
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+
+**Allgemein:**
+
+ Die dargestellten Werte beziehen sich auf alle Handänderungen von Grundstücken in der Stadt Zürich. Mit einer Handänderung können auch mehrere Grundsücke die Eigentümerschaft gewechselt haben. Hat ein Grundsück während eines Jahres mehrmals die Hand gewchselt, so wird es entsprechend mehrmals gezählt. Um als Handänderung gezählt zu werden, muss das Grundstück nicht vollständig an eine neue Eigentümerschaft übergehen. So zählen z.B. auch Handänderungen eines Anteils einer Liegenschaft im Stockwerkeigentum mit, sind jedoch separat mit einer Variablen gekennzeichnet.
+ 
+
+[]()
+
+**Definition: Bebauungsart der Handänderung**
+
+ Jeder Handänderung ist gemäss der wichtigsten Gebäudenutzung eine Hauptbebauungsart zugeordnet. Steht auf einer Parzelle beispielsweise ein Mehrfamilienhaus und eine Garage, so fällt die ganze Parzelle in die Kategorie 'Mehrfamilienhäuser'. Die Kategorisierung unterscheidet drei Hauptgruppen: Erstens die verschiedenen Bebauungsarten in den Wohn- und Mischzonen, zweitens die bebauten und unbebauten Grundstücke in den Industrie- und Gewerbezonen, drittens Grundstücke in den übrigen Zonen (=Nicht-Bauzonen: Freihalte-, Erholungs-, Landwirtschafts-, Reservezonen, Wald)
+
+
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_hae_anz_fl_haeart_bebart_seit2009_od5111)
+
+Auto generated R starter code for data set bau_hae_anz_fl_haeart_bebart_seit2009_od5111.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['handaenderungen', 'liegenschaftenhandel', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2020-02-10T15:07:03.971338`
+- **Metadata_modified** `2025-05-25T21:00:40.290113`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_hae_anz_fl_haeart_bebart_seit2009_od5111/download/BAU511OD5111.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

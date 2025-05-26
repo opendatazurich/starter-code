@@ -1,0 +1,118 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Gemeinderatswahlen Stimmenanteil nach Partei und Wahlkreis
+
+Gemeinderatswahlen Stimmenanteil nach Partei und Wahlkreis.
+
+**Stimmenanteil:**
+
+-  Der Stimmenanteil einer bestimmten Partei ergibt sich aus der Division der dieser Partei zugefallenen
+Parteistimmen durch das Total der Parteistimmen für die ganze Stadt.
+
+ 
+
+[]()
+
+**Parteistimmen:**
+
+-  Die Parteistimmen ergeben sich aus der Summe der Kandidierenden- und der Zusatzstimmen jeder
+Wahlliste.
+
+ 
+
+[]()
+
+**Wahlkreis:**
+
+-  Bei Parlamentswahlen kann das Wahlgebiet in Wahlkreise eingeteilt sein. Bei der Wahl des Zürcher
+Gemeinderates bestehen seit 2006 neun Wahlkreise, zuvor wurden analog zu den Stadtkreisen zwölf
+Wahlkreise unterschieden.
+
+ 
+
+[]()
+
+**EVP:**
+
+-  Im Jahr 2018 hat die EVP zusammen mit der BDP (Bürgerlich-demokratischen Partei) gemeinsame Listen
+eingereicht.
+
+ 
+
+[]()
+
+**Die Mitte**
+
+- Im Jahr 2021 fusionierten die CVP und die BDP in der Stadt Zürich zur «Die Mitte».
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_gemeinderatswahlen_stimmant_seit1913_od7000)
+
+Auto generated R starter code for data set politik_gemeinderatswahlen_stimmant_seit1913_od7000.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik`
+- **Tags** `['gemeinderatswahlen', 'partei', 'politik', 'sachdaten', 'sasa', 'tabelle', 'wahlen', 'zeitreihe']`
+- **Metadata_created** `2019-07-29T13:33:34.671476`
+- **Metadata_modified** `2025-05-25T21:07:59.910352`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/politik_gemeinderatswahlen_stimmant_seit1913_od7000/download/POL700OD7000.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

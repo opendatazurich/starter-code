@@ -1,0 +1,101 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Liegenschaften-Markt Stadt Zürich: Umgruppierte Inhalte von BAU514OD5141.csv als Basis für die LIMA-Applikation auf der Website von Statistik Stadt Zürich (Medianpreise und Handänderungszahl nach Zonenart und Stadtquartier)
+
+
+Auswertungen aus der Handänderungsstatistik. Pro Stadtquartier sind sieben Reihen verfügbar, die auf drei verschieden berechneten Preisreihen und auf drei verschiedenen Datengrundlagen basieren, vgl. Attribute (weiter unten). Neben dem Medianpreis wird jeweils auch die Anzahl Handänderungen ausgewiesen.
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Allgemein:**
+
+
+Vorliegender Datensatz wird jährlich aktualisiert und ist die zweite der [**fünf Dateien mit Grundlagendaten**](https://data.stadt-zuerich.ch/dataset?tags=lima)für das [**LIMA-Tool**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/bauen-und-wohnen/liegenschaftenhandel/preise-von-liegenschaften.html) auf der Website von Statistik Stadt Zürich (LIMA=Liegenschaftenmarkt)
+ 
+
+[]()
+
+**Näherung Bodenpreis:**
+
+
+In der Stadt Zürich ist praktisch kein unbebautes Bauland mehr vorhanden. Dementsprechend kann kein Bodenpreis ausgewiesen werden. Am nächsten kommt dem Konzept der Bodenpreise der Verkaufspreis pro Quadratmeter Grundstücksfläche abzüglich des Gebäudeversicherungswerts für ganze Liegenschaften (also ohne Miteinbezug von Stockwerkeigentums-Transaktionen). Der Abzug des Gebäudeversicherungswertes vom Kaufpreis hat den Zweck, den theoretischen Landwert zu ermitteln, als Residualwert des Gesamtpreises minus des Gebäudewertes. Jedoch ist zu bedenken, dass der Gebäudeversicherungswert den Kosten für einen Wiederaufbau entspricht, also dem Neuwert eines Gebäudes und nicht dem durch die Altersentwertung reduzierten Zeitwert. Da der Neuwert höher ist als der Zeitwert und somit der Abzug für den Gebäudewert eher zu hoch ist, dürften die ausgewiesenen Werte tendenziell unter dem effektiven Bodenpreis liegen. Sie bilden somit nur einen Näherungswert für den Bodenpreis und sind grundsätzlich mit Vorsicht zu interpretieren.
+ 
+
+[]()
+
+**BZO1999 (bis 2018) und BZO2016 (ab 2019):**
+
+
+Mit der Revision der Bau- und Zonenordnung (BZO) 2016 wurde die BZO 1999 ausser Kraft gesetzt. In den Handänderungsdaten beziehen sich die Preise ab 2019 auf die BZO 2016. Die Preise bis 2018 beziehen sich auf die BZO 1999. Während die verschiedenen Mischzonen (Kernzonen, Quartiererhaltungszonen, Zentrumszonen) in der BZO 2016 noch weitgehend mit der BZO 1999 vergleichbar sind, wechselten die Bezeichnungen der Wohnzonen grundlegend. Ein Ziel der BZO-Revision war die Aufhebung des sogenannten Zürcher Untergeschosses, eines halb eingegrabenes Erd-/Untergeschosses, das bei der Berechnung der maximalen Ausnützung nicht angerechnet und daher von den meisten Bauherren konsumiert wurde, was in der Praxis oft zu wohnhygienisch und ästhetisch unbefriedigenden Lösungen führte. In der Revision wurde daher bestimmt, dass in den betroffenen Wohnzonen zur Kompensation des nun unzulässigen Untergeschosses ein zusätzliches Geschoss erlaubt ist. Frühere W3-Zonen wurden so neu zu W4-Zonen, W4 zu W5, W5 zu W6. Das bedeutet, dass zum Beispiel die W4-Zone heute Gebiete umfasst, die bis 2018 als W3 bezeichnet wurden, aber baurechtlich vergleichbar sind. Oder umgekehrt: Eine W3 vor 2018 ist nicht mit einer W3 nach 2018 zu vergleichen, sondern mit einer W4. Die Spalte W34 enthält demzufolge bis 2018 die Werte für die ehemalige W3-Zone, ab 2019 für die W4. Analoges gilt für W23, W45 und W56. Einige W2-Zonen wurden nicht zu W3, sondern blieben W2. 
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_hae_lima_preise_anzahl_hae_art_gebiet_bzo_jahr_grpd_od5142)
+
+Auto generated R starter code for data set bau_hae_lima_preise_anzahl_hae_art_gebiet_bzo_jahr_grpd_od5142.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauzonen', 'bodenpreis', 'handaenderungen', 'liegenschaftenhandel', 'lima', 'median', 'quadratmeterpreis', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2022-09-07T14:26:14.684948`
+- **Metadata_modified** `2025-05-25T21:03:59.507035`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_hae_lima_preise_anzahl_hae_art_gebiet_bzo_jahr_grpd_od5142/download/BAU514OD5142.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

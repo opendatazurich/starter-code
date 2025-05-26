@@ -1,0 +1,96 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Objekte im Archiv von Hans Himmelheber (1908–2003) im Museum Rietberg
+
+Das Museum Rietberg ist das einzige Museum für aussereuropäische Kunst in der Schweiz. Die international renommierte Sammlung beherbergt bedeutende Werke aus Asien, Afrika, Amerika und Ozeanien.
+
+Für Hans Himmelheber standen Objekte im Mittelpunkt seines kunstethnologischen Ansatzes. Als einer der Ersten führte er empirische Studien in Afrika zu kunsthistorischen Fragestellungen durch. Vor Ort beobachtete und dokumentierte er die Herstellung, den Gebrauch und die Bedeutung von Masken, Figuren und Alltagsgegenständen und interviewte die Erschaffer der Werke. Darüber hinaus analysierte Himmelheber die ästhetischen Prinzipien der Artefakte und ordnete diese historisch und stilistisch in eine Kunstgeschichte Afrikas ein.
+Hans Himmelheber legte nicht sehr viel Wert auf alte oder gebrauchte Stücke, die in Museen und für den Kunstmarkt als besonders wertvoll beziehungsweise authentisch galten. Stattdessen dokumentierte er eine Figur oder Maske im Moment ihrer Herstellung, interviewte den Bildhauer bei seiner Arbeit und kaufte danach das in seinem Auftrag hergestellte Stück. Er interessierte sich auch für mitunter nie oder kaum benutze Kunstwerke. Als ästhetisch orientierter Ethnologe versuchte er zwar, Kriterien der indigenen Bewertung eines Objektes zu berücksichtigen, wurde aber auch immer wieder davon geleitet, was er selbst als «schön» und «von guter Qualität» empfand. In den 1960er Jahren entstanden vermehrt Studien von amerikanischen und vor allem von afrikanischen Forscherinnen und Forschern, in denen noch konsequenter als bei Himmelheber die lokalen Perspektiven der Kunstschaffenden und ihre ästhetischen Praktiken berücksichtigt wurden.
+
+Seine Erwerbungen stammen hauptsächlich von seinen wiederholten Aufenthalten in der Côte d’Ivoire und Liberia (Baule, Dan, Guere, Guro, Senufo) sowie von seiner einmaligen Reise durch die heutige Demokratische Republik Kongo (Chokwe, Kuba, Pende, Songye, Yaka). Im Grenzgebiet zwischen Côte d’Ivoire und Liberia kehrte Himmelheber immer wieder an dieselben Dan-Orte zurück und versuchte, das gesamte Kulturinventar dieser Bevölkerungsgruppe über einen Zeitraum von fast dreissig Jahren (1949-1976) zusammenzutragen. Neben Masken und Figuren, die im Westen zum Kanon der Kunst Afrikas zählten, gehörten dazu Haushaltsgegenstände, Matten, Kochlöffel oder Tongefässe. So entstand eine dichte, historisch tiefe Ethnografie, die vom Kunstschaffen über das Maskenwesen bis zur Religion und Oral History verschiedenste Aspekte der Kunst und Kultur der Dan-Region abdeckt.
+
+Das Museum Rietberg beherbergt mittlerweile mehr als 930 Objekte, die Hans Himmelheber zwischen 1933 und 1976 auf seinen Reisen in der Côte d’Ivoire, in Liberia und der DR Kongo angekauft hatte. Dabei handelt es sich grösstenteils (95%) um Himmelhebers private Sammlung, die seine Familie nach seinem Tod zwischen 2013 und 2022 dem Museum Rietberg als Schenkung überliess.
+
+**Weiterführende Informationen**
+
+Das interdisziplinäre Forschungsprojekt **Objekt - Text - Bild. Verflochtene Wissensproduktion in Hans Himmelhebers Archiv zwischen Kunst Afrikas, Ethnologie und globalem Markt** ist an der Schnittstelle von Ethnologie und Geschichte angesiedelt. Es handelt sich um eine Kooperation des Museums Rietberg Zürich (MRZ) und des Lehrstuhls für Aussereuropäische Geschichte am Historischen Seminar der UZH. Ziel des Projektes ist es, die Produktion von Wissen über die Kunst Afrikas multiperspektivisch und translokal zu analysieren. Ausgangspunkt ist das Archiv des Kunstethnologen und Sammlers Hans Himmelheber (1908–2003), dessen Theorien zur Künstlerpersönlichkeit einen Paradigmenwechsel für das Studium der materiellen Kultur Afrikas eingeleitet haben. Auf der Website [africa-art-archive.ch](https://africa-art-archive.ch/) sind weiterführende Kontextinformationen zu finden.
+
+**Bilddateien**
+
+Die Abbildungen der Objekt unterliegen dem Copyright des Museums. Für eine Nutzung der Bilder wenden Sie sich bitte per [E-Mail](mailto:medien.rietberg@zuerich.ch) an das Museum Rietberg
+
+**Museum Rietberg**
+
+Informationen zum Museum Rietberg finden Sie auf der [Webseite](https://rietberg.ch/) des Museums.
+
+**Sammlung Online**
+
+Entdecken Sie weitere Kunstwerke des Museums Rietberg in der [Sammlung Online](https://rietberg.ch/sammlung/sammlung-online).
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/mrz_himmelheber_objekte)
+
+Auto generated R starter code for data set mrz_himmelheber_objekte.
+
+## Metadata
+
+- **Publisher** `Museum Rietberg Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** ``
+- **Tags** `['Afrika', 'Alaska', 'Archiv', 'Ethnologie', 'Gebrauchsgegenstände', 'Himmelheber', 'Kunst', 'Maske', 'Objekte', 'Reisen', 'Sammlung']`
+- **Metadata_created** `2023-06-26T08:58:26.614316`
+- **Metadata_modified** `2025-05-19T17:16:02.524934`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/mrz_himmelheber_objekte/download/mrz_himmelheber_objekte.parquet"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,107 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Sozialhilfequoten der Stadt Zürich
+
+ Sozialhilfequote seit 2000. 
+
+Die Daten umfassen die durchschnittliche Anzahl Personen pro Monat, die durchschnittliche Sozialhilfequote sowie die kumulative Anzahl an Sozialhilfebeziehenden und kumulative Sozialhilfequote .
+
+**Definition**
+
+
+**Kumulative Personenzahl**
+Alle Personen, welche mindestens einamal im Jahr auf Sozialhilfe angewiesen waren.
+
+**Durchschnittliche Anzahl Personen pro Monat**
+Anzahl Personen pro Jahr geteilt durch 12
+
+**Zivilrechtliche Bevölkerung**
+Der **zivilrechtliche Wohnsitz** einer Person ist diejenige Gemeinde, in der sie ihren Heimatschein (Schweizer/-in) oder ihre Aufenthalts- oder Niederlassungsbewilligung (Ausländer/-innen) hinterlegt hat. Am zivilrechtlichen Wohnsitz ist man in der Regel steuerpflichtig und sofern jemand ohne finanzielle Mittel ist, sozialhilfeberechtigt. Nicht zur zivilrechtlichen Bevölkerung gehören zum Beispiel Wochenaufenthalter/-innen, Kurzaufenthalter/-innen sowie Asylsuchende.
+
+
+[]()
+
+**Erläuterung**
+
+
+**Ab 2007**
+Sozialhilfebeziehende inklusive der von der Asylorganisation Zürich geführten sozialhilfebeziehenden Personen
+
+
+[]()
+
+**Geschäftsbericht**
+
+
+Im [**Geschäftsbericht**](https://www.stadt-zuerich.ch/geschaeftsbericht) werden jährlich alle Zahlen zum Thema Sozialhilfe veröffentlicht.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_sod_sozialhilfequote)
+
+Auto generated R starter code for data set sd_sod_sozialhilfequote.
+
+## Metadata
+
+- **Publisher** `Sozialstatistik / Evaluation, Soziale Dienste, Sozialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
+- **Tags** `['durchschnittlich', 'kumulativ', 'sachdaten', 'sozialhilfe', 'sozialhilfequote', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2019-12-13T10:33:35.995799`
+- **Metadata_modified** `2025-05-25T21:10:15.795418`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sd_sod_sozialhilfequote/download/sd_sod_sozialhilfequote.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

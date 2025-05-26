@@ -1,0 +1,104 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Rauminhalt von fertiggestellten Gebäuden
+
+Der Datensatz enthält den Rauminhalt der fertiggestellten Gebäude in einem Jahr nach Gebäudeart.
+
+**Hinweis:**
+
+
+Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+
+[]()
+
+**StichtagDatJahr**
+
+
+Jahr entspricht der ganzen Jahresperiode.
+
+
+[]()
+
+**Gebäudeart**
+
+Wohngebäude: Reine Wohngebäude oder Mischnutzungen mit einem Wohnanteil von mindestens 50 Prozent.
+Nichtwohngebäude: Gebäude für Dienstleistungsbetriebe, öffentliche Verwaltungen, Bildungsund Gesundheitswesen, Industrie oder Landwirtschaft, auch Parkhäuser und andere. Enthält das Gebäude auch Wohnungen, wird es so lange als Nutzbau mit Wohnungen geführt, wie der Wohnanteil der Nutzfläche unter fünfzig Prozent bleibt; ist der Wohnanteil höher, gilt das Gebäude als Wohnhaus mit Geschäftsräumen.
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_gebart_rauminhalt_jahr_od5063)
+
+Auto generated R starter code for data set bau_neubau_gebart_rauminhalt_jahr_od5063.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['gebaeude', 'gebaeudeart', 'rauminhalt', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'zeitreihe']`
+- **Metadata_created** `2022-04-26T12:44:30.990993`
+- **Metadata_modified** `2025-05-25T21:10:01.717322`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_gebart_rauminhalt_jahr_od5063/download/BAU506OD5063.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

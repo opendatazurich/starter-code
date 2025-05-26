@@ -1,0 +1,195 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Standorte der automatischen Fuss- und Velozählungen
+
+Das Tiefbauamt erhebt seit 2009 die Velofrequenzen in der Stadt Zürich mit Hilfe automatischer Zählgeräte. Der Fussverkehr wird seit 2012 mit Geräten gezählt. Das Zählstellennetz wurde schrittweise gemäss einem definierten Standortkonzept ausgebaut und umfasst jeweils rund 20 - 25 Querschnitten im gesamten Stadtgebiet. Die damit erhobenen Daten bilden eine wichtige quantitative Grundlage zur Beurteilung der Veloförderung im Sinne von «Stadtverkehr 2025» und dem Masterplan Velo. Die Daten liegen richtungsgetrennt und auf Viertelstundenwerte aggregiert vor. Die Daten stellen Gerätewerte dar. Um die effektiven Frequenzen im Fuss- oder Veloverkehr zu bestimmen, müssen die angegebenen Korrekturfaktoren angewandt werden.
+In diesem Datensatz sind nur die eigentlichen Standorte enthalten. Die dazugehörenden Zählwerte sind über Open Data Zürich erhältlich (https://data.stadt-zuerich.ch/dataset/ted_taz_verkehrszaehlungen_werte_fussgaenger_velo).
+
+**Zweck**: Die erhobenen Daten werden für das Controlling von Stadtverkehr 2025 und Masterplan Velo benötigt. Sie bilden zudem eine wichtige Grundlage zur Dokumentation der Bedeutungen des Fuss- und Veloverkehrs und für die Erfolgskontrolle deren Förderung.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Standorte der automatischen Fuss- und Velozählungen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/13bd8bea-446e-47a7-b6de-961ebd5d1fec).				
+			   
+
+**Datenerfassung:**
+
+Automatische Velozählung: Die Daten der permanenten Velozählstellen informieren über die Anzahl der Velofahrten über die im Strassenquerschnitt eingebauten Zählschlaufen. Auch im gemischten Verkehr werden gemäss Herstellerangaben unabhängig von der Verkehrsmenge ausschliesslich Velos gezählt. Das System wurde speziell dafür entwickelt, motorisierte Fahrzeuge, einschliesslich Motorräder, bei der Zählung auszuschliessen, indem diese aufgrund eines patentierten Algorithmus ignoriert werden. Velos mit Karbonfelgen werden ebenfalls nicht gezählt. Regelmässige manuelle Kontrollzählungen werden durchgeführt, um die Genauigkeit der Zählgeräte zu überprüfen.
+
+Automatische Zählungen des Fussverkehrs: Die Daten der Zählgeräte informieren über die Anzahl der Bewegungen im vom Zählgerät erfassten Querschnitt mittels passiver Infrarotsensoren. Die Geräte sind so angebracht, dass die erfassten Daten die Anzahl der Passanten ausweisen. Regelmässige manuelle Kontrollzählungen werden durchgeführt, um die Genauigkeit der Zählgeräte zu überprüfen. Es gibt Querschnitte, an denen zusätzlich zu den Fussfrequenzen auch Velozählungen stattfinden, um die Differenz beider Werte bilden zu können (Differenz entspricht den effektiven Fussfrequenzen).
+
+Einzelne Zählgeräte erfassen den Fuss- und den Veloverkehr parallel und können beide Verkehrsarten unterscheiden.
+
+**Datengrundlage:**
+
+Alle Daten werden anonym erhoben, Rückschlüsse auf die Verkehrsteilnehmenden sind nicht möglich. Die Zähldaten werden zu 15-Minuten-Intervallen richtungsgetrennt aggregiert und täglich drahtlos übertragen.
+
+**Weitere Informationen zu diesem Thema:**
+
+Finden Sie unter diesem [**Link**](https://www.stadt-zuerich.ch/artikel/de/statistik-und-daten/automatische-zaehlungen-des-veloverkehrs.html)
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/13bd8bea-446e-47a7-b6de-961ebd5d1fec.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_standorte_der_automatischen_fuss__und_velozaehlungen)
+
+Auto generated R starter code for data set geo_standorte_der_automatischen_fuss__und_velozaehlungen.
+
+## Metadata
+
+- **Publisher** `Grundlagen + Strategien, Tiefbauamt, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Mobilität`
+- **Tags** `['frequenzen', 'fussverkehr', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten', 'veloverkehr', 'verkehrszahlung']`
+- **Metadata_created** `2023-11-06T03:10:36.069239`
+- **Metadata_modified** `2025-05-26T05:32:43.305182`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Standorte_der_automatischen_Fuss__und_Velozaehlungen?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

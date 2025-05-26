@@ -1,0 +1,131 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Neubauwohnungen am Jahresende nach Bauprojektstatus, Eigentumsart und Statistischer Zone
+
+
+Der Datensatz enthält die Anzahl bewilligter und im Bau befindlicher Wohnungen in Neubauprojekten nach Eigentumsart und statistischer Zone.
+
+
+**Hinweis:**
+
+
+Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen. Ein technisches Problem beim Datenerfassungsprozess von Neubauprojekten Wohnen hat dazu geführt, dass seit 2021 neu bewilligte Projekte verzögert im Gebäude- und Wohnungsregister eingeflossen sind. Da diese Projekte grösstenteils in 2023 erfasst wurden, liegen diese in den beiden Vorjahren 2021 und 2022 tiefer.
+
+[]()
+
+**Hinweis:**
+
+
+StichtagDatJahr entspricht dem Stichtag am Jahresende für Neubauprojekte mit Status Bewilligt harmonisiert und Baubegonnen.
+
+
+[]()
+
+**Bauprojektstatus:**
+
+
+- «Bewilligt harmonisiert»: Bauprojekte, welche am Jahresende bewilligt, sistiert oder zum Bau freigegeben sind. Freigegebene oder sistierte Projekte werden seit 2021 im Gebäude- und Wohnungsregister erfasst. Davor wurden diese beide Status auch als bewilligt erfasst. Bei sistierten Projekten handelt es sich um bewilligte Projekte, die zum Beispiel wegen Einsprachen blockiert sind. 
+- «Baubegonnen»:  Bauprojekte, welche am Jahresende baubegonnen sind.
+
+
+[]()
+
+**Eigentumsart**
+
+
+- Öffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum
+- Wohnbaugenossenschaften: Nur Wohnbaugenossenschaften
+- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
+- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
+- Im Stochwerkeigentum: Stockwerkeigentumsgesellschaften
+
+
+[]()
+
+**Alternativprojekte**
+
+Werden für ein geplantes Bauprojekt dem Amt für Baubewilligungen zwei Projekte eingereicht, von denen nur eines ausgeführt wird, handelt es sich bei einem der beiden Projekte um ein Alternativprojekt. Da diese Projekte nicht immer eindeutig identifizierbar sind, kann der Bauprojektstatus «bewilligt» auch Alternativprojekte enthalten.
+
+[]()
+
+**Stand und Nachführung:**
+
+Das Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_whg_projstatus_eigart_statzone_jahr_od5023)
+
+Auto generated R starter code for data set bau_neubau_whg_projstatus_eigart_statzone_jahr_od5023.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bautaetigkeit', 'eigentum', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'wohnung', 'zeitreihe']`
+- **Metadata_created** `2021-02-05T19:47:20.084278`
+- **Metadata_modified** `2025-05-25T21:05:37.992294`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_whg_projstatus_eigart_statzone_jahr_od5023/download/BAU502OD5023.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,110 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Stadtklima Zürich - bereinigte Temperaturmessungen Messnetz meteoblue
+
+
+Dieses Dataset umfasst **Temperatur-Messwerte seit August 2019 bis zum letzten abgeschlossenen Monat**, aufgeteilt in Jahresdateien und einmal als kompletter Datensatz im parquet-Format. Darin enthalten sind die **15-Minuten-Mittelwerte** des entsprechenden Jahres für rund 90 Stationen auf dem Gebiet der Stadt Zürich. Gemessen wird die Temperatur, wo jeweils in genügender Qualität vorhanden.
+
+Die Messwerte des laufenden Jahres werden jeweils nach Abschluss eines Monats ergänzt.
+
+
+**Metadaten Messorte**
+
+
+Die Informationen zu den Messorten sind im Datensatz [Stadtklima Zürich - Standorte Messstationen meteoblue](https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_messorte_messnetz_meteoblue) zu finden  (Koordinaten in WGS84 und CH1903+, Name und Standort-Geländehöhe über Meeresniveau (in m)).
+
+
+[]()
+
+**Metadaten Qualitätssicherung**
+
+
+In der [Metadaten-Datei Qualitätssicherung](https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_temperaturmessungen_messnetz_meteoblue/download/ugz_stadtklima_temperaturmessungen_messnetz_meteoblue_metadaten_qa.csv) finden sich alle wichtigen Informationen zur Qualitätskontrolle und Strahlungskorrektur.
+
+
+[]()
+
+**Zeitangaben:**
+
+
+Alle Daten werden in **koordinierter Weltzeit (UTC+0)** angegeben. Die Zeitangabe des Messwertes entspricht dem Mittel der vorangehenden Viertelstunde.
+
+
+
+[]()
+
+**Weitere Daten**
+
+Live Daten können unter
+[meteoblue Stadtklima](https://www.meteoblue.com/de/products/cityclimate/zurich) abgerufen werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_temperaturmessungen_messnetz_meteoblue)
+
+Auto generated R starter code for data set ugz_stadtklima_zuerich_temperaturmessungen_messnetz_meteoblue.
+
+## Metadata
+
+- **Publisher** `Messung Luftqualität, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Umwelt`
+- **Tags** `['hitze', 'kaelte', 'messwerte', 'meteo', 'meteoblue', 'sachdaten', 'stadtklima', 'tabelle', 'temperatur', 'wetter', 'zeitreihe']`
+- **Metadata_created** `2024-11-27T11:15:25.001905`
+- **Metadata_modified** `2025-05-26T05:48:33.595665`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_temperaturmessungen_messnetz_meteoblue/download/ugz_stadtklima_zuerich_temperaturmessungen_messnetz_meteoblue_2019-aktuell.parquet"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

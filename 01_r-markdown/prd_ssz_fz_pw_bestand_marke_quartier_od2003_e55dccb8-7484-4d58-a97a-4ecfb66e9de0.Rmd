@@ -1,0 +1,99 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Bestand der Personenwagen nach Marke und Stadtquartier
+
+Dieser Datensatz beinhaltet die Anzahl Personenwagen der Stadt Zürich nach Automarke, Stadtquartier und Jahr. 
+
+
+**Stichtag:**
+
+Der Stichtag zur Bestimmung des Jahresstandes ist jeweils der **30. September**. Nicht wie normalerweise üblich der 31. Dezember.
+
+
+[]()
+
+**Fahrzeugbestand:**
+
+Der Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild im Besitz von natürlichen und juristischen Fahrzeughalter*innen.
+
+[]()
+
+**Personenwagen:**
+
+Personenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz für die Person, die fährt.
+
+[]()
+
+**Hinweis:**
+
+Aufgrund einer genaueren Adressüberprüfung im Dezember 2023 reduziert sich die Grundgesamtheit der Fahrzeuge leicht, und die Anzahl Fahrzeuge kann von früheren Publikationen abweichen.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_pw_bestand_marke_quartier_od2003)
+
+Auto generated R starter code for data set prd_ssz_fz_pw_bestand_marke_quartier_od2003.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie,Mobilität,Umwelt`
+- **Tags** `['auto', 'fahrzeugbestand', 'motorfahrzeugbestand', 'motorisierung', 'motorrad', 'personenwagen', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
+- **Metadata_created** `2023-11-09T15:06:31.644731`
+- **Metadata_modified** `2025-05-25T20:59:14.706809`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_pw_bestand_marke_quartier_od2003/download/VER200OD2003.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

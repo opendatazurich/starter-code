@@ -1,0 +1,139 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.
+
+Diese Daten beinhalten Quantilwerte des **steuerbaren Vermögens** natürlicher Personen, die in der Stadt Zürich **primär** steuerpflichtig sind. 
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Unbedingt zu beachten:**
+
+ Die dargestellten Werte beziehen sich auf in der Stadt Zürich aufgrund persönlicher Zugehörigkeit
+(steuerrechtlicher Wohnsitz oder Aufenthalt) unbeschränkt steuerpflichtige natürliche Personen.
+Quellenbesteuerte Personen sind von dieser Statistik nur dann erfasst, wenn sie der ergänzenden
+oder nachträglichen Veranlagung unterliegen.
+Die Steuerdaten werden jeweils für das Jahr t-3 ausgewertet, es liegen immer die Daten von vor 3 Jahren vor. Nur für diese Daten ist ein ausreichend grosser Anteil an definitiven Veranlagungen verfügbar. Dabei gilt zu vermerken, dass die Daten auch für zurück liegende Jahre laufend revidiert werden, d.h. neue definitive Einschätzungen hinzukommen.
+ 
+
+[]()
+
+**Fehlende Werte:**
+
+ Für weniger als 30 Steuerpflichtige werden keine Werte ausgewiesen.
+ 
+
+[]()
+
+**Definition: Steuerbares Vermögen natürlicher Personen:**
+
+ Das steuerbare Vermögen entspricht dem Total der Vermögenswerte abzüglich der Schulden.
+
+
+
+[]()
+
+**Definition: Grundtarif:**
+
+ Dem Grundtarif unterliegen Steuerpflichtige ohne familienrechtliche Unterstützungspflichten.
+
+
+
+[]()
+
+**Definition: Verheiratetentarif:**
+
+ Dem Verheiratetentarif unterliegen Steuerpflichtige mit familienrechtlichen Unterstützungspflichten. Hierunter fallen Ehepaare in rechtlich und tatsächlich ungetrennter Ehe sowie eingetragene Paare.
+
+
+
+[]()
+
+**Quellbesteuerte:**
+
+ Quellenbesteuerte Personen sind von dieser Statistik nur dann erfasst, wenn sie der ergänzenden oder nachträglichen Veranlagung unterliegen.
+
+
+
+[]()
+
+**Quantil-Kennwerte:**
+
+ - **p_25: 25%-Quantil**: D.h. der Wert, für den gilt: 25% der Vermögen sind kleiner als das 25%-Quantil, 75% sind grösser.
+- **p_50: Median**: D.h. der Wert der die steuerbaren Vermögen in zwei gleich grosse Hälften teilt, d.h. die Hälfte der Bevölkerung hat ein höheres, die andere Hälfte ein tieferes Vermögen. 
+- **p_75: 75%-Quantil**: D.h. der Wert, für den gilt: 75% der Vermögen sind kleiner als das 75%-Quantil, 25% sind grösser.
+
+Weitere Informationen zu diesen Kennwerten finden sie z.B. bei Wikipedia unter [**«Quantil»**](https://de.wikipedia.org/wiki/Quantil).
+
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/fd_median_vermoegen_kreis_od1008)
+
+Auto generated R starter code for data set fd_median_vermoegen_kreis_od1008.
+
+## Metadata
+
+- **Publisher** `Steueramt, Finanzdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Finanzen,​​Volks​­wirt​­schaft`
+- **Tags** `['sachdaten', 'sasa', 'steuerpflichtige', 'tabelle', 'vermoegen', 'zeitreihe']`
+- **Metadata_created** `2023-07-14T07:04:25.118819`
+- **Metadata_modified** `2025-05-25T21:06:45.734151`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/fd_median_vermoegen_kreis_od1008/download/WIR100OD1008.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

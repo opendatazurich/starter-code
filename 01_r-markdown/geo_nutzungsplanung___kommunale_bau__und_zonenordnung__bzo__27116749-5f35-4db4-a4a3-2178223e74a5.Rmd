@@ -1,0 +1,408 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)
+
+Geodaten des Zonenplans und der Ergänzungspläne gemäss Art. 2 BauO.
+Es handelt sich um ein Extrakt des Geodatensatzes &quot;ÖREB-Kataster-STZH&quot; und wird stadtintern als &quot;Sekundärdatensatz ÖREB Nutzungsplaung&quot; bezeichnet.
+
+**Zweck**: Der Datensatz ist Teil der Bau- und Zonenordnung und somit gesetzlich vorgeschrieben.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/1df2df11-10a7-41df-b329-1905f7c29c79).
+			   
+
+**Datenerfassung:**
+
+Beteiligte Stellen: Amt für Städtebau, GeoZ
+Erfassungssystem: BZO-Fachschale, AV-System
+
+**Datengrundlage:**
+
+AV
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/1df2df11-10a7-41df-b329-1905f7c29c79).
+
+***BZO_PROJ_REVISIONSGEBIET_V***: 
+
+Gebiete in Revisions- oder Rekursverfahren (= projektierte Zonen oder Lärmempfindlichkeitsstufen) 
+
+
+***BZO_ZONE_INNENL_F_V***: 
+
+innenliegende Freihaltezone (informativ)
+
+
+***BZO_ZONE_ES_V***: 
+
+Empfindlichkeitsstufen nach Art. 3 BauO
+
+
+***BZO_QUEZ_V***: 
+
+Quartiererhaltungszonen
+
+
+***BZO_KERNZONE_V***: 
+
+Kernzonen
+
+
+***BZO_HOCHHAUSGEBIET_V***: 
+
+Hochhausgebiete nach Art. 9 BauO (Bestandteil der Sondernutzung)
+
+
+***BZO_GP_V***: 
+
+Gestaltungspläne (Bestandteil der Sondernutzung)
+
+
+***BZO_SBV_V***: 
+
+Sonderbauvorschriften (Bestandteil der Sondernutzung)
+
+
+***BZO_GP_PFLICHT_V***: 
+
+Gebiete mit Gestaltungsplanpflicht nach Art. 4 BauO (Bestandteil der Sondernutzung) 
+
+
+***BZO_PLANUNGSZONE_V***: 
+
+Planungszonen (Bestandteil der Sondernutzung)
+
+
+***BZO_AUSSICHTSSCHUTZ_V***: 
+
+Aussichtsschutz (Bestandteil der Sondernutzung)
+
+
+***BZO_GEWAESSERABSTANDSL_V***: 
+
+Gewässerabstandslinien
+
+
+***BZO_WALDABSTANDSL_V***: 
+
+Waldabstandslinien
+
+
+***BZO_PROJ_GEWAESSERABSTANDSL_V***: 
+
+Gewässerabstandslinien (projektiert)
+
+
+***BZO_PROJ_KERNZONE_V***: 
+
+Kernzonen (projektiert)
+
+
+***BZO_PROJ_QUEZ_V***: 
+
+Quartiererhaltungszonen (projektiert)
+
+
+***BZO_PROJ_WALDABSTANDSL_V***: 
+
+Waldabstandslinien (projektiert)
+
+
+***BZO_PROJ_ZONE_INNENL_F_V***: 
+
+innenliegende Freihaltezone (projektiert) (informativ) 
+
+
+***BZO_PROJ_ZONE_ES_V***: 
+
+Empfindlichkeitsstufen nach Art. 3 BauO (projektiert)
+
+
+***BZO_PROJ_ZONE_LAERMVORBELAST_V***: 
+
+Lärmvorbelastetes Gebiet gemäss Art. 3 BauO (projektiert)
+
+
+***BZO_PROJ_ZONE_V***: 
+
+Zonen (projektiert)
+
+
+***BZO_ZONE_V***: 
+
+Zonen
+
+
+***BZO_ZONE_ERHOEHTE_AZ_V***: 
+
+Gebiete mit erhöhter Ausnützung gemäss Art. 13 Abs. 2 BauO
+
+
+***BZO_ZONE_FFZ_V***: 
+
+Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO
+
+
+***BZO_PROJ_AUSSICHTSSCHUTZ_V***: 
+
+Aussichtsschutz (projektiert) (Bestandteil der Sondernutzung)
+
+
+***BZO_PROJ_ZONE_WOHNANTEIL_V***: 
+
+Wohnanteilsgrenze (projektiert)
+
+
+***BZO_PROJ_GP_PFLICHT_V***: 
+
+Gebiete mit Gestaltungsplanpflicht nach Art. 4 BauO (projektiert) (Bestandteil der Sondernutzung)
+
+
+***BZO_PROJ_HOCHHAUSGEBIET_V***: 
+
+Hochhausgebiete nach Art. 9 BauO (projektiert) (Bestandteil der Sondernutzung) 
+
+
+***BZO_PROJ_PLANUNGSZONE_V***: 
+
+Planungszonen (projektiert) (Bestandteil der Sondernutzung) 
+
+
+***BZO_PROJ_SBV_V***: 
+
+Sonderbauvorschriften (projektiert) (Bestandteil der Sondernutzung) 
+
+
+***BZO_PROJ_ZONE_ERHOEHTE_AZ_V***: 
+
+Gebiete mit erhöhter Ausnützung gemäss Art. 13 Abs. 2 BauO (projektiert)
+
+
+***BZO_ZONE_WOHNANTEIL_V***: 
+
+Wohnanteilsgrenze
+
+
+***BZO_BAUMSCHUTZ_V***: 
+
+
+
+
+***BZO_EG_NUTZUNG_FLAECHE_V***: 
+
+
+
+
+***BZO_EG_NUTZUNG_LINIE_V***: 
+
+
+
+
+***BZO_PROJ_BAUMSCHUTZ_V***: 
+
+
+
+
+***BZO_PROJ_EG_NUTZUNG_FLAECHE_V***: 
+
+
+
+
+***BZO_PROJ_EG_NUTZUNG_LINIE_V***: 
+
+
+
+
+***BZO_PROJ_QUEZ_LINIE_V***: 
+
+
+
+
+***BZO_QUEZ_LINIE_V***: 
+
+
+
+
+***BZO_PROJ_GP_V***: 
+
+Gestaltungspläne (projektiert) (Bestandteil der Sondernutzung) 
+
+
+***BZO_PROJ_ZONE_FFZ_V***: 
+
+Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO (projektiert)
+
+
+***BZO_ZONE_LAERMVORBELAST_V***: 
+
+Lärmvorbelastetes Gebiet gemäss Art. 3 BauO
+
+
+
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/1df2df11-10a7-41df-b329-1905f7c29c79.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_nutzungsplanung___kommunale_bau__und_zonenordnung__bzo_)
+
+Auto generated R starter code for data set geo_nutzungsplanung___kommunale_bau__und_zonenordnung__bzo_.
+
+## Metadata
+
+- **Publisher** `Raumentwicklung & Architektur, Amt für Städtebau, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Basis­karten,Bauen und Wohnen,Umwelt,Ver­walt­ung`
+- **Tags** `['abstandslinien', 'bauordnung', 'bzo', 'erganzungsplane', 'geodaten', 'geoportal', 'liniendaten', 'nutzungsplanung', 'polygondaten', 'stzh', 'vektordaten', 'zonenplan']`
+- **Metadata_created** `2023-11-06T03:11:18.279625`
+- **Metadata_modified** `2025-05-26T05:32:56.226682`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Nutzungsplanung___kommunale_Bau__und_Zonenordnung__BZO_?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

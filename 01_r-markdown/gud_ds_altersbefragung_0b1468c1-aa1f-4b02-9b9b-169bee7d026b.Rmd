@@ -1,0 +1,98 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Daten zur Altersbefragung 2023 der Stadt Zürich
+
+Daten zur erstmals durchgeführten, repräsentativen Altersbefragung 2023 in der Stadt Zürich. 
+
+Im Rahmen der «Altersstrategie 2035» führte die Stadt Zürich eine repräsentative Befragung der Bevölkerung ab 65 Jahren der Stadt durch. Ziel der Befragung war mehr über die Lebensumstände, Bedürfnisse und Meinungen der älteren Einwohner*innen der Stadt Zürich zu erfahren.
+
+
+**Bericht zur Befragung:**
+
+Der [Bericht zur Altersbefragung 2023](https://www.stadt-zuerich.ch/de/aktuell/publikationen/2023/altersbefragung-2023.html) und ihren [wichtigsten Resultaten](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/politik-und-verwaltung/befragungen/altersbefragung.html) stehen Online zur Verfügung.
+
+**Informationen über die Befragung:**
+
+Die Befragung wurde vom unabhängigen Institut DemoSCOPE im Sommer 2023 durchgeführt und von der Hochschule für soziale Arbeit der Fachhochschule Nordwestschweiz in Zusammenarbeit mit der Stadt Zürich ausgewertet.
+
+**Konzept und Methodik der Befragung (2023):**
+
+Die Altersbefragung der Stadt Zürich wurde erstmalig im Sommer 2023 durchgeführt. Die Erhebung ist als Personenbefragung konzipiert, bestehend aus zwei Komponenten: einem allgemeinen Fragenteil, der bei künftigen Erhebungen wiederholt werden soll, sowie einem Fragenteil, der jeweils ein Fokusthema beleuchtet. In der ersten Befragung liegt der Fokus auf dem Zugang der älteren Bewohner*innen zu neuen Technologien und der zunehmenden Digitalisierung.
+
+Die vorliegende Befragung wurde in einem Methoden-Mix konzipiert, um möglichst vielen Personen die Teilnahme zu ermöglichen. Dies bedeutet, dass die Untersuchung hauptsächlich als Papierbefragung (schriftliche Fragebögen) stattgefunden hat, die durch eine alternative Teilnahme per Onlinefragebogen ergänzt wurde. Zudem konnten bei Bedarf auch telefonische Interviews geführt werden. Die Mehrheit der Befragten (88 %) füllte einen Papierfragebogen aus; 12 % nahmen via Onlinefragebogen teil, und 3 Personen wünschten eine Teilnahme via Telefoninterview.
+
+**Grundgesamtheit, Stichprobe und Rücklauf:**
+
+Die Grundgesamtheit der Altersbefragung umfasst alle Personen ab 65 Jahren, die in der Stadt Zürich wohnhaft sind. Aus dieser Grundgesamtheit wurde für die Erhebung – auf der Grundlage von Personen- und Adressdaten aus dem Einwohnerregister der Stadt Zürich – eine Zufallsstichprobe gezogen. Es konnten insgesamt 2499 Personen ab 65 Jahren befragt werden.
+
+**Weitere Informationen zur Altersstrategie:**
+
+Die «Altersstrategie 2035» der Stadt Zürich und der dazugehörige Massnahmenkatalog sind online abrufbar: https://www.stadt-zuerich.ch/gud/de/index/departement/strategie_politik/alterspolitik-2035.html
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/gud_ds_altersbefragung)
+
+Auto generated R starter code for data set gud_ds_altersbefragung.
+
+## Metadata
+
+- **Publisher** `Departementssekretariat, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Freizeit,Ge­sund­heit`
+- **Tags** `['alter', 'altersmonitoring', 'alterspolitik', 'altersstrategie', 'befragung', 'sachdaten', 'tabelle']`
+- **Metadata_created** `2024-11-27T11:18:01.876244`
+- **Metadata_modified** `2025-05-26T05:51:30.796126`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/gud_ds_altersbefragung/download/Altersbefragung_OGD.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

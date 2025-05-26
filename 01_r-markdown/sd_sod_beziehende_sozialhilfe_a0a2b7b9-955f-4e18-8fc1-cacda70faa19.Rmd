@@ -1,0 +1,107 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Bezügerinnen und Bezüger von Sozialhilfe
+
+Bezügerinnen und Bezüger von Sozialhilfe seit 1999. 
+
+Die Sozialhilfe ist eine subsidiäre, das heisst ergänzende Hilfe: sie kommt erst dann zum Zug, wenn alle anderen Mittel aufgebraucht, alle anderen Sozialversicherungen ausgeschöpft und die Mittellosigkeit lückenlos dokumentiert ist. Die Sozialen Dienste Zürich unterstützen durch Sicherstellung des sozialen Existenzminimums mit Sozialhilfeleistungen für Lebensunterhalt, Miete, gesundheitsbedingte Kosten und Aufwendungen für die Erziehung der Kinder.
+
+**Definitionen**
+
+
+**Durchschnittliche Anzahl pro Monat**
+Anzahl Fälle pro Jahr geteilt durch 12
+
+**Kumulierte Daten**
+Die kumulierte Fall- oder Personenzahl eines Jahres zählt alle Fälle oder Personen, welche mindestens einmal in diesem Jahr Sozialhilfe in Anspruch genommen haben.
+
+**Fälle**
+Ein Fall umfasst mindestens eine Person. Ein Fall kann aber auch aus einer Familie/einem Haushalt bestehen.
+
+**Personen**
+Hier handelt es sich um Einzelpersonen.
+
+**Neue Fälle**
+Alle Fälle pro Jahr, die erstmals überhaupt oder nach einem Unterbruch von mindestens sechs Monaten eine Leistung erhalten haben.
+
+**Abgelöste Fälle**
+Alle Fälle pro Jahr, die seit sechs Monaten keine Leistung mehr erhalten haben.
+
+
+[]()
+
+**Geschäftsbericht**
+
+
+Im [**Geschäftsbericht**](https://www.stadt-zuerich.ch/geschaeftsbericht) werden jährlich alle Zahlen zum Thema Sozialhilfe veröffentlicht.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_sod_beziehende_sozialhilfe)
+
+Auto generated R starter code for data set sd_sod_beziehende_sozialhilfe.
+
+## Metadata
+
+- **Publisher** `Sozialstatistik / Evaluation, Soziale Dienste, Sozialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
+- **Tags** `['bezug', 'sachdaten', 'sozialhilfe', 'sozialhilfebeziehende', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2019-12-13T10:33:30.772958`
+- **Metadata_modified** `2025-05-25T21:09:21.458325`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sd_sod_beziehende_sozialhilfe/download/sd_sod_beziehende_sozialhilfe.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

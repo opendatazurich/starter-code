@@ -1,0 +1,189 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Denkmalpflegezuständigkeit
+
+Die Zuständigkeit für Denkmalpflegeobjekte in der Stadt Zürich ist aufgeteilt zwischen dem Amt für Städtebau Zürich und dem Kanton Zürich. Dieser Datensatz zeigt die Zuständigkeitsgebiete in der Stadt Zürich, welche im Wesentlichen den statistischen Quartieren folgen, mit Ausnahme der kantonalen Objekte. Der Datensatz enthält Angaben zu den zuständigen Ansprechpersonen der Bauberatung sowie der Inventarisation der Denkmalpflege des Amtes für Städtebau (Name, Telefonnummer, Email, Präsenzzeiten) sowie Angaben zur Abteilung Denkmalpflege des Kantons Zürich.
+
+**Zweck**: Der Datensatz bildet die Grundlage für eine Suchfunktion auf der Interseite des Amts für Städtebau. Sie ermöglicht es, über die Eingabe der Adresse die Zuständigkeit (Stadt oder Kanton) zu ermitteln und im Fall der Stadt Zürich direkt die entsprechende Ansprechperson zu finden. Die Suchfunktion ist ein Arbeitsinstrument für die Öffentlichkeit, für den Bereich Denkmalpflege des Amts für Städtebau, sowie für die Abteilung Denkmalpflege des Kantons Zürich.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Denkmalpflegezuständigkeit»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/9bc114a2-67cc-4f0f-8abe-c044e3e679f9).				
+			   
+
+**Datenerfassung:**
+
+Der Flächendatensatz basiert auf einem monatlichen Verschnitt der kantonalen Denkmalschutzobjekte mit Daten der amtlichen Vermessung der Stadt Zürich. Änderungen ergeben sich, wenn Denkmalschutzobjekte durch den Kanton Zürich hinzugefügt oder entfernt werden oder wenn Gebiete abweichend von den statistischen Quartieren angepasst werden sollten.
+
+**Datengrundlage:**
+
+Dieser Datenbestand ist von folgenden GeoServer-Datensätzen abhängig:
+-	GSRP.KTZH_SDE.DENKMALSCHUTZOBJEKTE_P
+-	AV_BO_BOFLAECHE_A
+Attribute: gemäss Angaben des Amts für Städtebau, Denkmalpflege
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/9bc114a2-67cc-4f0f-8abe-c044e3e679f9.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_denkmalpflegezustaendigkeit)
+
+Auto generated R starter code for data set geo_denkmalpflegezustaendigkeit.
+
+## Metadata
+
+- **Publisher** `Archäologie & Denkmalpflege, Amt für Städtebau, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Basis­karten,Bauen und Wohnen`
+- **Tags** `['amt-fur-stadtebau', 'denkmalpflege', 'denkmalschutzobjekte', 'geodaten', 'geoportal', 'inventar', 'kanton-zurich', 'polygondaten', 'stzh', 'vektordaten', 'zustandigkeit']`
+- **Metadata_created** `2023-11-06T03:09:48.170106`
+- **Metadata_modified** `2025-05-26T05:32:26.928131`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Denkmalpflegezustaendigkeit?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

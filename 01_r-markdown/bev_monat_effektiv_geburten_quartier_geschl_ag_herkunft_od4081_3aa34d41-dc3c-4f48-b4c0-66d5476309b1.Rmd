@@ -1,0 +1,112 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Geburten nach Monat (effektives Geburtsdatum), Stadtquartier, Geschlecht und Herkunft
+
+
+Anzahl Geburten nach Monat (effektives Geburtsdatum), Geschlecht, Herkunft, Stadtkreis und Stadtquartier.
+
+Bei den Daten des aktuellsten Jahres handelt es sich um **provisorische** Daten. Diese können laufend korrigiert werden. Erst mit dem Jahresabschluss werden die Daten definitiv.
+
+Es ist möglich, dass eine Geburt z.B. vom 28. Dezember 2020 erst Ende Januar 2021, also nach dem Jahresabschluss von Statistik Stadt Zürich, gemeldet wurde. Im vorliegenden Datensatz wird das effektive Geburtsdatum (28. Dezember 2020) und nicht das korrigierte (1. Januar 2021) verwendet. Daher können die vorliegenden Daten von den anderen Daten von Statistik Stadt Zürich abweichen.
+ 
+
+
+**Datenstand**
+
+- **Aktuellster Monat**: Der aktuellste Monat in den Daten entspricht dem aktuellen Monat - 2 Monate.
+
+- **Variable Datenstand**: Die Variablen DatenstandCd und DatenstandLang beschreiben den Datenstand. Provisorische Daten werden laufend korrigiert.
+
+ 
+
+[]()
+
+**Datenqualität**
+
+- **Datenqualität**: Die Daten des aktuellsten Jahres sind jeweils provisorisch und werden laufend korrigiert.
+
+Es ist möglich, dass eine Geburt z.B. vom 28. Dezember 2020 erst Ende Januar 2021, also nach dem Jahresabschluss von Statistik Stadt Zürich, gemeldet wurde. Im vorliegenden Datensatz wird das effektive Geburtsdatum (28. Dezember 2020) und nicht das korrigierte (1. Januar 2021) verwendet. Daher können die vorliegenden Daten von den anderen Daten von Statistik Stadt Zürich abweichen.
+
+ 
+
+[]()
+
+**Anwendungszweck**
+
+- **Anwendungszweck**: In welchen Fällen macht es Sinn mit diesen Daten zu arbeiten?
+
+Wenn das effektive Geburtsdatum eine Rolle spielt (insbesondere Anzahl Geburten in den Monaten Dezember und Januar) wird empfohlen mit diesen Daten zu arbeiten. 
+
+Aber: die Bilanzen (Bestand, Geburten, Todesfälle, Zuzüge, Wegzüge) gemäss Webseite von Statistik Stadt Zürich stimmen nicht mit den vorliegenden Monatsdaten überein. Zudem ergibt die Summe der monatlichen Geburten nicht die von Statistik Stadt Zürich veröffentlichte Zahl der Geburten pro Jahr. Falls das gewünscht wird, sollte der folgende Datensatz verwendet werden: [Geburten nach Monat, Stadtquartier, Geschlecht und Herkunft, seit 1998](https://data.stadt-zuerich.ch/dataset/bev_monat_geburten_quartier_geschl_ag_herkunft_od4030)
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_monat_effektiv_geburten_quartier_geschl_ag_herkunft_od4081)
+
+Auto generated R starter code for data set bev_monat_effektiv_geburten_quartier_geschl_ag_herkunft_od4081.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['geburten', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2022-12-09T12:52:18.922076`
+- **Metadata_modified** `2025-05-25T21:07:33.805240`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_monat_effektiv_geburten_quartier_geschl_ag_herkunft_od4081/download/BEV408OD4081.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

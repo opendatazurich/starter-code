@@ -1,0 +1,108 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Bezügerinnen und Bezüger von erzieherischen finanziellen Hilfen (Nachführung eingestellt)
+
+Bezügerinnen und Bezüger von erzieherischen finanziellen Hilfen von 2009-2021. 
+
+Erzieherische finanzielle Hilfen umfassen finanzielle Leistungen im Bereich der Kinder- und Jugendhilfe für ambulante und stationäre Massnahmen (zum Beispiel sozialpädagogische Familienbegleitung, Platzierung in Pflegefamilien und Heimen).
+
+Aufgrund der Neuerung, dass die ergänzenden Hilfen zur Erziehung (ehemals «erzieherische Hilfen») seit 2022 durch den Kanton Zürich bewilligt und finanziert werden, kann diese bis 2021 durch die Sozialen Dienste geführte Statistik **nicht weitergeführt werden**.
+
+
+
+**Definitionen**
+
+
+**Durchschnittliche Anzahl pro Monat**
+Anzahl Fälle pro Jahr geteilt durch 12
+
+**Kumulierte Daten**
+Die kumulierte Fallzahl eines Jahres zählt alle Fälle, welche mindestens einmal in diesem Jahr erzieherische finanzielle Hilfe in Anspruch genommen haben.
+
+**Fälle**
+Ein Fall umfasst mindestens eine Person. Ein Fall kann aber auch aus einer Familie/einem Haushalt bestehen.
+
+**Neue Fälle**
+Alle Fälle pro Jahr, die erstmals überhaupt oder nach einem Unterbruch von mindestens sechs Monaten eine Leistung erhalten haben.
+
+**Abgelöste Fälle**
+Alle Fälle pro Jahr, die seit sechs Monaten keine Leistung mehr erhalten haben.
+
+
+[]()
+
+**Geschäftsbericht**
+
+
+Im [**Geschäftsbericht**](https://www.stadt-zuerich.ch/geschaeftsbericht) werden jährlich alle Zahlen zum Thema Sozialhilfe veröffentlicht.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_sod_beziehende_erz_finanzielle_hilfe)
+
+Auto generated R starter code for data set sd_sod_beziehende_erz_finanzielle_hilfe.
+
+## Metadata
+
+- **Publisher** `Sozialstatistik / Evaluation, Soziale Dienste, Sozialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
+- **Tags** `['erzieherische-finanzielle-hilfe', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2019-12-13T10:33:43.674772`
+- **Metadata_modified** `2025-05-25T21:11:07.475466`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sd_sod_beziehende_erz_finanzielle_hilfe/download/sd_sod_beziehende_erz_finanzielle_hilfe.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

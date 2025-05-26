@@ -1,0 +1,128 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Passantenfrequenzen an der Bahnhofstrasse - Stundenwerte
+
+Die Messung von Passantenfrequenzen kann wichtige Hinweise auf die Attraktivität und die Nutzung von Orten geben. Im Rahmen eines gemeinsamen Pilotprojektes zwischen dem internationalen Immobilienberatungsunternehmen CBRE, dem PropTech Unternehmen hystreet.com, Swiss Life Asset Managers, der Stadtentwicklung Zürich und der Vereinigung Zürcher Bahnhofstrasse werden durch die Firma Hystreet an der Bahnhofstrasse Passantenfrequenzen erhoben. 
+
+Die Messungen erfolgen mit Laserscannern und werden stündlich aktualisiert. Aktuell gibt es **drei Messgebiete** (siehe [hystreet_locations.json](https://data.stadt-zuerich.ch/dataset/hystreet_fussgaengerfrequenzen/download/hystreet_locations.json)): 
+
+- Bahnhofstrasse (Nord), 
+- Bahnhofstrasse (Mitte),
+- Bahnhofstrasse (Süd), 
+- Lintheschergasse (seit 13.03.2024),
+
+Jedes der genannten Gebiete kann in drei Zonen unterteilt werden:
+
+- Zone 1
+- Zone 2
+- Zone 3
+
+Die Messwerte werden der Zone 99 angerechnet, falls sie keiner der drei Zonen zugeordnet werden können. Die Zonen definieren sich über die Straßen-/Bürgersteigseiten: Die gezählten Passanten sind jeweils einer Bürgersteigseite zugeordnet.
+
+Bei allen Gebieten und Zonen kann zwischen Erwachsenen und Kindern sowie nach der Laufrichtung (Bürkliplatz oder Hauptbahnhof) unterschieden werden. 
+
+Desweiteren beinhaltet der Datensatz auch Angaben zum Wetter und zur Temperatur während des Messzeitpunkts.
+
+**Detailinformationen bezüglich Datenqualität:**
+
+Bei den Zählwerten **vor dem 03.03.2022** (Testbetrieb)  können Inkonsistenzen vorkommen. Ab dem 03.03.2022 ist die Datenqualität in der Regel gut.
+
+- Bei den Zählungen vor dem 03.03.2022 können Inkonsistenzen auftreten. Im Gebiet «Bahnhofstrasse (Süd)» stimmt bis zum 03.03.2022 die Unterscheidung zwischen Erwachsenen und Kindern nicht. Alle Zählwerte wurden in diesem Zeitraum fäschlicherweise den Kindern zugeordnet.
+
+- Im Teilgebiet **Bahnhofstrasse (Nord)** fehlen die Messwerte zwischen:
+   - dem 14.09. – 23.12.2022 
+   - dem 03.03. – 21.09.2023 
+wegen Bauarbeiten.
+
+**Weitere Informationen vom Hersteller**
+
+Weitere ausführliche Informationen, wie eine Methodenbeschreibung, eine API-Dokumentation sowie der Zugang zu den Daten oder einem Dashboard für unentgeltlich registrierte User, finden Sie auf der [Webseite von Hystreet](https://hystreet.com).
+
+**Wo genau liegen die Zonen?**
+
+Zu den Zonen werden hier - nicht wie bei den Untersuchungsgebieten (siehe [hystreet_locations.json](https://data.stadt-zuerich.ch/dataset/hystreet_fussgaengerfrequenzen/download/hystreet_locations.json)) - keine Geodaten zur Verfügung gestellt. 
+
+Die Zonen definieren sich über die Strassen- oder Bürgersteigseiten: Die gezählten Passanten sind jeweils einer Bürgersteigseite zugeordnet.
+Bei den Standorten Bahnhofstrase (Nord) und (Süd) ist die Zone 1 die westliche Bürgersteigseite, am Standort (Mitte) die östliche Bürgersteigseite. Zone 2 betrifft die Mitte der Straße, Zone 3 die vorgenannten gegenüberliegenden Bürgersteigseiten.
+
+**Ausfälle der Zählgeräte:**
+
+Wenn einzelne **Zeitintervalle** für Zählstellen **fehlen**, so ist dies auf **Ausfälle des Zählgeräts** zurückzuführen.
+
+
+
+**Dateninterpretation:**
+
+Generell sind bei Interpretationen der Zähldaten, wie z.B. der Entwicklung der Frequenzen, Randbedingungen zu berücksichtigen. Wie beispielsweise die Witterung, die Bevölkerungs- und Arbeitsplatzentwicklung, Veranstaltungen/Demonstrationen oder lokale Verkehrsverlagerungen infolge Baustellen oder Umleitungen.
+
+**Zeitangaben**
+
+Alle **Zeitangaben** sind **UTC**. Das Datumsformat entspricht dem [ISO 8601 Standard](http://www.w3.org/TR/NOTE-datetime).
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/hystreet_fussgaengerfrequenzen)
+
+Auto generated R starter code for data set hystreet_fussgaengerfrequenzen.
+
+## Metadata
+
+- **Publisher** `Stadtentwicklung, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Freizeit,Mobilität,Umwelt`
+- **Tags** `['bahnhofstrasse', 'fussgaengerzaehlung', 'fussverkehr', 'langsamverkehr', 'messwerte', 'passanten', 'planung', 'punktdaten', 'sachdaten', 'standort', 'zaehlung']`
+- **Metadata_created** `2022-07-13T11:47:16.659635`
+- **Metadata_modified** `2025-05-26T05:36:11.157818`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/hystreet_fussgaengerfrequenzen/download/hystreet_fussgaengerfrequenzen_seit2021.parquet"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

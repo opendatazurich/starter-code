@@ -1,0 +1,127 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Durch Umbau mit Leerkündigungen betroffene Wohnungen von privaten Eigentümerschaften und deren Bewohnerschaft
+
+
+Der Datensatz zeigt, wie viele Wohnungen von einem Umbau betroffen waren, wie viele umgebaute Wohnungen leergekündigt wurden und und wie gross die davon betroffene Bewohnerschaft war. Die Auswertung basiert auf Gebäuden von privaten Eigentümerschaften ohne Wohnbaugenossenschaften und Stockwerkeigentum.
+
+
+**Umbau:**
+
+
+Umbau bezeichnet die bauliche Veränderung bestehender Gebäude, soweit sie im Gebäude- und Wohnungsregister erfasst werden. In der Grössenordnung entspricht die Zahl der umgebauten Wohnungen denen in energetisch erneuerten Gebäuden, für deren Umbau eine Baubewilligung erforderlich ist.
+
+
+[]()
+
+**Leerkündigung:**
+
+
+Wir sprechen von einer Leerkündigung, wenn bei einem Umbau das Gebäude entleert wird indem alle Mietverträge gekündigt werden. Für die Berechnung wurde die Aufenthaltsdauer der Bewohnenden im Gebäude ein Jahr nach dem Umbauende betrachtet. Falls zu diesem Zeitpunkt alle Bewohnenden weniger als 1 Jahr im Gebäude wohnen, wird von einer Leerkündigung ausgegangen. Die Ausprägung ist 1 oder Ja, falls es eine Leerkündigung gegeben hat und 0 oder Nein falls es keine Leerkündigung gegeben hat
+
+
+[]()
+
+**Betrachtete Gebäude:**
+
+
+Die Auswertungen beziehen sich nur auf Gebäude von privaten Eigentümerschaften, ohne Baugenossenschaften und Stockwerkeigentum, da die öffentliche Hand und die Baugenossenschaften der Mieterschaft bei Umbauten in der Regel Ersatzwohnungen anbieten. Weiter werden folgende Gebäude von der Auswertung ausgeschlossen: 
+- Gebäude mit weniger als 6 Wohnungen
+- Gebäude, bei denen der Umbau in den ersten 15 Jahren nach der Erstellung durchgeführt wurde
+- Gebäude, die die zwei Jahre vor Umbaubeginn einen der folgenden Wohnungstypen beinhalten: Alters-/Pflegewohnungen, Bewirtschaftete Wohnungen, Dienstwohnungen, Personalwohnungen, Studentenwohnungen, Technische Wohnungen
+- Gebäude, bei denen ein Jahr vor Umbau keine statistischen Wohnungen erfasst waren
+
+
+[]()
+
+**Personenzahl:**
+
+
+Gezählt wird die wirtschaftliche Bevölkerung, welche zwei Jahre vor Umbaubeginn in den betroffenen Gebäuden gemeldet war und wegen Leerkündigung die Wohnung gewechselt hat.
+
+
+[]()
+
+**Stand und Nachführung:**
+
+Das Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+ 
+
+[]()
+
+**Eigentumsart**
+
+
+- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
+- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_umbau_leerkuendigung_whg_baujahr_personen_od5051)
+
+Auto generated R starter code for data set bau_umbau_leerkuendigung_whg_baujahr_personen_od5051.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauperiode', 'bautaetigkeit', 'eigentum', 'gebaeude', 'leerkuendigungen', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'wohnen', 'wohnung', 'wohnverhaeltnisse', 'zeitreihe']`
+- **Metadata_created** `2020-12-07T16:11:46.186283`
+- **Metadata_modified** `2025-05-25T21:11:27.486777`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_umbau_leerkuendigung_whg_baujahr_personen_od5051/download/BAU505OD5051.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

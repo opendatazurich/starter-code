@@ -1,0 +1,89 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Bakteriologie: Reservoire, Verteilnetz und Endstränge
+
+Dieser Datensatz umfasst Messdaten zur mikrobiologischen Trinkwasserqulität in den Reservoiren und im Verteilnetz (inklusive Endstränge) der Wasserversorgung Zürich, aufgeteilt in Jahresdateien. In den Reservoiren und im Verteilnetz wird das Trinkwasser nur auf mikrobiologische Parameter untersucht. Andere Messparameter werden am Ausgang der Trinkwasserwerke erhoben, da für diese Messparameter nur geringfügige Änderungen in den Reservoiren und im Verteilnetz zu erwarten sind.
+
+
+**Hinweis:**
+
+Der Datensatz umfasst mikrobiologische Messparameter. Ein Teil dieser Messparameter ist auch in der Lebensmittelgesetzgebung reguliert: Verordnung des EDI über Trinkwasser sowie Wasser in öffentlich zugänglichen Bädern und Duschanlagen, TBDV, SR 817.022.11
+
+
+**Aggregierte Daten:**
+
+Die Daten stehen in aggregierter Form auf der [Website](https://www.stadt-zuerich.ch/dib/de/index/wasserversorgung/Qualitaetsueberwachung/qualitaetswerte.html) der **Wasserversorgung Zürich** (WVZ) zur Verfügung (PDF-Datei mit tabellarischer Zusammenfassung).
+
+
+**Zusätzliche Informationen:**
+
+Zusätzliche Informationen sind bei der Wasserversorgung Zürich, Hauptabteilung Qualitätsüberwachung erhältlich: labwvz@zuerich.ch
+
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/dib_wvz_bakteriologie_qualitaetswerte)
+
+Auto generated R starter code for data set dib_wvz_bakteriologie_qualitaetswerte.
+
+## Metadata
+
+- **Publisher** `Wasserversorgung, Departement der Industriellen Betriebe`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Umwelt`
+- **Tags** `['mikrobiologie', 'sachdaten', 'tabelle', 'trinkwasser', 'trinkwasserqualitaet', 'verteilnetz', 'zeitreihe']`
+- **Metadata_created** `2025-01-29T12:23:15.450002`
+- **Metadata_modified** `2025-05-26T00:10:08.625221`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/dib_wvz_bakteriologie_qualitaetswerte/download/2024_Bakteriologie_Reservoire_Verteilnetz_Endstraenge.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,92 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Ferien und schulfreie Tage der Volksschule der Stadt Zürich, Schuljahre 2020/2021 bis 2029/2030
+
+Terminliste Ferien und schulfreie Tage der Volksschule der Stadt Zürich.
+
+**Wie und von wem werden die Termine festgelegt?**
+
+Die **Bildungsdirektion des Kantons Zürich** legt den Schuljahresbeginn und die Weihnachtsferien einheitlich für den ganzen Kanton fest. 
+
+Die **Feriendaten** basieren auf der DIN-Norm-Wochenzählung und sind für die **Volksschule der Stadt Zürich** wie folgt fixiert:
+
+- Sportferien: Wochen 7 und 8
+- Frühlingsferien: Wochen 17 und 18 (Wochen 16 und 17, wenn Ostermontag in die 16. Woche fällt)
+- Sommerferien: Wochen 29 bis 33
+- Herbstferien: Wochen 41 und 42
+
+**Wer erfasst die Daten in der Stadt Zürich?**
+
+Aktuell werden die Daten von der Kommunikationsstelle des Schulamts erfasst, was sich aber möglicherweise in Zukunft ändert.
+
+**Weitere Informationen:**
+
+Weitere Informationen, unter anderem auch den Download als Kalenderdatei (iCal), finden Sie auf der Webseite vom Schul- und Sportdepartement unter «[Ferien und schulfreie Tage](https://www.stadt-zuerich.ch/de/bildung/volksschule/schulferien.html)».
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ssd_schulferien)
+
+Auto generated R starter code for data set ssd_schulferien.
+
+## Metadata
+
+- **Publisher** `Behörden und Politik, Schulamt, Schul- und Sportdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** ``
+- **Tags** `['ferien', 'schulfrei', 'termine', 'volksschule']`
+- **Metadata_created** `2023-11-24T18:57:14.815441`
+- **Metadata_modified** `2025-05-25T15:25:02.279029`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/ssd_schulferien/download/schulferien.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

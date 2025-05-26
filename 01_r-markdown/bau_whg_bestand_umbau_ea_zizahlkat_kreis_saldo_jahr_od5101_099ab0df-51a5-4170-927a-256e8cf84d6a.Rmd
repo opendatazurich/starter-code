@@ -1,0 +1,123 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Wohnungssaldo nach Umbau
+
+Der Datensatz enthält den Wohnungssaldo nach Umbaut nach Jahr, Stadtkreis, Eigentumsart und Wohnungsgrösse.
+
+**Hinweis:**
+
+
+Jahr entspricht der ganzen Jahresperiode.
+
+
+[]()
+
+**Hinweis:**
+
+
+Der Wohnungssaldo nach Umbau enthält alle Änderungen der Anzahl Wohnungen im Monat, in welchem ein Umbau abgeschlossen wurde. Es können auch Änderungen enthalten sein, die nicht baulich mit einem Umbau zusammenhängen, sondern durch Korrekturen im Gebäude- und Wohnungsregister zustande kommen.
+
+
+[]()
+
+**EigentuemerSSZPubl1Lang**
+
+- Öffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum
+- Wohnbaugenossenschaften: Nur Wohnbaugenossenschaften
+- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
+- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
+- Im Stochwerkeigentum: Stockwerkeigentumsgesellschaften
+
+
+[]()
+
+**AnzWhgStat**
+
+
+Saldo der statistischen Wohnungen, die bei einem Umbau entstehen oder aufgelöst werden.
+
+
+[]()
+
+**Stand und Nachführung:**
+
+Das Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+ 
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_whg_bestand_umbau_ea_zizahlkat_kreis_saldo_jahr_od5101)
+
+Auto generated R starter code for data set bau_whg_bestand_umbau_ea_zizahlkat_kreis_saldo_jahr_od5101.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bautaetigkeit', 'eigentum', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'wohnen', 'wohnung', 'zeitreihe', 'zimmerzahl']`
+- **Metadata_created** `2021-11-08T13:16:46.879726`
+- **Metadata_modified** `2025-05-25T21:07:57.704323`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_whg_bestand_umbau_ea_zizahlkat_kreis_saldo_jahr_od5101/download/BAU510OD5101.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

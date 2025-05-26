@@ -1,0 +1,116 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Neuerstellte Wohnungen nach Art Ersatzbau, Statistischer Zone und Eigentumsart
+
+Der Datensatz enthält die neuerstellten Wohnungen nach Art des Ersatzbaus (Wohnersatz, Umnutzung, auf unbebauter Fläche), differenziert nach Eigentumsart und Statistischer Zone/Stadtquartier/Stadtkreis.
+
+**Weitere Informationen:**
+
+
+ Siehe die Analyse von Statistik Stadt Zürich aus dem Jahr 2015: [Zürich baut sich neu. Ersatzneubauprojekte 2004-2015](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/publikationen-und-dienstleistungen/publikationen/analysen/A_001_2015.html).
+
+
+[]()
+
+**Eigentumsart**
+
+
+- Öffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum
+- Wohnbaugenossenschaften: Nur Wohnbaugenossenschaften
+- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
+- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
+- Im Stockwerkeigentum: Stockwerkeigentumsgesellschaften
+
+
+[]()
+
+**Hinweis**
+
+ Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_whg_ersatzbauart_eigentumsgruppe_statzone_seit2000_od5324)
+
+Auto generated R starter code for data set bau_neubau_whg_ersatzbauart_eigentumsgruppe_statzone_seit2000_od5324.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['abbruch', 'eigentum', 'erneuerung', 'ersatzneubau', 'gemeinnuetzig', 'neubau', 'privat', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'umnutzung', 'wohnen', 'wohnersatz', 'wohnung', 'zeitreihe']`
+- **Metadata_created** `2020-04-06T17:35:30.747699`
+- **Metadata_modified** `2025-05-25T21:00:31.144796`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_whg_ersatzbauart_eigentumsgruppe_statzone_seit2000_od5324/download/BAU532OD5324.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

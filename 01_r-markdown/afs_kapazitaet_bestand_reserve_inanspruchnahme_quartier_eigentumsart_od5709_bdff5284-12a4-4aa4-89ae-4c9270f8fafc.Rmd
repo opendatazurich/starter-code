@@ -1,0 +1,91 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Kapazität, Bestand, Reserve und Inanspruchnahme nach Stadtquartier, Eigentumsart, Arealüberbauung, Wohnanteil
+
+
+Das Amt für Städtebau modelliert jedes Jahr auf Basis der planungsrechtlichen Möglichkeiten und weiterer Rahmenbedingungen die baulichen Kapazitäten aller Bauzonen in Geschossflächen. Im Rahmen der Modellierung wird ebenso der Bestand in Geschossfläche geschätzt und durch Abzug von der Kapazität eine bauliche Reserve berechnet. Spezifisch für die Berechnung der Bevölkerungsszenarien werden Annahmen getroffen, um eine möglichst realistische Inanspruchnahme der Reserven zu modellieren. Hinweis: Das Modell zur Berechnung der Geschossflächen für die Kapazität, den Bestand, die Reserve und die Inanspruchnahme basiert auf Annahmen und Schätzungen. Die Zahlen sind in Bezug auf die Genauigkeit entsprechend mit Vorsicht zu interpretieren. Das Modell zur Kapazitäts- und Reserven-Berechnung (KaReB) wurde über die Jahre weiterentwickelt. 
+
+Inhalte: Kapazität, Bestand, Reserve und Inanspruchnahme aggregiert nach Stadtquartier, Eigentumsart, berechnet jeweils mit und ohne Arealüberbauung sowie nach minimalem, realem und maximalem Wohnanteil. Die Werte beziffern jeweils Geschossflächen in Quadratmeter. Sie enthalten nur die Wohnnutzungen, andere Nutzungen (Nicht-Wohnen) sind nicht berücksichtigt.
+
+**Datenstand:**
+
+- **Bevölkerungsszenarien**: Die vorliegenden Daten dienen als Inputdaten für die Bevölkerungsszenarien. Nur Wohnen; ohne Nicht-Wohnen.
+
+ 
+
+[]()
+
+**Annahmen:**
+
+- Damit die Bevölkerungsszenarien berechnet werden können, werden **Annahmen** zur Inanspruchnahme der Reserven getroffen. Die hier ausgewiesenen Werte zur Inanspruchnahme beziehen sich spezifisch auf die Bevölkerungsszenarien der Stadt Zürich (von Statistik Stadt Zürich).
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/afs_kapazitaet_bestand_reserve_inanspruchnahme_quartier_eigentumsart_od5709)
+
+Auto generated R starter code for data set afs_kapazitaet_bestand_reserve_inanspruchnahme_quartier_eigentumsart_od5709.
+
+## Metadata
+
+- **Publisher** `Amt für Städtebau, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bevoelkerungsszenarien', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-07-04T05:48:03.621702`
+- **Metadata_modified** `2025-05-25T21:00:52.435202`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/afs_kapazitaet_bestand_reserve_inanspruchnahme_quartier_eigentumsart_od5709/download/BEV570OD5709.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

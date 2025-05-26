@@ -1,0 +1,91 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Umzüge innerhalb der Stadt nach Stadtquartier (alt, neu), Alter, Geschlecht und Herkunft
+
+
+Anzahl Umzüge innerhalb der Stadt nach Stadtquartier (alt, neu), Alter, Geschlecht und Herkunft.
+
+
+**Datenstand**
+
+- **Bevölkerungsszenarien**: Die vorliegenden Daten dienen als Inputdaten für die Bevölkerungsszenarien.
+
+ 
+
+[]()
+
+**Nur Umzüge über Quartiergrenze**
+
+- **Quartiergrenzen**: Nur Umzüge über Quartiergrenze; also ohne die Umzüge innerhalb dem gleichen Quartier.
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_umzuege_jahr_quartier_alter_geschlecht_herkunft_od5706)
+
+Auto generated R starter code for data set bev_umzuege_jahr_quartier_alter_geschlecht_herkunft_od5706.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['bevoelkerungsszenarien', 'sachdaten', 'sasa', 'tabelle', 'umzug', 'zeitreihe']`
+- **Metadata_created** `2020-11-23T07:49:26.972204`
+- **Metadata_modified** `2025-05-25T20:59:06.880571`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_umzuege_jahr_quartier_alter_geschlecht_herkunft_od5706/download/BEV570OD5706.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,83 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Geburten nach Stadtquartier, Alter der Mutter, Geschlecht des Kindes, Herkunft von Mutter und Kind
+
+
+Anzahl Geburten (Lebendgeborene) nach Stadtquartier, Alter der Mutter, Geschlecht des Kindes, Herkunft von Mutter und Kind.
+
+
+**Datenstand**
+
+- **Bevölkerungsszenarien**: Die vorliegenden Daten dienen als Inputdaten für die Bevölkerungsszenarien.
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_geburten_jahr_altermutter_geschlecht_herkunft_quartier_od5702)
+
+Auto generated R starter code for data set bev_geburten_jahr_altermutter_geschlecht_herkunft_quartier_od5702.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['bevoelkerungsszenarien', 'geburten', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2020-11-23T07:49:53.304414`
+- **Metadata_modified** `2025-05-25T21:12:28.184888`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_geburten_jahr_altermutter_geschlecht_herkunft_quartier_od5702/download/BEV570OD5702.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

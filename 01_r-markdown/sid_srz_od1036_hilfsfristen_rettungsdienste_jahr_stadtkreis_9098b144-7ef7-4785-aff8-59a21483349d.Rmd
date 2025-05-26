@@ -1,0 +1,81 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Hilfsfristen der Rettungsdienste
+
+Hilfsfristen der Rettungsdienste nach Stadtkreis und Jahr. Dieser Datensatz gibt Auskunft über die Hilfsfristen der rettungsdienstlichen Versorgung in der Stadt Zürich nach Stadtkreis. Die Hilfsfrist sagt etwas darüber aus, wie viel Zeit von der Disposition der Einsatzkräfte durch die Einsatzleitzentrale 144 bis zu ihrem Eintreffen am Notfallort verstreicht. Betrachtet werden nur die dringlichen Einsätze, bei denen die Fahrzeuge mit Sondersignal ausrücken. Gemäss Vorgabe des Interverbands für Rettungswesen muss die Hilfsfrist bei mindestens 90 Prozent der Einsätze unter 15 Minuten liegen, aus medizinischen Gründen ist auf eine Hilfsfrist von 10 Minuten hinzuarbeiten. Der Datensatz umfasst Aussagen zu Hilfsfristen aller auf Stadtgebiet geleisteten Einsätze, unabhängig vom ausführenden Rettungsdienst.
+
+**Hilfsfrist**
+
+- **Hilfsfrist**: 
+Die Hilfsfrist bezeichnet die Zeit vom Eintreffen des Alarms bei den Rettungskräften (Disposition der Rettungsmittel) bis zum Eintreffen am Einsatzort in Minuten.
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_srz_od1036_hilfsfristen_rettungsdienste_jahr_stadtkreis)
+
+Auto generated R starter code for data set sid_srz_od1036_hilfsfristen_rettungsdienste_jahr_stadtkreis.
+
+## Metadata
+
+- **Publisher** `Schutz und Rettung, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Ver­walt­ung`
+- **Tags** `['gesundheit', 'sachdaten', 'sanitaet', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-12-01T11:17:09.863762`
+- **Metadata_modified** `2025-05-26T02:30:13.057584`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_srz_od1036_hilfsfristen_rettungsdienste_jahr_stadtkreis/download/GES103OD1036.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

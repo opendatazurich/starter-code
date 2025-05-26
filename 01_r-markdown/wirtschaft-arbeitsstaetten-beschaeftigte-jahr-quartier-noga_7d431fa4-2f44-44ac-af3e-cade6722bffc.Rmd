@@ -1,0 +1,76 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Arbeitsstätten und Beschäftigte nach Jahr, Quartier und NOGA
+
+Betriebszählung 2001, 2005, 2008
+
+Wenn die Anzahl Arbeitsstätten in einer Zelle (Kreuzung aller Dimensionen) kleiner als 4 ist, dürfen Beschäftigte und Arbeitsstätten gemäss Bundesamt für Statistik nicht ausgegeben werden – diese Datenwerte werden mit „( )“ dargestellt.  
+  
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/wirtschaft-arbeitsstaetten-beschaeftigte-jahr-quartier-noga)
+
+Auto generated R starter code for data set wirtschaft-arbeitsstaetten-beschaeftigte-jahr-quartier-noga.
+
+## Metadata
+
+- **Publisher** `Sektion Unternehmensstruktur, Bundesamt für Statistik`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Arbeit und Erwerb,​​Volks​­wirt​­schaft`
+- **Tags** `['arbeit', 'beschäftigte', 'betriebe', 'quartier', 'sachdaten', 'tabellen', 'zeitreihe']`
+- **Metadata_created** `2015-07-08T13:31:14.852974`
+- **Metadata_modified** `2025-01-06T14:08:45.466166`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/wirtschaft-arbeitsstaetten-beschaeftigte-jahr-quartier-noga/download/arbeitsstaetten_beschaeftigte_jahr_quartier_noga.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

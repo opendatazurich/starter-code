@@ -1,0 +1,146 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Relative Parteistärke bei den Nationalratswahlen in der Stadt Zürich
+
+Zeitreihe zur relative Parteistärke bei den Nationalratswahlen in der Stadt Zürich.
+
+
+
+**Relative Parteistärke**
+
+- Ab 2003: Die relative Parteistärke ist berechnet aus der Stimmensumme der Stamm- und Nebenlisten der jeweiligen Parteien.
+
+
+
+[]()
+
+**1939**
+
+- Die Ergebnisse der Nationalratswahlen von 1939 wurden nu rfür den ganzen Kanton ermittelt.
+
+
+
+[]()
+
+**Bauern-Gewerbe-Bürger-Partei**
+
+- Bis 1931: Bauernpartei
+
+
+
+[]()
+
+**1951 / FDP**
+
+- Freisinnige Zürich-Stadt 12873 (145‰) und Freisinnige Zürich-Land 1097 (12‰)
+
+
+[]()
+
+**1955 / FDP**
+
+- Freisinnige Zürich-Stadt 12174 (132‰) und Freisinnige Zürich-Land 1371 (15‰)
+
+
+
+[]()
+
+**1959 / FDP**
+
+- Freisinnige Zürich-Stadt 12622 (149‰) und Freisinnige Zürich-Land 1248 (15‰)
+
+
+
+[]()
+
+**1963 / FDP**
+
+- Freisinnige Zürich-Stadt 11654 (146‰) und Freisinnige Zürich-Land 1549 (19‰)
+
+
+
+[]()
+
+**1967 / FDP**
+
+- Freisinnige Zürich-Stadt 9964 (131‰) und Freisinnige Zürich-Land 1188 (15‰)
+
+
+
+[]()
+
+**1967 / Bauern-Gewerbe-Bürger-Partei**
+
+- BGB Zürich-Stadt 2988 (39‰) und BGB Zurich-Land 973 (13‰)
+
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_nationalratswahlen_parteistaerke_seit1920_od7035)
+
+Auto generated R starter code for data set politik_nationalratswahlen_parteistaerke_seit1920_od7035.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik`
+- **Tags** `['nationalratswahlen', 'partei', 'politik', 'sachdaten', 'sasa', 'tabelle', 'wahlbeteiligung', 'wahlen', 'zeitreihe']`
+- **Metadata_created** `2019-07-29T13:26:49.494123`
+- **Metadata_modified** `2025-05-25T21:04:21.695603`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/politik_nationalratswahlen_parteistaerke_seit1920_od7035/download/POL703OD7035.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

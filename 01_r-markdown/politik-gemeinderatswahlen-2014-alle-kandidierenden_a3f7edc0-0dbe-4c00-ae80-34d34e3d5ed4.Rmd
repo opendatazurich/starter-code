@@ -1,0 +1,73 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Gemeinderatswahlen 2014: Alle Kandidierenden
+
+Angaben zu allen 1119 Kandidierenden für die Gemeinderatswahlen 2014 nach Vor- und Nachname, Geschlecht, Geburtsjahr, Beruf und Liste.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik-gemeinderatswahlen-2014-alle-kandidierenden)
+
+Auto generated R starter code for data set politik-gemeinderatswahlen-2014-alle-kandidierenden.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik,Ver­walt­ung`
+- **Tags** `['einzeldaten', 'gemeinderat', 'sachdaten', 'tabellen', 'wahlen']`
+- **Metadata_created** `2015-07-08T13:34:43.677364`
+- **Metadata_modified** `2023-11-17T08:19:22.083203`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/politik-gemeinderatswahlen-2014-alle-kandidierenden/download/GRW-2014-alle-Kandidierenden-OGD.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

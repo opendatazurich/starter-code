@@ -1,0 +1,97 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Hundenamen aus dem Hundebeständen der Stadt Zürich, seit 2014
+
+In diesem Datensatz finden Sie die Namen aller Hunde aus dem aktuellen Bestand des Hunderegisters der Stadt Zürich. Zudem ist zu jedem Hund noch das Geburtsjahr und das Geschlecht angegeben. Das Hunderegister wird von der Abteilung Hundekontrolle der Stadtpolizei Zürich geführt.
+
+**Informationen zur Hundekontrolle**
+
+Gemäss dem Gesetz über das Halten von Hunden ist die Stadtpolizei verpflichtet, ein Verzeichnis der in der Stadt Zürich gehaltenen Hunde zu führen. Jeder Hund im Alter von über drei Monaten muss bei der Hundekontrolle vom Haltenden persönlich oder mittels Anmeldeformular angemeldet werden.
+Link zur [Webseite der Hundekontrolle](https://www.stadt-zuerich.ch/de/stadtleben/veranstaltungen-und-bewilligungen/hundekontrolle.html).
+
+
+
+[]()
+
+**Informationen zu den Hundenamen**
+
+Die Hundenamen liegen in Rohform vor. Sämtliche Namensangaben befinden sich im Feld «HundenameText», also auch Zweit- und Züchternamen. Für eine statistische Auswertung sollte dieses Feld von den Usern noch weiter bearbeitet werden.
+
+
+
+
+[]()
+
+**Systemwechsel seit 2025**
+
+Falls Sie bereits vor 2025 diesen Datensatz verwendet haben, kann es im Vergleich dazu im aktuellen Datensatz unterschiedliche Werte geben, da Anfangs 2025 vom System Bevepo zu Besys2 migriert wurde.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_stapo_hundenamen_od1002)
+
+Auto generated R starter code for data set sid_stapo_hundenamen_od1002.
+
+## Metadata
+
+- **Publisher** `Hundekontrolle, Stadtpolizei Zürich, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Freizeit`
+- **Tags** `['alter', 'geschlecht', 'hunde', 'hundenamen', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2022-09-29T06:57:55.636481`
+- **Metadata_modified** `2025-05-26T02:50:43.329185`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_stapo_hundenamen_od1002/download/KUL100OD1002.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

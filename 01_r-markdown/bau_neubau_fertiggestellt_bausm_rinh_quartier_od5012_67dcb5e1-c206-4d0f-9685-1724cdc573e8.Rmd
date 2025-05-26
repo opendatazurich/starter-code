@@ -1,0 +1,105 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Fertiggestellte Neubautprojekte nach Stadtquartier
+
+Der Datensatz enthält die Bausumme von fertiggestellten Neubauprojekten nach Stadtquartier.
+
+**Hinweis:**
+
+
+StichtagDatJahr entspricht der ganzen Jahresperiode.
+
+
+[]()
+
+**Hinweis:**
+
+Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+
+[]()
+
+**Keine Angaben bei Bausummen:**
+
+Die Bausumme wird aus Datenschutzgründen nicht ausgewiesen, wenn weniger als 2 Bauprojekte pro Quartier vorhanden sind.
+
+[]()
+
+**Stand und Nachführung:**
+
+Das Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.
+
+[]()
+
+**Fertigerstellt**
+
+Enthält Bauprojekte, welche im entsprechenden Jahr abgeschlossen wurden.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_fertiggestellt_bausm_rinh_quartier_od5012)
+
+Auto generated R starter code for data set bau_neubau_fertiggestellt_bausm_rinh_quartier_od5012.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauprojekte', 'bautaetigkeit', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-02-05T20:56:45.445362`
+- **Metadata_modified** `2025-05-25T21:11:38.024119`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_fertiggestellt_bausm_rinh_quartier_od5012/download/BAU501OD5012.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

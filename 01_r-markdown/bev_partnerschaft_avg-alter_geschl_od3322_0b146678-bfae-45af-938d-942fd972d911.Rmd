@@ -1,0 +1,90 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Durchschnittliches Alter bei der ersten Eintragung einer Partnerschaft, nach Geschlecht
+
+Diese Daten beschreibt das durchschnittliche Alter bei der ersten Eintragung einer Partnerschaft nach Geschlecht.
+
+**Begriffserklärung**
+
+**Eingetragene Partnerschaft**: Seit 2007 ist in der Schweiz der Eintrag von Partnerschaften gleichgeschlechtlicher Paare gesetzlich geregelt. Dies ist verbunden mit Rechten und Pflichten, sowohl gegenüber dem Partner/der Partnerin als auch gegenüber Dritten und dem Staat. Behörden, Versicherungen und Vermieterinnen / Vermieter haben sich an klare Regeln zu halten. 
+
+Weitere Informationen dazu finden Sie auf der Webseite der **Fachstelle für Gleichstellung** unter folgendem [**Link**](https://www.stadt-zuerich.ch/gleichstellung).
+ 
+
+[]()
+
+**Durchschnittliches Alter**
+
+- **Berechnung**: 100% oder 1 Jahr entsprechen 365.25 Tage.
+
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_partnerschaft_avg-alter_geschl_od3322)
+
+Auto generated R starter code for data set bev_partnerschaft_avg-alter_geschl_od3322.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'durchschnitt', 'eingetragene-partnerschaft', 'geschlecht', 'mittelwert', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-01-15T20:52:29.350102`
+- **Metadata_modified** `2025-05-25T20:56:59.702481`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_partnerschaft_avg-alter_geschl_od3322/download/BEV332OD3322.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

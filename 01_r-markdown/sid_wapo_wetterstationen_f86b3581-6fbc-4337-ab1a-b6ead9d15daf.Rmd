@@ -1,0 +1,89 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Messwerte der Wetterstationen der Wasserschutzpolizei Zürich
+
+Die beiden Wetterstationen [**Tiefenbrunnen**](https://www.tecson-data.ch/zurich/tiefenbrunnen/index.php) (beim Dienstgebäude der Wasserpolizei) und [**Mythenquai**](https://www.tecson-data.ch/zurich/mythenquai/index.php) (Hafen Enge) liefern Messwerte sowohl zu aktuellen wie auch zu vergangenen Wettersituationen. Über die REST-API namens [**Tecdottir**](https://data.stadt-zuerich.ch/showcase/wetterstation-api) können diese Daten direkt bezogen werden.
+
+Die Daten können auch als csv-Dateien herunter geladen werden.
+
+Die Messwerte umfassen: Lufttemperatur, Luftfeuchte, Luftdruck, Taupunkt, Wassertemperatur, Windböen, Windgeschwindigkeit, Windstärke, Windrichtung und Windchill. Zusätzlich liefert die Wetterstation Mythenquai noch die Messwerte zu Globalstrahlung, Niederschlagsmenge und dem Pegelstand des Zürichsees.
+
+
+**Tecdottir API:**
+
+Wenn Sie direkt mit den Messdaten der beiden Wetterstationen arbeiten möchten, können Sie die von **Stefan Oderbolz** aus Eigeninitiative privat entwickelte REST-API namens [**Tecdottir**](https://data.stadt-zuerich.ch/showcase/wetterstation-api) verwenden. Dieses ermöglicht ein einfaches abfragen und exportieren der Messdaten als JSON-Datei.
+
+**Zeitzonen und Zeitumstellung**
+
+In diesem Datensatz sind die Zeitangaben sowohl in MEZ/MESZ (Mitteleuropäische Zeit) wie auch in UTC (koordinierte Weltzeit) angegeben. Das Datumsformat entspricht jeweils [ISO 8601](https://de.wikipedia.org/wiki/ISO_8601).
+
+Bei der Zeitumstellung im Frühling fehlt jeweils die Stunde zwischen 02:00-03:00 Uhr, d.h. auf die Messung von 01:50 Uhr folgt die Messung von 03:00 Uhr.
+Im Herbst wird bei der Zeitumstellung systembedingt jeweils nur eine Messung pro Zeitangabe zwischen 02:00-03:00 Uhr übermittelt, d.h. die Stunde 01:00-02:00 UTC fehlt in den Daten.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_wapo_wetterstationen)
+
+Auto generated R starter code for data set sid_wapo_wetterstationen.
+
+## Metadata
+
+- **Publisher** `Wasserschutzpolizei, Stadtpolizei, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Freizeit,Umwelt`
+- **Tags** `['api', 'echtzeitdaten', 'feuchte', 'hitze', 'kälte', 'sachdaten', 'sturm', 'tabelle', 'temperatur', 'wetter', 'zeitreihe']`
+- **Metadata_created** `2022-07-12T15:22:11.076091`
+- **Metadata_modified** `2025-05-26T05:56:38.824315`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_wapo_wetterstationen/download/messwerte_tiefenbrunnen_seit2007-heute.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

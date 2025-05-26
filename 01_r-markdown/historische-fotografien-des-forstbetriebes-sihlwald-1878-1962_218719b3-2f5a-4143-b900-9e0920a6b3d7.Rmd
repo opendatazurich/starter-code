@@ -1,0 +1,111 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Historische Fotografien des Forstbetriebes Sihlwald,1878-1962
+
+Das Stadtarchiv Zürich hat im Sommer 2004 in Zusammenarbeit mit Grün Stadt Zürich (dem das ehemalige **Stadtforstamt** zugeordnet ist) einen wertvollen Bestand historischer Fotografien zum Sihlwald bearbeitet und inhaltlich erschlossen.
+
+Es handelt sich um vom Zerfall bedrohte Papierabzüge aus den Jahren von 1875 bis 1962. Eine Auswahl der Bilder wurde digitalisiert. Die Originalbilder werden im Stadtarchiv Zürich aufbewahrt.
+
+Schwerpunkt der fotografischen Dokumente ist die Pflege und Nutzung des ehemaligen Zürcher Forstwaldes. Weitere Bilder zeigen die Verarbeitung des Holzes im Werkbetrieb Sihlwald, den Bau der Sihltalbahn, Korrektionsarbeiten an Fluss und Bächen sowie den Wald als Erholungsgebiet. 
+
+**Inhalt:** 
+
+Die digitalisierten Bilder liegen hochauflösend als TIFF und als Ansichtsbild im Format JPG vor. Es handelt sich um 260 Fotodateien sowie beschreibende Metadaten in Form einer CSV-Tabelle.
+
+**Geschichte:** 
+
+Der Sihlwald umfasst ein ca. 1000 Hektaren grosses Gebiet zwischen Langnau am Albis und Sihlbrugg, sowie den Westhang des Horgenerbergs und den Osthang des Albis. Seit 853 befand sich der Sihlwald im Besitz des Zürcher Fraumünsters; im Zuge der Reformation wurde er dem Rat der Stadt Zürich übergeben. Die Stadt Zürich verwaltete und nutzte den Wald ab dem 14. Jahrhundert. Er war bis weit ins 20. Jahrhundert wichtigste Holzquelle für die Stadt. Das Holz wurde bis zum Bau der Sihltalstrasse (1860) auf der Sihl aus dem Wald in die Stadt geflösst.
+
+Seit dem Mittelalter wurde der Sihlwald intensiv genutzt, was zum Kahlschlag weiter Teile des Waldgebietes führte. Erst ab 1830 wurden diese Gebiete wieder aufgeforstet und es wurde eine nachhaltigere Waldwirtschaft eingeführt, indem unter dem schützenden Schirm grosser Buchen junge Bäume nachgezogen wurden. 
+
+Der Bau der Sihltalbahn (1892) erleichterte einerseits den Holztransport nach Zürich und führte unter anderem auch zu einer besseren Erschliessung des Waldes für erholungsbedürftige Städter und Städterinnen.
+
+Mit dem Eidgenössischen Forstpolizeigesetz wurde 1902 ein strenges Rodungsverbot eingeführt, das die Waldflächen in ihrer heutigen Ausdehnung sicherte. Ausserdem führte die abnehmende Wichtigkeit des Rohstoffes Holz zu einer graduellen Stilllegung des Forstbetriebes.
+
+Seit der Gründung der Stiftung «Naturlandschaft Sihlwald» (1994) steht der Wald unter Schutz. Fortan wird er sich selbst überlassen und soll sich in Zukunft zu einer Naturlandschaft rückentwickeln.
+
+**Beispielsfoto aus der Sammlung**
+
+Waldarbeiter Zbinden (1918):
+
+
+![Waldarbeiter Zbinden -1918](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/fotosammlung_sihlwald/Preview_10120.jpg)
+
+
+
+
+**Links zum Archivbestand**
+
+Weiterführende Information zum gesamten Bestand der Akten des Stadtforstamts und insbesondere zu den historischen Fotografien können im Online Archivkatalog des Stadtarchivs Zürich bezogen werden:
+
+- [V.C.c.31. Stadtforstamt. Akten, 1784-1993](https://amsquery.stadt-zuerich.ch/query/detail.aspx?id=8997)
+	- [V.C.c.31.:2. Historische Fotografien des Forstbetriebes Sihlwald (Langnau Am Albis), 1878-1962](https://amsquery.stadt-zuerich.ch/query/detail.aspx?ID=28562)
+
+
+.
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/historische-fotografien-des-forstbetriebes-sihlwald-1878-1962)
+
+Auto generated R starter code for data set historische-fotografien-des-forstbetriebes-sihlwald-1878-1962.
+
+## Metadata
+
+- **Publisher** `Stadtarchiv Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie,Freizeit,Kultur,Umwelt`
+- **Tags** `['ZACK', 'archivdaten', 'bilder', 'fotos', 'glam', 'historische fotos', 'openglam', 'wald']`
+- **Metadata_created** `2017-04-26T08:34:34.915631`
+- **Metadata_modified** `2022-11-07T14:48:59.004349`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/historische-fotografien-des-forstbetriebes-sihlwald-1878-1962/download/Metadaten_Fotosammlung_Sihlwald.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

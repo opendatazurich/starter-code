@@ -1,0 +1,121 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Wohnungsbestand nach Zimmerzahl, Miete/Eigentum, Bauperiode, Eigentumsart und Stadtquartier
+
+
+Diese Daten umfassen den Wohnungsbestand der Stadt Zürich (Anzahl Wohnungen und Wohnungsfläche) nach Zimmerzahl, Miete/Eigentum, Bauperiode und Eigentumsart sowie nach administrativer Einteilung.
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Stand und Nachführung:**
+
+Das Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.
+ 
+
+[]()
+
+**Mietwohnungen (ab 2014)**
+
+ Für das Gebäude- und Wohnungsregister wird die Angabe, ob es sich um ein Miet- oder Eigentumswohnung handelt, nicht erhoben. Das Bevölkerungsamt liefert seit 2014 für ca. 60 Prozent der Wohnungen die Angabe, ob sie in Miete oder durch ihre Besitzenden bewohnt sind. Die fehlenden Angaben werden aufgrund eines Algorithmus, basierend auf der Rechtsform des Gebäudebesitzes geschätzt. Es ist mit kleinen Ungenauigkeiten zu rechnen. 
+
+
+
+[]()
+
+**Wohnungsfläche**
+
+ Als Wohnungsfläche (früher und im Zusammenhang mit dem Flächenkonsum pro Person auch als «Wohnfläche» bezeichnet) gilt die Fläche sämtlicher Räume einer Wohnung hinter der Wohnungstüre, abzüglich Wandquerschnitten. Dazu gehören Wohn- und Schlafzimmer, Küche, Kochnische, Badezimmer, Toiletten, Abstellräume und Gänge. Ausser Betracht fallen bei der Berechnung zusätzliche Wohnräume ausserhalb der Wohnung (z.B. der Wohnung zugeordnete Einzelzimmer), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume. Wo keine genauen Flächen ermittelt werden können, sind Schätzwerte (Länge × Breite) erfasst.
+
+
+
+[]()
+
+**Eigentumsart**
+
+
+- Öffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum
+- Wohnbaugenossenschaften: Nur Wohnbaugenossenschaften
+- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
+- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
+- Im Stochwerkeigentum: Stockwerkeigentumsgesellschaften
+
+
+[]()
+
+**Statistische Wohnung**
+
+
+Als statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_best_whg_zizahl_wfl_bauperi_ea_quartier_jahr_od5831)
+
+Auto generated R starter code for data set bau_best_whg_zizahl_wfl_bauperi_ea_quartier_jahr_od5831.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauperiode', 'eigentum', 'gemeinnuetzig', 'miete', 'privat', 'sachdaten', 'sasa', 'tabelle', 'wohnflaeche', 'wohnung', 'wohnungsflaeche', 'zeitreihe']`
+- **Metadata_created** `2023-05-12T07:20:49.786389`
+- **Metadata_modified** `2025-05-25T21:11:15.400471`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_best_whg_zizahl_wfl_bauperi_ea_quartier_jahr_od5831/download/BAU583OD5831.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

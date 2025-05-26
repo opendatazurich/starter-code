@@ -1,0 +1,90 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Öffentliche Stadtratsbeschlüsse
+
+Öffentliche Beschlüsse des Stadtrats der Stadt Zürich, seit 2025
+
+**Was ist ein Stadtratsbeschluss?**
+
+Ein Stadtratsbeschluss in der Stadt Zürich ist eine Entscheidung, die vom Stadtrat, der Regierung der Stadt Zürich, getroffen wird. Der Stadtrat ist eine Kollegialbehörde, bestehend aus neun vollamtlich tätigen Mitgliedern, die jeweils einem Departement vorstehen und alle vier Jahre vom Volk gewählt werden.
+
+**Was umfassen Stadtratsbeschlüsse?**
+
+Stadtratsbeschlüsse umfassen eine Vielzahl von Geschäften und Angelegenheiten, die für die Verwaltung und Entwicklung der Stadt relevant sind. Diese Beschlüsse können verschiedene Bereiche betreffen, wie zum Beispiel:
+
+ - Strategische Entwicklung und langfristige Planung der Stadt
+ - Erstellung des Haushaltsplans
+ - Leitung der städtischen Verwaltung
+ - Entscheidungen über Geschäfte mit erheblichen politischen Inhalten oder Auswirkungen
+
+**Warum werden sie hier veröffentlicht?**
+
+Der Stadtrat trifft zahlreiche Beschlüsse pro Jahr. Um Transparenz zu gewährleisten, werden alle öffentlichen Stadtratsbeschlüsse online publiziert. Es ist jedoch wichtig zu beachten, dass nicht alle Beschlüsse öffentlich gemacht werden, insbesondere wenn rechtliche Geheimhaltungspflichten oder überwiegende private oder öffentliche Interessen der Veröffentlichung entgegenstehen.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/av_skz_strb_oe_datum)
+
+Auto generated R starter code for data set av_skz_strb_oe_datum.
+
+## Metadata
+
+- **Publisher** `Abteilung Protokoll, Stadtkanzlei Stadt Zürich, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik,Ver­walt­ung`
+- **Tags** `['beschluss', 'geschaefte', 'regierung', 'sachdaten', 'stadtrat', 'strb', 'tabelle']`
+- **Metadata_created** `2025-04-22T07:44:13.088599`
+- **Metadata_modified** `2025-05-25T13:26:44.753412`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/av_skz_strb_oe_datum/download/skz-beschluesse.parquet"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

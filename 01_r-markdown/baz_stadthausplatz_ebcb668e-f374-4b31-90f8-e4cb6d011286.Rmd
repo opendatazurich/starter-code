@@ -1,0 +1,83 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Fotografien und Ansichten zum Stadthausplatz
+
+Der Datensatz enthält eines Auswahl von historischen Bildern zum Stadthausplatz, einem zentralen Ort in ehemaligen Kratzquartier in Zürich. Der Platz und die meisten Gebäude verschwanden im 19. Jahrhundert beim Bau der Bahnhofstrasse. 
+
+In den Beständen des **Baugeschichtlichen Archivs (BAZ)** finden sich viele Bilder des Kratzquartiers vor und nach dem Abbruch. Die Neugestaltung des Kratzquartiers und weiterer Stadtgebiete bewog den Stadtrat im Jahr 1877 zur Verfügung, dass alle wichtigeren Ab- und Umbrüche in der Stadt zu fotografieren seien. Dieser Beschluss bildete den Grundstein für das Baugeschichtliche Archiv der Stadt Zürich. 
+
+Die Bilder sind gemeinfrei, weil ihre urheberrechtliche Schutzfrist (70 Jahre nach dem Tod der Urheberin/des Urhebers) abgelaufen ist. Über 160'000 Fotografien des BAZ finden sich online und in offener Lizenz auf der Plattform [e-Pics](https://baz.e-pics.ethz.ch/) der ETH-Bibliothek.
+
+**Hinweis: **
+
+Die Publikation erfolgte anlässlich des siebten [Swiss Open Cultural Data Hackathon](https://library.ethz.ch/aktuell/veranstaltungen/glamhack-2021.html) im März 2021. 
+
+Die total 144 Bilder des Datensatzes können für einen Überblick unter diesem [Direktlink](http://baz.e-pics.ethz.ch/index.jspx?category=26204) auf der Plattform E-Pics abgerufen und heruntergeladen werden.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/baz_stadthausplatz)
+
+Auto generated R starter code for data set baz_stadthausplatz.
+
+## Metadata
+
+- **Publisher** `Baugeschichtliches Archiv, Amt für Städtebau, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['archivdaten', 'fotos', 'gebaude', 'geschichte', 'glam', 'openglam', 'public-domain']`
+- **Metadata_created** `2021-03-03T15:01:16.598113`
+- **Metadata_modified** `2025-05-25T21:12:16.162137`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/baz_stadthausplatz/download/baz_stadthausplatz.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

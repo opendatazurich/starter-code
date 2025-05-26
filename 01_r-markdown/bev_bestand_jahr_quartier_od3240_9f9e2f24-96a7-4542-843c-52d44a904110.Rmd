@@ -1,0 +1,107 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Bevölkerung nach Stadtquartier
+
+
+Wirtschaftliche Wohnbevölkerung der Stadt Zürich nach Statistischem Stadtquartier und Jahr.
+
+
+**Hinweis:**
+
+
+ Die Geodaten zu den Statistischen Stadtquartieren finden Sie [unter diesem Link](https://data.stadt-zuerich.ch/dataset/geo_statistische_quartiere) auf dem Open-Data-Katalog.
+
+
+[]()
+
+**Fehlende Werte:**
+
+
+ Bei einzenen Quartieren und Jahren fehlen Werte (Kreis 3 südlicher Teil vor 1950, Quartiere von Kreis 12 vor 1970). Diese werde als Missing dargestellt. 
+
+
+[]()
+
+**Kreis 3 südlicher Teil**
+
+
+Bis im Jahr 1949 wurden die Quartiere Alt-Wiedikon und Friesenberg zusammen als südlicher Teil von Wiedikon erfasst.
+
+
+[]()
+
+**Schwamendingen**
+
+
+ Der Kreis 12 (Schwamendingen) wird erst seit 1970 in drei verschiedene Quartiere aufgeteilt: Saatlen, Schwamendingen-Mitte und Hirzenbach.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_quartier_od3240)
+
+Auto generated R starter code for data set bev_bestand_jahr_quartier_od3240.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['bevoelkerungsbestand', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2020-05-07T18:46:27.000198`
+- **Metadata_modified** `2025-05-25T21:07:44.295887`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_quartier_od3240/download/BEV324OD3240.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

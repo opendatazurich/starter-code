@@ -1,0 +1,119 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Zürich schaut hin
+
+Daten aus dem anonymen Meldetool «Zürich schaut hin». Im Meldetool können Belästigungen niederschwellig erfasst und sichtbar gemacht werden.
+
+**Was ist das Meldetool «Zürich schaut hin»?**
+
+Sexuelle und sexistische, homo- und transfeindliche Belästigungen werden nur selten gemeldet. Es gibt jedoch einen Bedarf nach niederschwelligen Meldemöglichkeiten jenseits von Polizei und Opferberatungsstellen.
+
+Seit Mai 2021 ist das Meldetool «Zürich schaut hin» online. Auf dem Meldetool können Belästigungen sichtbar gemacht und geteilt werden. Zudem werden Informationen über rechtliche Möglichkeiten und Angaben zu Beratungsangeboten zur Verfügung gestellt. 
+
+Weitere Informationen zum [Meldetool «Zürich schaut hin»](https://www.stadt-zuerich.ch/de/lebenslagen/unterstuetzung-und-beratung/diversitaet-und-inklusion/gleichstellung/projekte/zurich-schaut-hin.html).
+
+[]()
+
+**Angaben zur meldenden Person**
+
+Alle Felder zur meldenden Person sind keine Pflicht.
+
+[]()
+
+**Angaben zur Täterschaft**
+
+Felder wurden vom 12.05.2021 bis 27.06.2023 zu Pflichtfeldern.
+
+[]()
+
+**Mehrfachwahl Ort**
+
+Die Mehrfachwahl von Ortschaften wurde entfernt, sodass seit dem 22.09.2022 nur noch eine Ortschaft anwählbar ist.
+
+[]()
+
+**Option «Andere» beim Ort der Belästigung**
+
+«Andere» wird oft als Ortschaft angegeben. Analysen des Freitextfeldes haben ergeben, dass oftmals eine der anderen Auswahlmöglichkeiten gemeint war, diese aber beim Ausfüllen übersehen wurde. Ausserdem werden auch Ortschaften wie «Bei einer dienstleistenden Person» (bspw. Arzt oder Ärztin) oder «Sauna» angegeben.
+
+[]()
+
+**Icon non-binär**
+
+Icon wurde am 03.03.2022 hinzugefügt.
+
+[]()
+
+**Bekanntheit**
+
+Feld wurde im April 2023 hinzugefügt.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_zuerich_schaut_hin_od6001)
+
+Auto generated R starter code for data set sid_zuerich_schaut_hin_od6001.
+
+## Metadata
+
+- **Publisher** `Departementssekretariat, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['befragung', 'belaestigungen', 'beleidigungen', 'meldetool', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'uebergriffe', 'zeitreihe', 'zuerich-schaut-hin']`
+- **Metadata_created** `2024-10-28T09:31:46.033511`
+- **Metadata_modified** `2025-05-26T02:50:54.271001`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_zuerich_schaut_hin_od6001/download/BEV600OD6001.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

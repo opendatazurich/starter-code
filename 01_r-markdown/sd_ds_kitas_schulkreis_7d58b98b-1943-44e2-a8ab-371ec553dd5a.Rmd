@@ -1,0 +1,94 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Kennzahlen zu  Kitas (Kindertagesstätten) der Stadt Zürich nach Schulkreis, seit 2006
+
+Dieser Datensatz bietet eine Übersicht zu Kindertagesstätten (Kitas) in der Stadt Zürich anhand von Kennzahlen nach Schulkreisen seit 2014. 
+
+Die Kennzahlen umfassen die Anzahl Betreuungsplätze, die Anzahl Kinder im Vorschulalter sowie die Versorgungsquote pro Schulkreis.
+
+**Grundsätzliches:**
+
+Sämtliche Informationen zur familienergänzenden **Kinderbetreuung** in der Stadt Zürich finden Sie auf der folgenden Website des Sozialdepartementes: https://www.stadt-zuerich.ch/kinderbetreuung
+
+
+[]()
+
+
+
+[]()
+
+**Publikation «Report Kinderbetreuung»**
+
+Im der Publikation [**Report Kinderbetreuung**](https://www.stadt-zuerich.ch/de/service/suche.html?q=reportkinderbetreuung&search=lang%3Dde%26compResource%3D%252Fcontent%252Fweb%252Fde%252Fservice%252Fsuche%252Fjcr%253Acontent%252Fmainparsys%252Fsearch%26q%3DReport%2BKinderbetreuung%26subject%3Dsearch_filter_template_publication%26variant%3Ddefault%26limit%3D1) werden jährlich die aktuellen Kennzahlen und Entwicklungen veröffentlicht.
+
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_ds_kitas_schulkreis)
+
+Auto generated R starter code for data set sd_ds_kitas_schulkreis.
+
+## Metadata
+
+- **Publisher** `Kontraktmanagement, Departementssekretariat, Sozialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
+- **Tags** `['belegungsfaktor', 'kennzahlen', 'kinderbetreuung', 'kindertagesstatten', 'kita', 'sachdaten', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2024-05-16T07:36:30.373543`
+- **Metadata_modified** `2025-05-25T21:03:04.226616`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sd_ds_kitas_schulkreis/download/sd_zv_kitas_schulkreis.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,79 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Fernwärme, Netzlänge
+
+<![CDATA[
+Gesamte Netzlänge (Trassen) in km im Fernwärmeverbund KVA und Holz
+]]>
+
+**Netzlänge**
+
+Ab 2020 wurden nur noch die im Eigentum der Stadt Zürich stehenden Fernwärmeleitungen für die Berechnung der Netzlänge verwendet. Fernwärmeleitungen Dritter werden nicht mehr berücksichtigt.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_fw_netzlaenge)
+
+Auto generated R starter code for data set erz_fw_netzlaenge.
+
+## Metadata
+
+- **Publisher** `Energielösungen Q, Elektrizitätswerk der Stadt Zürich, Departement der Industriellen Betriebe`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie`
+- **Tags** `['fernwaerme', 'netzlaenge']`
+- **Metadata_created** `2022-05-11T14:10:18.884032`
+- **Metadata_modified** `2025-05-25T16:10:43.051100`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/erz_fw_netzlaenge/download/fw_netzlaenge.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

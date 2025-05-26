@@ -1,0 +1,130 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Geschossflächen nach Nutzungsart, Stadtquartier und Bauperiode
+
+
+Diese Daten umfassen die Geschossflächen nach Nutzungsart und Stadtquartier. Ab 1995 wird zusätzlich nach Bauperiode unterschieden.
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+
+**Allgemein:**
+
+ Die Erhebung der Geschossnutzungen wird seit den 1970er Jahren durchgeführt. Sie steht im Zusammenhang mit der Einführung des Wohnanteilsplans. Bei den älteren Daten ist mit Brüchen und Sprüngen zu rechnen, die auf Migrationen, Verbesserungen der Datenqualität oder befristeten Unterbrüchen in der Erhebung zurückzuführen sind. Der zeitliche Verlauf der Erhebung ist bis 2010 nicht linear mit dem Zuwachs an gebauten Geschossflächen in der Stadt verknüpft. Die Zeitstände sind deshalb nur sehr eingeschränkt vergleichbar. Umnutzungen wurden nur in seltenen Fällen erfasst.
+ 
+
+[]()
+
+**Erhebung seit 2019**
+
+ Seit 2019 erfolgt die Flächenerfassung im Rahmen der Bezugsabnahme von Bauprojekten. Im Unterschied zu früher werden auch damit die Änderungen im gebauten Bestand nachgeführt. Die Erhebungsmethode beruht nicht auf einer Messung sondern einer Schätzung der Flächen in % des Gebäudefussabdrucks. 
+ 
+
+[]()
+
+**Geschossfläche Wohnen**
+
+ Im Unterschied zur Wohnfläche (oder Wohnungsfläche) gemäss GWZ umfasst die Geschossfläche Wohnen auch Erschliessungsflächen (Treppenhäuser) und Konstruktionsflächen (z.B. Wandquerschnitte). 2018 umfasste die Geschossfläche Wohnen gesamtstädtisch 22.9 Mio Quadratmeter, die Wohnfläche (oder Wohnungsfläche) gemäss GWZ jedoch nur 17.7 Mio. Quadratmeter.
+ 
+
+[]()
+
+**Hauptnutzung / Nebennutzung**
+
+ Zu den Hauptnutzungen zählen im vorliegenden Datensatz diejenigen Nutzungen, die beheizt sind und in der Regel in den Hauptgeschossen der Gebäude zu finden sind. Die Nebennutzungen (Lager und Parkierung) sind mehrheitlich unbeheizt und umfassen hauptsächlich Flächen in Untergeschossen und Dachgeschossen. Die Summe der Hauptnutzungen entspricht der besten Näherung für die sogenannte «Energiebezugsfläche».
+ 
+
+[]()
+
+**Hauptnutzungen**
+
+ Wohnen: Wohngebäude und Alterssiedlungen inkl. Erschliessungsflächen (Treppenhäuser) - Büro: inkl. Praxen, höhere Schulen, öffentliche Verwaltung - Verkauf: inkl. Gastgewerbe (Restaurants, Hotels), Unterhaltung und Kultur  - Andere Hauptnutzungen: Spitäler, Pflegeheime, Gefängnis, Kirchen, Militär, Sport, Museen, Volksschulen, Asyunterkünften
+ 
+
+[]()
+
+**Geschossfläche / Nutzfläche**
+
+ Bei den Geschossflächen handelt es sich um Bruttowerte inkl. Wandquerschnitte. Der Begriff **«Nutzfläche»** wird in vorliegendem Datensatz äquivalent zu **«Geschossfläche»** verwendet.
+
+
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_geschossflaeche_nutzungsart_quartier_bp_seit1970_od5231)
+
+Auto generated R starter code for data set bau_geschossflaeche_nutzungsart_quartier_bp_seit1970_od5231.
+
+## Metadata
+
+- **Publisher** `Amt für Städtebau, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauperiode', 'geschossflaechen', 'nichtwohnungsbau', 'nutzflaechen', 'nutzung', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'zeitreihe']`
+- **Metadata_created** `2020-04-06T17:35:32.812645`
+- **Metadata_modified** `2025-05-25T21:02:38.559274`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_geschossflaeche_nutzungsart_quartier_bp_seit1970_od5231/download/BAU523OD5231.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

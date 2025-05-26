@@ -1,0 +1,99 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Bodennutzung und Grundeigentum in der Stadt Zürich
+
+
+Der Datensatz enthält Angaben zu Bodennutzung und Grundeigentum für das Gebiet der Stadt Zürich nach Stadtquartier.
+
+
+**Hinweis:**
+
+
+StichtagDatJahr entspricht dem Stichtag am angegebenen Jahresende.
+
+
+[]()
+
+**Variablen mit mehreren Varianten**
+
+
+Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die 'Cd'-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die 'Sort'-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. 'Cd' und 'Sort' können auch identisch sein.
+
+
+[]()
+
+**Level**
+
+
+Die Variablen Bodenbedeckungsart und Eigentümer werden für verschiedene Level angegeben. Die Level sind hierarchisch aufgebaut und gehen von fein (Level 1) zu grob (Level 4).
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_stadtgebiet_bodennutzung_grundeigentum_quartier_seit2009_od6120)
+
+Auto generated R starter code for data set bau_stadtgebiet_bodennutzung_grundeigentum_quartier_seit2009_od6120.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen,Umwelt`
+- **Tags** `['bodennutzung', 'eigentum', 'grundstueck', 'sachdaten', 'sasa', 'tabelle', 'umwelt', 'zeitreihe']`
+- **Metadata_created** `2020-04-06T17:35:40.405911`
+- **Metadata_modified** `2025-05-25T21:09:53.686352`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_stadtgebiet_bodennutzung_grundeigentum_quartier_seit2009_od6120/download/BAU612OD6120.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

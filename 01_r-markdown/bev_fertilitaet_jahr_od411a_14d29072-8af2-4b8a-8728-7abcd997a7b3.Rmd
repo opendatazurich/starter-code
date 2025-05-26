@@ -1,0 +1,103 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Fertilitätsrate nach Jahr
+
+
+Fertilitätsraten nach Jahr.
+
+
+**Fertilitätsrate**
+
+Die altersspezifische Fertilitätsrate beschreibt das Verhältnis der Anzahl Geburten von Müttern eines Alters zu der Gesamtzahl Frauen der Bevölkerung im entsprechenden Alter. Sie wird oft in Promille angegeben und entspricht dann der durchschnittlichen Anzahl Geburten pro 1000 Frauen eines bestimmten Alters.
+ 
+
+[]()
+
+**Geburten der Jahre 1894, 1900 und 1910 nach Alter der Mutter**
+
+Bei den Geburtenzahlen der Jahr 1894, 1900 und 1910 nach Alter der Mutter waren bloss Mittelwerte über mehrere Jahre verfügbar (1894: Mittelwert der Geburten 1893 bis 1895; 1900: Mittelwert der Geburten 1899 bis 1902; 1910: Mittelwert der Geburten 1909 bis 1912). Quelle: Statistisches Jahrbuch der Stadt Zürich, Jahre 1912 und 1913. Die Geburtenzahlen dieser Jahre nach Alter der Mutter wurden auf ganze Zahlen gerunden; die Fertilitätsrate wurde jedoch noch vor dem Runden berechnet.
+ 
+
+[]()
+
+**Lebendgeborene**
+
+Geborene gelten als lebend geboren, wenn sie nach völligem Austritt aus dem Mutterleib spontan atmen und Herzschläge aufweisen; andernfalls gelten sie als tot geboren, sofern ihr Geburtsgewicht mindestens 500 Gramm oder ihr Alter mindestens 22 vollendete Schwangerschaftswochen beträgt. Hier werden bei den Geburten nur Lebendgeborene ausgewiesen.
+
+
+[]()
+
+**Fehlende Werte**
+
+Es sind nicht in allen Jahren Daten verfügbar. Vor allem die Anzahl 15- bis 49-jähriger Frauen ist nicht für alle Jahre vorhanden.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_fertilitaet_jahr_od411a)
+
+Auto generated R starter code for data set bev_fertilitaet_jahr_od411a.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['alter', 'geburten', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-05-19T11:50:26.461278`
+- **Metadata_modified** `2025-05-25T20:58:57.016493`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_fertilitaet_jahr_od411a/download/BEV411OD411A.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

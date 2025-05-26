@@ -1,0 +1,106 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Motorisierungsgrad nach Stadtquartier
+
+Dieser Datensatz beinhaltet den Motorisierungsgrad (Anzahl Personenwagen pro 1000 Personen) nach Stadtquartier und Jahr. 
+
+
+**Stichtag:**
+
+Der Stichtag zur Bestimmung des Jahresstandes ist jeweils der **30. September**. Nicht wie normalerweise üblich der 31. Dezember.
+
+
+[]()
+
+**Fahrzeugbestand:**
+
+Der Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild im Besitz von natürlichen und juristischen Fahrzeughalter*innen.
+
+[]()
+
+**Personenwagen:**
+
+Personenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz für die Person, die fährt.
+
+[]()
+
+**Motorisierungsgrad:**
+
+Der Motorisierungsgrad bezeichnet die Anzahl Personenwagen (Stand per 30.9.) pro 1000 Personen der zivilrechtlichen Bevölkerung (Stand per 31.12. des Vorjahres).
+Wenn der Motorisierungsgrad für kleine geografische Einheiten berechnet wird, kann es einen grossen Unterschied machen, wieviele Firmenautos bzw. Autos im Besitz juristischer Personen sich in diesem geografischen Raum befinden. Beispielsweise tragen die Personenwagen juristischer Personen stark zum aussergewöhnlich hohen Motorisierungsgrad im Kreis 1 bei.
+
+[]()
+
+**Hinweis:**
+
+Aufgrund einer genaueren Adressüberprüfung im Dezember 2023 reduziert sich die Grundgesamtheit der Fahrzeuge leicht, und die Anzahl Fahrzeuge kann von früheren Publikationen abweichen.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_motorisierungsgrad_jahr_quartier_od2005)
+
+Auto generated R starter code for data set prd_ssz_fz_motorisierungsgrad_jahr_quartier_od2005.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie,Mobilität,Umwelt`
+- **Tags** `['motorisierung', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
+- **Metadata_created** `2023-11-09T15:06:38.259059`
+- **Metadata_modified** `2025-05-25T21:07:49.393970`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_motorisierungsgrad_jahr_quartier_od2005/download/VER200OD2005.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

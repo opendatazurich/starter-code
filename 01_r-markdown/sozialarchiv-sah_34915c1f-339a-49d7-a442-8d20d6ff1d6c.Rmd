@@ -1,0 +1,103 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-05-26"
+output: html_document
+---
+
+## Dataset: Bildarchiv des Schweizerischen Arbeiterhilfswerks (SAH) - Oeuvre suisse d'entraide ouvrière (OSEO)
+
+Während der letzten Jahre des Zweiten Weltkriegs nahm das [**Schweizerische Arbeiterhilfswerk (SAH)**](http://www.sah-schweiz.ch/) eine ausgedehnte Versorgungs- und Unterstützungstätigkeit in den umliegenden Ländern auf. Was 1944 mit wenigen nach Frankreich verschickten Lebensmittelpaketen begann, wuchs sich rasch zu einer Grossaktion aus: Die Aktion unter der Bezeichnung **«Colis Suisse»** lieferte Ende der 1940er Jahre monatlich bis zu 60'000 Pakete nach Italien, Deutschland, Österreich und Frankreich. 
+
+Dank der Solidarität der Arbeiterbewegung konnte die Bevölkerung der kriegsversehrten Nachbarländer auch mit Möbeln und Kleidern versorgt werden. 
+
+In der Schweiz führte das SAH mehrere Ferienheime, dank derer auch finanziell schlechter gestellte Familien Ferien machen konnten. 
+
+Das **Bildarchiv des SAH** umfasst mehr als 1'900 Fotos. Der Fokus liegt auf den 1940er und 1950er Jahren. Besonders gut dokumentiert sind die Hilfsaktionen der letzten Kriegs- und unmittelbaren Nachkriegsjahre in den Nachbarländern. Hermann Freytag und Ernst Koehli, zwei Zürcher Fotografen aus dem Umfeld der Arbeiterbewegung, haben die Tätigkeiten des SAH über Jahre hinweg verfolgt und in nüchterner Weise festgehalten. Die Tätigkeiten späterer Jahre sind nur noch spärlich fotografisch dokumentiert.
+
+**Weitere Links**
+
+- Webseite des [**Schweizerischen Arbeiterhilfswerks (SAH)**](http://www.sah-schweiz.ch/)
+- Link zum [**Archivfindmittel «Schweizerisches Arbeiterhilfswerk SAH»**](http://www.findmittel.ch/archive/archNeu/ar20.html)
+- Link zur [**Datenbank Bild und Ton**](http://www.bild-video-ton.ch//bestand/signatur/F_5025), mit  Metadaten zu den hier verfügbaren Fotos.
+
+**Beispielfotos**
+
+ 
+![Die Jause!](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/sah/ChildrenEating_5025-Fb-242.jpg) 
+
+«Die Jause!» Kinderheim Schloss Wilhelminenberg, 1946.
+
+![Sommerferien](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/sah/Sommer_5025-Fb-217.jpg)
+
+Kinderfreunde Simmering, Wien, um 1947.
+
+![Ausspeisung](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/sah/Ausspeisung_5025-Fb-280.jpg)
+
+«Kinderspeisung», Schwabmünchen / Bayern.
+
+![Demonstration in Wien](http://statistik.stadt-zuerich.ch/modules/ogd_bspe/stadtarchiv_ogd/sozialarchiv/sah/SozDemo_5025-Fb-262.jpg)
+
+1. Mai-Umzug, Wien, 1946.
+.
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sozialarchiv-sah)
+
+Auto generated R starter code for data set sozialarchiv-sah.
+
+## Metadata
+
+- **Publisher** `Schweizerisches Arbeiterhilfswerk (SAH)`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Kultur`
+- **Tags** `['ZACK', 'archivdaten', 'fotos', 'glam', 'hilfswerk', 'historische fotos', 'nachkriegszeit', 'openglam']`
+- **Metadata_created** `2017-05-18T09:31:50.752960`
+- **Metadata_modified** `2024-06-05T11:32:03.852965`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sozialarchiv-sah/download/Metadaten_Fotografien_Sammlung_F_2025.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch
