@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-26"
+date: "2025-06-01"
 output: html_document
 ---
 
@@ -30,7 +30,7 @@ Auto generated R starter code for data set erz_abwassermenge_klaerwerk_werdhoelz
 - **Keywords** `Umwelt`
 - **Tags** `['abwasser', 'abwassermenge', 'klaerwerk', 'wasser']`
 - **Metadata_created** `2021-08-10T14:17:25.443690`
-- **Metadata_modified** `2025-05-25T16:10:24.836386`
+- **Metadata_modified** `2025-05-31T16:10:34.789597`
 
 
 # Load packages

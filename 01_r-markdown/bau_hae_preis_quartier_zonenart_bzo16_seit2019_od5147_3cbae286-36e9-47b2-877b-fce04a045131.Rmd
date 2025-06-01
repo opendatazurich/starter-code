@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-26"
+date: "2025-06-01"
 output: html_document
 ---
 
@@ -50,7 +50,7 @@ Auto generated R starter code for data set bau_hae_preis_quartier_zonenart_bzo16
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bau-und-zonenordnung', 'bebauungsart', 'bzo', 'handaenderungen', 'liegenschaftenhandel', 'median', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2023-11-21T09:32:10.988900`
-- **Metadata_modified** `2025-05-25T21:09:35.184479`
+- **Metadata_modified** `2025-05-31T21:07:00.224155`
 
 
 # Load packages

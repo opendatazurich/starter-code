@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-26"
+date: "2025-06-01"
 output: html_document
 ---
 
@@ -32,7 +32,7 @@ Auto generated R starter code for data set erz_entsorgungskalender_karton.
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['abfall', 'entsorgung', 'entsorgungsdaten', 'entsorgungskalender', 'kalender', 'sachdaten', 'tabellen']`
 - **Metadata_created** `2024-12-02T07:59:47.024200`
-- **Metadata_modified** `2025-05-25T16:10:33.780664`
+- **Metadata_modified** `2025-05-31T16:10:45.189066`
 
 
 # Load packages

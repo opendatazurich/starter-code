@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-26"
+date: "2025-06-01"
 output: html_document
 ---
 
@@ -26,7 +26,7 @@ Auto generated R starter code for data set erz_abfallmenge_energie_khkw.
 - **Keywords** `Energie,Umwelt`
 - **Tags** `['abfall', 'energie-strom', 'energie-warme', 'reststoffe']`
 - **Metadata_created** `2021-08-10T14:17:38.485224`
-- **Metadata_modified** `2025-05-25T16:10:44.791621`
+- **Metadata_modified** `2025-05-31T16:11:03.043636`
 
 
 # Load packages

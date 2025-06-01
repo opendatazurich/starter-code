@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-26"
+date: "2025-06-01"
 output: html_document
 ---
 
@@ -25,20 +25,28 @@ Imputierter Wert ax = (Stundenwert a-1h) * f(x)
 Imputationen werden nur für einzelne fehlende Stunden vorgenommen. Wenn Zählstellen länger ausgefallen sind, werden die entsprechenden Werte jeweils mit `AnzFahrzeugeStatus = Fehlend` gekennzeichnet.
  
 
+[]()
+
 **Zählstellenplan**
 
 Die [Standorte der aktuellen Zählstellen](https://www.stadtplan.stadt-zuerich.ch/zueriplan3/stadtplan.aspx#route_visible=true&basemap=Basiskarte+(Geb%C3%A4udeschr%C3%A4gansicht)&map=&scale=16000&xkoord=2682662.54323294&ykoord=1247300.4083411768&lang=&layer=Z%C3%A4hlstelle+MIV%3A%3A0&window=&selectedObject=&selectedLayer=&toggleScreen=&legacyUrlState=&drawings=)  können **interaktiv über den Stadtplan** angesehen werden. 
 
 Bei Bedarf können Sie auch die [Standorte der aktuellen Zählstellen (MIV) als Geodatensatz](https://data.stadt-zuerich.ch/dataset/geo_standorte_der_verkehrszaehlungen_miv) beziehen.
 
+
+
+[]()
+
 **Aufbau der Zählstellen**
 
-Im folgenden ER Modell wird beschrieben wie die Zählstellen aufgebaut sind, damit die die hier zur Verfügung gestellten Zähldaten einfacher interpretiert werden können:
+Im folgenden ER Modell wird beschrieben wie die Zählstellen aufgebaut sind, damit die hier zur Verfügung gestellten Zähldaten einfacher interpretiert werden können:
 
 <p align='center'>
 <img src='https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/statistik-und-daten/open-government-data/bilder_nwa/datenkatalog/dav/erm_zaehlstellen_dav.png' alt='ER Modell der Zählstellen' style='width:85%;' />
 </p>
+ 
 
+[]()
 
 **Zeitangaben**
 
@@ -67,7 +75,7 @@ Auto generated R starter code for data set sid_dav_verkehrszaehlung_miv_od2031.
 - **Keywords** `Mobilität,Umwelt`
 - **Tags** `['auto', 'motorrad', 'sachdaten', 'sasa', 'stau', 'tabelle', 'verkehr', 'verkehrszaehlung', 'zeitreihe']`
 - **Metadata_created** `2020-03-11T12:06:00.811855`
-- **Metadata_modified** `2025-05-26T06:01:33.144117`
+- **Metadata_modified** `2025-06-01T03:06:10.495263`
 
 
 # Load packages

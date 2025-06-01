@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-26"
+date: "2025-06-01"
 output: html_document
 ---
 
@@ -12,7 +12,7 @@ Der Datenbestand umfasst zurzeit nur Erholungs- und Sporteinrichtungen im Wald- 
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Erholungs- und Sporteinrichtungen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/15283e19-c844-b0f1-fa58-686d85e2a323).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Erholungs- und Sporteinrichtungen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/23c91e35-efc0-435b-ae17-5d4141853eac).
 			   
 
 **Informationen zum Datensatz:**
@@ -35,16 +35,11 @@ Ein bereits 2004 erstellter Datenbestand wurde als Grundlage der vollständigen 
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Erholungs- und Sporteinrichtungen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/15283e19-c844-b0f1-fa58-686d85e2a323).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Erholungs- und Sporteinrichtungen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/23c91e35-efc0-435b-ae17-5d4141853eac).
 
 ***POI_AUSSICHTSPUNKT_VIEW***: 
 
 Punkte mit attraktiver Aussicht.
-
-
-***POI_LEHRPFAD_L***: 
-
-Verlauf der Lehrpfade
 
 
 ***POI_VITAPARCOURS_L***: 
@@ -62,11 +57,6 @@ Beinhaltet mietbare Hütten und offene Unterstände, welche von der Bevölkerung
 Verlauf der Mountainbiketrails
 
 
-***POI_WALDLAUF_L***: 
-
-Verlauf der Waldlaufstrecken
-
-
 ***POI_SCHLITTELWEG_L***: 
 
 Verlauf des Schlittelweges
@@ -77,24 +67,9 @@ Verlauf des Schlittelweges
 Verlauf der Finnenbahnen
 
 
-***POI_FINNENBAHN_VIEW***: 
-
-Speziell angelegte Strecke, die für Freizeitläufer zum Joggen gedacht ist. Die Besonderheit der Finnenbahn ist der besonders weiche Bodenbelag aus Holzschnitzeln, Sägemehl oder auch Sägespänen.
-
-
-***POI_LEHRPFAD_VIEW***: 
-
-Bringen der Bevölkerung auf anschauliche Weise Wissenswertes zu einzelnen Baum-Straucharten bzw. zu spezifischen Themen näher.
-
-
 ***POI_MOUNTAINBIKE_VIEW***: 
 
 Für die Mountainbiker wurden wurden im Wald auf Stadtgebiet drei Anlagen errichtet: zwei attraktive Bike-Trails am Uetliberg und ein Mountainbike-Parcours auf dem Zürichberg (Start beim Schlachtendenkmal und Moosholzweiher).
-
-
-***POI_PICKNICKPLATZ_VIEW***: 
-
-Als Picknickplätze gelten alle Standorte, die drei oder mehr Objekte aufweisen, z.B. einen Sitzbank, einen Feuerplatz und einen Tisch. Drei benachbarte Sitzbänke gelten nicht als Picknickplatz.
 
 
 ***POI_SCHLITTELWEG_VIEW***: 
@@ -122,11 +97,6 @@ Waldlaufstrecken sind markierte Rundstrecken mit verschiedenen Distanzen.
 
 
 
-***POI_LEHRPFAD_ATT***: 
-
-Zusatzinformation Lehrpfad
-
-
 ***POI_MOUNTAINBIKE_ATT***: 
 
 Zusatzinformation Mountainbikestrecken
@@ -147,6 +117,21 @@ Zusatzinformation Vitaparcours
 
 
 
+***POI_WALDLAUF_L***: 
+
+Verlauf der Waldlaufstrecken
+
+
+***POI_FINNENBAHN_VIEW***: 
+
+Speziell angelegte Strecke, die für Freizeitläufer zum Joggen gedacht ist. Die Besonderheit der Finnenbahn ist der besonders weiche Bodenbelag aus Holzschnitzeln, Sägemehl oder auch Sägespänen.
+
+
+***POI_PICKNICKPLATZ_VIEW***: 
+
+Als Picknickplätze gelten alle Standorte, die drei oder mehr Objekte aufweisen, z.B. einen Sitzbank, einen Feuerplatz und einen Tisch. Drei benachbarte Sitzbänke gelten nicht als Picknickplatz.
+
+
 ***POI_WALDHUETTE_ATT***: 
 
 Zusatzinformation Waldhütten.
@@ -157,7 +142,7 @@ Beinhaltet mietbare Hütten und offene Unterstände, welche von der Bevölkerung
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/15283e19-c844-b0f1-fa58-686d85e2a323.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/23c91e35-efc0-435b-ae17-5d4141853eac.png)
 
 
 
@@ -173,7 +158,7 @@ Auto generated R starter code for data set geo_erholungs__und_sporteinrichtungen
 - **Keywords** `Bevölk­erung`
 - **Tags** `['erholung', 'garderoben', 'geodaten', 'geoportal', 'infrastruktur', 'liniendaten', 'punktdaten', 'sport', 'stzh', 'wald']`
 - **Metadata_created** `2023-11-06T03:07:33.455151`
-- **Metadata_modified** `2025-05-24T06:31:40.000999`
+- **Metadata_modified** `2025-05-31T06:33:14.288013`
 
 
 # Load packages

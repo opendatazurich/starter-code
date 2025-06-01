@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-05-26"
+date: "2025-06-01"
 output: html_document
 ---
 
@@ -38,7 +38,7 @@ Auto generated R starter code for data set geo_gericht.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['anwalt', 'geodaten', 'geoportal', 'gerichte', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:26:58.991116`
-- **Metadata_modified** `2025-05-26T05:38:45.940823`
+- **Metadata_modified** `2025-05-31T06:42:52.122528`
 
 
 # Load packages
