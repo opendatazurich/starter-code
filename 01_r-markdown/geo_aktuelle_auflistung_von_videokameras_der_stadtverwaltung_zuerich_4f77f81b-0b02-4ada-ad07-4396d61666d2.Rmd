@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-01"
+date: "2025-06-08"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_aktuelle_auflistung_von_videokame
 - **Keywords** ``
 - **Tags** `['auflistung-von-videokameras', 'einzeldaten', 'geodaten', 'geoportal', 'kamerastandorte', 'punktdaten', 'sachdaten', 'stzh', 'tabelle', 'videouberwachung']`
 - **Metadata_created** `2024-09-06T04:30:42.047869`
-- **Metadata_modified** `2025-05-31T06:41:27.546181`
+- **Metadata_modified** `2025-06-07T06:39:17.128736`
 
 
 # Load packages

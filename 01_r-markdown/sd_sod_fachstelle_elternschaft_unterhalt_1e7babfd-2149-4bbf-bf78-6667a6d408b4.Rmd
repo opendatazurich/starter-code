@@ -1,17 +1,15 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-01"
+date: "2025-06-08"
 output: html_document
 ---
 
-## Dataset: Anzahl Beratungen der Fachstelle Elternschaft und Unterhalt (Nachführung eingestellt)
+## Dataset: Anzahl Beratungen der Fachstelle Elternschaft und Unterhalt
 
 Anzahl Beratungen der Fachstelle Elternschaft und Unterhalt ab 2016.
 
 Die Fachstelle Elternschaft und Unterhalt (FEU) ist eine gesamtstädtische Beratungsstelle der Sozialen Dienste für Fragen bezüglich Vaterschaft, Unterhalt und Elternrechte.
 Als Beratungsstelle für nicht miteinander verheiratete und geschiedene Eltern bietet die FEU umfassende Information und Beratung in allen Fragen der Herstellung des Kindesverhältnisses, der Regelung des Unterhalts und der elterlichen Sorge. Sie ist Triagestelle für Fragen der Erziehung, Betreuung und Existenzsicherung.
-
-Aufgrund der Neuerung, dass die ergänzenden Hilfen zur Erziehung (ehemals «erzieherische Hilfen») seit 2022 durch den Kanton Zürich bewilligt und finanziert werden, kann diese bis 2021 durch die Sozialen Dienste geführte Statistik **nicht weitergeführt werden**.
 
 
 **Erläuterung**
@@ -48,7 +46,7 @@ Auto generated R starter code for data set sd_sod_fachstelle_elternschaft_unterh
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['beratung', 'elternschaft', 'fachstelle', 'feu', 'jugend', 'jugendhilfe', 'kinder', 'kinderhilfe', 'sachdaten', 'sozialhilfe', 'tabelle', 'unterhalt', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:23.392684`
-- **Metadata_modified** `2025-05-31T20:57:26.003905`
+- **Metadata_modified** `2025-06-07T21:00:10.282972`
 
 
 # Load packages

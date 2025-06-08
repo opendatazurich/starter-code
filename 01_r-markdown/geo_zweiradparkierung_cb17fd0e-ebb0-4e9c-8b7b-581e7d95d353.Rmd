@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-01"
+date: "2025-06-08"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_zweiradparkierung.
 - **Keywords** `Mobilität`
 - **Tags** `['abstellplatz', 'fahrrad', 'geodaten', 'geoportal', 'mofa', 'motorrad', 'parkplatz', 'punktdaten', 'stzh', 'vektordaten', 'velo', 'zweiradabstellplatze']`
 - **Metadata_created** `2023-11-06T03:13:20.649438`
-- **Metadata_modified** `2025-05-31T06:36:22.406168`
+- **Metadata_modified** `2025-06-07T06:34:52.763415`
 
 
 # Load packages
