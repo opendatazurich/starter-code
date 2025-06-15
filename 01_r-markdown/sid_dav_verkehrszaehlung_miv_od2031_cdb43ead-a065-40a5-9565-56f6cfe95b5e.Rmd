@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-08"
+date: "2025-06-15"
 output: html_document
 ---
 
@@ -75,7 +75,7 @@ Auto generated R starter code for data set sid_dav_verkehrszaehlung_miv_od2031.
 - **Keywords** `Mobilität,Umwelt`
 - **Tags** `['auto', 'motorrad', 'sachdaten', 'sasa', 'stau', 'tabelle', 'verkehr', 'verkehrszaehlung', 'zeitreihe']`
 - **Metadata_created** `2020-03-11T12:06:00.811855`
-- **Metadata_modified** `2025-06-08T03:04:30.278244`
+- **Metadata_modified** `2025-06-15T03:04:37.765805`
 
 
 # Load packages

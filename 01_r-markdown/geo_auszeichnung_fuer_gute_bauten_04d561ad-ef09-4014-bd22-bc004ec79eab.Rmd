@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-08"
+date: "2025-06-15"
 output: html_document
 ---
 
@@ -58,7 +58,7 @@ Auto generated R starter code for data set geo_auszeichnung_fuer_gute_bauten.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['auszeichnung', 'bauten', 'geodaten', 'geoportal', 'gute', 'polygondaten', 'punktdaten', 'stzh']`
 - **Metadata_created** `2023-11-06T03:29:03.077927`
-- **Metadata_modified** `2025-06-07T06:41:33.046053`
+- **Metadata_modified** `2025-06-14T06:41:13.819155`
 
 
 # Load packages

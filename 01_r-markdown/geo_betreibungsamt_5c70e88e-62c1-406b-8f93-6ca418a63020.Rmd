@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-08"
+date: "2025-06-15"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_betreibungsamt.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['betreibung', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:04:23.886423`
-- **Metadata_modified** `2025-06-07T06:31:11.711583`
+- **Metadata_modified** `2025-06-14T06:31:14.009496`
 
 
 # Load packages
