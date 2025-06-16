@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-15"
+date: "2025-06-16"
 output: html_document
 ---
 
@@ -46,7 +46,7 @@ Auto generated R starter code for data set geo_sitzbankkataster_ogd.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bank', 'geodaten', 'geoportal', 'punktdaten', 'sitzbank', 'stzh', 'vektordaten']`
 - **Metadata_created** `2024-02-27T04:00:41.512162`
-- **Metadata_modified** `2025-06-14T06:34:04.672929`
+- **Metadata_modified** `2025-06-16T06:34:15.890434`
 
 
 # Load packages

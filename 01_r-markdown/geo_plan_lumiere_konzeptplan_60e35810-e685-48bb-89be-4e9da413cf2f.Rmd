@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-15"
+date: "2025-06-16"
 output: html_document
 ---
 
@@ -66,7 +66,7 @@ Auto generated R starter code for data set geo_plan_lumiere_konzeptplan.
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['beleuchtung', 'beleuchtungskonzept', 'geodaten', 'geoportal', 'gesamtkonzept', 'licht', 'liniendaten', 'lumiere', 'nacht', 'plan', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:12:31.719941`
-- **Metadata_modified** `2025-06-14T06:34:20.060541`
+- **Metadata_modified** `2025-06-16T06:34:32.758402`
 
 
 # Load packages
