@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-16"
+date: "2025-06-22"
 output: html_document
 ---
 
@@ -32,7 +32,7 @@ Auto generated R starter code for data set baz_stadthausplatz.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['archivdaten', 'fotos', 'gebaude', 'geschichte', 'glam', 'openglam', 'public-domain']`
 - **Metadata_created** `2021-03-03T15:01:16.598113`
-- **Metadata_modified** `2025-06-16T07:15:10.010624`
+- **Metadata_modified** `2025-06-21T21:12:35.146987`
 
 
 # Load packages
