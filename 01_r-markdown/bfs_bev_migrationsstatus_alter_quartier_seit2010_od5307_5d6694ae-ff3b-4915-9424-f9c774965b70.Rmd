@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-22"
+date: "2025-06-29"
 output: html_document
 ---
 
@@ -97,7 +97,7 @@ Auto generated R starter code for data set bfs_bev_migrationsstatus_alter_quarti
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bevoelkerungsbestand', 'migrationsstatus', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2020-03-17T20:55:23.962948`
-- **Metadata_modified** `2025-06-21T21:01:34.709946`
+- **Metadata_modified** `2025-06-28T21:00:20.999148`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-22"
+date: "2025-06-29"
 output: html_document
 ---
 
@@ -53,7 +53,7 @@ Auto generated R starter code for data set geo_stimmkreise.
 - **Keywords** `Basis­karten`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'punktdaten', 'stimmkreise', 'stzh', 'vektordaten', 'wahlkreise', 'zahlkreise']`
 - **Metadata_created** `2023-11-06T03:12:25.774917`
-- **Metadata_modified** `2025-06-21T06:34:34.579554`
+- **Metadata_modified** `2025-06-28T06:34:11.425663`
 
 
 # Load packages

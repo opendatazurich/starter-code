@@ -1,13 +1,13 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-22"
+date: "2025-06-29"
 output: html_document
 ---
 
 ## Dataset: Stündlich aktualisierte Meteodaten, seit 1992
 
 
-Der Datensatz umfasst **Stundenwerte ab 1992 bis zur letzten aktuellen Stunde** aufgeteilt in Jahresdateien. Darin enthalten sind die Stationen Stampfenbachstrasse, Schimmelstrasse und Rosengartenstrasse. Gemessen wird der Luftdruck (p), die Niederschlagsdauer (RainDur), die Globalstrahlung (StrGlo), die Temperatur (T), die relative Luftfeuchtigkeit (Hr), die Windrichtung, die Vektor und Skalar Windgeschwindigkeit. Vor 2018 sind die Skalar Windgeschwindigkeiten aus den 30 Minuten Vektor Daten gerechnet worden.
+Der Datensatz umfasst **Stundenwerte ab 1992 bis zur letzten aktuellen Stunde** aufgeteilt in Jahresdateien und einmal als kompletter Datensatz im parquet-Format. Darin enthalten sind die Stationen Stampfenbachstrasse, Schimmelstrasse und Rosengartenstrasse. Gemessen wird der Luftdruck (p), die Niederschlagsdauer (RainDur), die Globalstrahlung (StrGlo), die Temperatur (T), die relative Luftfeuchtigkeit (Hr), die Windrichtung, die Vektor und Skalar Windgeschwindigkeit. Vor 2018 sind die Skalar Windgeschwindigkeiten aus den 30 Minuten Vektor Daten gerechnet worden.
 
 Die Stundenwerte des laufenden Jahres werden jeweils 30 Minuten nach der vollen Stunde aktualisiert.
 
@@ -54,7 +54,7 @@ Auto generated R starter code for data set ugz_meteodaten_stundenmittelwerte.
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['echtzeit', 'feuchte', 'global-strahlung', 'hitze', 'hr', 'kalte', 'luft', 'luftdruck', 'luftfeuchte', 'lufttemperatur', 'messwerte', 'meteo', 'niederschlag', 'p_', 'regen', 'regendauer', 'sachdaten', 't_', 'tabelle', 'temperatur', 'umweltdaten', 'wd', 'wetter', 'wind', 'windgeschwindigkeit', 'windrichtung', 'wv', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:16:41.315364`
-- **Metadata_modified** `2025-06-22T03:48:57.183494`
+- **Metadata_modified** `2025-06-29T03:48:58.318481`
 
 
 # Load packages

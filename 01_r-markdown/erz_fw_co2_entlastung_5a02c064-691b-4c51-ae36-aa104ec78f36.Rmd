@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-22"
+date: "2025-06-29"
 output: html_document
 ---
 
@@ -28,7 +28,7 @@ Auto generated R starter code for data set erz_fw_co2_entlastung.
 - **Keywords** `Energie`
 - **Tags** `['__', 'co2', 'energie', 'fernwaerme']`
 - **Metadata_created** `2022-05-11T14:10:30.819205`
-- **Metadata_modified** `2025-06-21T16:11:05.086524`
+- **Metadata_modified** `2025-06-28T16:11:06.100459`
 
 
 # Load packages

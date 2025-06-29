@@ -1,13 +1,13 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-22"
+date: "2025-06-29"
 output: html_document
 ---
 
 ## Dataset: Täglich aktualisierte Meteodaten, seit 1992
 
 
-Der Datensatz umfasst **Tageswerte** **ab 1992 bis zum aktuellen Vortag** aufgeteilt in Jahresdateien. Darin enthalten sind die Stationen Stampfenbachstrasse, Schimmelstrasse und Rosengartenstrasse. Gemessen wird der Luftdruck (p), die Niederschlagsdauer (RainDur), die Globalstrahlung (StrGlo), die Temperatur (T) und die relative Luftfeuchtigkeit (Hr). Die Winddaten werden zur Zeit nicht auf Tageswerte gemittelt, sind aber im Datensatz 'Stündlich aktualisierte Meteodaten, seit 1988' als Stundenwerte verfügbar.
+Der Datensatz umfasst **Tageswerte** **ab 1992 bis zum aktuellen Vortag** aufgeteilt in Jahresdateien und einmal als kompletter Datensatz im parquet-Format. Darin enthalten sind die Stationen Stampfenbachstrasse, Schimmelstrasse und Rosengartenstrasse. Gemessen wird der Luftdruck (p), die Niederschlagsdauer (RainDur), die Globalstrahlung (StrGlo), die Temperatur (T) und die relative Luftfeuchtigkeit (Hr). Die Winddaten werden zur Zeit nicht auf Tageswerte gemittelt, sind aber im Datensatz 'Stündlich aktualisierte Meteodaten, seit 1988' als Stundenwerte verfügbar.
 
 Die Tageswerte des laufenden Jahres werden jeweils 30 Minuten nach Mitternacht (UTC+1) aktualisiert.
 
@@ -54,7 +54,7 @@ Auto generated R starter code for data set ugz_meteodaten_tagesmittelwerte.
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['echtzeit', 'feuchte', 'global-strahlung', 'hitze', 'hr', 'kalte', 'luft', 'luftdruck', 'luftfeuchte', 'lufttemperatur', 'messwerte', 'meteo', 'niederschlag', 'p_', 'regen', 'regendauer', 'sachdaten', 't_', 'tabelle', 'temperatur', 'umweltdaten', 'wd', 'wetter', 'wind', 'windgeschwindigkeit', 'windrichtung', 'wv', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:12:46.948439`
-- **Metadata_modified** `2025-06-22T03:42:31.711834`
+- **Metadata_modified** `2025-06-29T03:42:44.050953`
 
 
 # Load packages

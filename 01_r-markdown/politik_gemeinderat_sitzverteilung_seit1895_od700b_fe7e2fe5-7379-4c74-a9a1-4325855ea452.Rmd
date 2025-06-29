@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-22"
+date: "2025-06-29"
 output: html_document
 ---
 
@@ -54,7 +54,7 @@ Auto generated R starter code for data set politik_gemeinderat_sitzverteilung_se
 - **Keywords** `Politik`
 - **Tags** `['gemeinderat', 'partei', 'politik', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-02-10T12:23:02.036371`
-- **Metadata_modified** `2025-06-21T20:59:15.563094`
+- **Metadata_modified** `2025-06-28T20:58:00.153354`
 
 
 # Load packages
