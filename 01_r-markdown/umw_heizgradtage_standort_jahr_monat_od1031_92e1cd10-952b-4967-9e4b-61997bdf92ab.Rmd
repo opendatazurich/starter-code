@@ -1,17 +1,23 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-29"
+date: "2025-07-06"
 output: html_document
 ---
 
-## Dataset: Heizgradtage für verschiedene Standorte in der Stadt Zürich
+## Dataset: Heizgradtage und akkumulierte Temperaturdifferenzen für verschiedene Standorte in der Stadt Zürich
 
-Der Datensatz enthält die monatlichen Heiztgradtage für die Standorte Stampfenbachstrasse, Schimmelstrasse und Rosengartenstrasse.
+Der Datensatz enthält die monatlichen Heiztgradtage und akkumulierten Temperaturdifferenzen für die Standorte Fluntern, Stampfenbachstrasse, Schimmelstrasse, Rosengartenstrasse und Heubeeribühl.
 
 **Heizgradtage:**
 
 
-Heizgradtage sind ein Mass für den Einfluss des Wetters auf den Heizenergieverbrauch eines Gebäudes. Heizgradtage sind die Differenz zwischen der gewünschten Raumtemperatur (20°C) und der mittleren Aussentemperatur eines Tages, falls diese Aussentemperatur unter einer bestimmten Heizgrenze liegt. Für die Berechnung der Tabellenwerte wird die Heizgrenze 12 °C verwendet. Bei einer mittleren Tagestemperatur von 2°C ergeben sich 18 Heizgradtage (20°C – 2°C). Je kälter die mittlere Tagestemperatur in einem Monat ist, desto höher sind die Heizgradtage.
+Die Heizgradtage (HGT) sind ein Mass für den Einfluss des Wetters auf den Heizenergieverbrauch eines Gebäudes. Grundsätzlich gilt: Je niedriger die Temperaturen, desto höher sind die Heizgradtage.
+
+Die Heizgradtage werden mit Temperatur-Tagesmittelwerten (Aussentemperatur), einer Heizgrenze von 12°C und einer Raumtemperatur von 20°C berechnet. Falls die Aussentemperatur unter der Heizgrenze liegt, wird die Differenz zur Raumtemperatur berechnet. 
+
+Beispiel für einen Tagesmittelwert (Aussentemperatur) von 5°C: HGT = 20°C - 5°C = 15 Kelvintage
+Beispiel für einen Tagesmittelwert (Aussentemperatur) von 16°C : HGT = 0 Kelvintage
+Für die HGT pro Monat werden die Tageswerte (Kelvintage) pro Monat addiert.
 
 
 []()
@@ -19,47 +25,89 @@ Heizgradtage sind ein Mass für den Einfluss des Wetters auf den Heizenergieverb
 **Akkumulierte Temperaturdifferenzen**
 
 
-Wie die Heizgradtage ist die akkumulierte Temperaturdifferenz ein Mass für den Einfluss des Wetters auf den Heizenergieverbrauch eines Gebäudes. Die akkumulierten Temperaturdifferenzen werden mit der Differenz zwischen der Basistemperatur (12°C) und dem Tagesmittel der Aussentemperatur berechnet. Bei einer mittleren Tagestemperatur von 2°C ergebt sich eine akkumulierte Temperaturdifferenz von 10  (12°C – 2°C). Je kälter die mittlere Tagestemperatur in einem Monat ist, desto höher sind die akkumulierten Temperaturdifferenzen.
+Wie die Heizgradtage sind die akkumulierten Temperaturdifferenzen (ATD) ein Mass für den Einfluss des Wetters auf den Heizenergieverbrauch eines Gebäudes. Grundsätzlich gilt: Je niedriger die Temperaturen, desto höher sind die akkumulierten Temperaturdifferenzen.
+
+Die akkumulierten Temperaturdifferenzen (ATD) werden mit Temperatur-Tagesmittelwerten (Aussentemperatur) und einer Heizgrenze von 12°C berechnet. Falls die Aussentemperatur unter der Heizgrenze liegt, wird die Differenz zur Heizgrenze berechnet. 
+
+Beispiel für einen Tagesmittelwert (Aussentemperatur) von 5°C: ATD = 12°C - 5°C = 7 Kelvintage
+Beispiel für einen Tagesmittelwert (Aussentemperatur) von 16°C : ATD = 0 Kelvintage
+Für die ATD pro Monat werden die Tageswerte (Kelvintage) pro Monat addiert.
 
 
 []()
 
-**Standort Stampfenbachstrasse:**
+**Standort Fluntern**
 
+
+Quelle: Bundesamt für Meteorologie und Klimatologie MeteoSchweiz
+Adresse: Krähbühlstrasse 58, 8044 Zürich
+Koordinaten: 2685118 / 1248066
+Höhe über Meer: 556 m ü. M.
+Höhe über Boden: 2 m
+Standorttyp: Südhang
+
+
+[]()
+
+**Standort Stampfenbachstrasse**
+
+
+Quelle: Gesundheits- und Umweltdepartement, Umwelt- und Gesundheitsschutz Zürich (UGZ)
 Adresse: Stampfenbachstrasse 144, 8006 Zürich
-Koordinaten: 2683140 / 1249040
-Höhe über Meer: 445 m.ü.M.
+Koordinaten: 2683148 / 1249020
+Höhe über Meer: 445 m ü. M.
 Strassenabstand: 2 m
 Höhe über Boden: 6 m
-Standorttyp: Stadtzentrum, mässig befahrene Strasse, Wohnquartier, geschlossene Bebauung (einseitig) 
+Standorttyp: Die Messstation steht an zentraler Lage in der Stadt Zürich. Sie repräsentiert eine städtische Lage mit mässigem Verkehr.
+
 
 []()
 
 **Standort Schimmelstrasse**
 
+
+Quelle: Gesundheits- und Umweltdepartement, Umwelt- und Gesundheitsschutz Zürich (UGZ)
 Adresse: Schimmelstrasse 83, 8003 Zürich
-Koordinaten: 2681950 / 1247250
-Höhe über Meer: 413 m.ü.M.
+Koordinaten: 2681943 / 1247245
+Höhe über Meer: 413 m ü. M.
 Strassenabstand: 3 m
 Höhe über Boden: 3 m
-Standorttyp: Stadtzentrum, stark befahrene Strasse, Wohnquartier, geschlossene Bebauung 
+Standorttyp: Die Messstation steht an einer städtischen Hauptverkehrsachse in zentraler Lage in einem Wohn- und Geschäftsquartier in der Stadt Zürich. Sie repräsentiert eine städtische Lage mit sehr starkem Verkehr.
+
 
 []()
 
 **Standort Rosengartenstrasse**
 
+
+Quelle: Gesundheits- und Umweltdepartement, Umwelt- und Gesundheitsschutz Zürich (UGZ)
 Adresse: Rosengartenstrasse
-Koordinaten: 2682095 / 1249940
-Höhe über Meer: 433 m.ü.M.
+Koordinaten: 2682106 / 1249935
+Höhe über Meer: 433 m ü. M.
 Strassenabstand: 6 m
 Höhe über Boden: 2 m
-Standorttyp: Starke Verkehrsexposition an Hauptverkehrsachse. Stadtzentrum, geschlossene Bebauung
+Standorttyp: Die Messstation steht an einer städtischen Hauptverkehrsachse in zentraler Lage in einem Wohn- und Geschäftsquartier in der Stadt Zürich. Sie repräsentiert eine städtische Lage mit sehr starkem Verkehr.
+
 
 []()
 
-**Fehlende Werte**
+**Standort Heubeeribühl**
 
-Der Monatswert wird bei einer Datenverfügbarkeit von 80 Prozent ausgewiesen.
+
+Quelle: Gesundheits- und Umweltdepartement, Umwelt- und Gesundheitsschutz Zürich (UGZ)
+Adresse: Heubeeriweg 30, 8044 Zürich
+Koordinaten: 2685137 / 1248473
+Höhe über Meer: 610 m. ü. M.
+Strassenabstand: 50 m
+Höhe über Boden: 4 m
+Standorttyp: Die Messstation liegt in einem Schulareal an erhöhter Hanglage am Siedlungsrand der Stadtt Zürich angrenzend an ein offenes Feld gegen den Zürichberg-Wald. Der Standort ist repräsentativ für wenig verkehrsbeinflusste Wohn- und Erholungs-Gebiete am Rand der grossen Agglomerationen.
+
+
+[]()
+
+**Fehlende Werte, Datenstand**
+
+Die Summen pro Monat werden nur ausgewiesen, wenn mindestens 80 Prozent der Tagesmittelwerte vorhanden sind. Bei den Stationen Stampfenbachstrasse, Schimmelstrasse, Rosengartenstrasse und Heubeeribühl sind die Werte des aktuellen Jahres provisorisch. Beim Standort Fluntern sind die Werte grundsätzlich zwei Wochen nach Monatsende definitiv.
 
 []()
 
@@ -71,13 +119,13 @@ Auto generated R starter code for data set umw_heizgradtage_standort_jahr_monat_
 
 ## Metadata
 
-- **Publisher** `Fachbereich Labor, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Publisher** `Fachbereich Labor, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement (UGZ), Bundesamt für Meteorologie und Klimatologie MeteoSchweiz`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Energie`
 - **Tags** `['energie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-12-01T11:40:38.213242`
-- **Metadata_modified** `2025-06-28T20:59:18.266985`
+- **Metadata_modified** `2025-07-05T20:58:26.363498`
 
 
 # Load packages

@@ -1,12 +1,14 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-06-29"
+date: "2025-07-06"
 output: html_document
 ---
 
 ## Dataset: Stadtreinigung: Kennzahlen
 
-Kennzahlen der Stadtreinigung, die Daten liegen von 2017-2022 jährlich vor, ab 2023 werden die Zahlen monatlich aktualisiert.
+<![CDATA[
+Kennzahlen der Stadtreinigung
+]]>
 
 **Stadtreinigung Kennzahlen**
 
@@ -14,28 +16,9 @@ Auf Strassen und Gehwegen sowie in den Parkanlagen Zürichs fällt Wischgut an. 
 öffentlichem Grund eingesammelte Abfall. Das Wischgut
 wird stofflich recycelt oder im Kehrichtheizkraftwerk Hagenholz thermisch verwertet.
 
-**Wischgut 
-Siedlungsabfall**
+**Bemerkung**
 
-Auf Strassen und Gehwegen sowie in den Parkanlagen Zürichs fällt Wischgut an. Dazu gehören Laub, Kies und der auf
-öffentlichem Grund eingesammelte Abfall. Das Wischgut
-wird stofflich recycelt oder im Kehrichtheizkraftwerk Hagenholz thermisch verwertet.
-
-**Streusalzverbrauch pro Winterdienstperiode **
-
-Streusalzverbrauch für den Winterdienst. Der Winterdienst dauert jeweils von November bis März.
-
-**Abfallbehälter (Anzahl)**
-
-Fest installierte Abfall- und Hundekotbehälter, ohne temporär aufgestellte Abfallbehälter.
-
-**Reinigungs- und Winterdienst-Fahrzeuge (Anzahl)**
-
-Fahrzeuge, die für die Reinigung und den Winterdienst verwendet werden (Anzahl)
-
-**Treibstoff Diesel**
-
-Treibstoff, die für die Reinigung und den Winterdienst benötigt werden (Liter)
+ Datenaktualisierungen bis 2023 jährlich, danach monatlich.
 
 
 
@@ -48,10 +31,10 @@ Auto generated R starter code for data set erz_sr_kennzahlen.
 - **Publisher** `Stadtreinigung, Entsorgung + Recycling Zürich, Tiefbau- und Entsorgungsdepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
-- **Keywords** `Umwelt`
-- **Tags** `['abfall', 'abfallbehalter', 'abfalleimer', 'entsorgung', 'kehricht', 'littering', 'siedlungsabfall', 'streusalz', 'wischgut']`
+- **Keywords** `Bevölk­erung,Ver­walt­ung`
+- **Tags** `['abfall', 'abfallbehalter', 'abfalleimer', 'kehricht', 'littering', 'siedlungsabfall', 'streusalz', 'wischgut']`
 - **Metadata_created** `2023-06-21T13:53:38.297366`
-- **Metadata_modified** `2025-06-28T16:10:46.242559`
+- **Metadata_modified** `2025-07-05T16:10:43.349704`
 
 
 # Load packages
