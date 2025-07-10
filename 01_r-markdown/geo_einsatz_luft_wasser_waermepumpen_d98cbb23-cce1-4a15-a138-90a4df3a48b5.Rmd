@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-06"
+date: "2025-07-10"
 output: html_document
 ---
 
@@ -53,7 +53,7 @@ Auto generated R starter code for data set geo_einsatz_luft_wasser_waermepumpen.
 - **Keywords** `Energie`
 - **Tags** `['energieplanung', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'umgebungswarme', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:29:49.152181`
-- **Metadata_modified** `2025-07-05T06:41:40.757652`
+- **Metadata_modified** `2025-07-10T06:41:59.461145`
 
 
 # Load packages
