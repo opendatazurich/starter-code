@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-10"
+date: "2025-07-13"
 output: html_document
 ---
 
@@ -48,7 +48,7 @@ Auto generated R starter code for data set bau_stadtgebiet_bodennutzung_grundeig
 - **Keywords** `Bauen und Wohnen,Umwelt`
 - **Tags** `['bodennutzung', 'eigentum', 'grundstueck', 'sachdaten', 'sasa', 'tabelle', 'umwelt', 'zeitreihe']`
 - **Metadata_created** `2020-04-06T17:35:40.405911`
-- **Metadata_modified** `2025-07-10T07:10:07.571594`
+- **Metadata_modified** `2025-07-12T21:03:45.439641`
 
 
 # Load packages

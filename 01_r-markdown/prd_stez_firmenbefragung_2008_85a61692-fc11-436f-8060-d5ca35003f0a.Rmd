@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-10"
+date: "2025-07-13"
 output: html_document
 ---
 
@@ -70,7 +70,7 @@ Auto generated R starter code for data set prd_stez_firmenbefragung_2008.
 - **Keywords** `Arbeit und Erwerb,Ver­walt­ung,​​Volks​­wirt​­schaft`
 - **Tags** `['befragung', 'firma', 'firmenbefragung', 'sachdaten', 'stadtentwicklung', 'stichprobe', 'tabelle', 'zeitreihe', 'zufriedenheit']`
 - **Metadata_created** `2022-02-02T13:43:20.436080`
-- **Metadata_modified** `2025-07-10T06:58:25.003294`
+- **Metadata_modified** `2025-07-12T20:51:39.924668`
 
 
 # Load packages

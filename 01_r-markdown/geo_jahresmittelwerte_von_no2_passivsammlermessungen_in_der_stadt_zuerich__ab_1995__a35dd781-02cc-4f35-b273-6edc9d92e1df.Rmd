@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-10"
+date: "2025-07-13"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_jahresmittelwerte_von_no2_passivs
 - **Keywords** `Umwelt`
 - **Tags** `['__', 'geodaten', 'geoportal', 'no2', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2025-03-22T04:30:45.975354`
-- **Metadata_modified** `2025-07-10T06:36:12.315229`
+- **Metadata_modified** `2025-07-12T06:35:59.443733`
 
 
 # Load packages

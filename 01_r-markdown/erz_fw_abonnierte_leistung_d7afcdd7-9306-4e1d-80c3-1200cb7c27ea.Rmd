@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-10"
+date: "2025-07-13"
 output: html_document
 ---
 
@@ -28,7 +28,7 @@ Auto generated R starter code for data set erz_fw_abonnierte_leistung.
 - **Keywords** `Energie`
 - **Tags** `['energie', 'fernwaerme', 'fernwarme-leistung']`
 - **Metadata_created** `2022-05-11T14:10:14.989655`
-- **Metadata_modified** `2025-07-09T16:10:25.840668`
+- **Metadata_modified** `2025-07-12T16:10:30.637618`
 
 
 # Load packages

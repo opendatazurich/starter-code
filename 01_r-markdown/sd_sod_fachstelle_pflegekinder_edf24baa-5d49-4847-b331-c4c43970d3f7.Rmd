@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-10"
+date: "2025-07-13"
 output: html_document
 ---
 
@@ -51,7 +51,7 @@ Auto generated R starter code for data set sd_sod_fachstelle_pflegekinder.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['beratung', 'fachstelle', 'jugend', 'jugendhilfe', 'kinder', 'kinderhilfe', 'pflegekinder', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:21.130551`
-- **Metadata_modified** `2025-07-10T06:59:32.086259`
+- **Metadata_modified** `2025-07-12T20:52:39.428068`
 
 
 # Load packages
