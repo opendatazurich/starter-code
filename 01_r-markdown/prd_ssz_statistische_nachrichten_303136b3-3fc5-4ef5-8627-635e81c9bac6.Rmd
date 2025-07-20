@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-13"
+date: "2025-07-20"
 output: html_document
 ---
 
@@ -39,7 +39,7 @@ Auto generated R starter code for data set prd_ssz_statistische_nachrichten.
 - **Keywords** `Arbeit und Erwerb,Bauen und Wohnen,Bevölk­erung,Bildung,Energie,Finanzen,Freizeit,Ge­sund­heit,Kri­mi­na­li­tät,Kultur,Mobilität,Politik,Preise,Soziales,Tour­is­mus,Umwelt,Ver­walt­ung,​​Volks​­wirt​­schaft`
 - **Tags** `['historisch', 'kreise', 'pdf', 'publikation', 'quartiere', 'sachdaten']`
 - **Metadata_created** `2020-01-22T11:04:41.672942`
-- **Metadata_modified** `2025-07-12T20:54:32.192364`
+- **Metadata_modified** `2025-07-19T21:00:51.551389`
 
 
 # Load packages
