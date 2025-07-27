@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -61,7 +61,7 @@ Auto generated R starter code for data set geo_baugrundarchiv.
 - **Keywords** `Bauen und Wohnen,Umwelt`
 - **Tags** `['bohrung', 'geodaten', 'geologie', 'geoportal', 'kern', 'liniendaten', 'profile', 'punktdaten', 'stzh', 'untergrund', 'untersuchung', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:29:56.690348`
-- **Metadata_modified** `2025-07-19T06:42:36.642081`
+- **Metadata_modified** `2025-07-22T06:42:56.000375`
 
 
 # Load packages

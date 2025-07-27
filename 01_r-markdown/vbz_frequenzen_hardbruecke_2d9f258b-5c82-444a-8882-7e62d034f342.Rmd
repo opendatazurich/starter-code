@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -62,7 +62,7 @@ Auto generated R starter code for data set vbz_frequenzen_hardbruecke.
 - **Keywords** `Mobilität`
 - **Tags** `['bus', 'fahrgastzahlen', 'frequenzen', 'hardbücke', 'passagiere', 'pendler', 'sachdaten', 'tabelle', 'tram', 'vbz', 'öffentlicher verkehr', 'öv']`
 - **Metadata_created** `2020-03-27T14:23:46.471679`
-- **Metadata_modified** `2025-07-20T03:58:02.704644`
+- **Metadata_modified** `2025-07-27T03:58:57.725151`
 
 
 # Load packages

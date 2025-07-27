@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -40,7 +40,7 @@ Auto generated R starter code for data set geo_standorte_der_verkehrszaehlungen_
 - **Keywords** ``
 - **Tags** `['geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten', 'verkehr']`
 - **Metadata_created** `2024-10-24T04:40:10.117367`
-- **Metadata_modified** `2025-07-19T06:45:43.490193`
+- **Metadata_modified** `2025-07-26T06:46:57.968288`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -97,7 +97,7 @@ Auto generated R starter code for data set fd_median_hhaequeinkommen_quartier_od
 - **Keywords** `Bevölk­erung,Finanzen,​​Volks​­wirt​­schaft`
 - **Tags** `['einkommen', 'median', 'quartil', 'sachdaten', 'sasa', 'steuerpflichtige', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2023-07-14T07:04:40.584572`
-- **Metadata_modified** `2025-07-19T21:08:31.018095`
+- **Metadata_modified** `2025-07-26T21:12:00.369378`
 
 
 # Load packages

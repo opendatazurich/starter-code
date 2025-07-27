@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -89,7 +89,7 @@ Auto generated R starter code for data set geo_fachplanung_stadtnatur_ogd.
 - **Keywords** `Umwelt`
 - **Tags** `['biodiversitat', 'fachplanung', 'geodaten', 'geoportal', 'natur', 'okologisch-wertvolle-lebensraumen', 'polygondaten', 'stadtnatur', 'stzh', 'vektordaten']`
 - **Metadata_created** `2024-12-05T04:30:49.491282`
-- **Metadata_modified** `2025-07-19T06:37:25.108284`
+- **Metadata_modified** `2025-07-26T06:37:24.936759`
 
 
 # Load packages

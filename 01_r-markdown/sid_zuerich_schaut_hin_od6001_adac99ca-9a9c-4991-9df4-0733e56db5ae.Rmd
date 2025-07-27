@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -68,7 +68,7 @@ Auto generated R starter code for data set sid_zuerich_schaut_hin_od6001.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['befragung', 'belaestigungen', 'beleidigungen', 'meldetool', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'uebergriffe', 'zeitreihe', 'zuerich-schaut-hin']`
 - **Metadata_created** `2024-10-28T09:31:46.033511`
-- **Metadata_modified** `2025-07-19T10:51:03.017800`
+- **Metadata_modified** `2025-07-26T10:50:38.748049`
 
 
 # Load packages

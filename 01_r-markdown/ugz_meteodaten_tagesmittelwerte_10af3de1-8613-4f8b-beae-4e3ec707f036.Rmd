@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -54,7 +54,7 @@ Auto generated R starter code for data set ugz_meteodaten_tagesmittelwerte.
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['echtzeit', 'feuchte', 'global-strahlung', 'hitze', 'hr', 'kalte', 'luft', 'luftdruck', 'luftfeuchte', 'lufttemperatur', 'messwerte', 'meteo', 'niederschlag', 'p_', 'regen', 'regendauer', 'sachdaten', 't_', 'tabelle', 'temperatur', 'umweltdaten', 'wd', 'wetter', 'wind', 'windgeschwindigkeit', 'windrichtung', 'wv', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:12:46.948439`
-- **Metadata_modified** `2025-07-20T03:55:15.758294`
+- **Metadata_modified** `2025-07-27T03:41:02.445549`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -79,7 +79,7 @@ Auto generated R starter code for data set bau_geschossflaeche_nutzungsart_quart
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bauperiode', 'geschossflaechen', 'nichtwohnungsbau', 'nutzflaechen', 'nutzung', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'zeitreihe']`
 - **Metadata_created** `2020-04-06T17:35:32.812645`
-- **Metadata_modified** `2025-07-19T21:03:11.712290`
+- **Metadata_modified** `2025-07-26T21:06:45.397005`
 
 
 # Load packages

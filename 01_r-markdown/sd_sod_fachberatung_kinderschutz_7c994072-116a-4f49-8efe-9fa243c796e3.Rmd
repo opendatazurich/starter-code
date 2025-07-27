@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -33,7 +33,7 @@ Auto generated R starter code for data set sd_sod_fachberatung_kinderschutz.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['beratung', 'fachberatung', 'ifk', 'interdisziplinar', 'jugend', 'jugendhilfe', 'kinder', 'kinderhilfe', 'kindesschutz', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:18.970516`
-- **Metadata_modified** `2025-07-19T20:57:55.819568`
+- **Metadata_modified** `2025-07-26T21:01:49.962390`
 
 
 # Load packages

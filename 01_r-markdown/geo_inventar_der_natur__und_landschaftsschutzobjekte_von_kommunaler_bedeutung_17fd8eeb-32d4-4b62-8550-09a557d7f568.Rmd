@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -78,7 +78,7 @@ Auto generated R starter code for data set geo_inventar_der_natur__und_landschaf
 - **Keywords** `Umwelt`
 - **Tags** `['biologie', 'geodaten', 'geoportal', 'polygondaten', 'punktdaten', 'stzh', 'umwelt', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:06:12.814627`
-- **Metadata_modified** `2025-01-16T04:31:38.000976`
+- **Metadata_modified** `2025-07-26T06:31:57.309378`
 
 
 # Load packages

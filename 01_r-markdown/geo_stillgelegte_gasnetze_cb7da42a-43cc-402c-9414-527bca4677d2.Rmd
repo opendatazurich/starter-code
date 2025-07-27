@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_stillgelegte_gasnetze.
 - **Keywords** ``
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2024-07-18T04:30:46.287198`
-- **Metadata_modified** `2025-07-19T06:38:48.296325`
+- **Metadata_modified** `2025-07-26T06:38:47.088447`
 
 
 # Load packages

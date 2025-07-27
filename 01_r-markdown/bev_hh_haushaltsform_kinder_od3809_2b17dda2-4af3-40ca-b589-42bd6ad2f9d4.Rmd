@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -71,7 +71,7 @@ Auto generated R starter code for data set bev_hh_haushaltsform_kinder_od3809.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bevoelkerungsbestand', 'haushalte', 'kinder', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2020-11-19T07:36:09.007107`
-- **Metadata_modified** `2025-07-19T20:57:18.666594`
+- **Metadata_modified** `2025-07-26T21:01:12.661382`
 
 
 # Load packages

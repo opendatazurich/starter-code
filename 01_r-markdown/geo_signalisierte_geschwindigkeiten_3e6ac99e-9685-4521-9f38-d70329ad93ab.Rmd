@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -87,7 +87,7 @@ Auto generated R starter code for data set geo_signalisierte_geschwindigkeiten.
 - **Keywords** `Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'geschwindigkeiten', 'liniendaten', 'punktdaten', 'stzh', 'temporegime']`
 - **Metadata_created** `2023-11-06T03:22:17.319552`
-- **Metadata_modified** `2025-07-19T06:39:07.174815`
+- **Metadata_modified** `2025-07-26T06:39:05.771988`
 
 
 # Load packages

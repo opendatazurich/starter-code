@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-20"
+date: "2025-07-27"
 output: html_document
 ---
 
@@ -49,7 +49,7 @@ Auto generated R starter code for data set geo_sonderabfallsammlung.
 - **Keywords** `Ver­walt­ung`
 - **Tags** `['abfall', 'geodaten', 'geoportal', 'punktdaten', 'sammelstelle', 'sonderabfall', 'stzh']`
 - **Metadata_created** `2023-11-06T03:16:21.567696`
-- **Metadata_modified** `2025-07-19T06:36:44.189298`
+- **Metadata_modified** `2025-07-26T06:36:44.392779`
 
 
 # Load packages
