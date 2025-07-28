@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-27"
+date: "2025-07-28"
 output: html_document
 ---
 
@@ -80,7 +80,7 @@ Auto generated R starter code for data set ugz_primaerenergiebilanz.
 - **Keywords** `Energie,Umwelt`
 - **Tags** `['primaerenergie', 'primaerenergieverbrauch', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-07-29T13:36:27.258683`
-- **Metadata_modified** `2025-07-27T03:47:48.080962`
+- **Metadata_modified** `2025-07-28T12:49:39.281200`
 
 
 # Load packages

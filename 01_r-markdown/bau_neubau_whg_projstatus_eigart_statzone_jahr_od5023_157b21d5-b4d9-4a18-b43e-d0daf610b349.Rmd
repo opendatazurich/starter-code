@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-27"
+date: "2025-07-28"
 output: html_document
 ---
 
@@ -80,7 +80,7 @@ Auto generated R starter code for data set bau_neubau_whg_projstatus_eigart_stat
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bautaetigkeit', 'eigentum', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'wohnung', 'zeitreihe']`
 - **Metadata_created** `2021-02-05T19:47:20.084278`
-- **Metadata_modified** `2025-07-26T21:09:52.206194`
+- **Metadata_modified** `2025-07-28T07:08:59.593125`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-27"
+date: "2025-07-28"
 output: html_document
 ---
 
@@ -45,7 +45,7 @@ Auto generated R starter code for data set ewz_stromabgabe_netzebenen_mittelbuen
 - **Keywords** `Energie`
 - **Tags** `['energie', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2023-05-16T08:28:06.874516`
-- **Metadata_modified** `2025-07-27T02:50:20.157703`
+- **Metadata_modified** `2025-07-28T12:51:52.172236`
 
 
 # Load packages

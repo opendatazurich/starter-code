@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-27"
+date: "2025-07-28"
 output: html_document
 ---
 
@@ -66,7 +66,7 @@ Auto generated R starter code for data set geo_baumkataster.
 - **Keywords** `Umwelt`
 - **Tags** `['baum', 'geodaten', 'geoportal', 'obstbaum', 'polygondaten', 'punktdaten', 'stassenbaum', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:06:58.988791`
-- **Metadata_modified** `2025-07-26T06:32:21.234225`
+- **Metadata_modified** `2025-07-28T06:31:59.795067`
 
 
 # Load packages
