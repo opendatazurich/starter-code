@@ -3,8 +3,8 @@
 ### Open any tabular or geojson dataset of **OpenDataZurich** with one click and **get a fully configured Python Jupyter Notebook or R Markdown file**. 
 
 - The code files are **set with relevant metadata, descriptions, data links, and some starter code.** 
-- The idea of this experiment is **that you immediately can start analyzing the data with R or Python.** 
-- You can **open the Python notebooks with one click in Google Colab too.**
+- The idea of this experiment is **that you immediately can start analyzing the data with R, Python or SQL.** 
+- You don't even need to have a local installation. Just klick on the links for Colab, Renku or SQl-Workbench to **start analyzing in your browser**.
 
 ⚠️ **Note**: To **download individual files from GitHub you need to switch to the file's `RAW` view and then `Right-Click-Save-As`.** Only so you get the proper file format rather than the HTML that GitHub yields.
 
@@ -14,7 +14,7 @@ Feedback is always very welcome – simply open an issue or contact us at [opend
 
 👉 Here is the link to the [repository](https://www.github.com/opendatazurich/starter-code) that contains currently 2 x 1265 code files (1 x R, 1 x Python) for all data sets (*«resources»*) that are available on [OpenDataZurich](https://data.stadt-zuerich.ch/) and that contain  CSV, parquet or geojson files. This website is build from this repo.
 
-<sub>Latest update: **2025-07-28 13:32:11**</sub><br>
+<sub>Latest update: **2025-07-28 13:47:30**</sub><br>
 <sub>For all data licenses please refer to each data set's link (provided in list as well as in the notebooks).</sub>
 
 ### Renku (Jupyter Lab / RStudio): [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/v2/projects/opendatazurich/starter-code)
