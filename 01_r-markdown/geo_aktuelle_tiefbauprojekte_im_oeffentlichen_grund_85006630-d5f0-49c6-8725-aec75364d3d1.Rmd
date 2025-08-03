@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-07-28"
+date: "2025-08-03"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_aktuelle_tiefbauprojekte_im_oeffe
 - **Keywords** `Bauen und Wohnen,Mobilität,Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'tiefbauprojekte-baukoordination-baustellen-strassenprojekt-tiefbau-bauprojekt-baustelle', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:05:57.627766`
-- **Metadata_modified** `2025-07-28T06:31:36.392774`
+- **Metadata_modified** `2025-08-02T06:34:00.902353`
 
 
 # Load packages
