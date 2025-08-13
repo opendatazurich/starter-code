@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-10"
+date: "2025-08-13"
 output: html_document
 ---
 
@@ -61,7 +61,7 @@ Auto generated R starter code for data set geo_sharing_zonen.
 - **Keywords** `Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2024-03-01T04:00:42.153490`
-- **Metadata_modified** `2025-08-09T06:38:10.749475`
+- **Metadata_modified** `2025-08-13T06:38:27.542431`
 
 
 # Load packages

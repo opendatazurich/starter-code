@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-10"
+date: "2025-08-13"
 output: html_document
 ---
 
@@ -58,7 +58,7 @@ Auto generated R starter code for data set geo_velopruefstrecken.
 - **Keywords** `Bevölk­erung,Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'pravention', 'prufstrecke', 'prufung', 'punktdaten', 'stzh', 'unfall', 'velo']`
 - **Metadata_created** `2023-11-06T03:17:27.125714`
-- **Metadata_modified** `2025-08-09T06:36:32.395462`
+- **Metadata_modified** `2025-08-13T06:36:45.527772`
 
 
 # Load packages
