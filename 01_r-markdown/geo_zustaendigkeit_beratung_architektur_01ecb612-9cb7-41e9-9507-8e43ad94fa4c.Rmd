@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-13"
+date: "2025-08-17"
 output: html_document
 ---
 
@@ -26,7 +26,7 @@ Diese Datenbestand ist von folgenden Geo
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/ogd/Zustaendigkeit_Beratung_Architektur.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/781d3a2c-34c6-4ecb-ba3e-b33633a74cde.png)
 
 
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_zustaendigkeit_beratung_architekt
 - **Keywords** `Basis­karten,Bauen und Wohnen`
 - **Tags** `['architektur', 'beratung', 'bewilligungsverfahren', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten', 'zustandigkeit']`
 - **Metadata_created** `2025-07-01T05:30:55.317831`
-- **Metadata_modified** `2025-08-13T06:40:10.977279`
+- **Metadata_modified** `2025-08-16T06:39:49.631667`
 
 
 # Load packages

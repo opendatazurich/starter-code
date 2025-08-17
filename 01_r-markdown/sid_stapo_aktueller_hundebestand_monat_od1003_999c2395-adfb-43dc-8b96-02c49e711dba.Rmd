@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-13"
+date: "2025-08-17"
 output: html_document
 ---
 
@@ -40,9 +40,9 @@ Auto generated R starter code for data set sid_stapo_aktueller_hundebestand_mona
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bevölk­erung,Freizeit`
-- **Tags** `['alter', 'geschlecht', 'hunde', 'hundehaltende', 'hunderasse', 'monatsendbestand', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Tags** `['alter', 'geschlecht', 'hunde', 'hundehaltende', 'hunderasse', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-06-03T15:12:01.997984`
-- **Metadata_modified** `2025-08-13T10:30:34.725514`
+- **Metadata_modified** `2025-08-16T20:50:07.001462`
 
 
 # Load packages
