@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-17"
+date: "2025-08-24"
 output: html_document
 ---
 
@@ -57,7 +57,7 @@ Auto generated R starter code for data set sd_sod_beziehende_erz_finanzielle_hil
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['erzieherische-finanzielle-hilfe', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:43.674772`
-- **Metadata_modified** `2025-08-16T21:01:38.537329`
+- **Metadata_modified** `2025-08-23T21:09:42.566596`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-17"
+date: "2025-08-24"
 output: html_document
 ---
 
@@ -53,7 +53,7 @@ Auto generated R starter code for data set bau_neubau_gebart_rauminhalt_jahr_od5
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['gebaeude', 'gebaeudeart', 'rauminhalt', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'zeitreihe']`
 - **Metadata_created** `2022-04-26T12:44:30.990993`
-- **Metadata_modified** `2025-08-16T21:00:24.447199`
+- **Metadata_modified** `2025-08-23T21:08:13.386738`
 
 
 # Load packages

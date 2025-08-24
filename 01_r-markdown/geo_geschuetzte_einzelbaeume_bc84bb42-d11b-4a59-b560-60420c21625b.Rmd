@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-17"
+date: "2025-08-24"
 output: html_document
 ---
 
@@ -54,7 +54,7 @@ Auto generated R starter code for data set geo_geschuetzte_einzelbaeume.
 - **Keywords** `Umwelt`
 - **Tags** `['baum', 'freiraum', 'garten', 'geodaten', 'geoportal', 'punktdaten', 'schutz', 'stadtratsbeschluss', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:25:37.806300`
-- **Metadata_modified** `2025-08-16T06:39:44.133593`
+- **Metadata_modified** `2025-08-23T06:40:15.526876`
 
 
 # Load packages

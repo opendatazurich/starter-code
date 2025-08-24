@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-17"
+date: "2025-08-24"
 output: html_document
 ---
 
@@ -56,7 +56,7 @@ Auto generated R starter code for data set bev_monat_zuz_quartier_geschl_ag_herk
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'geschlecht', 'herkunft', 'migration', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe', 'zuzug']`
 - **Metadata_created** `2020-05-11T18:46:29.179112`
-- **Metadata_modified** `2025-08-16T20:46:39.296937`
+- **Metadata_modified** `2025-08-23T20:53:13.408498`
 
 
 # Load packages

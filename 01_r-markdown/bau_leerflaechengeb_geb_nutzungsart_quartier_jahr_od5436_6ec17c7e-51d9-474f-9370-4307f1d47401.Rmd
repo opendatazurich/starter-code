@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-17"
+date: "2025-08-24"
 output: html_document
 ---
 
@@ -46,7 +46,7 @@ Auto generated R starter code for data set bau_leerflaechengeb_geb_nutzungsart_q
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['leerflaechen', 'nichtwohnungsbau', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2021-11-22T20:02:16.321881`
-- **Metadata_modified** `2025-08-16T20:52:03.033743`
+- **Metadata_modified** `2025-08-23T20:58:44.780292`
 
 
 # Load packages
