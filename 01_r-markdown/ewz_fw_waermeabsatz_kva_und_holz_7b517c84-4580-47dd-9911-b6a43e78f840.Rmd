@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-24"
+date: "2025-08-31"
 output: html_document
 ---
 
@@ -16,9 +16,9 @@ Summe des Wärmeabsatzes aller Fernwärmebezüger pro Jahr in MWh
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_fw_waermeabsatz)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ewz_fw_waermeabsatz_kva_und_holz)
 
-Auto generated R starter code for data set erz_fw_waermeabsatz.
+Auto generated R starter code for data set ewz_fw_waermeabsatz_kva_und_holz.
 
 ## Metadata
 
@@ -27,8 +27,8 @@ Auto generated R starter code for data set erz_fw_waermeabsatz.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Energie`
 - **Tags** `['energie', 'fernwaerme']`
-- **Metadata_created** `2022-05-11T14:10:16.865237`
-- **Metadata_modified** `2025-08-23T16:10:45.578258`
+- **Metadata_created** `2025-08-29T13:55:01.807342`
+- **Metadata_modified** `2025-08-31T02:54:10.693294`
 
 
 # Load packages
@@ -41,7 +41,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/erz_fw_waermeabsatz/download/fw_waermeabsatz.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_waermeabsatz_kva_und_holz/download/fw_waermeabsatz_kva_und_holz.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

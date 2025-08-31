@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-24"
+date: "2025-08-31"
 output: html_document
 ---
 
@@ -21,9 +21,9 @@ Die Wärmepumpe Walche wurde Ende 2017 ausser Betrieb genommen.
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_fw_primaerenergiemix)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ewz_fw_primaerenergiemix_kva_und_holz)
 
-Auto generated R starter code for data set erz_fw_primaerenergiemix.
+Auto generated R starter code for data set ewz_fw_primaerenergiemix_kva_und_holz.
 
 ## Metadata
 
@@ -32,8 +32,8 @@ Auto generated R starter code for data set erz_fw_primaerenergiemix.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Energie`
 - **Tags** `['energie', 'fernwaerme', 'fernwarme-primarenergiemix']`
-- **Metadata_created** `2022-05-11T14:10:23.873322`
-- **Metadata_modified** `2025-08-23T16:10:55.555326`
+- **Metadata_created** `2025-08-29T13:55:05.884412`
+- **Metadata_modified** `2025-08-31T02:54:14.092372`
 
 
 # Load packages
@@ -46,7 +46,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/erz_fw_primaerenergiemix/download/fw_primaerenergiemix.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_primaerenergiemix_kva_und_holz/download/fw_primaerenergiemix_kva_und_holz.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

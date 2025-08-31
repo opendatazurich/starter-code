@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-24"
+date: "2025-08-31"
 output: html_document
 ---
 
@@ -51,7 +51,7 @@ Auto generated R starter code for data set geo_move_and_chill.
 - **Keywords** `Bevölk­erung,Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'larm', 'move-and-chill', 'punktdaten', 'sensoren', 'stzh', 'temperatur', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:17:03.025516`
-- **Metadata_modified** `2025-08-23T06:36:41.329692`
+- **Metadata_modified** `2025-08-30T06:37:03.052739`
 
 
 # Load packages
