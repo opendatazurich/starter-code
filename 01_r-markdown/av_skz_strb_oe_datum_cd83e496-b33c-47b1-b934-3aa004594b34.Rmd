@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-31"
+date: "2025-09-07"
 output: html_document
 ---
 
@@ -39,7 +39,7 @@ Auto generated R starter code for data set av_skz_strb_oe_datum.
 - **Keywords** `Politik,Ver­walt­ung`
 - **Tags** `['beschluss', 'geschaefte', 'regierung', 'sachdaten', 'stadtrat', 'strb', 'tabelle']`
 - **Metadata_created** `2025-04-22T07:44:13.088599`
-- **Metadata_modified** `2025-08-30T13:25:59.803877`
+- **Metadata_modified** `2025-09-06T13:25:27.123828`
 
 
 # Load packages

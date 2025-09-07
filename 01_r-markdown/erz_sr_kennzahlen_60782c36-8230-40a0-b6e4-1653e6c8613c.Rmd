@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-31"
+date: "2025-09-07"
 output: html_document
 ---
 
@@ -33,8 +33,8 @@ Auto generated R starter code for data set erz_sr_kennzahlen.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bevölk­erung,Ver­walt­ung`
 - **Tags** `['abfall', 'abfallbehalter', 'abfalleimer', 'kehricht', 'littering', 'siedlungsabfall', 'streusalz', 'wischgut']`
-- **Metadata_created** `2023-06-21T13:53:38.297366`
-- **Metadata_modified** `2025-08-30T16:10:42.090376`
+- **Metadata_created** `2025-09-02T16:10:14.692074`
+- **Metadata_modified** `2025-09-06T16:10:17.679502`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-31"
+date: "2025-09-07"
 output: html_document
 ---
 
@@ -72,7 +72,7 @@ Auto generated R starter code for data set geo_einzelbauten_und_einzelanlagen.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['afb-adresse', 'einzelanlagen', 'einzelbauten', 'geodaten', 'geoportal', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:22:31.622079`
-- **Metadata_modified** `2025-08-30T06:39:31.945233`
+- **Metadata_modified** `2025-09-06T06:39:50.388914`
 
 
 # Load packages

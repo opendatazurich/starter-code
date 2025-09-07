@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-31"
+date: "2025-09-07"
 output: html_document
 ---
 
@@ -28,7 +28,7 @@ Auto generated R starter code for data set ewz_fw_waermeuebergabestationen_kva_u
 - **Keywords** `Energie`
 - **Tags** `['energie', 'fernwaerme', 'fernwarme-warmeubergabestationen-wuest']`
 - **Metadata_created** `2025-08-29T13:55:03.831581`
-- **Metadata_modified** `2025-08-31T02:54:12.109454`
+- **Metadata_modified** `2025-09-07T02:51:24.777443`
 
 
 # Load packages

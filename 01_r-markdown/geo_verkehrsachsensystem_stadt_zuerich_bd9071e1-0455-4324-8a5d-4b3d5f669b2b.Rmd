@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-31"
+date: "2025-09-07"
 output: html_document
 ---
 
@@ -12,7 +12,7 @@ Das Verkehrsachsensystem stellt in Form von linearen Referenzen verschiedenartig
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Verkehrsachsensystem Stadt Zuerich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/178f6f5e-1754-46ba-8cbd-de1ff1ccc4ce).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Verkehrsachsensystem Stadt Zuerich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/1cdc84b4-5236-4816-afad-9d55b7557b7d).
 			   
 
 **Datenerfassung:**
@@ -31,7 +31,61 @@ ZVV-Linien
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Verkehrsachsensystem Stadt Zuerich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/178f6f5e-1754-46ba-8cbd-de1ff1ccc4ce).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Verkehrsachsensystem Stadt Zuerich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/1cdc84b4-5236-4816-afad-9d55b7557b7d).
+
+***VAS_SDE.VAS_E_STEIGUNG***: 
+
+Die Ereignistabelle Steigung liefert für jeden Abschnitt die mittlere Steigung in [%] zwischen dem Abschnittsbeginn und dessen Ende sowie die Höhen über Meer des Anfangs- und Endpunktes. Die Höheninformationen wurden mittels automatischem Interpolationsverfahren aus den Datensätzen DTM-AV und DOM ermittelt und im Bereich von Brücken, Passerellen und Tunnels manuell modifiziert. Die Höheninformationen weisen eine Genauigkeit von ±0.5 m auf.
+
+
+***VAS_SDE.VAS_E_VERKEHRSTRAEGER***: 
+
+Dieses zentrale Ereignis umfasst im Wesentlichen die Information, welcher Verkehr sich auf welchem Abschnitt abspielt. Diese Information und umfasst momentan die Verkehrsträger Tram, Bus sowie miV. Als Basis zur Erhebung diente der Lärmkataster sowie das Ereignis Fahrtrichtung.
+
+
+***VAS_SDE.VAS_E_KUNSTBAUTEN***: 
+
+Das Ereignis der Kunstbauten enthält alle Streckenabschnitte mit Brücken und
+Tunnels. Die Informationen stammen aus der Amtlichen Vermessung. Ereignis: Kunstbauten
+
+
+***VAS_SDE.VAS_E_RETTUNGSACHSEN***: 
+
+Das Ereignis der Rettungsachsen enthält alle Streckenabschnitte, die als Rettungsachsen definiert sind. Die Informationen stammen von Schutz &amp; Rettung Ereignis: Rettungsachsen.
+
+
+***vas_rettungsachsen_event***: 
+
+Diese View beinhaltet die Rettungsachsen. Die Informationen stammen von Schutz &amp; Rettung.
+Nur in der PostGIS-DB
+
+
+***vas_steigung_event***: 
+
+Die View Steigung liefert für jeden Abschnitt die mittlere Steigung in [%] zwischen dem Abschnittsbeginn und dessen Ende sowie die Höhen über Meer des Anfangs- und Endpunktes. Die Höheninformationen wurden mittels automatischem Interpolationsverfahren aus den Datensätzen DTM-AV und DOM ermittelt und im Bereich von Brücken, Passerellen und Tunnels manuell modifiziert. Die Höheninformationen weisen eine Genauigkeit von ±0.5 m auf.
+ Nur in der PostGIS-DB
+
+
+***VAS_SDE.VAS_ROUTE***: 
+
+Der Routendatensatz baut auf der Geometrie des Basisdatensatzes auf und umfasst pro Strassenname eine Achse (auch Route genannt) mit einem integrierten Masssystem (auch Kilometrierung genannt). Als eindeutige Kennung einer Route fungiert der &quot;Lokalisationsname&quot;. Die Kennung und die Kilometrierung ermöglichen es, jeden Punkt oder Abschnitt auf einer Route anhand seiner relativen Position eindeutig zu lokalisieren. Anmerkung: Der in diesem Zusammenhang verwendete Begriff &quot;Route&quot; hat nichts zu tun mit dem &quot;Routing&quot;-Verfahren zur Ermittlung einer Fahrtroute zwischen einem Start- und Zielpunkt.
+
+
+***VAS_SDE.VAS_BASIS***: 
+
+Der Basisdatensatz enthält sämtliche Verkehrsachsen der Stadt Zürich im Linienformat. Er wird in einem erweiterten Modell in der Amtlichen Vermessung verwaltet. Der Basisdatensatz ist zu vergleichen mit dem bestehenden Datensatz der Strassenabschnitte (Datenname GeoServer: GEOZ_SDE. AV_GEB_STRASSENSTUECK) wobei die Geometrie punktuell ergänzt oder bereinigt wird. Inhaltlich umfasst der Basisdatensatz sämtliche Verkehrsachsen des motorisierten Individualverkehrs, des motorisierten öffentlichen Verkehrs, sowie der Trams.
+
+
+***vas_verkehrstraeger_event***: 
+
+Diese View umfasst im Wesentlichen die Information, welcher Verkehr sich auf welchem Abschnitt abspielt. Diese Information und umfasst momentan die Verkehrsträger Tram, Bus sowie miV. Als Basis zur Erhebung diente der Lärmkataster sowie das Ereignis Fahrtrichtung.
+ Nur in der PostGIS-DB
+
+
+***vas_etappe3_strb_event***: 
+
+Diese View beinhaltet die Informationen zur 3. Etappe der Strassenlärmsanierung: Welche Temporegime sind geplant, um die Zürcher Bevölkerung von übermässigem Lärm zu schützen.
+
 
 ***vas_tempo_ist_event***: 
 
@@ -80,76 +134,11 @@ Dieses Ereignis liefert die Information über den Belagstyp.
 Nur in der PostGIS-DB
 
 
-***VAS_SDE.VAS_E_STEIGUNG***: 
-
-Die Ereignistabelle Steigung liefert für jeden Abschnitt die mittlere Steigung in [%] zwischen dem Abschnittsbeginn und dessen Ende sowie die Höhen über Meer des Anfangs- und Endpunktes. Die Höheninformationen wurden mittels automatischem Interpolationsverfahren aus den Datensätzen DTM-AV und DOM ermittelt und im Bereich von Brücken, Passerellen und Tunnels manuell modifiziert. Die Höheninformationen weisen eine Genauigkeit von ±0.5 m auf.
-
-
-***VAS_SDE.VAS_E_VERKEHRSTRAEGER***: 
-
-Dieses zentrale Ereignis umfasst im Wesentlichen die Information, welcher Verkehr sich auf welchem Abschnitt abspielt. Diese Information und umfasst momentan die Verkehrsträger Tram, Bus sowie miV. Als Basis zur Erhebung diente der Lärmkataster sowie das Ereignis Fahrtrichtung.
-
-
-***VAS_SDE.VAS_E_KUNSTBAUTEN***: 
-
-Das Ereignis der Kunstbauten enthält alle Streckenabschnitte mit Brücken und
-Tunnels. Die Informationen stammen aus der Amtlichen Vermessung. Ereignis: Kunstbauten
-
-
-***VAS_SDE.VAS_E_RETTUNGSACHSEN***: 
-
-Das Ereignis der Rettungsachsen enthält alle Streckenabschnitte, die als Rettungsachsen definiert sind. Die Informationen stammen von Schutz &amp; Rettung Ereignis: Rettungsachsen.
-
-
-***vas_rettungsachsen_event***: 
-
-Diese View beinhaltet die Rettungsachsen. Die Informationen stammen von Schutz &amp; Rettung.
-Nur in der PostGIS-DB
-
-
-***vas_steigung_event***: 
-
-Die View Steigung liefert für jeden Abschnitt die mittlere Steigung in [%] zwischen dem Abschnittsbeginn und dessen Ende sowie die Höhen über Meer des Anfangs- und Endpunktes. Die Höheninformationen wurden mittels automatischem Interpolationsverfahren aus den Datensätzen DTM-AV und DOM ermittelt und im Bereich von Brücken, Passerellen und Tunnels manuell modifiziert. Die Höheninformationen weisen eine Genauigkeit von ±0.5 m auf.
- Nur in der PostGIS-DB
-
-
-***vas_strassenlaermemissio_event***: 
-
-Diese View beinhaltet die Strassenlaerme-missionen (gemäss Lärmschutzverordnung LSV) ausgewählter Verkehrsabschnitte der Stadt Zürich. Zum Strassenlärm wird gemäss LSV der Motorfahrzeugverkehr (inkl. motorisiertem öffentlichen Verkehr) sowie der Tramverkehr, wo dieser nicht auf einem separaten Trasse verläuft, gezählt. Die Emissionen wurden gemäss dem eidgenössischen Strassenlärmberechnungsmodell &quot;StL86+&quot; berechnet. 
-Nur in der PostGIS-DB
-
-
-***VAS_SDE.VAS_E_STRASSENLAERMEMISSION***: 
-
-Der Datensatz beinhaltet die Strassenlaerme-missionen (gemäss Lärmschutzverordnung LSV) ausgewählter Verkehrsabschnitte der Stadt Zürich. Zum Strassenlärm wird gemäss LSV der Motorfahrzeugverkehr (inkl. motorisiertem öffentlichen Verkehr) sowie der Tramverkehr, wo dieser nicht auf einem separaten Trasse verläuft, gezählt. Die Emissionen wurden gemäss dem eidgenössischen Strassenlärmberechnungsmodell &quot;StL86+&quot; berechnet.
-
-
-***VAS_SDE.VAS_ROUTE***: 
-
-Der Routendatensatz baut auf der Geometrie des Basisdatensatzes auf und umfasst pro Strassenname eine Achse (auch Route genannt) mit einem integrierten Masssystem (auch Kilometrierung genannt). Als eindeutige Kennung einer Route fungiert der &quot;Lokalisationsname&quot;. Die Kennung und die Kilometrierung ermöglichen es, jeden Punkt oder Abschnitt auf einer Route anhand seiner relativen Position eindeutig zu lokalisieren. Anmerkung: Der in diesem Zusammenhang verwendete Begriff &quot;Route&quot; hat nichts zu tun mit dem &quot;Routing&quot;-Verfahren zur Ermittlung einer Fahrtroute zwischen einem Start- und Zielpunkt.
-
-
-***VAS_SDE.VAS_BASIS***: 
-
-Der Basisdatensatz enthält sämtliche Verkehrsachsen der Stadt Zürich im Linienformat. Er wird in einem erweiterten Modell in der Amtlichen Vermessung verwaltet. Der Basisdatensatz ist zu vergleichen mit dem bestehenden Datensatz der Strassenabschnitte (Datenname GeoServer: GEOZ_SDE. AV_GEB_STRASSENSTUECK) wobei die Geometrie punktuell ergänzt oder bereinigt wird. Inhaltlich umfasst der Basisdatensatz sämtliche Verkehrsachsen des motorisierten Individualverkehrs, des motorisierten öffentlichen Verkehrs, sowie der Trams.
-
-
-***vas_verkehrstraeger_event***: 
-
-Diese View umfasst im Wesentlichen die Information, welcher Verkehr sich auf welchem Abschnitt abspielt. Diese Information und umfasst momentan die Verkehrsträger Tram, Bus sowie miV. Als Basis zur Erhebung diente der Lärmkataster sowie das Ereignis Fahrtrichtung.
- Nur in der PostGIS-DB
-
-
-***vas_etappe3_strb_event***: 
-
-Diese View beinhaltet die Informationen zur 3. Etappe der Strassenlärmsanierung: Welche Temporegime sind geplant, um die Zürcher Bevölkerung von übermässigem Lärm zu schützen.
-
-
 
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/178f6f5e-1754-46ba-8cbd-de1ff1ccc4ce.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/1cdc84b4-5236-4816-afad-9d55b7557b7d.png)
 
 
 
@@ -165,7 +154,7 @@ Auto generated R starter code for data set geo_verkehrsachsensystem_stadt_zueric
 - **Keywords** `Mobilität`
 - **Tags** `['achsen', 'ereignisse', 'geodaten', 'geoportal', 'liniendaten', 'punktdaten', 'stzh', 'verkehr']`
 - **Metadata_created** `2023-11-06T03:07:06.765308`
-- **Metadata_modified** `2025-08-30T06:32:10.293540`
+- **Metadata_modified** `2025-09-06T06:32:14.962736`
 
 
 # Load packages

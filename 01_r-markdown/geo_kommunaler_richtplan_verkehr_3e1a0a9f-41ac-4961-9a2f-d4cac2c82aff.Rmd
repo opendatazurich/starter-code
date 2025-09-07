@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-08-31"
+date: "2025-09-07"
 output: html_document
 ---
 
@@ -58,7 +58,7 @@ Auto generated R starter code for data set geo_kommunaler_richtplan_verkehr.
 - **Keywords** `Mobilität,Umwelt,Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten', 'verkehr']`
 - **Metadata_created** `2023-11-06T03:06:52.114006`
-- **Metadata_modified** `2025-08-30T06:41:43.385187`
+- **Metadata_modified** `2025-09-06T06:41:09.050084`
 
 
 # Load packages
