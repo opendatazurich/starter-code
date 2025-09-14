@@ -1,18 +1,20 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-07"
+date: "2025-09-14"
 output: html_document
 ---
 
 ## Dataset: Fernwärme, jährlich abonnierte Leistung
 
-<![CDATA[
 Summe der gemäss den Wärmelieferungsverträgen abonnierten Leistung in MW pro Jahr im Wärmeverbund KVA und Holz.
-]]>
 
 **Abonnierte Leistung in MW**
 
-Summe der gemäss den Wärmelieferungsverträgen abonnierten Leistung in MW pro Jahr
+Summe der gemäss den Wärmelieferungsverträgen abonnierten Leistung in MW pro Jahr im Wärmeverbundes KVA und Holz
+
+**Wärmeverbund KVA und Holz**
+
+[Link](https://www.ewz.ch/de/geschaeftskunden/immobilien/referenzen-projekte/waermeverbund-kva-holz.html)
 
 
 
@@ -25,10 +27,10 @@ Auto generated R starter code for data set ewz_fw_abonnierte_leistung_kva_und_ho
 - **Publisher** `Energielösungen Q, Elektrizitätswerk der Stadt Zürich, Departement der Industriellen Betriebe`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
-- **Keywords** `Energie`
-- **Tags** `['energie', 'fernwaerme', 'fernwarme-leistung']`
-- **Metadata_created** `2025-08-29T13:30:16.931475`
-- **Metadata_modified** `2025-09-07T02:51:34.925138`
+- **Keywords** `Bevölkerung,Energie`
+- **Tags** `['Fernwärme Leistung', 'energie', 'fernwaerme']`
+- **Metadata_created** `2025-09-10T15:09:38.952591`
+- **Metadata_modified** `2025-09-13T15:03:33.672461`
 
 
 # Load packages
@@ -41,7 +43,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_abonnierte_leistung_kva_und_holz/download/fw_abonnierte_leistung_kva_und_holz.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_abonnierte_leistung_kva_und_holz/download/ewz_fw_abonnierte_leistung_kva_holz.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

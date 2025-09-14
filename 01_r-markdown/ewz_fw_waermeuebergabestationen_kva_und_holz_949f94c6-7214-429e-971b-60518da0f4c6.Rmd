@@ -1,18 +1,20 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-07"
+date: "2025-09-14"
 output: html_document
 ---
 
 ## Dataset: Fernwärme, Anzahl Wärmeübergabestationen
 
-<![CDATA[
-Anzahl der in den Fernwärmegebieten von KVA und Holz aktiven Wärmeübergabestationen pro Jahr
-]]>
+Anzahl der aktiven Wärmeübergabestationen im Wärmeverbund KVA und Holz pro Jahr
 
 **Anzahl Wärmeübergabestationen**
 
-Ab 2020 wurden nur noch die Wärmeübergabestationen für die Berechnung der Anzahl verwendet, die direkt an das Fernwärmenetz der Stadt Zürich angeschlossen sind. Sekundär angeschlossene Wärmeübergabestationen werden nicht mehr berücksichtigt.
+Ab 2020 wurden nur noch die Wärmeübergabestationen im Wärmeverbund KVA und Holz für die Berechnung der Anzahl verwendet, die direkt an das Fernwärmenetz der Stadt Zürich angeschlossen sind. Sekundär angeschlossene Wärmeübergabestationen werden nicht mehr berücksichtigt.
+
+**Wärmeverbund KVA und Holz**
+
+[Link](https://www.ewz.ch/de/geschaeftskunden/immobilien/referenzen-projekte/waermeverbund-kva-holz.html)
 
 
 
@@ -26,9 +28,9 @@ Auto generated R starter code for data set ewz_fw_waermeuebergabestationen_kva_u
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Energie`
-- **Tags** `['energie', 'fernwaerme', 'fernwarme-warmeubergabestationen-wuest']`
-- **Metadata_created** `2025-08-29T13:55:03.831581`
-- **Metadata_modified** `2025-09-07T02:51:24.777443`
+- **Tags** `[' energie', 'Wärmeübergabestationen WUEST', 'fernwaerme', 'sachdaten', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-09-10T15:14:46.916707`
+- **Metadata_modified** `2025-09-13T23:13:28.650163`
 
 
 # Load packages
@@ -41,7 +43,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_waermeuebergabestationen_kva_und_holz/download/fw_waermeuebergabestationen_kva_und_holz.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_waermeuebergabestationen_kva_und_holz/download/ewz_fw_waermeuebergabestationen_kva_und_holz.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

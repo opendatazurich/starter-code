@@ -1,0 +1,87 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-09-14"
+output: html_document
+---
+
+## Dataset: Anzahl Einzelberatungen beim Laufbahnzentrum nach Jahr, Geschlecht und Altersgruppe
+
+Anzahl Beratungsfälle des Laufbahnzentrums der Stadt Zürich nach Jahr, Geschlecht und Altersgruppe.
+
+**Zählmethodik:**
+
+Die Methodik für die Zählweise, insbesondere bei der Altersklasse «bis 15», hat seit 2022 geändert.
+
+[]()
+
+**Laufbahnzentrum der Stadt Zürich:**
+
+Weitere Informationen zum [**Laufbahnzentrum der Stadt Zürich**](https://www.stadt-zuerich.ch/laufbahnzentrum) finden Sie im städtischen Webauftritt.
+
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sd_lbz_einzelberatungen_alter_geschlecht_jahr)
+
+Auto generated R starter code for data set sd_lbz_einzelberatungen_alter_geschlecht_jahr.
+
+## Metadata
+
+- **Publisher** `Laufbahnzentrum, Sozialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Arbeit und Erwerb,Bevölk­erung,Soziales`
+- **Tags** `['beratung', 'beruf', 'berufsberatung', 'erwerb', 'sachdaten', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-09-12T14:04:59.555781`
+- **Metadata_modified** `2025-09-13T20:51:19.763215`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sd_lbz_einzelberatungen_alter_geschlecht_jahr/download/sd_lbz_einzelberatungen_alter_geschlecht_jahr.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

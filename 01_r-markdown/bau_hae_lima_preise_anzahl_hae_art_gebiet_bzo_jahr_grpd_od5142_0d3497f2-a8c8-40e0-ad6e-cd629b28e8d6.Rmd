@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-07"
+date: "2025-09-14"
 output: html_document
 ---
 
@@ -50,7 +50,7 @@ Auto generated R starter code for data set bau_hae_lima_preise_anzahl_hae_art_ge
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bauzonen', 'bodenpreis', 'handaenderungen', 'liegenschaftenhandel', 'lima', 'median', 'quadratmeterpreis', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-09-07T14:26:14.684948`
-- **Metadata_modified** `2025-09-06T21:10:22.535558`
+- **Metadata_modified** `2025-09-13T20:59:35.920248`
 
 
 # Load packages

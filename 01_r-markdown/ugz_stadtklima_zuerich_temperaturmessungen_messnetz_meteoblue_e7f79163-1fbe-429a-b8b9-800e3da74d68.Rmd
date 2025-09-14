@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-07"
+date: "2025-09-14"
 output: html_document
 ---
 
@@ -59,7 +59,7 @@ Auto generated R starter code for data set ugz_stadtklima_zuerich_temperaturmess
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['hitze', 'kaelte', 'messwerte', 'meteo', 'meteoblue', 'sachdaten', 'stadtklima', 'tabelle', 'temperatur', 'wetter', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:15:25.001905`
-- **Metadata_modified** `2025-09-07T02:45:52.999868`
+- **Metadata_modified** `2025-09-14T02:45:32.529225`
 
 
 # Load packages

@@ -1,14 +1,12 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-07"
+date: "2025-09-14"
 output: html_document
 ---
 
 ## Dataset: Fernwärme, Primärenergiemix
 
-<![CDATA[
-Anteil der Primärenergien Kehricht, Holz, Wärmepumpe, Erdgas und Heizöl in MWh pro Jahr im Fernwärmeverbund KVA und Holz
-]]>
+Anteil der Primärenergien Kehricht, Holz, Wärmepumpe, Erdgas und Heizöl in MWh pro Jahr im Wärmeverbund KVA und Holz.
 
 **Primärenergiemix**
 
@@ -18,6 +16,10 @@ Die Wärmepumpe Walche wurde Ende 2017 ausser Betrieb genommen.
 
 - 1. Kehricht_MWh: KVA Josefstrasse bis März 2021
 - 2. Erdgas_MWh und Heizoel_MWh: Wirkungsgrad Heizkessel ~ 90%
+
+**Wärmeverbund KVA und Holz**
+
+[Link](https://www.ewz.ch/de/geschaeftskunden/immobilien/referenzen-projekte/waermeverbund-kva-holz.html)
 
 
 
@@ -31,9 +33,9 @@ Auto generated R starter code for data set ewz_fw_primaerenergiemix_kva_und_holz
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Energie`
-- **Tags** `['energie', 'fernwaerme', 'fernwarme-primarenergiemix']`
-- **Metadata_created** `2025-08-29T13:55:05.884412`
-- **Metadata_modified** `2025-09-07T02:51:26.930226`
+- **Tags** `['fernwaerme', 'primärenergiemix', 'sachdaten', 'tabelle', 'wärme', 'zeitreihe']`
+- **Metadata_created** `2025-09-10T15:04:22.196168`
+- **Metadata_modified** `2025-09-13T13:13:30.581832`
 
 
 # Load packages
@@ -46,7 +48,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_primaerenergiemix_kva_und_holz/download/fw_primaerenergiemix_kva_und_holz.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/ewz_fw_primaerenergiemix_kva_und_holz/download/ewz_fw_primaerenergiemix_kva_und_holz.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {
