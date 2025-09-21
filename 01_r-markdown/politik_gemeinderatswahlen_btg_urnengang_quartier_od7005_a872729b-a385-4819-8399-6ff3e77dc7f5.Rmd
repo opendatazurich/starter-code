@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-14"
+date: "2025-09-21"
 output: html_document
 ---
 
@@ -40,7 +40,7 @@ Auto generated R starter code for data set politik_gemeinderatswahlen_btg_urneng
 - **Keywords** `Politik`
 - **Tags** `['gemeinderatswahlen', 'politik', 'sachdaten', 'sasa', 'tabelle', 'urnengang', 'wahlbeteiligung', 'wahlen', 'zeitreihe']`
 - **Metadata_created** `2019-07-29T13:25:02.608238`
-- **Metadata_modified** `2025-09-13T20:56:45.517426`
+- **Metadata_modified** `2025-09-20T20:57:16.408385`
 
 
 # Load packages

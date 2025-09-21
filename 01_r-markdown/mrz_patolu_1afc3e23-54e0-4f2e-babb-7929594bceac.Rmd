@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-14"
+date: "2025-09-21"
 output: html_document
 ---
 
@@ -46,10 +46,10 @@ Auto generated R starter code for data set mrz_patolu.
 - **Publisher** `Museum Rietberg, Präsidialdepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
-- **Keywords** ``
-- **Tags** `['Design', 'Doppel-Ikat', 'Gujarat', 'Indien', 'Muster', 'Sari', 'Seide', 'Textilien']`
+- **Keywords** `Freizeit,Kultur,Tour­is­mus`
+- **Tags** `['Design', 'Doppel-Ikat', 'Gujarat', 'Indien', 'Muster', 'Sari', 'Seide', 'Textilien', 'github']`
 - **Metadata_created** `2021-11-23T10:53:04.383586`
-- **Metadata_modified** `2025-09-13T16:23:34.740063`
+- **Metadata_modified** `2025-09-20T16:24:08.345671`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-14"
+date: "2025-09-21"
 output: html_document
 ---
 
@@ -8,7 +8,7 @@ output: html_document
 
 Seit 1859 legt der Stadtrat mit dem jährlich erscheinenden Geschäftsbericht der Gemeinde Rechenschaft über seine Tätigkeit ab.
 
-**Hinweis: **
+**Hinweis:**
 
 Die [Geschäftsberichte](https://www.stadt-zuerich.ch/geschaeftsbericht) sind auch auf der Webseite der Stadt Zürich verfügbar. Dort können alle Geschäftsberichte im Volltext durchsucht werden.
 
@@ -24,9 +24,9 @@ Auto generated R starter code for data set sar_geschaeftsberichte.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Politik,Ver­walt­ung`
-- **Tags** `['archiv', 'archivdaten', 'geschaeftsbericht', 'geschichte', 'glam', 'openglam', 'stadtrat']`
+- **Tags** `['archiv', 'archivdaten', 'geschaeftsbericht', 'geschichte', 'github', 'glam', 'openglam', 'stadtrat']`
 - **Metadata_created** `2020-09-16T14:33:25.462772`
-- **Metadata_modified** `2025-09-08T05:30:26.449962`
+- **Metadata_modified** `2025-09-18T11:27:57.584254`
 
 
 # Load packages

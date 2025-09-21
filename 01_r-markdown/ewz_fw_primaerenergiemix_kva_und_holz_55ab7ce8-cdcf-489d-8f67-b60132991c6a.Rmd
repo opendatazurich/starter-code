@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-14"
+date: "2025-09-21"
 output: html_document
 ---
 
@@ -33,9 +33,9 @@ Auto generated R starter code for data set ewz_fw_primaerenergiemix_kva_und_holz
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Energie`
-- **Tags** `['fernwaerme', 'primärenergiemix', 'sachdaten', 'tabelle', 'wärme', 'zeitreihe']`
+- **Tags** `['fernwaerme', 'gitlab', 'primärenergiemix', 'sachdaten', 'tabelle', 'wärme', 'zeitreihe']`
 - **Metadata_created** `2025-09-10T15:04:22.196168`
-- **Metadata_modified** `2025-09-13T13:13:30.581832`
+- **Metadata_modified** `2025-09-20T13:13:32.378192`
 
 
 # Load packages

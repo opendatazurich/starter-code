@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-14"
+date: "2025-09-21"
 output: html_document
 ---
 
@@ -50,7 +50,7 @@ Auto generated R starter code for data set sd_sod_sozialhilfequote_stadtquartier
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['quartier', 'sachdaten', 'sozialhilfe', 'sozialhilfequote', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-10-09T07:39:12.651664`
-- **Metadata_modified** `2025-09-13T21:02:23.705596`
+- **Metadata_modified** `2025-09-20T21:02:40.392708`
 
 
 # Load packages
