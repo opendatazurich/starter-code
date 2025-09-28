@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-21"
+date: "2025-09-28"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_stadttunnel.
 - **Keywords** `Bauen und Wohnen,Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stadttunnel', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:23:47.839279`
-- **Metadata_modified** `2025-09-20T06:39:29.225619`
+- **Metadata_modified** `2025-09-27T06:39:01.093122`
 
 
 # Load packages

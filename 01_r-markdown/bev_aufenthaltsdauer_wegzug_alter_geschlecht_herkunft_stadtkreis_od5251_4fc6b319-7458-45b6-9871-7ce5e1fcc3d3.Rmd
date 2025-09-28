@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-21"
+date: "2025-09-28"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ Auto generated R starter code for data set bev_aufenthaltsdauer_wegzug_alter_ges
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'aufenthaltsdauer', 'durchschnitt', 'geschlecht', 'herkunft', 'median', 'mittelwert', 'quartil', 'sachdaten', 'sasa', 'tabelle', 'wegzug', 'zeitreihe']`
 - **Metadata_created** `2020-01-09T13:56:10.332110`
-- **Metadata_modified** `2025-09-20T21:07:40.301503`
+- **Metadata_modified** `2025-09-27T21:04:31.500324`
 
 
 # Load packages
