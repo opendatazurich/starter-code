@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-28"
+date: "2025-10-05"
 output: html_document
 ---
 
@@ -38,7 +38,7 @@ Auto generated R starter code for data set geo_amtshaus.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['amtshaus', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten', 'verwaltung']`
 - **Metadata_created** `2023-11-06T03:19:55.504256`
-- **Metadata_modified** `2025-09-27T06:37:40.092536`
+- **Metadata_modified** `2025-10-03T06:37:42.730072`
 
 
 # Load packages

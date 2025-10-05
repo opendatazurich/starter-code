@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-28"
+date: "2025-10-05"
 output: html_document
 ---
 
@@ -23,7 +23,7 @@ Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelme
 
 2D-Daten:
 -	Baumkataster: fortlaufende Nachführung von Bäumen mit Kontrollverantwortung GSZ, Einmessung im Feld oder Eintrag am Bildschirm
--	swissTLM3D: wiederkehrende Berechnung, ca. alle 6-7 Jahre (druch swisstopo)
+-	swissTLM3D: wiederkehrende Berechnung, ca. alle 6-7 Jahre (durch swisstopo)
 -	Lidar: wiederkehrende Befliegung, ca. alle 4 Jahre, DOM und DTM vom Kanton Zürich, aufbereitet durch GSZ
 
 3D-Daten:
@@ -73,7 +73,7 @@ Auto generated R starter code for data set geo_bauminventar.
 - **Keywords** `Umwelt`
 - **Tags** `['baumhohe', 'baumkataster', 'baumstandorte', 'geodaten', 'geoportal', 'lidar', 'polygondaten', 'punktdaten', 'stadtbegrunung', 'stzh', 'swisstlm3d', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:20:10.978677`
-- **Metadata_modified** `2025-09-27T06:37:45.757158`
+- **Metadata_modified** `2025-10-03T06:37:48.342344`
 
 
 # Load packages

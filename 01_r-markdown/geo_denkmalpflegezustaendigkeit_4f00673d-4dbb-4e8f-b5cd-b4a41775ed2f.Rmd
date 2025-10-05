@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-28"
+date: "2025-10-05"
 output: html_document
 ---
 
@@ -13,7 +13,7 @@ Die Zuständigkeit für Denkmalpflegeobjekte in der Stadt Zürich ist aufgeteilt
 **Genereller Hinweis zum Geodatensatz:**
 
 
-Weitere Informationen zu diesem Datensatz finden sie unter [«**Denkmalpflegezuständigkeit»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/9bc114a2-67cc-4f0f-8abe-c044e3e679f9).				
+Weitere Informationen zu diesem Datensatz finden sie unter [«**Denkmalpflegezuständigkeit»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/493a9c3c-1235-418d-af83-1bb007b756d0).				
 			   
 
 **Datenerfassung:**
@@ -29,7 +29,7 @@ Attribute: gemäss Angaben des Amts für Städtebau, Denkmalpflege
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/9bc114a2-67cc-4f0f-8abe-c044e3e679f9.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/493a9c3c-1235-418d-af83-1bb007b756d0.png)
 
 
 
@@ -45,7 +45,7 @@ Auto generated R starter code for data set geo_denkmalpflegezustaendigkeit.
 - **Keywords** `Basis­karten,Bauen und Wohnen`
 - **Tags** `['amt-fur-stadtebau', 'denkmalpflege', 'denkmalschutzobjekte', 'geodaten', 'geoportal', 'inventar', 'kanton-zurich', 'polygondaten', 'stzh', 'vektordaten', 'zustandigkeit']`
 - **Metadata_created** `2023-11-06T03:09:48.170106`
-- **Metadata_modified** `2025-09-27T06:33:04.304121`
+- **Metadata_modified** `2025-10-03T06:33:05.366697`
 
 
 # Load packages

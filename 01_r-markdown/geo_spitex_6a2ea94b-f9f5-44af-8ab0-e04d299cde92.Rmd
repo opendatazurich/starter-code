@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-28"
+date: "2025-10-05"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_spitex.
 - **Keywords** `Bevölk­erung,Ge­sund­heit`
 - **Tags** `['geodaten', 'geoportal', 'pflege', 'punktdaten', 'spitex', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:08:14.710480`
-- **Metadata_modified** `2025-09-27T06:32:27.922366`
+- **Metadata_modified** `2025-10-03T06:32:28.363054`
 
 
 # Load packages

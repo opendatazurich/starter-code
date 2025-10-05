@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-09-28"
+date: "2025-10-05"
 output: html_document
 ---
 
@@ -50,7 +50,7 @@ Auto generated R starter code for data set geo_stillgewaesserinventar.
 - **Keywords** `Bevölk­erung,Umwelt,Ver­walt­ung`
 - **Tags** `['amphibien', 'artenschutz', 'bauberatung', 'baukoordination', 'biodiversitat', 'biotop', 'fauna', 'fliessgewasser', 'geodaten', 'geoportal', 'geschiebefang', 'geschiebesammler', 'gewasser', 'libellen', 'natur', 'polygondaten', 'schutz', 'stzh', 'teich', 'vektordaten', 'wasserbecken']`
 - **Metadata_created** `2023-11-06T03:22:39.234421`
-- **Metadata_modified** `2025-09-27T06:38:39.976581`
+- **Metadata_modified** `2025-10-03T06:38:44.245097`
 
 
 # Load packages
