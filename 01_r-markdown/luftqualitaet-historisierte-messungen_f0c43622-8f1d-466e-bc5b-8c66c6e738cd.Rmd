@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-05"
+date: "2025-10-12"
 output: html_document
 ---
 
@@ -60,7 +60,7 @@ Auto generated R starter code for data set luftqualitaet-historisierte-messungen
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['co2', 'feinstaub', 'globalstrahlung', 'klima', 'kohlenmonoxid', 'luft', 'luftdruck', 'luftfeuchte', 'lufttemperatur', 'messwerte', 'niederschlag', 'ozon', 'regen', 'regendauer', 'sachdaten', 'schadstoffe', 'schwefeldioxid', 'stickstoffdioxid', 'tabellen', 'temperatur', 'twist2018', 'wetter', 'wind', 'windgeschwindigkeit', 'zeitreihe']`
 - **Metadata_created** `2019-07-30T14:50:05.348251`
-- **Metadata_modified** `2025-10-03T20:55:07.969452`
+- **Metadata_modified** `2025-10-11T20:54:37.794554`
 
 
 # Load packages

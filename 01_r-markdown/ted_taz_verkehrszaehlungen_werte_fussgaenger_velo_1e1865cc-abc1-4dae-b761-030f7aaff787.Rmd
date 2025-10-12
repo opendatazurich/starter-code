@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-05"
+date: "2025-10-12"
 output: html_document
 ---
 
@@ -55,7 +55,7 @@ Auto generated R starter code for data set ted_taz_verkehrszaehlungen_werte_fuss
 - **Keywords** `Freizeit,Mobilität,Umwelt`
 - **Tags** `['digitale-transparenz-im-oeffentlichen-raum', 'dtoer', 'fussgaengerzaehlung', 'fussverkehr', 'langsamverkehr', 'messwerte', 'planung', 'punktdaten', 'sachdaten', 'standort', 'veloverkehr', 'velozaehlung', 'zaehlung']`
 - **Metadata_created** `2020-03-16T12:37:39.927543`
-- **Metadata_modified** `2025-10-04T01:37:29.318943`
+- **Metadata_modified** `2025-10-12T03:31:16.146344`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-05"
+date: "2025-10-12"
 output: html_document
 ---
 
@@ -24,9 +24,9 @@ Auto generated R starter code for data set erz_abfallmenge_energie_khkw.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Energie,Umwelt`
-- **Tags** `['abfall', 'energie-strom', 'energie-warme', 'reststoffe']`
-- **Metadata_created** `2021-08-10T14:17:38.485224`
-- **Metadata_modified** `2025-10-03T16:10:48.705846`
+- **Tags** `['Abfall', 'Energie', 'Energie Strom', 'Reststoffe', 'Wärme', 'gitlab', 'sachdaten', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-10-06T13:21:54.794694`
+- **Metadata_modified** `2025-10-09T06:18:58.509919`
 
 
 # Load packages
@@ -39,7 +39,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/erz_abfallmenge_energie_khkw/download/abfallmenge_energie_khkw.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/erz_abfallmenge_energie_khkw/download/erz_abfallmenge_energie_khkw.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

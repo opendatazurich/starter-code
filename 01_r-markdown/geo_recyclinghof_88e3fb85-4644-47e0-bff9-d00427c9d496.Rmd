@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-05"
+date: "2025-10-12"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_recyclinghof.
 - **Keywords** `Ver­walt­ung`
 - **Tags** `['abfall', 'cargo', 'geodaten', 'geoportal', 'punktdaten', 'sammelstelle', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:13:34.945646`
-- **Metadata_modified** `2025-10-03T06:35:02.426368`
+- **Metadata_modified** `2025-10-11T06:34:48.453488`
 
 
 # Load packages
