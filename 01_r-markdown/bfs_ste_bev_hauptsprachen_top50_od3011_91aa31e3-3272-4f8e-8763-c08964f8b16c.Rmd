@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-12"
+date: "2025-10-15"
 output: html_document
 ---
 
@@ -63,7 +63,7 @@ Auto generated R starter code for data set bfs_ste_bev_hauptsprachen_top50_od301
 - **Keywords** `Bevölk­erung`
 - **Tags** `['sachdaten', 'sasa', 'sprache', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-07-29T13:23:21.945577`
-- **Metadata_modified** `2025-10-11T20:55:49.227872`
+- **Metadata_modified** `2025-10-15T06:59:27.749382`
 
 
 # Load packages

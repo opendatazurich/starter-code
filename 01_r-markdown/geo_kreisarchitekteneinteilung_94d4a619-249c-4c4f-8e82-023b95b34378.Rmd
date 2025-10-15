@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-12"
+date: "2025-10-15"
 output: html_document
 ---
 
@@ -58,7 +58,7 @@ Auto generated R starter code for data set geo_kreisarchitekteneinteilung.
 - **Keywords** `Basis­karten,Bauen und Wohnen`
 - **Tags** `['afb', 'baubewilligungen', 'baugesuche', 'geodaten', 'geoportal', 'kreisarchitekten', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:17:09.826771`
-- **Metadata_modified** `2025-10-11T06:36:13.932800`
+- **Metadata_modified** `2025-10-15T06:36:22.061071`
 
 
 # Load packages

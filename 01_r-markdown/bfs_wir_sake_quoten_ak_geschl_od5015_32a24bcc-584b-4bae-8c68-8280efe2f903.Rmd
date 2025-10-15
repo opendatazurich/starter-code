@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-12"
+date: "2025-10-15"
 output: html_document
 ---
 
@@ -60,7 +60,7 @@ Auto generated R starter code for data set bfs_wir_sake_quoten_ak_geschl_od5015.
 - **Keywords** `Arbeit und Erwerb`
 - **Tags** `['alter-geschlecht', 'anteil', 'arbeit-erwerb', 'erwerbstaetigkeit', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-08-12T15:08:32.388133`
-- **Metadata_modified** `2025-10-11T21:01:30.131539`
+- **Metadata_modified** `2025-10-15T07:05:11.930339`
 
 
 # Load packages

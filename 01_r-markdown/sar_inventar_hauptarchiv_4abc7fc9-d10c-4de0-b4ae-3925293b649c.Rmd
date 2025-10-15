@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-12"
+date: "2025-10-15"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set sar_inventar_hauptarchiv.
 - **Keywords** `Politik,Ver­walt­ung`
 - **Tags** `['archiv', 'archivdaten', 'geschichte', 'glam', 'openglam', 'stadtrat']`
 - **Metadata_created** `2025-06-04T11:22:37.634721`
-- **Metadata_modified** `2025-10-03T18:15:08.729539`
+- **Metadata_modified** `2025-10-14T08:01:41.922888`
 
 
 # Load packages

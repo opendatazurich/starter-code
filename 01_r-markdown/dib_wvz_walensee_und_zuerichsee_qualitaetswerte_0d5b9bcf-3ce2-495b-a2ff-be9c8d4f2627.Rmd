@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-12"
+date: "2025-10-15"
 output: html_document
 ---
 
@@ -33,7 +33,7 @@ Auto generated R starter code for data set dib_wvz_walensee_und_zuerichsee_quali
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['chemie', 'mikrobiologie', 'mikroverunreinigungen', 'sachdaten', 'spurenstoffe', 'tabelle', 'walensee', 'wasserqualitaet', 'zeitreihe', 'zuerichsee']`
 - **Metadata_created** `2025-01-29T12:23:20.202128`
-- **Metadata_modified** `2025-10-11T13:10:22.434846`
+- **Metadata_modified** `2025-10-14T13:53:22.505124`
 
 
 # Load packages
