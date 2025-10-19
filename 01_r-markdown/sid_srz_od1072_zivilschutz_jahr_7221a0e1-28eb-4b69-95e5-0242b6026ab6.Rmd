@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-15"
+date: "2025-10-19"
 output: html_document
 ---
 
@@ -22,7 +22,7 @@ Auto generated R starter code for data set sid_srz_od1072_zivilschutz_jahr.
 - **Keywords** `Ge­sund­heit,Ver­walt­ung`
 - **Tags** `['gesundheit', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe', 'zivilschutz']`
 - **Metadata_created** `2024-12-01T11:17:13.736779`
-- **Metadata_modified** `2025-10-15T04:30:21.735505`
+- **Metadata_modified** `2025-10-18T10:30:24.663238`
 
 
 # Load packages

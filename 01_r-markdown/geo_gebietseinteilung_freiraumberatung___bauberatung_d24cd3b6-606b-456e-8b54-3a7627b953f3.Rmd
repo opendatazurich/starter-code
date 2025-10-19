@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-15"
+date: "2025-10-19"
 output: html_document
 ---
 
@@ -57,7 +57,7 @@ Auto generated R starter code for data set geo_gebietseinteilung_freiraumberatun
 - **Keywords** `Basis­karten`
 - **Tags** `['__', 'baugesuche', 'freiraumberatung', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2025-04-05T04:30:46.973503`
-- **Metadata_modified** `2025-10-15T06:33:39.053906`
+- **Metadata_modified** `2025-10-18T06:33:46.214571`
 
 
 # Load packages

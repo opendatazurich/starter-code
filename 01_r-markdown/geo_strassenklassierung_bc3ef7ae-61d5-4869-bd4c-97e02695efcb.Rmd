@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-15"
+date: "2025-10-19"
 output: html_document
 ---
 
@@ -54,7 +54,7 @@ Auto generated R starter code for data set geo_strassenklassierung.
 - **Keywords** ``
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:18:27.683841`
-- **Metadata_modified** `2025-10-15T06:36:57.333164`
+- **Metadata_modified** `2025-10-18T06:37:42.108660`
 
 
 # Load packages
