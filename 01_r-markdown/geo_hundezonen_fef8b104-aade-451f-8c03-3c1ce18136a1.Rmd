@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-19"
+date: "2025-10-26"
 output: html_document
 ---
 
@@ -32,13 +32,13 @@ Auto generated R starter code for data set geo_hundezonen.
 
 ## Metadata
 
-- **Publisher** `Artenförderung und Schutzgebiete, Grün Stadt Zürich, Tiefbau- und Entsorgungsdepartement`
+- **Publisher** `Produkteverantw.  & Unterstützungsfunk., Grün Stadt Zürich, Tiefbau- und Entsorgungsdepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'hundezonen', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2024-09-12T04:30:42.600354`
-- **Metadata_modified** `2025-08-15T06:37:00.654852`
+- **Metadata_modified** `2025-10-25T06:37:17.288650`
 
 
 # Load packages

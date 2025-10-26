@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-19"
+date: "2025-10-26"
 output: html_document
 ---
 
@@ -31,7 +31,7 @@ Auto generated R starter code for data set ewz_fw_primaerenergiefaktor_kva_und_h
 - **Keywords** `Energie`
 - **Tags** `['energie ', 'fernwaerme', 'gitlab', 'primärenergiefaktor', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-09-10T15:13:14.820061`
-- **Metadata_modified** `2025-10-17T12:54:50.906046`
+- **Metadata_modified** `2025-10-23T14:30:17.948267`
 
 
 # Load packages

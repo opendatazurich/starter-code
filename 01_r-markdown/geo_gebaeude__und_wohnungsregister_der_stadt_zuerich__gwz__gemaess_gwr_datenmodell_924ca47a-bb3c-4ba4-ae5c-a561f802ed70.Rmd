@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-19"
+date: "2025-10-26"
 output: html_document
 ---
 
@@ -89,7 +89,7 @@ Auto generated R starter code for data set geo_gebaeude__und_wohnungsregister_de
 - **Keywords** `Bauen und Wohnen,Energie,Umwelt`
 - **Tags** `['gebaude', 'gebaudealter', 'gebaudeart', 'gebaudeeingange', 'geodaten', 'geoportal', 'heizungsart', 'punktdaten', 'sasa', 'stzh', 'vektordaten', 'wohnungen', 'wohnungsflache', 'zimmerzahl']`
 - **Metadata_created** `2023-11-06T03:13:02.987852`
-- **Metadata_modified** `2025-10-18T06:40:20.939154`
+- **Metadata_modified** `2025-10-25T06:34:56.944335`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-19"
+date: "2025-10-26"
 output: html_document
 ---
 
@@ -77,7 +77,7 @@ Auto generated R starter code for data set ugz_verkehrsdaten_stundenwerte_roseng
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['echtzeit', 'fahrzeugtypen', 'miv', 'mobilitaet', 'sachdaten', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:19:07.949357`
-- **Metadata_modified** `2025-10-19T03:49:41.865187`
+- **Metadata_modified** `2025-10-22T15:50:27.636004`
 
 
 # Load packages

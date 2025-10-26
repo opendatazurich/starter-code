@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-19"
+date: "2025-10-26"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_friedhofkreise.
 - **Keywords** `Basis­karten`
 - **Tags** `['friedhof', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:03:21.933337`
-- **Metadata_modified** `2025-10-18T06:30:55.302273`
+- **Metadata_modified** `2025-10-25T06:30:53.250349`
 
 
 # Load packages

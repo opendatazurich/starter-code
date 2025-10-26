@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-19"
+date: "2025-10-26"
 output: html_document
 ---
 
@@ -46,7 +46,7 @@ Auto generated R starter code for data set sd_sod_fachstelle_elternschaft_unterh
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['beratung', 'elternschaft', 'fachstelle', 'feu', 'jugend', 'jugendhilfe', 'kinder', 'kinderhilfe', 'sachdaten', 'sozialhilfe', 'tabelle', 'unterhalt', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:23.392684`
-- **Metadata_modified** `2025-10-18T20:56:45.348715`
+- **Metadata_modified** `2025-10-25T20:50:23.236449`
 
 
 # Load packages

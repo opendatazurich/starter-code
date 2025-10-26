@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-19"
+date: "2025-10-26"
 output: html_document
 ---
 
@@ -26,7 +26,7 @@ Auto generated R starter code for data set prd_ssz_ogd_katalog_inventar.
 - **Keywords** `Ver­walt­ung`
 - **Tags** `['github', 'katalog', 'metadaten', 'uebersicht']`
 - **Metadata_created** `2024-02-14T16:04:50.023524`
-- **Metadata_modified** `2025-10-19T00:17:07.238386`
+- **Metadata_modified** `2025-10-26T00:17:32.847062`
 
 
 # Load packages
