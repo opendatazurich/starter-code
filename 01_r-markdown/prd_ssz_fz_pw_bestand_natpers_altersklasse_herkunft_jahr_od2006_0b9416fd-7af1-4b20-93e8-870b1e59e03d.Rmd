@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-26"
+date: "2025-11-02"
 output: html_document
 ---
 
@@ -48,7 +48,7 @@ Auto generated R starter code for data set prd_ssz_fz_pw_bestand_natpers_altersk
 - **Keywords** `Energie,Mobilität,Umwelt`
 - **Tags** `['alter', 'auto', 'fahrzeugbestand', 'herkunft', 'motorfahrzeugbestand', 'motorisierung', 'motorrad', 'personenwagen', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2025-02-12T20:57:11.539376`
-- **Metadata_modified** `2025-10-25T20:50:21.466223`
+- **Metadata_modified** `2025-11-01T20:55:00.011501`
 
 
 # Load packages

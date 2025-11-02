@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-26"
+date: "2025-11-02"
 output: html_document
 ---
 
@@ -72,7 +72,7 @@ Auto generated R starter code for data set geo_oeffentlich_zugaengliche_parkplae
 - **Keywords** `Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2025-07-17T05:30:51.548091`
-- **Metadata_modified** `2025-10-25T06:40:51.208473`
+- **Metadata_modified** `2025-11-01T06:39:03.910447`
 
 
 # Load packages

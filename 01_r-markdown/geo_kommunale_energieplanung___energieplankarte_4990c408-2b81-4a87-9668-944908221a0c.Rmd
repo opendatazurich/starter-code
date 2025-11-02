@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-10-26"
+date: "2025-11-02"
 output: html_document
 ---
 
@@ -132,7 +132,7 @@ Auto generated R starter code for data set geo_kommunale_energieplanung___energi
 - **Keywords** `Bauen und Wohnen,Energie,Ver­walt­ung`
 - **Tags** `['energie', 'energie-aus-gereinigtem-abwasser', 'energieplankarte', 'energieplanung', 'energieversorgung', 'erneuerbar-heizen', 'fernwarme', 'fernwarmeversorgung', 'geodaten', 'geoportal', 'heizen', 'holzheizkraftwerk', 'kalteversorgung', 'kehrichtheizkraftwerk', 'klarwerk', 'leitungsgebundene-energieversorgung', 'liniendaten', 'netto-null', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten', 'warmeversorgung']`
 - **Metadata_created** `2023-11-06T03:09:07.772381`
-- **Metadata_modified** `2025-10-25T06:32:52.310045`
+- **Metadata_modified** `2025-11-01T06:32:33.220285`
 
 
 # Load packages
