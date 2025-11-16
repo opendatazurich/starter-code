@@ -1,0 +1,84 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Beton bei städtischen Gebäuden
+
+Beton bei städtischen Gebäuden nach Betontyp.
+
+**Beton (Bezeichnungen in Anlehnung an SIA 2030)**
+
+(Primärbeton: Beton aus überwiegend natürlicher Gesteinskörnung (Kies, Sand).
+Recyclingbeton RC-C: Beton aus mindestens 25% recyklierter Gesteinskörnung aus aufbereitetem Betonabbruch (z.B. Beton, Betonprodukte, Mörtel).
+Recyclingbeton RC-M: Beton aus mindestens 10% recyklierter Gesteinskörnung aus aufbereitetem Mischabbruch (z.B. Mauerziegel, Kalksandsteine).
+
+Berechnung: Jährliche Auswertung der verbauten Betonmengen im 1000 Kubikmeter (m3) durch Amt für Hochbauten.
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/hdb_ahb_staedtische_gebaeude_beton)
+
+Auto generated R starter code for data set hdb_ahb_staedtische_gebaeude_beton.
+
+## Metadata
+
+- **Publisher** `Amt für Hochbauten, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen,Umwelt`
+- **Tags** `['klima', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-11-06T11:43:12.293092`
+- **Metadata_modified** `2025-11-15T21:30:57.203592`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/hdb_ahb_staedtische_gebaeude_beton/download/UMW108OD1083.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

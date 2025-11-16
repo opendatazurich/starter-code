@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -38,7 +38,7 @@ Auto generated R starter code for data set sid_stapo_hundebestand_od1001.
 - **Keywords** `Bevölk­erung,Freizeit`
 - **Tags** `['alter', 'geschlecht', 'hunde', 'hundehaltende', 'hunderasse', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-09-29T06:57:59.653162`
-- **Metadata_modified** `2025-11-01T10:51:14.958048`
+- **Metadata_modified** `2025-11-15T11:15:48.458304`
 
 
 # Load packages

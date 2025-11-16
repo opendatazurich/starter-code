@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -45,7 +45,7 @@ Auto generated R starter code for data set geo_gebietseinteilung_der_evangelisch
 - **Keywords** `Basis­karten`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:12:00.120710`
-- **Metadata_modified** `2025-11-01T06:33:42.020914`
+- **Metadata_modified** `2025-11-15T06:33:28.386998`
 
 
 # Load packages

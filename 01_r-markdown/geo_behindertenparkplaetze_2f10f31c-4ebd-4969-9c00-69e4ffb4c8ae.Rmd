@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -38,7 +38,7 @@ Auto generated R starter code for data set geo_behindertenparkplaetze.
 - **Keywords** `Mobilität`
 - **Tags** `['behindert', 'behindertenausweis', 'behindertenparkplatze', 'gehbehinderte', 'geodaten', 'geoportal', 'punktdaten', 'rollstuhl', 'rollstuhlparkplatze', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:25:12.029303`
-- **Metadata_modified** `2025-08-15T06:39:44.765785`
+- **Metadata_modified** `2025-11-08T06:28:47.890478`
 
 
 # Load packages

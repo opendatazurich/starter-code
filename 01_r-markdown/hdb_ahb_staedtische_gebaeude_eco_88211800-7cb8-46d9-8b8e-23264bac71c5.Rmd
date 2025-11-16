@@ -1,0 +1,105 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: ECO-Standard bei städtischen Gebäuden
+
+ECO-Standard bei städtischen Gebäuden nach Bauprojekttyp.
+
+**Neubau (gemäss SIA 2032)**
+
+Neu erstelltes Gebäude inkl. Anbauten und Aufstockungen von bestehenden Gebäuden.
+ 
+
+[]()
+
+**Instandsetzung (gemäss SIA 2032)**
+
+Neu erstelltes Gebäude inkl. Anbauten und Aufstockungen von bestehenden Gebäuden.
+ 
+
+[]()
+
+**Energiebezugsfläche (gemäss SIA 380)**
+
+Summe aller ober- und unterirdischen Geschossflächen, die innerhalb der thermischen Gebäudehülle liegen und für deren Nutzung eine Konditionierung notwendig ist.
+ 
+
+[]()
+
+**Eco-Standard**
+
+ECO (strengste Anforderung): Der Zusatz ECO (ECO-Nachweis) steht für flexible und kreislauffähige Gebäude, die wenig Treibhausgasemissionen in der Erstellung verursachen, mit ökologischen Baumaterialien erstellt werden und über ein gesundes Innenraumklima verfügen.
+QS-ECO: Das QS-ECO (Qualitätssicherung nach ECO) gelangt zur Anwendung, wenn ein Gebäude nicht mit einem regulären ECO-Nachweis zertifiziert werden kann.
+ECO-BKP: Die ECO-BKP-Merkblätter konzentrieren sich auf Anforderungen an ökologische Baumaterialien.
+
+Berechnung: Jährliche Auswertung der ECO-Nachweise durch Amt für Hochbauten.
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/hdb_ahb_staedtische_gebaeude_eco)
+
+Auto generated R starter code for data set hdb_ahb_staedtische_gebaeude_eco.
+
+## Metadata
+
+- **Publisher** `Amt für Hochbauten, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen,Umwelt`
+- **Tags** `['klima', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-11-06T11:43:05.745111`
+- **Metadata_modified** `2025-11-15T21:07:44.983420`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/hdb_ahb_staedtische_gebaeude_eco/download/UMW108OD1084.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

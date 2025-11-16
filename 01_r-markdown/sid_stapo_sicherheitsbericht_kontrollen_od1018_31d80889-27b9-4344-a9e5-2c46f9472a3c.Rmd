@@ -1,0 +1,94 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Anzahl Kontrollen nach Kontrollart
+
+Anzahl Personenkontrollen, Verkehrskontrollen und Velokontrollen durch die Stadtpolizei Zürich.
+
+**Personenkontrollen**
+
+Der Begriff Personenkontrolle umfasst einerseits die polizeirechtliche Kontrolle gemäss § 21 PolG und andererseits die strafprozessuale polizeiliche Anhaltung gemäss Art. 215 Strafprozessordnung.
+Personenkontrollen sind polizeiliche Zwangsmassnahmen, da dabei vorübergehend Grundrechte eingeschränkt werden. Die betroffene Person muss gegebenenfalls gegen ihren Willen polizeiliche Massnahmen erdulden (ID-Feststellung, Befragung, eventuell Durchsuchung der Effekten). 
+
+Anzahl Personenkontrollen der Stadtpolizei (Auswertung Mobil-Applikation Personenkontrolle).
+
+[]()
+
+**Verkehrskontrollen (Motorisierter Individualverkehr)**
+
+Gesamtzahl der Verkehrskontrollen - ohne Schwerpunkt Velo.
+
+[]()
+
+**Velokontrollen**
+
+Gesamtzahl der Kontrollen mit Schwerpunkt Velo (Sicherheit, Verkehrsregeln).
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_kontrollen_od1018)
+
+Auto generated R starter code for data set sid_stapo_sicherheitsbericht_kontrollen_od1018.
+
+## Metadata
+
+- **Publisher** `Stadtpolizei Zürich, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Kri­mi­na­li­tät`
+- **Tags** `['kriminalitaet', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-11-10T16:03:56.545168`
+- **Metadata_modified** `2025-11-15T10:30:10.994218`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_kontrollen_od1018/download/RCH101OD1018.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

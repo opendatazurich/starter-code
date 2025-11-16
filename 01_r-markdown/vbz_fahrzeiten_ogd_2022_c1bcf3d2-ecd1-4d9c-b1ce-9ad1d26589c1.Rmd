@@ -1,0 +1,128 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Fahrzeiten 2022 der VBZ im SOLL-IST-Vergleich (Nachführung eingestellt)
+
+Diese Daten ermöglichen einen sehr genauen Vergleich zwischen den geplanten (SOLL) und den effektiv erfolgten (IST) Fahrzeiten jedes Fahrzeugs der Verkehrsbetriebe Zürich (VBZ). Die Haltestellenankünfte und -abfahrten jedes Fahrzeugs auf seiner Linie wird sekundengenau gemessen.
+
+Wir publizieren jede Woche einen neuen Datensatz  zu den geplanten (SOLL) und effektiven (IST) Fahrzeiten, da das Datenvolumen sonst schnell zu gross wird. Ein Datensatz einer Woche umfasst rund 250 MB. Die Dateinamen zeigen den Zeitraum der Fahrzeitenvergleiche an: «Fahrzeiten_SOLL_IST_***VON-DATUM***_***BIS-DATUM***.csv». 
+
+Die beiden Tabellen ***Haltepunkt.csv*** und ***Haltestelle.csv*** sind Matchingtabellen.
+
+Hier finden Sie die Daten des Jahres **2022**. Die wöchentlich nachgeführten Fahrzeiten der vergangenen Jahre (seit 2015) finden sie in den Datasets «[**Fahrzeiten *[JAHR]* der VBZ im SOLL-IST-Vergleich (Nachführung eingestellt)**](https://data.stadt-zuerich.ch/dataset?q=%22SOLL-IST-Vergleich%22&sort=title_string+desc)».
+
+
+**VBZ-Github-Repository:**
+
+
+Um die Arbeit mit den OGD der VBZ einfacher zu gestalten, haben die VBZ ein eigenes [**Github-Repository**](https://github.com/VerkehrsbetriebeZuerich ) erstellt.
+Darin finden Sie Anwendungsbeispiele und insbesondere Beispielcodes, wie mit den Daten in R oder mit Python gearbeitet werden kann. Siehe dazu die Repos:
+
+- [**OGD-Beispielcode mit R**](https://github.com/VerkehrsbetriebeZuerich/ogd_examples_R)
+- [**OGD-Beispielcode mit Python**](https://github.com/VerkehrsbetriebeZuerich/ogd_examples_python)
+
+
+
+[]()
+
+**Datenbankschema:**
+
+![Datenbankschema](https://www.stadt-zuerich.ch/content/dam/web/de/politik-verwaltung/statistik-und-daten/open-government-data/bilder_nwa/datenkatalog/vbz/DB_schema.png)
+				
+
+[]()
+
+**Matchingtabellen:**
+
+Die beiden Tabellen «***Haltestelle.csv***» und «***Haltepunkt.csv***» dienen als Matchingtabellen. Damit können die wöchentlichen SOLL- und  IST-Werte der Fahrzeiten mit weiteren Detailinformationen angereichert werden.
+
+Als **Fremdschlüssel** dienen dabei die Attribute «`halt_punkt_id_von`» und «`halt_punkt_id_nach`».
+
+[]()
+
+**Koordinatenangaben:**
+
+Die Koordinatenangaben in der Tabelle «***Haltepunkt.csv***» wurden aus den ursprünglichen GPS-Koordinaten berechnet.
+
+
+[]()
+
+**Aktualität:**
+
+Die aktuellsten Messungen liegen 1-2 Wochen zurück. Die Datenupdates finden Sonntags statt. Daher ist die zeitliche Verzögerung Sonntags jeweils eine und Samstags jeweils zwei Wochen nach der letzten Messung des aktuellsten Datensatzes.
+
+[]()
+
+**Weitere Daten (GTFS) für Zürich:**
+
+Die VBZ publiziert ihre statischen [GTFS-Daten](https://developers.google.com/transit/gtfs/) auch auf diesem Datenkatalog unter  «[ZVV Fahrplan Tram und Bus (Static GTFS)](https://data.stadt-zuerich.ch/dataset/vbz_fahrplandaten_gtfs)». Siehe dazu auch der Verweis auf die schweizweiten GTFS-Daten, auch in Realtime (!).
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/vbz_fahrzeiten_ogd_2022)
+
+Auto generated R starter code for data set vbz_fahrzeiten_ogd_2022.
+
+## Metadata
+
+- **Publisher** `Verkehrsbetriebe Zürich, Departement der Industriellen Betriebe`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Mobilität`
+- **Tags** `['bus', 'hackzurich', 'offentlicher-verkehr', 'punktlichkeit', 'sachdaten', 'tabelle', 'tram', 'vbz', 'verspatung']`
+- **Metadata_created** `2025-11-05T13:38:24.694338`
+- **Metadata_modified** `2025-11-06T06:35:21.830650`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/vbz_fahrzeiten_ogd_2022/download/Fahrzeiten_SOLL_IST_20220410_20220416.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

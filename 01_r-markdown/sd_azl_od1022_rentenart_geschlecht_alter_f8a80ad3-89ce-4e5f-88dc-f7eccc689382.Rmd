@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -47,7 +47,7 @@ Auto generated R starter code for data set sd_azl_od1022_rentenart_geschlecht_al
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['alter', 'geschlecht', 'rentenart', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe', 'zusatzleistungen']`
 - **Metadata_created** `2025-08-04T07:06:39.971893`
-- **Metadata_modified** `2025-11-01T20:51:15.278861`
+- **Metadata_modified** `2025-11-15T21:10:11.205336`
 
 
 # Load packages

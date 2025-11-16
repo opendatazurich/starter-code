@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_krematorium.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['geodaten', 'geoportal', 'krematorium', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:27:54.421247`
-- **Metadata_modified** `2025-08-15T06:40:55.943040`
+- **Metadata_modified** `2025-11-08T06:29:35.512683`
 
 
 # Load packages

@@ -1,0 +1,112 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Gebäudebestand der Stadt Zürich, tagesaktuelle Einzeldaten gemäss GWR-Modell
+
+Der vorliegende Datensatz enthält täglich aktualisierte Informationen zu allen Gebäuden in der Stadt Zürich, gemäss dem GWR-Datenmodell.
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+**GWR-Datenmodell:**
+
+Die hier zur Verfügung gestellten Daten stammen aus dem **Gebäude- und Wohnungsregister der Stadt Züirich** (GWZ), entsprechen strukturell jedoch dem vom **Eidgenössischen Gebäude- und Wohnungsregister** (GWR) definierten Datenmodell. 
+
+Im GWR werden nebst den schweizweit eindeutigen Gebäude- und Wohnungsidentifikatoren (EGID bzw. EWID) die wichtigsten Grunddaten wie z.B. Adresse, Standortkoordinaten, Baujahr, Anzahl Geschosse, Gebäudeart, Gebäudefläche, Heizungsart, Anzahl Wohnungen für die Gebäude geführt. Für die Wohnungen beispielsweise die Anzahl Zimmer und die Wohnungsfläche. Weitere Information zum GWR-Datenmodell finden Sie unter:
+
+ - [Merkmalskatalog 4.2 (PDF)](https://www.housing-stat.ch/files/881-2200.pdf)
+ - [Online Merkmalskatalog 4.2](https://www.housing-stat.ch/de/help/42.html)
+ - oder generell auf der [GWR-Webseite des BFS](https://www.housing-stat.ch/de/index.html)
+
+
+
+
+[]()
+
+**Links zu den weiteren GWR-Enitäten als CSV:**
+
+Die **weiteren GWR-Entitäten** der Gebäudeeingänge und der Wohnungen finden Sie unter:
+
+- [**Wohnungsbestand der Stadt Zürich**](https://data.stadt-zuerich.ch/dataset/bau_gwr_wohnungen_best_od5503)
+- [**Gebäudeeingänge der Stadt Zürich**](https://data.stadt-zuerich.ch/dataset/bau_gwr_gebeingaenge_best_od5502)
+
+[]()
+
+**GWZ-Daten der Stadt Zürich als Geodaten:**
+
+Wenn Sie die Gebäudeeingänge, den Gebäude- und Wohungsbestand in Geodatenformaten benötigen, können Sie diese direkt beziehen über den Datensatz [«**Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell**»](https://data.stadt-zuerich.ch/dataset/geo_gebaeude__und_wohnungsregister_der_stadt_zuerich__gwz__gemaess_gwr_datenmodell)
+
+[]()
+
+**Hinweis:**
+
+Die Daten beziehen sich auf den tagesaktuellen Bestand der Gebäude, Eingänge und Wohnungen. Der Datenbestand wird laufend, basierend auf Meldungen zur Bautätigkeit (Neubau, Umbau, Umnutzung, Abbruch) nachgeführt. Dadurch verändert sich dieser Bestand laufend, weshalb er täglich vollständig ersetzt wird. Ein Zeitverlauf ist in diesen Daten nicht ersichtlich.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_gwr_gebaeude_best_od5501)
+
+Auto generated R starter code for data set bau_gwr_gebaeude_best_od5501.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, GWZ`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen`
+- **Tags** `['bauperiode', 'einzeldaten', 'energietraeger', 'gebaeude', 'gebaeudealter', 'gebaeudeart', 'gebaeudebestand', 'gebaeudeflaeche', 'gwr', 'gwz', 'heizungsart', 'punktdaten', 'rauminhalt', 'sachdaten', 'sasa', 'stzh', 'tabelle', 'zimmerzahl']`
+- **Metadata_created** `2025-11-04T09:25:46.297352`
+- **Metadata_modified** `2025-11-15T21:24:14.065948`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bau_gwr_gebaeude_best_od5501/download/BAU550OD5501.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,0 +1,83 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Anzahl Ordnungsbussen nach dem Betäubungsmittelgesetz
+
+Anzahl Ordnungsbussen nach dem Betäubungsmittelgesetz in der Stadt Zürich
+
+**Ordnungsbussen:**
+
+
+Anzahl Ordnungsbussen nach Art. 28b ff. Betäubungsmittelgesetz.
+
+Am 6. September 2017 hat das Bundesgericht in einem Entscheid bestätigt, dass der Besitz < 10 Gramm Cannabis straffrei ist. Mit Urteil vom 2. Juli 2019 hat das Bundesgericht festgehalten, dass der blosse Besitz von weniger als zehn Gramm Cannabis auch bei Jugendlichen nicht strafbar ist.
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_ordnungsbussen_betmg_od1011)
+
+Auto generated R starter code for data set sid_stapo_sicherheitsbericht_ordnungsbussen_betmg_od1011.
+
+## Metadata
+
+- **Publisher** `Stadtpolizei Zürich, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Kri­mi­na­li­tät`
+- **Tags** `['kriminalitaet', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-11-10T16:04:02.093452`
+- **Metadata_modified** `2025-11-15T10:30:28.724045`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_ordnungsbussen_betmg_od1011/download/RCH101OD1011.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

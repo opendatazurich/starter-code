@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -60,7 +60,7 @@ Auto generated R starter code for data set geo_velonetzplanung.
 - **Keywords** `Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'stzh', 'vektordaten', 'velo', 'velonetz', 'vorzougsrouten']`
 - **Metadata_created** `2023-11-06T03:26:47.821494`
-- **Metadata_modified** `2025-08-15T06:40:29.216457`
+- **Metadata_modified** `2025-11-08T06:29:16.779655`
 
 
 # Load packages

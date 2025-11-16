@@ -1,0 +1,101 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Minergie bei städtischen Gebäuden
+
+Minergie bei städtischen Gebäuden nach Bauprojekttyp.
+
+**Neubau (gemäss SIA 2032)**
+
+Neu erstelltes Gebäude inkl. Anbauten und Aufstockungen von bestehenden Gebäuden.
+ 
+
+[]()
+
+**Instandsetzung (gemäss SIA 2032)**
+
+Neu erstelltes Gebäude inkl. Anbauten und Aufstockungen von bestehenden Gebäuden.
+ 
+
+[]()
+
+**Energiebezugsfläche (gemäss SIA 380)**
+
+Summe aller ober- und unterirdischen Geschossflächen, die innerhalb der thermischen Gebäudehülle liegen und für deren Nutzung eine Konditionierung notwendig ist.
+ 
+
+[]()
+
+**Minergie**
+
+Schweizer Baustandard für Komfort, Effizienz und Klimaschutz – sowohl bei Neubauten als auch bei Sanierungen. Es gibt drei Gebäudestandards für Energieeffizienz: Minergie (Basis), Minergie-P (optimale Gebäudehülle mit maximaler Energieeffizienz), Minergie-A (maximale Unabhängigkeit vom Stromnetz) . 
+ 
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/hdb_ahb_staedtische_gebaeude_minergie)
+
+Auto generated R starter code for data set hdb_ahb_staedtische_gebaeude_minergie.
+
+## Metadata
+
+- **Publisher** `Amt für Hochbauten, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bauen und Wohnen,Umwelt`
+- **Tags** `['klima', 'minergie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-11-06T11:43:09.949164`
+- **Metadata_modified** `2025-11-15T21:28:11.892963`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/hdb_ahb_staedtische_gebaeude_minergie/download/UMW108OD1081.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

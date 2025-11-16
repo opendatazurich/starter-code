@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -39,7 +39,7 @@ Auto generated R starter code for data set bev_partnerschaft_avg-alter_geschl_od
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'durchschnitt', 'eingetragene-partnerschaft', 'geschlecht', 'mittelwert', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-01-15T20:52:29.350102`
-- **Metadata_modified** `2025-11-01T20:51:18.755611`
+- **Metadata_modified** `2025-11-15T21:10:13.258571`
 
 
 # Load packages

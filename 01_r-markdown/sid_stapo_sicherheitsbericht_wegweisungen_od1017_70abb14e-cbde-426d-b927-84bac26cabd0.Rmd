@@ -1,0 +1,103 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Wegweisungen
+
+Anzahl Wegweisungen gemäss Polizeigesetz des Kantons Zürich durch die Stadtpolizei Zürich.
+
+**Wegweisungen (allgemein)**
+
+Wegweisung gemäss Polizeigesetz des Kantons Zürich (§§ 33 f. PolG).
+
+Die Wegweisung ist eine polizeirechtliche Massnahme. Die rechtliche Grundlage dafür bildet das Polizeigesetz (PolG) des Kantons Zürich, das seit dem 1. Juli 2009 in Kraft ist. Mit der Wegweisung kann die Polizei einer Person verbieten, für eine gewisse Dauer eine bestimmte Örtlichkeit zu betreten bzw. sich dort aufzuhalten.
+Die Wegweisung bezweckt in erster Linie die Verhinderung von Szenenbildungen (z. B. in Parks oder an VBZ-Haltestellen), der Strassenprostitution in nicht zulässigen Gebieten und des Betäubungsmittelhandels auf öffentlichem Grund. Sie dient ausserdem dazu, Gewalttätigkeiten, kriminelle Handlungen sowie Nutzungskonflikte im öffentlichen Raum zu verhindern.
+Das Gesetz definiert die Voraussetzungen (§§ 33 f. PolG) für eine Wegweisung abschliessend. Grundsätzlich muss eine Gefährdung von Personen oder der öffentlichen Sicherheit und Ordnung vorliegen. Auch bei einer Behinderung von Einsatz- und Rettungskräften kann eine Wegweisung ausgesprochen werden. Eine Wegweisung muss zudem dem Verhältnismässigkeitsprinzip (§ 10 PolG) genügen. 
+
+Wegweisungen werden im Polizei-Informationssystem POLIS festgehalten.
+
+[]()
+
+**Wegweisung 1**
+
+Die Wegweisung 1 erfolgt mündlich und bezieht sich auf eine bestimmte Örtlichkeit (zum Beispiel auf eine Parkanlage oder Strassenzug), die der oder die Betroffene während einer bestimmten Zeit (mindestens 4, höchstens 24 Stunden) nicht betreten darf.
+
+[]()
+
+**Wegweisung 2**
+
+Wegweisungen 2 werden schriftlich auf einer Polizeidienststelle verfügt, wenn sich jemand nicht an eine vorher ausgesprochene mündliche Anordnung hält. Sie gelten während 24 Stunden. Die betroffene Person wird aufgrund des Verstosses gegen die Wegweisung 1 nach Art. 4 der allgemeinen Polizeiverordnung zur Anzeige gebracht.
+
+[]()
+
+**Wegweisung 3**
+
+Wegweisungen 3 erfolgen unter Strafandrohung entweder direkt im Zusammenhang mit Betäubungsmittelhandel beziehungsweise typischen Beschaffungsdelikten oder wegen wiederholt missachteten Wegweisungen der Stufen 1 oder 2. Sie können für maximal 14 Tage ausgesprochen werden und gelten ebenfalls für definierte Gebiete.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_wegweisungen_od1017)
+
+Auto generated R starter code for data set sid_stapo_sicherheitsbericht_wegweisungen_od1017.
+
+## Metadata
+
+- **Publisher** `Stadtpolizei Zürich, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Kri­mi­na­li­tät`
+- **Tags** `['kriminalitaet', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-11-10T16:04:00.678224`
+- **Metadata_modified** `2025-11-15T10:30:19.924737`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_wegweisungen_od1017/download/RCH101OD1017.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

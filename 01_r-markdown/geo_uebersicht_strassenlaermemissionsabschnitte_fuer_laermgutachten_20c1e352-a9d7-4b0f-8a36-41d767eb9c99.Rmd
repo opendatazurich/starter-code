@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-02"
+date: "2025-11-16"
 output: html_document
 ---
 
@@ -51,7 +51,7 @@ Auto generated R starter code for data set geo_uebersicht_strassenlaermemissions
 - **Keywords** `Ge­sund­heit,Mobilität,Umwelt,Ver­walt­ung`
 - **Tags** `['emissionsabschnitte', 'geodaten', 'geoportal', 'larm', 'larmgutachten', 'liniendaten', 'strassenemission', 'strassenlarm', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:24:16.227611`
-- **Metadata_modified** `2025-11-01T06:38:11.676835`
+- **Metadata_modified** `2025-11-15T06:37:32.537376`
 
 
 # Load packages

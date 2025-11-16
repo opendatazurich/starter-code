@@ -1,0 +1,80 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2025-11-16"
+output: html_document
+---
+
+## Dataset: Hate Crime
+
+Anzahl Hate Crime Ereignisse
+
+**Hate Crime:**
+
+
+Anzahl POLIS-Journaleinträge mit Ereignis Hate Crime (5 Unterkategorien)
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_hate_crime_od1012)
+
+Auto generated R starter code for data set sid_stapo_sicherheitsbericht_hate_crime_od1012.
+
+## Metadata
+
+- **Publisher** `Stadtpolizei Zürich, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Kri­mi­na­li­tät`
+- **Tags** `['kriminalitaet', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2025-11-10T16:04:06.312535`
+- **Metadata_modified** `2025-11-15T11:15:50.551329`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_stapo_sicherheitsbericht_hate_crime_od1012/download/RCH101OD1012.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch
