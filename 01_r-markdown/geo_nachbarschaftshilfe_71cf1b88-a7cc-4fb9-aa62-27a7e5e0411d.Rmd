@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-16"
+date: "2025-11-23"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_nachbarschaftshilfe.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['geodaten', 'geoportal', 'punktdaten', 'quartiere', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:15:42.679296`
-- **Metadata_modified** `2025-11-15T06:34:50.556937`
+- **Metadata_modified** `2025-11-22T06:36:39.818218`
 
 
 # Load packages

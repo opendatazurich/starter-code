@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-16"
+date: "2025-11-23"
 output: html_document
 ---
 
@@ -133,6 +133,41 @@ Modellierter Wert, &quot;Urban Heat Island&quot;, urbane Wärmeinseleffekt Tag (
 Dieser Layer gibt Auskunft über die Anzahl Hitzetage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur mindestens 30 °C, Sommermonate Juni, Juli, August).
 
 
+***ugz_lufqualitaet_sommertage_sommer_2025.tif***: 
+
+
+
+
+***ugz_lufqualitaet_tropennaechte_sommer_2025.tif***: 
+
+
+
+
+***ugz_lufqualitaet_uhi_mittel_sommer_2025.tif***: 
+
+
+
+
+***ugz_lufqualitaet_uhi_nacht_sommer_2025.tif***: 
+
+
+
+
+***ugz_lufqualitaet_uhi_tag_sommer_2025.tif***: 
+
+
+
+
+***ugz_luftqualitaet_hitzetage_sommer_2025.tif***: 
+
+
+
+
+***ugz_luftqualitaet_kuehlgradtage_sommer_2025.tif***: 
+
+
+
+
 ***ugz_lufqualitaet_uhi_tag_sommer_2024.tif***: 
 
 Modellierter Wert, &quot;Urban Heat Island&quot;, urbane Wärmeinseleffekt Tag (10:00 - 18:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich
@@ -254,7 +289,7 @@ Auto generated R starter code for data set geo_meteoblue_sommerbericht.
 - **Keywords** `Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'hitze', 'hitzetage', 'klimaanderung', 'kuhlgradtage', 'luftfeuchtigkeit', 'niederschlag', 'punktdaten', 'rasterdaten', 'sommertage', 'stadtklima', 'stzh', 'temperatur', 'tropennachte']`
 - **Metadata_created** `2023-11-06T03:19:30.312098`
-- **Metadata_modified** `2025-11-15T06:36:13.711170`
+- **Metadata_modified** `2025-11-22T06:37:43.562795`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-16"
+date: "2025-11-23"
 output: html_document
 ---
 
@@ -72,7 +72,7 @@ Auto generated R starter code for data set geo_bauernhofladen.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bauernhof', 'geodaten', 'geoportal', 'landwirtschaft', 'punktdaten', 'stzh']`
 - **Metadata_created** `2023-11-06T03:15:14.251457`
-- **Metadata_modified** `2025-11-15T06:34:38.091918`
+- **Metadata_modified** `2025-11-22T06:36:29.047895`
 
 
 # Load packages

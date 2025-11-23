@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-16"
+date: "2025-11-23"
 output: html_document
 ---
 
@@ -43,7 +43,7 @@ Auto generated R starter code for data set sd_ds_kitas_schulkreis.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['belegungsfaktor', 'kennzahlen', 'kinderbetreuung', 'kindertagesstatten', 'kita', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-05-16T07:36:30.373543`
-- **Metadata_modified** `2025-11-15T21:17:54.400629`
+- **Metadata_modified** `2025-11-22T21:16:48.098810`
 
 
 # Load packages

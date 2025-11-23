@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-16"
+date: "2025-11-23"
 output: html_document
 ---
 
@@ -80,7 +80,7 @@ Auto generated R starter code for data set sid_srz_od1032_sanitaetseinsaetze_jah
 - **Keywords** `Ge­sund­heit,Ver­walt­ung`
 - **Tags** `['gesundheit', 'sachdaten', 'sanitaet', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-12-01T11:17:11.866597`
-- **Metadata_modified** `2025-11-15T10:30:24.438454`
+- **Metadata_modified** `2025-11-22T10:30:20.807655`
 
 
 # Load packages

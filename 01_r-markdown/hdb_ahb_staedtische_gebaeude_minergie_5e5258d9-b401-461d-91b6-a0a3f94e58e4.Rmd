@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-16"
+date: "2025-11-23"
 output: html_document
 ---
 
@@ -50,7 +50,7 @@ Auto generated R starter code for data set hdb_ahb_staedtische_gebaeude_minergie
 - **Keywords** `Bauen und Wohnen,Umwelt`
 - **Tags** `['klima', 'minergie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-11-06T11:43:09.949164`
-- **Metadata_modified** `2025-11-15T21:28:11.892963`
+- **Metadata_modified** `2025-11-22T21:28:29.937609`
 
 
 # Load packages

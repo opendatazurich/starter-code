@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-16"
+date: "2025-11-23"
 output: html_document
 ---
 
@@ -70,7 +70,7 @@ Auto generated R starter code for data set bau_best_whg_zizahl_wfl_bauperi_ea_qu
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bauperiode', 'eigentum', 'gemeinnuetzig', 'miete', 'privat', 'sachdaten', 'sasa', 'tabelle', 'wohnflaeche', 'wohnung', 'wohnungsflaeche', 'zeitreihe']`
 - **Metadata_created** `2023-05-12T07:20:49.786389`
-- **Metadata_modified** `2025-11-15T21:31:11.712027`
+- **Metadata_modified** `2025-11-22T21:31:26.744306`
 
 
 # Load packages
