@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-23"
+date: "2025-11-30"
 output: html_document
 ---
 
@@ -44,7 +44,7 @@ Auto generated R starter code for data set geo_gebietseinteilung_der_roemisch_ka
 - **Keywords** `Basis­karten`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:16:00.668828`
-- **Metadata_modified** `2025-11-22T06:36:45.838566`
+- **Metadata_modified** `2025-11-28T06:36:02.325639`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-23"
+date: "2025-11-30"
 output: html_document
 ---
 
@@ -16,7 +16,7 @@ Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgef�
 **Hinweis:**
 
 
-Im 1. Quartal 2024 wurde die Stichprobe der Beschäftigungsstatistik aktualisiert. Infolgedessen wurden die Zeitreihen von 1. Quartal 2022 bis 1. Quartal 2024 entsprechend angepasst. Daher können die aktuellen Werte von den zuvor veröffentlichten Daten abweichen.
+Die BESTA-Daten des 2. Quartals 2025 mussten bei Werten für die Summen des Abschnitts C (NOGA 10–33) nachkorrigiert werden. Zudem wurden aufgrund von Methodenänderungen (geschlechterspezifische Kalibrierung) alle publizierten Zeitreihen ab dem 2. Quartal 2018 bis 1. Quartal 2025 revidiert. Daher können die aktuellen Werte von den zuvor veröffentlichten Daten abweichen.
 
 
 []()
@@ -58,7 +58,7 @@ Auto generated R starter code for data set bfs_wir_besch_sektor_bg_jahr_od4006.
 - **Keywords** `Arbeit und Erwerb`
 - **Tags** `['beschaeftigte', 'beschaeftigungsgrad', 'sachdaten', 'sasa', 'tabelle', 'wirtschaftssektor', 'zeitreihe']`
 - **Metadata_created** `2024-02-23T08:28:17.491804`
-- **Metadata_modified** `2025-11-22T21:31:49.156894`
+- **Metadata_modified** `2025-11-29T21:38:39.726064`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-23"
+date: "2025-11-30"
 output: html_document
 ---
 
@@ -65,7 +65,7 @@ Auto generated R starter code for data set sd_sod_aufwand_ertrag_wirtschaftliche
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['aufwand', 'ertrag', 'kosten', 'krankenkasse', 'ruckerstattung', 'sachdaten', 'sozialhilfe', 'tabelle', 'wirtschaftliche-hilfe', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:38.347693`
-- **Metadata_modified** `2025-11-22T21:29:01.200982`
+- **Metadata_modified** `2025-11-29T21:37:13.645506`
 
 
 # Load packages

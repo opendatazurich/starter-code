@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-23"
+date: "2025-11-30"
 output: html_document
 ---
 
@@ -53,7 +53,7 @@ Auto generated R starter code for data set sd_sod_beratungen_muetter_vaeterberat
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['beratung', 'jugend', 'jugendhilfe', 'kinder', 'kinderhilfe', 'mutter--und-vaterberatung', 'mvb', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:41.797540`
-- **Metadata_modified** `2025-11-22T21:30:24.714464`
+- **Metadata_modified** `2025-11-29T21:37:48.000360`
 
 
 # Load packages

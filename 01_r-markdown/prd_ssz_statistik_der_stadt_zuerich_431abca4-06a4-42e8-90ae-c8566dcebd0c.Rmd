@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-23"
+date: "2025-11-30"
 output: html_document
 ---
 
@@ -25,6 +25,10 @@ Das Verzeichnis mit allen Ausgaben kann auch direkt auf dem Server unter [http:/
 
 []()
 
+**Zusammenfassungen:**
+
+Diese Zusammenfassungen der Originaldokumente wurden automatisch durch ein Large Language Model (LLM) gemacht. LLMs sind nicht zu 100% zuverlässig und können - genau, wie Menschen auch - Fehler machen. Deswegen ist es möglich, dass auch die Zusammenfassungen Fehler enthalten. Bitte beachten Sie, dass diese Funktionalität experimentell und noch in Erprobung ist. Die Zusammenfassung soll eine Hilfestellung sein um den Inhalt der Dokument schneller zu erfassen und bietet keine Gewähr für inhaltliche Richtigkeit. Massgebend bleibt der originale Datensatz.
+
 
 
 [Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/prd_ssz_statistik_der_stadt_zuerich)
@@ -39,7 +43,7 @@ Auto generated R starter code for data set prd_ssz_statistik_der_stadt_zuerich.
 - **Keywords** `Arbeit und Erwerb,Bauen und Wohnen,Bevölk­erung,Bildung,Energie,Finanzen,Freizeit,Ge­sund­heit,Kri­mi­na­li­tät,Kultur,Mobilität,Politik,Preise,Soziales,Tour­is­mus,Umwelt,Ver­walt­ung,​​Volks​­wirt​­schaft`
 - **Tags** `['geschichte', 'historisch', 'kreise', 'pdf', 'publikation', 'quartiere', 'sachdaten', 'zeitreise']`
 - **Metadata_created** `2025-11-18T17:15:34.347589`
-- **Metadata_modified** `2025-11-22T21:24:56.673873`
+- **Metadata_modified** `2025-11-29T21:33:01.696402`
 
 
 # Load packages
