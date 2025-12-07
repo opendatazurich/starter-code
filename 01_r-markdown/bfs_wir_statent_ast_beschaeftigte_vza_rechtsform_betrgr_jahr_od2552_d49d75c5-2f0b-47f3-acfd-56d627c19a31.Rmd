@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-11-30"
+date: "2025-12-07"
 output: html_document
 ---
 
@@ -80,7 +80,7 @@ Auto generated R starter code for data set bfs_wir_statent_ast_beschaeftigte_vza
 - **Keywords** `Arbeit und Erwerb`
 - **Tags** `['arbeitsstaetten', 'beschaeftigte', 'sachdaten', 'sasa', 'tabelle', 'vollzeitaequivalente', 'zeitreihe']`
 - **Metadata_created** `2024-08-29T05:21:30.979568`
-- **Metadata_modified** `2025-11-29T21:12:32.363944`
+- **Metadata_modified** `2025-12-06T21:22:00.514153`
 
 
 # Load packages
