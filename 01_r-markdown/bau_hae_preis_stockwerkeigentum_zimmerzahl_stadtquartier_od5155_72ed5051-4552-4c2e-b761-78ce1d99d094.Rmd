@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-07"
+date: "2025-12-09"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set bau_hae_preis_stockwerkeigentum_zimme
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['handaenderungen', 'liegenschaftenhandel', 'median', 'quadratmeterpreis', 'sachdaten', 'sasa', 'stockwerkeigentum', 'tabelle', 'transaktionsvolumen', 'wohnungsflaeche', 'zeitreihe', 'zimmerzahl']`
 - **Metadata_created** `2023-11-21T09:32:01.640048`
-- **Metadata_modified** `2025-12-06T21:27:36.170023`
+- **Metadata_modified** `2025-12-09T07:23:14.216281`
 
 
 # Load packages

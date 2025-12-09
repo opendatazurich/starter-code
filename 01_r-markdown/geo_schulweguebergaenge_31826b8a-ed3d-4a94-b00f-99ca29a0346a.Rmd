@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-07"
+date: "2025-12-09"
 output: html_document
 ---
 
@@ -63,7 +63,7 @@ Auto generated R starter code for data set geo_schulweguebergaenge.
 - **Keywords** `Arbeit und Erwerb,Bevölk­erung,​​Volks​­wirt​­schaft`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'polygondaten', 'punktdaten', 'schulweg', 'strassenquerung', 'stzh']`
 - **Metadata_created** `2023-11-06T03:27:13.576226`
-- **Metadata_modified** `2025-11-08T06:29:25.098654`
+- **Metadata_modified** `2025-12-09T06:40:55.117885`
 
 
 # Load packages

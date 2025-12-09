@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-07"
+date: "2025-12-09"
 output: html_document
 ---
 
@@ -44,7 +44,7 @@ Auto generated R starter code for data set geo_oeffentliche_beleuchtung_der_stad
 - **Keywords** `Ver­walt­ung`
 - **Tags** `['beleuchtung', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:29:10.361674`
-- **Metadata_modified** `2025-12-06T06:39:54.812238`
+- **Metadata_modified** `2025-12-09T06:41:52.634574`
 
 
 # Load packages

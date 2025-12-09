@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-07"
+date: "2025-12-09"
 output: html_document
 ---
 
@@ -77,7 +77,7 @@ Auto generated R starter code for data set geo_erlaubte_fahrtrichtungen.
 - **Keywords** `Mobilität`
 - **Tags** `['einbahnen', 'geodaten', 'geoportal', 'liniendaten', 'punktdaten', 'stzh']`
 - **Metadata_created** `2023-11-06T03:28:22.156945`
-- **Metadata_modified** `2025-12-06T06:39:39.493536`
+- **Metadata_modified** `2025-12-09T06:41:35.352936`
 
 
 # Load packages
