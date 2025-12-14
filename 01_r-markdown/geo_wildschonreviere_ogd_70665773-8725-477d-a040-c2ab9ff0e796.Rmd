@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-09"
+date: "2025-12-14"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_wildschonreviere_ogd.
 - **Keywords** `Basis­karten,Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'revier', 'stzh', 'vektordaten', 'wild', 'wildhut']`
 - **Metadata_created** `2023-11-06T03:20:54.231280`
-- **Metadata_modified** `2025-12-09T06:38:36.973142`
+- **Metadata_modified** `2025-12-13T06:38:29.025856`
 
 
 # Load packages

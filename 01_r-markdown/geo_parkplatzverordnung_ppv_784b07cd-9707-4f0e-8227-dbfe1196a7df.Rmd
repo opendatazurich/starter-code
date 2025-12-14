@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-09"
+date: "2025-12-14"
 output: html_document
 ---
 
@@ -43,7 +43,7 @@ Auto generated R starter code for data set geo_parkplatzverordnung_ppv.
 - **Keywords** `Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'parkplatze', 'parkplatzverordnung', 'pflichtparkplatze', 'polygondaten', 'privatgrund', 'reduktionsgebiete', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:30:13.081257`
-- **Metadata_modified** `2025-12-09T06:42:15.534438`
+- **Metadata_modified** `2025-12-13T06:41:49.340077`
 
 
 # Load packages

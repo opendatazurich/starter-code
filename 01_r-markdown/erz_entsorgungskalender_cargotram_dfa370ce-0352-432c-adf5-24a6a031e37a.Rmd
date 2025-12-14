@@ -1,12 +1,12 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-09"
+date: "2025-12-14"
 output: html_document
 ---
 
-## Dataset: Entsorgungsdaten E-Tram
+## Dataset: Entsorgungsdaten Cargo-Tram
 
-Sammeltage E-Tram nach PLZ
+Sammeltage Cargo-Tram nach PLZ
 
 **Anwendungen zum Entsorgungskalender der ERZ:**
 
@@ -18,20 +18,11 @@ Als Alternative zur offiziellen [**«Entsorgung + Recycling Zürich»-App**](htt
 
 []()
 
-**Standorte der Sammelstellen:**
-
-Unter folgenden Links finden Sie die **Standorte der Sammelstellen**
-
-* auf dem [**Züriplan**](http://bit.ly/2f1taxJ), sowie
-* als [**OGD-Geodatensatz zum Download**](https://data.stadt-zuerich.ch/dataset/geo_sammelstelle).
-
-[]()
 
 
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_cargotram)
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_etram)
-
-Auto generated R starter code for data set erz_entsorgungskalender_etram.
+Auto generated R starter code for data set erz_entsorgungskalender_cargotram.
 
 ## Metadata
 
@@ -40,8 +31,8 @@ Auto generated R starter code for data set erz_entsorgungskalender_etram.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['abfall', 'entsorgung', 'entsorgungsdaten', 'entsorgungskalender', 'kalender', 'sachdaten', 'tabellen']`
-- **Metadata_created** `2024-12-02T07:59:41.964308`
-- **Metadata_modified** `2025-12-08T16:20:23.031853`
+- **Metadata_created** `2025-12-12T13:59:57.864766`
+- **Metadata_modified** `2025-12-13T16:10:15.850139`
 
 
 # Load packages
@@ -54,7 +45,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_etram/download/entsorgungskalender_eTram_2025.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_cargotram/download/entsorgungskalender_cargoTram_2025.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

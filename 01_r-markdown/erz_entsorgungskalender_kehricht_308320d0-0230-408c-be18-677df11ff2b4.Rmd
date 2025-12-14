@@ -1,12 +1,12 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-09"
+date: "2025-12-14"
 output: html_document
 ---
 
-## Dataset: Entsorgungsdaten Cargo-Tram
+## Dataset: Entsorgungsdaten Kehricht
 
-Sammeltage Cargo-Tram nach PLZ
+Sammeltage Hauskehricht nach PLZ
 
 **Anwendungen zum Entsorgungskalender der ERZ:**
 
@@ -20,9 +20,9 @@ Als Alternative zur offiziellen [**«Entsorgung + Recycling Zürich»-App**](htt
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_cargotram)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_kehricht)
 
-Auto generated R starter code for data set erz_entsorgungskalender_cargotram.
+Auto generated R starter code for data set erz_entsorgungskalender_kehricht.
 
 ## Metadata
 
@@ -30,9 +30,9 @@ Auto generated R starter code for data set erz_entsorgungskalender_cargotram.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt,Ver­walt­ung`
-- **Tags** `['abfall', 'entsorgung', 'entsorgungsdaten', 'entsorgungskalender', 'kalender', 'sachdaten', 'tabellen']`
-- **Metadata_created** `2024-12-02T07:59:49.042929`
-- **Metadata_modified** `2025-12-08T16:20:32.195087`
+- **Tags** `['abfall', 'entsorgung', 'entsorgungsdaten', 'entsorgungskalender', 'kalender', 'kehrricht', 'sachdaten', 'tabellen']`
+- **Metadata_created** `2025-12-12T14:00:01.925665`
+- **Metadata_modified** `2025-12-13T16:10:18.974209`
 
 
 # Load packages
@@ -45,7 +45,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_cargotram/download/entsorgungskalender_cargoTram_2025.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_kehricht/download/entsorgungskalender_kehricht_2025.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {
