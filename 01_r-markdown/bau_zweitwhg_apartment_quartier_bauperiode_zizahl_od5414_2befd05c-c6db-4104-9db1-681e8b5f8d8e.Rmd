@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-14"
+date: "2025-12-21"
 output: html_document
 ---
 
@@ -118,7 +118,7 @@ Auto generated R starter code for data set bau_zweitwhg_apartment_quartier_baupe
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['apartment', 'bauperiode', 'erstwohnung', 'nutzung', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'wohnung', 'wohnungsbestand', 'zimmerzahl', 'zweitwohnungen']`
 - **Metadata_created** `2020-11-17T09:41:01.684723`
-- **Metadata_modified** `2025-12-13T21:34:53.294603`
+- **Metadata_modified** `2025-12-20T21:32:18.444583`
 
 
 # Load packages

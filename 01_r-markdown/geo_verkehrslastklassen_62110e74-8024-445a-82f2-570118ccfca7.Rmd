@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-14"
+date: "2025-12-21"
 output: html_document
 ---
 
@@ -34,9 +34,9 @@ Auto generated R starter code for data set geo_verkehrslastklassen.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Mobilität`
-- **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten', 'verkehr']`
+- **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:15:54.216534`
-- **Metadata_modified** `2025-12-13T06:46:09.379769`
+- **Metadata_modified** `2025-12-20T06:35:48.748228`
 
 
 # Load packages

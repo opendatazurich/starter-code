@@ -1,10 +1,10 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-14"
+date: "2025-12-21"
 output: html_document
 ---
 
-## Dataset: Daten der Bevölkerungsbefragung der Stadt Zürich 1999 bis 2023
+## Dataset: Daten der Bevölkerungsbefragung der Stadt Zürich seit 1999
 
 Die Bevölkerungsbefragung wurde von 1999 bis 2015 mittels **telefonischen CATI-Interviews** (LINK Institut, Zürich) durchgeführt. Ab 2019 wurde sie in Zusammenarbeit von [Statistik Stadt Zürich](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/stadtverwaltung/prd/ssz.html) und der [Stadtentwicklung](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/stadtverwaltung/prd/stez.html) im Mixed Mode Online/Papier realisiert.
 
@@ -12,12 +12,12 @@ Befragt wurde jeweils eine repräsentative Stichprobe. Die Grundgesamtheit umfas
 
 Als Interviewsprache wurden 1999 bis 2015 Deutsch, Italienisch, Spanisch, Serbisch-Kroatisch-Bosnisch, Portugiesisch und Englisch angeboten. In den Befragungen ab 2019 wurde zusätzlich Französisch angeboten.
 
-**Wichtiger Hinweis:** Aus datenschutzrechtlichen Gründen umfasst der hier publizierte Datensatz nicht sämtliche Variablen des ursprünglichen Fragebogens. Des Weiteren wurde der Datensatz mit zwei soziodemografischen Variablen aus dem Bevölkerungsregister der Stadt Zürich angereichert: die Stadtkreise (`A1BVSKreis01`) und das amtliche Geschlecht (`A1BVSSex01`) der befragten Personen. Weil ab 2019 die Stichprobe vergrössert wurde, können weitere soziodemografische Variablen aufgenommen werden, ohne den Datenschutz zu tangieren. Für die Jahre 2019 bis 2023 gibt es daher einen [zusätzlichen Datensatz](https://data.stadt-zuerich.ch/dataset/prd_stez_bevoelkerungsbefragungen_seit2019_od4732). In diesem Datensatz sind folgende soziodemografische Variablen enthalten: die Stadtquartiere (`A1BVSQuar03`), das Alter (`A1BVSAlterV03`) in drei Alterskategorien sowie das amtliche Geschlecht (`A1BVSSex01`) der Befragten.
+**Wichtiger Hinweis:** Aus datenschutzrechtlichen Gründen umfasst der hier publizierte Datensatz nicht sämtliche Variablen des ursprünglichen Fragebogens. Des Weiteren wurde der Datensatz mit zwei soziodemografischen Variablen aus dem Bevölkerungsregister der Stadt Zürich angereichert: die Stadtkreise (`A1BVSKreis01`) und das amtliche Geschlecht (`A1BVSSex01`) der befragten Personen. Weil ab 2019 die Stichprobe vergrössert wurde, können weitere soziodemografische Variablen aufgenommen werden, ohne den Datenschutz zu tangieren. Für die Jahre seit 2019 gibt es daher einen [zusätzlichen Datensatz](https://data.stadt-zuerich.ch/dataset/prd_stez_bevoelkerungsbefragungen_seit2019_od4732). In diesem zusätzlichen Datensatz sind folgende soziodemografische Variablen enthalten: die Stadtquartiere (`A1BVSQuar03`), das Alter (`A1BVSAlterV03`) in drei Alterskategorien sowie das amtliche Geschlecht (`A1BVSSex01`) der Befragten.
 
 
 **Publikationen und Methodik**
 
-Zu den Bevölkerungsbefragungen 1999 bis 2023 existieren bereits mehrere Publikationen, die Sie auf der Webseite der Stadtentwicklung unter [Bevölkerungsbefragung](https://www.stadt-zuerich.ch/bevoelkerungsbefragung) finden können.
+Zu den Bevölkerungsbefragungen 1999 bis 2025 existieren bereits mehrere Publikationen, die Sie auf der [städtischen Webseite](https://www.stadt-zuerich.ch/bevoelkerungsbefragung) finden können.
 
 **Methode**
 Von 1999 bis 2015 wurde die Bevölkerungsbefragung mittels sogenannten Computer Assisted Telephone Interviews (CATI), also telefonischen Interviews durchgeführt. Im Laufe der Zeit zeigte sich jedoch, dass sich die telefonische Erreichbarkeit der Stadtbevölkerung – namentlich der jungen und mobilen Bevölkerungsgruppen – zunehmend erschwerte. Dieser Umstand veranlasste die Stadt, die Befragungen ab 2019 im Mixed-Mode Online/Papier durchzuführen. 
@@ -45,6 +45,7 @@ Weitere Informationen zum Vorgehen und zur **Methode** finden Sie in den Publika
 - 2019: 22.02.-20.05.2019 Online/Papier Befragung.
 - 2021: 01.02.-03.05.2021 Online/Papier Befragung.
 - 2023: 01.02.-24.04.2023 Online/Papier Befragung.
+- 2025: 30.01.-29.04.2025 Online/Papier Befragung.
 
 []()
 
@@ -57,7 +58,7 @@ Bei Auswertungen muss die **Gewichtung mitberücksichtigt** werden, damit die Er
 
 **Daten nach Jahr**
 
-Die Variable `Jahr` enthält die Befragungsjahre 1999 bis 2023, mit der die Daten nach Befragungsjahr gefiltert werden können. 
+Die Variable `Jahr` enthält die Befragungsjahre 1999 bis 2025, mit der die Daten nach Befragungsjahr gefiltert werden können. 
 
 Für das Jahr 2015 muss zusätzlich nach der Variable `methode` und die Ausprägung `Cati` gefiltert werden. Die Ausprägungen `Online` und `Papier` kennzeichnen die Parallelmessung im 2015, mit der die Methodeneffekte evaluiert wurden. Daher sollten die Daten 2015 getrennt nach `Cati` und `Online/Papier` ausgewertet werden.
 
@@ -66,7 +67,8 @@ Für das Jahr 2015 muss zusätzlich nach der Variable `methode` und die Auspräg
 **Fragen mit Mehrfachantworten**
 
 Bei den Variablen `A4007aa01` bis `A4007ah01` und `A4008aa01` bis `A4008am01` sind Mehrfachantworten erlaubt.
-Bei den Variablen `A3007aa01` bis `A3007ac01` und `A3018aa01` bis `A3018af01` sind maximal 2 Antworten erlaubt. Bei den Variablen `A3019aa01` bis `3019af01` sind maximal 3 Antworten erlaubt.
+Bei den Variablen `A3007aa01` bis `A3007ac01` und `A3018aa01` bis `A3018af01` sind maximal 2 Antworten erlaubt. 
+Bei den Variablen `A3019aa01` bis `3019af01` und `B2002aa01` bis `B2002ac01` sind maximal 3 Antworten erlaubt.
 
 Bei der Bevölkerungsbefragung 2019 sind bei folgenden Variablen maximal 3 Antworten erlaubt: `A7002aa01` bis `A7002cy01`, `A7003aa01` bis `A7003am01`, `A7004aa01` bis `A7004ai01`, `A7005aa01` bis `A7005ai01`, `A7007aa01` bis `A7007ag01`, `A7008aa01` bis `A7008ah01` und `A7010aa01` bis `A7010am01`.
 
@@ -74,29 +76,29 @@ Bei der Bevölkerungsbefragung 2019 sind bei folgenden Variablen maximal 3 Antwo
 
 **Antworterfassung bei offenen Fragen**
 
-Bei sogenannt offenen Fragen konnten die Befragten jeweils mehrere Antworten geben und ihre Antworten frei formulieren. Die Anzahl an möglichen Antworten wurde entweder in der Fragestellung vorgegeben oder war offen. Um solche Variablen handelt es sich bei `A2003aa01 bis A2003ag01`,`A2013aa01 bis A2013af01`, `A3014aa01 bis A3014af01`,`A3015aa01 bis A3015af01` und `A4004aa01 bis A4004ah01`. 
+Bei sogenannt offenen Fragen konnten die Befragten jeweils mehrere Antworten geben und ihre Antworten frei formulieren. Die Anzahl an möglichen Antworten wurde entweder in der Fragestellung vorgegeben oder war offen. Um solche Variablen handelt es sich bei `A2003aa01` bis `A2003ag01`, `A2003aa08` bis `A2003ac08`, `A2013aa01` bis `A2013af01`, `A3014aa01` bis `A3014af01`,`A3015aa01` bis `A3015af01`, `A4004aa01` bis `A4004ah01`, `B2004aa01` bis `B2004ac01` und `B2006aa01` bis `B2006ac01`.
 
 - **Befragungen 1999–2015** (telefonisch): Die Interviewer hatten während dem Interview vorcodierte Antworten vor sich und konnten die erhaltenen Antworten diesen zuteilen. Falls eine erhaltene Antwort zu keiner vorcodierten Antwort passte, erfassten die Interviewer die Antwort wörtlich. Die wörtlich erfassten Antworten wurden bei allen offenen Fragen nachträglich codiert.
 
-- **Befragung ab 2019** (Online/Papier): In den Erhebungen ab 2019 (Online/Papier) lagen die Antworten alle in schriftlicher Form vor und wurden entsprechend den Codelisten nachträglich codiert. Bei Antworten, die nicht in die bestehenden Codelisten passten, wurden diese als neue Codes in die Codeliste aufgenommen. 
+- **Befragung ab 2019** (Online/Papier): In den Erhebungen ab 2019 (Online/Papier) lagen die Antworten alle in schriftlicher Form vor und wurden entsprechend den Codelisten nachträglich codiert.
 
 []()
 
 **Analyse von Antworten auf offene Fragen**
 
-Es kann vorkommen, dass Befragte mehrmals die gleiche Antwort auf eine offene Frage gegeben haben. Solche Doppelnennungen sollten bei Analysen aus den Variablen gezählt werden, sodass pro Person jeweils nur eine gleiche Antwort berücksichtigt wird. Die Variablen mit Antworten auf offene Fragen müssen jeweils als Mehrfachantworten in Variablensets ausgewertet werden (keine Top of Mind Auswertungen zulässig, da die Erfassung der Antworten nicht auf eine solche Auswertung abzielte). Um solche Variablen handelt es sich bei `A2003aa01 bis A2003ag01`,`A2013aa01 bis A2013af01`, `A3014aa01 bis A3014af01`,`A3015aa01 bis A3015af01` und `A4004aa01 bis A4004ah01`.
+Es kann vorkommen, dass Befragte mehrmals die gleiche Antwort auf eine offene Frage gegeben haben. Solche Doppelnennungen sollten bei Analysen gelöscht werden, sodass pro Person jeweils nur eine gleiche Antwort berücksichtigt wird. Die Variablen mit Antworten auf offene Fragen müssen jeweils als Mehrfachantworten in Variablensets ausgewertet werden (keine Top of Mind Auswertungen zulässig, da die Erfassung der Antworten nicht auf eine solche Auswertung abzielte). Um solche Variablen handelt es sich bei `A2003aa01` bis `A2003ag01`, `A2008aa01` bis `A2008ac01`, `A2013aa01` bis `A2013af01`, `A3014aa01` bis `A3014af01`,`A3015aa01` bis `A3015af01` und `A4004aa01` bis `A4004ah01`.
 
 []()
 
 **Fragebogen**
 
-Die Fragebögen zu den hier publizierten Bevölkerungsbefragungsdaten finden Sie in den Dateien `fragebogen_bvb_2019`, `fragebogen_bvb_2021` und `fragebogen_bvb_2023`. Sie sind hier unter den Ressourcen zu finden.
+Die Fragebögen zu den hier publizierten Bevölkerungsbefragungsdaten finden Sie in den Dateien `fragebogen_bvb_2019`, `fragebogen_bvb_2021`, `fragebogen_bvb_2023` und `fragebogen_bvb_2025`. Sie sind hier unter den Ressourcen zu finden.
 
 []()
 
 **Attributbeschreibung**
 
-Da die Bevölkerungsbefragung über 200 Attribute enthält, haben wir die unten aufgeführte Attributbeschreibung auch als csv-Datei erstellt und hier verfügbar gemacht. Sie heisst `Codeliste_BVB_OGD` und ist hier unter den Ressourcen zu finden. Die Schwerpunktfragen der Bevölkerungsbefragung 2019 sind in der Codeliste mit einem 'XX' im Feldname 'Frage' gekennzeichnet.
+Da die Bevölkerungsbefragung über 200 Attribute enthält, haben wir die unten aufgeführte Attributbeschreibung auch als csv-Datei erstellt und hier verfügbar gemacht. Sie heisst `Codeliste_BVB_OGD` und ist hier unter den Ressourcen zu finden. Die Schwerpunktfragen der Bevölkerungsbefragungen 2019 und 2023 sind in der Codeliste mit einem 'XX' im Feldname 'Frage' gekennzeichnet.
 
 []()
 
@@ -108,13 +110,13 @@ Auto generated R starter code for data set prd_stez_bevoelkerungsbefragungen_sei
 
 ## Metadata
 
-- **Publisher** `Stadtentwicklung, Präsidialdepartement`
+- **Publisher** `Stadtentwicklung, Präsidialdepartement; Statistik Stadt Zürich, Präsidialdepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bevölk­erung`
-- **Tags** `['befragung', 'bvb', 'lebensqualitat', 'sachdaten', 'stadtentwicklung', 'stichprobe', 'tabelle', 'umfrage', 'verkehr', 'wohnen', 'zeitreihe', 'zufriedenheit']`
+- **Tags** `['bvb', 'lebensqualitat', 'sachdaten', 'sasa', 'stadtentwicklung', 'stichprobe', 'tabelle', 'umfrage', 'verkehr', 'wohnen', 'zeitreihe', 'zufriedenheit']`
 - **Metadata_created** `2021-12-10T12:07:11.357585`
-- **Metadata_modified** `2025-12-13T21:21:27.076347`
+- **Metadata_modified** `2025-12-20T21:19:44.999961`
 
 
 # Load packages

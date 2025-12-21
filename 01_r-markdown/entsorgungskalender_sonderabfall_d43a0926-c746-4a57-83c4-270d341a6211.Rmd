@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-14"
+date: "2025-12-21"
 output: html_document
 ---
 
@@ -31,9 +31,9 @@ Unter folgenden Links finden Sie die **Standorte der Sammelstellen** :
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_sonderabfall)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/entsorgungskalender_sonderabfall)
 
-Auto generated R starter code for data set erz_entsorgungskalender_sonderabfall.
+Auto generated R starter code for data set entsorgungskalender_sonderabfall.
 
 ## Metadata
 
@@ -42,8 +42,8 @@ Auto generated R starter code for data set erz_entsorgungskalender_sonderabfall.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['abfall', 'entsorgung', 'entsorgungsdaten', 'entsorgungskalender', 'kalender', 'sachdaten', 'tabellen']`
-- **Metadata_created** `2025-12-12T13:59:59.729703`
-- **Metadata_modified** `2025-12-13T16:10:16.871474`
+- **Metadata_created** `2025-12-19T15:05:22.089418`
+- **Metadata_modified** `2025-12-19T15:06:53.632373`
 
 
 # Load packages
@@ -56,7 +56,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_sonderabfall/download/entsorgungskalender_sonderabfall_2025.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_sonderabfall/download/entsorgungskalender_sonderabfall_2026.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

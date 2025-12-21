@@ -1,28 +1,28 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-14"
+date: "2025-12-21"
 output: html_document
 ---
 
-## Dataset: Entsorgungsdaten Cargo-Tram
+## Dataset: Entsorgungsdaten Bioabfall
 
-Sammeltage Cargo-Tram nach PLZ
+Sammeltage Entsorgung Bioabfall nach PLZ.
 
 **Anwendungen zum Entsorgungskalender der ERZ:**
 
 Als Alternative zur offiziellen [**«Entsorgung + Recycling Zürich»-App**](https://www.stadt-zuerich.ch/de/umwelt-und-energie/entsorgung/entsorgungskalender/erz-app.html) empfehlen wir ebenfalls die aus der Open-Data-Community entstandenen Anwendungen:
 
 * die [**«Open ERZ API»**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/open-government-data/anwendungen/anwendungen-2019/open_erz_api.html) oder
-* die [**«reZHycle App»**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/open-government-data/anwendungen/anwendungen-2022/rezhycle-app.html) oder
+* die [**«reZHycle App»**](https://data.stadt-zuerich.ch/showcase/rezhycle-app) oder
 * den Telegram Chatbot namens [**«Altpapier Bot»**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/open-government-data/anwendungen/anwendungen-2020/altpapier_bot.html).
 
 []()
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_cargotram)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall)
 
-Auto generated R starter code for data set erz_entsorgungskalender_cargotram.
+Auto generated R starter code for data set entsorgungskalender_bioabfall.
 
 ## Metadata
 
@@ -31,8 +31,8 @@ Auto generated R starter code for data set erz_entsorgungskalender_cargotram.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['abfall', 'entsorgung', 'entsorgungsdaten', 'entsorgungskalender', 'kalender', 'sachdaten', 'tabellen']`
-- **Metadata_created** `2025-12-12T13:59:57.864766`
-- **Metadata_modified** `2025-12-13T16:10:15.850139`
+- **Metadata_created** `2025-12-19T15:05:15.579428`
+- **Metadata_modified** `2025-12-19T15:06:38.029628`
 
 
 # Load packages
@@ -45,7 +45,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/erz_entsorgungskalender_cargotram/download/entsorgungskalender_cargoTram_2025.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/entsorgungskalender_bioabfall/download/entsorgungskalender_bioabfall_2026.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {
