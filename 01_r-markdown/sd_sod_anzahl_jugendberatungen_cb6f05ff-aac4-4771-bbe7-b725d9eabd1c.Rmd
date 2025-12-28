@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-21"
+date: "2025-12-28"
 output: html_document
 ---
 
@@ -39,7 +39,7 @@ Auto generated R starter code for data set sd_sod_anzahl_jugendberatungen.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['beratung', 'jugend', 'jugendberatung', 'jugendhilfe', 'kinder', 'kinderhilfe', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:33.789504`
-- **Metadata_modified** `2025-12-20T21:26:34.261876`
+- **Metadata_modified** `2025-12-27T21:31:57.913787`
 
 
 # Load packages

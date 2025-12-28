@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-21"
+date: "2025-12-28"
 output: html_document
 ---
 
@@ -67,7 +67,7 @@ Auto generated R starter code for data set ugz_luftschadstoffmessung_tageswerte.
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['co', 'echtzeit', 'feinstaub', 'kohlenmonoxid', 'luft', 'luftqualitat', 'luftschadstoffe', 'messwerte', 'no', 'no2', 'nox', 'o3', 'ozon', 'partikelanzahl', 'pm10', 'pm25', 'pn', 'sachdaten', 'schadstoffe', 'schwefeldioxid', 'so2', 'stickoxide', 'stickstoffdioxid', 'stickstoffmonoxid', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:07:55.128453`
-- **Metadata_modified** `2025-12-21T03:36:28.667631`
+- **Metadata_modified** `2025-12-28T03:36:39.167340`
 
 
 # Load packages

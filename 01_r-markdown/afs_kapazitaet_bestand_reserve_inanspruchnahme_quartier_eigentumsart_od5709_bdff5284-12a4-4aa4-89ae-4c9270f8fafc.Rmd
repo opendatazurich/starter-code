@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-21"
+date: "2025-12-28"
 output: html_document
 ---
 
@@ -40,7 +40,7 @@ Auto generated R starter code for data set afs_kapazitaet_bestand_reserve_inansp
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bevoelkerungsszenarien', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-07-04T05:48:03.621702`
-- **Metadata_modified** `2025-12-20T21:12:16.202362`
+- **Metadata_modified** `2025-12-27T21:19:16.721231`
 
 
 # Load packages
