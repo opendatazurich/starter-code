@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-28"
+date: "2026-01-04"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_zustaendigkeit_beratung_architekt
 - **Keywords** `Basis­karten,Bauen und Wohnen`
 - **Tags** `['architektur', 'beratung', 'bewilligungsverfahren', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten', 'zustandigkeit']`
 - **Metadata_created** `2025-07-01T05:30:55.317831`
-- **Metadata_modified** `2025-12-27T06:41:13.311942`
+- **Metadata_modified** `2026-01-03T06:39:56.156325`
 
 
 # Load packages

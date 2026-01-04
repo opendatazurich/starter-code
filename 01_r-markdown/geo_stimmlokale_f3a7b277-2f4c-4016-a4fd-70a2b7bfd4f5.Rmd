@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2025-12-28"
+date: "2026-01-04"
 output: html_document
 ---
 
@@ -57,7 +57,7 @@ Auto generated R starter code for data set geo_stimmlokale.
 - **Keywords** ``
 - **Tags** `['geodaten', 'geoportal', 'punktdaten', 'stzh']`
 - **Metadata_created** `2023-11-06T03:28:28.653866`
-- **Metadata_modified** `2025-12-27T06:42:36.518877`
+- **Metadata_modified** `2026-01-03T06:41:01.050781`
 
 
 # Load packages
