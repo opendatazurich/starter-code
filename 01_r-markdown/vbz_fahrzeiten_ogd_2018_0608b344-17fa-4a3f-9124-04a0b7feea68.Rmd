@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-04"
+date: "2026-01-11"
 output: html_document
 ---
 
@@ -77,7 +77,7 @@ Auto generated R starter code for data set vbz_fahrzeiten_ogd_2018.
 - **Keywords** `Mobilität`
 - **Tags** `['bus', 'hackzurich', 'offentlicher-verkehr', 'punktlichkeit', 'sachdaten', 'tabelle', 'tram', 'vbz', 'verspatung']`
 - **Metadata_created** `2025-11-05T20:27:45.930572`
-- **Metadata_modified** `2025-11-05T20:46:41.816249`
+- **Metadata_modified** `2026-01-08T07:14:00.418489`
 
 
 # Load packages

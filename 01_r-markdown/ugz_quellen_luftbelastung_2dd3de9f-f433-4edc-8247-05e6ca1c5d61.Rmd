@@ -1,0 +1,79 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-01-11"
+output: html_document
+---
+
+## Dataset: Emissionsbilanz der Stadt Zürich
+
+Der Fachbereich Luftqualität des Umwelt- und Gesundheitsschutzes erstellt alle zwei Jahre eine Emissionsbilanz für Luftschadstoffe und Treibhausgase aus den wichtigsten Quellen der Stadt Zürich. Die Emissionen werden jeweils für ein Kalenderjahr bilanziert. Die räumliche Darstellung erfolgt im Emissionskataster.
+
+**Hinweis:**
+
+Die Daten der Emissionsbilanz stammen aus Erhebungen, Emissionsmessungen und Emissionsberechnungen. Die Emissionsmengen in der Bilanz sind als Einschätzung zu verstehen und stellen keine amtlichen oder verbindlichen Angaben dar. Bei den Angaben zu den CO2-Emissionen handelt es sich um Direktemissionen und nicht um eine CO2-Statistik gemäss CO2-Gesetz.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ugz_quellen_luftbelastung)
+
+Auto generated R starter code for data set ugz_quellen_luftbelastung.
+
+## Metadata
+
+- **Publisher** `Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Umwelt`
+- **Tags** `['emmissionsbilanz', 'luftbelastung', 'sachdaten', 'tabelle', 'umwelt', 'zeitreihe']`
+- **Metadata_created** `2026-01-06T15:33:11.918403`
+- **Metadata_modified** `2026-01-11T03:41:46.296878`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/ugz_quellen_luftbelastung/download/ugz_luftqualitaet_schadstoffe.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch
