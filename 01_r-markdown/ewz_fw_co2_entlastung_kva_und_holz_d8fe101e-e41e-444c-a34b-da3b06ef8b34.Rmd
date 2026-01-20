@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-11"
+date: "2026-01-20"
 output: html_document
 ---
 
@@ -31,7 +31,7 @@ Auto generated R starter code for data set ewz_fw_co2_entlastung_kva_und_holz.
 - **Keywords** `Energie`
 - **Tags** `['co2', 'energie', 'fernwaerme', 'gitlab', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-09-10T15:10:21.067504`
-- **Metadata_modified** `2026-01-06T08:13:28.870377`
+- **Metadata_modified** `2026-01-20T08:13:42.093386`
 
 
 # Load packages

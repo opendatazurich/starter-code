@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-11"
+date: "2026-01-20"
 output: html_document
 ---
 
@@ -51,7 +51,7 @@ Auto generated R starter code for data set geo_gebietseinteilung_parkierungsgebu
 - **Keywords** `Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'parkierung', 'polygondaten', 'stzh', 'vektordaten', 'zonen']`
 - **Metadata_created** `2023-11-06T03:12:12.068358`
-- **Metadata_modified** `2026-01-10T06:34:02.579515`
+- **Metadata_modified** `2026-01-20T06:34:15.283587`
 
 
 # Load packages

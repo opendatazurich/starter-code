@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-11"
+date: "2026-01-20"
 output: html_document
 ---
 
@@ -73,7 +73,7 @@ Auto generated R starter code for data set geo_bauminventar.
 - **Keywords** `Umwelt`
 - **Tags** `['baumhohe', 'baumkataster', 'baumstandorte', 'geodaten', 'geoportal', 'lidar', 'polygondaten', 'punktdaten', 'stadtbegrunung', 'stzh', 'swisstlm3d', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:20:10.978677`
-- **Metadata_modified** `2025-12-18T08:38:41.478098`
+- **Metadata_modified** `2026-01-17T06:36:33.334462`
 
 
 # Load packages

@@ -1,0 +1,118 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-01-20"
+output: html_document
+---
+
+## Dataset: Daten der Firmenbefragung 2025 der Stadt Zürich
+
+Die Firmenbefragung der Stadt Zürich ist seit 2005 ein wichtiges Instrument, um die Einschätzungen von Unternehmen und Selbständigen zum Standort Zürich sowie ihre Anliegen und Bedürfnisse zu erfahren.
+
+Die Ergebnisse der im Sommer 2025 zum sechsten Mal von DemoSCOPE durchgeführten Firmenbefragung beruhen auf den Antworten von 1499 Unternehmen und Selbständigen. Die ersten beiden Befragungen von 2005 und 2008 wurden schriftlich mit einem per Post verschickten Fragebogen durchgeführt. Seit 2012 wird die Befragung online durchgeführt.
+
+**Publikationen und Methodik**
+
+Die Firmenbefragung der Stadt Zürich wird seit 2005 regelmässig durchgeführt. 
+
+Die Berichte zu den Firmenbefragungen inkl. Beschreibung der Methodik finden Sie auf der Website der Stadtentwicklung unter [**Firmenbefragung**](https://www.stadt-zuerich.ch/firmenbefragung).
+
+[]()
+
+**Offene Daten anderer Firmenbefragungen:**
+
+Die offenen Verwaltungsdaten anderer Firmenbefragungen der Stadt Zürich finden Sie [**unter diesem Link**](https://data.stadt-zuerich.ch/dataset?tags=firmenbefragung&sort=title_string+desc).
+
+[]()
+
+**Methode**
+
+Die Grundgesamtheit der Befragung bilden alle im Betriebs- und Unternehmensregister BUR eingetragenen Haupt- und Einzelbetriebe in der Stadt Zürich. Bei der Befragung 2005 wurden nur Betriebe von Firmen mit Sitz in Zürich ausgewählt, seit der Befragung 2008 werden auch Betriebe von Firmen mit Sitz ausserhalb der Stadt Zürich in die Grundgesamtheit aufgenommen. Betriebe der öffentlichen Verwaltung werden ausgeschlossen. 
+
+Anhand der Beschäftigungsgrössenklasse als wichtigstes Kriterium wird eine Zufallsstichprobe über alle Branchen hinweg gezogen. 
+
+In folgenden Beschäftigungsgrössenklassen wird eine **Stichprobe** gezogen:
+
+- 0 bis 1 Mitarbeitende
+- 2 bis 9 Mitarbeitende
+- 10 bis 49 Mitarbeitende
+
+Bei Betrieben mit 50 und mehr Mitarbeitenden wird eine **Vollerhebung** gemacht. 
+
+Die Stichprobe umfasst zwischen 3000 und 4000 Betriebe. Die Rücklaufquoten liegen zwischen 30 bis 40 Prozent.
+
+Weitere Informationen zum Vorgehen und zur **Methode** finden Sie in den Publikationen zur [**Firmenbefragung**](https://www.stadt-zuerich.ch/firmenbefragung).
+
+[]()
+
+**Attributbeschreibung**
+
+Da die Firmenbefragung über 200 Attribute enthält, haben wir zusätzlich zur Attributbeschreibung dafür unter den Ressourcen ein Excelfile (`Variablen- und Wertebeschreib.xlsx`) und eine csv-Datei (`codeliste.csv`) verfügbar gemacht.  
+
+
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/prd_stez_firmenbefragung_2025)
+
+Auto generated R starter code for data set prd_stez_firmenbefragung_2025.
+
+## Metadata
+
+- **Publisher** `Stadtentwicklung, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Arbeit und Erwerb,Ver­walt­ung,​​Volks​­wirt​­schaft`
+- **Tags** `['befragung', 'firma', 'firmenbefragung', 'sachdaten', 'stadtentwicklung', 'stichprobe', 'tabelle', 'zeitreihe', 'zufriedenheit']`
+- **Metadata_created** `2026-01-12T20:58:03.186750`
+- **Metadata_modified** `2026-01-20T07:04:39.525736`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/prd_stez_firmenbefragung_2025/download/codeliste_2025.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

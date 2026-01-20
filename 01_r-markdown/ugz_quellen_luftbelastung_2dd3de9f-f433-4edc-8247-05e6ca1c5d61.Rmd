@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-11"
+date: "2026-01-20"
 output: html_document
 ---
 
@@ -11,6 +11,20 @@ Der Fachbereich Luftqualität des Umwelt- und Gesundheitsschutzes erstellt alle 
 **Hinweis:**
 
 Die Daten der Emissionsbilanz stammen aus Erhebungen, Emissionsmessungen und Emissionsberechnungen. Die Emissionsmengen in der Bilanz sind als Einschätzung zu verstehen und stellen keine amtlichen oder verbindlichen Angaben dar. Bei den Angaben zu den CO2-Emissionen handelt es sich um Direktemissionen und nicht um eine CO2-Statistik gemäss CO2-Gesetz.
+
+[]()
+
+**Methodenänderungen**
+
+2024 Die Abwasserreinigung (ARA) wurde neu als Quelle in der Kategorie Industrie & Gewerbe aufgenommen. Die Methan- und Lachgas-Emissionen sind dadurch stark angestiegen.
+
+2024 Die Verluste aus dem Gasnetz wurden neu als Quelle in der Kategorie Industrie & Gewerbe aufgenommen. Die Methan-Emissionen sind dadurch stark angestiegen.
+
+2024 Die Emissionen aus dem Strassenverkehr wurden neu mit einem Zürich spezifischen Fahrleistungsmix pro Fahrzeugkategorie und Antriebstechnologie berechnet.
+
+2024 Für einzelne grosse Betriebe (ETH, Universitätsspital Triemli etc.) wurden die VOC-Emissionen neu aus den eingereichten Emissionserklärungen übernommen.
+
+2024 Die Maschinen einer durchschnittlichen Tiefbaustelle wurden mit den Daten aus der Maschinenkontrolle neu bestimmt.
 
 []()
 
@@ -28,7 +42,7 @@ Auto generated R starter code for data set ugz_quellen_luftbelastung.
 - **Keywords** `Umwelt`
 - **Tags** `['emmissionsbilanz', 'luftbelastung', 'sachdaten', 'tabelle', 'umwelt', 'zeitreihe']`
 - **Metadata_created** `2026-01-06T15:33:11.918403`
-- **Metadata_modified** `2026-01-11T03:41:46.296878`
+- **Metadata_modified** `2026-01-18T01:41:01.854358`
 
 
 # Load packages

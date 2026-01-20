@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-11"
+date: "2026-01-20"
 output: html_document
 ---
 
@@ -29,7 +29,7 @@ Auto generated R starter code for data set hbd_immo_gruppenhaeuser.
 - **Keywords** `Bauen und Wohnen,Ver­walt­ung`
 - **Tags** `['gruppenhaeuser', 'klassenlager', 'sachdaten', 'schuelerferien', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-03-05T10:16:03.435684`
-- **Metadata_modified** `2026-01-10T21:14:21.804168`
+- **Metadata_modified** `2026-01-20T06:56:06.808265`
 
 
 # Load packages

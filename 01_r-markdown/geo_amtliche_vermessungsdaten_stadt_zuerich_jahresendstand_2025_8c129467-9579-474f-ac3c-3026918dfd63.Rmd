@@ -1,0 +1,472 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-01-20"
+output: html_document
+---
+
+## Dataset: Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2025
+
+Die amtliche Vermessung (AV) liefert geometrische Daten zum Grundeigentum und ist die Grundlage für viele weitere Geodaten und Anwendungen in Wirtschaft, Verwaltung und Privatleben.
+Achtung: Dies ist der Jahresendstand 2025 der AV-Daten!
+
+**Zweck**: Als amtliche Vermessung im Sinne von Artikel 950 ZGB gelten die zur Anlage und Führung des Grundbuchs vom Kanton genehmigten und vom Bund anerkannten Vermessungen. Die Daten der amtlichen Vermessung sind Georeferenzdaten, die von Behörden des Bundes, der Kantone und der Gemeinden sowie von der Wirtschaft, der Wissenschaft und Dritten zur Gewinnung von Geoinformationen verwendet werden. Auf dem GeoServer sind für die stadtinternen Nutzenden optimierte Tabellenstrukturen aufgeschaltet.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2025»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/5c18733f-d30c-4649-adf7-0ce4bfe4ab1b).
+			   
+
+**Informationen zum Datensatz:**
+
+Datenelemente werden nur im Datenformat PostGIS beschrieben.
+Zusätzliches Datenformat mit identischem Inhalt: ESRI SDE GDB .
+
+**Datenerfassung:**
+
+Die Nachführung der wesentlichen Daten erfolgt laufend und basiert auf einem Meldewesen zwischen Baubehörden, Bauherrschaft, Gebäudeversicherung, Grundbuchamt und GeoZ. Die Stadt Zürich ist der Toleranzstufe 2 der technischer Verordnung über die amtlichen Vermessung (TVAV) zugeordnet. Aktualität: Die Daten besitzen keinen öffentlichen Glauben im Sinne des Grundbuchrechtes und die Datenabgabe erfolgt ohne Überprüfung des derzeitigen Zustandes im Felde. Die Rechtsgültigkeit der Grundstücke ist auf dem zuständigen Grundbuchamt zu erfragen. Qualität: Der grössere Teil der Daten der Ebenen Bodenbedeckung (Gebäude, Strassen, Wald, Gewässer etc.) und Einzelobjekte (unterirdische Gebäude, Unterstände, Mauern, Treppen etc.) wurde digitalisiert, und es muss mit einer Standardabweichung von ca. ±10-15 cm gerechnet werden. Diese Situationspunkte sind deshalb im Bedarfsfalle mit Feldmessungen zu überprüfen. Die Nachführung dieser Ebenen erfolgt seit August 1998 mit einer grösseren Genauigkeit. Unterirdische Bauten sind betreffend Vollständigkeit unzuverlässig.
+
+**Datengrundlage:**
+
+Landesvermessung (Bezugsrahmen LV95)
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2025»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/5c18733f-d30c-4649-adf7-0ce4bfe4ab1b).
+
+***av_be_bezirksgrenzabschnitt***: 
+
+
+
+
+***av_bo_allegebaeude_a_v***: 
+
+
+
+
+***av_bo_bbnachfuehrung***: 
+
+
+
+
+***av_bo_boflaeche_a***: 
+
+
+
+
+***av_bo_boflaeche_l***: 
+
+
+
+
+***av_bo_boflaechesymbol***: 
+
+
+
+
+***av_bo_gebaeudenummer_t***: 
+
+
+
+
+***av_bo_objektname_t***: 
+
+
+
+
+***av_bo_objektname_uep5_t***: 
+
+
+
+
+***av_bo_projboflaeche_a***: 
+
+
+
+
+***av_bo_projgebaeudenummer_t***: 
+
+
+
+
+***av_ei_allegebaeude_a_v***: 
+
+
+
+
+***av_ei_eonachfuehrung***: 
+
+
+
+
+***av_ei_flaechenelement_a***: 
+
+
+
+
+***av_ei_linienelement***: 
+
+
+
+
+***av_ei_objektname_t***: 
+
+
+
+
+***av_ei_objektname_uep5_t***: 
+
+
+
+
+***av_ei_objektnummer_t***: 
+
+
+
+
+***av_fi_hfp1***: 
+
+
+
+
+***av_fi_hfp1_t***: 
+
+
+
+
+***av_fi_hfp2***: 
+
+
+
+
+***av_fi_hfp2_t***: 
+
+
+
+
+***av_fi_hfp3***: 
+
+
+
+
+***av_fi_hfp3_t***: 
+
+
+
+
+***av_fi_lfp1***: 
+
+
+
+
+***av_fi_lfp1_t***: 
+
+
+
+
+***av_fi_lfp2***: 
+
+
+
+
+***av_fi_lfp2_t***: 
+
+
+
+
+***av_fi_lfp3***: 
+
+
+
+
+***av_fi_lfp3_t***: 
+
+
+
+
+***av_ge_gemeindegrenze_a***: 
+
+
+
+
+***av_ge_gemeindegrenze_boundary***: 
+
+
+
+
+***av_ge_hoheitsgrenzpunkt***: 
+
+
+
+
+***av_ge_hoheitsgrenzpunkt_t***: 
+
+
+
+
+***av_geb_gebaeudeadresse_t***: 
+
+
+
+
+***av_geb_gebaeudeadresse_uep5_t***: 
+
+
+
+
+***av_geb_kurzstrnamen_uep5_t***: 
+
+
+
+
+***av_geb_lokalisationsname***: 
+
+
+
+
+***av_geb_strassennamen_t***: 
+
+
+
+
+***av_geb_strassennamen_uep5_t***: 
+
+
+
+
+***av_geb_strassenstueck***: 
+
+
+
+
+***av_geb_strassenstueck_ap***: 
+
+
+
+
+***av_li_grenzpunkt***: 
+
+
+
+
+***av_li_grenzpunkt_t***: 
+
+
+
+
+***av_li_grundstueck_t***: 
+
+
+
+
+***av_li_liegenschaft_a***: 
+
+
+
+
+***av_li_lsnachfuehrung***: 
+
+
+
+
+***av_li_projgrundstueck_t***: 
+
+
+
+
+***av_li_projliegenschaft_a***: 
+
+
+
+
+***av_li_projselbstrecht_a***: 
+
+
+
+
+***av_li_selbstrecht_a***: 
+
+
+
+
+***av_no_flurname_t***: 
+
+
+
+
+***av_no_flurname_uep5_t***: 
+
+
+
+
+***av_plz_einteilung_a***: 
+
+
+
+
+***av_ro_linienelement***: 
+
+
+
+
+
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/5c18733f-d30c-4649-adf7-0ce4bfe4ab1b.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_amtliche_vermessungsdaten_stadt_zuerich_jahresendstand_2025)
+
+Auto generated R starter code for data set geo_amtliche_vermessungsdaten_stadt_zuerich_jahresendstand_2025.
+
+## Metadata
+
+- **Publisher** `Kataster, Geomatik + Vermessung, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Basis­karten,Bauen und Wohnen,Umwelt,Ver­walt­ung`
+- **Tags** `['adressen', 'archiv', 'av', 'bodenbedeckung', 'geobasidaten', 'geodaten', 'geoportal', 'liegenschaften', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh', 'vermessung']`
+- **Metadata_created** `2026-01-14T05:31:11.420877`
+- **Metadata_modified** `2026-01-20T06:40:18.286075`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Amtliche_Vermessungsdaten_Stadt_Zuerich_Jahresendstand_2025?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |> 
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |> 
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
+```{r eval=FALSE}
+# install.packages("ows4R")
+library(ows4R)
+
+# WFS-Client erstellen
+url_geoportal <- get_geoportal_url(url)
+wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
+
+# Verfügbare Feature-Typen anzeigen
+wfs_client$getFeatureTypes(pretty = TRUE)
+
+typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
+  dplyr::pull(name)
+
+df <- read_geodata(url, typenames[[1]])
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

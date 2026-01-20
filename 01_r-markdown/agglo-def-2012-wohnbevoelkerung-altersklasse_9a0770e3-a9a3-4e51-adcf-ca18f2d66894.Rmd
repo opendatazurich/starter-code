@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-11"
+date: "2026-01-20"
 output: html_document
 ---
 
@@ -23,7 +23,7 @@ Auto generated R starter code for data set agglo-def-2012-wohnbevoelkerung-alter
 - **Keywords** `Bevölk­erung`
 - **Tags** `['agglomeration', 'sachdaten', 'tabellen']`
 - **Metadata_created** `2015-07-08T13:36:20.618614`
-- **Metadata_modified** `2025-01-06T14:08:46.169625`
+- **Metadata_modified** `2026-01-08T07:13:12.092873`
 
 
 # Load packages
