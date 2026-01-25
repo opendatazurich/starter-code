@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-20"
+date: "2026-01-25"
 output: html_document
 ---
 
@@ -52,9 +52,9 @@ Gewisse Variablen werden in verschiedenen Formen aufgeführt. Die 'Lang'-Variant
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_ea_statzone_jahr)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_ea_statzone_jahr_od5025)
 
-Auto generated R starter code for data set bau_neubau_abbruch_ea_statzone_jahr.
+Auto generated R starter code for data set bau_neubau_abbruch_ea_statzone_jahr_od5025.
 
 ## Metadata
 
@@ -63,8 +63,8 @@ Auto generated R starter code for data set bau_neubau_abbruch_ea_statzone_jahr.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['abbruch', 'bautaetigkeit', 'eigentum', 'gebaeude', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
-- **Metadata_created** `2024-04-22T08:06:56.353711`
-- **Metadata_modified** `2026-01-20T06:46:25.824933`
+- **Metadata_created** `2026-01-23T21:06:42.541414`
+- **Metadata_modified** `2026-01-25T03:53:51.649501`
 
 
 # Load packages
@@ -77,7 +77,7 @@ library(tidyverse)
 # Load the data
 
 ```{r}
-url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_ea_statzone_jahr/download/BAU502OD5025.csv"
+url <- "https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_ea_statzone_jahr_od5025/download/BAU502OD5025.csv"
 if (str_detect(url, ".csv")) {
     df <- readr::read_csv(url)
 } else if (str_detect(url, ".parquet")) {

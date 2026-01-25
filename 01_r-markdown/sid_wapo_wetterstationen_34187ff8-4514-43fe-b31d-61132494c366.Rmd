@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-20"
+date: "2026-01-25"
 output: html_document
 ---
 
@@ -38,7 +38,7 @@ Auto generated R starter code for data set sid_wapo_wetterstationen.
 - **Keywords** `Freizeit,Umwelt`
 - **Tags** `['api', 'echtzeitdaten', 'feuchte', 'github', 'hitze', 'kälte', 'sachdaten', 'sturm', 'tabelle', 'temperatur', 'wetter', 'zeitreihe']`
 - **Metadata_created** `2022-07-12T15:22:11.076091`
-- **Metadata_modified** `2026-01-20T08:35:32.634449`
+- **Metadata_modified** `2026-01-25T03:46:37.369461`
 
 
 # Load packages

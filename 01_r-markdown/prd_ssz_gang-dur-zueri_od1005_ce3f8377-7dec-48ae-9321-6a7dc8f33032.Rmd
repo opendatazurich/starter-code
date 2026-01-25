@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-20"
+date: "2026-01-25"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ Auto generated R starter code for data set prd_ssz_gang-dur-zueri_od1005.
 - **Keywords** `Bauen und Wohnen,Bevölk­erung,Mobilität,​​Volks​­wirt​­schaft`
 - **Tags** `['bildung', 'sachdaten', 'sasa', 'tabelle', 'volksschule', 'zeitreihe']`
 - **Metadata_created** `2023-07-06T07:56:19.571362`
-- **Metadata_modified** `2026-01-20T06:49:23.340863`
+- **Metadata_modified** `2026-01-25T03:56:42.720766`
 
 
 # Load packages
