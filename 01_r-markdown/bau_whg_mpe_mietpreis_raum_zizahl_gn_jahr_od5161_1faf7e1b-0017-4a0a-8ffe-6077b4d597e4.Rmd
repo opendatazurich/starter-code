@@ -1,18 +1,24 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-25"
+date: "2026-02-01"
 output: html_document
 ---
 
 ## Dataset: Mietpreise in der Stadt Zürich (MPE Abfragetool)
 
-Der Datensatz enthält die Resultate der Mietpreiserhebungen 2022 und 2024. Enthalten sind die geschätzten Mietpreisbandbreiten für vier Raumstufen (Ganze Stadt, Stadtkreise, Stadtquartiere und statistische Quartiere). Siehe dazu unten unter «Bemerkungen» die weiteren Erläuterungen. 
+Der Datensatz enthält die Resultate der Mietpreiserhebungen (ab 2022 alle 2 Jahre). Enthalten sind die geschätzten Mietpreisbandbreiten für vier Raumstufen (Ganze Stadt, Stadtkreise, Stadtquartiere und statistische Quartiere). Siehe dazu unten unter «Bemerkungen» die weiteren Erläuterungen. 
 
 Erleben Sie die Daten auch auf dem interaktiven «[Abfragetool Mietpreiserhebung](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/bauen-und-wohnen/miete-und-eigentum/mietpreiserhebung.html#abfragetool_mietpreiserhebung)» von Statistik Stadt Zürich.
 
 **Erhebung**
 
-Die Mietpreiserhebung (MPE) gibt die geschätzten Mietpreise in der Stadt Zürich per Stichmonat April 2022 resp. 2024 wieder. Die Erhebung ist als Zweischichtenmodell konzipiert und basiert auf automatisierten Datenlieferungen von Verwaltungen (Schicht 1) und einer ergänzenden Zufallsstichprobe (Schicht 2). Die Resultate beziehen sich ausschliesslich auf die Grössenklassen der 2-, 3- und 4-Zimmer-Wohnungen, die über 80 Prozent des Mietwohnungsbestandes abdecken. Vgl. auch den publizierten Methodikbericht.
+Die Mietpreiserhebung (MPE) gibt die geschätzten Mietpreise in der Stadt Zürich per Stichmonat April 2022 sowie für die folgenden Erhebungen alle 2 Jahre wieder. Die Erhebung ist jeweils als Zweischichtenmodell konzipiert und basiert auf automatisierten Datenlieferungen von Verwaltungen (Schicht 1) und einer ergänzenden Zufallsstichprobe (Schicht 2). Die Resultate beziehen sich ausschliesslich auf die Grössenklassen der 2-, 3- und 4-Zimmer-Wohnungen, die über 80 Prozent des Mietwohnungsbestandes abdecken, und beziehen sich auf die Bestandesmieten. Vgl. auch den publizierten Methodikbericht.
+
+[]()
+
+**Medianpreis**
+
+Der Medianpreis beschreibt den mittleren Preis in Franken - die Hälfte der Wohnungen in dieser Kategorie liegen darüber, die andere Hälfte darunter.
 
 []()
 
@@ -36,7 +42,7 @@ Für eine Stichprobenerhebung wie die MPE sind die statistischen Quartiere zum T
 
 **Raumeinheit Stadtquartiere**
 
-Die tiefste räumliche Ebene, auf der detaillierte Preise für 2-, 3- und 4-Zimmer-Wohnungen ausgewiesen werden können, sind die 22 Stadtquartiere. Sie entsprechen in der Regel den früher selbständigen, eingemeindeten Gemeinden und setzen sich aus kleineren Stadtkreisen und grösseren statistischen Quartieren zusammen. Die Stadtkreise 1, 3, 4, 5, 8 und 12 bilden jeweils ein Stadtquartier – sie entsprechen den früheren Gemeinden Zürich (Stadtquartier Altstadt), Wiedikon, Aussersihl, Riesbach und Schwamendingen, deren Namen sie tragen. In den übrigen Stadtkreisen 2, 6, 7, 9, 10 und 11 gelten die enthaltenen statistischen Quartiere einzeln als Stadtquartier – sie entsprechen den früheren Gemeinden Enge und Wollishofen (Kreis 2), Unter- und Oberstrass (Kreis 6), Fluntern, Hottingen, Hirslanden und Witikon (Kreis 7), Altstetten und Albisrieden (Kreis 9), Höngg und Wipkingen (Kreis 10) sowie Affoltern, Oerlikon und Seebach (Kreis 11). Die Stadtquartiere Leimbach (Kreis 2) und Industrie (Kreis 5) sind Spezialfälle, sie entsprechen räumlich abgetrennten Teilen der früheren Gemeinden Enge und Aussersihl. Für die MPE 2024 wurden die Vergleichspreise von 2022 für die Stadtquartiere neu berechnet.
+Die tiefste räumliche Ebene, auf der detaillierte Preise für 2-, 3- und 4-Zimmer-Wohnungen ausgewiesen werden können, sind die 22 Stadtquartiere. Sie entsprechen in der Regel den früher selbständigen, eingemeindeten Gemeinden und setzen sich aus kleineren Stadtkreisen und grösseren statistischen Quartieren zusammen. Die Stadtkreise 1, 3, 4, 5, 8 und 12 bilden jeweils ein Stadtquartier – sie entsprechen den früheren Gemeinden Zürich (Stadtquartier Altstadt), Wiedikon, Aussersihl, Riesbach und Schwamendingen, deren Namen sie tragen. In den übrigen Stadtkreisen 2, 6, 7, 9, 10 und 11 gelten die enthaltenen statistischen Quartiere einzeln als Stadtquartier – sie entsprechen den früheren Gemeinden Enge und Wollishofen (Kreis 2), Unter- und Oberstrass (Kreis 6), Fluntern, Hottingen, Hirslanden und Witikon (Kreis 7), Altstetten und Albisrieden (Kreis 9), Höngg und Wipkingen (Kreis 10) sowie Affoltern, Oerlikon und Seebach (Kreis 11). Die Stadtquartiere Leimbach (Kreis 2) und Industrie (Kreis 5) sind Spezialfälle, sie entsprechen räumlich abgetrennten Teilen der früheren Gemeinden Enge und Aussersihl.
 
 []()
 
@@ -54,7 +60,7 @@ Auto generated R starter code for data set bau_whg_mpe_mietpreis_raum_zizahl_gn_
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['gemeinnuetzig', 'median', 'mietpreise', 'mittelwert', 'privat', 'quadratmeterpreis', 'quartil', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'wohnen', 'zimmerzahl']`
 - **Metadata_created** `2022-11-02T10:08:27.339389`
-- **Metadata_modified** `2026-01-25T03:56:48.243872`
+- **Metadata_modified** `2026-02-01T04:01:56.267754`
 
 
 # Load packages

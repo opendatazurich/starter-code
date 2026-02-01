@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-25"
+date: "2026-02-01"
 output: html_document
 ---
 
@@ -15,7 +15,7 @@ Das Inventar dient den Dienststellen der Stadt Zürich als Grundlage für die ve
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Liegenschafteninventar OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/256ae0c2-db9a-4988-be32-3dca6e00c1b3).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Liegenschafteninventar OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/0d8a9cac-ee07-494f-9ae3-e8e3f2e240a9).
 			   
 
 **Informationen zum Datensatz:**
@@ -34,7 +34,7 @@ Die Objekte werden auf den Amtlichen Vermessungsdaten digitalisiert. Die Genauig
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Liegenschafteninventar OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/256ae0c2-db9a-4988-be32-3dca6e00c1b3).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Liegenschafteninventar OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/0d8a9cac-ee07-494f-9ae3-e8e3f2e240a9).
 
 ***V_LVZ_GRUNDSTUECK***: 
 
@@ -79,7 +79,7 @@ Achtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der 
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/256ae0c2-db9a-4988-be32-3dca6e00c1b3.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/0d8a9cac-ee07-494f-9ae3-e8e3f2e240a9.png)
 
 
 
@@ -95,7 +95,7 @@ Auto generated R starter code for data set geo_liegenschafteninventar_ogd.
 - **Keywords** `Basis­karten,Bauen und Wohnen,Bevölk­erung,Ge­sund­heit,Mobilität,Umwelt,Ver­walt­ung,​​Volks​­wirt​­schaft`
 - **Tags** `['gebaude', 'geodaten', 'geoportal', 'grundstucke', 'liegenschaften', 'polygondaten', 'punktdaten', 'stiftungen', 'stzh', 'vektordaten', 'wohnungen']`
 - **Metadata_created** `2023-11-06T03:28:13.451269`
-- **Metadata_modified** `2026-01-24T06:40:36.624728`
+- **Metadata_modified** `2026-01-31T06:41:13.740372`
 
 
 # Load packages

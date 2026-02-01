@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-25"
+date: "2026-02-01"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_ehgraben.
 - **Keywords** `Bauen und Wohnen,Ver­walt­ung`
 - **Tags** `['abfalle', 'abwasser', 'ehgraben', 'geodaten', 'geoportal', 'historisch', 'kanalisation', 'polygondaten', 'spatmittelalter', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:18:34.377673`
-- **Metadata_modified** `2026-01-24T06:37:02.743890`
+- **Metadata_modified** `2026-01-31T06:37:36.220014`
 
 
 # Load packages

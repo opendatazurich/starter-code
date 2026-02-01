@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-25"
+date: "2026-02-01"
 output: html_document
 ---
 
@@ -94,7 +94,7 @@ Auto generated R starter code for data set bfs_bev_bildungsstand_jahr_aufenthalt
 - **Keywords** `Bevölk­erung`
 - **Tags** `['aufenthaltsart', 'bevoelkerungsbestand', 'bildung', 'bildungsstand', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2021-10-25T18:46:41.132062`
-- **Metadata_modified** `2026-01-25T03:59:27.853090`
+- **Metadata_modified** `2026-02-01T04:04:44.593400`
 
 
 # Load packages

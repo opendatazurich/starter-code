@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-25"
+date: "2026-02-01"
 output: html_document
 ---
 
@@ -328,7 +328,7 @@ Auto generated R starter code for data set geo_amtliche_vermessungsdaten_stadt_z
 - **Keywords** `Basis­karten,Bauen und Wohnen,Umwelt,Ver­walt­ung`
 - **Tags** `['adressen', 'archiv', 'av', 'bodenbedeckung', 'geobasidaten', 'geodaten', 'geoportal', 'liegenschaften', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh', 'vermessung']`
 - **Metadata_created** `2026-01-14T05:31:11.420877`
-- **Metadata_modified** `2026-01-24T06:39:16.832502`
+- **Metadata_modified** `2026-01-31T06:40:04.432601`
 
 
 # Load packages

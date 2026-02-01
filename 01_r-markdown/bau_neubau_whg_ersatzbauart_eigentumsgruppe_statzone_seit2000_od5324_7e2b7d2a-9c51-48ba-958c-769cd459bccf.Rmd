@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-25"
+date: "2026-02-01"
 output: html_document
 ---
 
@@ -65,7 +65,7 @@ Auto generated R starter code for data set bau_neubau_whg_ersatzbauart_eigentums
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['abbruch', 'eigentum', 'erneuerung', 'ersatzneubau', 'gemeinnuetzig', 'neubau', 'privat', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'umnutzung', 'wohnen', 'wohnersatz', 'wohnung', 'zeitreihe']`
 - **Metadata_created** `2020-04-06T17:35:30.747699`
-- **Metadata_modified** `2026-01-25T03:59:37.358578`
+- **Metadata_modified** `2026-02-01T04:04:54.803008`
 
 
 # Load packages

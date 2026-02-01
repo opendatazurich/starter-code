@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-01-25"
+date: "2026-02-01"
 output: html_document
 ---
 
@@ -50,7 +50,7 @@ Auto generated R starter code for data set geo_bedeutungsplan.
 - **Keywords** `Bevölk­erung,Mobilität,Umwelt,Ver­walt­ung`
 - **Tags** `['bedeutungsplan', 'bedeutungsraum', 'bedeutungsraume', 'bedeutungsstufen', 'geodaten', 'geoportal', 'international', 'lokal', 'national', 'polygondaten', 'quartier', 'quartierweit', 'stadtweit', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:27:26.095988`
-- **Metadata_modified** `2026-01-24T06:40:14.238461`
+- **Metadata_modified** `2026-01-31T06:40:51.773058`
 
 
 # Load packages
