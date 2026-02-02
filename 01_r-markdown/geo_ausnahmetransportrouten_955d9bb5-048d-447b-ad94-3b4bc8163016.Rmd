@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-01"
+date: "2026-02-02"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_ausnahmetransportrouten.
 - **Keywords** `Bauen und Wohnen,Mobilität,Umwelt,Ver­walt­ung`
 - **Tags** `['atr', 'geodaten', 'geoportal', 'liniendaten', 'logistik', 'stzh', 'unterwerke', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:07:41.054190`
-- **Metadata_modified** `2026-01-31T06:32:02.971306`
+- **Metadata_modified** `2026-02-02T06:32:43.088677`
 
 
 # Load packages

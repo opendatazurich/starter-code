@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-01"
+date: "2026-02-02"
 output: html_document
 ---
 
@@ -52,7 +52,7 @@ Auto generated R starter code for data set geo_biotoptypenkartierung_2020.
 - **Keywords** `Umwelt`
 - **Tags** `['biotoptyp', 'btk', 'geodaten', 'geoportal', 'lebensraum', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:15:28.009022`
-- **Metadata_modified** `2026-01-31T06:36:26.085000`
+- **Metadata_modified** `2026-02-02T06:36:33.899500`
 
 
 # Load packages
