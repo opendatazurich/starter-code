@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-02"
+date: "2026-02-08"
 output: html_document
 ---
 
@@ -158,7 +158,7 @@ Auto generated R starter code for data set geo_erholungs__und_sporteinrichtungen
 - **Keywords** `Bevölk­erung`
 - **Tags** `['erholung', 'garderoben', 'geodaten', 'geoportal', 'infrastruktur', 'liniendaten', 'punktdaten', 'sport', 'stzh', 'wald']`
 - **Metadata_created** `2023-11-06T03:07:33.455151`
-- **Metadata_modified** `2026-02-02T06:32:41.008798`
+- **Metadata_modified** `2026-02-07T06:31:47.069183`
 
 
 # Load packages

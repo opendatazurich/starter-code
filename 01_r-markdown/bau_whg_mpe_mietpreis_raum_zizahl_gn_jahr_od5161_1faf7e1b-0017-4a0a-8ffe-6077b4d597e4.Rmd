@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-02"
+date: "2026-02-08"
 output: html_document
 ---
 
@@ -60,7 +60,7 @@ Auto generated R starter code for data set bau_whg_mpe_mietpreis_raum_zizahl_gn_
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['gemeinnuetzig', 'median', 'mietpreise', 'mittelwert', 'privat', 'quadratmeterpreis', 'quartil', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'wohnen', 'zimmerzahl']`
 - **Metadata_created** `2022-11-02T10:08:27.339389`
-- **Metadata_modified** `2026-02-02T07:21:40.899043`
+- **Metadata_modified** `2026-02-08T04:00:14.779426`
 
 
 # Load packages

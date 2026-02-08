@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-02"
+date: "2026-02-08"
 output: html_document
 ---
 
@@ -30,7 +30,7 @@ Auto generated R starter code for data set ewz_fw_abonnierte_leistung_kva_und_ho
 - **Keywords** `Bevölkerung,Energie`
 - **Tags** `['Fernwärme Leistung', 'energie', 'fernwaerme', 'gitlab']`
 - **Metadata_created** `2025-09-10T15:09:38.952591`
-- **Metadata_modified** `2026-01-27T08:13:42.474348`
+- **Metadata_modified** `2026-02-03T08:13:40.310853`
 
 
 # Load packages
