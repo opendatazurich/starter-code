@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-08"
+date: "2026-02-15"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ Auto generated R starter code for data set sd_lbz_einzelberatungen_alter_geschle
 - **Keywords** `Arbeit und Erwerb,Bevölk­erung,Soziales`
 - **Tags** `['beratung', 'beruf', 'berufsberatung', 'erwerb', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-09-12T14:04:59.555781`
-- **Metadata_modified** `2026-02-08T04:11:34.987085`
+- **Metadata_modified** `2026-02-15T04:14:07.299729`
 
 
 # Load packages

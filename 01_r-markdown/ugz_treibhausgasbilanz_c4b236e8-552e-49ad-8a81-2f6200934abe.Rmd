@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-08"
+date: "2026-02-15"
 output: html_document
 ---
 
@@ -82,7 +82,7 @@ Auto generated R starter code for data set ugz_treibhausgasbilanz.
 - **Keywords** `Energie,Umwelt`
 - **Tags** `['klimaerwaehrmung', 'sachdaten', 'tabelle', 'treibhausgase', 'umwelt', 'zeitreihe']`
 - **Metadata_created** `2019-07-29T13:37:19.331302`
-- **Metadata_modified** `2026-02-08T03:53:51.880209`
+- **Metadata_modified** `2026-02-15T03:54:23.628622`
 
 
 # Load packages

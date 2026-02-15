@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-08"
+date: "2026-02-15"
 output: html_document
 ---
 
@@ -9,16 +9,16 @@ output: html_document
 Liste aller Kandidierenden für die Gemeinderatswahlen 2026 mit Angaben zum Vor- und Nachnamen, Geschlecht, Geburtsjahr, Beruf, Liste, Listenkürzel, Listenbezeichnung, Kandidatennummer, Wahlkreis und ob es sich um eine Wieder- oder Neuwahl handelt.
 
 
-**Interaktive Liste der Kandidierenden:**
+**Resultate anderer Gemeinderatswahlen:**
 
-Statistik Stadt Zürich stellt eine [**interaktive Liste mit allen Kandidierenden**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/politik-und-verwaltung/politik/wahlen/gemeinderatswahlen/kandidierendenliste-gemeinderat.html) zur Verfügung. Nach den Wahlen vom 8. März 2026 werden dort auch alle Resultate der einzelnen Kandidatinnen und Kandidaten zur Verfügung stehen. 
+Offene Daten zu den Resultaten anderer Gemeinderatswahlen seit 2010 finden Sie [**unter folgendem Link ** ](https://data.stadt-zuerich.ch/dataset?q=resultate+gemeinderatswahlen).
 
 
 []()
 
-**Frühere Resultate und historische Daten zu Gemeinderatswahlen:**
+**Interaktive Kandidierendenliste Gemeinderatswahlen:**
 
-Weitere Ergebnisse und Analysen zu früheren Gemeinderatswahlen, sowie historische Daten zur relativen Parteistärke, Wahlbeteiligungen oder Sitzverteilungen von Gemeinde- und Stadtratswahlen finden Sie bei Statistik Stadt Zürich unter der Rubrik [**Gemeinderatswahlen**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/politik-und-verwaltung/politik/wahlen/gemeinderatswahlen.html).
+In dieser **[Applikation](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/politik-und-verwaltung/politik/wahlen/gemeinderatswahlen/kandidierendenliste-gemeinderat.html)** finden Sie Informationen zu allen Kandidierenden der Gemeinderatswahlen seit 2010.
 
 []()
 
@@ -34,9 +34,9 @@ Auto generated R starter code for data set politik_gemeinderatswahlen_2026_kandi
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Politik,Ver­walt­ung`
-- **Tags** `['gemeinderat', 'kandidierende', 'personen', 'sachdaten', 'tabelle', 'wahlen']`
+- **Tags** `['einzeldaten', 'gemeinderat', 'gemeinderatswahlen', 'kandidierende', 'politik', 'sachdaten', 'tabellen', 'wahlen']`
 - **Metadata_created** `2026-01-21T13:23:47.502697`
-- **Metadata_modified** `2026-02-08T03:58:12.102577`
+- **Metadata_modified** `2026-02-15T03:58:56.700959`
 
 
 # Load packages

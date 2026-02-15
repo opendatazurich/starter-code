@@ -1,0 +1,92 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-02-15"
+output: html_document
+---
+
+## Dataset: Gemeinderatswahlen 2014: Resultate aller Kandidierenden und Herkunft der Stimmen
+
+Detaillierte Resultate der erhaltenen Stimmen aller 1119 Kandidierenden für die Gemeinderatswahlen 2014 nach Vor- und Nachname, Wahlkreis, Liste, Total Stimmen, parteieigener Stimmen, parteieigenen Stimmen aus unveränderten Wahllisten, parteifremden Stimmen, Stimmen aus veränderten Wahllisten, etc.
+
+**Interaktive Kandidierendenliste Gemeinderatswahlen:**
+
+In dieser **[Applikation](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/politik-und-verwaltung/politik/wahlen/gemeinderatswahlen/kandidierendenliste-gemeinderat.html)** finden Sie Informationen zu allen Kandidierenden der Gemeinderatswahlen seit 2010.
+
+[]()
+
+**Weitere Informationen:**
+
+Weitere Grafiken und Daten zu den Wahlen gibt es unter: [Gemeinderats- und Stadtratswahlen](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/politik-und-verwaltung/politik/wahlen/gemeinderatswahlen.html)
+
+[]()
+
+**Resultate anderer Gemeinderatswahlen:**
+
+Offene Daten zu den Resultaten anderer Gemeinderatswahlen seit 2010 finden Sie [**unter folgendem Link ** ](https://data.stadt-zuerich.ch/dataset?q=resultate+gemeinderatswahlen).
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/politik_gemeinderatswahlen_2014_resultate)
+
+Auto generated R starter code for data set politik_gemeinderatswahlen_2014_resultate.
+
+## Metadata
+
+- **Publisher** `Stadtkanzlei, Allgemeine Verwaltung`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Politik`
+- **Tags** `['einzeldaten', 'gemeinderat', 'gemeinderatswahlen', 'historische-wahldaten', 'parteien', 'politik', 'resultate', 'sachdaten', 'tabellen', 'wahlen']`
+- **Metadata_created** `2026-02-13T15:54:50.520709`
+- **Metadata_modified** `2026-02-15T03:57:55.878702`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/politik_gemeinderatswahlen_2014_resultate/download/GRW_2014_resultate_kandidierende_und_herkunft_der_stimmen.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

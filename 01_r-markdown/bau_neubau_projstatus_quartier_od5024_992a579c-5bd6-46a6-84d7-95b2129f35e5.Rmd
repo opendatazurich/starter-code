@@ -1,13 +1,13 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-08"
+date: "2026-02-15"
 output: html_document
 ---
 
-## Dataset: Neubaugebäude am Jahresende nach Bauprojektstatus, Eigentumsart und Statistischer Zone
+## Dataset: Neubaugebäude am Jahresende nach Bauprojektstatus und Stadtquartier.
 
 
-Der Datensatz enthält die Anzahl bewilligter und im Bau befindlicher Gebäude in Neubauprojekten nach Eigentumsart und statistischer Zone.
+Der Datensatz enthält die Anzahl bewilligter und im Bau befindlicher Gebäude in Neubauprojekten nach Stadtquartier.
 
 
 **Hinweis:**
@@ -30,18 +30,6 @@ StichtagDatJahr entspricht dem Stichtag am Jahresende für Neubauprojekte mit St
 
 - «Bewilligt harmonisiert»: Bauprojekte, welche am Jahresende bewilligt, sistiert oder zum Bau freigegeben sind. Freigegebene oder sistierte Projekte werden seit 2021 im Gebäude- und Wohnungsregister erfasst. Davor wurden diese beide Status auch als bewilligt erfasst. Bei sistierten Projekten handelt es sich um bewilligte Projekte, die zum Beispiel wegen Einsprachen blockiert sind. 
 - «Baubegonnen»:  Bauprojekte, welche am Jahresende baubegonnen sind.
-
-
-[]()
-
-**Eigentumsart**
-
-
-- Öffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum
-- Wohnbaugenossenschaften: Nur Wohnbaugenossenschaften
-- Andere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften
-- Privatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen
-- Im Stochwerkeigentum: Stockwerkeigentumsgesellschaften
 
 
 []()
@@ -70,9 +58,9 @@ Auto generated R starter code for data set bau_neubau_projstatus_quartier_od5024
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bauen und Wohnen`
-- **Tags** `['bautaetigkeit', 'eigentum', 'gebaeude', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Tags** `['bauen-und-wohnen', 'bautaetigkeit', 'eigentum', 'gebaeude', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2026-01-27T20:55:18.399071`
-- **Metadata_modified** `2026-02-08T04:10:53.316692`
+- **Metadata_modified** `2026-02-15T04:11:55.422614`
 
 
 # Load packages

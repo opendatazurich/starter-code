@@ -1,12 +1,12 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-08"
+date: "2026-02-15"
 output: html_document
 ---
 
-## Dataset: Wohnungssaldo nach Umbau und Umbaukategorie
+## Dataset: Wohnungssaldo durch Umbau nach Umbaukategorie, Eigentumsart, Zimmerzahl und Stadtkreis
 
-Der Datensatz enthält den Wohnungssaldo nach Umbaut nach Umbaukategorie, Jahr und Wohnungsgrösse.
+Der Datensatz enthält das Wohnungssaldo durch Umbau nach Umbaukategorie, Eigentumsart, Zimmerzahl, Stadtkreis und Jahr.
 
 **Hinweis:**
 
@@ -36,7 +36,7 @@ Der Wohnungssaldo nach Umbau enthält alle Änderungen der Anzahl Wohnungen im M
 
 []()
 
-**AnzWhgStat**
+**AnzUmbauWhgStatSaldo_noDM**
 
 
 Saldo der statistischen Wohnungen, die bei einem Umbau entstehen oder aufgelöst werden.
@@ -71,9 +71,9 @@ Auto generated R starter code for data set bau_whg_bestand_umbau_umbaukat_ea_ziz
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bauen und Wohnen`
-- **Tags** `['bautaetigkeit', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'wohnen', 'wohnung', 'zeitreihe', 'zimmerzahl']`
+- **Tags** `['bauen-und-wohnen', 'bautaetigkeit', 'eigentum', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'wohnen', 'wohnung', 'zeitreihe', 'zimmerzahl']`
 - **Metadata_created** `2021-11-08T13:16:43.663020`
-- **Metadata_modified** `2026-02-08T04:04:10.054658`
+- **Metadata_modified** `2026-02-15T04:05:14.273376`
 
 
 # Load packages

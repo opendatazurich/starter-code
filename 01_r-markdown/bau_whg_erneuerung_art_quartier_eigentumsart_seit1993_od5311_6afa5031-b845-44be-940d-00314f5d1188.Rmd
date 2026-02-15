@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-08"
+date: "2026-02-15"
 output: html_document
 ---
 
@@ -11,7 +11,7 @@ Der Datensatz enthält die umgebauten und abgebrochenen Wohnungen nach Eigentums
 **Definition**
 
 
-Als bauliche Erneuerung wird vorliegend die Summe aller umgebauten und abgebrochenen Wohnungen definiert. Umbauten an Gebäuden, die weniger als 15 Jahre alt sind, werden nicht berücksichtigt. Die Erneuerungsquote ergibt sich als Summe der umgebauten und abgebrochenen Wohnungen, bezogen auf den relevanten, d.h. mindestens 15-jährigen Wohnungsbestand
+Als bauliche Erneuerung wird vorliegend die Summe aller umgebauten und abgebrochenen Wohnungen definiert. Umbauten an Gebäuden, die weniger als 15 Jahre alt sind, werden nicht berücksichtigt. Die Erneuerungsquote ergibt sich als Summe der umgebauten und abgebrochenen Wohnungen, bezogen auf den relevanten, d.h. mindestens 15-jährigen Wohnungsbestand.
 
 
 []()
@@ -19,15 +19,7 @@ Als bauliche Erneuerung wird vorliegend die Summe aller umgebauten und abgebroch
 **Weitere Informationen**
 
 
-Siehe die Analyse von Statistik Stadt Zürich aus dem Jahr 2016: [Bauliche Erneuerung in Zahlen](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/publikationen-und-dienstleistungen/publikationen/analysen/A_001_2016.html).
-
-
-[]()
-
-**AnzWhgStatGbdmind15Jaehrig**
-
-
-Wohnungsbestand in mindestens 15-jährigen Gebäuden. Hinweis: Mit diesem Wert kann die Erneuerungsquote berechnet werden. Die von SSZ ausgewiesene Quote bezieht sich nur Wohnungen in Gebäuden, die mindestens 15-jährig sind. Achtung: Der Wert enthält nur diejenigen Quartiere, in denen im betreffenden Jahr mindestens eine Erneuerung (Umbau oder Abbruch/Ersatzbau) stattgefunden hat.
+Siehe die Analyse von Statistik Stadt Zürich aus dem Jahr 2016: [Bauliche Erneuerung in Zahlen](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/publikationen-und-dienstleistungen/publikationen/analysen/a-001-2016.html).
 
 
 []()
@@ -86,7 +78,7 @@ Auto generated R starter code for data set bau_whg_erneuerung_art_quartier_eigen
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['abbruch', 'bautaetigkeit', 'eigentum', 'erneuerung', 'gebaeudealter', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'wohnen', 'wohnung', 'zeitreihe']`
 - **Metadata_created** `2021-02-05T19:47:29.781838`
-- **Metadata_modified** `2026-02-08T04:15:15.569899`
+- **Metadata_modified** `2026-02-15T04:18:17.322484`
 
 
 # Load packages
