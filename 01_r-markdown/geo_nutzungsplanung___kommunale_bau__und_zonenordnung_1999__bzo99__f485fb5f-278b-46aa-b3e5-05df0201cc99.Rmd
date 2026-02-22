@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-15"
+date: "2026-02-22"
 output: html_document
 ---
 
@@ -224,7 +224,7 @@ Auto generated R starter code for data set geo_nutzungsplanung___kommunale_bau__
 - **Keywords** `Basis­karten,Bauen und Wohnen,Umwelt,Ver­walt­ung`
 - **Tags** `['abstandslinien', 'bauordnung', 'bzo', 'erganzungsplane', 'geodaten', 'geoportal', 'liniendaten', 'nutzungsplanung', 'polygondaten', 'stzh', 'vektordaten', 'zonenplan']`
 - **Metadata_created** `2023-11-06T03:14:40.724782`
-- **Metadata_modified** `2026-02-14T06:34:39.202512`
+- **Metadata_modified** `2026-02-21T06:37:12.982385`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-15"
+date: "2026-02-22"
 output: html_document
 ---
 
@@ -38,7 +38,7 @@ Auto generated R starter code for data set geo_hundezonen.
 - **Keywords** `Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'hundezonen', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2024-09-12T04:30:42.600354`
-- **Metadata_modified** `2026-02-14T06:35:41.399476`
+- **Metadata_modified** `2026-02-21T06:38:26.607058`
 
 
 # Load packages

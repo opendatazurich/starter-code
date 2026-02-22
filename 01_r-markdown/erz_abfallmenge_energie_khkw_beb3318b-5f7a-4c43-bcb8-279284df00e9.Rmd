@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-15"
+date: "2026-02-22"
 output: html_document
 ---
 
@@ -10,7 +10,7 @@ Dieser Datensatz beinhaltet die monatlichen Mengen der in der Kehrichtverwertung
 
 **Jahreszahlen Kehrichtheizkraftwerk Hagenholz**
 
-siehe auch [Geschäftsbericht von Entsorgung + Recycling Zürich](https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html)
+Siehe dazu die Tätigkeitsberichte von ERZ. Z.B. der  [ERZ Tätigkeitsbericht 2024](https://www.stadt-zuerich.ch/de/aktuell/publikationen/2025/erz-taetigkeitsbericht-2024.html)
 
 
 
@@ -26,7 +26,7 @@ Auto generated R starter code for data set erz_abfallmenge_energie_khkw.
 - **Keywords** `Energie,Umwelt`
 - **Tags** `['Abfall', 'Energie', 'Energie Strom', 'Reststoffe', 'Wärme', 'gitlab', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-10-06T13:21:54.794694`
-- **Metadata_modified** `2026-02-11T08:24:19.268450`
+- **Metadata_modified** `2026-02-18T08:13:34.648866`
 
 
 # Load packages

@@ -4,7 +4,7 @@
 
 ### Please go to this 👉 **[overview website](https://opendatazurich.github.io/starter-code/) with the full list of datasets and links to all code files**. 
 
-This repository provides currently 2 x 1262 code files (1 x R, 1 x Python) for all data sets (*«resources»*) that are available on [OpenDataZurich](https://data.stadt-zuerich.ch/) and that contain one or several CSV/parquet/geojson distributions.
+This repository provides currently 2 x 1265 code files (1 x R, 1 x Python) for all data sets (*«resources»*) that are available on [OpenDataZurich](https://data.stadt-zuerich.ch/) and that contain one or several CSV/parquet/geojson distributions.
 
 - The code files are set with relevant metadata, descriptions, data links, and some starter code. 
 - The idea of this experiment is **that you immediately can start analyzing the data with R, Python or SQL.** 
@@ -19,7 +19,7 @@ Feedback is always very welcome – simply open an issue or contact us at [opend
 
 🌻 Our thanks for the [template](https://github.com/rnckp/starter-code-opendataswiss-gh) and help goes to [Patrick Arnecke](https://github.com/rnckp) from the Statistical Office of the Canton of Zurich!
 
-<sub>Latest update: **2026-02-15 04:24:55**</sub><br>
+<sub>Latest update: **2026-02-22 04:23:58**</sub><br>
 <sub>For all data licenses please refer to each data set's link (provided in list as well as in the notebooks).</sub>
 
 

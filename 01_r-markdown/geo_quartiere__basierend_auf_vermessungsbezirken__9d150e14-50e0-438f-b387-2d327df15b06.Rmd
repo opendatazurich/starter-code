@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-15"
+date: "2026-02-22"
 output: html_document
 ---
 
@@ -73,7 +73,7 @@ Auto generated R starter code for data set geo_quartiere__basierend_auf_vermessu
 - **Keywords** `Basis­karten`
 - **Tags** `['gebietseinteilungen', 'geodaten', 'geoportal', 'polygondaten', 'punktdaten', 'quartiere', 'stadtquartiere', 'stzh', 'vektordaten', 'vermessungsbezirk']`
 - **Metadata_created** `2023-11-06T03:23:40.746928`
-- **Metadata_modified** `2026-02-14T06:37:11.780865`
+- **Metadata_modified** `2026-02-21T06:33:02.932698`
 
 
 # Load packages

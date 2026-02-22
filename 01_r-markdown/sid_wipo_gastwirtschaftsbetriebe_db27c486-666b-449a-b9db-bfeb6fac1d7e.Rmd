@@ -1,0 +1,94 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-02-22"
+output: html_document
+---
+
+## Dataset: Historisierte Bestände der Gastwirtschaftsbetriebe
+
+Historisierte Bestände der Gastwirtschaftsbetriebe der Stadt Zürich, welche von der Fachgruppe «Bewilligung Gastro» der Stadtpolizei Zürich seit 2012 bewilligt wurden. Die Bestände bilden immer den Jahresendbestand ab.
+
+Die Geodaten zum aktuellen Bestand finden Sie unter [«Gastwirtschaftsbetriebe»](https://www.stadt-zuerich.ch/geodaten/download/Gastwirtschaftsbetriebe).
+
+
+**Zu beachten:**
+
+**Hinweis zum Attribut «Betriebsart»**:
+
+Das Attribut «**`Betriebsart`**» wird anhand der **baulichen Ausstattung** und Infrastruktur, sowie der **baurechtlichen Nutzung** definiert. 
+
+Dies kann in der Interpretation etwas irreführend sein, da die Betriebsart **nicht dem Typ des Betriebs entspricht**. So kann beispielsweise ein Kiosk gemäss dieser Definition eine Klein- und Mittelverkaufsstelle (Shop) oder eine Nebenwirtschaft (Hauptgeschäft ist etwas anderes) oder eine Gastwirtschaft sein. 
+
+
+
+[]()
+
+**Geodaten des aktuellen Bestands:**
+
+Geodaten in den gängingen Formaten zum aktuellen Bestand der Gastwirtschaftsbetriebe finden Sie auf dem städtischen Geoportal unter diesem [**Link**](https://www.stadt-zuerich.ch/geodaten/download/Gastwirtschaftsbetriebe).
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_wipo_gastwirtschaftsbetriebe)
+
+Auto generated R starter code for data set sid_wipo_gastwirtschaftsbetriebe.
+
+## Metadata
+
+- **Publisher** `Fachgruppe Bewilligung Gastro (BG), Kommissariat Wirtschaftspolizei, Stadtpolizei, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Freizeit,Tour­is­mus,​​Volks​­wirt​­schaft`
+- **Tags** `['adressen', 'ausgang', 'bar', 'essen', 'gastronomie', 'gastwirtschaftsbetriebe', 'punktdaten', 'restaurant', 'sachdaten', 'standort', 'tabelle', 'vektordaten', 'verpflegungsbetriebe', 'zeitreihe']`
+- **Metadata_created** `2019-07-29T13:37:06.732784`
+- **Metadata_modified** `2026-02-21T11:08:48.195588`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_wipo_gastwirtschaftsbetriebe/download/WIR111OD1110.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

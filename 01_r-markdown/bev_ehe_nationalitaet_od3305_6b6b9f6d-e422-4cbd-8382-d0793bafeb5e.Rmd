@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-15"
+date: "2026-02-22"
 output: html_document
 ---
 
@@ -43,7 +43,7 @@ Auto generated R starter code for data set bev_ehe_nationalitaet_od3305.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['eheschliessung', 'geschlecht', 'heirat', 'hochzeit', 'nationalitaet', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2021-05-20T18:46:09.076790`
-- **Metadata_modified** `2026-02-15T03:58:06.875687`
+- **Metadata_modified** `2026-02-22T03:57:30.346307`
 
 
 # Load packages
