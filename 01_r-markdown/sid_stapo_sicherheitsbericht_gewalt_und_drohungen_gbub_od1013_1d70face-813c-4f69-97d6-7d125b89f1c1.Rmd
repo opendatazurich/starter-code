@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ Auto generated R starter code for data set sid_stapo_sicherheitsbericht_gewalt_u
 - **Keywords** `Kri­mi­na­li­tät`
 - **Tags** `['kriminalitaet', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-11-10T16:04:04.967847`
-- **Metadata_modified** `2026-02-21T10:30:40.702115`
+- **Metadata_modified** `2026-02-24T04:30:42.516764`
 
 
 # Load packages

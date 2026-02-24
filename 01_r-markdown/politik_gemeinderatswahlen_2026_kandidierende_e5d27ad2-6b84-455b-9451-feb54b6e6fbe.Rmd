@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ Auto generated R starter code for data set politik_gemeinderatswahlen_2026_kandi
 - **Keywords** `Politik,Ver­walt­ung`
 - **Tags** `['einzeldaten', 'gemeinderat', 'gemeinderatswahlen', 'kandidierende', 'politik', 'sachdaten', 'tabellen', 'wahlen']`
 - **Metadata_created** `2026-01-21T13:23:47.502697`
-- **Metadata_modified** `2026-02-22T03:58:18.766624`
+- **Metadata_modified** `2026-02-24T07:05:25.408707`
 
 
 # Load packages

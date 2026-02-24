@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -132,7 +132,7 @@ Auto generated R starter code for data set geo_kommunale_energieplanung___energi
 - **Keywords** `Bauen und Wohnen,Energie,Ver­walt­ung`
 - **Tags** `['energie', 'energie-aus-gereinigtem-abwasser', 'energieplankarte', 'energieplanung', 'energieversorgung', 'erneuerbar-heizen', 'fernwarme', 'fernwarmeversorgung', 'geodaten', 'geoportal', 'heizen', 'holzheizkraftwerk', 'kalteversorgung', 'kehrichtheizkraftwerk', 'klarwerk', 'leitungsgebundene-energieversorgung', 'liniendaten', 'netto-null', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten', 'warmeversorgung']`
 - **Metadata_created** `2023-11-06T03:09:07.772381`
-- **Metadata_modified** `2026-02-21T06:35:20.994484`
+- **Metadata_modified** `2026-02-24T06:32:31.530687`
 
 
 # Load packages
@@ -215,23 +215,6 @@ read_geodata <- function(url, typename) {
 df <- read_geodata(url, typename)
 ```
 
-if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
-```{r eval=FALSE}
-# install.packages("ows4R")
-library(ows4R)
-
-# WFS-Client erstellen
-url_geoportal <- get_geoportal_url(url)
-wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
-
-# Verfügbare Feature-Typen anzeigen
-wfs_client$getFeatureTypes(pretty = TRUE)
-
-typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
-  dplyr::pull(name)
-
-df <- read_geodata(url, typenames[[1]])
-```
 
 # Analyze the data
 

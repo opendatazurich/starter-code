@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -26,7 +26,7 @@ Auto generated R starter code for data set erz_sr_kennzahlen.
 - **Keywords** `Bevölkerung,Ver­walt­ung`
 - **Tags** `['Abfall', 'Abfallbehälter', 'Abfalleimer', 'Kehricht', 'Littering', 'Siedlungsabfall', 'Streusalz', 'Wischgut', 'gitlab']`
 - **Metadata_created** `2025-10-06T13:51:14.745872`
-- **Metadata_modified** `2026-02-18T08:23:34.660146`
+- **Metadata_modified** `2026-02-23T07:54:09.860875`
 
 
 # Load packages

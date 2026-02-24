@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_aktuelle_auflistung_von_videokame
 - **Keywords** ``
 - **Tags** `['auflistung-von-videokameras', 'einzeldaten', 'geodaten', 'geoportal', 'kamerastandorte', 'punktdaten', 'sachdaten', 'stzh', 'tabelle', 'videouberwachung']`
 - **Metadata_created** `2024-09-06T04:30:42.047869`
-- **Metadata_modified** `2026-02-21T06:39:26.175422`
+- **Metadata_modified** `2026-02-24T06:42:42.214091`
 
 
 # Load packages
@@ -117,23 +117,6 @@ read_geodata <- function(url, typename) {
 df <- read_geodata(url, typename)
 ```
 
-if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
-```{r eval=FALSE}
-# install.packages("ows4R")
-library(ows4R)
-
-# WFS-Client erstellen
-url_geoportal <- get_geoportal_url(url)
-wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
-
-# Verfügbare Feature-Typen anzeigen
-wfs_client$getFeatureTypes(pretty = TRUE)
-
-typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
-  dplyr::pull(name)
-
-df <- read_geodata(url, typenames[[1]])
-```
 
 # Analyze the data
 

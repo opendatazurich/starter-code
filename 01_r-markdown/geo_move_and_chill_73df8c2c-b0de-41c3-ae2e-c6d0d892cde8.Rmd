@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -51,7 +51,7 @@ Auto generated R starter code for data set geo_move_and_chill.
 - **Keywords** `Bevölk­erung,Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'larm', 'move-and-chill', 'punktdaten', 'sensoren', 'stzh', 'temperatur', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:17:03.025516`
-- **Metadata_modified** `2026-02-21T06:38:00.219296`
+- **Metadata_modified** `2026-02-24T06:36:17.862410`
 
 
 # Load packages
@@ -134,23 +134,6 @@ read_geodata <- function(url, typename) {
 df <- read_geodata(url, typename)
 ```
 
-if the approach above does not work, try using [ows4r](https://eblondel.github.io/ows4R/); however, this needs to be installed first
-```{r eval=FALSE}
-# install.packages("ows4R")
-library(ows4R)
-
-# WFS-Client erstellen
-url_geoportal <- get_geoportal_url(url)
-wfs_client <- WFSClient$new(url_geoportal, "1.1.0")
-
-# Verfügbare Feature-Typen anzeigen
-wfs_client$getFeatureTypes(pretty = TRUE)
-
-typenames <- wfs_client$getFeatureTypes(pretty = TRUE) |> 
-  dplyr::pull(name)
-
-df <- read_geodata(url, typenames[[1]])
-```
 
 # Analyze the data
 

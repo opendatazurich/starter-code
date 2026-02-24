@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -47,7 +47,7 @@ Auto generated R starter code for data set gud_ds_altersbefragung.
 - **Keywords** `Bevölk­erung,Freizeit,Ge­sund­heit`
 - **Tags** `['alter', 'altersmonitoring', 'alterspolitik', 'altersstrategie', 'befragung', 'sachdaten', 'tabelle']`
 - **Metadata_created** `2024-11-27T11:18:01.876244`
-- **Metadata_modified** `2026-02-22T03:54:22.306426`
+- **Metadata_modified** `2026-02-24T08:52:29.167611`
 
 
 # Load packages

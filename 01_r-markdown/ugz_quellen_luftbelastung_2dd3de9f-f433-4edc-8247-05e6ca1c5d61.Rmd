@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-22"
+date: "2026-02-24"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set ugz_quellen_luftbelastung.
 - **Keywords** `Umwelt`
 - **Tags** `['emmissionsbilanz', 'luftbelastung', 'sachdaten', 'tabelle', 'umwelt', 'zeitreihe']`
 - **Metadata_created** `2026-01-06T15:33:11.918403`
-- **Metadata_modified** `2026-02-22T03:44:57.796042`
+- **Metadata_modified** `2026-02-24T08:42:20.899798`
 
 
 # Load packages

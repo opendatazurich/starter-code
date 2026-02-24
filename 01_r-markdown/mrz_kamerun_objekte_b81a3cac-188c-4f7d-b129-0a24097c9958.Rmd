@@ -1,0 +1,80 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-02-24"
+output: html_document
+---
+
+## Dataset: Kamerun Sammlungen am MRZ
+
+Das Museum Rietberg verfügt seit seiner Gründung über erste Objekte aus Kamerun; im Laufe der Jahre wurde dieser Bestand kontinuierlich erweitert. Im Rahmen eines CAS in Provenienzforschung hat Jonas Lendenmann einen umfassenden Überblick über die Provenienzen dieser Sammlung erarbeitet. Seine Studie bietet nicht nur detaillierte Einblicke in die Herkunft der Objekte, sondern liefert auch wichtige Kontextinformationen zur Sammlungsgeschichte, zu Ausstellungstätigkeiten sowie zu Kooperationen des Museums.
+Die vollständige Arbeit steht auf der Webseite des Museum Rietberg zum Download bereit.
+Der vorliegende Datensatz basiert auf den von Jonas Lendenmann recherchierten und aufbereiteten Informationen zu den Sammlungsobjekten aus Kamerun.
+
+**Aufbau der Daten**
+
+Die Daten zum Zeitpunkt der Erstpublikation entsprechen den Informationen, wie sie von Jonas Lendenmann in seiner Arbeit erhoben und dokumentiert wurden. Da die Forschung und Arbeit an diesen Sammlungsobjekten jedoch noch nicht abgeschlossen ist, erfolgt wöchentlich ein Abgleich der Daten. Wie häufig tatsächlich Änderungen auftreten, lässt sich im Voraus nicht bestimmen.
+Die Daten werden als JSON-Datei veröffentlicht, in der die Sammlungsobjekte als einzelne Objekte strukturiert sind.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/mrz_kamerun_objekte)
+
+Auto generated R starter code for data set mrz_kamerun_objekte.
+
+## Metadata
+
+- **Publisher** `Museum Rietberg Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Kultur`
+- **Tags** `['Kamerun', 'Provenienzforschung', 'Sammler', 'github']`
+- **Metadata_created** `2026-02-24T07:19:57.784719`
+- **Metadata_modified** `2026-02-24T07:28:59.859782`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/mrz_kamerun_objekte/download/kamerun_objekte.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch
