@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-24"
+date: "2026-03-01"
 output: html_document
 ---
 
@@ -125,7 +125,7 @@ Auto generated R starter code for data set umw_heizgradtage_standort_jahr_monat_
 - **Keywords** `Energie`
 - **Tags** `['energie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-12-01T11:40:38.213242`
-- **Metadata_modified** `2026-02-24T07:12:17.835668`
+- **Metadata_modified** `2026-03-01T04:05:14.265313`
 
 
 # Load packages

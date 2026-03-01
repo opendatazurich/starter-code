@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-24"
+date: "2026-03-01"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_naturschulen.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['geodaten', 'geoportal', 'naturschule', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:29:29.481975`
-- **Metadata_modified** `2026-02-24T06:39:39.304726`
+- **Metadata_modified** `2026-02-28T06:57:19.497006`
 
 
 # Load packages

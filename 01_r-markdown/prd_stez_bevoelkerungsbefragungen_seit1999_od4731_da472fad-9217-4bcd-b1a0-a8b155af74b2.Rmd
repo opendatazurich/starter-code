@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-24"
+date: "2026-03-01"
 output: html_document
 ---
 
@@ -116,7 +116,7 @@ Auto generated R starter code for data set prd_stez_bevoelkerungsbefragungen_sei
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bvb', 'lebensqualitat', 'sachdaten', 'sasa', 'stadtentwicklung', 'stichprobe', 'tabelle', 'umfrage', 'verkehr', 'wohnen', 'zeitreihe', 'zufriedenheit']`
 - **Metadata_created** `2021-12-10T12:07:11.357585`
-- **Metadata_modified** `2026-02-24T07:19:02.336492`
+- **Metadata_modified** `2026-03-01T04:09:40.722498`
 
 
 # Load packages

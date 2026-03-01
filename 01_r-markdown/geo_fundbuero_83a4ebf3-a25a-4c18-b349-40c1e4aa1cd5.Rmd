@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-24"
+date: "2026-03-01"
 output: html_document
 ---
 
@@ -39,7 +39,7 @@ Auto generated R starter code for data set geo_fundbuero.
 - **Keywords** `Mobilität`
 - **Tags** `['bus', 'buslinien', 'fundburo', 'geodaten', 'geoportal', 'offentlicher-verkehr', 'postauto', 'punktdaten', 'strassenbahn', 'stzh', 'tram', 'tramlinien', 'vbg', 'vbz', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:28:41.987853`
-- **Metadata_modified** `2026-02-24T06:39:29.669462`
+- **Metadata_modified** `2026-02-28T06:57:03.500133`
 
 
 # Load packages

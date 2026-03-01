@@ -1,0 +1,81 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-03-01"
+output: html_document
+---
+
+## Dataset: Anzahl Ordnungsbussen und Übertretungsbetrag
+
+Anzahl und Höhe der von der Stadtpolizei Zürich ausgestellten Ordnungsbussen.
+
+**Ordnungsbussen**
+
+Eine Ordnungsbusse ist eine Geldstrafe, die in einem vereinfachten Verfahren (Ordnungsbussenverfahren) erhoben wird. Die Grundlagen für dieses Verfahren bilden das eidgenössische Ordnungsbussengesetz, die eidgenössische und kantonale Ordnungsbussenverordnung sowie die Vorschriften über das gemeinderechtliche Ordnungsbussenverfahren. Typische Beispiele sind bspw. geringfügige Geschwindigkeitsüberschreitungen oder Parkverstösse. Hier ausgewiesen werden lediglich diejenigen Ordnungsbussen, welche im Ordnungsbussenverfahren erhoben und nicht direkt vor Ort bezahlt wurden.
+
+Beim ausgewiesenen Betrag handelt es sich um den jeweiligen Übertretungsbetrag nach Übertretungsdatum in Schweizer Franken. Im Gegensatz zum Ertrag aus der Finanzbuchhaltung wird hier der Betrag am Datum der Übertretung gemessen und nicht bei der Fallerfassung in der Buchhaltung. Aufgrund dieser Datumsdifferenzen sind die Beträge nicht direkt mit der Finanzbuchhaltung vergleichbar.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_stapo_ordungsbussen_od2131)
+
+Auto generated R starter code for data set sid_stapo_ordungsbussen_od2131.
+
+## Metadata
+
+- **Publisher** `Stadtpolizei Zürich, Sicherheitsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Mobilität`
+- **Tags** `['kriminalitaet', 'mobilitat', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2026-02-27T04:30:30.506959`
+- **Metadata_modified** `2026-02-28T10:30:12.799085`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_stapo_ordungsbussen_od2131/download/VER213OD2131.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

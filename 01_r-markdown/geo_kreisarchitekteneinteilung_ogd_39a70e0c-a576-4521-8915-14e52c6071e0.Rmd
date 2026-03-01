@@ -1,54 +1,54 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-02-24"
+date: "2026-03-01"
 output: html_document
 ---
 
-## Dataset: Kreisarchitekteneinteilung
+## Dataset: Kreisarchitekteneinteilung OGD
 
 Die Aufteilung der Stadt Zürich in Kreisarchitektengebiete regelt die Zuständigkeit von Kreisarchitekten/-innen beim Amt für Baubewilligungen (AfB) für die Behandlung von Baugesuchen.
 
-**Zweck**: Beim AfB eingehende Baugesuche werden anhand dieses Geodatensatzes einzelnen Kreisarchitekten/-innen zugewiesen.
+**Zweck**: Publikation der zuständigen Kreisarchitekten/-innen pro Gebiet.
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Kreisarchitekteneinteilung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/8dff0128-c838-4d14-af47-8da38c3ca04b).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Kreisarchitekteneinteilung OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/7d2858ea-064e-4a14-ace0-c7785b6aa03d).
 			   
 
 **Datenerfassung:**
 
-Die Einteilung basiert vorwiegend auf den Flächen der Statistischen Quartiere. Weitere zusätzliche Flächenunterteilungen sind entlang von Liegenschaftsgrenzen definiert.
+Die Einteilung ist mit den Flächen der Statistischen Zonen identisch.
 
 **Datengrundlage:**
 
-Geometrien: Statistische Quartiere und Zonen der Amtlichen Vermessung (GeoZ)
+Geometrien: Statistische Zonen der Gebietseinteilungen (GeoZ)
 Attribute: Angaben gemäss Angaben des Amts für Baubewilligungen (AfB)
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Kreisarchitekteneinteilung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/8dff0128-c838-4d14-af47-8da38c3ca04b).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Kreisarchitekteneinteilung OGD»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/7d2858ea-064e-4a14-ace0-c7785b6aa03d).
 
-***AfB-Kreisarchitekteneinteilung***: 
+***adm_ka_einteilung_ogd_a***: 
 
 Kreisarchitektengebiete
 
 
-***AfB-Kreisarchitekteneinteilung Beschriftung***: 
+***adm_ka_einteilung_ogd_beschr_p***: 
 
-Enthält die Beschriftungen der einzelnen AfB-Kreisarchitektengebiete.
+Beschriftungen der einzelnen AfB-Kreisarchitektengebiete
 
 
 
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/8dff0128-c838-4d14-af47-8da38c3ca04b.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/7d2858ea-064e-4a14-ace0-c7785b6aa03d.png)
 
 
 
-[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_kreisarchitekteneinteilung)
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_kreisarchitekteneinteilung_ogd)
 
-Auto generated R starter code for data set geo_kreisarchitekteneinteilung.
+Auto generated R starter code for data set geo_kreisarchitekteneinteilung_ogd.
 
 ## Metadata
 
@@ -57,8 +57,8 @@ Auto generated R starter code for data set geo_kreisarchitekteneinteilung.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Basis­karten,Bauen und Wohnen`
 - **Tags** `['afb', 'baubewilligungen', 'baugesuche', 'geodaten', 'geoportal', 'kreisarchitekten', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten']`
-- **Metadata_created** `2023-11-06T03:17:09.826771`
-- **Metadata_modified** `2026-02-24T06:36:20.340426`
+- **Metadata_created** `2026-02-25T05:36:37.678316`
+- **Metadata_modified** `2026-02-28T06:52:58.441587`
 
 
 # Load packages
@@ -75,7 +75,7 @@ library(xml2)
 
 data link
 ```{r}
-url <- "https://www.stadt-zuerich.ch/geodaten/download/Kreisarchitekteneinteilung?format=geojson_link"
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Kreisarchitekteneinteilung_OGD?format=geojson_link"
 ```
 
 
