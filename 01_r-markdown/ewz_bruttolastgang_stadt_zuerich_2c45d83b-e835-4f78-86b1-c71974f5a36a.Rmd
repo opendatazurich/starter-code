@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-01"
+date: "2026-03-08"
 output: html_document
 ---
 
@@ -57,7 +57,7 @@ Auto generated R starter code for data set ewz_bruttolastgang_stadt_zuerich.
 - **Keywords** `Energie`
 - **Tags** `['energie', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2020-04-29T12:20:06.601621`
-- **Metadata_modified** `2026-03-01T03:05:28.338543`
+- **Metadata_modified** `2026-03-08T03:04:01.537212`
 
 
 # Load packages

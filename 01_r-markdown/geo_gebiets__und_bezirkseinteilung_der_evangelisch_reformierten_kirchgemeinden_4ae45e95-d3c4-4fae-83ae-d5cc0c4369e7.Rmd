@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-01"
+date: "2026-03-08"
 output: html_document
 ---
 
@@ -45,7 +45,7 @@ Auto generated R starter code for data set geo_gebiets__und_bezirkseinteilung_de
 - **Keywords** `Basis­karten`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:28:01.566152`
-- **Metadata_modified** `2026-02-28T06:56:39.050008`
+- **Metadata_modified** `2026-03-07T06:41:09.774159`
 
 
 # Load packages
