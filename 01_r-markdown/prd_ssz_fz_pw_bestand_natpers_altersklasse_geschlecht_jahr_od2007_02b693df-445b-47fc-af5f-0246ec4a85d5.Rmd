@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-08"
+date: "2026-03-11"
 output: html_document
 ---
 
@@ -18,7 +18,7 @@ Der Stichtag zur Bestimmung des Jahresstandes ist jeweils der **30. September**.
 
 **Fahrzeugbestand:**
 
-Der Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild im Besitz von natürlichen und juristischen Fahrzeughalter*innen.
+Die Daten zum Fahrzeugbestand werden jeweils einmal jährlich mit Stichtag 30. September vom kantonalen Strassenverkehrsamt geliefert. Der Datensatz enthält verschiedene Informationen zu den Motorfahrzeugen mit Zürcher Nummernschild im Besitz natürlicher und juristischen Personen, deren Lenker*innen in der Stadt Zürich wohnen.
 
 []()
 
@@ -31,6 +31,12 @@ Personenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz f
 **Rechtsform:**
 
 Die Rechtsform sagt aus, ob das Fahrzeug einer natürlichen oder einer juristischen Person gehört. Hier werden nur Fahrzeuge im Besitz natürlicher Personen ausgewiesen.
+
+[]()
+
+**Korrigendum Dezember 2025**
+
+Ab Dezember 2025 wird anhand der Adresse der Lenker*innen geprüft, ob ein Fahrzeug zur Stadt Zürich gehört. Davor wurde dies anhand der Halter*innen-Adresse gemacht. Dies macht v.a. bei Fahrzeugen im Besitz juristischer Personen einen Unterschied. Diese Zuteilung wurde auch rückwirkend angepasst, daher kann die Anzahl Fahrzeuge von früheren Publikationen abweichen.
 
 []()
 
@@ -48,7 +54,7 @@ Auto generated R starter code for data set prd_ssz_fz_pw_bestand_natpers_altersk
 - **Keywords** `Energie,Mobilität,Umwelt`
 - **Tags** `['alter', 'auto', 'fahrzeugbestand', 'geschlecht', 'motorfahrzeugbestand', 'motorisierung', 'motorrad', 'personenwagen', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2025-02-12T21:03:20.080886`
-- **Metadata_modified** `2026-03-07T21:21:46.376387`
+- **Metadata_modified** `2026-03-11T07:22:43.839911`
 
 
 # Load packages

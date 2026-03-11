@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-08"
+date: "2026-03-11"
 output: html_document
 ---
 
@@ -18,7 +18,7 @@ Der Stichtag zur Bestimmung des Jahresstandes ist jeweils der **30. September**.
 
 **Fahrzeugbestand:**
 
-Die Daten zum Fahrzeugbestand der Stadt Zürich werden jeweils einmal jährlich mit Stichtag 30. September vom kantonalen Strassenverkehrsamt geliefert. Der Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild. Dabei wird zwischen natürlichen und juristischen Fahrzeughalter*innen unterschieden. In dieser Auswertung werden Personenwagen von natürlichen Personen berücksichtigt.
+Die Daten zum Fahrzeugbestand werden jeweils einmal jährlich mit Stichtag 30. September vom kantonalen Strassenverkehrsamt geliefert. Der Datensatz enthält verschiedene Informationen zu den Motorfahrzeugen mit Zürcher Nummernschild, deren Lenker*innen in der Stadt Zürich wohnen. Dabei wird unterschieden zwischen Fahrzeugen im Besitz natürlicher und juristischer Personen. In dieser Auswertung werden Personenwagen von natürlichen Personen berücksichtigt.
 
 []()
 
@@ -36,7 +36,13 @@ Zu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung
 
 **Haushalte nach Anzahl Personenwagen**
 
-Es werden Personenwagen berücksichtigt, die in der Stadt Zürich gemeldet sind und mit einer Person, die ihren wirtschaftlichen Wohnsitz in der Stadt Zürich hat, verknüpft werden können. Geschäfts- und Leasingautos, welche dem Haushalt zur Verfügung stehen können, werden im Gegensatz zum Mikrozensus Verkehr hier nicht einbezogen.
+Berücksichtigt werden Personenwagen, deren Lenker*in in der Stadt Zürich wohnhaft ist und die einer Person mit wirtschaftlichem Wohnsitz in der Stadt Zürich zugeordnet werden können. Geschäfts- und Leasingautos, welche dem Haushalt zur Verfügung stehen können, werden im Gegensatz zum Mikrozensus Verkehr hier nicht einbezogen.
+
+[]()
+
+**Korrigendum Dezember 2025**
+
+Ab Dezember 2025 wird anhand der Adresse der Lenker*innen geprüft, ob ein Fahrzeug zur Stadt Zürich gehört. Davor wurde dies anhand der Halter*innen-Adresse gemacht. Dies macht v.a. bei Fahrzeugen im Besitz juristischer Personen einen Unterschied. Diese Zuteilung wurde auch rückwirkend angepasst, daher kann die Anzahl Fahrzeuge  und der Anteil der Haushalte von früheren Publikationen abweichen.
 
 []()
 
@@ -54,7 +60,7 @@ Auto generated R starter code for data set prd_ssz_fz_pw_haushalt_quartier_jahr_
 - **Keywords** `Energie,Mobilität,Umwelt`
 - **Tags** `['auto', 'fahrzeugbestand', 'haushalte', 'motorisierung', 'personenwagen', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2024-04-12T13:47:55.878371`
-- **Metadata_modified** `2026-03-07T21:27:13.021778`
+- **Metadata_modified** `2026-03-11T07:29:22.267786`
 
 
 # Load packages

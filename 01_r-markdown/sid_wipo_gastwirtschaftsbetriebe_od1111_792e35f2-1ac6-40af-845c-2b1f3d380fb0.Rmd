@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-08"
+date: "2026-03-11"
 output: html_document
 ---
 
@@ -43,7 +43,7 @@ Auto generated R starter code for data set sid_wipo_gastwirtschaftsbetriebe_od11
 - **Keywords** `Freizeit,Tour­is­mus,​​Volks​­wirt​­schaft`
 - **Tags** `['adressen', 'ausgang', 'bar', 'essen', 'gastronomie', 'gastwirtschaftsbetriebe', 'punktdaten', 'restaurant', 'sachdaten', 'standort', 'tabelle', 'vektordaten', 'verpflegungsbetriebe', 'zeitreihe']`
 - **Metadata_created** `2026-02-24T04:30:08.984531`
-- **Metadata_modified** `2026-03-07T11:12:08.845392`
+- **Metadata_modified** `2026-03-11T05:08:50.356116`
 
 
 # Load packages
