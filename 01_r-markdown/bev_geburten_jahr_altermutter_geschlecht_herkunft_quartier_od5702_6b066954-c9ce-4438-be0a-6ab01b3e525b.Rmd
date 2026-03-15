@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-11"
+date: "2026-03-15"
 output: html_document
 ---
 
@@ -32,7 +32,7 @@ Auto generated R starter code for data set bev_geburten_jahr_altermutter_geschle
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bevoelkerungsszenarien', 'geburten', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2020-11-23T07:49:53.304414`
-- **Metadata_modified** `2026-03-11T04:20:02.194159`
+- **Metadata_modified** `2026-03-15T04:19:44.233461`
 
 
 # Load packages

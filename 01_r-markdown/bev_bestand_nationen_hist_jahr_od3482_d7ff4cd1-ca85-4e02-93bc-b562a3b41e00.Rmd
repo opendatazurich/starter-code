@@ -1,0 +1,121 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-03-15"
+output: html_document
+---
+
+## Dataset: Ausländische Bevölkerung nach Jahr und Nationalität (historische Daten)
+
+Anzahl Personen der ausländischen Wohnbevölkerung nach Jahr und Nationalität (ausgewählte Nationalitäten) seit 1894.
+
+**Nationalitäten**
+
+
+Die Ergebnisse werden nur für ausgewählte Nationalitäten gezeigt. Es wurden diejenigen Nationen gewählt, für die beispielsweise in historischen Jahrbüchern Werte vorhanden waren (seit der ersten Eingemeindung im Jahr 1893). Die Reihenfolge der Nationalitäten leitet sich aus der Anzahl Personen im letzten Jahr ab.
+
+
+[]()
+
+**Daten**
+
+
+Es wurden verschiedene Datenquellen verwendet: Für die Jahre seit 1993 diente das Bevölkerungsregister der Stadt Zürich (BVS) als Datenquelle. Für die vorangehenden Jahre wurden Volkszählungen des Bundesamts für Statistik oder Fortschreibungsdaten von Statistik Stadt Zürich beigezogen.
+
+
+[]()
+
+**Deutschland**
+
+
+Jahre 1949 bis 1989: Die Werte betreffen nur die BRD, nicht die DDR.
+
+
+[]()
+
+**Grossbritannien**
+
+
+Bei der Volkszählung 1990 beziehen sich die Werte auf das Vereinigte Königreich (d.h. Grossbritannien und Nordirland).
+
+
+[]()
+
+**Indien**
+
+
+Werte vor 1947: Britische Kolonialzeit.
+
+
+[]()
+
+**Österreich**
+
+
+1941: Keine Werte für Österreich (Teil des Deutschen Reiches).
+
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bev_bestand_nationen_hist_jahr_od3482)
+
+Auto generated R starter code for data set bev_bestand_nationen_hist_jahr_od3482.
+
+## Metadata
+
+- **Publisher** `Bevölkerungsamt, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Bevölk­erung`
+- **Tags** `['bevoelkerungsbestand', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2026-03-12T07:23:14.598605`
+- **Metadata_modified** `2026-03-15T04:07:27.127781`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bev_bestand_nationen_hist_jahr_od3482/download/BEV348OD3482.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-11"
+date: "2026-03-15"
 output: html_document
 ---
 
@@ -51,7 +51,7 @@ Auto generated R starter code for data set geo_standorte_der_automatischen_fuss_
 - **Keywords** `Mobilität`
 - **Tags** `['frequenzen', 'fussverkehr', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten', 'veloverkehr', 'verkehrszahlung']`
 - **Metadata_created** `2023-11-06T03:10:36.069239`
-- **Metadata_modified** `2026-03-11T06:33:22.325121`
+- **Metadata_modified** `2026-03-14T06:33:15.025118`
 
 
 # Load packages
