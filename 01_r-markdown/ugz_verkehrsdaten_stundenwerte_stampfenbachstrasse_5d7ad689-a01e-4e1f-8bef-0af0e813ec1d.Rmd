@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-15"
+date: "2026-03-18"
 output: html_document
 ---
 
@@ -62,7 +62,7 @@ Auto generated R starter code for data set ugz_verkehrsdaten_stundenwerte_stampf
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['echtzeit', 'fahrzeugtypen', 'miv', 'mobilitaet', 'sachdaten', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:17:41.712677`
-- **Metadata_modified** `2026-03-15T03:52:53.498814`
+- **Metadata_modified** `2026-03-18T11:56:11.087297`
 
 
 # Load packages
