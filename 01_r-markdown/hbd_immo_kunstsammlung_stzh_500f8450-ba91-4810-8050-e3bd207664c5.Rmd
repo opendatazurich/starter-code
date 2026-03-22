@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-18"
+date: "2026-03-22"
 output: html_document
 ---
 
@@ -31,7 +31,7 @@ Auto generated R starter code for data set hbd_immo_kunstsammlung_stzh.
 - **Keywords** `Kultur`
 - **Tags** `['inventar', 'kuenstlerinnen', 'kunst', 'kunstbestand', 'kunstobjekt', 'kunstsammlung', 'kunstwerke', 'material', 'sachdaten', 'tabelle', 'titel']`
 - **Metadata_created** `2025-03-31T15:22:31.798541`
-- **Metadata_modified** `2026-03-18T08:34:32.911578`
+- **Metadata_modified** `2026-03-22T04:04:16.250030`
 
 
 # Load packages
