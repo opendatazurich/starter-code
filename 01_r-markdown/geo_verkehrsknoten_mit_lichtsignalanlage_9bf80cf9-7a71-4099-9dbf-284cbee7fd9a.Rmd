@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-22"
+date: "2026-03-29"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_verkehrsknoten_mit_lichtsignalanl
 - **Keywords** `Mobilität`
 - **Tags** `['geodaten', 'geoportal', 'knoten', 'knotennummer', 'lichtsignalanlage', 'punktdaten', 'stzh', 'vektordaten', 'verkehr', 'verkehrsanlage']`
 - **Metadata_created** `2025-11-20T05:54:56.959515`
-- **Metadata_modified** `2026-03-21T06:52:18.743933`
+- **Metadata_modified** `2026-03-28T06:38:23.716650`
 
 
 # Load packages

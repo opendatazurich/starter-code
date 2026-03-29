@@ -1,10 +1,10 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-22"
+date: "2026-03-29"
 output: html_document
 ---
 
-## Dataset: Stündliche Netznutzungs- und Energietarife für das Pilotprojekt von ewz an der Anna-Heer in Zürich, beginnend ab 01. Februar 2026
+## Dataset: Stündliche Netznutzungs- und Energietarife für das Pilotprojekt von ewz an der Anna-Heer in Zürich, beginnend ab 01. Februar 2026 bis 30. September 2027.
 
 Dieser Datensatz beinhaltet dynamische Netznutzungs- und Energietarife sowie deren Kombination in Rp./kWh pro Stunde für das Pilotprojekt an der Anna-Heer-Strasse in Zürich (z.B. Kombitarif 24,3 Rp./kWh für den Zeitraum von 18.00 bis 19.00 Uhr). 
 Die Tarife werden jeweils am Vortag um 18.00 Uhr publiziert und weichen von den offziell gültigen Tarifen von ewz ab, da es sich um ein Pilotprojekt handelt. Es besteht kein Anspruch auf diese Tarife ausserhalb des Pilotprojekts.  
@@ -40,7 +40,7 @@ Auto generated R starter code for data set ewz_dynamische_tarife_pp_ah_stzh.
 - **Keywords** `Energie,Preise`
 - **Tags** `['energie', 'preise', 'sachdaten', 'tabelle', 'tarife', 'zeitreihe']`
 - **Metadata_created** `2026-02-02T15:13:16.542700`
-- **Metadata_modified** `2026-03-22T03:00:52.435313`
+- **Metadata_modified** `2026-03-29T02:58:25.413171`
 
 
 # Load packages

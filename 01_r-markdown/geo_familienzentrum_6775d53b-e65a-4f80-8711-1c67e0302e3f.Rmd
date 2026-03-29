@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-22"
+date: "2026-03-29"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_familienzentrum.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['eltern-kind-zentrum', 'familien', 'geodaten', 'geoportal', 'kinderhaus', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:25:55.919707`
-- **Metadata_modified** `2026-03-21T06:39:38.938970`
+- **Metadata_modified** `2026-03-28T06:39:05.678174`
 
 
 # Load packages

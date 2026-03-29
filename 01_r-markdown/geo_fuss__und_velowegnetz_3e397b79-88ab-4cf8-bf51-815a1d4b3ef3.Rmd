@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-22"
+date: "2026-03-29"
 output: html_document
 ---
 
@@ -106,7 +106,7 @@ Auto generated R starter code for data set geo_fuss__und_velowegnetz.
 - **Keywords** `Mobilität`
 - **Tags** `['fusswege-radwege-velowege-veloinfrastruktur-velonetz-fussverkehrsnetz-routenplaner', 'geodaten', 'geoportal', 'liniendaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:21:56.885600`
-- **Metadata_modified** `2026-01-17T06:37:13.838077`
+- **Metadata_modified** `2026-03-28T06:37:35.974269`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-22"
+date: "2026-03-29"
 output: html_document
 ---
 
@@ -17,7 +17,7 @@ Bei Kleinquartieren der Nichtsiedlungsgebiete wird zudem zwischen bewohnten und 
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Kleinquartiere»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/25d3768c-37b0-4c30-971e-03e1d760dcd0).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Kleinquartiere»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/c65659e0-3e46-4f9e-8480-4aa99ae3a28f).
 			   
 
 **Informationen zum Datensatz:**
@@ -38,7 +38,7 @@ Anzahl wirtschaftlich auf Wohnungen angemeldeter Personen
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Kleinquartiere»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/25d3768c-37b0-4c30-971e-03e1d760dcd0).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Kleinquartiere»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/c65659e0-3e46-4f9e-8480-4aa99ae3a28f).
 
 ***KLEINQUARTIERE_2021***: 
 
@@ -75,11 +75,16 @@ Kleinquartiere Jahresstand 2020
 Kleinquartiere Jahresstand 2025
 
 
+***KLEINQUARTIERE_2026***: 
+
+Kleinquartiere Jahresstand 2026
+
+
 
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/25d3768c-37b0-4c30-971e-03e1d760dcd0.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/c65659e0-3e46-4f9e-8480-4aa99ae3a28f.png)
 
 
 
@@ -93,9 +98,9 @@ Auto generated R starter code for data set geo_kleinquartiere.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt,Ver­walt­ung`
-- **Tags** `['aggregationsstufe', 'geodaten', 'geoportal', 'kleinquartiere', 'kleinraumige-einteilung', 'polygondaten', 'punktdaten', 'stadtische-einteilung', 'stzh']`
+- **Tags** `['aggregationsstufe', 'geodaten', 'geoportal', 'kleinquartiere', 'kleinraumige-einteilung', 'polygondaten', 'stadtische-einteilung', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:07:48.328433`
-- **Metadata_modified** `2026-03-21T05:37:25.000016`
+- **Metadata_modified** `2026-03-28T06:31:50.273569`
 
 
 # Load packages

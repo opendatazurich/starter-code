@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-22"
+date: "2026-03-29"
 output: html_document
 ---
 
@@ -48,7 +48,7 @@ Auto generated R starter code for data set mrz_himmelheber_fotos.
 - **Keywords** `Bildung,Kultur,Soziales`
 - **Tags** `['Afrika', 'Alaska', 'Archiv', 'Ethnologie', 'Fotografie', 'Himmelheber', 'Kunst', 'Reisen', 'github']`
 - **Metadata_created** `2023-06-26T08:59:40.412170`
-- **Metadata_modified** `2026-03-16T17:34:41.849266`
+- **Metadata_modified** `2026-03-23T17:29:54.471471`
 
 
 # Load packages
