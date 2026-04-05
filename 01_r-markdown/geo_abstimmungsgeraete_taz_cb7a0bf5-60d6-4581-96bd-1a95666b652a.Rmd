@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-29"
+date: "2026-04-05"
 output: html_document
 ---
 
@@ -42,7 +42,7 @@ Auto generated R starter code for data set geo_abstimmungsgeraete_taz.
 - **Keywords** `Bevölk­erung,Mobilität,Ver­walt­ung`
 - **Tags** `['abstimmungen', 'abstimmungsgerat', 'bedurfnisse', 'bevolkerung', 'einzeldaten', 'geodaten', 'geoportal', 'lora', 'nutzung', 'punktdaten', 'sachdaten', 'stimmungsbilder', 'stzh', 'tabelle', 'zufriedenheit']`
 - **Metadata_created** `2023-11-06T03:23:31.742089`
-- **Metadata_modified** `2026-03-28T06:38:04.957302`
+- **Metadata_modified** `2026-04-04T06:37:24.486163`
 
 
 # Load packages

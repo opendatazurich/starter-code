@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-03-29"
+date: "2026-04-05"
 output: html_document
 ---
 
@@ -11,7 +11,7 @@ Anzahl Hate Crime Ereignisse
 **Hate Crime:**
 
 
-Anzahl POLIS-Journaleinträge mit Ereignis Hate Crime (5 Unterkategorien)
+Anzahl der POLIS-Journaleinträge mit Ereignis «Hate Crime», unterteilt in die fünf Unterkategorien LGBTIQ+, politisch; religiös, rassistisch, übrige
 
 []()
 
@@ -29,7 +29,7 @@ Auto generated R starter code for data set sid_stapo_sicherheitsbericht_hate_cri
 - **Keywords** `Kri­mi­na­li­tät`
 - **Tags** `['kriminalitaet', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-11-10T16:04:06.312535`
-- **Metadata_modified** `2026-03-28T11:04:51.299844`
+- **Metadata_modified** `2026-04-04T11:08:07.960577`
 
 
 # Load packages
