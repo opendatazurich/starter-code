@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-04-05"
+date: "2026-04-12"
 output: html_document
 ---
 
@@ -12,7 +12,7 @@ Geodaten gemäss der öffentlichen Auflage BZO Revision vom 18. März bis 1. Jun
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**BZO Revision Geodaten öffentliche Auflage»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/f7c4a84f-a228-4654-ab1b-6504c96112c7).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**BZO Revision Geodaten»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/f7c4a84f-a228-4654-ab1b-6504c96112c7).
 			   
 
 **Datengrundlage:**
@@ -21,7 +21,7 @@ Pläne zur BZO Revision, Abgabe OEREB
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**BZO Revision Geodaten öffentliche Auflage»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/f7c4a84f-a228-4654-ab1b-6504c96112c7).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**BZO Revision Geodaten»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/f7c4a84f-a228-4654-ab1b-6504c96112c7).
 
 ***oea_bzo_revision_np_gn_zonenflaeche***: 
 
@@ -68,7 +68,7 @@ Auto generated R starter code for data set geo_bzo_revision_geodaten_oeffentlich
 - **Keywords** `Bauen und Wohnen,Umwelt,Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-01T08:24:45.784207`
-- **Metadata_modified** `2026-04-04T06:37:42.701362`
+- **Metadata_modified** `2026-04-11T06:41:02.364057`
 
 
 # Load packages

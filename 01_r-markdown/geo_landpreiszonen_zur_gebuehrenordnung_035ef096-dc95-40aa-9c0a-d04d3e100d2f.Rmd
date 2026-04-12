@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-04-05"
+date: "2026-04-12"
 output: html_document
 ---
 
@@ -40,13 +40,13 @@ Auto generated R starter code for data set geo_landpreiszonen_zur_gebuehrenordnu
 
 ## Metadata
 
-- **Publisher** `Fachstelle Konzessionen, Tiefbauamt, Tiefbau- und Entsorgungsdepartement`
+- **Publisher** `Plan-Bild-Grafik, Amt für Städtebau, Hochbaudepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['gebuhrenordnung-sondergebrauchsreglement-sgr-gosgr', 'geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:08:50.140050`
-- **Metadata_modified** `2026-04-04T06:31:40.861909`
+- **Metadata_modified** `2026-04-11T06:32:38.935564`
 
 
 # Load packages
