@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-04-12"
+date: "2026-04-19"
 output: html_document
 ---
 
@@ -34,7 +34,7 @@ Auto generated R starter code for data set geo_vbz_baustellen.
 - **Keywords** `Mobilität`
 - **Tags** `['baustellen', 'bus', 'buslinien', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'tram', 'tramlinien', 'vbz', 'veranstaltungen']`
 - **Metadata_created** `2025-05-15T05:30:46.929115`
-- **Metadata_modified** `2026-04-11T06:44:09.658330`
+- **Metadata_modified** `2026-04-18T06:41:51.045451`
 
 
 # Load packages
