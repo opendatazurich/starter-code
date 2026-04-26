@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-04-19"
+date: "2026-04-26"
 output: html_document
 ---
 
@@ -10,7 +10,7 @@ Beton bei städtischen Gebäuden nach Betontyp.
 
 **Beton (Bezeichnungen in Anlehnung an SIA 2030)**
 
-(Primärbeton: Beton aus überwiegend natürlicher Gesteinskörnung (Kies, Sand).
+Primärbeton: Beton aus überwiegend natürlicher Gesteinskörnung (Kies, Sand).
 Recyclingbeton RC-C: Beton aus mindestens 25% recyklierter Gesteinskörnung aus aufbereitetem Betonabbruch (z.B. Beton, Betonprodukte, Mörtel).
 Recyclingbeton RC-M: Beton aus mindestens 10% recyklierter Gesteinskörnung aus aufbereitetem Mischabbruch (z.B. Mauerziegel, Kalksandsteine).
 
@@ -33,7 +33,7 @@ Auto generated R starter code for data set hdb_ahb_staedtische_gebaeude_beton.
 - **Keywords** `Bauen und Wohnen,Umwelt`
 - **Tags** `['klima', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-11-06T11:43:12.293092`
-- **Metadata_modified** `2026-04-19T04:18:52.777967`
+- **Metadata_modified** `2026-04-26T04:22:26.818780`
 
 
 # Load packages

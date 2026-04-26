@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-04-19"
+date: "2026-04-26"
 output: html_document
 ---
 
@@ -49,7 +49,7 @@ Auto generated R starter code for data set geo_private_alters__und_pflegeheime_s
 - **Keywords** ``
 - **Tags** `['geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2023-11-06T03:28:49.192632`
-- **Metadata_modified** `2026-04-18T06:42:46.849541`
+- **Metadata_modified** `2026-04-25T06:43:20.452152`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-04-19"
+date: "2026-04-26"
 output: html_document
 ---
 
@@ -12,39 +12,29 @@ Die 3. Etappe der Strassenlärmsanierung: Welche Temporegime sind geplant, um di
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Strassenlärmsanierung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/42a6a82b-877b-496d-b063-4da4946f02f8).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Strassenlärmsanierung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/e171483c-89cc-4eb6-9d6b-5ba00aea83a5).
 			   
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Strassenlärmsanierung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/42a6a82b-877b-496d-b063-4da4946f02f8).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Strassenlärmsanierung»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/e171483c-89cc-4eb6-9d6b-5ba00aea83a5).
 
-***VIEW_GEOSERVER_ETAPPE3_STRB***: 
-
-
-
-
-***INFO_INHALT***: 
+***view_geoserver_etappe3_strb***: 
 
 
 
 
-***NICHT_KLASSIERT***: 
+***view_geoserver_etappe3_strb_e***: 
 
 
 
 
-***SCHABLONE***: 
+***view_geoserver_etappe3_strb_stand_dez21***: 
 
 
 
 
-***VERKEHRSZONEN***: 
-
-
-
-
-***VIEW_GEOSERVER_ETAPPE3_STRB_E***: 
+***view_geoserver_etappe3_strb_stand_dez25***: 
 
 
 
@@ -53,7 +43,7 @@ Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfall
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/42a6a82b-877b-496d-b063-4da4946f02f8.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/e171483c-89cc-4eb6-9d6b-5ba00aea83a5.png)
 
 
 
@@ -67,9 +57,9 @@ Auto generated R starter code for data set geo_strassenlaermsanierung.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Mobilität,Umwelt`
-- **Tags** `['geodaten', 'geoportal', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh']`
+- **Tags** `['geodaten', 'geoportal', 'liniendaten', 'punktdaten', 'stzh']`
 - **Metadata_created** `2023-11-06T03:23:55.598318`
-- **Metadata_modified** `2026-04-18T06:40:19.341602`
+- **Metadata_modified** `2026-04-25T06:40:43.833166`
 
 
 # Load packages
