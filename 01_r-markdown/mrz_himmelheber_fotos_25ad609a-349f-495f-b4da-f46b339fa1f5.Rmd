@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -48,7 +48,7 @@ Auto generated R starter code for data set mrz_himmelheber_fotos.
 - **Keywords** `Bildung,Kultur,Soziales`
 - **Tags** `['Afrika', 'Alaska', 'Archiv', 'Ethnologie', 'Fotografie', 'Himmelheber', 'Kunst', 'Reisen', 'github']`
 - **Metadata_created** `2023-06-26T08:59:40.412170`
-- **Metadata_modified** `2026-04-27T17:43:23.403504`
+- **Metadata_modified** `2026-05-04T17:45:34.762734`
 
 
 # Load packages
@@ -56,6 +56,12 @@ Auto generated R starter code for data set mrz_himmelheber_fotos.
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

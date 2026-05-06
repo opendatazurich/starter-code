@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -54,7 +54,7 @@ Auto generated R starter code for data set prd_ssz_fz_pw_bestand_natpers_altersk
 - **Keywords** `Energie,Mobilität,Umwelt`
 - **Tags** `['alter', 'auto', 'fahrzeugbestand', 'herkunft', 'motorfahrzeugbestand', 'motorisierung', 'motorrad', 'personenwagen', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2025-02-12T20:57:11.539376`
-- **Metadata_modified** `2026-05-03T04:07:18.218526`
+- **Metadata_modified** `2026-05-06T07:31:41.034404`
 
 
 # Load packages
@@ -62,6 +62,12 @@ Auto generated R starter code for data set prd_ssz_fz_pw_bestand_natpers_altersk
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

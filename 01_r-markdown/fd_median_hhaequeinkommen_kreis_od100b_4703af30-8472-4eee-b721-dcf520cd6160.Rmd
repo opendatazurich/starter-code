@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -97,7 +97,7 @@ Auto generated R starter code for data set fd_median_hhaequeinkommen_kreis_od100
 - **Keywords** `Bevölk­erung,Finanzen,​​Volks​­wirt​­schaft`
 - **Tags** `['einkommen', 'median', 'quartil', 'sachdaten', 'sasa', 'steuerpflichtige', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2023-07-14T07:04:46.707884`
-- **Metadata_modified** `2026-05-03T04:22:41.332611`
+- **Metadata_modified** `2026-05-06T07:46:46.804567`
 
 
 # Load packages
@@ -105,6 +105,12 @@ Auto generated R starter code for data set fd_median_hhaequeinkommen_kreis_od100
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

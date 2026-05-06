@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ Auto generated R starter code for data set politik_gemeinderatswahlen_2022_kandi
 - **Keywords** `Politik,Ver­walt­ung`
 - **Tags** `['einzeldaten', 'gemeinderat', 'gemeinderatswahlen', 'kandidierende', 'politik', 'sachdaten', 'tabellen', 'wahlen']`
 - **Metadata_created** `2022-01-05T19:46:32.929917`
-- **Metadata_modified** `2026-05-03T04:02:17.455942`
+- **Metadata_modified** `2026-05-06T07:25:45.717501`
 
 
 # Load packages
@@ -44,6 +44,12 @@ Auto generated R starter code for data set politik_gemeinderatswahlen_2022_kandi
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

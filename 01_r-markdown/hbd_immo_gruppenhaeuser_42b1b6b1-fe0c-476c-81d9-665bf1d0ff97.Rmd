@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -29,7 +29,7 @@ Auto generated R starter code for data set hbd_immo_gruppenhaeuser.
 - **Keywords** `Bauen und Wohnen,Ver­walt­ung`
 - **Tags** `['gruppenhaeuser', 'klassenlager', 'sachdaten', 'schuelerferien', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-03-05T10:16:03.435684`
-- **Metadata_modified** `2026-05-03T04:11:55.942886`
+- **Metadata_modified** `2026-05-06T07:36:36.611786`
 
 
 # Load packages
@@ -37,6 +37,12 @@ Auto generated R starter code for data set hbd_immo_gruppenhaeuser.
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

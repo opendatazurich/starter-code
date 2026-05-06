@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -41,7 +41,7 @@ Auto generated R starter code for data set ssd_schulferien.
 - **Keywords** `Bevölkerung,Bildung`
 - **Tags** `['ferien', 'github', 'schulfrei', 'termine', 'volksschule']`
 - **Metadata_created** `2023-11-24T18:57:14.815441`
-- **Metadata_modified** `2026-05-02T15:33:20.658014`
+- **Metadata_modified** `2026-05-05T15:57:23.335879`
 
 
 # Load packages
@@ -49,6 +49,12 @@ Auto generated R starter code for data set ssd_schulferien.
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

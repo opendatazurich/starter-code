@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -59,7 +59,7 @@ Auto generated R starter code for data set ugz_stadtklima_zuerich_temperaturmess
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['hitze', 'kaelte', 'messwerte', 'meteo', 'meteoblue', 'sachdaten', 'stadtklima', 'tabelle', 'temperatur', 'wetter', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:15:25.001905`
-- **Metadata_modified** `2026-05-03T03:49:15.908772`
+- **Metadata_modified** `2026-05-06T09:57:47.960439`
 
 
 # Load packages
@@ -67,6 +67,12 @@ Auto generated R starter code for data set ugz_stadtklima_zuerich_temperaturmess
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

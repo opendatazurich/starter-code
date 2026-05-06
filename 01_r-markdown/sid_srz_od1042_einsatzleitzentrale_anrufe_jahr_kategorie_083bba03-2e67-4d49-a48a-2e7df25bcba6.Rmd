@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -77,7 +77,7 @@ Auto generated R starter code for data set sid_srz_od1042_einsatzleitzentrale_an
 - **Keywords** `Ge­sund­heit,Ver­walt­ung`
 - **Tags** `['dispositionen', 'feuerwehr', 'gesundheit', 'rettungsdienste', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-12-01T11:17:18.245344`
-- **Metadata_modified** `2026-05-03T04:31:30.713807`
+- **Metadata_modified** `2026-05-06T10:30:42.741310`
 
 
 # Load packages
@@ -85,6 +85,12 @@ Auto generated R starter code for data set sid_srz_od1042_einsatzleitzentrale_an
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

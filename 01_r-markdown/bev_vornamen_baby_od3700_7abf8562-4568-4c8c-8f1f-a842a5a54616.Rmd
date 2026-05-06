@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -33,7 +33,7 @@ Auto generated R starter code for data set bev_vornamen_baby_od3700.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['geburten', 'geschlecht', 'kinder', 'sachdaten', 'sasa', 'tabelle', 'vornamen', 'zeitreihe']`
 - **Metadata_created** `2019-07-29T13:30:24.633209`
-- **Metadata_modified** `2026-05-03T04:15:40.517144`
+- **Metadata_modified** `2026-05-06T07:39:22.061826`
 
 
 # Load packages
@@ -41,6 +41,12 @@ Auto generated R starter code for data set bev_vornamen_baby_od3700.
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data

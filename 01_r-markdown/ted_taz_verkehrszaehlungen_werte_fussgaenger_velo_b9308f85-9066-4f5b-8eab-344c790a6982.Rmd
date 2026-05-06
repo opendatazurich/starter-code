@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-03"
+date: "2026-05-06"
 output: html_document
 ---
 
@@ -55,7 +55,7 @@ Auto generated R starter code for data set ted_taz_verkehrszaehlungen_werte_fuss
 - **Keywords** `Freizeit,Mobilität,Umwelt`
 - **Tags** `['digitale-transparenz-im-oeffentlichen-raum', 'dtoer', 'fussgaengerzaehlung', 'fussverkehr', 'langsamverkehr', 'messwerte', 'planung', 'punktdaten', 'sachdaten', 'standort', 'veloverkehr', 'velozaehlung', 'zaehlung']`
 - **Metadata_created** `2020-03-16T12:37:39.927543`
-- **Metadata_modified** `2026-05-03T03:19:09.222545`
+- **Metadata_modified** `2026-05-06T10:22:26.810677`
 
 
 # Load packages
@@ -63,6 +63,12 @@ Auto generated R starter code for data set ted_taz_verkehrszaehlungen_werte_fuss
 ```{r}
 library(skimr)
 library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
 ```
 
 # Load the data
