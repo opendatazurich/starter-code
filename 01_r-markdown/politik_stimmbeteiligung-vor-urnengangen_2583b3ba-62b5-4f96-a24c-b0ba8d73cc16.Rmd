@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-06"
+date: "2026-05-07"
 output: html_document
 ---
 
@@ -35,7 +35,7 @@ Auto generated R starter code for data set politik_stimmbeteiligung-vor-urnengan
 - **Keywords** `Politik`
 - **Tags** `['abstimmung', 'gemeinderat', 'github', 'partei', 'politik', 'sachdaten', 'stimmbeteiligung', 'tabelle', 'urnengang']`
 - **Metadata_created** `2021-09-21T11:51:40.371218`
-- **Metadata_modified** `2026-05-05T15:54:50.430673`
+- **Metadata_modified** `2026-05-06T11:55:17.349462`
 
 
 # Load packages

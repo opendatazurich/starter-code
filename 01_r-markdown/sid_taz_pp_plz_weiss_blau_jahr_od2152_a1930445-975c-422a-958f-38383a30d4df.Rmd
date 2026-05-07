@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-06"
+date: "2026-05-07"
 output: html_document
 ---
 
@@ -41,7 +41,7 @@ Auto generated R starter code for data set sid_taz_pp_plz_weiss_blau_jahr_od2152
 - **Keywords** `Mobilität`
 - **Tags** `['sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2026-04-21T06:29:02.782157`
-- **Metadata_modified** `2026-05-06T10:30:41.008450`
+- **Metadata_modified** `2026-05-07T08:24:51.140805`
 
 
 # Load packages

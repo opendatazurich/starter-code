@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-06"
+date: "2026-05-07"
 output: html_document
 ---
 
@@ -289,7 +289,7 @@ Auto generated R starter code for data set geo_meteoblue_sommerbericht.
 - **Keywords** `Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'hitze', 'hitzetage', 'klimaanderung', 'kuhlgradtage', 'luftfeuchtigkeit', 'niederschlag', 'punktdaten', 'rasterdaten', 'sommertage', 'stadtklima', 'stzh', 'temperatur', 'tropennachte']`
 - **Metadata_created** `2026-04-29T05:49:56.395537`
-- **Metadata_modified** `2026-05-06T06:43:36.461063`
+- **Metadata_modified** `2026-05-07T06:38:12.925117`
 
 
 # Load packages

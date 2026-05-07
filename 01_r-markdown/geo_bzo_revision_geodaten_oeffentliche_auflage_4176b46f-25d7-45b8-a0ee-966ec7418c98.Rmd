@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-06"
+date: "2026-05-07"
 output: html_document
 ---
 
@@ -68,7 +68,7 @@ Auto generated R starter code for data set geo_bzo_revision_geodaten_oeffentlich
 - **Keywords** `Bauen und Wohnen,Umwelt,Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:56:00.347848`
-- **Metadata_modified** `2026-05-06T06:48:01.896469`
+- **Metadata_modified** `2026-05-07T06:42:13.099873`
 
 
 # Load packages

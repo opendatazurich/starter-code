@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-06"
+date: "2026-05-07"
 output: html_document
 ---
 
@@ -38,7 +38,7 @@ Auto generated R starter code for data set geo_hydranten.
 - **Keywords** `Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'hydranten', 'punktdaten', 'stzh', 'vektordaten', 'wasserversorgung']`
 - **Metadata_created** `2026-04-29T05:57:02.945848`
-- **Metadata_modified** `2026-05-06T06:49:09.584778`
+- **Metadata_modified** `2026-05-07T06:42:51.928520`
 
 
 # Load packages
