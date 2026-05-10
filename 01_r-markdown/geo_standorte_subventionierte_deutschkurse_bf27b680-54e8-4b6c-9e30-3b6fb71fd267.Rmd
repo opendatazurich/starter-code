@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-07"
+date: "2026-05-10"
 output: html_document
 ---
 
@@ -36,7 +36,7 @@ Auto generated R starter code for data set geo_standorte_subventionierte_deutsch
 - **Keywords** `Bevölk­erung`
 - **Tags** `['deutschkurs', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:56:55.144513`
-- **Metadata_modified** `2026-05-05T06:43:10.000640`
+- **Metadata_modified** `2026-05-07T11:11:47.495470`
 
 
 # Load packages
