@@ -1,0 +1,87 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-05-13"
+output: html_document
+---
+
+## Dataset: Brunnenfotos der Stadt Zürich
+
+Dieser Datensatz ergänzt den [Geodatensatz mit den Brunnen der Stadt Zürich](https://data.stadt-zuerich.ch/dataset/geo_brunnen). Er enthält die URLs der öffentlich zugänglichen [Brunnenwebseiten](https://www.stadt-zuerich.ch/de/umwelt-und-energie/wasser/trinkwasser/brunnen.html) sowie der zugehörigen Fotos. Über die Brunnennummer lassen sich diese Informationen mit dem Geodatensatz verknüpfen.
+
+**Datenquelle:**
+
+Die Bild-URLs werden von den Unterseiten der [Brunnen-Webseite](https://www.stadt-zuerich.ch/de/umwelt-und-energie/wasser/trinkwasser/brunnen.html) übernommen.
+
+**Datenerhebung:**
+
+Der [Geodatensatz mit den Brunnen](https://data.stadt-zuerich.ch/dataset/geo_brunnen) enthält zwar URLs zu Fotos der einzelnen Brunnen, diese sind jedoch nicht öffentlich zugänglich. Auf der [Brunnen-Webseite](https://www.stadt-zuerich.ch/de/umwelt-und-energie/wasser/trinkwasser/brunnen.html) publiziert die Stadt Zürich hingegen frei zugängliche Informationen und vielfach auch Fotos zu den einzelnen Brunnen. Der vorliegende Datensatz bezieht die URLs dieser Webseiten und der zugehörigen Fotos per Webscraping.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/dib_wvz_brunnenfotos)
+
+Auto generated R starter code for data set dib_wvz_brunnenfotos.
+
+## Metadata
+
+- **Publisher** `Wasserversorgung, Departement der Industriellen Betriebe`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Ver­walt­ung`
+- **Tags** `['bilder', 'brunnen', 'fotos', 'github', 'trinkwasser', 'wasserversorgung']`
+- **Metadata_created** `2026-05-12T08:36:16.410759`
+- **Metadata_modified** `2026-05-12T09:06:59.657064`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/dib_wvz_brunnenfotos/download/brunnen_webseite_url.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

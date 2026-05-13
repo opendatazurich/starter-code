@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-10"
+date: "2026-05-13"
 output: html_document
 ---
 
@@ -49,7 +49,7 @@ Auto generated R starter code for data set geo_poi_oeffentliche_spielplaetze.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['geodaten', 'geoportal', 'punktdaten', 'spielplatz', 'stzh']`
 - **Metadata_created** `2026-04-29T05:47:23.746591`
-- **Metadata_modified** `2026-05-09T06:36:36.603938`
+- **Metadata_modified** `2026-05-13T06:33:09.349986`
 
 
 # Load packages

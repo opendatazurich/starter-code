@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-10"
+date: "2026-05-13"
 output: html_document
 ---
 
@@ -32,7 +32,7 @@ Auto generated R starter code for data set bev_bestand_woauha_jahr_quartier_herk
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bevoelkerungsbestand', 'sachdaten', 'sasa', 'tabelle', 'wochanaufenthalterinnen', 'zeitreihe']`
 - **Metadata_created** `2022-01-12T19:46:40.391729`
-- **Metadata_modified** `2026-05-10T04:16:55.720435`
+- **Metadata_modified** `2026-05-13T04:19:57.113098`
 
 
 # Load packages
