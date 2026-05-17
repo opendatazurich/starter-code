@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-13"
+date: "2026-05-17"
 output: html_document
 ---
 
@@ -61,7 +61,7 @@ Auto generated R starter code for data set prd_ssz_fz_motorisierungsgrad_jahr_qu
 - **Keywords** `Energie,Mobilität,Umwelt`
 - **Tags** `['motorisierung', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2023-11-09T15:06:38.259059`
-- **Metadata_modified** `2026-05-13T04:15:15.882928`
+- **Metadata_modified** `2026-05-17T04:10:38.849077`
 
 
 # Load packages

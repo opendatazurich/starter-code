@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-13"
+date: "2026-05-17"
 output: html_document
 ---
 
@@ -65,9 +65,9 @@ Auto generated R starter code for data set bfs_wir_sake_erwerbsstatus_ak_geschl_
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Arbeit und Erwerb`
-- **Tags** `['alter-geschlecht', 'anteil', 'arbeit-erwerb', 'erwerbstaetigkeit', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'zeitreihe']`
+- **Tags** `['alter', 'anteil', 'arbeit-erwerb', 'erwerbstaetigkeit', 'geschlecht', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-08-12T15:08:30.638763`
-- **Metadata_modified** `2026-05-13T04:09:48.130808`
+- **Metadata_modified** `2026-05-17T04:04:46.898928`
 
 
 # Load packages
