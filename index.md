@@ -14,7 +14,7 @@ Feedback is always very welcome – simply open an issue or contact us at [opend
 
 👉 Here is the link to the [repository](https://www.github.com/opendatazurich/starter-code) that contains currently 2 x 1168 code files (1 x R, 1 x Python) for all data sets (*«resources»*) that are available on [OpenDataZurich](https://data.stadt-zuerich.ch/) and that contain  CSV, parquet or geojson files. This website is build from this repo.
 
-<sub>Latest update: **2026-05-19 12:54:40**</sub><br>
+<sub>Latest update: **2026-05-19 13:06:53**</sub><br>
 <sub>For all data licenses please refer to each data set's link (provided in list as well as in the notebooks).</sub>
 
 
