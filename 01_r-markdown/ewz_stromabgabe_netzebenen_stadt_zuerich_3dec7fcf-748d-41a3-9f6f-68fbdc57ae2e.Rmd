@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Viertelstundenwerte des Stromverbrauchs in den Netzebenen 5 und 7 in der Stadt Zürich, seit 2015
@@ -46,7 +47,7 @@ Auto generated R starter code for data set ewz_stromabgabe_netzebenen_stadt_zuer
 - **Keywords** `Energie`
 - **Tags** `['energie', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-10-26T18:50:29.349434`
-- **Metadata_modified** `2026-05-17T02:55:42.186763`
+- **Metadata_modified** `2026-05-19T11:27:19.855876`
 
 
 # Load packages

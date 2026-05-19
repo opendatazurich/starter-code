@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Suchtbehandlung
@@ -38,7 +39,7 @@ Auto generated R starter code for data set geo_suchtbehandlung.
 - **Keywords** `Ge­sund­heit`
 - **Tags** `['geodaten', 'geoportal', 'gesundheit', 'punktdaten', 'stzh', 'suchtbehandlung', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:44:56.425778`
-- **Metadata_modified** `2026-05-16T06:33:30.871748`
+- **Metadata_modified** `2026-05-19T06:35:58.909125`
 
 
 # Load packages

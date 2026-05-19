@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Liegenschaften-Markt Stadt Zürich: Preisreihen (Medianpreise) und Anzahl Handänderungen in Freihandverkäufen nach Zonenart, für ganze Stadt, Stadtkreise und Stadtquartiere
@@ -50,7 +51,7 @@ Auto generated R starter code for data set bau_hae_lima_preise_anzahl_hae_art_ge
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bauzonen', 'bodenpreis', 'handaenderungen', 'liegenschaftenhandel', 'lima', 'median', 'quadratmeterpreis', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-09-07T14:12:38.502365`
-- **Metadata_modified** `2026-05-17T04:01:15.793398`
+- **Metadata_modified** `2026-05-19T07:10:29.965171`
 
 
 # Load packages

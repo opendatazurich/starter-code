@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Polizeilich registrierte Verkehrsunfälle auf dem Stadtgebiet Zürich seit 2011
@@ -104,7 +105,7 @@ Auto generated R starter code for data set sid_dav_strassenverkehrsunfallorte.
 - **Keywords** `Ge­sund­heit,Mobilität,Umwelt`
 - **Tags** `['auto', 'fussgaenger', 'gefaehrdung', 'messwert', 'motorrad', 'sachdaten', 'standorte', 'tabelle', 'unfaelle', 'velo', 'velofahrer', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2020-10-19T13:59:05.434932`
-- **Metadata_modified** `2026-05-16T11:08:05.355867`
+- **Metadata_modified** `2026-05-19T11:07:15.538546`
 
 
 # Load packages

@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Fotografien und Ansichten von Zürich um 1910
@@ -32,7 +33,7 @@ Auto generated R starter code for data set baz_zuerich_um_1910.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['archivdaten', 'fotos', 'gebaude', 'geschichte', 'glam', 'openglam', 'public-domain']`
 - **Metadata_created** `2021-03-03T15:01:12.547270`
-- **Metadata_modified** `2026-05-17T03:59:31.961395`
+- **Metadata_modified** `2026-05-19T07:07:20.850571`
 
 
 # Load packages

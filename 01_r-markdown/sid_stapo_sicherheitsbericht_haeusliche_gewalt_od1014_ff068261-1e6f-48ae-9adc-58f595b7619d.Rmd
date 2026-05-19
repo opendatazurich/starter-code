@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Häusliche Gewalt
@@ -29,7 +30,7 @@ Auto generated R starter code for data set sid_stapo_sicherheitsbericht_haeuslic
 - **Keywords** `Kri­mi­na­li­tät`
 - **Tags** `['kriminalitaet', 'sachdaten', 'sasa', 'stadtpolizei', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-11-10T16:04:07.823823`
-- **Metadata_modified** `2026-05-16T11:08:18.593300`
+- **Metadata_modified** `2026-05-19T11:07:26.957726`
 
 
 # Load packages

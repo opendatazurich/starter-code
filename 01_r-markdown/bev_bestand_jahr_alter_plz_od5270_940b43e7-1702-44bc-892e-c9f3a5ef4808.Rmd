@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Wohnbevölkerung der Stadt Zürich nach Alter und Postleitzahl
@@ -32,7 +33,7 @@ Auto generated R starter code for data set bev_bestand_jahr_alter_plz_od5270.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'bevoelkerungsbestand', 'plz', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-03-16T17:20:10.748563`
-- **Metadata_modified** `2026-05-17T04:15:02.574835`
+- **Metadata_modified** `2026-05-19T07:24:42.063103`
 
 
 # Load packages

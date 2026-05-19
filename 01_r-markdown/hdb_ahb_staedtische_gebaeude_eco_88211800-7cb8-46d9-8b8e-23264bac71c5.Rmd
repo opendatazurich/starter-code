@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: ECO-Standard bei städtischen Gebäuden
@@ -54,7 +55,7 @@ Auto generated R starter code for data set hdb_ahb_staedtische_gebaeude_eco.
 - **Keywords** `Bauen und Wohnen,Umwelt`
 - **Tags** `['klima', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-11-06T11:43:05.745111`
-- **Metadata_modified** `2026-05-17T03:56:36.190957`
+- **Metadata_modified** `2026-05-19T07:04:39.310221`
 
 
 # Load packages

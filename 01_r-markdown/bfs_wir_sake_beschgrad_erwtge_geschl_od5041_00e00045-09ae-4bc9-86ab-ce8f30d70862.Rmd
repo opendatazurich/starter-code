@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Beschäftigungsgrad der Erwerbstätigen nach Geschlecht
@@ -49,7 +50,7 @@ Auto generated R starter code for data set bfs_wir_sake_beschgrad_erwtge_geschl_
 - **Keywords** `Arbeit und Erwerb`
 - **Tags** `['anteil', 'arbeit-erwerb', 'erwerbstaetigkeit', 'geschlecht', 'sachdaten', 'sasa', 'stichprobe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-08-12T15:12:42.583292`
-- **Metadata_modified** `2026-05-17T04:14:47.046194`
+- **Metadata_modified** `2026-05-19T07:24:25.492895`
 
 
 # Load packages

@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Sozialhilfebeziehende der Stadt Zürich nach Geschlecht
@@ -40,7 +41,7 @@ Auto generated R starter code for data set sd_sod_sozialhilfebeziehende_geschlec
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['geschlecht', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:15.932945`
-- **Metadata_modified** `2026-05-17T03:57:37.347712`
+- **Metadata_modified** `2026-05-19T07:06:36.571171`
 
 
 # Load packages

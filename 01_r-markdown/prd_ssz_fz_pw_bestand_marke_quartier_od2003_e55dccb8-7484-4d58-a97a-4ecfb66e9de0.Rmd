@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Bestand der Personenwagen nach Marke und Stadtquartier
@@ -54,7 +55,7 @@ Auto generated R starter code for data set prd_ssz_fz_pw_bestand_marke_quartier_
 - **Keywords** `Energie,Mobilität,Umwelt`
 - **Tags** `['auto', 'fahrzeugbestand', 'motorfahrzeugbestand', 'motorisierung', 'motorrad', 'personenwagen', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2023-11-09T15:06:31.644731`
-- **Metadata_modified** `2026-05-17T04:00:09.854024`
+- **Metadata_modified** `2026-05-19T07:08:50.788852`
 
 
 # Load packages

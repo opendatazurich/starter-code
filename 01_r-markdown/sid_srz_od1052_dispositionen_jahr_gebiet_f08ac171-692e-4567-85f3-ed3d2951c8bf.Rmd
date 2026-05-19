@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Dispositionen
@@ -52,7 +53,7 @@ Auto generated R starter code for data set sid_srz_od1052_dispositionen_jahr_geb
 - **Keywords** `Ge­sund­heit,Ver­walt­ung`
 - **Tags** `['dispositionen', 'feuerwehr', 'gesundheit', 'rettungsdienste', 'sachdaten', 'sasa', 'sicherheit', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-12-01T11:17:20.608657`
-- **Metadata_modified** `2026-05-16T11:07:06.771333`
+- **Metadata_modified** `2026-05-19T11:06:42.420790`
 
 
 # Load packages

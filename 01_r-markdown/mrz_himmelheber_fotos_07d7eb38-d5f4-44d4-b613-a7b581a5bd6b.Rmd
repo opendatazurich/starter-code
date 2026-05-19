@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Fotos im Archiv von Hans Himmelheber (1908–2003) im Museum Rietberg
@@ -48,7 +49,7 @@ Auto generated R starter code for data set mrz_himmelheber_fotos.
 - **Keywords** `Bildung,Kultur,Soziales`
 - **Tags** `['Afrika', 'Alaska', 'Archiv', 'Ethnologie', 'Fotografie', 'Himmelheber', 'Kunst', 'Reisen', 'github']`
 - **Metadata_created** `2023-06-26T08:59:40.412170`
-- **Metadata_modified** `2026-05-11T17:51:06.336141`
+- **Metadata_modified** `2026-05-18T17:52:51.449540`
 
 
 # Load packages

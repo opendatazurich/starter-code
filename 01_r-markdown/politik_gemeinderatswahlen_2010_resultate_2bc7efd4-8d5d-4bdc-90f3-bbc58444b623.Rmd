@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Gemeinderatswahlen 2010: Resultate aller Kandidierenden und Herkunft der Stimmen
@@ -57,7 +58,7 @@ Auto generated R starter code for data set politik_gemeinderatswahlen_2010_resul
 - **Keywords** `Politik`
 - **Tags** `['einzeldaten', 'gemeinderat', 'gemeinderatswahlen', 'historische-wahldaten', 'parteien', 'politik', 'resultate', 'sachdaten', 'tabellen', 'wahlen']`
 - **Metadata_created** `2022-12-12T16:00:25.487690`
-- **Metadata_modified** `2026-05-17T04:13:49.155162`
+- **Metadata_modified** `2026-05-19T07:22:23.696209`
 
 
 # Load packages

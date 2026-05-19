@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Wohnungssaldo durch Umbau nach Eigentumsart, Zimmerzahl und Stadtkreis
@@ -72,7 +73,7 @@ Auto generated R starter code for data set bau_whg_bestand_umbau_ea_zizahlkat_kr
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bauen-und-wohnen', 'bautaetigkeit', 'eigentum', 'sachdaten', 'sasa', 'tabelle', 'umbau', 'wohnen', 'wohnung', 'zeitreihe', 'zimmerzahl']`
 - **Metadata_created** `2021-11-08T13:16:46.879726`
-- **Metadata_modified** `2026-05-17T04:10:43.660406`
+- **Metadata_modified** `2026-05-19T07:20:39.615553`
 
 
 # Load packages

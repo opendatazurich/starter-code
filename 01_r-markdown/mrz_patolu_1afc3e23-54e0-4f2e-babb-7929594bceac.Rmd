@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Patolu – Indische Textilien aus der Sammlung des Museums Rietberg
@@ -49,7 +50,7 @@ Auto generated R starter code for data set mrz_patolu.
 - **Keywords** `Freizeit,Kultur,Tour­is­mus`
 - **Tags** `['Design', 'Doppel-Ikat', 'Gujarat', 'Indien', 'Muster', 'Sari', 'Seide', 'Textilien', 'github']`
 - **Metadata_created** `2021-11-23T10:53:04.383586`
-- **Metadata_modified** `2026-05-16T16:33:31.118566`
+- **Metadata_modified** `2026-05-18T17:14:05.993444`
 
 
 # Load packages

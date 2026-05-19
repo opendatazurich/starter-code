@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Daten der Bevölkerungsbefragung der Stadt Zürich seit 1999
@@ -116,7 +117,7 @@ Auto generated R starter code for data set prd_stez_bevoelkerungsbefragungen_sei
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bvb', 'lebensqualitat', 'sachdaten', 'sasa', 'stadtentwicklung', 'stichprobe', 'tabelle', 'umfrage', 'verkehr', 'wohnen', 'zeitreihe', 'zufriedenheit']`
 - **Metadata_created** `2021-12-10T12:07:11.357585`
-- **Metadata_modified** `2026-05-17T04:07:35.736844`
+- **Metadata_modified** `2026-05-19T07:17:24.742875`
 
 
 # Load packages

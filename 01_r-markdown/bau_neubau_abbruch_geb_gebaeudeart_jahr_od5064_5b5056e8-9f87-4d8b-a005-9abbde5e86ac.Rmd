@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Anzahl Gebäude durch Neubau und Abbruch nach Gebäudeart
@@ -63,7 +64,7 @@ Auto generated R starter code for data set bau_neubau_abbruch_geb_gebaeudeart_ja
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['abbruch', 'bautaetigkeit', 'gebaeude', 'gebaeudeart', 'neubau', 'sachdaten', 'sasa', 'tabelle', 'wohnen', 'zeitreihe']`
 - **Metadata_created** `2023-02-15T06:28:45.151678`
-- **Metadata_modified** `2026-05-17T04:02:38.555134`
+- **Metadata_modified** `2026-05-19T07:10:57.500972`
 
 
 # Load packages

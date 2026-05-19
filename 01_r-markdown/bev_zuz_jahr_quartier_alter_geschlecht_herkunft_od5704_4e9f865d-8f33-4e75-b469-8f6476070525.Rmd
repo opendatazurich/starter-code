@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Zuzüge von auswärts nach Stadtquartier, Alter, Geschlecht und Herkunft
@@ -32,7 +33,7 @@ Auto generated R starter code for data set bev_zuz_jahr_quartier_alter_geschlech
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bevoelkerungsszenarien', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe', 'zuzug']`
 - **Metadata_created** `2020-11-23T07:49:33.736104`
-- **Metadata_modified** `2026-05-17T04:03:05.198221`
+- **Metadata_modified** `2026-05-19T07:11:11.882674`
 
 
 # Load packages

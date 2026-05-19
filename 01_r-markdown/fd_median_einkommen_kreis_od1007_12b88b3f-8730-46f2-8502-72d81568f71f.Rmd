@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Median-Einkommen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.
@@ -88,7 +89,7 @@ Auto generated R starter code for data set fd_median_einkommen_kreis_od1007.
 - **Keywords** `Bevölk­erung,Finanzen,​​Volks​­wirt​­schaft`
 - **Tags** `['einkommen', 'sachdaten', 'sasa', 'steuerpflichtige', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2023-07-14T07:04:30.286358`
-- **Metadata_modified** `2026-05-17T04:14:13.271287`
+- **Metadata_modified** `2026-05-19T07:22:53.971112`
 
 
 # Load packages

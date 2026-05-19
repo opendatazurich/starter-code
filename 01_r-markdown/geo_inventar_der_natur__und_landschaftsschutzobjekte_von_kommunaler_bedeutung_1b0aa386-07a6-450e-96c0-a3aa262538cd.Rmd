@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Inventar der Natur- und Landschaftsschutzobjekte von kommunaler Bedeutung
@@ -78,7 +79,7 @@ Auto generated R starter code for data set geo_inventar_der_natur__und_landschaf
 - **Keywords** `Umwelt`
 - **Tags** `['biologie', 'geodaten', 'geoportal', 'polygondaten', 'punktdaten', 'stzh', 'umwelt', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:41:05.457630`
-- **Metadata_modified** `2026-05-16T06:31:51.280194`
+- **Metadata_modified** `2026-05-19T06:33:06.533998`
 
 
 # Load packages

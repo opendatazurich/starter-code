@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Bodennutzung und Grundeigentum in der Stadt Zürich
@@ -48,7 +49,7 @@ Auto generated R starter code for data set bau_stadtgebiet_bodennutzung_grundeig
 - **Keywords** `Bauen und Wohnen,Umwelt`
 - **Tags** `['bodennutzung', 'eigentum', 'grundstueck', 'sachdaten', 'sasa', 'tabelle', 'umwelt', 'zeitreihe']`
 - **Metadata_created** `2020-04-06T17:35:40.405911`
-- **Metadata_modified** `2026-05-17T04:13:37.929442`
+- **Metadata_modified** `2026-05-19T07:22:06.862928`
 
 
 # Load packages

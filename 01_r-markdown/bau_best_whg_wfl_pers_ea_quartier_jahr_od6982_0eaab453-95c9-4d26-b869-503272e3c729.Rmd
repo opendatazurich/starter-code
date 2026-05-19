@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Wohnflächenverbrauch und Wohndichte nach Stadtquartier
@@ -57,7 +58,7 @@ Auto generated R starter code for data set bau_best_whg_wfl_pers_ea_quartier_jah
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['eigentum', 'sachdaten', 'sasa', 'tabelle', 'wohndichte', 'wohnflaechenkonsum', 'wohnungsflaeche', 'wohnverhaeltnisse', 'zeitreihe']`
 - **Metadata_created** `2021-06-28T18:46:55.408702`
-- **Metadata_modified** `2026-05-17T04:14:55.905051`
+- **Metadata_modified** `2026-05-19T07:24:35.537259`
 
 
 # Load packages

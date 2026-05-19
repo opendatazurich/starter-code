@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Liegenschaften-Markt Stadt Zürich: Umgruppierte Inhalte von BAU514OD5141.csv als Basis für die LIMA-Applikation auf der Website von Statistik Stadt Zürich (Medianpreise und Handänderungszahl nach Zonenart und Stadtquartier)
@@ -50,7 +51,7 @@ Auto generated R starter code for data set bau_hae_lima_preise_anzahl_hae_art_ge
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['bauzonen', 'bodenpreis', 'handaenderungen', 'liegenschaftenhandel', 'lima', 'median', 'quadratmeterpreis', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2022-09-07T14:26:14.684948`
-- **Metadata_modified** `2026-05-17T04:06:11.013694`
+- **Metadata_modified** `2026-05-19T07:15:03.769437`
 
 
 # Load packages

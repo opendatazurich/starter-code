@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Aufenthaltsdauer der Wohnbevölkerung nach Alter, Geschlecht, Herkunft und Stadtkreis
@@ -29,7 +30,7 @@ Auto generated R starter code for data set bev_aufenthaltsdauer_bestand_alter_ge
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'aufenthaltsdauer', 'bevoelkerungsbestand', 'durchschnitt', 'geschlecht', 'herkunft', 'median', 'mittelwert', 'quartil', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2020-01-09T13:56:07.831136`
-- **Metadata_modified** `2026-05-17T04:13:50.601977`
+- **Metadata_modified** `2026-05-19T07:22:25.519909`
 
 
 # Load packages

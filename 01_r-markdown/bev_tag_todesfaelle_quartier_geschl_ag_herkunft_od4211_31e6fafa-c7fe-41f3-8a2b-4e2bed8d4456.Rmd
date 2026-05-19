@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Todesfälle nach Tag, Stadtquartier, Geschlecht, Altersgruppe und Herkunft
@@ -46,7 +47,7 @@ Auto generated R starter code for data set bev_tag_todesfaelle_quartier_geschl_a
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'todesfaelle', 'zeitreihe']`
 - **Metadata_created** `2020-05-14T06:51:18.971825`
-- **Metadata_modified** `2026-05-17T04:13:42.596054`
+- **Metadata_modified** `2026-05-19T07:22:11.569666`
 
 
 # Load packages

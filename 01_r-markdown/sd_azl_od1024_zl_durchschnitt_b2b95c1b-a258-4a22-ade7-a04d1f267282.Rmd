@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Durchschnittlicher Zusatzleistungsanspruch von ZL-Beziehenden in der Stadt Zürich
@@ -66,7 +67,7 @@ Auto generated R starter code for data set sd_azl_od1024_zl_durchschnitt.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['durchschnitt', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe', 'zusatzleistungen']`
 - **Metadata_created** `2025-08-04T07:06:41.762087`
-- **Metadata_modified** `2026-05-17T03:58:07.333967`
+- **Metadata_modified** `2026-05-19T07:07:02.659749`
 
 
 # Load packages

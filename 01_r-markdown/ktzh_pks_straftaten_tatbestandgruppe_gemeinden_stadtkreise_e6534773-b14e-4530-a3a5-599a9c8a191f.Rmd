@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Anzahl Straftaten nach Tatbestandsgruppe für ausgewählte Gemeinden und die Stadtkreise der Stadt Zürich, seit 2009

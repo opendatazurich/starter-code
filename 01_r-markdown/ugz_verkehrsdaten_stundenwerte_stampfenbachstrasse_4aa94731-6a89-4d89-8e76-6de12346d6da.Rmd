@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Verkehrszähldaten an der Stampfenbachstrasse nach Fahrzeugtypen, 2007-2023 [Nachführung eingestellt]
@@ -62,7 +63,7 @@ Auto generated R starter code for data set ugz_verkehrsdaten_stundenwerte_stampf
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['echtzeit', 'fahrzeugtypen', 'miv', 'mobilitaet', 'sachdaten', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:17:41.712677`
-- **Metadata_modified** `2026-05-17T03:50:21.598382`
+- **Metadata_modified** `2026-05-19T12:50:53.005750`
 
 
 # Load packages

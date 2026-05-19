@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Aktueller Hundebestand der Stadt Zürich
@@ -42,7 +43,7 @@ Auto generated R starter code for data set sid_stapo_aktueller_hundebestand_mona
 - **Keywords** `Bevölk­erung,Freizeit`
 - **Tags** `['alter', 'geschlecht', 'hunde', 'hundehaltende', 'hunderasse', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-06-03T15:12:01.997984`
-- **Metadata_modified** `2026-05-17T04:30:32.174758`
+- **Metadata_modified** `2026-05-19T10:30:58.956550`
 
 
 # Load packages

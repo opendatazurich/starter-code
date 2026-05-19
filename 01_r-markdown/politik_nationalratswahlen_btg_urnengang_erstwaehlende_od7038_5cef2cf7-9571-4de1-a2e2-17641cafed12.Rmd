@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Beteiligung am Urnengang der Nationalrats- und Ständeratswahlen, nach erstmaliger Teilnahme
@@ -31,7 +32,7 @@ Auto generated R starter code for data set politik_nationalratswahlen_btg_urneng
 - **Keywords** `Politik`
 - **Tags** `['nationalratswahlen', 'politik', 'sachdaten', 'sasa', 'tabelle', 'urnengang', 'wahlbeteiligung', 'wahlen', 'zeitreihe']`
 - **Metadata_created** `2019-11-14T08:45:29.210616`
-- **Metadata_modified** `2026-05-17T04:11:21.669386`
+- **Metadata_modified** `2026-05-19T07:21:20.064264`
 
 
 # Load packages

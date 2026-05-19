@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Relative Parteistärke bei den Nationalratswahlen in der Stadt Zürich
@@ -95,7 +96,7 @@ Auto generated R starter code for data set politik_nationalratswahlen_parteistae
 - **Keywords** `Politik`
 - **Tags** `['nationalratswahlen', 'partei', 'politik', 'sachdaten', 'sasa', 'tabelle', 'wahlbeteiligung', 'wahlen', 'zeitreihe']`
 - **Metadata_created** `2019-07-29T13:26:49.494123`
-- **Metadata_modified** `2026-05-17T04:06:41.461092`
+- **Metadata_modified** `2026-05-19T07:16:21.650123`
 
 
 # Load packages

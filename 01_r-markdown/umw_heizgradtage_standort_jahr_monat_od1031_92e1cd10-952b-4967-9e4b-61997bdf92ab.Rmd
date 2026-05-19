@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Heizgradtage und akkumulierte Temperaturdifferenzen für verschiedene Standorte in der Stadt Zürich
@@ -125,7 +126,7 @@ Auto generated R starter code for data set umw_heizgradtage_standort_jahr_monat_
 - **Keywords** `Energie`
 - **Tags** `['energie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2024-12-01T11:40:38.213242`
-- **Metadata_modified** `2026-05-17T04:02:53.156307`
+- **Metadata_modified** `2026-05-19T07:11:08.808769`
 
 
 # Load packages

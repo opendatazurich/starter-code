@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Private Alters- und Pflegeheime sowie weitere Alterswohnformen
@@ -49,7 +50,7 @@ Auto generated R starter code for data set geo_private_alters__und_pflegeheime_s
 - **Keywords** ``
 - **Tags** `['geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:56:14.238214`
-- **Metadata_modified** `2026-05-16T06:40:25.570425`
+- **Metadata_modified** `2026-05-19T06:43:46.215885`
 
 
 # Load packages

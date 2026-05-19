@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Anzahl Einzelberatungen beim Laufbahnzentrum nach Jahr, Geschlecht und Altersgruppe
@@ -36,7 +37,7 @@ Auto generated R starter code for data set sd_lbz_einzelberatungen_alter_geschle
 - **Keywords** `Arbeit und Erwerb,Bevölk­erung,Soziales`
 - **Tags** `['beratung', 'beruf', 'berufsberatung', 'erwerb', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-09-12T14:04:59.555781`
-- **Metadata_modified** `2026-05-17T04:10:47.835190`
+- **Metadata_modified** `2026-05-19T07:20:43.581893`
 
 
 # Load packages

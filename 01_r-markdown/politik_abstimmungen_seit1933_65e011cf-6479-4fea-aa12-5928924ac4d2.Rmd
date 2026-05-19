@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Abstimmungsresultate der Stadt Zürich, seit 1933
@@ -34,7 +35,7 @@ Auto generated R starter code for data set politik_abstimmungen_seit1933.
 - **Keywords** `Politik`
 - **Tags** `['abstimmung', 'abstimmungsresultate', 'github', 'politik', 'sachdaten', 'tabellen', 'zeitreihe']`
 - **Metadata_created** `2024-08-19T13:32:25.024351`
-- **Metadata_modified** `2026-05-11T06:20:25.320538`
+- **Metadata_modified** `2026-05-18T06:31:35.639468`
 
 
 # Load packages

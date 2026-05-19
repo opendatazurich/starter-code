@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Kunstsammlung der Stadt Zürich
@@ -31,7 +32,7 @@ Auto generated R starter code for data set hbd_immo_kunstsammlung_stzh.
 - **Keywords** `Kultur`
 - **Tags** `['inventar', 'kuenstlerinnen', 'kunst', 'kunstbestand', 'kunstobjekt', 'kunstsammlung', 'kunstwerke', 'material', 'sachdaten', 'tabelle', 'titel']`
 - **Metadata_created** `2025-03-31T15:22:31.798541`
-- **Metadata_modified** `2026-05-17T04:03:50.122213`
+- **Metadata_modified** `2026-05-19T07:13:50.229130`
 
 
 # Load packages

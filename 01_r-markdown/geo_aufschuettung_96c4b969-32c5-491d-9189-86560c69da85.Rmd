@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Aufschüttung
@@ -39,7 +40,7 @@ Auto generated R starter code for data set geo_aufschuettung.
 - **Keywords** `Basis­karten,Bauen und Wohnen,Bevölk­erung,Umwelt,​​Volks​­wirt​­schaft`
 - **Tags** `['aufschuttung', 'geodaten', 'geoportal', 'polygondaten', 'seeufer', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:43:22.469781`
-- **Metadata_modified** `2026-05-16T06:32:48.562052`
+- **Metadata_modified** `2026-05-19T06:34:58.605716`
 
 
 # Load packages

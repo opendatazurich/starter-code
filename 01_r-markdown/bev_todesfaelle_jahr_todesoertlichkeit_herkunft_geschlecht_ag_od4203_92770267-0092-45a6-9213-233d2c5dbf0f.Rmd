@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Todesfälle nach Todesörtlichkeit, Geschlecht, 10-Jahres-Altersklasse und Herkunft
@@ -24,7 +25,7 @@ Auto generated R starter code for data set bev_todesfaelle_jahr_todesoertlichkei
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'todesfaelle', 'zeitreihe']`
 - **Metadata_created** `2024-08-27T09:49:29.694606`
-- **Metadata_modified** `2026-05-17T04:00:45.142444`
+- **Metadata_modified** `2026-05-19T07:10:08.316007`
 
 
 # Load packages

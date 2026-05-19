@@ -1,7 +1,8 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-17"
+date: "2026-05-19"
 output: html_document
+editor: visual
 ---
 
 ## Dataset: Gang dur Züri
@@ -38,7 +39,7 @@ Auto generated R starter code for data set geo_gang_dur_zueri.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bildung', 'geodaten', 'geoportal', 'punktdaten', 'schule', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:54:07.191125`
-- **Metadata_modified** `2026-05-16T06:39:24.034200`
+- **Metadata_modified** `2026-05-19T06:42:45.133917`
 
 
 # Load packages
