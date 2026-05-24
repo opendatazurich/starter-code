@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-19"
+date: "2026-05-24"
 output: html_document
 editor: visual
 ---
@@ -70,7 +70,7 @@ Auto generated R starter code for data set bev_monat_asylwesen_status_nationalit
 - **Keywords** `Bevölk­erung`
 - **Tags** `['asylsuchende', 'aufenthaltsart', 'bevoelkerungsbestand', 'geschlecht', 'nationalitaet', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-08-20T21:08:32.703425`
-- **Metadata_modified** `2026-05-19T07:14:57.246371`
+- **Metadata_modified** `2026-05-24T04:05:59.584936`
 
 
 # Load packages

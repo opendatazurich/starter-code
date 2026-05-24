@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-19"
+date: "2026-05-24"
 output: html_document
 editor: visual
 ---
@@ -58,7 +58,7 @@ Auto generated R starter code for data set geo_kunstbauteninventar.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'polygondaten', 'stzh', 'ufermauern-stutzmauern-brucken-kunstbauten', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:41:59.542877`
-- **Metadata_modified** `2026-05-19T06:33:33.225232`
+- **Metadata_modified** `2026-05-23T06:32:02.201907`
 
 
 # Load packages

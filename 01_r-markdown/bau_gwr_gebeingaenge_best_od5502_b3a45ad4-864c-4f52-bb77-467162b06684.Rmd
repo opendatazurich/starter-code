@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-19"
+date: "2026-05-24"
 output: html_document
 editor: visual
 ---
@@ -62,7 +62,7 @@ Auto generated R starter code for data set bau_gwr_gebeingaenge_best_od5502.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['adresse', 'gebaeudeingang', 'gwr', 'gwz', 'punktdaten', 'sachdaten', 'sasa', 'stzh', 'tabelle']`
 - **Metadata_created** `2025-11-04T09:25:12.523667`
-- **Metadata_modified** `2026-05-19T07:06:00.935718`
+- **Metadata_modified** `2026-05-24T03:58:31.884279`
 
 
 # Load packages

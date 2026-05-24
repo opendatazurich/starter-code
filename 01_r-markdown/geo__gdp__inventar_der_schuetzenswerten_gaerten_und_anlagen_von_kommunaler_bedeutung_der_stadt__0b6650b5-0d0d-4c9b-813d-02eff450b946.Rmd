@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-19"
+date: "2026-05-24"
 output: html_document
 editor: visual
 ---
@@ -58,7 +58,7 @@ Auto generated R starter code for data set geo__gdp__inventar_der_schuetzenswert
 - **Keywords** `Umwelt`
 - **Tags** `['baum', 'bestattung', 'freiraum', 'garten', 'gdp', 'geodaten', 'geoportal', 'grunflache', 'polygondaten', 'schutz', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:51:04.877641`
-- **Metadata_modified** `2026-05-19T06:40:55.441420`
+- **Metadata_modified** `2026-05-23T06:37:20.384353`
 
 
 # Load packages

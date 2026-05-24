@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-19"
+date: "2026-05-24"
 output: html_document
 editor: visual
 ---
@@ -50,7 +50,7 @@ Auto generated R starter code for data set sd_sod_sozialhilfebeziehende_alter.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['alter', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:32.196999`
-- **Metadata_modified** `2026-05-19T07:21:57.154771`
+- **Metadata_modified** `2026-05-24T04:11:29.341289`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-19"
+date: "2026-05-24"
 output: html_document
 editor: visual
 ---
@@ -31,7 +31,7 @@ Auto generated R starter code for data set dib_wvz_brunnenfotos.
 - **Keywords** `Ge­sund­heit,Ver­walt­ung`
 - **Tags** `['bilder', 'brunnen', 'fotos', 'github', 'trinkwasser', 'wasserversorgung']`
 - **Metadata_created** `2026-05-12T08:36:16.410759`
-- **Metadata_modified** `2026-05-15T20:55:03.795860`
+- **Metadata_modified** `2026-05-22T21:06:30.040027`
 
 
 # Load packages

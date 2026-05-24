@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-19"
+date: "2026-05-24"
 output: html_document
 editor: visual
 ---
@@ -44,7 +44,7 @@ Auto generated R starter code for data set geo_reinigungsregionsgrenzen.
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'region', 'regionsgrenzen', 'reinigung', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:40:13.887045`
-- **Metadata_modified** `2026-05-19T06:32:38.821571`
+- **Metadata_modified** `2026-05-23T06:31:16.524364`
 
 
 # Load packages
