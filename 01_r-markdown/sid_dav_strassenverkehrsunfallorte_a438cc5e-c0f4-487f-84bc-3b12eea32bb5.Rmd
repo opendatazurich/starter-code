@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-24"
+date: "2026-05-31"
 output: html_document
 editor: visual
 ---
@@ -105,7 +105,7 @@ Auto generated R starter code for data set sid_dav_strassenverkehrsunfallorte.
 - **Keywords** `Ge­sund­heit,Mobilität,Umwelt`
 - **Tags** `['auto', 'fussgaenger', 'gefaehrdung', 'messwert', 'motorrad', 'sachdaten', 'standorte', 'tabelle', 'unfaelle', 'velo', 'velofahrer', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2020-10-19T13:59:05.434932`
-- **Metadata_modified** `2026-05-23T11:06:55.098537`
+- **Metadata_modified** `2026-05-30T11:12:52.600848`
 
 
 # Load packages

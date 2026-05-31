@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-24"
+date: "2026-05-31"
 output: html_document
 editor: visual
 ---
@@ -26,7 +26,7 @@ Auto generated R starter code for data set ssd_mkz_gruppenunterrichte.
 - **Keywords** `Bildung,Freizeit`
 - **Tags** `['bildung', 'kunst', 'musik', 'schule', 'standort']`
 - **Metadata_created** `2019-07-29T13:23:04.886759`
-- **Metadata_modified** `2026-05-24T03:57:52.972215`
+- **Metadata_modified** `2026-05-31T03:57:31.947149`
 
 
 # Load packages

@@ -1,0 +1,92 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-05-31"
+output: html_document
+editor: visual
+---
+
+## Dataset: Informationen zur Zugänglichkeit öffentlicher Gebäude der Stadt Zürich
+
+Dieser Datensatz enthält Informationen zur Zugänglichkeit öffentlicher Gebäude, die von Pro Infirmis erfasst wurden. Abgedeckt werden verschiedene Aspekte der Zugänglichkeit, darunter Rollstuhlgängigkeit, Zugänglichkeit für Menschen mit Seh- oder kognitiver Beeinträchtigung.
+
+**Ginto:**
+
+Dieser Datensatz wird über die API von [Ginto](https://www.ginto.guide/) zur Verfügung gestellt. Anpassungen und Verbesserungen einzelner Einträge können in der [Ginto App](https://about.ginto.guide/support#app) gemacht werden.
+
+**Kontakt:**
+
+Allgemeine Verbesserungsvorschläge können an diese Adresse gesendet werden: info@ginto.guide
+
+**Bewertungen:**
+
+Die Bewertungen entsprechend den Standardbewertungen ('defaultRatings') der Ginto-API: Eine Standardbewertung umfasst ein Piktogramm und eine kurze Zusammenfassung eines bestimmten Aspekts der Barrierefreiheit des Eintrags. Verwende die Standardbewertungen eines Eintrags, um die Zugänglichkeit des Eintrags auf deiner Website zu veröffentlichen.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/hdb_immo_ginto_zugaenglichkeit)
+
+Auto generated R starter code for data set hdb_immo_ginto_zugaenglichkeit.
+
+## Metadata
+
+- **Publisher** `Immobilien Stadt Zürich, Hochbaudepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Ver­walt­ung`
+- **Tags** `['api', 'barrierefreiheit', 'gebaeude', 'github', 'parkplatz', 'rollstuhl', 'tabelle', 'wc', 'zugaenglichkeit']`
+- **Metadata_created** `2026-05-27T11:09:50.071015`
+- **Metadata_modified** `2026-05-29T19:11:24.403821`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/hdb_immo_ginto_zugaenglichkeit/download/hdb_immo_ginto_zugaenglichkeit.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch
