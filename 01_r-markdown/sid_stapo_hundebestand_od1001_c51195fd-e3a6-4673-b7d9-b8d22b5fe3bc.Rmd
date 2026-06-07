@@ -1,11 +1,11 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-05-31"
+date: "2026-06-07"
 output: html_document
 editor: visual
 ---
 
-## Dataset: Aktueller Hundebestand der Stadt Zürich. Stand: 2025-12-31
+## Dataset: Hundebestände der Stadt Zürich, seit: 2014-12-31
 
 In diesem Datensatz finden Sie Angaben zu Hunden und deren Besitzerinnen und Besitzern aus den Beständen des städtischen Hunderegisters seit 2014.
 Bei den hundehaltenden Personen sind Informationen zur Altersgruppe, dem Geschlecht und dem statistischen Quartier des Wohnorts angegeben. Zu jedem Hund ist die Rasse, der Rassetyp, das Geschlecht, das Geburtsjahr, das Alter und die Farbe erfasst. Das Hunderegister wird von der Abteilung Hundekontrolle der Stadtpolizei Zürich geführt.
@@ -33,7 +33,7 @@ Wenn Sie sich auch für die Entwicklungen der **Hundenamen** seit 2014 interessi
 
 Wenn Sie sich für den **aktuellsten Hundebestand** interessieren, dann finden Sie diesen unter:
 
-- **[Hundebestände der Stadt Zürich, seit 2014](https://data.stadt-zuerich.ch/dataset/sid_stapo_od1003_aktueller_hundebestand_monat)**
+- **[Aktueller Hundebestand der Stadt Zürich](https://data.stadt-zuerich.ch/dataset/sid_stapo_aktueller_hundebestand_monat_od1003)**
 
 []()
 
@@ -50,8 +50,8 @@ Auto generated R starter code for data set sid_stapo_hundebestand_od1001.
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bevölk­erung,Freizeit`
 - **Tags** `['alter', 'geschlecht', 'hunde', 'hundehaltende', 'hunderasse', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
-- **Metadata_created** `2022-09-29T06:57:59.653162`
-- **Metadata_modified** `2026-05-30T11:13:04.135679`
+- **Metadata_created** `2026-06-05T09:30:50.787231`
+- **Metadata_modified** `2026-06-07T04:30:26.024368`
 
 
 # Load packages
