@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-07"
+date: "2026-06-14"
 output: html_document
 editor: visual
 ---
@@ -13,6 +13,15 @@ Alle Bahnemissionen wurden mit sonRAIL berechnet.
 Für Aussen- und Freiräume gibt es zurzeit keine gesetzlich festgelegten Grenzwerte, daher flossen keine Pegelkorrekturen gemäss LSV für die Emissionsberechnung des Strassen- (inkl. Tram) und Schienenlärms ein.
 Die Ausbreitungsberechnung für Strassen- und Tramlärm erfolgte nach ISO9613-2 (2024) unter Berücksichtigung der sonROAD18-Richtcharakteristiken und jene für Bahnlärm nach SEMIBEL. 
 Es wurde separat je ein Immissionsraster für die Strassenlärmbelastung (inkl. Tramlärm) sowie ein Raster für die Bahnlärmbelastung berechnet. Durch die energetische Addition der beiden Lärmquellen konnte die Gesamtlärmbelastung ermittelt werden (die Daten der Gesamtlärmbelastung können bezogen werden). Alle Immissionsraster wurden im Nachgang auf 0.1 dB mathematisch gerundet.
+
+Für die Symbolisierung wird das Attribut &quot;Klassierung&quot; mit folgender Farbgebung empfohlen: 
+-	&lt;=45: HEX # 267300
+-	45-50: HEX # 38A800 
+-	50-55: HEX # 4CE600
+-	55-60: HEX # F5F57A
+-	60-65: HEX # FFFF00
+-	65-70: HEX # FFAA00
+-	&gt; 70: HEX # FF0000
 
 **Zweck**: Veröffentlichen von Daten gemäss Bundesgesetz vom 5. Oktober 2007 über Geoinformation (GeoIG, SR 510.62) und Verordnung vom 21. Mai 2008 über Geoinformation (GeoIV, SR 510.620)
 Modellierung von flächendeckenden Informationen zur jahresdurchschnittlichen Lärmbelastung am Tag (06:00 Uhr – 22:00 Uhr) von Strassen und Schienenlärm im Aussenraum der Stadt Zürich. 
@@ -45,7 +54,7 @@ Auto generated R starter code for data set geo_laermbelastung_aussenraeume.
 - **Keywords** `Bauen und Wohnen,Bevölk­erung,Ge­sund­heit,Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'polygondaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-05-23T05:34:35.465868`
-- **Metadata_modified** `2026-06-06T06:46:01.631853`
+- **Metadata_modified** `2026-06-13T06:49:58.720104`
 
 
 # Load packages

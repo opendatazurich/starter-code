@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-07"
+date: "2026-06-14"
 output: html_document
 editor: visual
 ---
@@ -13,14 +13,8 @@ Die Gebäudeadressen der Stadt Zürich werden aus den amtlichen Vermessungsdaten
 
 **Genereller Hinweis zum Geodatensatz:**
 
-Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Adressen Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/69b679bb-f6e1-9267-354e-05196b272755).
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Adressen Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/ce08c96b-09da-4a6a-8ef8-a88f4e808ce7).
 			   
-
-**Informationen zum Datensatz:**
-
-Datenelemente werden nur im Datenformat ESRI SDE GDB beschrieben. 
-Zusätzliches Datenformat mit identischem Inhalt: Oracle SDO im Schema GEOZ_SDO. 
-Das Attribut OBJECTID ist nur im Datenformat ESRI SDE GDB vorhanden. Tabellen, die nur im Datenformat Oracle SDO vorkommen werden auch beschrieben.
 
 **Datenerfassung:**
 
@@ -32,28 +26,28 @@ Amtliche Vermessungsdaten der Stadt Zürich sowie mehrere Datenbestände der Sta
 
 **Geodatenelemente:**
 
-Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Adressen Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/69b679bb-f6e1-9267-354e-05196b272755).
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Adressen Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/ce08c96b-09da-4a6a-8ef8-a88f4e808ce7).
 
-***ADRSTZH_ADRESSEN_STZH_P***: 
-
-Alle Gebäudeadressen aus der Stadt Zürich inkl. Verschnitt-Infos für Adresssuche und Info-Abfrage in Applikationen.
-
-
-***ADRSTZH_STRASSENNAMEN_STZH_P***: 
-
-Alle Strassenamen der Stadt Zürich. Jeder Strassennamen ist einmal inkl. einer Punktkoordinate vorhanden.
-
-
-***EGID_BB_EO_ADR_TBL***: 
+***egid_bb_eo_adr_tbl***: 
 
 Zusatzinformationen für EGID aus Bodenbedeckung (BB), Einzelobjekten (EO) und Adressen (ADR)
+
+
+***adrstzh_adressen_stzh_p***: 
+
+Alle Gebäudeadressen aus der Stadt Zürich inkl. Zusatzinformationen aus Flächenverschnitten mit diversen Gebietseinteilungen.
+
+
+***adrstzh_strassennamen_stzh_p***: 
+
+Alle Strassenamen der Stadt Zürich mit einer Punktkoordinate als Beschriftungsposition.
 
 
 
 
 **Statisches Vorschaubild:**
 
-![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/69b679bb-f6e1-9267-354e-05196b272755.png)
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/ce08c96b-09da-4a6a-8ef8-a88f4e808ce7.png)
 
 
 
@@ -67,9 +61,9 @@ Auto generated R starter code for data set geo_adressen_stadt_zuerich.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Basis­karten`
-- **Tags** `['adressen', 'geodaten', 'geoportal', 'punktdaten', 'stzh', 'vektordaten']`
+- **Tags** `['adressen', 'geodaten', 'geoportal', 'punktdaten', 'stzh']`
 - **Metadata_created** `2026-04-29T05:44:40.956806`
-- **Metadata_modified** `2026-06-06T06:35:04.819425`
+- **Metadata_modified** `2026-06-13T06:36:12.152383`
 
 
 # Load packages

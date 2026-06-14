@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-07"
+date: "2026-06-14"
 output: html_document
 editor: visual
 ---
@@ -35,7 +35,7 @@ Auto generated R starter code for data set hdb_immo_ginto_zugaenglichkeit.
 - **Keywords** `Ge­sund­heit,Ver­walt­ung`
 - **Tags** `['api', 'barrierefreiheit', 'gebaeude', 'github', 'parkplatz', 'rollstuhl', 'tabelle', 'wc', 'zugaenglichkeit']`
 - **Metadata_created** `2026-05-27T11:09:50.071015`
-- **Metadata_modified** `2026-06-05T18:57:17.171242`
+- **Metadata_modified** `2026-06-12T18:59:50.666907`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-07"
+date: "2026-06-14"
 output: html_document
 editor: visual
 ---
@@ -41,7 +41,7 @@ Auto generated R starter code for data set ewz_dynamische_tarife_pp_ah_stzh.
 - **Keywords** `Energie,Preise`
 - **Tags** `['energie', 'preise', 'sachdaten', 'tabelle', 'tarife', 'zeitreihe']`
 - **Metadata_created** `2026-02-02T15:13:16.542700`
-- **Metadata_modified** `2026-06-07T02:58:35.143240`
+- **Metadata_modified** `2026-06-14T03:00:09.699959`
 
 
 # Load packages
