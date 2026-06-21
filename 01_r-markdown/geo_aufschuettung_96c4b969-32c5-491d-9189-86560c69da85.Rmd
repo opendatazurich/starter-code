@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-14"
+date: "2026-06-21"
 output: html_document
 editor: visual
 ---
@@ -40,7 +40,7 @@ Auto generated R starter code for data set geo_aufschuettung.
 - **Keywords** `Basis­karten,Bauen und Wohnen,Bevölk­erung,Umwelt,​​Volks​­wirt​­schaft`
 - **Tags** `['aufschuttung', 'geodaten', 'geoportal', 'polygondaten', 'seeufer', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:43:22.469781`
-- **Metadata_modified** `2026-06-13T06:34:50.326914`
+- **Metadata_modified** `2026-06-20T06:35:38.729776`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-14"
+date: "2026-06-21"
 output: html_document
 editor: visual
 ---
@@ -50,7 +50,7 @@ Auto generated R starter code for data set geo_lehrpfade.
 - **Keywords** `Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'lehrpfade', 'punktdaten', 'stzh', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:56:31.528707`
-- **Metadata_modified** `2026-06-13T06:50:29.499835`
+- **Metadata_modified** `2026-06-20T06:50:39.694364`
 
 
 # Load packages

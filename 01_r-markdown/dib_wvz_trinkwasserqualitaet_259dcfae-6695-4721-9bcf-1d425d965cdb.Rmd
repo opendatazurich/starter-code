@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-14"
+date: "2026-06-21"
 output: html_document
 editor: visual
 ---
@@ -17,7 +17,7 @@ Der Datensatz umfasst mehr als 300 Messparameter. Ein Teil dieser Messparameter 
 
 **Aggregierte Daten:**
 
-Die Daten stehen in aggregierter Form auf der [Website](https://www.stadt-zuerich.ch/dib/de/index/wasserversorgung/Qualitaetsueberwachung/qualitaetswerte.html) der **Wasserversorgung Zürich** (WVZ) zur Verfügung (PDF-Datei mit tabellarischer Zusammenfassung).
+Die Daten stehen in aggregierter Form auf der städtischen Webseite unter dem Thema Wasser > Trinkwasser > [Qualität und Kontrolle](https://www.stadt-zuerich.ch/de/umwelt-und-energie/wasser/trinkwasser/qualitaet-und-kontrolle.html) zur Verfügung (PDF-Datei mit tabellarischer Zusammenfassung).
 
 
 **Zusätzliche Informationen:**
@@ -37,9 +37,9 @@ Auto generated R starter code for data set dib_wvz_trinkwasserqualitaet.
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Ge­sund­heit,Umwelt`
-- **Tags** `['chemie', 'mikrobiologie', 'mikroverunreinigungen', 'sachdaten', 'spurenstoffe', 'tabelle', 'trinkwasser', 'trinkwasserqualitaet', 'zeitreihe']`
+- **Tags** `['chemie', 'gitlab', 'mikrobiologie', 'mikroverunreinigungen', 'sachdaten', 'spurenstoffe', 'tabelle', 'trinkwasser', 'trinkwasserqualitaet', 'zeitreihe']`
 - **Metadata_created** `2025-01-29T12:23:17.536931`
-- **Metadata_modified** `2026-06-13T21:29:22.025244`
+- **Metadata_modified** `2026-06-20T21:59:03.511040`
 
 
 # Load packages

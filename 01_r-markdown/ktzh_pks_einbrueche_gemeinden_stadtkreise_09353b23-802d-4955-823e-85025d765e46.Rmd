@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-14"
+date: "2026-06-21"
 output: html_document
 editor: visual
 ---
@@ -55,7 +55,7 @@ Auto generated R starter code for data set ktzh_pks_einbrueche_gemeinden_stadtkr
 - **Keywords** `Bevölk­erung,Kri­mi­na­li­tät,Soziales`
 - **Tags** `['gemeinden', 'kriminalitaet', 'ktzh', 'pks', 'sachdaten', 'stadtkreise', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2023-05-03T11:34:43.805546`
-- **Metadata_modified** `2026-06-14T04:22:00.489391`
+- **Metadata_modified** `2026-06-21T04:22:17.237768`
 
 
 # Load packages

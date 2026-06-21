@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-14"
+date: "2026-06-21"
 output: html_document
 editor: visual
 ---
@@ -70,7 +70,7 @@ Auto generated R starter code for data set sd_sod_persoenliche_hilfe.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['einkommen', 'freiwillig', 'infodona', 'personliche-hilfe', 'sachdaten', 'sozialhilfe', 'tabelle', 'vermogen', 'verwaltung', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:26.706549`
-- **Metadata_modified** `2026-06-14T04:09:39.210674`
+- **Metadata_modified** `2026-06-21T04:26:39.566596`
 
 
 # Load packages
