@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -58,7 +58,7 @@ Auto generated R starter code for data set bfs_hotelgaeste_stadt_zuerich_od1104.
 - **Keywords** `Tour­is­mus`
 - **Tags** `['hotellerie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2025-02-20T09:00:57.342348`
-- **Metadata_modified** `2026-06-21T04:01:40.611789`
+- **Metadata_modified** `2026-06-28T04:06:51.059073`
 
 
 # Load packages

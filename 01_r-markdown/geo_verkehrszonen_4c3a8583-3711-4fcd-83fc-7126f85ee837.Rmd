@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -43,7 +43,7 @@ Auto generated R starter code for data set geo_verkehrszonen.
 - **Keywords** `Mobilität`
 - **Tags** `['begegnungszone', 'fussgangerzonen', 'geodaten', 'geoportal', 'geschwindigkeiten', 'polygondaten', 'stzh', 'tempo-30', 'temporegime', 'vektordaten', 'verkehr']`
 - **Metadata_created** `2026-04-29T05:50:18.730024`
-- **Metadata_modified** `2026-06-20T08:01:23.615166`
+- **Metadata_modified** `2026-06-27T07:26:11.036116`
 
 
 # Load packages

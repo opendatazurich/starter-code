@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -200,7 +200,7 @@ Auto generated R starter code for data set erz_elog_kennzahlen.
 - **Keywords** `Umwelt,Ver­walt­ung`
 - **Tags** `['Abfall', 'Abfallsack', 'Bioabfall', 'Cargo-Tram', 'E-Tram', 'Eisen', 'Glas', 'Hauskehricht', 'Karton', 'Kehricht', 'Metall', 'Mobiler Recyclinghof', 'Papier', 'Plastik', 'Recycling', 'Sammelmengen', 'Sammelstellen', 'Siedlungsabfall', 'Sonderabfall', 'Textilien', 'Wertstoffe', 'Züri-Sack', 'gitlab']`
 - **Metadata_created** `2025-10-06T13:47:20.469220`
-- **Metadata_modified** `2026-06-17T07:24:27.914770`
+- **Metadata_modified** `2026-06-24T07:24:24.845286`
 
 
 # Load packages

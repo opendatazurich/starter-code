@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -25,7 +25,7 @@ Auto generated R starter code for data set bev_todesfaelle_jahr_bestattungsart_h
 - **Keywords** `Bevölk­erung`
 - **Tags** `['alter', 'geschlecht', 'herkunft', 'sachdaten', 'sasa', 'tabelle', 'todesfaelle', 'zeitreihe']`
 - **Metadata_created** `2024-08-27T09:49:31.350874`
-- **Metadata_modified** `2026-06-21T04:26:20.306608`
+- **Metadata_modified** `2026-06-28T04:28:06.999823`
 
 
 # Load packages

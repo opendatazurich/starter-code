@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -32,7 +32,7 @@ Auto generated R starter code for data set politik_nationalratswahlen_btg_urneng
 - **Keywords** `Politik`
 - **Tags** `['nationalratswahlen', 'politik', 'sachdaten', 'sasa', 'tabelle', 'urnengang', 'wahlbeteiligung', 'wahlen', 'zeitreihe']`
 - **Metadata_created** `2019-11-14T08:45:29.210616`
-- **Metadata_modified** `2026-06-21T04:18:50.615677`
+- **Metadata_modified** `2026-06-28T04:21:06.335210`
 
 
 # Load packages

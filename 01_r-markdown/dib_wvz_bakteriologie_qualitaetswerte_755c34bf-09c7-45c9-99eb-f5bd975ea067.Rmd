@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -38,7 +38,7 @@ Auto generated R starter code for data set dib_wvz_bakteriologie_qualitaetswerte
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['gitlab', 'mikrobiologie', 'sachdaten', 'tabelle', 'trinkwasser', 'trinkwasserqualitaet', 'verteilnetz', 'zeitreihe']`
 - **Metadata_created** `2025-01-29T12:23:15.450002`
-- **Metadata_modified** `2026-06-20T21:58:56.421396`
+- **Metadata_modified** `2026-06-27T22:56:57.654987`
 
 
 # Load packages

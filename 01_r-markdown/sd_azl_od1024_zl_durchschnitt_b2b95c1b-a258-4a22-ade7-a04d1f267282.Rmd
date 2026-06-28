@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -67,7 +67,7 @@ Auto generated R starter code for data set sd_azl_od1024_zl_durchschnitt.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['durchschnitt', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe', 'zusatzleistungen']`
 - **Metadata_created** `2025-08-04T07:06:41.762087`
-- **Metadata_modified** `2026-06-21T04:01:03.125207`
+- **Metadata_modified** `2026-06-28T04:04:50.199826`
 
 
 # Load packages

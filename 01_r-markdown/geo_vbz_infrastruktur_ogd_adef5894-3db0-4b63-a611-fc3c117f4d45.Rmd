@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-21"
+date: "2026-06-28"
 output: html_document
 editor: visual
 ---
@@ -302,7 +302,7 @@ Auto generated R starter code for data set geo_vbz_infrastruktur_ogd.
 - **Keywords** `Energie,Mobilität,Ver­walt­ung`
 - **Tags** `['fahrleitungen', 'geodaten', 'geoportal', 'gleise', 'liniendaten', 'polygondaten', 'punktdaten', 'schienenschmieranlagen', 'stzh', 'vbz', 'vektordaten', 'weichenschlaufen', 'weichensteuerung']`
 - **Metadata_created** `2026-04-29T05:56:47.621760`
-- **Metadata_modified** `2026-06-20T06:50:56.691187`
+- **Metadata_modified** `2026-06-27T06:45:25.469600`
 
 
 # Load packages
