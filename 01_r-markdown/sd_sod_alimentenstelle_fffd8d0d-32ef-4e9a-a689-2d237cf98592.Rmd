@@ -1,14 +1,13 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-06-28"
+date: "2026-07-05"
 output: html_document
 editor: visual
 ---
 
-## Dataset: Alimentenstelle seit 2025
+## Dataset: Alimentenstelle seit 2014
 
-Alimentenstelle).
-
+Die Alimentenstelle unterstützt Personen, die in der Stadt Zürich wohnhaft sind, bei folgenden Anliegen: Bevorschussung (Vorauszahlung) von Kinderalimenten, Inkasso (Eintreiben) von Kinder- und Ehegatt*innen-Alimenten und Überbrückungshilfe (wenn der Unterhaltsanspruch noch nicht geklärt ist).
 
 **Erläuterung**
 
@@ -25,16 +24,16 @@ Die Alimentenstelle unterstützt Personen, die in der Stadt Zürich wohnhaft sin
 
 
 **Alimentenbevorschussung**
-sdf
+Summe der ausbezahlten Bevorschussungen (Vorauszahlungen) von Kinderalimenten.
 
 **Rückerstattungen Alimentenbevorschussung**
-sfds
+Summe der eingegangenen Rückerstattungen aus dem Inkasso (Eintreiben) von Kinder- und Ehegatt*innen-Alimenten.
 
 **Alimentenvermittlung*
-sdf
+Summe der ausgerichteten Überbrückungshilfen, wenn der Unterhaltsanspruch noch nicht geklärt ist.
 
 **Alimentenvermittlungen Anzahl Fälle**
-Rüdfs.
+Anzahl Fälle, in denen die Alimentenstelle Kinderalimente bevorschusst hat.
 
 
 
@@ -62,7 +61,7 @@ Auto generated R starter code for data set sd_sod_alimentenstelle.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['alimentenstellee', 'allimentenbevorschussung', 'anzahl-alimentenvermittlungen', 'ruckerstattung-alimentenbevorschussung', 'sachdaten', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2026-06-11T20:58:39.709469`
-- **Metadata_modified** `2026-06-28T04:12:05.702164`
+- **Metadata_modified** `2026-07-05T04:12:21.834320`
 
 
 # Load packages
