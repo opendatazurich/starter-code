@@ -1,0 +1,112 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-07-12"
+output: html_document
+editor: visual
+---
+
+## Dataset: Anzahl und Anteil Haushalte nach Haushaltstyp mit mindestens einer Anwohnerparkkarte
+
+Dieser Datensatz enthält Anzahl und Anteil der Anwohnerparkkarten in der Stadt Zürich, differenziert nach Haushaltstyp sowie nach Haushalten mit oder ohne Parkkarte.
+
+**Haushalt**
+
+Zu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung leben. Dazu wird für Personen der wirtschaftliche Wohnsitzbegriff verwendet. Kollektivhaushalte (Heime, Spitäler, Institutionen des Strafvollzugs, Gemeinschaftsunterkünfte für Asylsuchende u.ä.) werden nicht berücksichtigt.
+
+[]()
+
+**Haushaltstyp**
+
+Aufgrund der im Bevölkerungsregister erfassten Familienbeziehungen können verschiedene Haushaltsformen unterschieden werden.
+
+- **Einpersonenhaushalt**: Eine Einzelperson.
+- **Zweipersonenhaushalt**: Zwei Einzelpersonen ohne registrierte Familienbeziehung. Dies umfasst Zweier-Wohngemeinschaften wie auch Konsensualpaare, aber keine Ehepaare.
+- **Ehepaar ohne Kinder**: Zwei Einzelpersonen ohne registrierte Familienbeziehung. Dies umfasst Zweier-Wohngemeinschaften wie auch Konsensualpaare, aber keine Ehepaare.
+- **Eingetragenes Paar ohne Kinder**: Eingetragenes Paar ohne Kinder.
+- **Ein-Elternhaushalt**: Alleinerziehender Elternteil mit volljährigen oder minderjährigen Kind(ern) im gleichen Haushalt.
+- **Ehepaar mit Kind(ern)**: Ehepaar mit volljährigen oder minderjährigen Kind(ern) im Haushalt.
+- **Eingetragenes Paar mit Kind(ern)**: Eingetragenes Paar mit volljährigen oder minderjährigen Kind(ern) im Haushalt.
+- **Paar mit Kind(ern)**: Zwei (unverheiratete) Einzelpersonen mit mindestens einem anerkannten Kind im gleichen Haushalt. 
+- **Patchwork-Haushalt**: Alleinerziehender Elternteil mit Kind(ern) plus eine Einzelperson (unabhängig von Geschlecht und Alter) oder plus eine weitere alleinerziehende Person mit Kind(ern) im gleichen Haushalt. Die zusätzliche Person hat keine registrierte Familienbindung zum alleinerziehenden Elternteil. Sind nur volljährige Kinder mit im Haushalt, wird dieser den Wohngemeinschaften zugeteilt. Auch Alleinerziehende, die mit Verwandten (Tanten, Schwestern, Brüdern) oder einer/einem Bekannten leben, fallen somit unter den Begriff «Patchwork-Haushalt», im Gegensatz zur im Alltag gebräuchlichen Bedeutung. 
+- **Wohngemeinschaft ohne Kinder**: Haushalt mit mehreren Familienkernen (oder Einzelpersonen; mindestens drei Personen) ohne registrierte Bindung untereinander. 
+- **Wohngemeinschaft mit Kind(ern)**: Haushalt mit mindestens einer Familie mit Kind(ern) plus weitere Einzelpersonen ohne registrierte Bindung untereinander, und/oder plus weitere Familien (mindestens drei Personen). Diese Haushaltsform beinhaltet auch Konstellationen, in denen Familien mit Kindern zusammen mit Hausangestellten oder Au-pairs in einer Wohnung leben.
+- **Generationenhaushalt**: Mindestens drei Generationen umfassender Haushalt. 
+- **Andere, Unbekannt**: Diese Kategorie enthält alle unbekannten Haushaltsformen, Sammel-Wohngemeinschaften sowie Familien-Verbünde.
+
+[]()
+
+**Anwohnerparkkarten pro Haushalt**
+
+Es werden Anwohnerparkkarten für natürliche Personen berücksichtigt, die in der Stadt Zürich gemeldet sind und mit einer Person, die ihren wirtschaftlichen Wohnsitz in der Stadt Zürich hat, verknüpft werden können.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/sid_dav_pb_anwohnerparkkarten_haushalte_hhtyp_np_od2125)
+
+Auto generated R starter code for data set sid_dav_pb_anwohnerparkkarten_haushalte_hhtyp_np_od2125.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Mobilität`
+- **Tags** `['sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2026-07-06T10:30:25.626615`
+- **Metadata_modified** `2026-07-12T04:30:38.900945`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/sid_dav_pb_anwohnerparkkarten_haushalte_hhtyp_np_od2125/download/VER212OD2125.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

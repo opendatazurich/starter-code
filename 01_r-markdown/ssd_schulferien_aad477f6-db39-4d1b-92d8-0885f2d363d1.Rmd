@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-05"
+date: "2026-07-12"
 output: html_document
 editor: visual
 ---
@@ -42,7 +42,7 @@ Auto generated R starter code for data set ssd_schulferien.
 - **Keywords** `Bevölkerung,Bildung`
 - **Tags** `['ferien', 'github', 'schulfrei', 'termine', 'volksschule']`
 - **Metadata_created** `2023-11-24T18:57:14.815441`
-- **Metadata_modified** `2026-07-04T16:16:29.991877`
+- **Metadata_modified** `2026-07-11T16:11:40.362661`
 
 
 # Load packages

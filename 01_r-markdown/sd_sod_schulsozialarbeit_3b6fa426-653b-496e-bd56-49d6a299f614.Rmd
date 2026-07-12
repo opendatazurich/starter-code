@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-05"
+date: "2026-07-12"
 output: html_document
 editor: visual
 ---
@@ -34,7 +34,7 @@ Auto generated R starter code for data set sd_sod_schulsozialarbeit.
 - **Keywords** `Bevölk­erung,Soziales,Ver­walt­ung`
 - **Tags** `['beratung', 'jugend', 'jugendhilfe', 'kinder', 'kinderhilfe', 'sachdaten', 'schule', 'schulsozialarbeit', 'sozialarbeit', 'sozialhilfe', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2019-12-13T10:33:28.761564`
-- **Metadata_modified** `2026-07-05T04:12:32.270384`
+- **Metadata_modified** `2026-07-12T04:13:32.454844`
 
 
 # Load packages
