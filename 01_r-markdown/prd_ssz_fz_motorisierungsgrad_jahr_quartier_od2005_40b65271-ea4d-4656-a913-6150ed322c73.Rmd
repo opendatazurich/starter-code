@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-12"
+date: "2026-07-19"
 output: html_document
 editor: visual
 ---
@@ -48,6 +48,12 @@ Ab Dezember 2025 wird anhand der Adresse der Lenker*innen geprüft, ob ein Fahrz
 
 []()
 
+**Korrigendum Juli 2026**
+
+Aufgrund von Korrekturen im Datenaufbereitungsprozess können die Daten der Jahre 2024 und 2025 leicht von früheren Publikationen abweichen.
+
+[]()
+
 
 
 [Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_motorisierungsgrad_jahr_quartier_od2005)
@@ -62,7 +68,7 @@ Auto generated R starter code for data set prd_ssz_fz_motorisierungsgrad_jahr_qu
 - **Keywords** `Energie,Mobilität,Umwelt`
 - **Tags** `['motorisierung', 'sachdaten', 'sasa', 'tabelle', 'verkehr', 'zeitreihe']`
 - **Metadata_created** `2023-11-09T15:06:38.259059`
-- **Metadata_modified** `2026-07-12T04:30:30.195362`
+- **Metadata_modified** `2026-07-19T04:20:34.151971`
 
 
 # Load packages

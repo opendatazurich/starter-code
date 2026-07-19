@@ -1,0 +1,93 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-07-19"
+output: html_document
+editor: visual
+---
+
+## Dataset: Anzahl Fördergesuche und Fördersummen
+
+Der Datensatz enthält die Anzahl Fördergesuche und die Fördersumme im Rahmen des Förderprogramms der Stadt für Heizungsersatz, Sonnenenergie und Elektromobilität nach Jahr.
+
+**Anzahl Fördergesuche**
+
+Anzahl der jährlich bewilligten Fördergesuche im Rahmen des Förderprogramms der Stadt, aufgeschlüsselt nach den Bereichen Heizungsersatz, Sonnenergie und Elektromobilität.
+
+
+[]()
+
+**Fördersumme**
+
+Fördersumme (in Fr.) der jährlich bewilligten Fördergesuche im Rahmen des Förderprogramms der Stadt, aufgeschlüsselt nach den Bereichen Heizungsersatz, Sonnenergie und Elektromobilität.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/umw_anzahl_foerdergesuche_foerdersummen_od1004)
+
+Auto generated R starter code for data set umw_anzahl_foerdergesuche_foerdersummen_od1004.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie`
+- **Tags** `['energie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2026-07-15T21:03:24.207307`
+- **Metadata_modified** `2026-07-19T04:24:14.678366`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/umw_anzahl_foerdergesuche_foerdersummen_od1004/download/UMW100OD1004.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

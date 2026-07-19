@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-12"
+date: "2026-07-19"
 output: html_document
 editor: visual
 ---
@@ -29,7 +29,7 @@ Auto generated R starter code for data set sid_dav_pb_anwohnerparkkarten_alter_g
 - **Keywords** `Mobilität`
 - **Tags** `['sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2026-07-06T10:30:29.571069`
-- **Metadata_modified** `2026-07-12T04:30:41.629662`
+- **Metadata_modified** `2026-07-19T05:13:19.245241`
 
 
 # Load packages

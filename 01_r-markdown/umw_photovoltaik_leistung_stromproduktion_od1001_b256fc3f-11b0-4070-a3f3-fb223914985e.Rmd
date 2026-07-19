@@ -1,0 +1,92 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-07-19"
+output: html_document
+editor: visual
+---
+
+## Dataset: Photovoltaik-Anlagen, installierte Leistung und Stromproduktion
+
+Der Datensatz enthält die instalilierte Leistung sowie die Stromproduktion von Photovoltaik-Anlagen nach Jahr
+
+**Stromproduktion**
+
+Stromproduktion pro Jahr aus Photovoltaik-Anlagen auf Stadtgebiet. Separat ausgewiesen für Stromproduktion aus Photovoltaik-Anlagen im Eigentum der Stadt und Stromproduktion aus Photovoltaik-Anlagen übriger Eigentümerschaften.
+
+[]()
+
+**Installierte Leistung**
+
+Installierte Gesamtleistung der Photovoltaik-Anlagen auf Stadtgebiet. Separat ausgewiesen für die installierte Gesamtleistung der Photovoltaik-Anlagen im Eigentum der Stadt und für die installierte Gesamtleistung der Photovoltaik-Anlagen übriger Eigentümerschaften.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/umw_photovoltaik_leistung_stromproduktion_od1001)
+
+Auto generated R starter code for data set umw_photovoltaik_leistung_stromproduktion_od1001.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Energie`
+- **Tags** `['energie', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Metadata_created** `2026-07-15T21:03:21.624385`
+- **Metadata_modified** `2026-07-19T04:12:42.661717`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/umw_photovoltaik_leistung_stromproduktion_od1001/download/UMW100OD1001.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

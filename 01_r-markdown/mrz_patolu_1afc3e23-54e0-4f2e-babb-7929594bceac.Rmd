@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-12"
+date: "2026-07-19"
 output: html_document
 editor: visual
 ---
@@ -50,7 +50,7 @@ Auto generated R starter code for data set mrz_patolu.
 - **Keywords** `Freizeit,Kultur,Tour­is­mus`
 - **Tags** `['Design', 'Doppel-Ikat', 'Gujarat', 'Indien', 'Muster', 'Sari', 'Seide', 'Textilien', 'github']`
 - **Metadata_created** `2021-11-23T10:53:04.383586`
-- **Metadata_modified** `2026-07-11T17:14:50.272044`
+- **Metadata_modified** `2026-07-18T17:13:41.383461`
 
 
 # Load packages

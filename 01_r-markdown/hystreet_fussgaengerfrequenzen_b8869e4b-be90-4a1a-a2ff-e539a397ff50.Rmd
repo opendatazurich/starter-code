@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-12"
+date: "2026-07-19"
 output: html_document
 editor: visual
 ---
@@ -78,7 +78,7 @@ Auto generated R starter code for data set hystreet_fussgaengerfrequenzen.
 - **Keywords** `Freizeit,Mobilität,Umwelt`
 - **Tags** `['bahnhofstrasse', 'fussgaengerzaehlung', 'fussverkehr', 'github', 'langsamverkehr', 'messwerte', 'passanten', 'planung', 'punktdaten', 'sachdaten', 'standort', 'zaehlung']`
 - **Metadata_created** `2022-07-13T11:47:16.659635`
-- **Metadata_modified** `2026-07-12T04:21:06.171782`
+- **Metadata_modified** `2026-07-19T04:23:24.806895`
 
 
 # Load packages
