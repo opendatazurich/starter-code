@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -29,33 +29,21 @@ Amtliche Vermessungsdaten der Stadt Zürich.
 
 Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Klimadaten»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/e3c0d3e2-0900-4a72-9ac6-8e64a9e02a5e).
 
-***25_Kaltluftproduktionsrate Kanton Zürich***: 
+***Massnahmengebiet 1***: 
 
-Rate der mittleren nächtlichen Kaltluftproduktion pro Rasterzelle (Kaltluftvolumen), gegliedert in 4 Intensitätsstufen. Inputdaten für Modellierung Kaltlufttransport.
-
-
-
-***27_Lokaler Kaltluftstau Kanton Zürich***: 
-
-Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Siedlungsrand als Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) . 
+Gebiete mitnächtlich hoher Wärme- und Schadstoffbelastung sowie ungünstiger Durchlüftungssituation, in denen durch bauliche Verdichtung entstehende Defizite mit kompensatorischen Massnahmen bestmöglich ausgeglichen werden sollen.
 
 
 
-***44_Jahresmittel der NO2-Konzentration Stadt Zürich***: 
+***Massnahmengebiet 2***: 
 
-Räumliche Verteilung der Stickstoffdioxidbelastung (Jahresmittel). REKLISO-Modell (kalibriert mit Immissionsdaten UGZ).
-
-
-
-***32_Lokaler Kaltlufttransport Stadt Zürich ***: 
-
-Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).
+In der Nacht mässig durch Überwärmung und Luftschadstoffe belastete Gebiete mit eher ungünstiger Durchlüftungssituation in denen die Verdichtung begrenzt sowie  Grünanteil und Luftleitbahnen erhalten werden sollen.
 
 
 
-***01_Landbedeckung Kanton Zürich***: 
+***Massnahmengebiet 3***: 
 
-Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen) 
+In der Nacht nur gering durch Überwärmung und Luftschadstoffe belastete Gebiete in denen die Grünräume erhalten und der Luftaustausch mit dem Umland gesichert werden soll.
 
 
 
@@ -69,36 +57,6 @@ potentielle Ausgleichsräume
 
 
 
-***Durchlüftung***: 
-
-Priorisierung der Räume in denen auf Grund der lokalklimatischen Situation eine Erhaltung und/oder Verbesserung der thermischen und/oder Durchlüftungsituation angezeigt ist.
-
-
-
-***03_Arealtypen Kanton Zürich***: 
-
-Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle &quot;charakteristische&quot; Landnutzung. Differenzierung nach Bebauungs- bzw. Vegetationsdichte.
-
-
-
-***23_Lokale Wärmebelastung Kanton Zürich***: 
-
-Intensitätklassen der lokalen Wärmebelastung. Klassifizierung (Schwellenwert, dT) ist so gewählt, dass räumliche Differenzierung planerisch verwertbar wird (Grundlage für Massnahmenableitung)
-
-
-
-***31_Lokaler Kaltlufttransport Kanton Zürich ***: 
-
-Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).
-
-
-
-***Massnahmengebiet 1***: 
-
-Gebiete mitnächtlich hoher Wärme- und Schadstoffbelastung sowie ungünstiger Durchlüftungssituation, in denen durch bauliche Verdichtung entstehende Defizite mit kompensatorischen Massnahmen bestmöglich ausgeglichen werden sollen.
-
-
-
 ***Zielsetzung thermische Situation***: 
 
 Durchlüftung
@@ -108,14 +66,38 @@ Ausgleichsräume
 
 
 
+***Durchlüftung***: 
+
+Priorisierung der Räume in denen auf Grund der lokalklimatischen Situation eine Erhaltung und/oder Verbesserung der thermischen und/oder Durchlüftungsituation angezeigt ist.
+
+
+
 ***KLIMA_AQ_DR_10M_2008_STZH.tif***: 
 
+
+
+
+***04_Arealtypen Stadt Zürich***: 
+
+Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle &quot;charakteristische&quot; Landnutzung. Differenzierung nach Bebauungs. Bzw. und Vegetationsdichte.
 
 
 
 ***26_Kaltluftproduktionsrate Stadt Zürich***: 
 
 Rate der mittleren nächtlichen Kaltluftproduktion pro Rasterzelle (Kaltluftvolumen), gegliedert in 4 Intensitätsstufen. Inputdaten für Modellierung Kaltlufttransport.
+
+
+
+***28_Lokaler Kaltluftstau Stadt Zürich***: 
+
+Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) . 
+
+
+
+***32_Lokaler Kaltlufttransport Stadt Zürich ***: 
+
+Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).
 
 
 
@@ -131,14 +113,74 @@ Intensitätklassen der lokalen Wärmebelastung. Klassifizierung (Schwellenwert, 
 
 
 
+***02_Landbedeckung Stadt Zürich***: 
+
+Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen) 
+
+
+
 ***34_Mesoskalige Windverhältnisse Stadt Zürich***: 
 
 Darstellung des übergeordneten (mesoskaligen) Windsystems bei autochthonen Wetterlagen (insb. orographisch bedingte Berg-Talwind-Systeme).
 
 
 
+***30_Lokaler Oberflächeneinfluss Stadt Zürich ***: 
+
+Art des Einfluss der Oberfläche auf den Luftstrom: mechanisch &gt; Rauhigkeit der Oberfläche &gt; Übreströumng; thermisch &gt; Wärmefluss von der Oberfläche bzw. verzögerte Abgabe der über den Tag aufgenommenen Wärme.
+
+
+
+***44_Jahresmittel der NO2-Konzentration Stadt Zürich***: 
+
+Räumliche Verteilung der Stickstoffdioxidbelastung (Jahresmittel). REKLISO-Modell (kalibriert mit Immissionsdaten UGZ).
+
+
+
 ***KLIMA_AQ_SR_50M_2008_KTZH.tif***: 
 
+
+
+
+***03_Arealtypen Kanton Zürich***: 
+
+Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle &quot;charakteristische&quot; Landnutzung. Differenzierung nach Bebauungs- bzw. Vegetationsdichte.
+
+
+
+***25_Kaltluftproduktionsrate Kanton Zürich***: 
+
+Rate der mittleren nächtlichen Kaltluftproduktion pro Rasterzelle (Kaltluftvolumen), gegliedert in 4 Intensitätsstufen. Inputdaten für Modellierung Kaltlufttransport.
+
+
+
+***27_Lokaler Kaltluftstau Kanton Zürich***: 
+
+Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Siedlungsrand als Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) . 
+
+
+
+***31_Lokaler Kaltlufttransport Kanton Zürich ***: 
+
+Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).
+
+
+
+***21_Lokale Überwärmung Kanton Zürich***: 
+
+Abweichung der mittleren nächtlichen Lufttemperatur in Bodennähe vom Mittelwert für das Gesamtgebiet (Gebietsmittel) in Kelvin
+
+
+
+***23_Lokale Wärmebelastung Kanton Zürich***: 
+
+Intensitätklassen der lokalen Wärmebelastung. Klassifizierung (Schwellenwert, dT) ist so gewählt, dass räumliche Differenzierung planerisch verwertbar wird (Grundlage für Massnahmenableitung)
+
+
+
+***01_Landbedeckung Kanton Zürich***: 
+
+Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen) 
 
 
 
@@ -160,48 +202,6 @@ Räumliche Verteilung der Stickstoffdioxidbelastung (Jahresmittel). REKLISO-Mode
 
 
 
-***28_Lokaler Kaltluftstau Stadt Zürich***: 
-
-Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) . 
-
-
-
-***Massnahmengebiet 3***: 
-
-In der Nacht nur gering durch Überwärmung und Luftschadstoffe belastete Gebiete in denen die Grünräume erhalten und der Luftaustausch mit dem Umland gesichert werden soll.
-
-
-
-***21_Lokale Überwärmung Kanton Zürich***: 
-
-Abweichung der mittleren nächtlichen Lufttemperatur in Bodennähe vom Mittelwert für das Gesamtgebiet (Gebietsmittel) in Kelvin
-
-
-
-***Massnahmengebiet 2***: 
-
-In der Nacht mässig durch Überwärmung und Luftschadstoffe belastete Gebiete mit eher ungünstiger Durchlüftungssituation in denen die Verdichtung begrenzt sowie  Grünanteil und Luftleitbahnen erhalten werden sollen.
-
-
-
-***04_Arealtypen Stadt Zürich***: 
-
-Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle &quot;charakteristische&quot; Landnutzung. Differenzierung nach Bebauungs. Bzw. und Vegetationsdichte.
-
-
-
-***02_Landbedeckung Stadt Zürich***: 
-
-Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen) 
-
-
-
-***30_Lokaler Oberflächeneinfluss Stadt Zürich ***: 
-
-Art des Einfluss der Oberfläche auf den Luftstrom: mechanisch &gt; Rauhigkeit der Oberfläche &gt; Übreströumng; thermisch &gt; Wärmefluss von der Oberfläche bzw. verzögerte Abgabe der über den Tag aufgenommenen Wärme.
-
-
-
 
 
 **Statisches Vorschaubild:**
@@ -216,13 +216,13 @@ Auto generated R starter code for data set geo_klimadaten.
 
 ## Metadata
 
-- **Publisher** `Lärmschutz, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Publisher** `Modellierungen Lärm Verkehr, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Umwelt`
 - **Tags** `['geodaten', 'geoportal', 'klima', 'polygondaten', 'rasterdaten', 'stzh', 'umwelt', 'vektordaten']`
 - **Metadata_created** `2026-04-29T05:46:56.366556`
-- **Metadata_modified** `2026-07-19T05:53:54.714163`
+- **Metadata_modified** `2026-10-13T06:35:00.986406`
 
 
 # Load packages

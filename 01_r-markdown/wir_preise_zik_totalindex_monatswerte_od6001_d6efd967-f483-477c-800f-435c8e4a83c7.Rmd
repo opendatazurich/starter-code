@@ -1,0 +1,112 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-10-13"
+output: html_document
+editor: visual
+---
+
+## Dataset: Zürcher Index der Konsumentenpreise, Totalindex, Monatswerte seit August 1939
+
+Konsumentenpreisindex für die Stadt Zürich mit verschiedenen Basisjahren
+
+**Zürcher Index der Konsumentenpreise (ZIK)**
+
+Der ZIK misst die Teuerung der Konsumgüter und Dienstleistungen in der Stadt Zürich. Der ZIK zeigt, um wie viel die Konsumgüter und Dienstleistungen gegenüber dem Vormonat, dem Vorjahr oder jedem anderen früheren Zeitpunkt teurer geworden sind.
+
+[]()
+
+**Basis**
+
+Die Basis eines Index ist der feste Ausgangs- und Bezugswert (Indexstand = 100), an dem alle späteren Veränderungen gemessen werden und der den Startpunkt für Vergleiche über die Zeit bildet. Sie setzt sich immer aus Basisjahr und Basismonat zusammen. Seit dem Jahr 2000 wird der ZIK alle 5 Jahre revidiert, wobei der Basismonat seit der Revision 2005 einheitlich auf Dezember normiert ist.
+
+Zum Revisionszeitpunkt wird der Warenkorb angepasst und der Index neu auf 100 gesetzt. Da sich mit dem neuen Warenkorb auch die Berechnungsgrundlage ändert, sind Indexstände vor und nach einer Revision nicht direkt vergleichbar. Die Rücksetzung auf 100 markiert deshalb den eindeutigen Ausgangspunkt der neuen Zeitreihe. Frühere Zeitreihen mit älteren Basen bleiben davon unberührt und weiterhin verfügbar. Weitere Informationen zum Warenkorb und zur aktuellen Gewichtung der einzelnen Positionen finden Sie unter:  [**Warenkorb Stadt Zürich**](https://www.stadt-zuerich.ch/de/politik-und-verwaltung/statistik-und-daten/daten/wirtschaft/zuercher-index-der-konsumentenpreise/warenkorb.html).
+
+[]()
+
+**Indexstand**
+
+Der Indexstand wird in Punkten angegeben und ist immer im Verhältnis zur jeweiligen Basis zu lesen. Beispiel: Steht der Index (Basis 2020 = 100) heute bei 105 Punkten, sind die Konsumgüter und Dienstleistungen seit 2020 um 5 % teurer geworden (siehe Berechnung Veränderungsrate). Anhand der Indexstände lässt sich die Preisentwicklung über die Zeit verfolgen, weshalb der Konsumentenpreisindex zu den wichtigsten Wirtschafts- sowie Inflationsindikatoren zählt.
+
+[]()
+
+**Veränderungsrate**
+
+Die Veränderungsrate (in %) zwischen zwei beliebigen Zeitpunkten wird anhand zweier Indexstände ermittelt, die auf derselben Basis berechnet wurden. Im Gegensatz zum Indexstand ist die Veränderungsrate unabhängig von der aktuellen Basis und bleibt auch über einen Basiswechsel hinweg direkt vergleichbar. Die Veränderungsrate wird wie folgt berechnet: Veränderungsrate (%) = (Indexstand neu - Indexstand alt) / Indexstand alt × 100
+
+[]()
+
+**Weitere Informationen zu den Konsumentenpreisen**
+
+Der Konsumentenpreisindex wird vom BFS erhoben. Weitere Informationen finden Sie unter: [**Konsumentenpreise BFS**](https://www.bfs.admin.ch/bfs/de/home/statistiken/preise/landesindex-konsumentenpreise.html)
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/wir_preise_zik_totalindex_monatswerte_od6001)
+
+Auto generated R starter code for data set wir_preise_zik_totalindex_monatswerte_od6001.
+
+## Metadata
+
+- **Publisher** `Bundesamt für Statistik (BFS)`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Preise,​​Volks​­wirt​­schaft`
+- **Tags** `['indexreihen', 'sachdaten', 'sasa', 'tabelle', 'teuerung', 'zeitreihe', 'zuercher-index-der-konsumentenpreise']`
+- **Metadata_created** `2026-09-03T06:48:56.136088`
+- **Metadata_modified** `2026-10-13T07:22:12.380858`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/wir_preise_zik_totalindex_monatswerte_od6001/download/WIR600OD6001.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

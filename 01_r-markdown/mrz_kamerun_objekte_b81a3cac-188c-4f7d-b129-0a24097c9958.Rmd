@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -30,7 +30,7 @@ Auto generated R starter code for data set mrz_kamerun_objekte.
 - **Keywords** `Kultur`
 - **Tags** `['Kamerun', 'Provenienzforschung', 'Sammler', 'github']`
 - **Metadata_created** `2026-02-24T07:19:57.784719`
-- **Metadata_modified** `2026-07-17T21:21:37.533458`
+- **Metadata_modified** `2026-10-10T00:13:34.575166`
 
 
 # Load packages

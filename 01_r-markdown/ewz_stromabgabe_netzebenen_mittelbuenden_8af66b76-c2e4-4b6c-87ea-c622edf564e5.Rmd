@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -9,7 +9,7 @@ editor: visual
 
 Dieser Datensatz beinhaltet **Stromverbrauchsdaten des ewz-Netzes in Mittelbünden** auf den Netzebenen 5 und 7. 
 
-Dies beinhaltet sowohl den Stromverbrauch aller durch die ewz direkt belieferten **Gebiete** (Bruttolastgangsumme Netzebene 7), [siehe dazu auch das Geoportal des Kantons Graubündens](https://edit.geo.gr.ch/s/xS28), als auch den Stromverbrauch in den durch die ewz auf der Mittelspannung belieferten Nachliegerwerke (Bruttoenergie Nachlieger Netzebene 5), dies betrifft die Versorgung oder Teilversorgung der Gemeinden Surses, Albula/Alvra, Lantsch/Lenz, Vaz/Obervaz, Scharans und Rheinwald.
+Dies beinhaltet sowohl den Stromverbrauch aller durch die ewz direkt belieferten **Gebiete** (Bruttolastgangsumme Netzebene 7), als auch den Stromverbrauch in den durch die ewz auf der Mittelspannung belieferten Nachliegerwerke (Bruttoenergie Nachlieger Netzebene 5), dies betrifft die Versorgung oder Teilversorgung der Gemeinden Surses, Albula/Alvra, Lantsch/Lenz, Vaz/Obervaz, Scharans und Rheinwald.
 
 Es handelt sich um die **Bruttoenergie**, das heisst die konsumierte Energie der Verbraucherinnen und Verbraucher. Netzverluste etc. sind darin nicht enthalten.
 
@@ -25,7 +25,7 @@ Die Stromverbrauchsdaten werden basierend auf zahlreichen Messungen zum Verbrauc
 
 **Kilo, Giga, Tera: Watt?!**
 
-Nicht nur Ingenieur*innen verwenden diese Einheiten: Kilowatt und Gigawattstunden haben auch Einzug in unsere alltägliche Kommunikation gehalten. Doch wie ordnen wir diese Grössen ein? Dieser kurze Webartikel hilft Dir bei der Einordnung: ** [Link](https://www.powernewz.ch/2020/kilo-giga-tera-watt/)**.
+Nicht nur Ingenieur*innen verwenden diese Einheiten: Kilowatt und Gigawattstunden haben auch Einzug in unsere alltägliche Kommunikation gehalten. Doch wie ordnen wir diese Grössen ein? Dieser kurze Webartikel hilft Dir bei der Einordnung: **[Link](https://www.powernewz.ch/2020/kilo-giga-tera-watt/)**.
 
 
 
@@ -46,7 +46,7 @@ Auto generated R starter code for data set ewz_stromabgabe_netzebenen_mittelbuen
 - **Keywords** `Energie`
 - **Tags** `['energie', 'sachdaten', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2023-05-16T08:28:06.874516`
-- **Metadata_modified** `2026-07-19T05:39:05.142035`
+- **Metadata_modified** `2026-10-13T11:41:44.224517`
 
 
 # Load packages

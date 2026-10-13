@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -80,8 +80,8 @@ Das Nachtangebot wird mit 52 Fr/Sa und 52 Sa/So verrechnet.
 
 **Weitere Open Data zu öffentlichem Verkehr:**
 
-Die VBZ publiziert - zusammen mit den meisten öffentlichen Verkehrsunternehmen der Schweiz - weitere Daten auch auf der [**«Open-Data-Plattform öV Schweiz**»](https://opentransportdata.swiss/de/dataset). 
-Hier finden Sie beispielsweise [Fahrplandaten](https://opentransportdata.swiss/search?q=fahrplan) in HRDF oder auch in GTFS, [Echtzeitdaten](https://opentransportdata.swiss/de/dataset/go-realtime), [Fahrtprognosen-API](https://opentransportdata.swiss/de/dataset/fahrtprognose) und vieles mehr.
+Die VBZ publiziert - zusammen mit den meisten öffentlichen Verkehrsunternehmen der Schweiz - weitere Daten auch auf der [**«Open-Data-Plattform öV Schweiz**»](https://data.opentransportdata.swiss/de/dataset/). 
+Hier finden Sie beispielsweise [Fahrplandaten](https://data.opentransportdata.swiss/de/dataset/?q=fahrplan) in HRDF oder auch in GTFS, [Echtzeitdaten](https://data.opentransportdata.swiss/de/dataset/?q=echtzeitdaten) und zahlreiche [APIs](https://api-manager.opentransportdata.swiss/), wie Open Journey Planner, Road Traffic Counters, SIRI Estimated Timetable, etc.
 
 []()
 
@@ -107,7 +107,7 @@ Auto generated R starter code for data set vbz_fahrgastzahlen_ogd.
 - **Keywords** `Mobilität`
 - **Tags** `['bus', 'covid', 'offentlicher-verkehr', 'passagiere', 'pendler', 'sachdaten', 'tabelle', 'tram', 'vbz']`
 - **Metadata_created** `2019-07-29T15:02:50.065125`
-- **Metadata_modified** `2026-07-19T02:06:11.151159`
+- **Metadata_modified** `2026-10-13T11:48:36.319057`
 
 
 # Load packages

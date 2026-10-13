@@ -1,0 +1,96 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-10-13"
+output: html_document
+editor: visual
+---
+
+## Dataset: Download-Zahlen des Open-Data-Katalogs der Stadt Zürich
+
+Dieser Datensatz enthält aggregierte Download-Zahlen für Ressourcen des Open-Data-Katalogs der Stadt Zürich ([data.stadt-zuerich.ch](https://data.stadt-zuerich.ch/)). Die Daten werden täglich aus den NGINX-Logs der Plattform extrahiert und enthalten Informationen zu Anzahl der Downloads (hit_count), eindeutigen IPs (distinct_ips), verwendeten User-Agents, Ressourcen-IDs, Datensatz-IDs sowie den zugehörigen URLs.
+
+**Umfang der erfassten Downloads und Filterlogik**
+
+Die Daten erfassen Downloads über den Webbrowser (über die Frontend-Oberfläche) sowie direkte Downloads und API-Aufrufe (z. B. über datastore_search_sql). Interne Anfragen, insbesondere solche, die vom Frontend-Portal des Open-Data-Katalogs selbst ausgehen (z. B. zur Anzeige von Ressourcen in der UI), sind vollständig herausgefiltert. Anfragen von externen Crawlern (z. B. YandexBot, Bytespider) sind nicht herausgefiltert, da sie als Teil der tatsächlichen Nutzung der Daten angesehen werden und für die Analyse relevant sind.
+
+**Ergänzung von Metadaten**
+
+Da die ursprünglichen Logs nicht immer vollständige Informationen zu Ressourcen- und Datensatznamen enthalten, werden diese über die CKAN-API ergänzt, um die Datenqualität zu sichern. Publiziert werden nur Einträge, bei denen der dataset_name sowie entweder der resource_name oder die resource_id eindeutig identifizierbar sind.
+
+**Datenschutz und Anonymisierung**
+
+Die Daten sind nicht personenbezogen: IP-Adressen werden nicht gespeichert, nur als Anzahl (distinct_ips) gezählt.
+
+**Aktualisierung**
+
+Es gibt eine Ressource je Jahr. Die Ressource des jeweils aktuellen Jahres wird täglich mit den Downloadzahlen des Vortages ergänzt.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/prd_ssz_ogd_katalog_downloads)
+
+Auto generated R starter code for data set prd_ssz_ogd_katalog_downloads.
+
+## Metadata
+
+- **Publisher** `Statistik Stadt Zürich, Präsidialdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ver­walt­ung`
+- **Tags** `['analytics', 'download', 'github', 'nutzung', 'statistik', 'tracking']`
+- **Metadata_created** `2025-05-07T14:14:37.511860`
+- **Metadata_modified** `2026-10-13T10:57:48.354942`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/prd_ssz_ogd_katalog_downloads/download/ogd_katalog_downloads_2025.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

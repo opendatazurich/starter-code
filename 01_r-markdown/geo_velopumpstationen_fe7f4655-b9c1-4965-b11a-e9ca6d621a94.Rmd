@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -51,7 +51,7 @@ Auto generated R starter code for data set geo_velopumpstationen.
 - **Keywords** `Mobilität`
 - **Tags** `['druckluft', 'geodaten', 'geoportal', 'handpumpe', 'luft', 'masterplan-velo', 'pneu', 'punktdaten', 'stzh', 'vektordaten', 'velo', 'velopumpstationen', 'zweirad']`
 - **Metadata_created** `2026-04-29T05:52:48.814893`
-- **Metadata_modified** `2026-07-19T05:59:28.031183`
+- **Metadata_modified** `2026-10-13T06:38:24.376533`
 
 
 # Load packages

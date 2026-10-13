@@ -1,33 +1,33 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
 
-## Dataset: Stadtklima Zürich - Standorte Messstationen Messnetz meteoblue
+## Dataset: Stadtklima Zürich - Standorte Messstationen Messnetz meteoblue [Nachführung eingestellt]
 
-
+<![CDATA[
 Dieses Dataset umfasst die geografischen Informationen zu den **Messorten des Messnetzes meteoblue**.
-
+]]>
 
 **Messwerte**
 
-
+<![CDATA[
 Die vom Messnetz meteoblue erhobenen Messwerte sind im Datensatz [Stadtklima Zürich - Temperaturmessungen Messnetz meteoblue](https://data.stadt-zuerich.ch/dataset/ugz_stadtklima_zuerich_temperaturmessungen_messnetz_meteoblue) zu finden.
-
-
-[]()
+]]>
 
 **Weitere Daten**
 
-**Stadtklimamessungen meteoblue**
+<![CDATA[**Stadtklimamessungen meteoblue**
 [meteoblue Stadtklima](https://www.meteoblue.com/de/products/cityclimate/zurich)
 
 Bei den aktuell zur Verfügung gestellten Messwerten handelt es sich um Rohdaten. Temperatur- und Niederschlagsdaten können durch Gebäude und andere Infrastruktur beeinflusst sein..
+]]>
 
+**Nachfolgeprodukt**
 
-[]()
+Der zu diesem Eintrag dazugehörige Dateneintrag wurde per August 2026 das letzte Mal aktualisiert und die weitere Nachführung wurde eingestellt. Ein Nachfolgeprodukt inkl. Metadaten für historische Stadtklimadaten für die Stadt Zürich ist in Arbeit. Live-Daten sind bereits unter [diesem Link](https://data.stadt-zuerich.ch/dataset/gud_ugz_stadtklima_temperatur_feuchte_live) verfügbar.
 
 
 
@@ -43,7 +43,7 @@ Auto generated R starter code for data set ugz_stadtklima_zuerich_messorte_messn
 - **Keywords** `Ge­sund­heit,Umwelt`
 - **Tags** `['hitze', 'kaelte', 'messorte', 'meteo', 'meteoblue', 'sachdaten', 'stadtklima', 'tabelle', 'temperatur', 'wetter', 'zeitreihe']`
 - **Metadata_created** `2024-11-27T11:18:07.539143`
-- **Metadata_modified** `2026-07-19T05:35:33.302174`
+- **Metadata_modified** `2026-10-13T11:36:58.423420`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -8,10 +8,6 @@ editor: visual
 ## Dataset: Behandelte Abwassermenge im Klärwerk Werdhölzli in m3/d
 
 Dieser Datensatz beinhaltet die Abwassermenge in Kubikmeter (m³), die pro Tag im Klärwerk Werdhölzli behandelt wird. Darin eingeschlossen ist auch Abwasser, das während Niederschlagsereignissen in den Regenbecken zwischengespeichert und anschliessend zurückgepumpt wird. 
-
-**Abwassermenge Klärwerk Werdhölzli**
-
-siehe auch [Geschäftsbericht von Entsorgung + Recycling Zürich](https://www.stadt-zuerich.ch/ted/de/index/entsorgung_recycling.html)
 
 **Bemerkung**
 
@@ -31,7 +27,7 @@ Auto generated R starter code for data set erz_abwassermenge_klaerwerk_werdhoelz
 - **Keywords** `Umwelt`
 - **Tags** `['abwasser', 'abwassermenge', 'gitlab', 'klaerwerk', 'wasser']`
 - **Metadata_created** `2025-10-06T13:30:49.599868`
-- **Metadata_modified** `2026-07-15T07:13:48.878594`
+- **Metadata_modified** `2026-10-07T07:13:59.002124`
 
 
 # Load packages

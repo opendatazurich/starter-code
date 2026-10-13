@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -15,9 +15,7 @@ Die Bilder sind gemeinfrei, weil ihre urheberrechtliche Schutzfrist (70 Jahre na
 
 **Hinweis: **
 
-Die Publikation erfolgte anlässlich des siebten [Swiss Open Cultural Data Hackathon](https://library.ethz.ch/aktuell/veranstaltungen/glamhack-2021.html) im März 2021. 
-
-Die total 144 Bilder des Datensatzes können für einen Überblick unter diesem [Direktlink](http://baz.e-pics.ethz.ch/index.jspx?category=26204) auf der Plattform E-Pics abgerufen und heruntergeladen werden.
+Die Publikation erfolgte anlässlich des siebten [Swiss Open Cultural Data Hackathon](https://library.ethz.ch/en/about-us-and-locations/events/glamhack-2021.html) im März 2021. 
 
 
 
@@ -33,7 +31,7 @@ Auto generated R starter code for data set baz_stadthausplatz.
 - **Keywords** `Bauen und Wohnen`
 - **Tags** `['archivdaten', 'fotos', 'gebaude', 'geschichte', 'glam', 'openglam', 'public-domain']`
 - **Metadata_created** `2021-03-03T15:01:16.598113`
-- **Metadata_modified** `2026-07-19T04:29:22.539140`
+- **Metadata_modified** `2026-10-13T07:27:28.730507`
 
 
 # Load packages

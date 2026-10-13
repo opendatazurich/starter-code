@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -95,6 +95,11 @@ Gewässerabstandslinien
 Waldabstandslinien
 
 
+***BZO_PROJ_GP_V***: 
+
+Gestaltungspläne (projektiert) (Bestandteil der Sondernutzung) 
+
+
 ***BZO_PROJ_GEWAESSERABSTANDSL_V***: 
 
 Gewässerabstandslinien (projektiert)
@@ -113,6 +118,16 @@ Quartiererhaltungszonen (projektiert)
 ***BZO_PROJ_WALDABSTANDSL_V***: 
 
 Waldabstandslinien (projektiert)
+
+
+***BZO_PROJ_ZONE_FFZ_V***: 
+
+Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO (projektiert)
+
+
+***BZO_ZONE_LAERMVORBELAST_V***: 
+
+Lärmvorbelastetes Gebiet gemäss Art. 3 BauO
 
 
 ***BZO_PROJ_ZONE_INNENL_F_V***: 
@@ -230,21 +245,6 @@ Wohnanteilsgrenze
 
 
 
-***BZO_PROJ_GP_V***: 
-
-Gestaltungspläne (projektiert) (Bestandteil der Sondernutzung) 
-
-
-***BZO_PROJ_ZONE_FFZ_V***: 
-
-Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO (projektiert)
-
-
-***BZO_ZONE_LAERMVORBELAST_V***: 
-
-Lärmvorbelastetes Gebiet gemäss Art. 3 BauO
-
-
 
 
 **Statisches Vorschaubild:**
@@ -265,7 +265,7 @@ Auto generated R starter code for data set geo_nutzungsplanung___kommunale_bau__
 - **Keywords** `Basis­karten,Bauen und Wohnen,Umwelt,Ver­walt­ung`
 - **Tags** `['abstandslinien', 'bauordnung', 'bzo', 'erganzungsplane', 'geodaten', 'geoportal', 'liniendaten', 'nutzungsplanung', 'polygondaten', 'stzh', 'vektordaten', 'zonenplan']`
 - **Metadata_created** `2026-04-29T05:44:28.611086`
-- **Metadata_modified** `2026-07-19T05:50:26.332320`
+- **Metadata_modified** `2026-10-13T06:33:25.157351`
 
 
 # Load packages

@@ -1,0 +1,114 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-10-13"
+output: html_document
+editor: visual
+---
+
+## Dataset: Arbeitsstätten, Beschäftigte und Vollzeitäquivalente nach Branchencluster
+
+
+Diese Daten beinhalten aggreggierte Zahlen der Statistik der Unternehmensstruktur in der Stadt Zürich. Die Daten für die Stadt Zürich sind für den Zeitraum seit 2011 verfügbar.
+
+Bitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik **«Bemerkungen»**.
+
+
+
+**Statistik der Unternehmensstruktur (STATENT):**
+
+ Die Statistik der Unternehmensstruktur (STATENT) des Bundesamtes für Statistik (BFS) liefert zentrale Informationen zur Struktur der Schweizer Wirtschaft. Die STATENT ersetzt die Betriebszählung (BZ), die
+2008 zum letzten Mal durchgeführt wurde. Die STATENT erfasst alle Unternehmen, die
+verpflichtet sind, für ihre Angestellten sowie für sich selber (Selbstständigerwerbende) bei
+einem Mindesteinkommen von jährlich Fr. 2300.- AHV-Beiträge zu bezahlen. Die
+Auswertungseinheiten sind die Arbeitsstätte und das Unternehmen (institutionelle
+Einheit).
+Die STATENT basiert im Wesentlichen auf Daten des Registers der Alters- und Hinterlassenenversicherung AHV sowie auf Informationen aus dem Unternehmens- und Betriebsregister des BFS. Die Zahlen werden mit Daten aus laufenden Erhebungen bei Unternehmen ergänzt.
+Die Daten erscheinen einmal jährlich, jeweils knapp zwei Jahre nach dem Stichtag per Jahresende.
+
+ 
+
+[]()
+
+**Vollzeitäquivalente:**
+
+ 
+Angaben zu den Vollzeitäquivalenten dürfen erst ab einem Schwellenwert von mindestens vier Arbeitsstätten veröffentlicht werden. Anonymisierte Vollzeitäquivalente sind mit 'K' gekennzeichnet.
+ 
+
+[]()
+
+**Branchencluster**
+
+Thematisch fokussiert die Wirtschaftsförderung ihre Aktivitäten auf wertschöpfungs- oder wachstumsstarke, innovative und zukunftsträchtige Cluster. Dies sind aktuell die Cluster Cleantech, Finanzdienstleistungen, Informations- und Kommunikationstechnologie, Kreativwirtschaft, Life Sciences und Tourismus.
+
+[]()
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/bfs_wir_statent_ast_beschaeftigte_vza_branchencluster_jahr_od2555)
+
+Auto generated R starter code for data set bfs_wir_statent_ast_beschaeftigte_vza_branchencluster_jahr_od2555.
+
+## Metadata
+
+- **Publisher** `Abteilung Wirtschaft, Bundesamt für Statistik`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Arbeit und Erwerb`
+- **Tags** `['arbeitsstaetten', 'beschaeftigte', 'sachdaten', 'sasa', 'tabelle', 'vollzeitaequivalente', 'zeitreihe']`
+- **Metadata_created** `2026-08-26T21:00:03.256646`
+- **Metadata_modified** `2026-10-13T07:10:53.091305`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/bfs_wir_statent_ast_beschaeftigte_vza_branchencluster_jahr_od2555/download/WIR255OD2555.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

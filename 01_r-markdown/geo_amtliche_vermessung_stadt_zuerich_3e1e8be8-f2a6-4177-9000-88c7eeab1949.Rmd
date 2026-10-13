@@ -1,0 +1,519 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-10-13"
+output: html_document
+editor: visual
+---
+
+## Dataset: Amtliche Vermessung Stadt Zürich
+
+Die amtliche Vermessung (AV) liefert geometrische Daten zum Grundeigentum und ist die Grundlage für viele weitere Geodaten und Anwendungen in Wirtschaft, Verwaltung und Privatleben. 
+
+**Zweck**: Als amtliche Vermessung im Sinne von Artikel 950 ZGB gelten die zur Anlage und Führung des Grundbuchs vom Kanton genehmigten und vom Bund anerkannten Vermessungen. Die Daten der amtlichen Vermessung sind Georeferenzdaten, die von Behörden des Bundes, der Kantone und der Gemeinden sowie von der Wirtschaft, der Wissenschaft und Dritten zur Gewinnung von Geoinformationen verwendet werden. Auf dem GeoServer sind für die stadtinternen Nutzenden optimierte Tabellenstrukturen aufgeschaltet.
+
+**Genereller Hinweis zum Geodatensatz:**
+
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Amtliche Vermessung Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/ad78b0f8-dc57-4813-97e3-8be2409cd5aa).
+			   
+
+**Informationen zum Datensatz:**
+
+Die Gebäude in den zwei TOPICS Bodenbedeckung und Einzelobjekte erhalten Zusatzattribute aus dem städtischen DWH. Geliefert werden die Daten von SSZ.
+Datenelemente werden nur im Datenformat ESRI SDE GDB beschrieben. 
+Zusätzliches Datenformat mit identischem Inhalt: Oracle SDO im Schema GEOZ_SDO. 
+Das Attribut OBJECTID ist nur im Datenformat ESRI SDE GDB vorhanden. Tabellen, die nur im Datenformat Oracle SDO vorkommen werden auch beschrieben. 
+
+**Datenerfassung:**
+
+Die Nachführung der wesentlichen Daten erfolgt laufend und basiert auf einem Meldewesen zwischen Baubehörden, Bauherrschaft, Gebäudeversicherung, Grundbuchamt und GeoZ. Die Stadt Zürich ist der Toleranzstufe 2 der technischer Verordnung über die amtlichen Vermessung (TVAV) zugeordnet. Aktualität: Die Daten besitzen keinen öffentlichen Glauben im Sinne des Grundbuchrechtes und die Datenabgabe erfolgt ohne Überprüfung des derzeitigen Zustandes im Felde. Die Rechtsgültigkeit der Grundstücke ist auf dem zuständigen Grundbuchamt zu erfragen. Qualität: Der grössere Teil der Daten der Ebenen Bodenbedeckung (Gebäude, Strassen, Wald, Gewässer etc.) und Einzelobjekte (unterirdische Gebäude, Unterstände, Mauern, Treppen etc.) wurde digitalisiert, und es muss mit einer Standardabweichung von ca. ±10-15 cm gerechnet werden. Diese Situationspunkte sind deshalb im Bedarfsfalle mit Feldmessungen zu überprüfen. Die Nachführung dieser Ebenen erfolgt seit August 1998 mit einer grösseren Genauigkeit. Unterirdische Bauten sind betreffend Vollständigkeit unzuverlässig.
+
+**Datengrundlage:**
+
+Landesvermessung (Bezugsrahmen LV03)
+
+**Weitere Informationen zu diesem Thema:**
+
+Finden Sie unter diesem [**Link**](http://www.are.zh.ch/internet/baudirektion/are/de/geoinformation/Themen/amtliche_vermessung.html#grundlagen)
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Amtliche Vermessung Stadt Zürich»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/ad78b0f8-dc57-4813-97e3-8be2409cd5aa).
+
+***AV_BE_BEZIRKSGRENZABSCHNITT***: 
+
+Bezirksgrenze.
+
+
+***AV_BO_GEBAEUDENUMMER_T***: 
+
+Nummer der Gebaeudeversicherung GVZ.
+
+
+***AV_BO_PROJGEBAEUDENUMMER_T***: 
+
+Projektierte Nummer der Gebaeudeversicherung GVZ.
+
+
+***AV_EI_LINIENELEMENT***: 
+
+Linienelement. Die meisten Linien wurden ab Grundbuchplan digitalisiert. Ihr mittlerer Fehler beträgt ca. ± 10 cm.
+
+
+***AV_EI_OBJEKTNAME_T***: 
+
+Objektnamen.
+
+
+***AV_EI_OBJEKTNUMMER_T***: 
+
+Nummer der Gebaeudeversicherung GVZ.
+
+
+***AV_FI_HFP1***: 
+
+Landesnivellement
+Die Höhenfixpunkte sind vollständig vorhanden und werden laufend nachgeführt (Lage und Höhe). Die Höhen der HFP sind mit einem mittleren Fehler von ± 3 mm behaftet.
+
+
+***AV_FI_HFP1_T***: 
+
+Label-Punkt des Landesnivellement
+
+
+***AV_FI_HFP3_T***: 
+
+Label-Punkt des Gemeindenivellement
+
+
+***AV_FI_LFP2_T***: 
+
+Label-Punkt des Triangulationspunkt IVter Ordnung
+
+
+***AV_GEB_GEBAEUDEADRESSE_T***: 
+
+Gebäudeadresse; alle Stati (real, projektiert ...) enthalten..
+
+
+***AV_GEB_KURZSTRNAMEN_UEP5_T***: 
+
+Kurzstrassennamen; alle Stati (real, projektiert ...) enthalten. Optimiert für Übersichtsplan 5000. Muss mit AV_GEB_STRASSENNAMEN_UEP5_T kombiniert werden.
+
+
+***AV_GEB_LOKALISATIONSNAME***: 
+
+Offizielle und nicht offizielle Strassennamen.
+
+
+***AV_RO_LINIENELEMENT***: 
+
+Rohrleitungen.
+
+
+***AV_GE_GEMEINDEGRENZE_BOUNDARY***: 
+
+Gemeindegrenze.
+
+
+***AV_PLZ_EINTEILUNG_A***: 
+
+Postleitzahleinteilung in AV-Genauigkeit.
+
+
+***AV_GEB_GEBAEUDEADRESSE_UEP5_T***: 
+
+Gebäudeadresse; alle Stati (real, projektiert ...) enthalten. Optimiert für Übersichtsplan 5000.
+
+
+***AV_LI_GRENZPUNKT***: 
+
+Grenzpunkt.
+
+
+***AV_GEB_STRASSENNAMEN_T***: 
+
+Strassenamen; alle Stati (real, projektiert ...) enthalten.
+
+
+***AV_GEB_STRASSENNAMEN_UEP5_T***: 
+
+Strassenamen; alle Stati (real, projektiert ...) enthalten. Optimiert für Übersichtsplan 5000. Muss mit AV_GEB_KURZSTRNAMEN_UEP5_T kombiniert werden.
+
+
+***AV_LI_PROJLIEGENSCHAFT_A***: 
+
+Projektierte Liegenschaft.
+
+
+***AV_LI_SELBSTRECHT_A***: 
+
+Selbständiges Recht (Baurecht, Quellenrecht, ...).
+
+
+***AV_FI_LFP1***: 
+
+Triangulationspunkt I-IIIter Ordnung
+Die Lagefixpunkte sind vollständig vorhanden und werden laufend nachgeführt. Die LFP1 und LFP2 (alt Triangulationspunkte) haben Lage- und Höhen-Koordinaten, bei den LFP3 (alt Polygonpunkte) ist nur die Lage bestimmt worden. Die Genauigkeit der LFP3 entspricht den Anforderungen der amtlichen Vermessung in der Toleranzstufe 2. Das heisst, sie sind mit einem mittleren Fehler von ± 3 cm behaftet.
+
+
+***AV_FI_LFP2***: 
+
+Triangulationspunkt IVter Ordnung
+Die Lagefixpunkte sind vollständig vorhanden und werden laufend nachgeführt. Die LFP1 und LFP2 (alt Triangulationspunkte) haben Lage- und Höhen-Koordinaten, bei den LFP3 (alt Polygonpunkte) ist nur die Lage bestimmt worden. Die Genauigkeit der LFP3 entspricht den Anforderungen der amtlichen Vermessung in der Toleranzstufe 2. Das heisst, sie sind mit einem mittleren Fehler von ± 3 cm behaftet.
+
+
+***AV_FI_LFP3***: 
+
+Bisher Basispunkt, Verdichtungspunkt, Polygonpunkt, Passpunkt
+Die Lagefixpunkte sind vollständig vorhanden und werden laufend nachgeführt. Die LFP1 und LFP2 (alt Triangulationspunkte) haben Lage- und Höhen-Koordinaten, bei den LFP3 (alt Polygonpunkte) ist nur die Lage bestimmt worden. Die Genauigkeit der LFP3 entspricht den Anforderungen der amtlichen Vermessung in der Toleranzstufe 2. Das heisst, sie sind mit einem mittleren Fehler von ± 3 cm behaftet.
+
+
+***AV_FI_HFP3***: 
+
+Gemeindenivellement
+Die Höhenfixpunkte sind vollständig vorhanden und werden laufend nachgeführt (Lage und Höhe). Die Höhen der HFP sind mit einem mittleren Fehler von ± 3 mm behaftet.
+
+
+***AV_FI_HFP2***: 
+
+Kantonsnivellement
+Die Höhenfixpunkte sind vollständig vorhanden und werden laufend nachgeführt (Lage und Höhe). Die Höhen der HFP sind mit einem mittleren Fehler von ± 3 mm behaftet.
+
+
+***AV_BO_BOFLAECHE_A***: 
+
+Bodenbedeckungsfläche
+Die Ebene ist vollständig erfasst und wird laufend nachgeführt.
+Die meisten Linien sind digitalisiert (ab Grundbuchplan). Ihr mittlerer Fehler beträgt
+ca. ± 10-15 cm.
+
+
+***AV_EI_FLAECHENELEMENT_A***: 
+
+Flächenelement. Die Ebene ist vollständig erfasst und wird laufend nachgeführt.
+Die Einzelobjekte Unterkellerungen, Überdachungen, Tunnel, Brücken, Unterführungen, eingedolte öffentliche Gewässer, Silos, Brunnen, Mauern, Treppen, massive Sockel etc. sind als Flächen erfasst.
+Die meisten Linien wurden ab Grundbuchplan digitalisiert. Ihr mittlerer Fehler beträgt ca. ± 10 cm.
+
+
+***AV_FI_HFP2_T***: 
+
+Label-Punkt des Kantonsnivellement
+
+
+***AV_FI_LFP1_T***: 
+
+Label-Punkt des Triangulationspunkt I-IIIter Ordnung
+
+
+***AV_EI_ALLEGEBAEUDE_A_V***: 
+
+Alle Gebäude, die in den Einzelobjekten abgelegt werden, dazu gehören hauptsächlich: Unterstand, unterirdisches Gebäude.
+Angereichert mit Attributen aus dem städtischen DWH (SSZ).
+
+
+***AV_BO_BBNACHFUEHRUNG***: 
+
+Nachführungstabelle TOPIC Bodenbedeckung
+
+
+***AV_BO_BOFLAECHE_L***: 
+
+Berandungslinien der Bodenbedeckungsflächen
+
+
+***AV_EI_EONACHFUEHRUNG***: 
+
+Nachführungstabelle TOPIC Einzelobjekte
+
+
+***AV_LI_LSNACHFUEHRUNG***: 
+
+Nachführungstabelle TOPIC Liegenschaften
+
+
+***AV_GE_GEMEINDEGRENZE_A***: 
+
+Gemeindegebiet
+
+
+***AV_NO_FLURNAME_UEP5_T***: 
+
+Flurnamen. Optimiert für Übersichtsplan 1:5000.
+
+
+***AV_BO_OBJEKTNAME_UEP5_T***: 
+
+Objektnamen Bodenbedeckung. Optimiert für Übersichtsplan 5000.
+
+
+***AV_EI_OBJEKTNAME_UEP5_T***: 
+
+Objektnamen Einzelobjekte. Optimiert für Übersichtsplan 5000.
+
+
+***AV_BO_ALLEGEBAEUDE_A_V***: 
+
+View mit allen realen und projektierten Gebäuden aus den zwei Featureklassen AV_BO_BOFLAECHE_A und AV_BO_PROJBOFLAECHE_A. Angereichert mit Attributen aus dem städtischen DWH (SSZ).
+
+
+***AV_LI_GRUNDSTSUCHE_A***: 
+
+Spezialview Grundstückssuche
+
+
+***AV_EI_FLAECHENELEMENT_L***: 
+
+Berandungslinien der Flächenelemente. Werden für die korrekte Darstellung der Einzelobjekt verwendet.
+
+
+***AV_EI_PUNKTELEMENT***: 
+
+Punktobjekte, z.B, Statuen
+
+
+***AV_NO_FLURNAME_A***: 
+
+Flurnamengebiete
+
+
+***AV_PE_PLAN_A***: 
+
+Grundbuchplan-Einteilung
+
+
+***AV_FI_LFP3_T***: 
+
+Label-Punkt des Basispunkt, Verdichtungspunkt, Polygonpunkt, Passpunkt
+
+
+***AV_BO_BOFLAECHESYMBOL***: 
+
+Bodenbedeckungsflächensymbol.
+
+
+***AV_BO_OBJEKTNAME_T***: 
+
+Objektnamen.
+
+
+***AV_BO_PROJBOFLAECHE_A***: 
+
+Projektierte Bodenbedeckungsfläche.
+
+
+***AV_EI_FLAECHENELEMENT_A_R_V***: 
+
+View auf AV_EI_FLAECHENELEMENT_A; STATUS_TXT = &#39;real&#39;.
+
+
+***AV_EI_FLAECHENELEMENT_A_P_V***: 
+
+View auf AV_EI_FLAECHENELEMENT_A; STATUS_TXT &lt;&gt; &#39;real&#39;.
+
+
+***AV_NO_FLURNAME_T***: 
+
+Flurnamen.
+
+
+***AV_GEB_STRASSENSTUECK***: 
+
+Strassenachsen (Polylines).
+
+
+***AV_GEB_STRASSENSTUECK_AP***: 
+
+Anfangspunkte der Strassenachsen.
+
+
+***AV_GE_HOHEITSGRENZPUNKT***: 
+
+Hoheitsgrenzpunkt.
+
+
+***AV_GE_HOHEITSGRENZPUNKT_T***: 
+
+Nummer der Hoheitsgrenzpunkt
+
+
+***AV_LI_GRENZPUNKT_T***: 
+
+Grenzpunktummer.
+
+
+***AV_LI_GRUNDSTUECK_T***: 
+
+Grundstücksnummer.
+
+
+***AV_LI_LIEGENSCHAFT_A***: 
+
+Liegenschaft.
+
+
+***AV_LI_PROJGRUNDSTUECK_T***: 
+
+Projektierte Grundstuecksnummer.
+
+
+***AV_LI_PROJSELBSTRECHT_A***: 
+
+Projektiertes Selbstständiges Recht.
+
+
+
+
+**Statisches Vorschaubild:**
+
+![BildText](https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/ad78b0f8-dc57-4813-97e3-8be2409cd5aa.png)
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/geo_amtliche_vermessung_stadt_zuerich)
+
+Auto generated R starter code for data set geo_amtliche_vermessung_stadt_zuerich.
+
+## Metadata
+
+- **Publisher** `Kataster, Geomatik + Vermessung, Tiefbau- und Entsorgungsdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Basis­karten,Bauen und Wohnen,Umwelt,Ver­walt­ung,​​Volks​­wirt​­schaft`
+- **Tags** `['adressen', 'av', 'bodenbedeckung', 'geobasidaten', 'geodaten', 'geoportal', 'liegenschaften', 'liniendaten', 'polygondaten', 'punktdaten', 'stzh', 'vermessung']`
+- **Metadata_created** `2026-09-23T05:33:16.596040`
+- **Metadata_modified** `2026-10-13T06:36:24.102346`
+
+
+# Load packages
+
+```{r}
+library(httr2)
+library(sf)
+library(skimr)
+library(tidyverse)
+library(xml2)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Used explicitly by httr2 pipelines below; also picked up by sf::st_read via
+# base R's HTTPUserAgent option.
+USER_AGENT <- "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)"
+options(HTTPUserAgent = USER_AGENT)
+# sf::st_read fetches via GDAL/curl, which uses this env var.
+Sys.setenv(GDAL_HTTP_USERAGENT = USER_AGENT)
+```
+
+# Load the data
+
+data link
+```{r}
+url <- "https://www.stadt-zuerich.ch/geodaten/download/Amtliche_Vermessung_Stadt_Zuerich?format=geojson_link"
+```
+
+
+Helper function to create the url based on the geoportal, as the files are not directly available via fixed link like csvs.
+```{r}
+get_geoportal_url <- function(url) {
+  dataset_identifier <- sub(".*/(.*)\\?.*", "\\1", url)
+  paste0("https://www.ogd.stadt-zuerich.ch/wfs/geoportal/", dataset_identifier)
+}
+```
+
+```{r}
+# Helper function to get available layers from WFS
+get_wfs_layers <- function(url) {
+  
+  url_geoportal <- get_geoportal_url(url)
+  
+  cat("Getting available layers from:", url_geoportal, "\n")
+  
+  # read xml from geoportal
+  resp <- request(url_geoportal) |>
+    req_user_agent(USER_AGENT) |>
+    req_headers(service = "WFS", version = "1.1.0", request = "GetCapabilities") |>
+    req_perform()
+  
+  content_as_xml <- resp_body_xml(resp)
+  
+  # find available layers: find "Name" nodes with parent "Layer"
+  name_nodes <- content_as_xml |> xml_ns_strip() |> xml_find_all("//Name")
+  
+  # keep all nodes that have Name and it's parent's name is "Layer"
+  # and directly extract the name to get a list of typenames
+  typename_nodes <- purrr::keep(name_nodes,
+                                \(x) xml_name(xml_parent(x)) == "Layer")
+  
+  return(typename_nodes)
+}
+
+# Fetch available layers
+layers <- get_wfs_layers(url)
+
+# Set first layer as default
+typename <- xml_text(layers[[1]])
+cat("Chosen typename:", typename, "\n")
+```
+
+read the data
+```{r}
+read_geodata <- function(url, typename) {
+  url_geoportal <- get_geoportal_url(url)
+  
+  request <- request(url_geoportal) |>
+    req_url_query(
+      service = "WFS",
+      version = "1.1.0",
+      outputFormat = "GeoJSON",
+      request = "GetFeature",
+      typename = typename
+    )
+  
+  st_read(request$url)
+}
+
+df <- read_geodata(url, typename)
+```
+
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+# look at distributions etc. without looking at geographical data (skim cannot deal with geometries)
+skim(st_drop_geometry(df))
+```
+
+# Plot data
+
+base R plot
+```{r}
+plot(df$geometry)
+```
+
+ggplot2 plot
+```{r}
+df |>
+  ggplot() +
+  geom_sf()
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

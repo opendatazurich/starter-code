@@ -1,0 +1,100 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-10-13"
+output: html_document
+editor: visual
+---
+
+## Dataset: Datenreihe «Anzahl der Badegäste»
+
+Dieser Datensatz enthält eine Datenreihe mit der «Anzahl der Badegäste» (Besuchsfrequenzen) in den Badeanlagen der Stadt Zürich. Es handelt sich um Sensordaten, die rund 20 Prozent höher sind als die effektiven Eintrittszahlen/Kassenzahlen (Eintritte). Siehe auch unten unter «Datenerhebung».
+
+Es gibt zwei separate Dateien, die über das Attribut `LocationId` verknüpft werden können.
+- **Badi_Besuch.csv**: Enthält die Anzahl der Badegäste. Die Zahlen werden durch Sensoren automatisch erhoben und sind in 5-Minuten-Abschnitten zusammengefasst.
+- **Badi_Koordinaten.csv**: Enthält die Koordinaten der einzelnen Badi-Standorte.
+
+**Datenquelle:**
+
+[ASE Diamond API](https://arlas.ase.solutions/v2/swagger/index.html)
+
+**Bäder:**
+
+Im Datensatz enthalten sind die Hallen- und Sommerbäder der Stadt Zürich mit folgenden Ausnahmen: Flussbad Au-Höngg und Seebad Katzensee (weil keine Sensordaten erfasst werden), gewisse Bäder, die von Dritten betrieben werden (Seebad Enge und Hallenbad Altstetten), Bäder im Umbau.
+
+**Badi Aktuell:**
+
+Weitere Informationen finden Sie auf der Webseite  [Badi aktuell](https://www.stadt-zuerich.ch/badi-aktuell).
+
+**Datenerhebung:**
+
+Die dargestellten Zahlen (Datenreihe «Anzahl der Badegäste») stammen direkt von den Sensoren, die in der Nähe der Kassen aufgestellt sind. Diese Sensordaten entsprechen nicht genau der Anzahl Badegästen. Erfahrungsgemäss sind die Sensordaten etwa 20 Prozent höher als die Eintrittszahlen/Kassenzahlen (Eintritte). Das liegt daran, dass die Sensoren mehrfach zählen, wenn Personen das Bad verlassen und wieder betreten oder wenn zum Beispiel Kinder im Kassenbereich hin und herlaufen. Die Sensoren bleiben im Winterbetrieb aktiv.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/ssd_spo_badi_besuch)
+
+Auto generated R starter code for data set ssd_spo_badi_besuch.
+
+## Metadata
+
+- **Publisher** `Sportamt, Schul- und Sportdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Freizeit`
+- **Tags** `['baden', 'badi', 'freibad', 'github', 'hallenbad', 'schwimmen', 'sommerbad', 'sport']`
+- **Metadata_created** `2026-07-23T06:00:58.601252`
+- **Metadata_modified** `2026-10-13T11:37:12.603732`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://data.stadt-zuerich.ch/dataset/ssd_spo_badi_besuch/download/badi_besuch.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

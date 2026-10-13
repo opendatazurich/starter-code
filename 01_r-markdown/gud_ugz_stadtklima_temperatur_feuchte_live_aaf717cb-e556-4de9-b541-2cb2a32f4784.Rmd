@@ -1,0 +1,101 @@
+---
+title: "Open Government Data, OpenDataZurich"
+date: "2026-10-13"
+output: html_document
+editor: visual
+---
+
+## Dataset: Stadtklima Zürich - Aktuelle Temperatur- und Feuchtemessungen
+
+Dieser Datensatz enthält den letzten verfügbaren Temperatur- und Feuchtemesswert an Messstandorten des Stadtklimamessnetzes des Umwelt- und Gesundheitsschutz Zürichs (UGZ). Der Datensatz enthält provisorische Werte (welche nur eine einfache Qualitätssicherung durchlaufen haben) und wird jede Minute aktualisiert. Der Datensatz liegt als CSV, JSON und GeoJSON vor.
+
+**Datenformate**
+
+Die aktuellen Messwerte stehen als [JSON](https://stadtklima-zuerich.ch/ogd/v1/measurements/latest.json), [CSV](https://stadtklima-zuerich.ch/ogd/v1/measurements/latest.csv) und [GeoJSON](https://stadtklima-zuerich.ch/ogd/v1/measurements/latest.geojson) bereit.
+
+**Aktualisierungsrate**
+
+Jede Messstation liefert alle 10 Minuten einen neuen Messwert. Allerdings liefern die Stationen die Messwerte zu unterschiedlichen Zeitpunkten (z.B. eine Station um xx:x2 h, eine andere um xx.x7 h). Deshalb wird der gesamte Datensatz minütlich mit neu eingetroffenen Werten aktualisiert. Bitte beachten Sie die untenstehende Empfehlung für den Datenbezug.
+
+**Downloadempfehlung** je nach **Anwendungszweck**:
+
+- Wenn Ihnen Aktualität wichtig ist (Sie möchten immer den neuesten Stand): Laden Sie den Datensatz jede Minute neu.
+- Wenn Ihnen wichtig ist, dass Sie keinen Messwert verpassen (Aktualität ist zweitrangig): Ein Abruf alle 8–9 Minuten genügt, da so garantiert jeder neue 10-Minuten-Wert mindestens einmal heruntergeladen wird, bevor er im Datensatz überschrieben werden könnte.
+
+**Standorte und Koordinaten**
+
+**Standort-ID** ist die stabile Identifikationsnummer eines Messstandorts. Standortnamen können sich durch Umbenennungen jederzeit ändern und sind daher nicht stabil. Bei einer physischen Verlegung wird eine neue Standort-ID vergeben; der neue Ort wird als eigenständiger Messstandort behandelt. Koordinaten sind **WGS84-Dezimalgrad**.
+
+**Zeitangaben**
+
+Alle Zeitangaben sind in koordinierter Weltzeit (**UTC**) angegeben.
+
+
+
+[Direct link by **OpenDataZurich** for dataset](https://data.stadt-zuerich.ch/dataset/gud_ugz_stadtklima_temperatur_feuchte_live)
+
+Auto generated R starter code for data set gud_ugz_stadtklima_temperatur_feuchte_live.
+
+## Metadata
+
+- **Publisher** `Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Maintainer** `Open Data Zürich`
+- **Maintainer_email** `opendata@zuerich.ch`
+- **Keywords** `Ge­sund­heit,Umwelt`
+- **Tags** `['csv', 'echtzeit', 'geojson', 'json', 'live-daten', 'luftfeuchtigkeit', 'lufttemperatur', 'messnetz', 'messwerte', 'relative-feuchte', 'sachdaten', 'stadtklima', 'tabelle', 'temperatur']`
+- **Metadata_created** `2026-09-08T14:44:27.211895`
+- **Metadata_modified** `2026-10-06T19:54:27.000563`
+
+
+# Load packages
+
+```{r}
+library(skimr)
+library(tidyverse)
+```
+
+```{r}
+# Identifies requests from this notebook in the OpenDataZurich access logs.
+# Picked up by curl-based readers (readr, arrow) via base R's HTTPUserAgent option.
+options(HTTPUserAgent = "OpenDataZurich-StarterCode-Notebook/1.0 (lang=r; +https://github.com/opendatazurich/starter-code)")
+```
+
+# Load the data
+
+```{r}
+url <- "https://stadtklima-zuerich.ch/ogd/v1/measurements/latest.csv"
+if (str_detect(url, ".csv")) {
+    df <- readr::read_csv(url)
+} else if (str_detect(url, ".parquet")) {
+    df <- arrow::read_parquet(url)
+} else {
+    print("File format not recognised!")
+}
+```
+
+# Analyze the data
+
+look at the data
+```{r}
+head(df)
+```
+
+```{r}
+glimpse(df)
+```
+
+```{r}
+skim(df)
+```
+
+# Continue your code here...
+
+```{r}
+
+```
+
+------------------------------------------------------------------------
+
+# Contact
+
+opendata@zuerich.ch

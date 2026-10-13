@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -80,6 +80,11 @@ Gebiete mit Gestaltungsplanpflicht nach Art. 4 BauO (Bestandteil der Sondernutzu
 Planungszonen (Bestandteil der Sondernutzung)
 
 
+***BZO99_AUSSICHTSSCHUTZ_V***: 
+
+Aussichtsschutz (Bestandteil der Sondernutzung)
+
+
 ***BZO99_GEWAESSERABSTANDSL_V***: 
 
 Gewässerabstandslinien
@@ -105,6 +110,11 @@ Gewässerabstandslinien (projektiert)
 Kernzonen (projektiert)
 
 
+***BZO99_PROJ_QUEZ_V***: 
+
+Quartiererhaltungszonen (projektiert)
+
+
 ***BZO99_PROJ_WALDABSTANDSL_V***: 
 
 Waldabstandslinien (projektiert)
@@ -118,6 +128,11 @@ Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO (projektiert)
 ***BZO99_ZONE_LAERMVORBELAST_V***: 
 
 Lärmvorbelastetes Gebiet gemäss Art. 3 BauO
+
+
+***BZO99_PROJ_ZONE_INNENL_F_V***: 
+
+innenliegende Freihaltezone (projektiert) (informativ) 
 
 
 ***BZO99_PROJ_ZONE_ES_V***: 
@@ -143,6 +158,11 @@ Zonen
 ***BZO99_ZONE_ERHOEHTE_AZ_V***: 
 
 Gebiete mit erhöhter Ausnützung gemäss Art. 13 Abs. 2 BauO
+
+
+***BZO99_ZONE_FFZ_V***: 
+
+Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO
 
 
 ***BZO99_PROJ_AUSSICHTSSCHUTZ_V***: 
@@ -185,26 +205,6 @@ Gebiete mit erhöhter Ausnützung gemäss Art. 13 Abs. 2 BauO (projektiert)
 Wohnanteilsgrenze
 
 
-***BZO99_AUSSICHTSSCHUTZ_V***: 
-
-Aussichtsschutz (Bestandteil der Sondernutzung)
-
-
-***BZO99_PROJ_QUEZ_V***: 
-
-Quartiererhaltungszonen (projektiert)
-
-
-***BZO99_PROJ_ZONE_INNENL_F_V***: 
-
-innenliegende Freihaltezone (projektiert) (informativ) 
-
-
-***BZO99_ZONE_FFZ_V***: 
-
-Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO
-
-
 
 
 **Statisches Vorschaubild:**
@@ -225,7 +225,7 @@ Auto generated R starter code for data set geo_nutzungsplanung___kommunale_bau__
 - **Keywords** `Basis­karten,Bauen und Wohnen,Umwelt,Ver­walt­ung`
 - **Tags** `['abstandslinien', 'bauordnung', 'bzo', 'erganzungsplane', 'geodaten', 'geoportal', 'liniendaten', 'nutzungsplanung', 'polygondaten', 'stzh', 'vektordaten', 'zonenplan']`
 - **Metadata_created** `2026-04-29T05:46:50.777704`
-- **Metadata_modified** `2026-07-19T05:53:49.156950`
+- **Metadata_modified** `2026-10-13T06:34:56.713443`
 
 
 # Load packages

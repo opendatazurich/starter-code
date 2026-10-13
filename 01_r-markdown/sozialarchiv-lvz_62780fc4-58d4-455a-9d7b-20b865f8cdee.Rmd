@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -51,7 +51,7 @@ Auto generated R starter code for data set sozialarchiv-lvz.
 - **Keywords** `Energie,Kultur,Soziales`
 - **Tags** `['ZACK', 'archivdaten', 'coop', 'fotos', 'glam', 'historische fotos', 'lebensmittel', 'openglam', 'warenhaus']`
 - **Metadata_created** `2017-05-19T14:31:54.690001`
-- **Metadata_modified** `2024-06-05T11:30:45.948084`
+- **Metadata_modified** `2026-09-23T12:41:25.605333`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -27,9 +27,9 @@ Auto generated R starter code for data set sid_dav_pb_anwohnerparkkarten_gueltig
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Mobilität`
-- **Tags** `['sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
+- **Tags** `['auto', 'parkbewilligungen', 'plz', 'sachdaten', 'sasa', 'tabelle', 'zeitreihe']`
 - **Metadata_created** `2026-07-06T10:30:32.557540`
-- **Metadata_modified** `2026-07-19T05:13:21.727830`
+- **Metadata_modified** `2026-10-13T11:17:34.717730`
 
 
 # Load packages

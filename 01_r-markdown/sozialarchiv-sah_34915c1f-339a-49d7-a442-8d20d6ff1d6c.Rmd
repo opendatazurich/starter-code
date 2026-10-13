@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -18,7 +18,7 @@ Das **Bildarchiv des SAH** umfasst mehr als 1'900 Fotos. Der Fokus liegt auf den
 **Weitere Links**
 
 - Webseite des [**Schweizerischen Arbeiterhilfswerks (SAH)**](http://www.sah-schweiz.ch/)
-- Link zum [**Archivfindmittel «Schweizerisches Arbeiterhilfswerk SAH»**](http://www.findmittel.ch/archive/archNeu/ar20.html)
+- Link zum [**Archivfindmittel «Schweizerisches Arbeiterhilfswerk SAH»**](https://www.findmittel.ch/archive/archNeu/Ar20.html)
 - Link zur [**Datenbank Bild und Ton**](http://www.bild-video-ton.ch//bestand/signatur/F_5025), mit  Metadaten zu den hier verfügbaren Fotos.
 
 **Beispielfotos**
@@ -53,7 +53,7 @@ Auto generated R starter code for data set sozialarchiv-sah.
 - **Keywords** `Kultur`
 - **Tags** `['ZACK', 'archivdaten', 'fotos', 'glam', 'hilfswerk', 'historische fotos', 'nachkriegszeit', 'openglam']`
 - **Metadata_created** `2017-05-18T09:31:50.752960`
-- **Metadata_modified** `2024-06-05T11:32:03.852965`
+- **Metadata_modified** `2026-09-17T14:45:47.731023`
 
 
 # Load packages

@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -23,11 +23,6 @@ Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfall
 ***SCHULANLAGEN_ARCHIV***: 
 
 Jeweils Ende Jahr werden die Schulanlagen mit dem Jahrgang in die Tabelle geschrieben.
-
-
-***POI_KINDERHORT_VIEW***: 
-
-Standorte Kinderhort
 
 
 ***POI_KINDERGARTEN_ATT***: 
@@ -60,6 +55,11 @@ Standorte Kindergarten
 Zusatzinformationen
 
 
+***POI_KINDERHORT_VIEW***: 
+
+Standorte Kinderhort
+
+
 
 
 **Statisches Vorschaubild:**
@@ -80,7 +80,7 @@ Auto generated R starter code for data set geo_schulanlagen.
 - **Keywords** `Bevölk­erung`
 - **Tags** `['bildung', 'geodaten', 'geoportal', 'kindergarten', 'kinderhort', 'punktdaten', 'schule', 'sonderschule', 'stzh', 'volksschule']`
 - **Metadata_created** `2026-04-29T05:50:08.193942`
-- **Metadata_modified** `2026-07-19T05:57:02.855470`
+- **Metadata_modified** `2026-10-13T06:37:12.888343`
 
 
 # Load packages

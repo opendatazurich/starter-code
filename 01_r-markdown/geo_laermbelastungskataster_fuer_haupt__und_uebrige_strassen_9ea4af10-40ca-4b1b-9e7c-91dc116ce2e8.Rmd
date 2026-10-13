@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -30,16 +30,6 @@ Verkehrsdaten, Geländemodell, Gebäudemodell, Raumplanung
 
 Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Lärmbelastungskataster für Haupt- und übrige Strassen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/311cda4b-3dae-41a3-af4a-b1075c52a6ab).
 
-***affected_analysis***: 
-
-
-
-
-***dispersion_calculation***: 
-
-
-
-
 ***pointofdetermination***: 
 
 
@@ -48,6 +38,16 @@ Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfall
 ***streetemission***: 
 
 Lärmemissionen des Strassenlärmkatasters
+
+
+***affected_analysis***: 
+
+
+
+
+***dispersion_calculation***: 
+
+
 
 
 
@@ -64,13 +64,13 @@ Auto generated R starter code for data set geo_laermbelastungskataster_fuer_haup
 
 ## Metadata
 
-- **Publisher** `Lärmschutz, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
+- **Publisher** `Modellierungen Lärm Verkehr, Umwelt- und Gesundheitsschutz, Gesundheits- und Umweltdepartement`
 - **Maintainer** `Open Data Zürich`
 - **Maintainer_email** `opendata@zuerich.ch`
 - **Keywords** `Bauen und Wohnen,Bevölk­erung,Ge­sund­heit,Mobilität,Umwelt,Ver­walt­ung`
 - **Tags** `['geodaten', 'geoportal', 'liniendaten', 'punktdaten', 'strassenlarm', 'stzh']`
 - **Metadata_created** `2026-04-29T05:40:58.154711`
-- **Metadata_modified** `2026-07-19T05:47:26.542245`
+- **Metadata_modified** `2026-10-13T06:31:20.607863`
 
 
 # Load packages

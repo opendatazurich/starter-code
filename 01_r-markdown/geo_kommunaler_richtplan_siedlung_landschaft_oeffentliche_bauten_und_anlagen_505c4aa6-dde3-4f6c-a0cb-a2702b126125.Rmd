@@ -1,6 +1,6 @@
 ---
 title: "Open Government Data, OpenDataZurich"
-date: "2026-07-19"
+date: "2026-10-13"
 output: html_document
 editor: visual
 ---
@@ -20,9 +20,24 @@ Es bestehen zwei Geodatenelemente:
 
 **Genereller Hinweis zum Geodatensatz:**
 
-
-Weitere Informationen zu diesem Datensatz finden sie unter [«**Kommunaler Richtplan Siedlung Landschaft öffentliche Bauten und Anlagen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/b96128df-2966-4a9f-bb66-220dc8d6d42a).				
+Es handelt sich hierbei um einen Geodatensatz, welcher aus mehreren Geodatenelmenten besteht. Diese Geodatenelemente werden hier nicht im Detail beschrieben. Sie finden jedoch sämtliche Informationen - wie beispielsweise die Attributbeschreibungen - [«**Kommunaler Richtplan Siedlung Landschaft öffentliche Bauten und Anlagen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/catalog.search#/metadata/b96128df-2966-4a9f-bb66-220dc8d6d42a).
 			   
+
+**Geodatenelemente:**
+
+Die vollständige Metadatenbeschreibung der Geodatenelemente finden Sie ebenfalls unter [«**Kommunaler Richtplan Siedlung Landschaft öffentliche Bauten und Anlagen»** auf Geocat.ch](https://www.geocat.ch/geonetwork/srv/ger/md.viewer#/full_view/b96128df-2966-4a9f-bb66-220dc8d6d42a).
+
+***komm_richt_sloeba_a_proj***: 
+
+
+
+
+***KOMM_RICHT_SLOEBA_A***: 
+
+
+
+
+
 
 **Statisches Vorschaubild:**
 
@@ -42,7 +57,7 @@ Auto generated R starter code for data set geo_kommunaler_richtplan_siedlung_lan
 - **Keywords** `Bauen und Wohnen,Bevölk­erung,Energie,Umwelt,Ver­walt­ung`
 - **Tags** `['freiraumplanung', 'geodaten', 'geoportal', 'innenentwicklung', 'offentliche-bauten-und-anlagen', 'polygondaten', 'raumentwicklung', 'richtplanung', 'stzh', 'vektordaten', 'verdichtung']`
 - **Metadata_created** `2026-04-29T05:56:04.828797`
-- **Metadata_modified** `2026-07-19T06:02:50.895183`
+- **Metadata_modified** `2026-10-13T06:40:32.031430`
 
 
 # Load packages
